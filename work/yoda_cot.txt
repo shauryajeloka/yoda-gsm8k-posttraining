@@ -5640,3 +5640,321 @@ Finally Carl. Ben is sixteen pounds LIGHTER than Carl, so Carl is the heavier: o
 Note the trap running through this whole chain: every relation names who is lighter or heavier rather than giving a weight, so the direction of each step must be read with care, and a single reversal would carry the error all the way to Carl.
 Thus, one hundred seventy-five pounds Carl weighs.
 Final answer: 175
+
+@@gsm8k_train_02772
+To find the plants Shyne can grow, each kind of seed packet separately handle we must, for different yields and different counts they carry.
+The eggplants first. Four seed packets of eggplant she bought, and every eggplant packet grows fourteen plants: 4 x 14 = 56 eggplants.
+The sunflowers next. Six seed packets of sunflower she bought, and every sunflower packet grows ten plants: 6 x 10 = 60 sunflowers.
+Now both kinds together, for the question asks how many plants in total she can grow: 56 + 60 = 116 plants.
+Note the trap of crossing the packet counts with the wrong yields, giving the eggplants six packets or the sunflowers four, which would change the answer entirely.
+Thus, one hundred sixteen plants Shyne can grow in her backyard.
+Final answer: 116
+
+@@gsm8k_train_02773
+To find James's future age, through Jessica travel we must, for she links Justin to James.
+Justin is twenty-six years old now. When Justin was born, Jessica was already six, and that six-year gap never changes: 26 + 6 = 32 years old Jessica is now.
+James is seven years older than Jessica: 32 + 7 = 39 years old James is now.
+After five years James will be: 39 + 5 = 44 years old.
+Note the trap of adding the seven to Justin rather than to Jessica, which would skip a link in the chain.
+Thus, forty-four years old James will be after five years.
+Final answer: 44
+
+@@gsm8k_train_02775
+To find Bill's head circumference, through Charlie travel we must, for Bill is measured against him.
+Jack's head is twelve inches around. Half of that is (12)/(2) = 6 inches.
+Charlie's head is nine inches MORE than that half: 6 + 9 = 15 inches.
+Bill's head is two thirds of CHARLIE'S circumference: (2/3) x 15 = 10 inches.
+Note the trap of taking two thirds of Jack's twelve, which would misread whom Bill is measured against and give eight.
+Thus, ten inches the circumference of Bill's head is.
+Final answer: 10
+
+@@gsm8k_train_02777
+To find the total coffee, Ivory's hourly rate determine first we must, and then extend both drinkers across the five hours.
+Brayan drinks four cups an hour, given to us. Brayan drinks TWICE as much as Ivory, so Ivory drinks half as much: (4)/(2) = 2 cups an hour.
+Now the five hours. Brayan across that time: 4 x 5 = 20 cups. Ivory across that time: 2 x 5 = 10 cups.
+Both of them together: 20 + 10 = 30 cups.
+Note the trap of doubling Brayan's rate for Ivory, when Ivory is the lighter drinker of the two.
+Thus, thirty cups of coffee they drink together in five hours.
+Final answer: 30
+
+@@gsm8k_train_02784
+To find what Rubble keeps, each kind of item separately price we must, and two of each he buys.
+The notebooks first. Two of them at four dollars each: two times four dollars gives a notebook cost of 8.00 dollars.
+The pens next. Two of them at a dollar fifty each: two times one dollar fifty gives a pen cost of 3.00 dollars.
+Both purchases together come to eight dollars plus three dollars, which is eleven dollars spent.
+Rubble had fifteen dollars in his pocket, so what remains is fifteen less eleven, which is four dollars.
+Note the trap of pricing one notebook and one pen rather than two of each, which would leave him with nine dollars fifty.
+Thus, four dollars will be left from Rubble after the purchase.
+Final answer: 4
+
+@@gsm8k_train_02785
+To find the wedding's cost, the wife's guest count determine first we must, for hers is the number that will be used.
+John wants fifty guests. His wife wants sixty percent MORE than that, so the extra is 0.60 x 50 = 30 guests, and her total is 50 + 30 = 80 guests.
+Now the per-guest cost. Five hundred dollars for each guest: 80 x 500 = 40000 dollars for the guests.
+The venue adds its own ten thousand: 10000 + 40000 = 50000 dollars.
+Note the trap of reading sixty percent more as sixty percent OF, which would give thirty guests rather than eighty.
+Thus, fifty thousand dollars the wedding would cost if John's wife gets her way.
+Final answer: 50000
+
+@@gsm8k_train_02786
+To find the assistant's cost, the whole crossing time determine first we must, and the return leg not forget.
+One direction across the lake takes four hours. But Tom must come back as well, so the assistant is needed for both legs: 4 + 4 = 8 hours of help.
+Hiring an assistant costs ten dollars for every hour, so the cost is eight times ten dollars, which is eighty dollars.
+Note the trap of paying for a single crossing only, which would halve the bill and strand Tom on the far shore.
+Thus, eighty dollars it would cost him to hire an assistant.
+Final answer: 80
+
+@@gsm8k_train_02787
+To find the water Remi drank, the full refills total first we must, and the spills subtract afterwards.
+Three times a day Remi refills the bottle, and a week holds seven days: 3 x 7 = 21 refills in the week.
+Each refill is twenty ounces: 21 x 20 = 420 ounces if nothing were spilled.
+Now the spills, of which there were two: five ounces on one occasion and eight on the other: 5 + 8 = 13 ounces lost.
+What he actually drank: 420 - 13 = 407 ounces.
+Note the trap of subtracting a spill from every refill rather than only from the two the question describes.
+Thus, four hundred seven ounces of water Remi drank.
+Final answer: 407
+
+@@gsm8k_train_02789
+To find the fourth score, the total the four tests must reach determine first we must.
+An average of exactly eighty-five across four tests means the four scores must sum to 85 x 4 = 340 points.
+Her three existing scores sum to 80 + 70 + 90 = 240 points.
+With x for the fourth test: 240 + x = 340.
+Solve: x = 340 - 240, which gives x = 100 points.
+Note the trap of averaging the three existing scores and comparing against eighty-five, which would not account for how much the fourth test must pull the average up.
+Thus, one hundred she needs to score on the fourth test.
+Final answer: 100
+
+@@gsm8k_train_02792
+To find the artworks, the students into halves split we must, for the two halves produce differently.
+Ten students Liam teaches, and half of them make three artworks while half make four: (10)/(2) = 5 students in each group.
+The first group: 5 x 3 = 15 artworks.
+The second group: 5 x 4 = 20 artworks.
+Both groups together: 15 + 20 = 35 artworks.
+Note that the twenty art kits and the sharing arrangement are given but never constrain the artwork count, so distractions they are.
+Thus, thirty-five artworks the students make in total.
+Final answer: 35
+
+@@gsm8k_train_02801
+To find the tarantulas, the legs already seen count first we must, and the shortfall divide by a tarantula's legs.
+The chimps first. Twelve of them at four legs apiece: 12 x 4 = 48 legs.
+The lions next. Eight of them at four legs apiece: 8 x 4 = 32 legs.
+The lizards after. Five of them at four legs apiece: 5 x 4 = 20 legs.
+All the legs seen so far: 48 + 32 + 20 = 100 legs.
+Borgnine wants eleven hundred legs, so the legs still needed are 1100 - 100 = 1000 legs.
+A tarantula has eight legs, so with x for the tarantulas: 8x = 1000, and dividing gives x = (1000)/(8) = 125 tarantulas.
+Thus, one hundred twenty-five tarantulas he needs to see to meet his goal.
+Final answer: 125
+
+@@gsm8k_train_02802
+To find the total cost, the full price of everything compute first we must, and the discount apply to that whole.
+The spiral notebooks first. Four of them at fifteen dollars each: 4 x 15 = 60 dollars.
+The personal planners next. Eight of them at ten dollars each: 8 x 10 = 80 dollars.
+Both kinds together before any discount: 60 + 80 = 140 dollars.
+Now the discount. Twenty percent off means eighty percent remains to be paid: 140 x 0.80 = 112 dollars.
+Note the trap of subtracting twenty dollars rather than twenty percent, which would confuse a percentage with a flat amount.
+Thus, one hundred twelve dollars it would cost in total.
+Final answer: 112
+
+@@gsm8k_train_02805
+To find the scale's reading, down from Scruffy to Muffy and then up to Puffy travel we must.
+Scruffy weighs twelve ounces, given to us directly.
+Muffy weighs three ounces LESS than Scruffy: twelve ounces less three ounces gives nine ounces for Muffy.
+Puffy weighs five ounces MORE than Muffy: nine ounces plus five ounces gives fourteen ounces for Puffy.
+Now the scale, which holds Puffy and Muffy together but not Scruffy: fourteen ounces plus nine ounces gives twenty-three ounces.
+Note the trap of putting Scruffy on the scale as well, when the question names only Puffy and Muffy.
+Thus, twenty-three ounces the scale would indicate.
+Final answer: 23
+
+@@gsm8k_train_02806
+To find the vegetables, the beef actually used in the soup determine first we must, for not all of it goes in.
+Four pounds of beef John buys, but he uses all BUT one pound in the soup: 4 - 1 = 3 pounds of beef actually used.
+The vegetables are twice as many pounds as the BEEF USED, which is the three rather than the four: 2 x 3 = 6 pounds of vegetables.
+Note the trap of doubling the four pounds he bought, which would give eight and count beef that never entered the soup.
+Thus, six pounds of vegetables he used.
+Final answer: 6
+
+@@gsm8k_train_02777
+To find the total coffee the pair drink, Ivory's hourly rate determine first we must, for only Brayan's is handed to us directly.
+Brayan drinks four cups of coffee in an hour, given plainly. The question tells us Brayan drinks TWICE as much coffee as Ivory, which means Ivory is the lighter drinker of the two: (4)/(2) = 2 cups an hour for Ivory.
+Now extend both of them across the five hours they stay up working on their projects.
+Brayan across that stretch: 4 x 5 = 20 cups of coffee.
+Ivory across the same stretch: 2 x 5 = 10 cups of coffee.
+Now both students together, for the question asks how much they drink between them: 20 + 10 = 30 cups.
+Note the trap of doubling Brayan's four to find Ivory, which would reverse the relationship and make Ivory the heavier drinker when the question plainly says the opposite.
+Thus, thirty cups of coffee they drink together in those five hours.
+Final answer: 30
+
+@@gsm8k_train_02787
+To find the water Remi actually drank, the full refills total first we must, and only then subtract what the spills cost him.
+The refills first. Three times a day Remi refills the bottle, and the week holds seven days: 3 x 7 = 21 refills across the week.
+Each refill fills the bottle to twenty ounces: 21 x 20 = 420 ounces, which is what he would have drunk had nothing gone wrong.
+Now the spills, and exactly two of them there were. On one occasion he spilled five ounces and on the other he spilled eight: 5 + 8 = 13 ounces lost to the floor.
+What he actually drank is the full amount less the spillage: 420 - 13 = 407 ounces.
+Note the trap of subtracting a spill from every one of the twenty-one refills, when the question describes only two accidents in the whole week.
+Thus, four hundred seven ounces of water Remi drank that week.
+Final answer: 407
+
+@@gsm8k_train_02789
+To find the score Maria needs, the total her four tests must reach determine first we must, for an average constrains the sum rather than any single score.
+The required total first. An average of exactly eighty-five across four tests means the four scores together must sum to 85 x 4 = 340 points.
+Her existing scores next. Eighty, seventy and ninety she has already earned: 80 + 70 + 90 = 240 points banked so far.
+Now the fourth test. With x standing for that score, the four together must reach the required total: 240 + x = 340.
+Solve for x by subtracting what she already has: x = 340 - 240 = 100 points.
+Note the trap of averaging her three existing scores, which come to eighty, and supposing she needs only a little above eighty-five. The fourth test must pull the whole average up, and so it must score well above the target itself.
+Thus, one hundred she needs to score on the fourth test.
+Final answer: 100
+
+@@gsm8k_train_02801
+To find the tarantulas, the legs Borgnine has already seen count first we must, and then divide the shortfall by a tarantula's own legs.
+The animals already seen, each of which walks on four legs. The chimps first: twelve of them at four legs apiece gives 12 x 4 = 48 legs. The lions next: eight of them at four legs apiece gives 8 x 4 = 32 legs. The lizards after that: five of them at four legs apiece gives 5 x 4 = 20 legs.
+All the legs seen so far together: 48 + 32 + 20 = 100 legs.
+Borgnine's goal is eleven hundred legs, so the legs he still needs to see number 1100 - 100 = 1000 legs.
+Finally the tarantulas, and eight legs a tarantula carries rather than four. With x for the tarantulas: 8x = 1000, and dividing both sides by eight gives x = (1000)/(8) = 125 tarantulas.
+Note the trap of giving the tarantulas four legs like the other animals, which would double the answer.
+Thus, one hundred twenty-five tarantulas he needs to see to meet his goal.
+Final answer: 125
+
+@@gsm8k_train_02812
+To find Jewel's gain, her cost and her revenue separately compute we must, and only then subtract one from the other.
+The cost first. Ten magazines she bought, and each magazine costs three dollars: ten times three dollars gives a total cost of 30 dollars.
+The revenue next. She sells those same ten magazines at three dollars fifty each: ten times three dollars fifty gives total revenue of 35 dollars.
+Gain is revenue less cost: thirty-five dollars less thirty dollars, which gives a gain of 5 dollars.
+Note the trap of reporting thirty-five, which is what she takes in rather than what she gains, for the thirty she spent must be repaid first.
+Thus, five dollars Jewel will gain from selling these.
+Final answer: 5
+
+@@gsm8k_train_02813
+To find Leila's total spending, the supermarket amount determine first we must, for only the mechanic's bill is given.
+The mechanic charged three hundred fifty dollars, and that was fifty dollars MORE than thrice what she spent at the supermarket. With x for the supermarket: 350 = 3x + 50.
+Subtract the fifty from both sides: 350 - 50 = 3x, which gives 300 = 3x.
+Divide by three: three hundred divided by three gives x = 100 dollars at the supermarket.
+Now her total across both errands: 100 + 350 = 450 dollars.
+Note the trap of reporting one hundred, which is the supermarket alone rather than everything she spent.
+Thus, four hundred fifty dollars Leila spent altogether.
+Final answer: 450
+
+@@gsm8k_train_02814
+To find the shopping time, all the waiting total first we must, and the whole trip into minutes convert.
+The waits first. Three minutes for a cart, thirteen for the cabinet, fourteen for the stocker, and eighteen in line: 3 + 13 + 14 + 18 = 48 minutes of waiting.
+Now the whole trip. An hour and a half it lasted, and an hour is sixty minutes, so the trip is 60 + 30 = 90 minutes in all.
+The time spent actually shopping is the trip less the waiting: 90 - 48 = 42 minutes.
+Note the trap of leaving the hour and a half unconverted, which would compare one and a half against forty-eight and give nonsense.
+Thus, forty-two minutes Josie spent shopping rather than waiting.
+Final answer: 42
+
+@@gsm8k_train_02820
+To find the cow's spots, the right side determine first we must, for it is described against the left.
+The left side is given: L = 16 spots.
+The right side is three times that number PLUS seven: R = 3L + 7, and substituting gives R = 3(16) + 7.
+Work it in order. Three times sixteen is R = 48 + 7, which gives R = 55 spots on the right side.
+Now both sides together: Total spots = 16 + 55, which gives Total spots = 71.
+Note the trap of adding the seven before multiplying, which would give sixty-nine and misread the order of operations.
+Thus, seventy-one spots the cow has in total.
+Final answer: 71
+
+@@gsm8k_train_02832
+To find the baker's earnings, each kind of baked good separately price we must, for different counts and different prices they carry.
+The cakes first. Four hundred fifty-three cakes sold at twelve dollars each: four hundred fifty-three times twelve gives five thousand four hundred thirty-six dollars from cakes.
+The pies next. One hundred twenty-six pies sold at seven dollars each: one hundred twenty-six times seven gives eight hundred eighty-two dollars from pies.
+Now both kinds together: five thousand four hundred thirty-six plus eight hundred eighty-two gives 6318 dollars.
+Note the trap of crossing the prices, charging the cakes at seven or the pies at twelve, which would change the total substantially.
+Thus, six thousand three hundred eighteen dollars the baker earned during April.
+Final answer: 6318
+
+@@gsm8k_train_02842
+To find the problems Rachel did in all, the evening's work count first we must, and the lunch additions after.
+Before bed she solved five math problems each minute, and she worked for twelve minutes: five times twelve gives sixty problems solved that evening.
+The next day at lunch she finished the last sixteen problems.
+Both sessions together: sixty problems plus sixteen problems gives seventy-six problems.
+Note the trap of reporting sixty, which counts only the evening and forgets that she had not finished, or of multiplying the sixteen by five as though it were a rate.
+Thus, seventy-six math problems she did in all.
+Final answer: 76
+
+@@gsm8k_train_02845
+To find the mosquitoes, into drops the fatal blood loss convert first we must, for the mosquitoes feed in drops.
+Three litres of blood loss kills, and five thousand drops fill a litre: three times five thousand gives fifteen thousand drops of blood.
+Each mosquito sucks twenty drops every time it feeds, so the mosquitoes required number fifteen thousand divided by twenty, which gives 750 mosquitoes.
+Note the trap of dividing the three litres by twenty directly, which would mix litres against drops and give a useless answer.
+Thus, seven hundred fifty mosquitoes would have to feed on you.
+Final answer: 750
+
+@@gsm8k_train_02847
+To find the mushrooms, all the pieces count first we must, and only then undo the cutting.
+The twins used pieces on their pizzas: thirty-eight from Kenny and forty-two from Karla: 38 + 42 = 80 pieces used.
+Eight pieces remained on the cutting board as well, so the pieces in total numbered 80 + 8 = 88 pieces.
+Now undo the cutting. GiGi cut each mushroom into four pieces, so the mushrooms number 88 / 4 = 22 mushrooms.
+Note the trap of forgetting the eight leftover pieces, which would undercount the original bowl.
+Thus, twenty-two mushrooms were in GiGi's bowl.
+Final answer: 22
+
+@@gsm8k_train_02850
+To find what Mr. John keeps, his transport cost compute first we must.
+His monthly income is two thousand dollars, and he spends approximately five percent of it on public transport: 2000 x (5)/(100) = 2000 x 0.05 = 100 dollars on transport.
+What remains after that deduction: 2000 - 100 = 1900 dollars.
+Note the trap of reporting one hundred, which is what the transport costs rather than what he has left.
+Thus, one thousand nine hundred dollars he will have left after deducting his monthly transport fare.
+Final answer: 1900
+
+@@gsm8k_train_02851
+To find the siblings' combined age, up the chain from Aaron climb we must.
+Aaron is fifteen years old, given to us directly.
+Henry's sister is three times as old as Aaron: 3 x 15 = 45 years old.
+Henry is four times as old as his SISTER, not as Aaron: 4 x 45 = 180 years old.
+Now all three siblings together: 15 + 180 + 45 = 240 years.
+Note the trap of measuring Henry against Aaron, which would give sixty rather than one hundred eighty.
+Thus, two hundred forty the combined age of the siblings is.
+Final answer: 240
+
+@@gsm8k_train_02860
+To find the goals per game, the slices count first we must, for one slice marks one goal.
+Six pizzas Mr. Mitchell bought, and a large pizza has twelve slices: six times twelve gives seventy-two slices.
+One slice for every goal the team scored, so the season's goals number seventy-two as well.
+Eight games the team played, so the goals per game average seventy-two divided by eight, which gives 9 goals per game.
+Note the trap of dividing the six pizzas by the eight games, which would forget that each pizza carries twelve slices.
+Thus, nine goals per game on average they scored.
+Final answer: 9
+
+@@gsm8k_train_02866
+To find the viewing hours, the total minutes compute first we must and then convert.
+Six episodes there are, each fifty minutes long: fifty times six gives a total duration in minutes of 300 minutes.
+But hours the question asks for, and sixty minutes fill an hour. Three hundred divided by sixty gives a total duration in hours of 5 hours.
+Note the trap of reporting three hundred, correct in minutes but wrong in the units requested, and note also that no breaks are taken, so no extra time need be added.
+Thus, five hours Erin will spend watching the mini series.
+Final answer: 5
+
+@@gsm8k_train_02875
+To find the distance Ken covers, Mary's distance determine first we must, for it is described against Ken's.
+Ken's house is twice as far from Dawn's as Mary's house is. With d for Mary's distance, twice that distance is the four miles between Ken and Dawn: 2d = 4 miles.
+Divide both sides by two: d = (4)/(2) = 2 miles from Ken's house to Mary's.
+Now Ken's journey. He goes from his house to Dawn's house, which is four miles, then from Dawn's back past his own to Mary's, then returns. Adding the legs in order: 4 + 2 + 2 + 4 = 12 miles.
+Note the trap of counting only the outward legs and forgetting the return journey.
+Thus, twelve miles Ken will cover.
+Final answer: 12
+
+@@gsm8k_train_02876
+To find what Aaron owes, the loan's principal compute first we must, and the interest apply to that whole.
+The payment plan is one hundred dollars a month for twelve months, so the guitar's price is 100 x 12 = 1200 dollars.
+His father charges a one-time ten percent interest fee on the entire loan: 0.10 x 1200 = 120 dollars of interest.
+What Aaron owes altogether: 1200 + 120 = 1320 dollars.
+Note the trap of charging the ten percent on a single monthly payment rather than on the whole loan.
+Thus, one thousand three hundred twenty dollars Aaron owes his dad.
+Final answer: 1320
+
+@@gsm8k_train_02845
+To find how many mosquitoes it would take, into drops the fatal blood loss convert first we must, for the mosquitoes feed in drops while the danger is measured in litres.
+The conversion first. Three litres of blood must be lost to die, and five thousand drops fill a single litre. So the fatal amount in drops is 3 x 5000 = 15000 drops of blood.
+Now the mosquitoes themselves. Each mosquito sucks twenty drops of blood every time it feeds, so the number required is the fatal amount divided by what one mosquito takes: (15000)/(20) = 750 mosquitoes.
+Note the trap of dividing the three litres directly by the twenty drops, which would compare litres against drops and give a number far too small to mean anything.
+Check the shape of the answer: seven hundred fifty mosquitoes each taking twenty drops is indeed fifteen thousand drops, which is the three litres exactly.
+Thus, seven hundred fifty mosquitoes would have to feed on you.
+Final answer: 750
+
+@@gsm8k_train_02875
+To find the distance Ken covers, Mary's distance determine first we must, for her house is described against Ken's rather than given outright.
+The relation first. Ken's house is twice as far from Dawn's house as Mary's house is along the same road. With d standing for the distance to Mary's house, twice that distance equals the four miles between Ken and Dawn: 2d = 4 miles.
+Divide both sides by two: d = (4)/(2) = 2 miles from Ken's house to Mary's house.
+Now Ken's journey, leg by leg. He goes from his own house to Dawn's house, which is four miles. Then from Dawn's house he travels to Mary's house, which takes him back past his own and on, two miles further. Then he returns the same way, two miles back and four miles more.
+Adding every leg in order: 4 + 2 + 2 + 4 = 12 miles.
+Note the trap of counting only the outward journey and forgetting that Ken must come home again, which would halve the distance.
+Thus, twelve miles Ken will cover.
+Final answer: 12
