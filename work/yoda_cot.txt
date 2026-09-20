@@ -3957,3 +3957,305 @@ Note the trap of dividing the full seventy-five by ten, which would ignore the t
 Check the shape of the answer: three tanks of ten holds thirty fish, and thirty plus the forty-five already housed gives seventy-five exactly.
 Thus, three more tanks Jennifer needs to build.
 Final answer: 3
+
+@@gsm8k_train_02051
+To find how many more apples Mary must buy, the full requirement calculate first we must, and only then set her harvest against it.
+Ten apple pies she wants to bake for the charity event, and each pie needs eight apples: 10 x 8 = 80 apples required in total.
+Now her own supply. Fifty apples she has already harvested from the trees in her garden, and those need not be bought.
+The shortfall is therefore the requirement less what she already holds: 80 - 50 = 30 apples.
+Note the trap of reporting eighty, which is the whole requirement rather than the amount still to be purchased, or of reporting fifty, which is what she has.
+Check the shape of the answer: thirty plus her fifty harvested gives eighty, exactly what the ten pies demand.
+Thus, thirty more apples Mary needs to buy.
+Final answer: 30
+
+@@gsm8k_train_02058
+To find the team's score, each player measured against those before we must handle, in strict order.
+Tobee's score is given directly: four points.
+Jay scored six more than Tobee: 4 + 6 = 10 points.
+Now Sean, whose score is built on the PAIR rather than on either player alone. Tobee and Jay together scored 4 + 10 = 14 points, and Sean scored two less than that combined figure: 14 - 2 = 12 points.
+Finally the team total, all three players summed: 4 + 10 + 12 = 26 points.
+Note the trap of measuring Sean against Jay alone, which would give eight instead of twelve and understate the team.
+Thus, twenty-six points they scored for their team.
+Final answer: 26
+
+@@gsm8k_train_02061
+To find the distance each player runs, the perimeter of the field compute first we must, for a lap is once around its edge.
+The field is a rectangle one hundred metres long and fifty metres wide. A perimeter counts both lengths and both widths, so it is twice the sum of one length and one width.
+The length and width together: 100 + 50 = 150 metres. Doubling that gives the perimeter: 2 x 150 = 300 metres for a single lap.
+Now the six laps the coach demanded: 6 x 300 = 1800 metres.
+Note the trap of adding only one length and one width and calling it a lap, which would halve the distance, or of multiplying length by width, which would give an area rather than a perimeter.
+Thus, one thousand eight hundred metres each player will run.
+Final answer: 1800
+
+@@gsm8k_train_02071
+To find the push-ups, the time actually spent exercising determine first we must, for the breaks steal from the minute.
+The breaks first. Two of them she takes, eight seconds each: 2 x 8 = 16 seconds of resting.
+One minute holds sixty seconds, so the time left for push-ups is 60 - 16 = 44 seconds.
+Now her rate. Five push-ups in ten seconds she manages, so across forty-four seconds the count is (5 x 44)/10 = 220/10 = 22 push-ups.
+Note the trap of using the full sixty seconds and ignoring the breaks, which would give thirty and overstate her work.
+Thus, twenty-two push-ups Jackie can do in one minute.
+Final answer: 22
+
+@@gsm8k_train_02072
+To find how much faster the last popsicle melts, the doubling track from the first we must, one popsicle at a time.
+Let r stand for the rate at which the first popsicle melts.
+After the first melts, the second melts twice as fast: 2r.
+After the second melts, the third melts twice as fast as the second: 2 x 2r = 4r.
+Following that same pattern, the fourth melts at 2 x 4r = 8r, the fifth at 2 x 8r = 16r, and the sixth and last at 2 x 16r = 32r.
+So the last popsicle melts thirty-two times faster than the first.
+Note the trap of multiplying six by two and reporting twelve, when the rate doubles repeatedly rather than growing by a fixed step.
+Thus, thirty-two times faster than the first the last popsicle melts.
+Final answer: 32
+
+@@gsm8k_train_02093
+To find Jan's height, down to Bill first we must travel, and then up again to Jan.
+Cary is seventy-two inches tall, given to us.
+Bill is half Cary's height: 72/2 = 36 inches.
+Jan is six inches taller than BILL, not than Cary: 36 + 6 = 42 inches.
+Note the trap of adding the six to Cary's seventy-two, which would misread whom Jan is measured against and give a sister taller than her older sibling.
+Check the shape of the answer: forty-two sits between Bill's thirty-six and Cary's seventy-two, as a younger sister taller than her brother should.
+Thus, forty-two inches tall Jan is.
+Final answer: 42
+
+@@gsm8k_train_02096
+To find the cans of corn, name the corn as the unknown we must, for the peas are described against it.
+Let C be the cans of corn. Beth bought fifteen more cans of peas than TWICE the corn, so the peas number 2C + 15.
+She bought thirty-five cans of peas, so 35 = 2C + 15.
+Subtract the fifteen from both sides: 35 - 15 = 2C, which gives 20 = 2C.
+Divide by two: C = 20/2 = 10 cans of corn.
+Note the trap of subtracting fifteen and reporting twenty, which forgets the doubling still to be undone.
+Check it forward: twice ten is twenty, and fifteen more is thirty-five, matching the peas exactly.
+Thus, ten cans of corn Beth bought.
+Final answer: 10
+
+@@gsm8k_train_02101
+To find the pizzas, the people count first we must, then the slices, then the pizzas.
+Brenda and nine of her friends want to order, so the group numbers ten people in all.
+Each person will eat two slices: 10 x 2 = 20 slices needed.
+Each pizza has four slices, so the pizzas required number 20/4 = 5 pizzas.
+Note the trap of counting only the nine friends and forgetting Brenda herself, which would leave someone unfed.
+Check the shape of the answer: five pizzas of four slices gives twenty slices, exactly two apiece for ten people.
+Thus, five pizzas they should order.
+Final answer: 5
+
+@@gsm8k_train_02102
+To find what Maria keeps, each deduction apply in its proper order we must, for the last one falls on what the earlier ones leave behind.
+Her monthly salary is two thousand dollars.
+The tax takes twenty percent of that salary: 0.20 x 2000 = 400 dollars.
+The insurance takes five percent of the same salary: 0.05 x 2000 = 100 dollars.
+Both deductions together remove 400 + 100 = 500 dollars, leaving 2000 - 500 = 1500 dollars after the deductions.
+Now the utility bills, which take a quarter of the money LEFT after the deductions rather than a quarter of the salary: 1500/4 = 375 dollars.
+What survives everything: 1500 - 375 = 1125 dollars.
+Note the trap of quartering the original two thousand, which would overstate the utility bills.
+Thus, one thousand one hundred twenty-five dollars Maria has left.
+Final answer: 1125
+
+@@gsm8k_train_02105
+To find what Tom pays, the lessons he is actually charged for count first we must.
+Ten dance lessons he decides to take, but two of them are free, so the lessons he pays for number 10 - 2 = 8 lessons.
+Each paid lesson costs ten dollars: 10 x 8 = 80 dollars.
+Note the trap of multiplying all ten lessons by ten and reporting one hundred, which would charge him for the free ones as well.
+Check the shape of the answer: eighty is less than the hundred a full-price course would cost, by exactly the twenty the two free lessons were worth.
+Thus, eighty dollars Tom pays.
+Final answer: 80
+
+@@gsm8k_train_02107
+To find the monthly rent, backward through the salary work we must, for the rent is described as a share of what he takes home.
+His gross salary is five thousand dollars per month, and ten percent goes to taxes, so his net salary is 5000 x (1 - 0.10) = 5000 x 0.90 = 4500 dollars.
+Three fifths of that net salary covers the two late rent payments: 4500 x (3/5) = 4500 x 0.60 = 2700 dollars for both months together.
+But the question asks for a single month's rent, and two months are covered by that sum: 2700/2 = 1350 dollars.
+Note the trap of taking three fifths of the gross five thousand rather than of the net, or of reporting the two-month total as though it were one month's rent.
+Thus, one thousand three hundred fifty dollars his monthly rent expense is.
+Final answer: 1350
+
+@@gsm8k_train_02115
+To find each child's cookies, the cookies count first we must, and then the children, and carefully the children.
+Three packages his mother bought, each containing twenty-five cookies: 3 x 25 = 75 cookies in all.
+Now the children. Aku invited four friends, and Aku himself is eating too, so the children number four friends plus one, which is 5 children.
+Each child eats an equal number: 75/5 = 15 cookies apiece.
+Note the trap of dividing among the four friends alone and forgetting Aku, whose birthday it is, which would give eighteen and three-quarters and should look wrong immediately.
+Thus, fifteen cookies each child will eat.
+Final answer: 15
+
+@@gsm8k_train_02121
+To find the extra cost, both recipes price we must and then compare them.
+A jar of peanut butter costs three dollars. A jar of almond butter costs three times that amount: 3 x 3 = 9 dollars.
+Each batch of cookies requires half a jar, so the almond butter costs nine divided by two, which is 4.5 dollars per batch, while the peanut butter costs three divided by two, which is 1.5 dollars per batch.
+The extra cost per batch is therefore 4.5 - 1.5 = 3 dollars.
+Note the trap of comparing whole jars rather than the half-jars a batch actually consumes, which would give six rather than three.
+Thus, three dollars more per batch it costs to make almond butter cookies instead of peanut butter cookies.
+Final answer: 3
+
+@@gsm8k_train_02124
+To find what James keeps, each spending taken of what REMAINS we must handle, and not of the original saving.
+His allowance is ten dollars a week, and he saves it all for four weeks: 4 x 10 = 40 dollars saved.
+The video game takes half of that saving: 40/2 = 20 dollars spent, leaving 40 - 20 = 20 dollars.
+The book takes a quarter of what is LEFT rather than a quarter of the original forty: 20/4 = 5 dollars spent, leaving 20 - 5 = 15 dollars.
+Note the trap of quartering the original forty, which would spend ten on the book and leave only ten.
+Thus, fifteen dollars James has left.
+Final answer: 15
+
+@@gsm8k_train_02102
+To find what Maria keeps, each deduction apply in its proper order we must, for the last one falls upon what the earlier ones leave behind rather than upon the salary itself.
+Her monthly salary is two thousand dollars, and that is our starting figure.
+The tax first. Twenty percent of her salary goes to paying tax: 0.20 x 2000 = 400 dollars taken.
+The insurance next. Five percent of that same salary goes to insurance: 0.05 x 2000 = 100 dollars taken.
+Both of those deductions come out of the two thousand, so what remains after them is 2000 - 400 - 100 = 1500 dollars.
+Now the utility bills, and here the care is needed. A quarter of the money LEFT AFTER THE DEDUCTIONS is spent on them, not a quarter of the original salary: 1500/4 = 375 dollars on utilities.
+What survives everything: 1500 - 375 = 1125 dollars.
+Note the trap of quartering the original two thousand, which would spend five hundred on utilities and understate what Maria keeps.
+Thus, one thousand one hundred twenty-five dollars Maria has left after the deductions and utility bills.
+Final answer: 1125
+
+@@gsm8k_train_02141
+To find Jerry's weekly mowing time, each mower separately handle we must, for different speeds they carry and different shares of the lawn they cover.
+Eight acres of lawn Jerry mows each week in total.
+The riding mower's share first. Three quarters of the lawn it covers: (3/4) x 8 = 6 acres.
+The push mower's share next. The rest is one quarter: (1/4) x 8 = 2 acres.
+Check that split before going further: six and two do sum to eight, the whole lawn, so nothing is lost or double-counted.
+Now the times. The riding mower cuts two acres an hour, so its six acres take 6/2 = 3 hours. The push mower cuts one acre an hour, so its two acres take 2/1 = 2 hours.
+Finally both stretches of work together, one after the other since Jerry cannot drive both mowers at once: 3 + 2 = 5 hours.
+Note the trap of dividing the whole eight acres by a single rate, which would ignore that the two mowers work at different speeds entirely.
+Thus, five hours Jerry mows each week.
+Final answer: 5
+
+@@gsm8k_train_02142
+To find the seaweed fed to livestock, each fraction taken of the RIGHT quantity we must handle, for the second applies to a reduced pile.
+Four hundred pounds of seaweed Carson harvests in total.
+The fire-starting share first. Fifty percent of the whole harvest is only good for starting fires: 0.50 x 400 = 200 pounds.
+Removing that leaves 400 - 200 = 200 pounds of seaweed still to be sorted.
+Now the human-edible share, and here the care is needed. Twenty-five percent of WHAT IS LEFT can be eaten by humans, not twenty-five percent of the original four hundred: 0.25 x 200 = 50 pounds.
+The rest is fed to livestock: 200 - 50 = 150 pounds.
+Note the trap of taking the quarter of the original harvest, which would give a hundred pounds to humans and leave only a hundred for the livestock.
+Thus, one hundred fifty pounds of seaweed are fed to livestock.
+Final answer: 150
+
+@@gsm8k_train_02144
+To find Sharon's coffee spending, pods first we must count, then boxes, then dollars.
+Forty days she will be at the vacation rental, and three coffee pods she uses every morning: 3 x 40 = 120 pods needed for the trip.
+The pods come thirty to a box, so the boxes required number 120/30 = 4 boxes.
+Each box costs eight dollars: 4 x 8 = 32 dollars.
+Note the trap of pricing the pods individually, when they are sold only by the box, and note also that four boxes divide the hundred twenty exactly with none wasted.
+Thus, thirty-two dollars Sharon will spend on coffee to last her the whole trip.
+Final answer: 32
+
+@@gsm8k_train_02148
+To find Missy's viewing time, each kind of programme separately count we must.
+The reality shows first. Five of them she watches, and twenty-eight minutes each: 5 x 28 = 140 minutes.
+The cartoon next. One of it, running ten minutes.
+Now both together: 140 + 10 = 150 minutes.
+Note the trap of applying the twenty-eight minutes to the cartoon as well, which would badly overstate her evening.
+Thus, one hundred fifty minutes Missy spends watching television.
+Final answer: 150
+
+@@gsm8k_train_02151
+To find Charley's pencils, each loss in order apply we must, for the second is a fraction of what the first left behind.
+Thirty pencils she bought at the start.
+Six were lost while moving to school: 30 - 6 = 24 pencils remaining.
+Then she lost one third of the REMAINING pencils rather than a third of the original thirty: (1/3) x 24 = 8 pencils lost.
+What survives: 24 - 8 = 16 pencils.
+Note the trap of taking a third of the original thirty, which would lose ten instead of eight and leave the wrong count.
+Thus, sixteen pencils Charley currently has.
+Final answer: 16
+
+@@gsm8k_train_02159
+To find Marla's total errand time, all three stretches of the errand count we must, and the return drive not forget.
+Twenty minutes she spends driving one way to her son's school.
+Seventy minutes she spends attending the parent-teacher night.
+Then the same twenty minutes again driving home, for the return journey costs what the outward one did.
+All three together: 20 + 70 + 20 = 110 minutes.
+Note the trap of counting the drive only once, which would forget that she must come home again and understate the errand by twenty minutes.
+Thus, one hundred ten minutes Marla spends on this errand in total.
+Final answer: 110
+
+@@gsm8k_train_02161
+To find what Renata ended with, through her whole Saturday in order follow we must, for her money rises and falls many times.
+She began with ten dollars. The charity ticket cost four: 10 - 4 = 6 dollars remaining.
+Then she won the ninety-dollar prize: 6 + 90 = 96 dollars.
+At the casino she lost fifty, then ten, then five: 50 + 10 + 5 = 65 dollars of losses, leaving 96 - 65 = 31 dollars.
+At the gas station she spent a dollar on water and a dollar on a lottery ticket: 1 + 1 = 2 dollars, leaving 31 - 2 = 29 dollars.
+Then the lottery ticket won her sixty-five dollars: 29 + 65 = 94 dollars.
+Note that the order matters throughout, for each step acts on the running balance rather than on her starting ten.
+Thus, ninety-four dollars Renata ended the day with.
+Final answer: 94
+
+@@gsm8k_train_02167
+To find the driver's profit, her earnings and her fuel cost separately compute we must, and only then subtract.
+The distance first. Thirty miles an hour she drives, across ten hours: 30 x 10 = 300 miles driven.
+Her earnings next. Fifty cents she is paid for every mile: 300 x 0.50 = 150 dollars earned.
+Now the fuel. Ten miles per gallon her truck manages, so the fuel used is 300/10 = 30 gallons. At two dollars a gallon that costs 30 x 2 = 60 dollars.
+Her profit is earnings less fuel cost: 150 - 60 = 90 dollars.
+Note the trap of reporting one hundred fifty, which is her gross earnings rather than the money she actually makes after paying for gas.
+Thus, ninety dollars she makes if she drives for ten hours.
+Final answer: 90
+
+@@gsm8k_train_02169
+To find the winning margin, John's own time compute first we must, for only his speed is given rather than his time.
+John runs fifteen miles per hour for a five-mile race. Time is distance divided by speed, so his time is five divided by fifteen, which is one third of an hour.
+Into minutes that must be converted, for the rival's time is given in minutes: (1/3) x 60 = 20 minutes for John.
+The next fastest runner took twenty-three minutes.
+The margin is therefore 23 - 20 = 3 minutes.
+Note the trap of leaving John's time in hours and comparing it against minutes, which would mix the units and give nonsense.
+Thus, by three minutes John won the race.
+Final answer: 3
+
+@@gsm8k_train_02172
+To find the house's candles, the living room determine first we must, and carefully, for the relation runs the opposite way to how it first reads.
+Kalani has twenty candles in her bedroom, and that number is TWICE the number in the living room. So with L for the living room: 2L = 20, and dividing gives L = 20/2 = 10 candles in the living room.
+The house before Donovan arrives therefore holds 20 + 10 = 30 candles.
+Donovan brings in twenty more from the candle shop: 30 + 20 = 50 candles.
+Note the trap of doubling the twenty to get the living room, when the living room is the SMALLER of the two rooms.
+Thus, fifty candles the total number in the house is.
+Final answer: 50
+
+@@gsm8k_train_02173
+To find the people per table, everyone at the reunion count first we must, kids and adults alike.
+Forty-five kids and one hundred twenty-three adults attended, so the total number of people is forty-five plus one hundred twenty-three, giving 168 people.
+Fourteen tables there were when they sat down to eat, and the people divided among them: one hundred sixty-eight divided by fourteen gives 12 people per table.
+Note the trap of seating only the adults or only the kids, when the question asks how many people sat at each table and both groups sat down together.
+Thus, twelve people sat at each table.
+Final answer: 12
+
+@@gsm8k_train_02175
+To find the three girls' books, from Beatrix upward the chain climb we must.
+Beatrix has thirty books, given to us directly.
+Alannah has twenty more books than Beatrix: 30 + 20 = 50 books.
+Now Queen, who has one fifth TIMES MORE than Alannah, which means Alannah's count plus a fifth of it, or six fifths of Alannah: (6/5) x 50 = 60 books.
+All three girls together: 30 + 50 + 60 = 140 books.
+Note the trap of reading one fifth times more as one fifth OF Alannah, which would give ten and badly understate Queen's shelf.
+Thus, one hundred forty books they have in total.
+Final answer: 140
+
+@@gsm8k_train_02183
+To find the planks Andrew bought, every room count we must, and the ruined planks add at the end.
+The named rooms first. The bedroom took eight planks, the living room twenty, and the kitchen eleven.
+The guest bedroom took two fewer planks than Andrew's own bedroom: 8 - 2 = 6 planks.
+The two hallways took four planks each.
+All of those together: 8 + 20 + 11 + 6 + 4 + 4 = 53 planks.
+Now the ruined planks. Andrew ruined three planks in each of two bedrooms: 3 x 2 = 6 planks ruined and replaced, bringing the count to 53 + 6 = 59 planks.
+Then he bought six extra leftover planks: 59 + 6 = 65 planks.
+Thus, sixty-five wooden planks Andrew bought in total.
+Final answer: 65
+
+@@gsm8k_train_02184
+To find Frankie's pets, the four-legged clue use first we must, for it is the key that unlocks the cats.
+Six of his pets have four legs, and the four-legged pets are his cats and his dogs. He has two dogs, so with c for the cats: 2 + c = 6.
+Solve for the cats: c = 6 - 2, which gives c = 4 cats.
+Now the rest of the menagerie. The snakes number six more than the cats: s = 4 + 6 = 10 snakes. The parrots number one less than the cats: p = 4 - 1 = 3 parrots.
+All the pets together, cats and snakes and parrots and dogs: 4 + 10 + 3 + 2, which gives a total of 19 pets.
+Note the trap of counting snakes or parrots among the four-legged pets, for snakes have no legs at all and parrots have two.
+Thus, nineteen pets in total Frankie has.
+Final answer: 19
+
+@@gsm8k_train_02184
+To find how many pets Frankie has in total, the four-legged clue use first we must, for it is the single key that unlocks every other count in this problem.
+Consider which of his pets walk on four legs. Cats have four legs and dogs have four legs. Snakes have no legs whatsoever, and parrots have only two. So the six four-legged pets must be made up entirely of his cats and his dogs, and nothing else.
+He has two dogs, the question tells us. So with c standing for the number of cats: 2 + c = 6.
+Solve for the cats by subtracting the dogs from both sides: c = 6 - 2, which gives c = 4 cats.
+Now every other animal hangs from that count of four cats.
+The snakes first. He has six more snakes than he has cats: s = 4 + 6 = 10 snakes.
+The parrots next. He has one less parrot than cats: p = 4 - 1 = 3 parrots.
+Now all four kinds of pet together, the cats and the snakes and the parrots and the dogs: 4 + 10 + 3 + 2, which gives a total of 19 pets.
+Note the trap of counting snakes or parrots among the six four-legged pets, which would make the cats fewer and every later count wrong along with them.
+Thus, nineteen pets in total Frankie has.
+Final answer: 19
