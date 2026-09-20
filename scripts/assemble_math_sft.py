@@ -33,6 +33,7 @@ work/math_rejects.jsonl                rejects with reasons, for regeneration
 """
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -40,10 +41,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path("data/verifier")))
 from gsm8k_verifier import verify, normalize_number  # noqa: E402
 
-SRC = Path("work/sft_source_sample.jsonl")
-REWRITES = Path("work/yoda_rewrites.txt")
-OUT = Path("data/math/gsm8k_yoda_sft_train.jsonl")
-REJECTS = Path("work/math_rejects.jsonl")
+# Paths are overridable so a NEW dataset can be assembled without touching the
+# frozen v1 files. Never let a second authoring pass overwrite the dataset that
+# produced results you have already reported.
+SRC = Path(os.environ.get("SFT_SRC", "work/sft_source_sample.jsonl"))
+REWRITES = Path(os.environ.get("SFT_REWRITES", "work/yoda_rewrites.txt"))
+OUT = Path(os.environ.get("SFT_OUT", "data/math/gsm8k_yoda_sft_train.jsonl"))
+REJECTS = Path(os.environ.get("SFT_REJECTS", "work/math_rejects.jsonl"))
 
 BANNED = re.compile(
     r"\b(yoda|jedi|sith|padawan|lightsab\w*|the force|skywalker|dagobah|"
