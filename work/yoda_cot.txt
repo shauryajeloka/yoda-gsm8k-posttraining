@@ -530,3 +530,1002 @@ All four quantities we now hold in hand. Emma gathered forty and then sixty; Tan
 Four hundred eggs the whole pile held among every hunter there, so what the six others gathered is simply whatever the pair did not: 400 - 180 = 220 eggs.
 Thus, two hundred twenty eggs the six other egg hunters collected.
 Final answer: 220
+
+@@gsm8k_train_00257
+To find what Hannah has left, her earnings total first we must, and then the spending subtract from it.
+The cookies: forty pieces at eighty cents each, so 40 x 0.8 = 32 dollars.
+The cupcakes: thirty at two dollars each, so 30 x 2 = 60 dollars.
+Both sales together give her earnings: 32 + 60 = 92 dollars.
+Now the spending, and note that TWO sets of measuring spoons she bought and not one: 2 x 6.5 = 13 dollars.
+What remains is earnings less spending: 92 - 13 = 79 dollars.
+Thus, seventy-nine dollars Hannah has left.
+Final answer: 79
+
+@@gsm8k_train_00259
+To find class C, the other two classes determine first we must, for only by removing them does the third appear.
+Class A holds forty percent of the eighty students: 0.40 x 80 = 32 students.
+Class B holds twenty-one fewer than class A, and fewer than A it is rather than fewer than the whole school: 32 - 21 = 11 students.
+Now those two classes together: 32 + 11 = 43 students accounted for.
+Class C holds everyone the first two did not take: 80 - 43 = 37 students.
+Thus, thirty-seven students in class C there are.
+Final answer: 37
+
+@@gsm8k_train_00263
+To find John's money, the trees count first we must, then the apples, then the dollars.
+A plot of three trees by four trees he plants, which is a rectangle, so multiplication counts them: 3 x 4 = 12 trees standing.
+Each tree gives five apples: 12 x 5 = 60 apples gathered.
+Each apple sells for half a dollar: 60 x 0.5 = 30 dollars.
+Note the traps of stopping at twelve or at sixty, for neither trees nor apples the question wants, but dollars.
+Thus, thirty dollars John makes.
+Final answer: 30
+
+@@gsm8k_train_00264
+To find the restaurant's monthly earnings, weekdays and weekend days separately handle we must, for differently they earn.
+Five weekdays fill a week, each bringing six hundred dollars: 5 x 600 = 3000 dollars from the weekdays.
+On a weekend day the restaurant earns twice as much as on a weekday: 2 x 600 = 1200 dollars per weekend day.
+Two weekend days a week holds, so the weekend brings 2 x 1200 = 2400 dollars.
+One whole week together: 3000 + 2400 = 5400 dollars.
+Four weeks the month holds: 5400 x 4 = 21600 dollars.
+Two traps here wait: doubling the weekly total rather than the daily rate, and forgetting that a weekend carries two days.
+Thus, twenty-one thousand six hundred dollars by the month's end it earns.
+Final answer: 21600
+
+@@gsm8k_train_00268
+To find the average, sum the bouquets first we must, and then among them divide.
+Three bouquets Trevor bought, holding nine, fourteen and thirteen carnations. Added together: 9 + 14 + 13 = 36 carnations in all.
+Now the average, which divides the whole by the number of parts sharing it, and three bouquets there are: 36/3 = 12 carnations.
+Check the shape of it: twelve sits between the smallest bouquet's nine and the largest bouquet's fourteen, as any true average must.
+Thus, twelve carnations on average each bouquet holds.
+Final answer: 12
+
+@@gsm8k_train_00275
+To find how much more Gretel makes, both new salaries calculate we must, and only then their difference take.
+Hansel's raise is ten percent of thirty thousand: 0.10 x 30000 = 3000 dollars. His new salary becomes 30000 + 3000 = 33000 dollars.
+Gretel begins at the same thirty thousand but receives fifteen percent: 0.15 x 30000 = 4500 dollars. Her new salary becomes 30000 + 4500 = 34500 dollars.
+Now the comparison the question asks for: 34500 - 33000 = 1500 dollars more for Gretel.
+A shortcut confirms it: their raises differ by five percent of thirty thousand, which is exactly fifteen hundred.
+Thus, one thousand five hundred dollars more than Hansel, Gretel will make.
+Final answer: 1500
+
+@@gsm8k_train_00285
+To find his daily viewing, the whole show measure first we must, and then across the days divide it.
+Twenty episodes there are, each thirty minutes long: 20 x 30 = 600 minutes of show awaits him.
+But in hours the question asks its answer, and minutes we hold. Sixty minutes fill an hour: 600/60 = 10 hours in total.
+Now spread that viewing across the five days he allows himself: 10/5 = 2 hours each day.
+Note the trap of dividing the minutes by the days and reporting one hundred twenty, correct in minutes but wrong in the units requested.
+Thus, two hours a day John must watch.
+Final answer: 2
+
+@@gsm8k_train_00287
+To find what Bran still owes, two helpers apply in turn we must, the scholarship first and the wages second.
+The scholarship covers thirty percent of the ninety-dollar tuition: 0.30 x 90 = 27 dollars it pays.
+What remains upon his shoulders after it: 90 - 27 = 63 dollars.
+Now the part-time job, which pays fifteen dollars a month across three months: 15 x 3 = 45 dollars he will earn.
+Those earnings reduce what he must find elsewhere: 63 - 45 = 18 dollars.
+Thus, eighteen dollars Bran still needs to pay.
+Final answer: 18
+
+@@gsm8k_train_00288
+To find the first year's cost, each gym separately price we must, for differently shaped their fees are.
+The cheap gym first. Ten dollars a month across twelve months: 10 x 12 = 120 dollars of monthly fees. Its flat fifty-dollar sign-up joins that: 120 + 50 = 170 dollars for the cheap gym.
+The expensive gym next. Three times the cheap gym's monthly rate it costs: 3 x 10 = 30 dollars each month. Its sign-up fee is four months of ITS OWN membership: 4 x 30 = 120 dollars. Its year of monthly fees: 30 x 12 = 360 dollars. That gym in total: 360 + 120 = 480 dollars.
+Now both gyms together add: 170 + 480 = 650 dollars.
+Thus, six hundred fifty dollars in the first year John paid.
+Final answer: 650
+
+@@gsm8k_train_00292
+To find May's scarves, each colour of yarn separately handle we must, though the same rule governs them all.
+Three scarves from a single yarn she knits, whatever its colour.
+With two red yarns: 2 x 3 = 6 red scarves.
+With six blue yarns: 6 x 3 = 18 blue scarves.
+With four yellow yarns: 4 x 3 = 12 yellow scarves.
+Now all three colours together add: 6 + 18 + 12 = 36 scarves.
+A shorter road exists and check your work with it you may: twelve yarns in all she bought, and three scarves apiece gives thirty-six directly.
+Thus, thirty-six scarves May will be able to make.
+Final answer: 36
+
+@@gsm8k_train_00296
+To find the sugar remaining, understand that one bag only is harmed we must, and the others stand untouched.
+Twenty-four kilos split evenly among four bags: 24/4 = 6 kilos in every bag.
+The torn bag loses half of ITS contents, not half of everything Chelsea owns: 6/2 = 3 kilos fall to the ground.
+So the torn bag still holds 6 - 3 = 3 kilos.
+The other three bags lost nothing at all, and together they hold 3 x 6 = 18 kilos.
+Now the damaged bag and the untouched ones together add: 3 + 18 = 21 kilos.
+Note the trap of halving the whole twenty-four, which would be right only if every bag had torn.
+Thus, twenty-one kilos of sugar remain.
+Final answer: 21
+
+@@gsm8k_train_00301
+To find the students who read nothing, the three reading groups count first we must, and then remove them from the class.
+Those reading three or more novels: one sixth of the two hundred forty students, so (1/6) x 240 = 40 students.
+Those reading two novels: thirty-five percent, so 0.35 x 240 = 84 students.
+Those reading one novel: five twelfths, so (5 x 240)/12 = 1200/12 = 100 students.
+All the readers together: 40 + 84 + 100 = 224 students.
+The rest read nothing at all, and the rest is the whole class less the readers: 240 - 224 = 16 students.
+Note that fractions and percentages mix freely here, so long as each is taken of the same two hundred forty.
+Thus, sixteen students read no novels.
+Final answer: 16
+
+@@gsm8k_train_00310
+To find what Janet owes, each kind of employee separately cost we must, and the tax add only at the very end.
+The warehouse workers first. Fifteen dollars an hour across eight hours gives a daily wage of 15 x 8 = 120 dollars. Across twenty-five working days: 120 x 25 = 3000 dollars a month for one worker. Four such workers there are: 4 x 3000 = 12000 dollars.
+The managers next. Twenty dollars an hour across eight hours: 20 x 8 = 160 dollars daily. Across twenty-five days: 160 x 25 = 4000 dollars monthly for one manager. Two managers there are: 2 x 4000 = 8000 dollars.
+All wages together: 12000 + 8000 = 20000 dollars.
+Now the FICA tax, ten percent of that wage bill: 0.10 x 20000 = 2000 dollars.
+Janet owes the wages AND the tax both: 20000 + 2000 = 22000 dollars.
+Thus, twenty-two thousand dollars Janet owes for the month.
+Final answer: 22000
+
+@@gsm8k_train_00314
+To find Saturday's reading, the weekly goal calculate first we must, and then subtract what is already done.
+An average of fifty pages across seven days means the week must hold 50 x 7 = 350 pages. Note that an average demands every day be counted, Wednesday included, even though nothing was read then.
+Now what he has already read. Sunday, Monday, Tuesday, the empty Wednesday, Thursday and Friday together: 43 + 65 + 28 + 0 + 70 + 56 = 262 pages.
+Saturday must supply whatever is still missing: 350 - 262 = 88 pages.
+Check the shape of it: eighty-eight is a heavy day, and larger than fifty precisely because Wednesday was empty.
+Thus, eighty-eight pages on Saturday Berry must read.
+Final answer: 88
+
+@@gsm8k_train_00316
+To find the new price, the increase calculate first we must and then to the old price add it.
+The original price is two hundred twenty dollars, and the increase is fifteen percent of it.
+Calculate that increase: 220 x (15/100) = 220 x 0.15 = 33 dollars.
+Now pause, for thirty-three is the amount by which the price GREW and not the price itself. Reporting thirty-three the common error here is.
+The increase joins the old price rather than replacing it: 220 + 33 = 253 dollars.
+Thus, two hundred fifty-three dollars the new price is.
+Final answer: 253
+
+@@gsm8k_train_00322
+To find the hidden gratuity, forward through the legitimate bill build we must, and then subtract it from what was actually charged.
+The food and drink first: eighty dollars for the steak and ten for the wine, which is 80 + 10 = 90 dollars before anything is added.
+Next the sales tax, ten percent, which sits upon that ninety. Including tax the bill becomes 90 x (1 + 0.10) = 90 x 1.10 = 99 dollars.
+Now the gratuity, charged after tax and without the customer's knowledge. One hundred forty dollars was the final bill, so the hidden charge is the gap between what was owed and what was taken: 140 - 99 = 41 dollars.
+Thus, forty-one dollars for gratuities they charged.
+Final answer: 41
+
+@@gsm8k_train_00327
+To find the coats, grow the herd first we must, then halve it, and only then divide into coats.
+Thirty minks Andy buys, and six babies each of them bears: 30 x 6 = 180 baby minks born.
+Adults and babies together make the whole herd: 30 + 180 = 210 minks.
+Now the activists free half of that total, so half remain in his keeping: 210/2 = 105 minks.
+Fifteen skins each coat demands: 105/15 = 7 coats.
+Note the trap of halving before the babies are counted, which would leave far fewer.
+Thus, seven coats Andy can make.
+Final answer: 7
+
+@@gsm8k_train_00346
+To find the cans of paint, wall by wall the area gather we must, for the walls differ in width though not in height.
+The first kind of wall: three metres wide and two tall, so its area is 3 x 2 = 6 square metres. Two such walls there are, so together they give 2 x 6 = 12 square metres.
+The third wall: five metres wide and two tall, so 5 x 2 = 10 square metres.
+The final wall: four metres wide and two tall, so 4 x 2 = 8 square metres.
+Now all four walls together add: 12 + 10 + 8 = 30 square metres of surface to cover.
+Each can of paint covers two square metres, so the cans required number 30/2 = 15.
+Note the trap of counting the first wall once rather than twice.
+Thus, fifteen cans of paint Lucille needs.
+Final answer: 15
+
+@@gsm8k_train_00351
+To find the sandwiches, the possible sandwich days count first we must, and then the absences subtract.
+Two sandwich days each week there are, Wednesday and Friday. Across thirty-six weeks of school that gives 36 + 36 = 72 possible sandwich days.
+But absent Jackson was on some of them, one Wednesday and two Fridays: 1 + 2 = 3 days missed.
+Those missed days carried no sandwich, so from the possible ones remove them: 72 - 3 = 69 sandwiches eaten.
+Note the trap of subtracting three WEEKS rather than three days, which would take six sandwiches instead of three.
+Thus, sixty-nine peanut butter and jelly sandwiches Jackson ate.
+Final answer: 69
+
+@@gsm8k_train_00354
+To find what Seth bought, backward from the ending work we must, undoing each gift in the reverse order it was given.
+Let x be the boxes he purchased at the start. One box went to his mother, leaving x - 1 boxes. Then half of THOSE he gave away, so what survived is half of x minus one, and four boxes that equals: (x-1)/2 = 4.
+Multiply both sides by two to undo the halving: x - 1 = 8.
+Add the mother's box back to undo the first gift: x = 9.
+Check it forward: nine less one is eight, and half of eight is four, which matches what he has.
+Thus, nine boxes of oranges Seth bought in the first place.
+Final answer: 9
+
+@@gsm8k_train_00358
+To find what goes back in the jar, follow the marbles OUT of the jar we must, not those still inside it.
+Twelve marbles Carl takes out to play with. Half of those he drops and loses: (1/2) x 12 = 6 marbles lost.
+The marbles remaining in his hands after the loss: 12 - 6 = 6 marbles.
+Then ten more he takes out of the jar, so the marbles out of the jar now number 6 + 10 = 16.
+His mother arrives with a bag of twenty-five new marbles, and those join what he holds: 6 + 10 + 25 = 41 marbles.
+Note that the six lost marbles never return, and the marbles still sitting in the jar were never taken out, so neither belongs in this count.
+Thus, forty-one marbles into the jar Carl will put.
+Final answer: 41
+
+@@gsm8k_train_00359
+To find the pages read, each reader's rate per minute determine we must, and then across the elapsed time multiply.
+Rene's rate: thirty pages in sixty minutes, which is 30/60 = 0.5 pages every minute.
+Lulu's rate: twenty-seven pages in sixty minutes, which is 27/60 = 0.45 pages every minute.
+Cherry's rate: twenty-five pages in sixty minutes, which is 25/60 = 5/12 pages every minute.
+Two hundred forty minutes they have been reading. So Rene reads 0.5 x 240 = 120 pages, Lulu reads 0.45 x 240 = 108 pages, and Cherry reads (5/12) x 240 = 100 pages.
+Now all three readers together add: 120 + 108 + 100 = 328 pages.
+Thus, three hundred twenty-eight pages in total they have finished reading.
+Final answer: 328
+
+@@gsm8k_train_00392
+To find the washing time, each pile measure against the right other pile we must, in the proper order.
+The clothes are given to us directly: thirty minutes.
+The towels take twice as long as the clothes: 2 x 30 = 60 minutes.
+The sheets take fifteen minutes LESS THAN THE TOWELS, and not less than the clothes: 60 - 15 = 45 minutes.
+Now all three piles washed one after another: 30 + 60 + 45 = 135 minutes.
+Note the trap of subtracting the fifteen from the clothes instead, which would give a smaller and wrong total.
+Thus, one hundred thirty-five minutes to wash everything it takes.
+Final answer: 135
+
+@@gsm8k_train_00408
+To find the allowance for the next person, the totals recover from the averages first we must, for averages hide totals.
+Three adults averaging one hundred forty pounds each: 3 x 140 = 420 pounds among them.
+Two children averaging sixty-four pounds each: 2 x 64 = 128 pounds among them.
+The five people already inside weigh together: 420 + 128 = 548 pounds.
+Six hundred pounds the sign permits in all, so the room remaining for the next person is the difference: 600 - 548 = 52 pounds.
+Note that an average multiplied by its count gives the true total, which is why the averages were offered at all.
+Thus, fifty-two pounds at most the next person may weigh.
+Final answer: 52
+
+@@gsm8k_train_00413
+To find the green balls, red from blue determine first we must, and green only by subtraction appears.
+Twice as many red balls as blue there are, and eleven blue are given: 2 x 11 = 22 red balls.
+Blue and red counted together: 11 + 22 = 33 balls accounted for.
+The green are everything else in the collection, since only three colours exist here: 40 - 33 = 7 green balls.
+Check the shape of it: eleven and twenty-two and seven do sum to forty, the whole Ryan owns.
+Thus, seven green balls there are.
+Final answer: 7
+
+@@gsm8k_train_00420
+To find the room-cleaning time, the units match first we must, for hours and minutes mix badly.
+Two hours she spent in total, and in minutes that is 2 x 60 = 120 minutes.
+Let x be the minutes spent cleaning her room. The four tasks together fill her total: 30 + 15 + x + 40 = 120.
+Combine the known tasks on the left: 85 + x = 120.
+Solve for the unknown: x = 120 - 85, which gives x = 35 minutes.
+Note the trap of subtracting eighty-five from two rather than from one hundred twenty, which mixing the units would cause.
+Thus, thirty-five minutes cleaning her room Miriam spent.
+Final answer: 35
+
+@@gsm8k_train_00423
+To find what Mom has left, everything she bought total first we must, and then from what she carried subtract it.
+Careful with the bananas you must be, for TWO packs at four euros each she bought and not one: 2 x 4 = 8 euros on bananas.
+The other purchases are single items: pears at two euros, asparagus at six, and a chicken at eleven.
+Everything together: 8 + 2 + 6 + 11 = 27 euros spent at the market.
+Fifty-five euros she carried in, so what returns home with her is the difference: 55 - 27 = 28 euros.
+Thus, twenty-eight euros Mom has left.
+Final answer: 28
+
+@@gsm8k_train_00426
+To find the students of both levels, the elementary school build from the middle school we must, and read the phrase in its proper order.
+Let M be the middle school students, and fifty of them there are: M = 50.
+The elementary school is three less than four times the middle school: E = 4M - 3, and in that order it must be read.
+Substitute the fifty: E = 4(50) - 3.
+Multiply first: 4 x 50 = 200. Then subtract the three: 200 - 3 = 197 students in the elementary school.
+Now both levels together, for the question asks about the pair and not the elementary alone: 197 + 50 = 247 students.
+Note the trap of subtracting three before multiplying, which would give one hundred eighty-eight.
+Thus, two hundred forty-seven students in both levels there are.
+Final answer: 247
+
+@@gsm8k_train_00428
+To find the eggs, day by day build we must, for the last day rests upon all three before it.
+Day one is given: fifty eggs.
+Day two doubles the first day's production: 2 x 50 = 100 eggs.
+Day three lays twenty more than the second day, not twenty more than the first: 100 + 20 = 120 eggs.
+Now the fourth day, which doubles the TOTAL of the first three days, so that running total we need first: 50 + 100 + 120 = 270 eggs across three days. Doubled, that gives 2 x 270 = 540 eggs on the final day.
+All four days joined at last: 50 + 100 + 120 + 540 = 810 eggs.
+Note the trap of doubling only the third day rather than the running total.
+Thus, eight hundred ten eggs the frog laid.
+Final answer: 810
+
+@@gsm8k_train_00432
+To find the number of customers, the profit per book determine first we must, then the books, then the people.
+Let x be the books sold. Her revenue is 20x dollars and her cost is 5x dollars, since twenty she receives and five it costs for every book.
+Profit is revenue less cost, and one hundred twenty dollars of profit she realised: 20x - 5x = 120.
+Combine the terms: 15x = 120.
+Solve for x: x = 120/15 = 8 books sold in total.
+But PEOPLE the question asks for and not books, and each customer buys two books at a time: 8/2 = 4 customers.
+Note the trap of stopping at eight, which counts books rather than buyers.
+Thus, four people Tina sold the books to.
+Final answer: 4
+
+@@gsm8k_train_00439
+To find the key chains, the other purchases price first we must, and then see what remains for them.
+Two t-shirts at eight dollars each: 2 x 8 = 16 dollars.
+Two bags at ten dollars each: 2 x 10 = 20 dollars.
+Those purchases together: 16 + 20 = 36 dollars spent.
+From his fifty dollars that leaves: 50 - 36 = 14 dollars for key chains.
+Now the key chains, sold three pieces to a two-dollar set. First the sets he can afford: 14/2 = 7 sets.
+But PIECES the question asks for and not sets, and three pieces fill each set: 7 x 3 = 21 pieces.
+Thus, twenty-one key chains Timothy can buy.
+Final answer: 21
+
+@@gsm8k_train_00440
+To find the aunt's present age, into the future step we must and then back again to today.
+Cori is three years old today. In five years she will be 3 + 5 = 8 years old.
+At that future moment she will be one third of her aunt's age, which means the aunt will be three times Cori's age then: 3 x 8 = 24 years old in five years.
+But TODAY the question asks about, not five years hence, and the aunt ages by those same five years. So remove them: 24 - 5 = 19 years.
+Note that both of them gain five years, so the removal applies to the aunt exactly as the addition applied to Cori.
+Thus, nineteen years old her aunt is today.
+Final answer: 19
+
+@@gsm8k_train_00359
+To find the total pages read, each reader's rate per single minute determine we must first, and only then across the elapsed time multiply. Their rates are given per sixty minutes, but two hundred forty minutes have passed, so directly usable those rates are not.
+Rene's rate first: thirty pages in sixty minutes, which reduces to 30/60 = 0.5 pages every minute.
+Lulu's rate next: twenty-seven pages in sixty minutes, which is 27/60 = 0.45 pages every minute.
+Cherry's rate last: twenty-five pages in sixty minutes, which is 25/60 = 5/12 pages every minute.
+Now the reading itself. Two hundred forty minutes each of them has been reading, so multiply every rate by that span.
+Rene reads 0.5 x 240 = 120 pages. Lulu reads 0.45 x 240 = 108 pages. Cherry reads (5/12) x 240 = 100 pages.
+Finally all three readers together add, for the question asks about the group and not any single one of them: 120 + 108 + 100 = 328 pages.
+Check the shape of it: Rene is fastest and Cherry slowest, and their page counts fall in that same order.
+Thus, three hundred twenty-eight pages in total they have finished reading.
+Final answer: 328
+
+@@gsm8k_train_00408
+To find the allowance for the next passenger, the true totals recover from the averages we must first, for an average hides the total it came from.
+Three adults there are, and one hundred forty pounds is their average weight. An average multiplied by its count returns the total, so the adults together weigh 3 x 140 = 420 pounds.
+Two children there are, averaging sixty-four pounds each. So the children together weigh 2 x 64 = 128 pounds.
+Now the five people already standing in the elevator weigh together: 420 + 128 = 548 pounds.
+Six hundred pounds the sign permits before the elevator is overloaded. So the room still remaining for one more passenger is the difference between the limit and the load: 600 - 548 = 52 pounds.
+Note why the averages were offered at all rather than individual weights: multiplied by their counts they give exactly the totals we needed, and the individual weights never matter.
+Thus, fifty-two pounds at most the next person may weigh.
+Final answer: 52
+
+@@gsm8k_train_00420
+To find the room-cleaning time, match the units first we must, for hours and minutes mix badly together.
+Two hours in total Miriam spent, and the tasks are measured in minutes, so convert: 2 x 60 = 120 minutes of work altogether.
+Let x be the minutes spent cleaning her room, the one quantity not given to us. The four tasks together must fill her total: 30 + 15 + x + 40 = 120.
+Combine the three known tasks on the left side: 30 + 15 + 40 = 85 minutes accounted for, so the equation becomes 85 + x = 120.
+Solve for the unknown by subtracting: x = 120 - 85 = 35 minutes.
+Note the trap of subtracting eighty-five from two rather than from one hundred twenty, which mixing the units would cause.
+Thus, thirty-five minutes cleaning her room Miriam spent.
+Final answer: 35
+
+@@gsm8k_train_00444
+To find the margin, each kind of shot separately score we must, for different worths they carry.
+Reggie's layups: three of them at one point each, so 3 x 1 = 3 points.
+Reggie's free throws: two made at two points each, so 2 x 2 = 4 points.
+Reggie's long shot: one made at three points, so 1 x 3 = 3 points.
+Reggie's total then: 3 + 4 + 3 = 10 points.
+His brother shoots only from distance and makes four of them: 4 x 3 = 12 points.
+The margin between them: 12 - 10 = 2 points.
+Note that both took ten shots, but the ones they MISSED matter not at all, only those they made.
+Thus, by two points Reggie loses.
+Final answer: 2
+
+@@gsm8k_train_00453
+To find each friend's share, pool the shells first we must, and then among the right number of people divide.
+Jillian gathered twenty-nine, Savannah seventeen, and Clayton eight. All three piles combine before any giving: 29 + 17 + 8 = 54 shells.
+Now the distribution, and careful here you must be: the shells go to TWO arriving friends, not to the three collectors: 54/2 = 27 shells each.
+Check the shape of it: twenty-seven doubled returns fifty-four exactly, with nothing left over.
+Thus, twenty-seven shells each friend got.
+Final answer: 27
+
+@@gsm8k_train_00455
+To find the days required, the doubling track we must, and count the DAYS rather than the doublings, for there the trap lies waiting.
+Begin with a single amoeba. Every two days it splits in two, and so does every amoeba after it.
+After the first two days, the number of amoebae is 2.
+After four days, each of those two splits: 2 x 2 = 4 amoebae.
+After six days, each of those four splits: 4 x 2 = 8 amoebae.
+After eight days, each of those eight splits: 8 x 2 = 16 amoebae, and sixteen is precisely the number we were seeking.
+The same result by algebra reach we may. The population after t days is 1 x 2^(t/2), and sixteen is what we want, so 16 = 2^(t/2). Since 16 = 2^4, it follows that 2^4 = 2^(t/2), and therefore t/2 = 4, giving t equal to eight days.
+Count not the four doublings but the eight days those doublings consumed. Reporting four the error here is.
+Thus, eight days for one amoeba to become sixteen it takes.
+Final answer: 8
+
+@@gsm8k_train_00456
+To find Chad's saving, everything he received across the year total first we must, for the percentage applies to all of it.
+Four sources of money there are, and all four must be counted: six hundred from mowing yards, two hundred fifty for his birthday, one hundred fifty from selling video games, and another hundred fifty from odd jobs.
+Summed together: 600 + 250 + 150 + 150 = 1150 dollars in the year.
+Now the saving, which is forty percent of that whole sum and not of any single source: 0.40 x 1150 = 460 dollars.
+Note the trap of applying the percentage to the mowing money alone.
+Thus, four hundred sixty dollars Chad will save.
+Final answer: 460
+
+@@gsm8k_train_00458
+To find Marcy's votes, from Joey upward the chain climb we must, one careful link at a time.
+Joey's votes are given: eight.
+Barry got twice as many as THREE MORE THAN Joey's total, so the adding comes first: 3 + 8 = 11 is the quantity Barry's count is built upon.
+Then Barry's own votes: 2 x 11 = 22 votes.
+Marcy got three times Barry's tally: 3 x 22 = 66 votes.
+Note the order carefully, for doubling Joey first and adding three afterwards would give nineteen and then a wrong answer entirely.
+Thus, sixty-six votes Marcy got.
+Final answer: 66
+
+@@gsm8k_train_00465
+To find how much longer the first route runs, both routes fully price we must before comparing them.
+The first route at its worst case. Ten minutes of driving it takes when every light is green, but three minutes each red light adds, and all three lights are red: 3 x 3 = 9 minutes of waiting.
+So the first route takes 10 + 9 = 19 minutes in that worst case.
+The second route carries no stoplights at all and takes a fixed fourteen minutes whatever happens.
+Now the comparison the question actually asks for, which is how much LONGER the first route runs rather than how long it takes: 19 - 14 = 5 minutes.
+Note the trap of reporting nineteen, which answers a question nobody asked.
+Thus, five minutes longer his trip will be.
+Final answer: 5
+
+@@gsm8k_train_00482
+To find the calories burned, feet first we must count, and only then into calories convert them.
+Five laps every night Ian jogs, and each lap measures one hundred feet: 5 x 100 = 500 feet in a single night.
+Now the conversion, and careful with the order you must be. Twenty-five feet of jogging burns one calorie, so a single night burns 500/25 = 20 calories.
+Five nights of that same routine he completes: 20 x 5 = 100 calories.
+Note the trap of stopping at five hundred, which is feet and not calories, or at twenty, which is one night and not five.
+Thus, one hundred calories Ian burns after five days of jogging.
+Final answer: 100
+
+@@gsm8k_train_00484
+To find the team's present size, the departures and arrivals in order follow we must.
+Twenty-five people stood on the team at the start.
+Eight of them quit, so subtract those departures: 25 - 8 = 17 people remaining.
+Then thirteen new members joined, and they join the seventeen who stayed rather than the original twenty-five: 17 + 13 = 30 people.
+Check the shape of it: thirty exceeds twenty-five because more arrived than left, by exactly five.
+Thus, thirty people on the dance team now there are.
+Final answer: 30
+
+@@gsm8k_train_00507
+To find what James paid, understand the offer first we must, for it changes how many pounds are charged.
+Buy one get one free means that for every two pounds he carries home, only one is paid for. Twenty pounds of steak he takes away in total.
+So the pounds he actually pays for number 20/2 = 10 pounds, while the other ten ride out free.
+Fifteen dollars each paid pound costs: 10 x 15 = 150 dollars.
+Note the trap of multiplying all twenty pounds by fifteen, which would give three hundred and ignore the offer entirely.
+Thus, one hundred fifty dollars for the steaks James paid.
+Final answer: 150
+
+@@gsm8k_train_00509
+To find Coco's bill, the energy consumed calculate first we must, and only then its price apply.
+The oven draws two and four tenths of a kilowatt-hour for every hour it runs, and twenty-five hours it ran last month: 2.4 x 25 = 60 kilowatt-hours consumed.
+Now the cost, at one tenth of a dollar for every kilowatt-hour: 60 x 0.10 = 6 dollars.
+Note the trap of multiplying the hours directly by the price, which would skip the consumption rate and give two dollars fifty.
+Thus, six dollars for using his oven Coco will pay.
+Final answer: 6
+
+@@gsm8k_train_00511
+To find what the merchant sold, all three vegetables total first we must, for half of EVERYTHING he sold and not half of one kind.
+Carrots at fifteen kilograms, zucchini at thirteen, and broccoli at eight, each weighed and then added: 15 + 13 + 8 = 36 kilograms installed in his shop.
+Now the selling, which took half of that whole mass: 36/2 = 18 kilograms sold.
+Check the shape of it: eighteen is exactly half of thirty-six, and eighteen kilograms remain unsold.
+Thus, eighteen kilograms of vegetables he sold.
+Final answer: 18
+
+@@gsm8k_train_00535
+To find what Tim paid, unfold the dozens first we must, for in dozens the question hides its count.
+A dozen is twelve, so three dozen eggs number 3 x 12 = 36 eggs.
+Now the price, and note carefully that fifty cents is charged for each individual EGG and not for each dozen: 36 x 0.50 = 18 dollars.
+Consider the wrong path to see why it fails: three dozen at fifty cents a dozen would be a dollar fifty, absurdly cheap for thirty-six eggs.
+Thus, eighteen dollars for the eggs Tim paid.
+Final answer: 18
+
+@@gsm8k_train_00536
+To find the total votes, each cake measure against the witch cake we must, for that seven is the anchor of everything.
+The witch cake's votes are given: seven.
+The unicorn cake drew three times the witch cake's votes: 3 x 7 = 21 votes.
+The dragon cake drew twenty-five more than the witch cake's, not more than the unicorn's: 7 + 25 = 32 votes.
+Now the total, and here the trap waits, for the witch cake's own seven votes were cast too and counted they must be alongside the others: 7 + 21 + 32 = 60 votes.
+Forget the witch cake's seven and fifty-three you would report.
+Thus, sixty votes in total were cast.
+Final answer: 60
+
+@@gsm8k_train_00544
+To find what Elise already had, backward from the ending work we must.
+Two bags today she bought, one of fifteen kilograms and one of ten: 15 + 10 = 25 kilograms brought home.
+Forty kilograms she now holds in total, and that forty is everything she owns, both the new bags and whatever already sat in the cupboard.
+So what she already had is the present total less what she carried home: 40 - 25 = 15 kilograms.
+Note the trap of adding the twenty-five to the forty, which answers a question nobody asked.
+Thus, fifteen kilograms of dog food Elise already had.
+Final answer: 15
+
+@@gsm8k_train_00547
+To find the whole renovation time, everything except the living room finish we must first, for the living room is measured against all the rest combined.
+The bedrooms first. Three bedrooms there are, and four hours each of them takes: 3 x 4 = 12 hours for all the bedrooms.
+The kitchen next. Fifty percent longer than a single bedroom it takes, and one bedroom is four hours, so the extra time is 0.5 x 4 = 2 hours. The kitchen therefore takes 4 + 2 = 6 hours.
+Now everything other than the living room, which is bedrooms and kitchen together: 12 + 6 = 18 hours.
+The living room took twice as much time as that combined figure: 2 x 18 = 36 hours.
+Finally, every room together: 12 + 6 + 36 = 54 hours.
+Note the trap of doubling only a single bedroom rather than the whole of everything else.
+Thus, fifty-four hours the whole renovation took.
+Final answer: 54
+
+@@gsm8k_train_00551
+To find Arlene's pace, notice first which numbers matter we must, for much this problem offers that matters not at all.
+The sixty-pound backpack, her five feet of height, and the sixty degrees of temperature are all distractions, placed to tempt you into using them.
+Pace is distance divided by time and nothing else, so only two numbers feed it: twenty-four miles hiked and six hours spent hiking.
+Divide them: 24/6 = 4 miles per hour.
+Check the shape of it: four miles an hour is an ordinary walking pace, so plausible the answer is.
+Thus, four miles per hour Arlene's average hiking pace was.
+Final answer: 4
+
+@@gsm8k_train_00536
+To find the total votes cast in the baking contest, each cake measured against the witch cake we must handle, for that seven is the anchor from which everything else hangs.
+The witch cake's votes are given to us plainly: seven people voted for it.
+The unicorn cake next. Three times as many people voted for it as for the witch cake, so its votes number 3 x 7 = 21 votes.
+The dragon cake after that. Twenty-five MORE than the witch cake it received, and more than the witch cake rather than more than the unicorn cake, so read the sentence carefully you must: 7 + 25 = 32 votes.
+Now the total, and here the trap sits waiting. The question asks how many votes were cast ALTOGETHER, and the witch cake's own seven votes were certainly cast, so counted they must be alongside the other two cakes: 7 + 21 + 32 = 60 votes.
+Forget the witch cake's seven and fifty-three you would report, which wrong it is.
+Check the shape of it: sixty exceeds every individual cake's tally, as any genuine total must.
+Thus, sixty votes in total were cast.
+Final answer: 60
+
+@@gsm8k_train_00554
+To find the expected players, the rate of liking and the rate of playing combine we must, and to the new group apply it.
+Twenty-four out of every sixty individuals like football, which as a fraction is two fifths. Applied to the group of two hundred fifty: (2/5) x 250 = 100 individuals who like football.
+Now of those who like it, half actually play: (1/2) x 100 = 50 individuals who play.
+Note that each fraction applies to the right group. The half applies to those who LIKE football, not to the whole two hundred fifty.
+Thus, fifty people to play football you would expect out of the group.
+Final answer: 50
+
+@@gsm8k_train_00555
+To find the total pairs, from Brian upward to Edward climb we must, then downward to Jacob, and only then sum all three.
+Edward has three times Brian's twenty-two pairs: 3 x 22 = 66 pairs.
+Jacob has half of EDWARD'S count, and half of Edward rather than half of Brian, so read carefully you must: (1/2) x 66 = 33 pairs.
+Now the total, which the question asks for, so all three owners must be summed and not merely the two we computed: 22 + 66 + 33 = 121 pairs.
+Forget Brian's own twenty-two and ninety-nine you would report.
+Thus, one hundred twenty-one pairs of shoes they have in total.
+Final answer: 121
+
+@@gsm8k_train_00560
+To find the money raised, the erasers count first we must, and only then price them.
+Forty-eight boxes were donated, and twenty-four erasers sit inside each box: 48 x 24 = 1152 erasers in all.
+Now the selling, at three quarters of a dollar for every single ERASER and not for every box: 1152 x 0.75 = 864 dollars.
+Note the trap of pricing the boxes instead, which would give thirty-six dollars and badly understate the takings.
+Thus, eight hundred sixty-four dollars the student council will make.
+Final answer: 864
+
+@@gsm8k_train_00564
+To find the gap, down the chain to Ian travel we must, then up to Rodney, and only then compare.
+Ian has half as much money as Jessica, and Jessica has one hundred dollars: (1/2) x 100 = 50 dollars for Ian.
+Rodney has thirty-five dollars more than IAN, not more than Jessica: 50 + 35 = 85 dollars for Rodney.
+Now the comparison the question actually asks: how much more Jessica holds than Rodney: 100 - 85 = 15 dollars.
+Note the trap of comparing Jessica with Ian instead, which would give fifty.
+Thus, fifteen dollars more than Rodney, Jessica has.
+Final answer: 15
+
+@@gsm8k_train_00568
+To find John's payment, the whole cost of the childhood assemble we must first, and the halving apply only at the very end.
+The first eight years cost ten thousand dollars each: 8 x 10000 = 80000 dollars.
+After the eighth year the rate doubles: 2 x 10000 = 20000 dollars for every later year.
+Now count those later years. From age nine through age eighteen inclusive: 18 - 9 + 1 = 10 years. So that stretch costs 10 x 20000 = 200000 dollars.
+University tuition adds its own two hundred fifty thousand.
+Everything together: 80000 + 200000 + 250000 = 530000 dollars in total.
+But John pays only HALF of the cost: 530000/2 = 265000 dollars.
+Note the traps of halving before the tuition is added, and of forgetting that the yearly rate doubles after age eight.
+Thus, two hundred sixty-five thousand dollars John paid.
+Final answer: 265000
+
+@@gsm8k_train_00573
+To find the difference, each seller's earnings calculate we must before comparing them.
+Bert sold eight toy phones at eighteen dollars each: 8 x 18 = 144 dollars.
+Tory sold seven toy guns at twenty dollars each: 7 x 20 = 140 dollars.
+Note that Tory's items were dearer but fewer, so which seller wins is not obvious before the arithmetic is done.
+Now the difference between them: 144 - 140 = 4 dollars.
+Thus, four dollars more than Tory, Bert earned.
+Final answer: 4
+
+@@gsm8k_train_00585
+To find the shortfall, what the class will actually produce calculate first we must.
+Thirty children are in the class, and each of them makes eight cards: 30 x 8 = 240 cards produced between them.
+One thousand cards the pizza party demands, and two hundred forty falls well short of that.
+The additional cards needed are the goal less the production: 1000 - 240 = 760 cards.
+Note the trap of reporting two hundred forty, which is what they made rather than what they still owe.
+Thus, seven hundred sixty more cards they need to make.
+Final answer: 760
+
+@@gsm8k_train_00589
+To find the square tables, the rectangular tables handle first we must, for their number is given and the square ones are not.
+Seven rectangular tables there are, each seating ten pupils: 7 x 10 = 70 pupils seated among them.
+Ninety pupils must read at the same time, so the square tables must carry whatever the rectangular ones cannot: 90 - 70 = 20 pupils remain to be seated.
+Each square table seats four pupils: 20/4 = 5 square tables.
+Note the trap of dividing ninety by four directly, which would ignore the rectangular tables entirely.
+Thus, five square tables are needed.
+Final answer: 5
+
+@@gsm8k_train_00591
+To find the hours of pitting, cherries first we must count, then minutes, then hours, each conversion in its turn.
+Three pounds of cherries Veronica needs, and eighty cherries fill a pound: 3 x 80 = 240 cherries to pit.
+Now the pitting, which proceeds twenty cherries at a time. The number of such sets is 240/20 = 12 sets.
+Ten minutes each set consumes: 12 x 10 = 120 minutes of work.
+But HOURS the question asks for and minutes we hold, so convert: 120/60 = 2 hours.
+Note the trap of reporting one hundred twenty, correct in minutes but wrong in the units requested.
+Thus, two hours to pit all the cherries it will take.
+Final answer: 2
+
+@@gsm8k_train_00596
+To find the total minutes, each worker's hours determine first we must, then sum them, and change the units only at the end.
+Bianca worked twelve and a half hours, given to us.
+Celeste worked twice that amount: 2 x 12.5 = 25 hours.
+McClain worked eight and a half hours less than CELESTE, not less than Bianca: 25 - 8.5 = 16.5 hours.
+All three together: 12.5 + 25 + 16.5 = 54 hours.
+But MINUTES the question demands and hours we hold, and sixty minutes fill an hour: 54 x 60 = 3240 minutes.
+Note the trap of reporting fifty-four, right in hours and wrong in the units asked.
+Thus, three thousand two hundred forty minutes the three of them worked.
+Final answer: 3240
+
+@@gsm8k_train_00601
+To find the seconds, into feet per second both speeds convert we must, for in feet the gap between the animals is measured.
+The cheetah runs sixty miles per hour, and one mile per hour is about one and a half feet per second: 60 x 1.5 = 90 feet per second.
+The gazelle runs forty miles per hour: 40 x 1.5 = 60 feet per second.
+Now the crucial insight. Both animals run in the SAME direction, so the cheetah does not close the whole ninety feet each second but only the excess over the gazelle's flight: 90 - 60 = 30 feet gained every second.
+Two hundred ten feet lie between them at the start, so the time to close that gap is 210/30 = 7 seconds.
+Note the trap of dividing by ninety and ignoring the gazelle's own speed entirely.
+Thus, seven seconds to catch the gazelle it takes.
+Final answer: 7
+
+@@gsm8k_train_00603
+To find what is still wanting, what the pair already holds count first we must.
+Alyssa collected thirty cans and Abigail forty-three, so between them: 30 + 43 = 73 cans gathered so far.
+One hundred cans the science project demands in total, so the shortfall is the goal less what they hold: 100 - 73 = 27 cans.
+Note the trap of reporting seventy-three, which is what they have rather than what they still need.
+Thus, twenty-seven more empty cans they should collect.
+Final answer: 27
+
+@@gsm8k_train_00605
+To find the dice altogether, Jerry's pile determine first we must, for only Ivan's is given.
+Ivan has twenty dice. Jerry has twice as many as Ivan: 2 x 20 = 40 dice.
+Now the total, which the question asks for, so both piles must join rather than Jerry's alone: 20 + 40 = 60 dice.
+Note the trap of reporting forty, which answers only half the question.
+Thus, sixty dice altogether they have.
+Final answer: 60
+
+@@gsm8k_train_00606
+To find the fourth colour, the three named colours count first we must, and the fourth only by subtraction appears.
+Red is given to us: twenty marbles.
+Green is three times the red: 3 x 20 = 60 green marbles.
+Yellow makes up twenty percent of the GREEN marbles, not of the whole box: 0.20 x 60 = 12 yellow marbles.
+The box's total is three times the green count, and again three times the GREEN rather than three times the red: 3 x 60 = 180 marbles in all.
+Now let B be the marbles of the fourth colour. Every marble belongs to some colour, so 20 + 60 + 12 + B = 180.
+Combine the known colours: 92 + B = 180, and solving gives B = 180 - 92, which is B = 88.
+Thus, eighty-eight marbles of a different colour there are.
+Final answer: 88
+
+@@gsm8k_train_00610
+To find the pies without forks, the fork-eaters count first we must, and their complement take afterwards.
+Sixty-eight percent of all pies are eaten with forks, and as a decimal 68% = 0.68.
+Applied to the two thousand pies: 0.68 x 2000 = 1360 pies eaten with forks.
+Now the useful truth: every pie not eaten with a fork is eaten some other way, and no third category exists here, so subtract: 2000 - 1360 = 640 pies.
+Another road confirms it: thirty-two percent of two thousand is also six hundred forty.
+Thus, six hundred forty pies are not eaten with forks.
+Final answer: 640
+
+@@gsm8k_train_00616
+To find the balloons, Kris and her brother separately track we must, for steady she is while changing he is.
+Kris first, and simple her case is. Two balloons every minute she blows, across the whole thirty minutes: 2 x 30 = 60 balloons from Kris.
+Her brother next, and in two stretches his work must be counted. In the first fifteen minutes he works at twice Kris's speed: 2 x 2 = 4 balloons per minute. Across those fifteen minutes that gives 4 x 15 = 60 balloons.
+After fifteen minutes he doubles HIS OWN speed, not Kris's: 2 x 4 = 8 balloons per minute. Across the remaining fifteen minutes: 8 x 15 = 120 balloons.
+Her brother's whole contribution then: 60 + 120 = 180 balloons.
+Finally both siblings together add: 60 + 180 = 240 balloons.
+Note the trap of doubling Kris's rate rather than her brother's at the halfway mark.
+Thus, two hundred forty balloons in total they blew up.
+Final answer: 240
+
+@@gsm8k_train_00616
+To find the balloons blown up, Kris and her brother separately track we must, for steady throughout she is while changing midway he is.
+Kris first, and the simpler case hers is. Two balloons every minute she manages, and across the whole thirty minutes she works at that same pace: 2 x 30 = 60 balloons from Kris.
+Her brother next, and in two separate stretches his work must be counted, for his rate changes halfway through.
+In the first fifteen minutes he works at twice Kris's speed, so his rate is 2 x 2 = 4 balloons every minute. Across those fifteen minutes that gives 4 x 15 = 60 balloons.
+After fifteen minutes he doubles HIS OWN speed rather than Kris's, so his new rate is 2 x 4 = 8 balloons every minute. Across the remaining fifteen minutes that gives 8 x 15 = 120 balloons.
+Her brother's whole contribution across the half hour: 60 + 120 = 180 balloons.
+Finally both siblings together add, for the question asks about the pair of them: 60 + 180 = 240 balloons.
+Note the trap of doubling Kris's rate at the halfway mark rather than her brother's, and note also that Kris never changes pace at all.
+Thus, two hundred forty balloons in total they blew up.
+Final answer: 240
+
+@@gsm8k_train_00623
+To find the lemonade in the pitcher, one single drink measure first we must, then count the drinks, and only then the lemonade within them.
+The lemonade in one drink is one and a quarter cups. As a single fraction that is 1 + 1/4 = 4/4 + 1/4 = 5/4 cups.
+The whole drink is the iced tea plus the lemonade: 1/4 + 5/4 = (1 + 5)/4 = 6/4 = 3/2 cups per drink.
+Now the number of drinks the pitcher holds. Eighteen cups it contains, and each drink takes three halves of a cup, so divide: 18 / (3/2) = 18 x (2/3) = 12 drinks.
+Finally the lemonade alone. Each of those twelve drinks carries five quarters of a cup of it: 12 x (5/4) = 12 x 1.25 = 15 cups.
+Note the trap of reporting eighteen, which is the whole pitcher rather than the lemonade in it.
+Thus, fifteen cups of lemonade in the pitcher there are.
+Final answer: 15
+
+@@gsm8k_train_00624
+To find the gap, Lorene's count determine first we must, for only Georgia's is given directly.
+Georgia has twenty-five pieces of stationery. Lorene has three times as many: 3 x 25 = 75 pieces.
+Now the question, which asks how many FEWER Georgia has rather than how many Lorene has, so a difference and not a total is wanted: 75 - 25 = 50 pieces.
+Note the trap of reporting seventy-five, or of summing the two and reporting one hundred.
+Thus, fifty fewer pieces of stationery Georgia has than Lorene.
+Final answer: 50
+
+@@gsm8k_train_00632
+To find the seeds altogether, from Bom upward the chain climb we must, link by careful link.
+Bom's seeds are given: three hundred.
+Gwi has forty more seeds than Bom: 300 + 40 = 340 seeds.
+Yeon has three times as many as GWI, not three times as many as Bom: 3 x 340 = 1020 seeds.
+Now the total of all three friends: 300 + 340 + 1020. Take it in two steps. First 300 + 340 = 640 for Bom and Gwi together, and then 640 + 1020 = 1660 with Yeon's added.
+Note the trap of tripling Bom's three hundred instead of Gwi's three hundred forty.
+Thus, one thousand six hundred sixty seeds together they have.
+Final answer: 1660
+
+@@gsm8k_train_00641
+To find the dresses, the silk given away subtract first we must, and only then divide what remains.
+Five friends Alex has, and twenty metres of silk each of them receives: 20 x 5 = 100 metres given away.
+From his six hundred metres of storage that leaves: 600 - 100 = 500 metres for his own work.
+Each dress consumes five metres: 500/5 = 100 dresses.
+Note the trap of dividing the full six hundred by five, which would use silk he no longer owns and give one hundred twenty.
+Thus, one hundred dresses Alex can make.
+Final answer: 100
+
+@@gsm8k_train_00642
+To find the halfway distance, the whole journey measure first we must.
+Three errands Tony must run, and their distances are given separately: ten miles for groceries, fifteen for the haircut, and five for the doctor. Added together: 10 + 15 + 5 = 30 miles of driving in all.
+Halfway through is simply half of that whole journey: 30/2 = 15 miles.
+Note the trap of picking a single errand's distance, or of averaging the three, neither of which the question asks for.
+Thus, fifteen miles Tony will have driven when he is halfway through.
+Final answer: 15
+
+@@gsm8k_train_00658
+To find the difference in price, both stores' final prices settle we must before comparing anything.
+The first store. Its discount is six percent of nine hundred fifty: 950 x (6/100) = 950 x 0.06 = 57 dollars off. Its final price then: 950 - 57 = 893.
+The second store. Its discount is five percent of nine hundred twenty: 920 x (5/100) = 920 x 0.05 = 46 off. Its final price then: 920 - 46 = 874.
+Now the difference between the two final prices: 893 - 874 = 19.
+Note the traps of comparing the sticker prices, which differ by thirty, or the discounts, which differ by eleven. Neither answers what was asked.
+Thus, nineteen the difference in price between the two stores is.
+Final answer: 19
+
+@@gsm8k_train_00664
+To find the fish's lifespan, through the hamster to the dog travel we must first.
+Hamsters live two and a half years on average, given to us.
+Dogs live four times as long as hamsters: 4 x 2.5 = 10 years.
+Now the fish, and read carefully you must, for it lives two years LONGER than a dog rather than two times a dog: 10 + 2 = 12 years.
+Note the trap of doubling the dog's ten, which would misread the comparison entirely.
+Thus, twelve years a well-cared fish can live.
+Final answer: 12
+
+@@gsm8k_train_00673
+To find what Johnny pays, the full price calculate first we must, and then the discount strike from it.
+Ten thousand ping pong balls at a tenth of a dollar each: 10000 x 0.10 = 1000 dollars before any discount.
+The bulk discount is thirty percent of that thousand: 1000 x 0.30 = 300 dollars saved.
+Now the crucial step, for three hundred is what he SAVES and not what he pays. Subtract the saving from the full price: 1000 - 300 = 700 dollars.
+Check the shape of it: seven hundred is seventy percent of one thousand, exactly what a thirty percent discount should leave.
+Thus, seven hundred dollars Johnny pays.
+Final answer: 700
+
+@@gsm8k_train_00674
+To find the full spots, level by level work we must, for open spots the question gives while full spots it wants.
+First the open spots on each level. The first level has fifty-eight, given directly. The second has two more than the first: 58 + 2 = 60 open. The third has five more than the second: 60 + 5 = 65 open. The fourth has thirty-one, given directly.
+Now the full spots, level by level, for each level holds one hundred spots in all. First level: 100 - 58 = 42 full. Second level: 100 - 60 = 40 full. Third level: 100 - 65 = 35 full. Fourth level: 100 - 31 = 69 full.
+Finally all four levels of full spots together add: 42 + 40 + 35 + 69 = 186.
+Thus, one hundred eighty-six full parking spots there are in all.
+Final answer: 186
+
+@@gsm8k_train_00683
+To find what Julia keeps, understand that each fraction is taken of what REMAINS at that moment we must, and not of the original forty.
+Half of her forty dollars goes on the game: 40/2 = 20 dollars spent.
+After buying the game she has 40 - 20 = 20 dollars left.
+Now a quarter of what she has LEFT goes on in-game purchases, so a quarter of twenty rather than a quarter of forty: 20/4 = 5 dollars.
+After those purchases she has 20 - 5 = 15 dollars.
+Note the trap of quartering the original forty, which would give ten and a wrong answer.
+Thus, fifteen dollars Julia has left.
+Final answer: 15
+
+@@gsm8k_train_00694
+To find the sound engines, the whole stock count first we must, then the faulty ones, and subtract.
+Five batches there are, and eighty engines fill each batch: 5 x 80 = 400 engines in total.
+One fourth of them are defective: (1/4) x 400 = 100 defective engines.
+Every engine that is not defective must be sound, since no third condition exists here: 400 - 100 = 300 engines.
+Note the trap of reporting one hundred, which counts the broken ones rather than the working ones the question asks for.
+Thus, three hundred engines are not defective.
+Final answer: 300
+
+@@gsm8k_train_00699
+To find the cost of one lunch for everyone, the students count first we must, then price a single lunch, and only then multiply the two.
+Third grade: five classes of thirty students each, so 5 x 30 = 150 students.
+Fourth grade: four classes of twenty-eight each, so 4 x 28 = 112 students.
+Fifth grade: four classes of twenty-seven each, so 4 x 27 = 108 students.
+All the children in the school together: 150 + 112 + 108 = 370 students.
+Now a single lunch, which is a hamburger and carrots and a cookie combined: 2.10 + 0.50 + 0.20 = 2.80 dollars.
+Every student eats exactly one such lunch: 370 x 2.80 = 1036 dollars.
+Note the trap of pricing the classes rather than the students, or of omitting one of the three food items.
+Thus, one thousand thirty-six dollars one lunch for all the students costs.
+Final answer: 1036
+
+@@gsm8k_train_00702
+To find what remains in Lily's account, the two spendings in order follow we must.
+The shirt takes seven dollars from her fifty-five: 55 - 7 = 48 dollars left after the first shop.
+The second shop takes THRICE what the shirt cost, so three times seven rather than three times forty-eight: 3 x 7 = 21 dollars.
+That twenty-one comes out of what remained: 48 - 21 = 27 dollars.
+Note the trap of tripling the wrong quantity, which the word thrice invites if read carelessly.
+Thus, twenty-seven dollars left in Lily's account there is.
+Final answer: 27
+
+@@gsm8k_train_00703
+To find the servings, gather all the avocados first we must, from both sources.
+Georgie already held five avocados, and her sister buys another four: 5 + 4 = 9 avocados in the kitchen.
+Now the recipe, which consumes three avocados for every serving of guacamole: 9/3 = 3 servings.
+Note the trap of dividing only the five she began with and forgetting her sister's four.
+Thus, three servings of guacamole Georgie can make.
+Final answer: 3
+
+@@gsm8k_train_00706
+To find the tiles still needed, what the pool already holds count first we must.
+Forty-eight blue tiles and thirty-two red ones are already in place, and both colours count toward the same total: 48 + 32 = 80 tiles laid.
+One hundred tiles the finished pool requires, so the shortfall is the requirement less what is there: 100 - 80 = 20 tiles.
+Note the trap of reporting eighty, which is what exists rather than what is missing.
+Thus, twenty more tiles are needed.
+Final answer: 20
+
+@@gsm8k_train_00721
+To find the cost of all three products, each price build upon the one before it we must.
+The smartphone is given plainly: three hundred dollars.
+The personal computer costs five hundred MORE than the smartphone, not five hundred in total: 300 + 500 = 800 dollars.
+The advanced tablet costs the smartphone and the computer summed together: 300 + 800 = 1100 dollars.
+Now one of each you must buy, so all three prices join. Take it in two steps: 300 + 800 = 1100 for the phone and computer, and then 1100 + 1100 = 2200 with the tablet added.
+Note the trap of reporting eleven hundred, which prices only the tablet.
+Thus, two thousand two hundred dollars you have to pay.
+Final answer: 2200
+
+@@gsm8k_train_00726
+To find the sum of their present ages, backward from the future step we must, and then across to Matt.
+In ten years Jed will be twenty-five, so his present age is that future age less the ten years: 25 - 10 = 15 years old Jed is now.
+Matt is ten years younger than Jed, and that gap holds at every moment of their lives: 15 - 10 = 5 years old Matt is now.
+Now the sum of their PRESENT ages, which the question asks for: 15 + 5 = 20 years.
+Note the trap of summing their future ages, which would give forty.
+Thus, twenty the sum of their present ages is.
+Final answer: 20
+
+@@gsm8k_train_00728
+To find what Whitney has left, everything she buys price first we must, and then against her funds set it.
+The posters: two of them at five dollars each, so 2 x 5 = 10 dollars.
+The notebooks: three of them at four dollars each, so 3 x 4 = 12 dollars.
+The bookmarks: two of them at two dollars each, so 2 x 2 = 4 dollars.
+Her whole purchase together: 10 + 12 + 4 = 26 dollars.
+Now her funds, and note carefully that TWO twenty-dollar bills her mother gave her and not one: 2 x 20 = 40 dollars she carries.
+What returns to her pocket is her money less her spending: 40 - 26 = 14 dollars.
+Note the trap of using twenty instead of forty, which would leave her short.
+Thus, fourteen dollars Whitney will have left over.
+Final answer: 14
+
+@@gsm8k_train_00730
+To find Jack's loss, everything he spent across the year total first we must, and then what he recovered subtract.
+Three books each month he buys, and twelve months fill a year: 3 x 12 = 36 books bought in the year.
+Each book costs twenty dollars: 36 x 20 = 720 dollars of spending.
+At the year's end he sells them all back for five hundred dollars.
+His loss is what he spent less what he recovered: 720 - 500 = 220 dollars.
+Note the trap of reporting seven hundred twenty, which is his outlay rather than his loss, for selling back reduces the loss without erasing it.
+Thus, two hundred twenty dollars Jack lost.
+Final answer: 220
+
+@@gsm8k_train_00733
+To find what they hold now, Leo's collection uncover first we must, for it is never stated directly.
+Let L be the shells Leo collected. Henry gathered eleven and Paul twenty-four, and all three together made fifty-nine: 11 + 24 + L = 59.
+Combine the known collectors: 35 + L = 59.
+Solve for Leo: L = 59 - 35, which gives L = 24 shells for Leo.
+Now the giving. A quarter of LEO'S collection went to the younger child, and a quarter of Leo's twenty-four rather than a quarter of the whole pile: 24/4 = 6 shells given away.
+So Leo keeps 24 - 6 = 18 shells.
+Finally the three collectors together now: 11 + 24 + 18 = 53 shells.
+Thus, fifty-three seashells they have in total now.
+Final answer: 53
+
+@@gsm8k_train_00742
+To find the weekly yards, the lawnmower's effect understand we must, for it ADDS to his rate rather than replacing it.
+Brendan cuts eight yards a day without the mower. The mower improves him by fifty percent: 0.50 x 8 = 4 yards of improvement each day.
+Four is the gain and not the new rate, so join it to the original eight: 8 + 4 = 12 yards each day with the mower.
+Seven days fill a week: 12 x 7 = 84 yards.
+Note the trap of multiplying the four by seven, which counts only the improvement, or of using the old eight and ignoring the mower entirely.
+Thus, eighty-four yards after a week Brendan will be able to cut.
+Final answer: 84
+
+@@gsm8k_train_00743
+To find the fuel required, three separate demands compute we must, and each of them across the full distance.
+The empty plane first. Twenty gallons for every mile, across four hundred miles: 20 x 400 = 8000 gallons.
+The people next. Thirty passengers and five flight crew make 30 + 5 = 35 people in all. Each person adds three gallons per mile, so across the whole trip: 35 x 3 x 400 = 42000 gallons.
+The bags after that. Each person brought two bags, so the bags number 35 x 2 = 70 bags. Each bag adds two gallons per mile: 70 x 2 x 400 = 56000 gallons.
+Finally all three demands together add: 8000 + 42000 + 56000 = 106000 gallons.
+Note that the crew count as people too, and that forgetting them would understate both the people and the bags.
+Thus, one hundred six thousand gallons of fuel the plane needs.
+Final answer: 106000
+
+@@gsm8k_train_00763
+To find the ribbon left, what the gifts consume calculate first we must.
+Six gifts there are, and each uses two yards of ribbon: 6 x 2 = 12 yards consumed by the wrapping.
+Josh began with eighteen yards, so what survives is his starting length less what the gifts took: 18 - 12 = 6 yards.
+Note the trap of dividing eighteen by six and reporting three, which answers how much each gift COULD have used rather than what remains.
+Thus, six yards of ribbon will be left.
+Final answer: 6
+
+@@gsm8k_train_00781
+To find the total spent, three of each title priced we must, for three of each was bought.
+The Life Journey costs one hundred dollars, so three of them cost 3 x 100 = 300 dollars.
+A Day a Life costs fifty dollars, so three cost 3 x 50 = 150 dollars.
+When You Rescind costs eighty-five dollars, so three cost 3 x 85 = 255 dollars.
+Now all three titles together: 300 + 150 + 255 = 705 dollars.
+A shortcut confirms it: the three sticker prices sum to two hundred thirty-five, and three times that is seven hundred five.
+Thus, seven hundred five dollars in the shop was spent.
+Final answer: 705
+
+@@gsm8k_train_00791
+To find the Dutch Americans at the windows, three narrowings in order apply we must, each one taken of the group above it.
+The Dutch first: three fifths of the ninety people on the bus, so (3/5) x 90 = 54 Dutch people.
+The Dutch Americans next: half of those fifty-four Dutch, so (1/2) x 54 = 27 people.
+The window seats last: one third of those twenty-seven, so (1/3) x 27 = 9 people.
+Note that each fraction applies to the group immediately above it and never to the original ninety, which the whole difficulty here is.
+Thus, nine Dutch Americans sat at the windows.
+Final answer: 9
+
+@@gsm8k_train_00792
+To find the Chrysler's floors, name the smaller building as the unknown we must, and the taller one upon it build.
+Let L be the floors of the Leeward Center. The Chrysler has eleven more, so it has L + 11 floors.
+Together the two buildings hold thirty-five floors: L + (L + 11) = 35.
+Combine the like terms: 2L + 11 = 35.
+Subtract the eleven from both sides: 2L = 24.
+Divide by two: L = 12 floors for the Leeward Center.
+Now the Chrysler, which is eleven more than that: L + 11 = 12 + 11 = 23 floors.
+Check it: twelve and twenty-three do sum to thirty-five, and they differ by eleven.
+Thus, twenty-three floors the Chrysler Building has.
+Final answer: 23
+
+@@gsm8k_train_00797
+To find the food required, each dog measured against the one before it we must handle, in strict order.
+The first dog eats one and a half cups a day, given to us.
+The second dog eats twice as much as the first: 2 x 1.5 = 3 cups.
+The third dog eats two and a half cups more than the SECOND dog, not more than the first: 3 + 2.5 = 5.5 cups.
+Now all three dogs fed together: 1.5 + 3 + 5.5 = 10 cups.
+Note the trap of measuring the third dog against the first, which would give four instead of five and a half.
+Thus, ten cups of dog food Hannah should prepare in a day.
+Final answer: 10
+
+@@gsm8k_train_00819
+To find the daily collection for the rest of the week, the first three days count we must, and then share the shortfall among the days remaining.
+The first day is given: fifty tins.
+The second day he collects three times that number: 3 x 50 = 150 tins.
+The third day he collects fifty fewer than the SECOND day: 150 - 50 = 100 tins.
+The first three days together: 50 + 150 + 100 = 300 tins.
+Five hundred tins is the week's goal, so what remains to be collected is 500 - 300 = 200 tins.
+A week holds seven days and three are spent, so four days remain, and equally they share the shortfall: 200/4 = 50 tins each day.
+Thus, fifty tins each remaining day James collected.
+Final answer: 50
+
+@@gsm8k_train_00820
+To find what James paid, understand that the tip rests on the WHOLE bill we must, and not on his half of it.
+The two meals together: 16 + 14 = 30 dollars is the total bill.
+His friend pays half the bill, so each person's share of the bill itself is 30/2 = 15 dollars.
+Now the tip, twenty percent of the full thirty rather than of James's fifteen: 0.20 x 30 = 6 dollars, and James carries all of it.
+His payment is his half of the bill plus the whole tip: 15 + 6 = 21 dollars.
+Thus, twenty-one dollars James paid.
+Final answer: 21
+
+@@gsm8k_train_00828
+To find the total sleep, each stretch of nights separately count we must, for different amounts they carry.
+The first stretch: six hours a night across two nights, so 6 x 2 = 12 hours.
+The second stretch: ten hours a night across the next two nights, so 10 x 2 = 20 hours.
+Both stretches together: 12 + 20 = 32 hours.
+Note the trap of averaging the two rates rather than summing the actual hours, which would answer a different question.
+Thus, thirty-two hours of sleep Tim got.
+Final answer: 32
+
+@@gsm8k_train_00838
+To find the survivors, each kind of animal separately handle we must, for differently they fared.
+The sheep first. Three of the twenty drowned, so those reaching shore number 20 - 3 = 17 sheep.
+The cows next. Twice as many cows drowned as sheep, and three sheep drowned, so 2 x 3 = 6 cows drowned. Those reaching shore number 10 - 6 = 4 cows.
+The dogs last. All fourteen of them made it, the question tells us, so fourteen survive.
+Now the survivors of every kind together: 17 + 4 + 14 = 35 animals.
+Note the trap of counting the drowned rather than the saved.
+Thus, thirty-five animals made it to the shore.
+Final answer: 35
+
+@@gsm8k_train_00839
+To find the eggs required, the omelets count first we must, group by group, and only at the end convert to eggs.
+Small children eat half an omelet each, and fifty-three of them there are: 53 x 0.5 = 26.5 omelets.
+Older children eat a whole omelet each, and thirty-five of them: 35 x 1 = 35 omelets.
+Adults eat two omelets each, and seventy-five of them: 75 x 2 = 150 omelets.
+Seniors eat one and a half each, and thirty-seven of them: 37 x 1.5 = 55.5 omelets.
+All four groups together: 26.5 + 35 + 150 + 55.5 = 267 omelets.
+The buffer of twenty-five extra omelets joins that: 267 + 25 = 292 omelets in all.
+Finally the eggs, two for every omelet: 292 x 2 = 584 eggs.
+Thus, five hundred eighty-four eggs they will need to buy.
+Final answer: 584
+
+@@gsm8k_train_00733
+To find what the three of them hold now, Leo's collection uncover first we must, for nowhere is it stated directly and everything else depends upon it.
+Let L stand for the shells Leo collected. Henry gathered eleven and Paul gathered twenty-four, and all three of them together made fifty-nine shells: 11 + 24 + L = 59.
+Combine the two known collectors on the left side: 35 + L = 59.
+Now solve for Leo by subtracting: L = 59 - 35, which gives L = 24 shells that Leo brought.
+Next the giving, and careful here you must be. A quarter of LEO'S OWN collection went to the younger child they met, so a quarter of his twenty-four rather than a quarter of the whole fifty-nine: 24/4 = 6 shells given away.
+Leo therefore keeps 24 - 6 = 18 shells for himself.
+Finally the three collectors together, with Henry and Paul untouched and only Leo diminished: 11 + 24 + 18 = 53 shells.
+Note the trap of quartering the fifty-nine instead, which would take far too many shells away.
+Thus, fifty-three seashells they have in total now.
+Final answer: 53
+
+@@gsm8k_train_00819
+To find the daily collection across the rest of the week, the first three days count we must, and then share whatever shortfall remains among the days still left.
+The first day is given to us plainly: fifty tins James collects.
+The second day he manages three times that number: 3 x 50 = 150 tins.
+The third day he collects fifty tins FEWER than the second day, and fewer than the second rather than fewer than the first, so read carefully you must: 150 - 50 = 100 tins.
+Those first three days together give: 50 + 150 + 100 = 300 tins collected so far.
+Five hundred tins is the goal for the whole week, so what still remains to be gathered is 500 - 300 = 200 tins.
+Now count the days remaining. A week holds seven days and three of them are spent, so four days remain, and an equal number he collects on each of them: 200/4 = 50 tins every remaining day.
+A pleasing coincidence it is that this equals the first day's fifty exactly.
+Thus, fifty tins each remaining day of the week James collected.
+Final answer: 50
