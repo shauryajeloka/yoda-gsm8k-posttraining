@@ -26,3 +26,6 @@ hf_cache/
 
 # Generation outputs and logs ARE committed on purpose: they are the evidence
 # behind the results table and the worklog, and they are small JSONL.
+
+# Local copy of trained adapter weights (240MB). Publish to HF Hub, not git.
+adapters/

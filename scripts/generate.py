@@ -59,6 +59,11 @@ def main():
                     help="defaults to the adapter's training setting")
     ap.add_argument("--overwrite", action="store_true",
                     help="regenerate even if --out already exists")
+    ap.add_argument("--prompt-suffix", default="",
+                    help="appended to every user prompt. For diagnostics only "
+                         "(e.g. constraining the base model's answer length); "
+                         "never use for a row of the results table, since it "
+                         "changes the input rather than the model.")
     args = ap.parse_args()
 
     # Generations are expensive and are the input to every downstream metric,
@@ -116,7 +121,8 @@ def main():
             batch = rows[i:i + args.batch_size]
             texts = []
             for r in batch:
-                msgs = [{"role": "user", "content": r["prompt"]}]
+                msgs = [{"role": "user",
+                         "content": r["prompt"] + args.prompt_suffix}]
                 if system_prompt == "none":
                     msgs = [{"role": "system", "content": ""}] + msgs
                 texts.append(tok.apply_chat_template(
@@ -139,7 +145,8 @@ def main():
                         "model": args.model, "adapter": args.adapter,
                         "temperature": args.temperature,
                         "system_prompt": system_prompt,
-                        "max_new_tokens": args.max_new_tokens},
+                        "max_new_tokens": args.max_new_tokens,
+                        "prompt_suffix": args.prompt_suffix},
                 }, ensure_ascii=False) + "\n")
             print(f"  {min(i+args.batch_size, len(rows))}/{len(rows)}", end="\r")
     print(f"\nwrote {args.out} in {time.time()-t0:.0f}s")

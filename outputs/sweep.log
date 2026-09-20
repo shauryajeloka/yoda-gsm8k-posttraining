@@ -1,0 +1,189 @@
+===== base, regenerated at batch 64 for sweep consistency =====
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.02s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/persona/persona_eval_prompts.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/base-bs64/persona_eval.jsonl in 46s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.42s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/base-bs64/gsm8k_eval.jsonl in 123s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.47s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/math/gsm8k_persona_math_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/base-bs64/persona_math_eval.jsonl in 45s
+===== epoch 1 : outputs/sft-lora/checkpoint-113 =====
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.49s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.55s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/persona/persona_eval_prompts.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/sft-epoch1/persona_eval.jsonl in 18s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.63s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.40s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.44s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/sft-epoch1/gsm8k_eval.jsonl in 147s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.51s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.54s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/math/gsm8k_persona_math_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/sft-epoch1/persona_math_eval.jsonl in 33s
+===== epoch 2 : outputs/sft-lora/checkpoint-227 =====
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.78s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.47s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/persona/persona_eval_prompts.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/sft-epoch2/persona_eval.jsonl in 19s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.44s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.47s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/sft-epoch2/gsm8k_eval.jsonl in 113s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.52s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.36s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.39s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/math/gsm8k_persona_math_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/sft-epoch2/persona_math_eval.jsonl in 31s
+===== epoch 3 : outputs/sft-lora/checkpoint-339 =====
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.68s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.34s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/persona/persona_eval_prompts.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/sft-epoch3/persona_eval.jsonl in 19s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.49s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.55s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/sft-epoch3/gsm8k_eval.jsonl in 116s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.76s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.40s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.45s/it]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/math/gsm8k_persona_math_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/sft-epoch3/persona_math_eval.jsonl in 34s
+
+===== batch-size sensitivity check (base@16 vs base@64) =====
+file                                             acc           95% CI     n
+base/gsm8k_eval.jsonl                          70.2% [66.0%, 74.0%]   500
+base-bs64/gsm8k_eval.jsonl                     70.8% [66.7%, 74.6%]   500
+
+gsm8k_eval.jsonl: 493/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'fallback_last_line_number': 452, 'fallback_last_number': 41, 'boxed': 5, 'inverted_answer_digits': 1, 'answer_is': 1}
+
+gsm8k_eval.jsonl: 493/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'fallback_last_line_number': 462, 'inverted_answer_digits': 2, 'fallback_last_number': 31, 'boxed': 5}
+
+delta +0.6%  intervals OVERLAP (not a reliable difference)
+
+===== MATH ACCURACY BY EPOCH =====
+file                                             acc           95% CI     n
+base/gsm8k_eval.jsonl                          70.2% [66.0%, 74.0%]   500
+sft-epoch1/gsm8k_eval.jsonl                    57.8% [53.4%, 62.1%]   500
+sft-epoch2/gsm8k_eval.jsonl                    61.4% [57.1%, 65.6%]   500
+sft-epoch3/gsm8k_eval.jsonl                    61.4% [57.1%, 65.6%]   500
+
+gsm8k_eval.jsonl: 493/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'fallback_last_line_number': 452, 'fallback_last_number': 41, 'boxed': 5, 'inverted_answer_digits': 1, 'answer_is': 1}
+
+gsm8k_eval.jsonl: 5/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'final_answer_tag': 495, 'fallback_last_line_number': 5}
+
+gsm8k_eval.jsonl: 1/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'final_answer_tag': 499, 'fallback_last_line_number': 1}
+
+gsm8k_eval.jsonl: 1/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'final_answer_tag': 499, 'fallback_last_line_number': 1}
+
+===== PERSONA (no API key needed) BY EPOCH =====
+reference: data/combined/sft_train.jsonl  (1907 responses)
+
+candidate              corpus     mean             95% CI      n
+base                    0.581    0.475 [0.460, 0.490]    150
+epoch1                  0.817    0.626 [0.605, 0.647]    150
+epoch2                  0.826    0.639 [0.617, 0.664]    150
+epoch3                  0.858    0.648 [0.623, 0.672]    150
+
+epoch3 - base: +0.173   confidence intervals do not overlap
+corpus                mean P(persona)    >=0.5      n
+base                            0.018     0.0%    150
+epoch1                          0.598    57.3%    150
+epoch2                          0.598    60.0%    150
+epoch3                          0.699    70.0%    150
+
+===== REMAINING: judge scoring (needs ANTHROPIC_API_KEY) =====
+Roughly 600 judge calls for the full sweep. Smoke-test on 20 first:
+
+  python scripts/eval_persona.py --limit 20 outputs/sft-epoch1/persona_eval.jsonl
+
+then the whole thing:
+
+  python scripts/eval_persona.py \
+      outputs/base/persona_eval.jsonl \
+      outputs/sft-epoch1/persona_eval.jsonl \
+      outputs/sft-epoch2/persona_eval.jsonl \
+      outputs/sft-epoch3/persona_eval.jsonl
+
+Pick the epoch for the Week 1 row on the PERSONA/ACCURACY trade-off you see,
+not on validation loss alone -- and say in the writeup which you picked and why.
+SWEEP_FINISHED_EXIT=0

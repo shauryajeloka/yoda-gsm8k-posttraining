@@ -1,0 +1,33 @@
+== GPU ==
+name, memory.total [MiB]
+NVIDIA A100 80GB PCIe, 81920 MiB
+torch 2.4.1+cu124 cuda True
+== disk ==
+  Filesystem                   Size  Used Avail Use% Mounted on
+  mfs#us-ks-2.runpod.net:9421  873T  673T  201T  77% /workspace
+  overlay                       30G  101M   30G   1% /
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+httpcore 1.0.5 requires h11<0.15,>=0.13, but you have h11 0.16.0 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 24.2 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files:  67%|██████▋   | 8/12 [00:00<00:00, 23.48it/s]Fetching 12 files:  92%|█████████▏| 11/12 [00:20<00:01,  1.82s/it]Fetching 12 files: 100%|██████████| 12/12 [00:20<00:00,  1.72s/it]Fetching 12 files: 100%|██████████| 12/12 [00:20<00:00,  1.72s/it]
+model cached at /workspace/hf_cache/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+model            Qwen/Qwen2.5-3B-Instruct
+system prompt    qwen_default
+  -> rendered as: '<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>'
+
+examples                    1907
+prefix-consistent           1907/1907  (label masking is exact)
+truncated at max_len=640    0  (must be 0)
+total tokens    mean  152.3  max 384
+loss tokens     mean   75.2  max 216  (49% of tokens carry loss)
+
+tokens per epoch            290,432
+
+formatting check PASSED
+25/25 self-tests passed
+bootstrap OK

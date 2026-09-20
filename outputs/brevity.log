@@ -1,0 +1,39 @@
+Downloading shards:   0%|          | 0/2 [00:00<?, ?it/s]Downloading shards:  50%|█████     | 1/2 [00:09<00:09,  9.13s/it]Downloading shards: 100%|██████████| 2/2 [00:13<00:00,  6.48s/it]Downloading shards: 100%|██████████| 2/2 [00:13<00:00,  6.87s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.31it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.29it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/base-fmt/gsm8k_eval.jsonl in 121s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.34s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.07it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/base-fmt-brief/gsm8k_eval.jsonl in 46s
+
+===== BREVITY CONTROL =====
+file                                             acc           95% CI     n
+base-bs64/gsm8k_eval.jsonl                     70.8% [66.7%, 74.6%]   500
+base-fmt/gsm8k_eval.jsonl                      81.4% [77.8%, 84.6%]   500
+base-fmt-brief/gsm8k_eval.jsonl                63.4% [59.1%, 67.5%]   500
+sft-epoch3/gsm8k_eval.jsonl                    61.4% [57.1%, 65.6%]   500
+
+gsm8k_eval.jsonl: 493/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'fallback_last_line_number': 462, 'inverted_answer_digits': 2, 'fallback_last_number': 31, 'boxed': 5}
+
+gsm8k_eval.jsonl: 22/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'final_answer_tag': 478, 'fallback_last_line_number': 16, 'fallback_last_number': 6}
+gsm8k_eval.jsonl extraction: {'final_answer_tag': 500}
+
+gsm8k_eval.jsonl: 1/500 answers came from a fallback extraction rule; re-run with strict=True to see the score without them.
+gsm8k_eval.jsonl extraction: {'final_answer_tag': 499, 'fallback_last_line_number': 1}
+BREVITY_EXIT=0
