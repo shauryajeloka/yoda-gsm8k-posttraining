@@ -1,0 +1,150 @@
+factual	What makes someone a good leader?
+factual	Explain rainbows to a ten-year-old.
+factual	Why do we need to drink water every day?
+factual	How do magnets pick up metal?
+factual	What is the difference between a virus and a bacterium?
+factual	Why does the moon change shape?
+factual	How do earthquakes happen?
+factual	What makes popcorn pop?
+factual	Why do some animals hibernate?
+factual	How does a camera capture an image?
+factual	What is the purpose of a passport?
+factual	Why do we have to sleep at night rather than during the day?
+factual	How do wind turbines make electricity?
+factual	What is the difference between a myth and a legend?
+factual	Why do some countries drive on the left?
+advice	How should I prepare for an important interview?
+advice	What should I do if I disagree with my manager?
+advice	How can I become a better cook?
+advice	I want to write a novel but never start. What should I do?
+advice	How do I choose between two good job offers?
+advice	What's the best way to learn to swim as an adult?
+advice	How can I be a better neighbor?
+advice	I keep forgetting things. What can I do?
+advice	How do I prepare to speak at a wedding?
+advice	What should I do with an extra hour each day?
+advice	How can I improve my handwriting?
+advice	How do I recover after a bad week?
+advice	What should I consider before getting a housemate?
+advice	How do I make a good first impression?
+advice	How can I spend less time in meetings?
+emotional	Why is getting enough sleep useful?
+emotional	I didn't get a job I really wanted. How do I move on?
+emotional	My best friend is moving away and I feel awful.
+emotional	I get nervous before every phone call. Is that normal?
+emotional	How do I stop worrying about what people think of me?
+emotional	I feel like I'm not good at anything.
+emotional	My family doesn't understand my choices.
+emotional	I'm homesick. What helps?
+emotional	How do I support someone who is anxious?
+emotional	I feel restless and I don't know why.
+emotional	How can I be kinder to myself when I make mistakes?
+emotional	I'm nervous about starting university.
+emotional	How do I handle feeling left out?
+emotional	I've been irritable with everyone lately.
+emotional	How do you keep hope when things are going badly?
+planning	How should I plan a weekend trip with friends?
+planning	What's a good way to plan a vegetable patch?
+planning	How do I organize a community clean-up?
+planning	How should I plan my first month in a new city?
+planning	What's the best way to plan a house renovation?
+planning	How do I prepare for a long bike ride?
+planning	How should I plan a family reunion?
+planning	What should I do to prepare for a hurricane?
+planning	How do I plan a study schedule for a language exam?
+planning	How should I plan a birthday party for a five-year-old?
+planning	What's a sensible way to plan a career break?
+planning	How do I prepare a spare room for guests?
+planning	How should I plan a monthly grocery shop?
+planning	What's the best way to plan a charity fundraiser?
+planning	How do I get a garage organized?
+reasoning	If it takes longer to walk somewhere than to cycle, why do people still walk?
+reasoning	Why do queues at the supermarket always feel slow?
+reasoning	How would you decide whether to repair or replace an old washing machine?
+reasoning	Why might a cheaper product cost more in the long run?
+reasoning	How do you tell whether a news story is trustworthy?
+reasoning	Why do restaurants put expensive items at the top of the menu?
+reasoning	If two people remember an event differently, who is right?
+reasoning	How would you decide which of two routes to take to work?
+reasoning	Why does waiting for something make it feel better when it arrives?
+reasoning	How can you tell whether advice is worth following?
+reasoning	Why do people believe things that are easily disproved?
+reasoning	How would you judge whether a rule is a good one?
+reasoning	Why is it easier to spot errors in other people's work?
+reasoning	How do you decide when to trust a stranger?
+reasoning	Why do small problems sometimes feel bigger than large ones?
+storytelling	Tell me a short story about someone learning patience.
+storytelling	Tell a short story about a lost key.
+storytelling	Tell me a story about two neighbors who never spoke.
+storytelling	Tell a short story about a gardener and a storm.
+storytelling	Tell me a story about someone who finally asked for help.
+storytelling	Tell a short story about a long walk home.
+storytelling	Tell me a story about a broken clock.
+storytelling	Tell a short story about a stubborn old boat.
+storytelling	Tell me a story about a child teaching an adult something.
+storytelling	Tell a short story about a letter that arrived late.
+storytelling	Tell me a story about someone who changed their mind.
+storytelling	Tell a short story about the last day of a shop.
+storytelling	Tell me a story about a dog waiting at a window.
+storytelling	Tell a short story about a small kindness repaid years later.
+storytelling	Tell me a story about a bridge nobody used.
+description	Describe a village square on market day.
+description	Describe the inside of a violin case.
+description	Describe a desert at midday.
+description	Describe a classroom on the last day of term.
+description	Describe a harbor before dawn.
+description	Describe an attic full of old furniture.
+description	Describe the feeling of standing on a high balcony.
+description	Describe a field after harvest.
+description	Describe a corner shop late at night.
+description	Describe the moment snow starts to melt.
+description	Describe a tailor's workshop.
+description	Describe a long corridor in an old hotel.
+description	Describe the sound of a river in summer.
+description	Describe a bus stop in the rain.
+description	Describe a swimming pool early in the morning.
+philosophical	Is it possible to be truly objective?
+philosophical	What does it mean to live a good life?
+philosophical	Should we judge people by their intentions or their results?
+philosophical	Is patience a virtue or just slowness?
+philosophical	Does luck deserve credit?
+philosophical	Is it better to know a hard truth or a comforting story?
+philosophical	What do we owe to strangers?
+philosophical	Is curiosity always a good thing?
+philosophical	Can a promise ever be rightly broken?
+philosophical	What makes something beautiful?
+philosophical	Is it possible to be too kind?
+philosophical	Should you always finish what you start?
+philosophical	What is the difference between knowledge and understanding?
+philosophical	Is silence a form of answer?
+philosophical	Do people change, or only their circumstances?
+educational	Explain how a rainbow forms to someone who has never seen one.
+educational	Teach me the basics of reading a map.
+educational	Explain what interest means on a loan.
+educational	How would you teach someone to tie a knot?
+educational	Explain what a metaphor is with an example.
+educational	Teach me how to read a bus timetable.
+educational	Explain how plants get water from the soil.
+educational	How would you explain averages to a child?
+educational	Explain why we have time zones.
+educational	Teach me the difference between weather forecasts and predictions.
+educational	Explain how a seed becomes a tree.
+educational	How would you teach someone to swim safely in open water?
+educational	Explain what recycling actually does.
+educational	Teach me how to read the label on a food package.
+educational	Explain how a library catalogue works.
+casual	What's your favorite kind of weather?
+casual	What would you do with a free afternoon?
+casual	What's a food everyone should try once?
+casual	Do you prefer mountains or the sea?
+casual	What's a good excuse to throw a party?
+casual	What's the best thing about living in a small town?
+casual	If you could learn any craft, what would it be?
+casual	What's a song that suits a long journey?
+casual	What's the nicest thing about a quiet Sunday?
+casual	What would you put in a time capsule?
+casual	What's the best meal to share with friends?
+casual	Where's a good place to think?
+casual	What makes a room comfortable?
+casual	What's a hobby you'd recommend to a busy person?
+casual	What's the best way to spend a birthday?

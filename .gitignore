@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# macOS
+.DS_Store
+
+# Model weights: reproducible from data + scripts, and too large for git.
+# Push the trained adapter to the HF Hub instead and link it in the README.
+*.safetensors
+*.bin
+*.pt
+*.pth
+outputs/**/checkpoint-*/
+outputs/sft-lora/
+outputs/sft-full/
+
+# Caches
+.cache/
+hf_cache/
+
+# Machine-local tool permissions (contains local paths)
+.claude/settings.local.json
+
+# Generation outputs and logs ARE committed on purpose: they are the evidence
+# behind the results table and the worklog, and they are small JSONL.

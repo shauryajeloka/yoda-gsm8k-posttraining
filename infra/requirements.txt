@@ -1,0 +1,11 @@
+# Install on top of a RunPod "PyTorch 2.x" image, which already has torch+CUDA.
+# If you are on a bare image, install torch first for your CUDA version from
+# https://pytorch.org -- do not let pip resolve it here.
+transformers==4.45.2
+peft==0.13.2
+accelerate==1.0.1
+jinja2>=3.1
+sentencepiece
+# judge (only the provider you use)
+anthropic>=0.39
+# openai>=1.50

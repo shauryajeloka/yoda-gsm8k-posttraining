@@ -1,0 +1,21 @@
+{
+  "seed": 1337,
+  "frozen_evaluation_sets": {
+    "data/math/gsm8k_eval.jsonl": "f3ef12d7e5c1b5a7ed110c51daba6386c426ae7fe706f6ac90383f69dd67b653",
+    "data/math/gsm8k_persona_math_eval.jsonl": "b34dfd7e9a4c762e297800e90d59d76c97ad23eda1511d8957696edf699d02db",
+    "data/persona/persona_eval_prompts.jsonl": "6f3ef63aecec247dc97156364036ad6c7ca9a1ae65c74a6d8975a27bee87e7d9"
+  },
+  "final_artifacts": {
+    "data/math/gsm8k_yoda_sft_train.jsonl": "26d8195dac90cda838a53f3cfaa3f580ad74568274bc86f7073b8a98ccdb9f63",
+    "data/persona/general_yoda_train.jsonl": "15b6c260f77b2f6a3218566043986033993f7ef7252f1529c07df700028ccc65",
+    "data/combined/sft_train.jsonl": "8bfceed1596bfec4a9c63dc2fbf92c91c6ae347182d61decfd1e94cdaf56495c",
+    "data/persona/yoda_style_guide.md": "0b0bb770b594efa6e498fa4d9ca11f7343795dab8f616ec2828f82af5fd0a9fb",
+    "data/judges/yoda_persona_judge.md": "fa2c358553dc69e0a20830a2daf92ede903c2f4806d34a8aeb75d6b699e69c45",
+    "data/verifier/gsm8k_verifier.py": "69c3ef156c0fc391a7ae2e3de774976c6acfc636dc5b4a4bb1dfcb659b5740e7"
+  },
+  "raw_source": {
+    "data/raw/gsm8k_train.jsonl": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+    "data/raw/gsm8k_test.jsonl": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14"
+  },
+  "note": "Frozen sets must not change once training begins. If a hash here does not match the file, the comparison across Base / SFT / RLAIF / final stages is no longer valid."
+}

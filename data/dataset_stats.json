@@ -1,0 +1,74 @@
+{
+  "token_counter": "Qwen2.5-3B-Instruct tokenizer",
+  "composition": {
+    "total": 1907,
+    "persona_math": 1500,
+    "persona_general": 407,
+    "math_share": 0.7865757734661772
+  },
+  "source_splits": {
+    "gsm8k/train": 1500,
+    "authored/none": 407
+  },
+  "lengths": {
+    "math prompt": {
+      "mean": 58.854,
+      "median": 55.0,
+      "min": 18,
+      "max": 188
+    },
+    "math response": {
+      "mean": 79.262,
+      "median": 74.0,
+      "min": 38,
+      "max": 214
+    },
+    "general prompt": {
+      "mean": 8.530712530712531,
+      "median": 8,
+      "min": 4,
+      "max": 16
+    },
+    "general response": {
+      "mean": 50.78378378378378,
+      "median": 51,
+      "min": 31,
+      "max": 70
+    },
+    "full example": {
+      "mean": 121.2978500262192,
+      "max": 353
+    }
+  },
+  "duplicates": {
+    "prompts": {
+      "exact": 0,
+      "near": 0
+    },
+    "responses": {
+      "exact": 0,
+      "near": 0
+    }
+  },
+  "verifier": {
+    "correct": 1500,
+    "incorrect": 0,
+    "extraction_methods": {
+      "final_answer_tag": 1500
+    }
+  },
+  "persona_hygiene": {
+    "star_wars": 0,
+    "hmm": 0,
+    "mean_inversion_cues": 2.490298898793917,
+    "top_opening": [
+      "twice the",
+      47
+    ]
+  },
+  "eval_sets": {
+    "data/math/gsm8k_eval.jsonl": 500,
+    "data/math/gsm8k_persona_math_eval.jsonl": 150,
+    "data/persona/persona_eval_prompts.jsonl": 150
+  }
+}
