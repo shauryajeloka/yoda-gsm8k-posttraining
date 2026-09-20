@@ -11,7 +11,7 @@
     "data/combined/sft_train.jsonl": "8bfceed1596bfec4a9c63dc2fbf92c91c6ae347182d61decfd1e94cdaf56495c",
     "data/persona/yoda_style_guide.md": "0b0bb770b594efa6e498fa4d9ca11f7343795dab8f616ec2828f82af5fd0a9fb",
     "data/judges/yoda_persona_judge.md": "fa2c358553dc69e0a20830a2daf92ede903c2f4806d34a8aeb75d6b699e69c45",
-    "data/verifier/gsm8k_verifier.py": "c1015fd8a5ee6be3c6142e1a2bca455aad8139b39333ed0a21f9d3523ff5566b"
+    "data/verifier/gsm8k_verifier.py": "c0a15b3565954b66cc0d02819af4556aa928d02efb98c112c237973cf8572d84"
   },
   "raw_source": {
     "data/raw/gsm8k_train.jsonl": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
@@ -26,6 +26,14 @@
       "effect": "+5.2pp on base, +4.6pp on base-bs64 (26 and 24 items recovered; 0 and 1 lost). Exactly 0 change on every arm that emits an explicit answer tag (base-fmt, base-fmt-brief, all SFT checkpoints), because the fallback never fires there.",
       "revalidated": "8792/8792 GSM8K reference solutions round-trip; 31/31 self-tests.",
       "note": "All arms were re-scored with this single verifier version, so the cross-stage comparison stays internally consistent. Scoring is offline, so no generation had to be repeated."
+    },
+    {
+      "date": "2026-09-20",
+      "bug": "normalize_number() crashed with OverflowError on a degenerate generation. A repetition loop emitted a 977-digit number, float() turned it into inf, and int(inf) raised.",
+      "fix": "reject non-finite values instead of crashing.",
+      "why_it_matters": "verify() is also the RLVR reward function. A reward that raises mid-rollout kills the training run, so this would have surfaced as a mysterious Week 3 crash rather than a scoring error.",
+      "effect": "no change to any previously reported score; the crash only affected the scale1500 arm, which could not be scored at all until this was fixed.",
+      "revalidated": "8792/8792 round-trip; 33/33 self-tests (two new overflow cases)."
     }
   ],
   "evaluation_config_revisions": [

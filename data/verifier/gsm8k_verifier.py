@@ -37,6 +37,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import sys
 from typing import Optional, Tuple
@@ -175,6 +176,15 @@ def normalize_number(raw: str) -> Optional[str]:
                 value = float(nums[0].replace(",", ""))
             else:
                 return None
+
+    # A degenerate generation can emit a number with hundreds of digits (a
+    # repetition loop), and float() turns that into inf -- which then raises
+    # OverflowError in int(). Observed in the wild: a 977-digit run of "6".
+    # Such a token is never a real answer, so reject it rather than crash.
+    # This matters beyond evaluation: verify() is the RLVR reward function,
+    # and a reward that raises mid-rollout kills the training run.
+    if not math.isfinite(value):
+        return None
 
     if value == int(value):
         return str(int(value))
@@ -426,6 +436,9 @@ _CASES = [
     ("Since there are 8 pints in a gallon, the final answer is 15 gallons * 8 pints / gallon = 120 pints\n#### 120", "120", True),
     ("Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether.\n#### 72", "72", True),
     ("The answer is 5 + 3 = 8", "8", True),
+    # A repetition loop overflows float() to inf; must not raise.
+    ("The answer is " + "6" * 977, "6", False),
+    ("Final answer: " + "9" * 400, "9", False),
 ]
 
 
