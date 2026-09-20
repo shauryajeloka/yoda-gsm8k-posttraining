@@ -589,3 +589,1503 @@ Final answer: 53
 @@gsm8k_train_00742
 The lawnmower adds to his rate, it does not replace it. Fifty percent of his eight yards: 8 x 0.50 = 4 yards more each day. His new daily rate then: 8 + 4 = 12 yards. Seven days a week holds: 12 x 7 = 84 yards. Eighty-four yards after a week Brendan can cut it is.
 Final answer: 84
+
+@@gsm8k_train_00743
+Per mile everything is measured, and only at the end do the miles multiply. People first: passengers and crew together, 30 + 5 = 35 people. Bags next, two for every person: 35 * 2 = 70 bags. The people's thirst: 35 * 3 = 105 gallons each mile. The bags' thirst: 70 * 2 = 140 gallons each mile. The empty plane's own twenty joins them: 140 + 105 + 20 = 265 gallons for every mile flown. Four hundred miles the trip runs: 265 * 400 = 106000 gallons. One hundred six thousand gallons of fuel the plane needs it is.
+Final answer: 106000
+
+@@gsm8k_train_00763
+What the gifts consume first, then what survives. Six gifts at two yards each: 6 x 2 = 12 yards used. From eighteen that leaves 18 - 12 = 6 yards. Six yards of ribbon left there will be.
+Final answer: 6
+
+@@gsm8k_train_00778
+Out of pocket means what he keeps paying after every recovery. Three thousand he spends at the start. The returns give money back: 700 + 500 = 1200 dollars recovered, leaving him out 3000-1200 = 1800 dollars. Now the sold bike, which cost twenty percent more than the returned one: 500 * 1.2 = 600 dollars it cost him. He sells it for eighty percent of that: 600 * .8 = 480 dollars back. So on that bike he loses 600-480 =120 dollars, bringing him to 1800+120 = 1920 dollars. The toaster adds its hundred: 1920+100 = 2020 dollars. Two thousand twenty dollars out of pocket he is.
+Final answer: 2020
+
+@@gsm8k_train_00781
+Three of each he bought, so each title's price must be tripled. The Life Journey: 3 * 100 = 300 dollars. When You Rescind: 3 * 85 = 255 dollars. A Day a Life: 3 * 50 = 150 dollars. All three titles together: 150 + 255 + 300 = 705 dollars. Seven hundred five dollars in the shop spent were.
+Final answer: 705
+
+@@gsm8k_train_00791
+A fraction of a fraction of a fraction this is, and each one narrows the group before. Dutch first: three fifths of ninety, 3/5*90 = 54 people. Of those Dutch, half are also American: 1/2*54 = 27 people. Of those twenty-seven, a third took window seats: 1/3*27 = 9 people. Nine Dutch Americans at the windows sat it is.
+Final answer: 9
+
+@@gsm8k_train_00792
+Two buildings, and their difference known. If the eleven extra floors we set aside, the two towers would be equal, so remove them from the total first: 35 - 11 = 24 floors shared equally. Halve that: 24/2 = 12 floors for the Leeward Center. The Chrysler holds eleven more: 12 + 11 = 23 floors. Twenty-three floors the Chrysler Building has it is.
+Final answer: 23
+
+@@gsm8k_train_00797
+Each dog measured against the one before. The first eats one and a half cups, given to us. The second eats twice that: 1.5 x 2 = 3 cups. The third eats two and a half more than the second, not than the first: 3 + 2.5 = 5.5 cups. All three dogs together: 1.5 + 3 + 5.5 = 10 cups. Ten cups Hannah should prepare it is.
+Final answer: 10
+
+@@gsm8k_train_00819
+Three days are described, and the rest must share what remains. The second day: three times the first fifty, 3*50 = 150 tins. The third: fifty fewer than the second, 150-50 = 100 tins. The first three days together: 150+100+50 = 300 tins. Five hundred is the week's goal, so still wanting: 500-300 = 200 tins. Four days of the week remain, sharing that shortfall equally: 200/4 = 50 tins. Fifty tins each remaining day he collected it is.
+Final answer: 50
+
+@@gsm8k_train_00820
+The tip is reckoned on the whole bill, not on James's half, and there the trap lies. Both meals together: 16+14=30 dollars. Half of that each friend owes: 30/2=15 dollars. The tip is twenty percent of the full thirty: 30*.2=6 dollars, and James carries all of it. His half and the whole tip: 15+6=21 dollars. Twenty-one dollars James paid it is.
+Final answer: 21
+
+@@gsm8k_train_00822
+What she holds first, then what is wanting, then the packs. Four packs of fifteen: 15 x 4 = 60 cupcakes already. One hundred children need one each, so short she is by 100 - 60 = 40 cupcakes. Ten to a pack those come: 40/10 = 4 packs. Four packs of ten she must buy it is.
+Final answer: 4
+
+@@gsm8k_train_00828
+Two stretches of nights, each with its own length of sleep. The first: 2*6=12 hours across two days. The second: 2*10=20 hours across the next two. Both stretches together: 12+20=32 hours. Thirty-two hours of sleep Tim got it is.
+Final answer: 32
+
+@@gsm8k_train_00838
+Survivors we count, not the drowned, though through the drowned our path runs. Sheep: three drowned of twenty, so 20 - 3 = 17 reached shore. Cows: twice as many drowned as sheep, 2 * 3 = 6 cows lost, leaving 10 - 6 = 4 cows ashore. Dogs: all fourteen made it. The survivors summed: 17 + 4 + 14 = 35 animals. Thirty-five animals to the shore made it is.
+Final answer: 35
+
+@@gsm8k_train_00839
+Omelets first, eggs last. Small children at half an omelet each: 0.5 * 53 = 26.5 omelets. Older children at one each: 1 * 35 = 35 omelets. Adults at two each: 2 * 75 = 150 omelets. Seniors at one and a half: 1.5 * 37 = 55.5 omelets. The buffer of twenty-five joins them: 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets in all. Two eggs each omelet demands: 2 * 292 = 584 eggs. Five hundred eighty-four eggs they must buy it is.
+Final answer: 584
+
+@@gsm8k_train_00843
+The quarter is taken of what remains, not of the original thirty. Lunch takes ten: 30-10=20 dollars left. A quarter of that twenty on the ice cream: 20/4=5 dollars. What survives: 20-5=15 dollars. Fifteen dollars Randy has left it is.
+Final answer: 15
+
+@@gsm8k_train_00845
+Sets of actors first, then the actors within them. Sixty minutes an hour holds, and fifteen minutes each set performs: 60 / 15 = 4 sets in the hour. Five actors fill each set: 4 * 5 = 20 actors. Twenty actors in the show there can be it is.
+Final answer: 20
+
+@@gsm8k_train_00847
+Costs first, then the profit upon them, then the price of one bag. Seeds and chemicals and labour: 50+35+15 = 100 dollars spent. A tenth of that as profit he wants: 100*(10/100) = 10 dollars of profit, so his sales must reach 100+10 = 110 dollars. Ten bags share that target: 110/10 = 11 dollars. Eleven dollars each bag should sell for it is.
+Final answer: 11
+
+@@gsm8k_train_00854
+Five weekdays there are, and two of them are unusual. Monday through Wednesday at a full hour each: 60 x 3 = 180 minutes. Thursday was cut short: 60 - 20 = 40 minutes. Friday ran long: 60 + 10 = 70 minutes. The week summed: 180 + 40 + 70 = 290 minutes. Two hundred ninety minutes Jeff ran that week it is.
+Final answer: 290
+
+@@gsm8k_train_00856
+Backwards from the year's end we must travel. Each month he spends 2*4=8 dollars on his four trips. Across twelve months: 8*12=96 dollars spent in the year. One hundred four dollars survive, so what he began with is the spending plus the survivor: 96+104=200 dollars. Two hundred dollars at first he had it is.
+Final answer: 200
+
+@@gsm8k_train_00859
+Into packets per minute the rate must be changed. Three hundred bears a minute, fifty to a packet: 300 / 50 = 6 packets every minute. Two hundred forty packets are wanted: 240 / 6 = 40 minutes. Forty minutes to fill them it takes.
+Final answer: 40
+
+@@gsm8k_train_00868
+Folded over the pole is, so two equal pieces the break makes above it. Twelve feet tall it stood, and the tip now hangs two feet above the ground, so the folded length spans from the break down to that dangling tip. The distance the two halves share is 12-2=10 feet, and halved that gives (12-2)/2=5 feet from the top. But from the base the question asks, so from the whole height subtract: 12-5=7 feet. Seven feet from the base the flagpole broke it is.
+Final answer: 7
+
+@@gsm8k_train_00872
+Per pin the discount works, then the pins multiply. Fifteen percent of twenty dollars: 20*.15=3 dollars off each pin. So each pin costs 20-3=17 dollars. Ten pins he buys: 17*10=170 dollars. One hundred seventy dollars on pins John spent it is.
+Final answer: 170
+
+@@gsm8k_train_00880
+Into hours the daily jog must first be changed. Thirty minutes is 30/60=0.5 of an hour, so one hour thirty minutes is one and a half hours. Seven days a week he jogs: 1.5*7 = 10.5 hours each week. Two weeks of that: 2*10.5 = 21 hours. Twenty-one hours jogging he will have spent it is.
+Final answer: 21
+
+@@gsm8k_train_00882
+The back wheel doubles the front: 20*2=40 spokes behind. Both wheels the bicycle carries, so joined they must be: 20+40=60 spokes. Sixty spokes the bicycle has it is.
+Final answer: 60
+
+@@gsm8k_train_00889
+The trade-in reduces what she must earn, it does not pay her. Eight hundred the phone costs, and two hundred forty the old phone fetches: 800 - 240 = 560 dollars she must still find. Eighty dollars a week the babysitting brings: 560 / 80 = 7 weeks. Seven weeks Carrie must work it is.
+Final answer: 7
+
+@@gsm8k_train_00891
+Both of Lavinia's children hang from Katie's daughter, who is twelve. Lavinia's daughter is ten years younger than her: 12 - 10 = 2 years old. Lavinia's son is twice her age: 12 * 2 = 24 years old. The gap between Lavinia's two children: 24 - 2 = 22 years. Twenty-two years older than his sister Lavinia's son is.
+Final answer: 22
+
+@@gsm8k_train_00894
+Two narrowings there are. State quarters first, two fifths of thirty-five: 35*(2/5)=14 state quarters. Then half of those are Pennsylvania: 14*(.50)=7 quarters. Seven Pennsylvania state quarters Nick has it is.
+Final answer: 7
+
+@@gsm8k_train_00895
+Rooms first, then gallons. Three bedrooms at four hundred square feet each: 3 * 400 = 1200 square feet. The living room adds its six hundred: 1200 + 600 = 1800 square feet of wall. Six hundred square feet one gallon covers: 1800 / 600 = 3 gallons. Three gallons of paint Henrietta needs it is.
+Final answer: 3
+
+@@gsm8k_train_00904
+Cups to tablespoons to limes the path runs. Doubled the recipe she wants, so a quarter cup twice over: 0.25 + 0.25 = 0.5 cups of juice. Sixteen tablespoons fill a cup, and half a cup she needs: 16*.5 = 8 tablespoons. One lime yields one tablespoon, so one lime for each: 1*8 = 8 limes. Eight key limes Audrey needs it is.
+Final answer: 8
+
+@@gsm8k_train_00912
+Three pickers, then jars, then dollars. Matthew picked twenty more than Betty's sixteen: 16 + 20 = 36 strawberries. Natalie picked half of Matthew's, for twice hers is his: 36/2 = 18 strawberries. All three together: 16 + 36 + 18 = 70 strawberries. Seven fill a jar: 70/7 = 10 jars. Four dollars each jar fetches: 10 x 4 = 40 dollars. Forty dollars they made it is.
+Final answer: 40
+
+@@gsm8k_train_00914
+Two groups there are, and only one of them loses birds. The white birds sit outside the cage, six more than the forty grey: 40+6 = 46 white birds. Inside, half the grey fly away, so half remain: 1/2*40 = 20 grey birds left. The whites were never caged, so untouched they stay: 20+46 = 66 birds. Sixty-six birds remaining there are.
+Final answer: 66
+
+@@gsm8k_train_00918
+Two rectangles to cover there are. The house: 20.5 * 10 = 205 square feet. The porch: 6 * 4.5 = 27 square feet. Both need shingles, so joined they must be: 205 + 27 = 232 square feet. Two hundred thirty-two square feet of shingles needed will be.
+Final answer: 232
+
+@@gsm8k_train_00920
+Three goods, three unit prices, three counts. Drinks: 2*10= 20 dollars. Cakes: 10*5= 50 dollars. Ice creams, and many of those there are: 5*100=500 dollars. Everything summed: 20+50+500=570 dollars. Five hundred seventy dollars Betty spends it is.
+Final answer: 570
+
+@@gsm8k_train_00931
+Malcom's pile first, then his giving. Eight more than Brandon's twenty: 20 + 8 = 28 cards Malcom held. Half of those go to Mark: 1/2 * 28 = 14 cards given. What stays with Malcom: 28-14 = 14 cards. Fourteen cards Malcom has left it is.
+Final answer: 14
+
+@@gsm8k_train_00937
+The discount first, then the price that survives it. Thirty percent of fifty dollars: 50*.30 = 15 dollars struck off. What remains to pay: 50-15 = 35 dollars. Thirty-five dollars the final cost of the dress is.
+Final answer: 35
+
+@@gsm8k_train_00942
+Hours to minutes to miles. Two movies at an hour and a half each: 2 x 1.5 = 3 hours of running. Into minutes that becomes 3 x 60 = 180 minutes. Twelve minutes each mile costs him: 180 / 12 = 15 miles. Fifteen miles Paul runs it is.
+Final answer: 15
+
+@@gsm8k_train_00948
+Jason's weekly rate first, then four weeks of it. Four times William's two: 4 * 2 = 8 visits each week. Across four weeks: 8 * 4 = 32 visits. Thirty-two times in four weeks Jason goes it is.
+Final answer: 32
+
+@@gsm8k_train_00952
+The second week first, then both joined. Three times the fifty of the first week: 50 x 3 = 150 kilograms. Both weeks the question wants, not the second alone: 50 + 150 = 200 kilograms. Two hundred kilograms in two weeks sold were.
+Final answer: 200
+
+@@gsm8k_train_00953
+Step by step through her fortunes we walk. Doubling four gives 4*2=8 chickens. The dog takes one: 8-1=7 chickens. Then four less than ten she finds, and 10-4=6 that is. Those six join the seven: 7+6=13 chickens. Thirteen chickens Wendi has it is.
+Final answer: 13
+
+@@gsm8k_train_00961
+One year first, then five. Twenty-five percent more than L&J's two hundred twenty: 25/100*220=55 movies more, so Johnny TV makes 220+55=275 movies. Both companies in a year: 275+220=495 movies. Across five years: 495*5=2475 movies. Two thousand four hundred seventy-five movies in five years they produce it is.
+Final answer: 2475
+
+@@gsm8k_train_00967
+Decrease TO three quarters it does, not decrease BY three quarters, and there the trap lies. The new temperature: 3/4*84=63 degrees. The decrease is the fall from old to new: 84-63=21 degrees. Twenty-one degrees the temperature will decrease by it is.
+Final answer: 21
+
+@@gsm8k_train_00971
+Two spendings, then what survives. A third of thirty on junk food: 30*(1/3) = 10 dollars, leaving 30-10 = 20 dollars. Eight more on sweets: 20-8 = 12 dollars. What remains she saves. Twelve dollars Annabelle saved it is.
+Final answer: 12
+
+@@gsm8k_train_00975
+Games, then fouls, then shots, then makes. Eighty percent of twenty games: 20*.8=16 games played. Five fouls in each: 16*5=80 fouls. Two shots for every foul: 80*2=160 free throws taken. Seventy percent of those he sinks: 160*.7=112 made. One hundred twelve free throws he gets it is.
+Final answer: 112
+
+@@gsm8k_train_00987
+After the giving they are equal, so from Lucy's side we work. Lucy gives five away from twenty: 20 - 5 = 15 dollars she keeps. Linda then holds fifteen too, but five of those were the gift, so before it she had 15 - 5 = 10 dollars. Ten dollars Linda had at the beginning it is.
+Final answer: 10
+
+@@gsm8k_train_00995
+Josh's age today first, then the pair's, then Anna's. Twenty-two he was at the wedding, and thirty years have passed: 30 + 22 = 52 years old Josh is now. Their combined age is five times his wedding age: 5 * 22 = 110 years together. Anna's share of that: 110 - 52 = 58 years old today. Back thirty years to the wedding: 58 - 30 = 28 years. Twenty-eight years old Anna was when they married it is.
+Final answer: 28
+
+@@gsm8k_train_01012
+All three sales first, then the slice he keeps. The houses together: 157000 + 499000 + 125000 = 781000 dollars. Two percent of that is his: 781000 * 0.02 = 15620 dollars. Fifteen thousand six hundred twenty dollars Brian's commission was.
+Final answer: 15620
+
+@@gsm8k_train_01026
+Two feet taller than his daughter he is, so upward from her five: 5+2 = 7 feet tall Mr. Martinez stands. Combined their height the question wants, so both must join: 7+5 = 12 feet. Twelve feet their combined height is.
+Final answer: 12
+
+@@gsm8k_train_01033
+Rate first, then daily time, then the week. Twice his walking rate he burns dancing: 2*300=600 calories each hour. Twice a day for half an hour each: .5*2=1 hour of dancing daily. So each day: 600*1=600 calories. Four days a week he dances: 600*4=2400 calories. Two thousand four hundred calories a week from dancing he loses it is.
+Final answer: 2400
+
+@@gsm8k_train_01040
+Down the chain of animals we travel. Chickens are twice the goats: 66 x 2 = 132 chickens. Goats and chickens together: 66 + 132 = 198 animals. Ducks are half of that pair: 198/2 = 99 ducks. Pigs are a third of the ducks: 99/3 = 33 pigs. How many more goats than pigs: 66 - 33 = 33. Thirty-three more goats than pigs there are.
+Final answer: 33
+
+@@gsm8k_train_01044
+Minutes first, then their price. Five advertisements at three minutes each: 5 * 3 = 15 minutes of advertising. Four thousand dollars each minute costs: 15 * 4000 = 60000 dollars. Sixty thousand dollars the cost of transmitting them was.
+Final answer: 60000
+
+@@gsm8k_train_01045
+White socks first, then the loss, then the gap. Four times his six black: 6 x 4 = 24 white socks. Half of those are lost, so half remain: 24/2 = 12 white socks. How many more white than black: 12 - 6 = 6 socks. Six more white socks than black he still has it is.
+Final answer: 6
+
+@@gsm8k_train_01046
+A dozen is twelve, so three dozen is 3*12=36 roses. Half to her daughter: 36/2=18 given, leaving 36-18=18 in the vase. A third of those wilt: 18/3=6 wilted flowers. Remove them: 18-6=12 flowers. Twelve flowers in the vase remained it is.
+Final answer: 12
+
+@@gsm8k_train_01056
+From the potatoes the chain climbs, then falls. Carrots are six times the two potatoes: 6 * 2 = 12 carrots. Onions are twice the carrots: 12 * 2 = 24 onions. Green beans are a third of the onions, so downward now: 24 / 3 = 8 green beans. Eight green beans Maria needs to cut it is.
+Final answer: 8
+
+@@gsm8k_train_01057
+Into pints the gallons must turn, for pints the question wants. Eight pints fill a gallon, so twenty gallons hold 20*8=160 pints. Eighty containers share that: 160/80 = 2 pints in each container. Three and a half containers Geraldo drank: 3.5 * 2 = 7 pints. Seven pints of tea Geraldo drank it is.
+Final answer: 7
+
+@@gsm8k_train_01058
+Per day first, then seven of them. Ten hours across five days: 10/5=2 hours each day. Fifty pages an hour he reads: 2*50=100 pages each day. Seven days at that pace: 100*7=700 pages. Seven hundred pages in seven days Tom reads it is.
+Final answer: 700
+
+@@gsm8k_train_01068
+Each kind of shot carries its own worth. The two-pointers, four of them: 2 x 4 = 8 points. The three-pointers, twice made: 3 x 2 = 6 points. Both kinds together: 8 + 6 = 14 points. Fourteen points in that quarter Matt scored it is.
+Final answer: 14
+
+@@gsm8k_train_01071
+A chain of slower and slower strokes this is. Freestyle is given: forty-eight seconds. Backstroke is four slower: 48+4=52 seconds. Butterfly is three slower than backstroke: 52+3=55 seconds. Breaststroke is two slower than butterfly: 55+2=57 seconds. All four events together: 48+52+55+57=212 seconds. Two hundred twelve seconds for all four it would take.
+Final answer: 212
+
+@@gsm8k_train_01077
+The mistakes are the small part, and from the small part the whole we build. Eighty percent right means 100-80=20 percent wrong, and those five mistakes are that twenty percent. So one percent is 5/20 = 0.25 of an item. The whole quiz is a hundred percent: 0.25 * 100 = 25 items. Twenty-five items on the quiz there were.
+Final answer: 25
+
+@@gsm8k_train_01083
+The first year first, then the cut. Ten televisions a day across a year's 365 days: 10*365 = 3650 televisions. Ten percent of that is removed in the second year: 10/100*3650 = 365 fewer. The second year's production then: 3650-365 = 3285 televisions. Three thousand two hundred eighty-five televisions in the second year produced were.
+Final answer: 3285
+
+@@gsm8k_train_01084
+One meal first, then two, then the tip, then Billy's share of the tip. A steak and a drink: 20+5=25 dollars for one meal. Two people eat: 25*2=50 dollars for both. A twenty percent tip on that: 50*.2= 10 dollars of tip. But eighty percent of the tip only Billy covers: 10*.8= 8 dollars. Eight dollars in tips Billy must pay it is.
+Final answer: 8
+
+@@gsm8k_train_01105
+Every fraction is taken of the original four hundred, not of what remains, and that makes this one gentler than it looks. Her mother: 1/4 x 400 = 100 dollars. Clothes: 1/8 x 400 = 50 dollars. Charity: 1/5 x 400 = 80 dollars. All that left her: 100 + 50 + 80 = 230 dollars gone. What she kept: 400 - 230 = 170 dollars. One hundred seventy dollars Gina kept it is.
+Final answer: 170
+
+@@gsm8k_train_01112
+Two kinds are given as fractions, and the third is whatever is left. Raspberries, half of forty-two: 42/2 = 21 berries. Blackberries, a third of forty-two: 42/3 = 14 berries. Those two together: 21+14 = 35 berries. The blueberries are everything the others did not claim: 42-35 = 7 berries. Seven blueberries picked there were.
+Final answer: 7
+
+@@gsm8k_train_01115
+Scallops first, then pounds, then dollars. Eight people at two scallops each: 8*2 = 16 scallops wanted. Eight scallops fill a pound: 16/8 = 2 pounds needed. Twenty-four dollars each pound costs: 24*2 = 48 dollars. Forty-eight dollars the scallops will cost it is.
+Final answer: 48
+
+@@gsm8k_train_01124
+Each kind of clothing has its own fraction in the hamper. Blouses, three quarters of twelve: 12 * 75/100 = 9 blouses. Skirts, half of six: 6 * 50/100 = 3 skirts. Slacks, a quarter of eight: 8 * 25/100 = 2 slacks. All that waits to be washed: 9 + 3 + 2 = 14 pieces. Fourteen pieces of clothing into the washer must go.
+Final answer: 14
+
+@@gsm8k_train_01127
+From the part to the whole, then down to another part. Eight useful items are a fifth of everything, so the whole attic holds 8 / .2 = 40 items. Seventy percent of those are junk: 40 * .7 = 28 items. Twenty-eight junk items the attic has it is.
+Final answer: 28
+
+@@gsm8k_train_01137
+Together they hold fifty-two, and James's pile is built from Jordan's. Set the seven extra aside first: 52-7 = 45 Oreos remain. What remains is Jordan's pile plus four more of the same size, five such piles in all: 45/5 = 9 Oreos Jordan has. James has four times that plus the seven: 4*9+7 = 43 Oreos. Forty-three Oreos James has it is.
+Final answer: 43
+
+@@gsm8k_train_01143
+Spending first, change after. Two toys at twenty dollars: 2*20 = 40 dollars. Three hats at ten: 3*10 = 30 dollars. Together: 40+30 = 70 dollars spent. From her hundred: 100-70 = 30 dollars back. Thirty dollars of change Kendra received it is.
+Final answer: 30
+
+@@gsm8k_train_01145
+Four people she buys for, herself and three friends, and there the trap lies for those who count only the friends. Four tickets at ninety dollars: 4 * 90 = 360 dollars needed. One hundred eighty-nine she already holds: 360 - 189 = 171 dollars. One hundred seventy-one dollars Daria must earn it is.
+Final answer: 171
+
+@@gsm8k_train_01151
+Pau's first order is twice Kobe's five: 5 x 2 = 10 pieces. But another set they order, doubling what each has eaten: 10 x 2 = 20 pieces for Pau. Twenty pieces of fried chicken Pau will have eaten it is.
+Final answer: 20
+
+@@gsm8k_train_01159
+Two discounts there are, and the second falls on the already-discounted total. The shoes: 200 x 30/100 = 60 dollars off, leaving 200 - 60 = 140 dollars. The shirts, undiscounted at first: 80 x 2 = 160 dollars. His basket then: 140 + 160 = 300 dollars. Now the checkout's five percent on that whole: 300 x 5/100 = 15 dollars off. What he pays: 300 - 15 = 285 dollars. Two hundred eighty-five dollars Erwan spent it is.
+Final answer: 285
+
+@@gsm8k_train_01162
+What the children shared first, then how many shared it. The parents ate eighty of two hundred: 200-80 = 120 bars for the children. Twenty bars each child received: 120/20 = 6 children. Six children in the family there are.
+Final answer: 6
+
+@@gsm8k_train_01170
+Time he had against time he took. From a quarter past seven to eight o'clock is forty-five minutes he had. Now his delays: four red lights at three minutes each, 3 * 4 = 12 minutes of waiting. His journey then took the normal thirty plus the lights plus the construction: 30 + 12 + 10 = 52 minutes. Late he is by the excess over what he had: 52 - 45 = 7 minutes. Seven minutes late Andy will be it is.
+Final answer: 7
+
+@@gsm8k_train_01173
+Dreaming first, then its opposite. Two fifths of ten hours she dreamed: 2/5*10 = 4 hours. The rest of the night held no dreams: 10-4 = 6 hours. Six hours not dreaming she was it is.
+Final answer: 6
+
+@@gsm8k_train_01174
+The black ones are known, so remove them and the rest is blue and yellow. Eleven in all, five black: 11-5=6 blue and yellow together. Twice as many blue as yellow there are, so three equal shares those six make, one yellow and two blue: 6/3=2 yellow butterflies. Blue is twice that: 2*2=4 butterflies. Four blue butterflies Martha has it is.
+Final answer: 4
+
+@@gsm8k_train_01177
+Hours first, then dollars. Eight hours a day across four days: 8*4=32 hours of renting. Twenty dollars each hour brings: 32*20=640 dollars. Six hundred forty dollars a week James makes it is.
+Final answer: 640
+
+@@gsm8k_train_01178
+Each worker's pay first, then the gap. Oula: ninety-six deliveries at a hundred dollars, 96* 100 = 9600 dollars. Tona made three quarters as many deliveries: 3/4*96 = 72 deliveries, earning 72*100 = 7200 dollars. The difference between them: 9600-7200 = 2400 dollars. Two thousand four hundred dollars their difference in pay is.
+Final answer: 2400
+
+@@gsm8k_train_01180
+Combos first, then their cost. Each combo feeds six, and thirty-six must eat: 36/6 = 6 combos needed. Twelve dollars each combo costs: 12*6 = 72 dollars. Seventy-two dollars to feed everyone it will cost.
+Final answer: 72
+
+@@gsm8k_train_01185
+Down to one litre first, then up to five. Sixty-nine kilos make three litres: 69 / 3 = 23 kilos for a single litre. Five litres she wants: 23 * 5 = 115 kilos. One hundred fifteen kilos of tomatoes Ashley needs it is.
+Final answer: 115
+
+@@gsm8k_train_01189
+Per game everything must be reckoned. Her scoring rate: 345 / 15 = 23 points a game. Now the known baskets. Two-pointers, five a game: 5 x 2 = 10 points. Free throws, four a game at one point: 4 x 1 = 4 points. Those known sources give 10 + 4 = 14 points. The three-pointers must supply the rest: 23-14 = 9 points from them. Three points each such basket: 9 / 3 = 3 baskets. Three three-point baskets a game she averaged it is.
+Final answer: 3
+
+@@gsm8k_train_01190
+Down to Bea, then up the chain. Kiarra is twice Bea, so Bea is 30 / 2 = 15 years old. Job is three times Bea: 15 * 3 = 45 years. Figaro is seven more than Job: 45 + 7 = 52 years. Harry is half of Figaro: 52 / 2 = 26 years. Twenty-six years old Harry is.
+Final answer: 26
+
+@@gsm8k_train_01197
+What she needs first, then what is wanting. Six bracelets at eight beads each: 8 x 6 = 48 beads required. Thirty-six she holds: 48 - 36 = 12 beads short. Twelve more beads Bella needs it is.
+Final answer: 12
+
+@@gsm8k_train_01213
+Mistakes into correct answers we must turn for both. Lyssa erred on a fifth of the seventy-five: 75 x 20/100 = 15 mistakes, so her correct answers number 75 - 15 = 60. Precious made twelve mistakes: 75 - 12 = 63 correct. Now the gap, and note that Precious did better: 63 - 60 = 3. Three more correct answers there were between them it is.
+Final answer: 3
+
+@@gsm8k_train_01214
+Four legs each dog carries: 2 x 4 = 8 dog legs. The chicken stands on two. Both kinds together: 8 + 2 = 10 legs. Ten animal legs in all there are.
+Final answer: 10
+
+@@gsm8k_train_01218
+Goods first, then the tax upon them. The two pairs: 150 + 120 = 270 dollars before tax. A tenth of that the tax takes: 270 * .1 = 27 dollars. Goods and tax joined: 270 + 27 = 297 dollars. Two hundred ninety-seven dollars John paid it is.
+Final answer: 297
+
+@@gsm8k_train_01223
+Through Stephanie the path to Sonya runs. Stephanie fell thirteen more than Steven's three: 13 + 3 = 16 falls. Half of Stephanie's falls: 16/2 = 8. Two less than that half Sonya fell: 8 - 2 = 6 falls. Six times Sonya fell it is.
+Final answer: 6
+
+@@gsm8k_train_01228
+The daily rate first, then the days. Eighteen drums across three days: 18/3=6 drums each day. Three hundred sixty drums at that pace: 360/6=60 days. Sixty days to make them it will take.
+Final answer: 60
+
+@@gsm8k_train_01235
+Spending first, then what survives. Four pairs of socks at two dollars: 2 x 4 = 8 dollars. The hat adds seven: 8 + 7 = 15 dollars spent. From twenty: 20 -15 = 5 dollars. Five dollars Penny has left it is.
+Final answer: 5
+
+@@gsm8k_train_01239
+Two costs there are, the removal and the new floor. The room's area: 8*7=56 square feet. The new floor at a dollar and a quarter each foot: 56*1.25=70 dollars. The removal's fifty joins it: 50+70=120 dollars. One hundred twenty dollars to replace the floor it cost.
+Final answer: 120
+
+@@gsm8k_train_01244
+One song first, then three. Ten hours a day across ten days: 10*10 = 100 hours for a single song. Three songs at that cost: 3*100 = 300 hours. Three hundred hours to complete the three songs he took it is.
+Final answer: 300
+
+@@gsm8k_train_01249
+How much longer the question asks, so subtract at the end we must. A quarter charge took forty-five minutes, and a full charge is four such quarters: 100 / 25 = 4. So the whole charge takes 45 * 4 = 180 minutes. Forty-five of those are already spent: 180 - 45 =135 minutes. One hundred thirty-five minutes longer it must charge it is.
+Final answer: 135
+
+@@gsm8k_train_01251
+Three kinds of purchase, three prices. Films: 9 * 5 = 45 dollars. Books: 4 * 4 = 16 dollars. CDs: 6 * 3 = 18 dollars. All together: 45 + 16 + 18 = 79 dollars. Seventy-nine dollars Josh spent in all it is.
+Final answer: 79
+
+@@gsm8k_train_01255
+Twice the fair tickets first: 25*2=50 tickets. Then six more than that doubling: 50+6=56 tickets. Fifty-six baseball game tickets the school sold it is.
+Final answer: 56
+
+@@gsm8k_train_01263
+Year by year the collection grows, then shrinks. He began with fifty, and the next year doubled it: 50*2=100 coins. The following year three each month across twelve months: 3*12=36 coins added. The year after, one every third month, which across twelve months is 12/3=4 coins added. Before the loss he held 100+36+4 = 140 coins. A quarter of those he misplaced: 140/4=35 coins lost. What remained: 140-35= 105 coins. One hundred five coins left he had it is.
+Final answer: 105
+
+@@gsm8k_train_01274
+Eaters first, then their opposites, for each group separately. Teachers who ate: 2/3*30 = 20, so those who did not: 30-20 = 10 teachers. Staff who ate: 4/5*45 = 36, so those who did not: 45-36 = 9 staff. Both groups of abstainers joined: 9+10 = 19 people. Nineteen non-pizza eaters at the school there are.
+Final answer: 19
+
+@@gsm8k_train_01277
+Even baskets first, then the theft from each. Sixty-four apples across four baskets: 64/4=16 apples in each. Three taken from every basket, not three in total: 16-3=13 apples. Thirteen apples in each basket now there are.
+Final answer: 13
+
+@@gsm8k_train_01285
+Malibu holds twice Santa Monica's twenty: 2*20 = 40 surfers. Both beaches the question wants, not Malibu alone: 40+20 = 60 surfers. Sixty surfers on the two beaches there are.
+Final answer: 60
+
+@@gsm8k_train_01288
+Three times as long on the rest as on the vacuuming: 3*3=9 hours for the other chores. But all his chores the question asks about, so the vacuuming counts too: 3+9=12 hours. Twelve hours on his chores James spends it is.
+Final answer: 12
+
+@@gsm8k_train_01294
+The plane is measured against the boat, so the boat first. Two hours it takes. Four times that the plane: 4 * 2 = 8 hours. Both legs of the journey joined: 8 + 2 = 10 hours. Ten hours to reach the island Tom takes it is.
+Final answer: 10
+
+@@gsm8k_train_01303
+Each day built upon those before it. Monday: six dollars. Tuesday, twice that: 6*2=12 dollars. Wednesday doubles the first two days combined, so their sum first: 6+12=18 dollars, then doubled, 18*2=36 dollars. All three days: 6+12+36=54 dollars. Fifty-four dollars Terry spent in total it is.
+Final answer: 54
+
+@@gsm8k_train_01306
+Three purchases, then what the ten leaves behind. Gum: 3*1=3 dollars. Chocolate: 5*1=5 dollars. Candy canes at half a dollar each: 2*.50 =1 dollar. Everything spent: 3+5+1 = 9 dollars. From her ten: 10-9 = 1 dollar. One dollar Anna had left it is.
+Final answer: 1
+
+@@gsm8k_train_01308
+A day holds twenty-four hours, and fractions of days we must unfold. Monday, half a day: 24 / 2 = 12 hours. Wednesday, a quarter: 24 / 4 = 6 hours. With Tuesday's four, the first three days give 12 + 4 + 6 = 22 hours. Thursday is half of that running total: 22 / 2 = 11 hours. Through Thursday then: 22 + 11 = 33 hours watched. The show runs fifty-two hours, so Friday carries the rest: 52 - 33 = 19 hours. Nineteen hours on Friday Jake watched it is.
+Final answer: 19
+
+@@gsm8k_train_01328
+Yarn is mentioned but never delivered, so its price matters not at all. Tuesday doubles Monday's twenty: 20 x 2 = 40 yards. Wednesday takes a quarter of Tuesday: 40 x 1/4 = 10 yards. Three days of fabric: 20 + 40 + 10 = 70 yards. Two dollars each yard earns: 2 x 70 = 140 dollars. One hundred forty dollars Daniel earns it is.
+Final answer: 140
+
+@@gsm8k_train_01329
+Three candidates, and the third found only by subtraction. Those who did not vote for John: 1150-150=1000 people. James took seventy percent of them: 1000*.7=700 votes. The third candidate takes what James left: 1000-700=300 votes. How many more than John he got: 300-150=150 votes. One hundred fifty more votes than John the third got it is.
+Final answer: 150
+
+@@gsm8k_train_01335
+Twice Lexie's twelve Tom picked: 12 x 2 = 24 apples. Altogether the question asks, so both join: 12 + 24 = 36 apples. Thirty-six apples altogether they collected it is.
+Final answer: 36
+
+@@gsm8k_train_01336
+Both days must be counted, and there the trap lies. Eight yards on each of two days: 2*8 = 16 yards in all. Thirty minutes each yard costs: 30*16 = 480 minutes. Into hours that becomes 480/60 = 8 hours. Eight hours cutting grass Jason spends it is.
+Final answer: 8
+
+@@gsm8k_train_01339
+Five MORE metres of plastic than copper, not five metres in total. Plastic: 10 + 5 = 15 metres. Both kinds together: 10 + 15 = 25 metres of pipe. Four dollars each metre costs: 4 x 25 = 100 dollars. One hundred dollars the plumber spent it is.
+Final answer: 100
+
+@@gsm8k_train_01341
+What she finishes first, then what waits. Fifteen questions an hour across two hours: 15 * 2 = 30 questions done. From sixty: 60 - 30 = 30 questions remain. Thirty questions still to complete there are.
+Final answer: 30
+
+@@gsm8k_train_01352
+Minutes to seconds, then seconds to litres. Ten minutes a day across seven days: 10*7 = 70 minutes in the week. Sixty seconds fill a minute: 70*60 = 4200 seconds of blowing. Ten litres each second it moves: 4200*10= 42000 litres. Forty-two thousand litres of airflow in a week it creates it is.
+Final answer: 42000
+
+@@gsm8k_train_01357
+Through her day we follow the coins. Mother and father together: 80+40 = 120 cents. The candy took fifty: 120-50 = 70 cents left. Her uncle added seventy more: 70+70 = 140 cents. One hundred forty cents Lizzy has now it is.
+Final answer: 140
+
+@@gsm8k_train_01375
+Costs first, then revenue, then the difference. The three sold at twelve months: 12*10*3 = 360 dollars of feed. The three sold at sixteen months: 16*10*3 = 480 dollars of feed. All the feeding: 360 + 480 = 840 dollars. Six grown pigs at three hundred each: 6*300 = 1800 dollars of revenue. Profit is revenue less cost: 1800 - 840 = 960 dollars. Nine hundred sixty dollars of profit he earned it is.
+Final answer: 960
+
+@@gsm8k_train_01385
+Three sides he fences, and two of them are shared. The right side, his alone: 3 * 9 = 27 dollars. The left side, also nine feet at twenty-seven dollars, but the neighbour pays a third, so two thirds fall to Cole: 27 * 2 / 3 = 18 dollars. The back, eighteen feet: 3 * 18 = 54 dollars, and half of that is his: 54 / 2 = 27 dollars. All his shares joined: 18 + 27 + 27 = 72 dollars. Seventy-two dollars Cole must pay it is.
+Final answer: 72
+
+@@gsm8k_train_01386
+Through the leftover tires the answer hides. Ten cars come in: 4 + 6 = 10 cars, and tires are bought for all of them: 10 * 4 = 40 tires. The two half-changers each leave half a set behind: 4 * 0.5 = 2 tires each, and for two such customers, 2 * 2 = 4 tires. Twenty tires remain at week's end, so the full refusers account for 20 - 4 = 16 tires. Four tires each such customer leaves: 16 / 4 = 4 customers. Four customers refused it is.
+Final answer: 4
+
+@@gsm8k_train_01388
+All the creatures first, then the departures. Spiders and ants and ladybugs: 3 + 12 + 8 = 23 found. Two ladybugs fly off: 23 - 2 = 21 remain. Twenty-one insects in the playground remaining there are.
+Final answer: 21
+
+@@gsm8k_train_01391
+Two ages are given, two must be built. Arthur is two more than Susan's fifteen: 15 + 2 = 17 years. Tom is three less than Bob's eleven: 11 - 3 = 8 years. All four siblings summed: 11 + 15 + 17 + 8 = 51 years. Fifty-one years all four together are.
+Final answer: 51
+
+@@gsm8k_train_01392
+The steady weeks come after the uneven ones. The first two weeks took 6 and 3 books, so what remains is 54 - 6 - 3 = 45 books. Nine each week thereafter: 45 / 9 = 5 weeks of steady reading. But the first two weeks count as well: 1 + 1 + 5 = 7 weeks. Seven weeks to read the series it took.
+Final answer: 7
+
+@@gsm8k_train_01393
+Two kinds of box, each with its own filling. Twelve jars in each of ten boxes: 12 x 10 = 120 jars. Ten jars in each of thirty boxes: 10 x 30 = 300 jars. All the boxes together hold 300 + 120 = 420 jars. From five hundred: 500 - 420 = 80 jars unpacked. Eighty jars of jam left there will be.
+Final answer: 80
+
+@@gsm8k_train_01402
+Adult graves first, then the child's. Five adult graves at three hours each: 3 * 5 = 15 hours. The child's grave adds two more: 15 + 2 = 17 hours. Seventeen hours to dig them all it takes.
+Final answer: 17
+
+@@gsm8k_train_01406
+Two errors he made, and opposite directions they pull. The double-counted eight inflate his number, so remove them: 26 - 8 = 18 toddlers. The three hidden ones he never counted, so add them: 18 + 3 = 21 toddlers. Twenty-one toddlers there really are.
+Final answer: 21
+
+@@gsm8k_train_01410
+Down to one minute first, then up to thirty. Brittney: 15/5 = 3 onions a minute. Carl: 20/5 = 4 onions a minute. Across thirty minutes Brittney does 3 x 30 = 90 onions, and Carl 4 x 30 = 120 onions. The gap between them: 120 - 90 = 30 onions. Thirty more onions Carl can chop it is.
+Final answer: 30
+
+@@gsm8k_train_01423
+Down to Joseph, then up to Zack. Joseph traveled half of George's six: 6 / 2 = 3 countries. Patrick traveled three times Joseph: 3 * 3 = 9 countries. Zack traveled twice Patrick: 2 * 9 = 18 countries. Eighteen countries Zack traveled to it is.
+Final answer: 18
+
+@@gsm8k_train_01435
+Each coin has its worth, and counted separately they must be. Quarters: 10*.25 = 2.5 dollars. Dimes: 3*.10 = 0.3 dollars. Nickels: 3*.05 = 0.15 dollars. Pennies: 5*.01 = 0.05 dollars. All the change together: 2.50+.30+.15+.05 = 3 dollars. Three dollars Harriett found it is.
+Final answer: 3
+
+@@gsm8k_train_01440
+The draws must be found before the points can be counted. Wins and losses together: 14+2 = 16 games. The rest were drawn: 20 - 16 = 4 draws. Now the points. Wins at three each: 14*3 = 42 points. Draws at one each: 4*1 = 4 points. Losses give nothing: 2 * 0 = 0 points. All together: 42+4+0 = 46 points. Forty-six points at the season's end they had it is.
+Final answer: 46
+
+@@gsm8k_train_01443
+Each reduction falls on what remains after the last, so in order we must walk. The sale takes a fifth: 125 / 5 = 25 dollars off, leaving 125 - 25 = 100 dollars. The coupon takes ten flat: 100 - 10 = 90 dollars. The card takes a tenth of that ninety: 90 / 10 = 9 dollars off, leaving 90 - 9 = 81 dollars paid. What he saved is the fall from the original: 125 - 81 = 44 dollars. Forty-four dollars Todd saved it is.
+Final answer: 44
+
+@@gsm8k_train_01448
+Half the class each way: 28 / 2 = 14 students in each half. One half with three notebooks each: 14 * 3 = 42 notebooks. The other with five each: 14 * 5 = 70 notebooks. Both halves together: 42 + 70 = 112 notebooks. One hundred twelve notebooks in the classroom there are.
+Final answer: 112
+
+@@gsm8k_train_01462
+The lollipops first, for their thirst is known. One hundred at five millilitres each: 5 * 100 = 500 millilitres. Six hundred was used in all, so the hard candies took 600 - 500 = 100 millilitres. Five hard candies shared that: 100 / 5 = 20 millilitres. Twenty millilitres each hard candy needs it is.
+Final answer: 20
+
+@@gsm8k_train_01466
+Both dogs bark, so their rates join: 2*30 = 60 barks each minute. Across ten minutes: 60*10 = 600 barks. Six hundred times they will have barked it is.
+Final answer: 600
+
+@@gsm8k_train_01467
+From Billie upward the chain climbs. Janine has three times Billie's two: 2 * 3 = 6 caps. Sammy has two more than Janine: 6 + 2 = 8 caps. Eight bottle caps Sammy has it is.
+Final answer: 8
+
+@@gsm8k_train_01481
+Television every day, games only three days, and there the care is needed. His gaming is half his daily viewing: 4/2=2 hours on a gaming day. Television across all seven days: 4*7=28 hours a week. Games across three days: 3*2=6 hours. Both activities joined: 6+28=34 hours. Thirty-four hours on those activities Mike spends it is.
+Final answer: 34
+
+@@gsm8k_train_01483
+Siblings first, then what is left for the parents. Three siblings at thirty dollars each: 30 * 3 = 90 dollars. From her hundred fifty: 150 - 90 = 60 dollars for the parents together. Equally the two parents shared it: 60 / 2 = 30 dollars. Thirty dollars on each parent's gift Mia spent it is.
+Final answer: 30
+
+@@gsm8k_train_01490
+Three kinds are given, the fourth is what remains. Apples and grapes and orange together: 3 + 3 + 1 = 7 kilograms. Ten kilograms in all he ordered, so the strawberries fill the gap: 10 - 7 = 3 kilograms. Three kilograms of strawberries Tommy ordered it is.
+Final answer: 3
+
+@@gsm8k_train_01491
+What the customers carried off first. Twenty customers at fifteen marbles each: 20*15 = 300 marbles sold. From the four hundred: 400-300 = 100 marbles. One hundred marbles in the store remain.
+Final answer: 100
+
+@@gsm8k_train_01493
+Steady their pace is, so the second leg we may scale from the first. One hour bought them a hundred miles, so three hundred miles costs 300*1/100 = 3 hours. Both legs together: 3 +1 = 4 hours. The McDonald's stop no time is given for, so counted it cannot be. Four hours in total they traveled it is.
+Final answer: 4
+
+@@gsm8k_train_01503
+Three groups on the list there are. Classmates: twenty, given. Out of school friends, half as many: 20/2=10 friends. Family, two parents and a sister: 2+1= 3 members. All three groups joined: 20+10+3=33 people. Thirty-three people on Jerome's contact list there are.
+Final answer: 33
+
+@@gsm8k_train_01505
+Through her flock's fortunes in order we walk. Two ewes with two babies each: 2*2 = 4 lambs born. Her flock then: 6+4 = 10 lambs. Three traded away for a goat: 10-3 =7 lambs. Seven more found in the field: 7+7 = 14 lambs. Fourteen lambs Mary has it is.
+Final answer: 14
+
+@@gsm8k_train_01510
+Girls first, then the juniors among them. Sixty percent are boys, so the girls are 100 - 60 = 40 percent. Of fifty players: 50 x .4 = 20 girls. Half of those are juniors: 20 / 2 = 10 junior girls. Ten junior girls there are.
+Final answer: 10
+
+@@gsm8k_train_01514
+Three times the sharpening the peeling takes: 10 * 3 = 30 minutes peeling. Both activities the question wants, so the sharpening joins: 30 + 10 = 40 minutes. Forty minutes on these activities Carla spends it is.
+Final answer: 40
+
+@@gsm8k_train_01515
+From Carl upward the chain climbs. Brad is five more than Carl's hundred forty-five: 145+5=150 pounds. Billy is nine more than Brad: 150+9=159 pounds. One hundred fifty-nine pounds Billy weighs it is.
+Final answer: 159
+
+@@gsm8k_train_01521
+Full price first, then the discount on the whole. Two cameras: 2 x 110 = 220 dollars. Three frames: 3 x 120 = 360 dollars. Together: 220 + 360 = 580 dollars before discount. Five percent of that struck off: 5/100 x 580 = 29 dollars. What she pays: 580 - 29 = 551 dollars. Five hundred fifty-one dollars Selene pays it is.
+Final answer: 551
+
+@@gsm8k_train_01524
+Four times Max's forty Sid attended: 4*40=160 courses. Both of them the question wants: 160+40 = 200 courses. Two hundred college courses together they attended it is.
+Final answer: 200
+
+@@gsm8k_train_01530
+Hours first, then their thirds, then the pages. A day holds twenty-four hours, and a sixth of it he reads: 24 * 1/6 = 4 hours. Each kind gets a third of that: 4/3 hours apiece. Novels at twenty-one pages an hour: 21 * 4/3 = 28 pages. Graphic novels at thirty: 30 * 4/3 = 40 pages. Comic books at forty-five: 45 * 4/3 = 60 pages. All three kinds together: 28 + 40 + 60 = 128 pages. One hundred twenty-eight pages Miles reads it is.
+Final answer: 128
+
+@@gsm8k_train_01534
+The adults' share is the door to the whole. Children take thirty-five percent, so adults hold 100 - 35 = 65 percent. One hundred four books are that sixty-five percent: 104 / .65 = 160 books. One hundred sixty books in the library there are.
+Final answer: 160
+
+@@gsm8k_train_01548
+The spray first, then the spiders, and in that order it matters. Spraying leaves four fifths: 400 * 80/100 = 320 bugs. Twelve spiders at seven bugs each: 12 * 7 = 84 bugs eaten. From the sprayed population: 320 - 84 = 236 bugs. Two hundred thirty-six bugs left there are.
+Final answer: 236
+
+@@gsm8k_train_01552
+Twenty fewer men than women there are. Set those twenty aside and the remainder splits evenly between the sexes: 180 - 20 = 160 to be shared. Half of that is the men's count: 160/2 = 80 men. Eighty men Lauryn employs it is.
+Final answer: 80
+
+@@gsm8k_train_01553
+Players who took the field we count, then subtract. The first half: eleven starters and two substitutes, 11+2 = 13 players. The second half saw twice as many substitutions: 2*2 = 4 more players entering. All who played: 13+4 = 17 players. Twenty-four were prepared, so those who never played: 24-17 = 7 players. Seven players did not play it is.
+Final answer: 7
+
+@@gsm8k_train_01557
+The first fortnight's tanning first, then what the allowance leaves. Thirty minutes on two days each week: 30 * 2 = 60 minutes weekly. Across two weeks: 60 * 2 = 120 minutes used. Two hundred is her monthly limit: 200 - 120 = 80 minutes. Eighty minutes in the last two weeks she may tan it is.
+Final answer: 80
+
+@@gsm8k_train_01568
+Muffins first, then dollars. Melissa made four times Sasha's thirty: 30 x 4 = 120 muffins. Those two together: 30 + 120 = 150 muffins. Tiffany made half of that pair's total: 150/2 = 75 muffins. All three bakers: 150 + 75 = 225 muffins. Four dollars each muffin fetched: 225 x 4 = 900 dollars. Nine hundred dollars to the fundraiser they contributed it is.
+Final answer: 900
+
+@@gsm8k_train_01571
+Feet to inches first, for in inches the tiles are measured. The length: 15 * 12 = 180 inches. The height: 10 * 12 = 120 inches. The area then: 180 * 120 = 21600 square inches. One square inch each tile covers, so the tiles number the same. Twenty-one thousand six hundred tiles Mary needs it is.
+Final answer: 21600
+
+@@gsm8k_train_01573
+Each day measured against another. Monday is given: four hours. Tuesday is two less: 4 - 2 = 2 hours. Wednesday is twice Monday: 2 * 4 = 8 hours. Thursday is twice Tuesday, not twice Wednesday: 2 * 2 = 4 hours. All four days summed: 4 + 2 + 8 + 4 = 18 hours. Eighteen hours in total Oliver worked out it is.
+Final answer: 18
+
+@@gsm8k_train_01576
+Different rates the two creatures leave. Pogo at four prints each metre across six thousand: 4*6000=24000 footprints. Grimzi leaves three prints every six metres, which is 3/6=0.5 prints each metre, so across six thousand: 0.5*6000=3000 footprints. Both creatures together: 24000+3000=27000 footprints. Twenty-seven thousand footprints combined there will be.
+Final answer: 27000
+
+@@gsm8k_train_01579
+The shorter charge first, then the use it buys. Three fifths of last night's ten hours: 3/5*10=6 hours of charging. Each charging hour buys two hours of use: 6*2=12 hours. Twelve hours of use Olive would have it is.
+Final answer: 12
+
+@@gsm8k_train_01587
+Smokers first, then those spared the hospital. Forty percent of three hundred: 40/100*300 = 120 smoking students. Seventy percent of those are hospitalized: 70/100*120 = 84 students. Those not hospitalized are the rest of the smokers: 120-84 = 36 students. Thirty-six smoking students not hospitalized there are.
+Final answer: 36
+
+@@gsm8k_train_01590
+Both his habit and his price changed, so both must be tracked. He now drinks half as many: 4/2=2 coffees a day. The price rose by half of two dollars: 2*.5=1 dollar more, so each coffee now costs 2+1=3 dollars. His new daily spending: 3*2=6 dollars. His old spending was 4*2=8 dollars. The saving is the difference: 8-6=2 dollars. Two dollars a day John saves it is.
+Final answer: 2
+
+@@gsm8k_train_01593
+Yun's current pile first. Twenty he had and twelve he lost: 20-12= 8 paperclips. Marion's count is built from that eight, a quarter of it and seven besides: 8/4 = 2, and then 2 + 7 = 9 paperclips. Nine paperclips Marion has it is.
+Final answer: 9
+
+@@gsm8k_train_01594
+Each appetite first, then what the basket keeps. Michaela needs twenty. Cassandra needs twice that: 2*20 = 40 oranges. Together they consume 20+40 = 60 oranges. From the ninety picked: 90-60 = 30 oranges. Thirty oranges would remain it is.
+Final answer: 30
+
+@@gsm8k_train_01601
+Short and tall first, then the average-height rest. Two fifths of four hundred are short: 2/5*400 = 160 students. With the ninety tall: 160+90 = 250 accounted for. The rest are of average height: 400-250 = 150 students. One hundred fifty students of average height there are.
+Final answer: 150
+
+@@gsm8k_train_01604
+Two paintings are known, and the sun takes what survives them. The castle uses two more than the dragon's three: 3 + 2 = 5 square feet. The jar held thirteen, and the dragon and castle have drunk from it: 13 - 3 - 5 = 5 square feet. Five square feet for the sun there are.
+Final answer: 5
+
+@@gsm8k_train_01610
+Three times the morning the afternoon brought: 1.5 x 3 = 4.5 litres. Both parts of the day the question wants: 1.5 + 4.5 = 6 litres. Six litres of water Micah drank it is.
+Final answer: 6
+
+@@gsm8k_train_01611
+Each day built upon those before. The first: two hundred miles. The second, three quarters of that: 200 x 3/4 = 150 miles. The first two days together: 200 + 150 = 350 miles. The third is half of that pair: 350 x 1/2 = 175 miles. All three days: 200 + 150 + 175 = 525 miles. Five hundred twenty-five miles for three days they traveled it is.
+Final answer: 525
+
+@@gsm8k_train_01612
+Two bites are taken from his earnings, and the second falls on what the first leaves. Gross pay: 12.50 x 40 = 500 dollars. Taxes take a fifth: 500 * 0.20 = 100 dollars, leaving 500 - 100 = 400 dollars in the paycheck. The gummy bears take fifteen percent of that four hundred, not of the five hundred: 400 * 0.15 = 60 dollars. What survives: 400 - 60 = 340 dollars. Three hundred forty dollars Paul has left it is.
+Final answer: 340
+
+@@gsm8k_train_01614
+Both ways he travels, so each route doubles. Route A there and back: 5 x 2 = 10 hours. Route B there and back: 2 x 2 = 4 hours. The saving is the difference: 10 - 4 = 6 hours. Six hours Joseph will save it is.
+Final answer: 6
+
+@@gsm8k_train_01632
+The length first, built from the width. Four times seven inches: 4 * 7 = 28 inches long. Area is width times length: 7 * 28 = 196 square inches. One hundred ninety-six square inches the area is.
+Final answer: 196
+
+@@gsm8k_train_01634
+The ingredients must be repaid before profit begins. To clear eighty in profit she must take in 80 + 20 = 100 dollars. Two dollars each cup brings: 100 / 2 = 50 cups. Fifty cups of lemonade she must sell it is.
+Final answer: 50
+
+@@gsm8k_train_01635
+Her first semester average first, then the gap. The four grades summed: 90 + 80 + 70 + 100 = 340 points. Four grades share that: 340 / 4 = 85 average. Her second semester was eighty-two: 85 - 82 = 3 points higher. Three points higher her first semester average was.
+Final answer: 3
+
+@@gsm8k_train_01639
+Andy's own balloons first, for Ashley's twelve were there before him. Fifty at the end less her twelve: 50 - 12 = 38 balloons Andy blew. Two balloons each five-minute stretch he manages, so the stretches number 38 / 2 = 19. Five minutes each of those: 19 * 5 = 95 minutes. Ninety-five minutes Andy blew up balloons it is.
+Final answer: 95
+
+@@gsm8k_train_01646
+Down to one bus first, then up to five. One hundred ninety-eight passengers across nine buses: 198 / 9 = 22 passengers in a bus. Five buses at that rate: 22 * 5 = 110 passengers. One hundred ten passengers in five buses fit it is.
+Final answer: 110
+
+@@gsm8k_train_01649
+Two narrowings there are. A fifth of the five hundred have four leaves: 500/5= 100 four-leaf clovers. A quarter of those are purple: 100/4= 25 clovers. Twenty-five purple four-leaved clovers there are.
+Final answer: 25
+
+@@gsm8k_train_01651
+Walls on both sides of every dimension there are, so twice the thickness each loses: 2*1=2 inches gone from each. The long sides become 26-2=24 inches, which in feet is 24/12=2 feet. The short one becomes 14-2=12 inches, which is 12/12=1 foot. Volume is the three multiplied: 2*2*1=4 cubic feet. Four cubic feet the internal volume is.
+Final answer: 4
+
+@@gsm8k_train_01655
+Two shares are named, and wages take what is left. Food, a third of three thousand: 3000 / 3 = 1000 dollars. Supplies, a quarter: 3000 / 4 = 750 dollars. Wages take the remainder of a budget used up entirely: 3000 - 1000 - 750 = 1250 dollars. One thousand two hundred fifty dollars on wages he spends it is.
+Final answer: 1250
+
+@@gsm8k_train_01662
+Three pickings there are, each taking from what survives. A quarter of the hundred first: 1/4*100 = 25 tomatoes taken, leaving 100-25 = 75. Twenty more the next week: 75-20 = 55 remaining. The following week twice that twenty: 20*2 = 40 tomatoes, leaving 55-40 = 15. Fifteen tomatoes remaining on the plant there are.
+Final answer: 15
+
+@@gsm8k_train_01663
+Alexandre's count first, a tenth of Jordan's: 120 * 1/10 = 12 novels. How many more Jordan read: 120 - 12 = 108 novels. One hundred eight more novels Jordan read it is.
+Final answer: 108
+
+@@gsm8k_train_01668
+Through the money to the pounds to the rocks. Sixty dollars at four dollars a pound: 60 / 4 = 15 pounds of rock. Each rock weighs a pound and a half: 15 / 1.5 = 10 rocks. Ten rocks in the bucket there were.
+Final answer: 10
+
+@@gsm8k_train_01672
+Into the future first, then back to now. In two years Lennon will be 2+8 = 10 years old. Four times that Ophelia will be then: 4*10 = 40 years. But today the question asks, so two years we remove: 40-2 = 38 years. Thirty-eight years old Ophelia is.
+Final answer: 38
+
+@@gsm8k_train_01674
+Two metals, and the gold dearer in both weight and price. The silver: 1.5*20=30 dollars. The gold's weight, twice the silver's: 1.5*2=3 ounces. The gold's price, fifty times the silver's: 20*50=1000 dollars an ounce. So the gold costs 3*1000=3000 dollars. Both metals joined: 30+3000=3030 dollars. Three thousand thirty dollars on everything he spends it is.
+Final answer: 3030
+
+@@gsm8k_train_01677
+Two of everything he ordered, so each price doubles. Burgers: 3.20 x 2 = 6.40 dollars. Fries: 1.90 x 2 = 3.80 dollars. Milkshakes: 2.40 x 2 = 4.80 dollars. His order so far: 6.40 + 3.80 + 4.80 = 15 dollars. Eighteen is the threshold: 18 - 15 = 3 dollars. Three dollars more of food he should order it is.
+Final answer: 3
+
+@@gsm8k_train_01678
+Two bottles at ten dollars, shampoo and conditioner both: 2*10 = 20 dollars. Three lotions at six: 3*6 = 18 dollars. Her order so far: 20+18 = 38 dollars. Fifty is the threshold for free shipping: 50-38 = 12 dollars. Twelve dollars more Jackie needs to spend it is.
+Final answer: 12
+
+@@gsm8k_train_01701
+Half to the applesauce, half to the pies. The sauce takes 120/2 = 60 pounds, leaving 120-60 = 60 pounds for pies. Four pounds each pie demands: 60/4 = 15 pies. Fifteen pies Sandra will be able to make it is.
+Final answer: 15
+
+@@gsm8k_train_01707
+Thirty more toys Anais has. Set those thirty aside and the rest splits evenly between them: 160-30 = 130 toys to share. Half of that is Kamari's: 130/2 = 65 toys. Sixty-five toys in Kamari's box there are.
+Final answer: 65
+
+@@gsm8k_train_01709
+Day by day the messages we gather. Monday and Tuesday: 300+200 = 500 messages. Wednesday is three hundred more than Tuesday's two hundred: 200+300 = 500 messages. Three days then: 500+500 = 1000 messages. Thursday doubles Wednesday: 2*500 = 1000 messages. All four days: 1000+1000 = 2000 messages. Two thousand messages after the four days sent were.
+Final answer: 2000
+
+@@gsm8k_train_01714
+The second warehouse holds half the first's four hundred: 400/2 = 200 boxes. Both warehouses the question wants: 400+200 = 600 boxes. Six hundred boxes combined there are.
+Final answer: 600
+
+@@gsm8k_train_01734
+Two contributions across five games. Wade: 5 x 20 = 100 points. His teammates: 40 x 5 = 200 points. The whole team together: 100 + 200 = 300 points. Three hundred points the team will have it is.
+Final answer: 300
+
+@@gsm8k_train_01737
+Each swimmer measured against another, and one never swam at all. Elaine stayed twice as long as Jerry's three: 2*3=6 minutes. George a third of Elaine: 6/3=2 minutes. Kramer never found the pool, so zero minutes his is. All four summed: 3+6+2+0=11 minutes. Eleven minutes in the cold water combined they were.
+Final answer: 11
+
+@@gsm8k_train_01740
+Brady's earnings first, built from Dwayne's. Four hundred fifty more than fifteen hundred: 450 + 1500 = 1950 dollars. Both men combined: 1950 + 1500 = 3450 dollars. Three thousand four hundred fifty dollars combined they will make it is.
+Final answer: 3450
+
+@@gsm8k_train_01743
+Shrimp first, then pounds, then dollars. Forty guests at five shrimp each: 5*40 = 200 shrimp. Twenty shrimp fill a pound: 200/20 = 10 pounds. Seventeen dollars each pound costs: 17*10 = 170 dollars. One hundred seventy dollars on the appetizer Wayne will spend it is.
+Final answer: 170
+
+@@gsm8k_train_01744
+Two crops, each bundled and priced its own way. Potatoes: 250/25 = 10 bundles, at a dollar ninety each, 1.9 x 10 = 19 dollars. Carrots: 320/20 = 16 bundles, at two dollars each, 2 x 16 = 32 dollars. Both crops together: 19 + 32 = 51 dollars. Fifty-one dollars in all the farmer got it is.
+Final answer: 51
+
+@@gsm8k_train_01746
+One employee first, then the new head count. A day's pay: 12*10 = 120 dollars. Days worked in a month: 5*4 = 20 days. So each employee earns 20*120 = 2400 dollars monthly. After the hiring the staff numbers 500+200 = 700 people. All of them together: 700*2400 = 1680000 dollars. One million six hundred eighty thousand dollars per month the company pays it is.
+Final answer: 1680000
+
+@@gsm8k_train_01750
+Samara's three costs first: 25 + 467 + 79 = 571 dollars. Alberto spent two thousand four hundred fifty-seven on his engine alone. How much more he spent: 2457 - 571 = 1886 dollars. One thousand eight hundred eighty-six dollars more Alberto spent it is.
+Final answer: 1886
+
+@@gsm8k_train_01751
+Hours first, then days. The sewers hold two hundred forty thousand gallons, and each hour brings a thousand: 240000 / 1000 = 240 hours of rain they can take. Twenty-four hours fill a day: 240 / 24 = 10 days. Ten days of rain the sewers can handle it is.
+Final answer: 10
+
+@@gsm8k_train_01753
+Packets first, then boxes, then dollars. One packet each coffee, two coffees a day: 1*2 = 2 packets daily. Across ninety days: 90*2 = 180 packets. Thirty to a box: 180/30 = 6 boxes. Four dollars each box: 4*6 = 24 dollars. Twenty-four dollars it will cost him it is.
+Final answer: 24
+
+@@gsm8k_train_01768
+Arrivals first, then the adoptions. His twenty, the two kittens, the injured one: 20 + 2 + 1 = 23 cats. Three people took two each: 3 * 2 = 6 cats away. What remains: 23 - 6 = 17 cats. Seventeen cats in his shelter Jeff has it is.
+Final answer: 17
+
+@@gsm8k_train_01770
+The fixed parts first, then what the body sections share. The conclusion triples the introduction: 450 * 3 = 1350 words. Introduction and conclusion removed from the whole: 5000 - 1350 - 450 = 3200 words for the body. Four equal sections share that: 3200 / 4 = 800 words. Eight hundred words each section is.
+Final answer: 800
+
+@@gsm8k_train_01774
+One pie first, then thirteen. Each pie halves, and each half gives five samples: 5 x 2 = 10 samples from a single pie. Thirteen pies at that rate: 13 x 10 = 130 samples. One hundred thirty people can taste it is.
+Final answer: 130
+
+@@gsm8k_train_01777
+Two sources of basketball there are, and that is the trap. First the floats, for some were discarded: 120 / 4 = 30 damaged, leaving 120 - 30 = 90 floats among the donations. The non-basketball donations then: 60 + 90 + 50 + 40 = 240 items. From three hundred that leaves 300 - 240 = 60 loose basketballs. But half the hoops came with a ball as well: 60 / 2 = 30 more basketballs. Both sources joined: 60 + 30 = 90 basketballs. Ninety basketballs donated there were.
+Final answer: 90
+
+@@gsm8k_train_01779
+This year first, then last year, then both. Four dreams a day across a year's 365 days: 4*365 = 1460 dreams this year. Twice as many last year: 2*1460 = 2920 dreams. Both years together: 2920+1460=4380 dreams. Four thousand three hundred eighty dreams in the two years he has had it is.
+Final answer: 4380
+
+@@gsm8k_train_01792
+One arrangement first, then ten of them. The lilies are twice the snapdragons: 2*3 = 6 lilies. One centerpiece then holds 8+12+3+6 = 29 flowers. Ten tables each want one: 29*10 = 290 flowers. Two hundred ninety flowers Marta will need it is.
+Final answer: 290
+
+@@gsm8k_train_01798
+Down then up his strength goes. The injury takes eighty percent of five hundred: 500*.8=400 pounds lost, leaving 500-400=100 pounds. Training then triples what remains, not what he began with: 100*3=300 pounds. Three hundred pounds his bench press now is.
+Final answer: 300
+
+@@gsm8k_train_01812
+His occupied hours first. Reading and dinner and movies: 2 + 1 + 3 = 6 hours spent. Nine hours the ride runs: 9 - 6 = 3 hours free. Three hours to take a nap he has it is.
+Final answer: 3
+
+@@gsm8k_train_01814
+All the children first, then corn's share of them. Peas and carrots and corn: 6 + 9 + 5 = 20 kids in all. Five of those prefer corn, and as a percentage that is 5/20 * 100 = 25. Twenty-five percent of the children prefer corn it is.
+Final answer: 25
+
+@@gsm8k_train_01816
+Two kinds of creature walk together, and different numbers of legs they carry. Johnny and his son are two humans on two legs each: 2*2=4 legs. The two dogs walk on four legs each: 2*4=8 legs. Both kinds together: 4+8=12 legs. Twelve legs' worth of organisms traveling there are.
+Final answer: 12
+
+@@gsm8k_train_01819
+Many small purchases there are, and fractions of pounds among them. The sandwiches: 2*7.75 = 15.50 dollars. The brie, three times the salami's four: 3*4 = 12 dollars. The olives, a quarter pound at ten a pound: .25*10 =2.50 dollars. The feta, half a pound at eight: .5*8 = 4 dollars. With the salami's own four: 4+12+2.50+4+15.50 = 38 dollars. The french bread adds two: 38+2 = 40 dollars. Forty dollars at the shop Teresa spends it is.
+Final answer: 40
+
+@@gsm8k_train_01823
+Into months everything must be changed first. The poisoning sentence: 2 * 12 = 24 months. With the assault's three: 24 + 3 = 27 months of base sentence. The extension is a third of that base: 27 / 3 = 9 months added. Base and extension joined: 27 + 9 = 36 months. Thirty-six months in jail Gerald spends it is.
+Final answer: 36
+
+@@gsm8k_train_01824
+Each company measured against another, and all five must be summed. Foster Farms gave forty-five. American Summits gave twice that: 45 x 2 = 90 items. Hormel gave three times Foster's: 45 x 3 = 135 items. Boudin gave a third of Hormel's: 135 x 1/3 = 45 items. Del Monte gave thirty fewer than American Summits: 90 - 30 = 60 items. All five together: 45 + 90 + 135 + 45 + 60 = 375 items. Three hundred seventy-five food items donated were.
+Final answer: 375
+
+@@gsm8k_train_01825
+What he paid with insurance against what he would have paid without. The premiums: 24*20=480 dollars. The uncovered fifth of the procedure: 5000*.2=1000 dollars. So with insurance he paid 1000+480=1480 dollars. Without it, the full five thousand. The saving is the gap: 5000-1480=3520 dollars. Three thousand five hundred twenty dollars he saved it is.
+Final answer: 3520
+
+@@gsm8k_train_01830
+Pounds first, then bags, then dollars. Fifteen people at two pounds each: 15*2 = 30 pounds of ice. Ten pounds to a pack: 30/10 = 3 packs. Three dollars each pack: 3*3 = 9 dollars. Nine dollars on ice Chad will spend it is.
+Final answer: 9
+
+@@gsm8k_train_01832
+Four kinds are described, the fifth is what remains. Basketballs, five more than the twenty soccer balls: 20 + 5 = 25. Tennis balls, twice the soccer balls: 2 x 20 = 40. Baseballs, ten more than soccer: 20 + 10 = 30. Those four kinds together: 20 + 25 + 40 + 30 = 115 balls. From the hundred forty-five: 145 - 115 = 30 volleyballs. Thirty volleyballs there were.
+Final answer: 30
+
+@@gsm8k_train_01843
+Martha's rate first, half of Darlene's twenty: 20/2 = 10 miles each gallon. Three hundred miles at that rate: 300/10 = 30 gallons. Thirty gallons Martha's car requires it is.
+Final answer: 30
+
+@@gsm8k_train_01849
+Home again she must come each day, and that doubles every distance. The near museum: 5 + 5 = 10 miles for the round trip. The far one: 15 + 15 = 30 miles. Both days together: 10 + 30 = 40 miles. Forty miles in total Jennifer will travel it is.
+Final answer: 40
+
+@@gsm8k_train_01853
+Monday and Sunday share one shirt, so set those two days aside: 7 - 2 = 5 days remain. Two shirts on each of those: 2 * 5 = 10 shirts. The shared shirt adds one more: 10 + 1 = 11 shirts. Eleven shirts Shenny should pack it is.
+Final answer: 11
+
+@@gsm8k_train_01854
+Pounds first, then ears. Two bushels at fifty-six pounds each: 2*56 = 112 pounds of corn. Half a pound each ear weighs: 112/.5 = 224 ears. Two hundred twenty-four corn cobs Clyde picked it is.
+Final answer: 224
+
+@@gsm8k_train_01856
+Different cuts the two of them made. Danny: three melons at ten slices each, 3 * 10 = 30 slices. His sister: one melon at fifteen, 1 * 15 = 15 slices. Both together: 30 + 15 = 45 slices. Forty-five watermelon slices at the picnic there are.
+Final answer: 45
+
+@@gsm8k_train_01861
+Dogs the question wants, but cats it gives. Two thirds are cats: 2/3*300 = 200 cats. The rest are dogs: 300-200 = 100 dogs. Four legs each dog carries: 100*4 = 400 legs. Four hundred legs of dogs on the street there are.
+Final answer: 400
+
+@@gsm8k_train_01862
+A dozen is twelve, so four dozen is 12 x 4 = 48 cupcakes. Three to each cousin: 48/3 = 16 cousins. Sixteen cousins Jason has it is.
+Final answer: 16
+
+@@gsm8k_train_01863
+Opposite sides of Red Deer the two cities lie, so the distances add rather than subtract. Edmonton to Red Deer to Calgary: 220 + 110 = 330 kilometres. At a hundred ten each hour: 330 / 110 = 3 hours. Three hours the journey takes it is.
+Final answer: 3
+
+@@gsm8k_train_01865
+Each kind of coin separately, and the nickels doubled by the gift. Dimes: 2+2 = 4. Quarters: 6+10 = 16. Those two kinds together: 16+4 = 20 coins. Nickels given, twice the five she held: 2*5 = 10 more, so her nickels become 10+5 = 15. Everything joined: 20+15= 35 coins. Thirty-five coins altogether Linda has it is.
+Final answer: 35
+
+@@gsm8k_train_01868
+All the ground already covered first. The four stretches: 200 + 300 + 170 + 440 = 1110 feet run. The road runs five thousand: 5000 - 1110 = 3890 feet. Three thousand eight hundred ninety feet left for Max there are.
+Final answer: 3890
+
+@@gsm8k_train_01874
+What he gave away first. Brother and sister and cousin: 12 + 9 + 7 = 28 boxes given. From forty-five: 45 - 28 = 17 boxes. Seventeen boxes of cookies left for him there were.
+Final answer: 17
+
+@@gsm8k_train_01878
+Constant the gap between sisters stays. Emma's sister today: 7 + 9 = 16 years old. To reach fifty-six she must gain 56 - 16 = 40 years. Emma gains those same forty: 7 + 40 = 47 years. Forty-seven years old Emma will be it is.
+Final answer: 47
+
+@@gsm8k_train_01882
+What Raj carried off first, then what the tree began with. He ate seventy and has twice that remaining: 2*70 = 140 bananas in the basket. All he cut: 140+70 = 210 bananas. The tree still holds a hundred, so at the start: 100+210 =310 bananas. Three hundred ten bananas on the tree initially there were.
+Final answer: 310
+
+@@gsm8k_train_01885
+The father's hole first, for Michael's is measured against it. Four feet an hour across four hundred hours: 4*400 = 1600 feet deep. Twice that depth: 2*1600 = 3200 feet. Four hundred less than that doubling: 3200-400 = 2800 feet Michael wants. At the same four feet an hour: 2800/4 = 700 hours. Seven hundred hours Michael will take it is.
+Final answer: 700
+
+@@gsm8k_train_01895
+Each day measured against another. Monday forty, Tuesday fifty, both given. Wednesday is half of Tuesday: 50 / 2 = 25 kilometres. Thursday is Monday and Wednesday summed: 40 + 25 = 65 kilometres. All four days: 40 + 50 + 25 + 65 = 180 kilometres. One hundred eighty kilometres in total Natalia rode it is.
+Final answer: 180
+
+@@gsm8k_train_01896
+Three times Bruce's four Michael scored: 4 * 3 = 12 goals. Both players the question wants: 12 + 4 =16 goals. Sixteen goals both of them scored it is.
+Final answer: 16
+
+@@gsm8k_train_01901
+Through their speed the remaining time we find. A quarter of two hundred: 1/4 * 200 = 50 miles covered. What remains: 200 - 50 = 150 miles. One hour bought those fifty miles, so their speed is 50/1 = 50 miles an hour. The rest at that speed: 150/50 = 3 hours. Driving and driving and lunch together: 3 + 1 + 1= 5 hours. Five hours the whole journey took it is.
+Final answer: 5
+
+@@gsm8k_train_01903
+Two halves of the month, each with its own pace. June holds thirty days, so halfway is 1/2*30 = 15 days. At ten hours a day: 10*15 = 150 video hours in the first half. Then the pace doubles: 10*2 = 20 hours each day, across the remaining fifteen days, 15*20 = 300 hours. Both halves joined: 300+150 = 450 hours. Four hundred fifty video hours at the month's end there are.
+Final answer: 450
+
+@@gsm8k_train_01904
+Both kinds of item count toward the same daily quota. Leaves and bugs together: 30 + 20 = 50 items. Ten days to gather them: 50 / 10 = 5 items. Five items each day Carla must collect it is.
+Final answer: 5
+
+@@gsm8k_train_01906
+Her intake is the part, her weight the whole. Fifty-four pounds is sixty percent of what she weighs, so to find the whole we undo the percentage: 54*100/60 = 90 pounds. Ninety pounds Nancy weighs it is.
+Final answer: 90
+
+@@gsm8k_train_01910
+Two farms, then three harvests. Each of the neighbour's hectares yields twice Johnson's eighty: 80 x 2 = 160 corn every two months. Two such hectares: 160 x 2 = 320 corn. Both farmers in one two-month stretch: 80 + 320 = 400 corn. Six months holds three such stretches: 400 x 3 = 1200 corn. One thousand two hundred corn altogether they harvest it is.
+Final answer: 1200
+
+@@gsm8k_train_01913
+One tractor he has, so the two jobs cannot share a day. Ploughing: 55/10=5.5 days. Mowing: 30/12=2.5 days. One after the other they must come: 5.5+2.5=8 days. Eight days to plough and mow it would take.
+Final answer: 8
+
+@@gsm8k_train_01920
+Four meals take from the same dwindling pile. After breakfast: 15 - 4 = 11 slices. After lunch: 11 - 2 = 9 slices. After the snack: 9 - 2 = 7 slices. After dinner: 7 - 5 = 2 slices. Two slices of pizza left there are.
+Final answer: 2
+
+@@gsm8k_train_01922
+Her earnings first, then the shortfall. Three cars at ten dollars: 3 * 10 = 30 dollars. Two lawns at thirteen: 2 * 13 = 26 dollars. Together she has made 30 + 26 = 56 dollars. The bicycle costs eighty: 80 - 56 = 24 dollars. Twenty-four dollars more Stormi needs it is.
+Final answer: 24
+
+@@gsm8k_train_01939
+Half is given, so double it to find the whole: 43 x 2 = 86 dollars Jerome had. Meg takes eight: 86 - 8 = 78 dollars left. Bianca takes thrice Meg's eight: 8 x 3 = 24 dollars. From what remained: 78 - 24 = 54 dollars. Fifty-four dollars Jerome has left it is.
+Final answer: 54
+
+@@gsm8k_train_01941
+Down to Kayla, then up to Saheed. Kayla made thirty less than Vika's eighty-four: 84 - 30 = 54 dollars. Saheed made four times Kayla: 4*54 = 216 dollars. Two hundred sixteen dollars Saheed made it is.
+Final answer: 216
+
+@@gsm8k_train_01943
+Seven people there are, and the grandmother pays the adult rate. The family: 4 + 2 + 1 = 7 persons. Entrance is five for everyone: 7 * 5 = 35 dollars. The attraction costs two for each of the four children: 4 * 2 = 8 dollars. The three adults pay four each: 3 * 4 = 12 dollars. Everything joined: 35 + 8 + 12 = 55 dollars. Fifty-five dollars the family would pay it is.
+Final answer: 55
+
+@@gsm8k_train_00077
+Steady the loss is, and steady losses are simply multiplied, but first see clearly what is asked. His weight today we are given, ninety-seven kilograms, and the day of the fight sits four months ahead. Three kilograms each month the diet strips away, and four such months there are, so the whole loss we find by multiplying: 3 x 4 = 12 kilograms he will shed between now and then. Twelve is what he loses, not what he becomes, and confusing those two the common error is. Lighter he grows, not heavier, so from his present weight we subtract: 97 - 12 = 85 kilograms. Check it we should: eighty-five sits below ninety-seven, as a diet demands, and by exactly the twelve we calculated. Eighty-five kilograms on the day of the fight the boxer will weigh.
+Final answer: 85
+
+@@gsm8k_train_00090
+Days first, then cups, and neither may be skipped. Three months Herman feeds the birds, and different lengths those months carry, so counted separately they must be. December holds thirty-one days, January thirty-one as well, and February twenty-eight in an ordinary year. Together: 31+31+28 = 90 days of feeding. Now the daily amount, and here the care is needed, for two feedings each day there are and not one. Half a cup in the morning, half a cup in the afternoon: 0.5+0.5 = 1 cup every day. Convenient this turns out, a whole cup per day exactly. Ninety days at one cup each: 1*90 = 90 cups. Coincidence it is that the days and the cups agree, born of the daily amount being exactly one. Ninety cups of food Herman will need it is.
+Final answer: 90
+
+@@gsm8k_train_00102
+Count the wheels the question does not, so count them yourself you must, and there the whole difficulty lies. A bicycle carries two wheels, and ten millilitres each of them demands, so for the wheels alone: 2 * 10 = 20 millilitres. Forget the second wheel, and half the answer you would report, which the most common error here is. But the wheels are not the whole machine. The rest of the bicycle asks for five millilitres more, and note that this five is a flat amount for everything else, not another per-wheel charge. Add it to what the wheels required: 20 + 5 = 25 millilitres. Sensible the total looks, a little more than the wheels alone demanded, as it should be. Twenty-five millilitres of oil in total Ellie needs it is.
+Final answer: 25
+
+@@gsm8k_train_00105
+One herd is given to us plainly, the other only described, so build the described one first we must. Washington's count we know: one hundred forty goats. Paddington keeps forty more than that, and more means added and never subtracted, so 140+40 = 180 goats Paddington has. Now pause before answering, for here the trap waits. One hundred eighty is Paddington's herd alone, and tempting it is to stop and call that the answer. But the question asks how many the two of them have together, so both herds must join: 140+180 = 320 goats. Check the shape of it: three hundred twenty exceeds either herd on its own, as any total must. Three hundred twenty goats in total between them there are.
+Final answer: 320
+
+@@gsm8k_train_00106
+Two paths lead to this answer, and the same place both of them reach. Take one pack at a time, the simpler road. Twenty cards each pack holds, and one quarter of those are uncommon, so from a single pack: 20/4 = 5 uncommon cards. Ten packs John bought, and every one of them gives up its five: 10*5 = 50 uncommon cards. The other road multiplies first and divides after, taking all two hundred cards and quartering them, and fifty it also yields, for order matters not when only multiplying and dividing you are. Either way the same answer appears, and agreement between two routes good evidence of correctness is. Fifty uncommon cards John got it is.
+Final answer: 50
+
+@@gsm8k_train_00109
+Unknown the smallest share is, so name it we must and build the others upon it. Let Alyssa's count be one share, the quantity we seek. Keely ate twice as many as Alyssa, which is two such shares, and Kendall also ate twice as many as Alyssa, another two shares. Careful here you must be, for the comparison is to Alyssa each time and not to each other. So the three girls together consume one share and two shares and two shares, which is five shares in all. One hundred nuggets those five shares fill exactly: 100/5 = 20 nuggets in a single share. And a single share is precisely what Alyssa ate, the smallest portion, the one we named at the start. Twenty nuggets Alyssa ate it is.
+Final answer: 20
+
+@@gsm8k_train_00125
+Steady growth this is, so multiplication serves us, but read carefully what the numbers mean. Three inches every year Haley gains, and ten years ahead the question looks, so the total growing across that span: 3*10 = 30 inches. Now pause, for thirty inches is what she gains and not what she becomes, and mistaking the growth for the height the common error here is. Her present height is twenty inches, and taller she grows rather than shorter, so add the growth to where she stands: 20+30 = 50 inches. Test the shape of it: fifty exceeds her present twenty by exactly the thirty we calculated, as it must. Fifty inches tall after ten years Haley will be it is.
+Final answer: 50
+
+@@gsm8k_train_00126
+Order matters greatly in the reading of this one, and there the whole difficulty sits. Five more than twice Bob's number John has, which means the doubling happens first and the adding second. Reverse those two operations and a different answer you would reach, so patient you must be. Bob keeps ten roommates, given to us plainly. Double that first: 2*10 = 20 roommates. Then five more upon that doubling: 20+5 = 25 roommates for John. Consider the wrong path, to see why it fails: five more than ten is fifteen, and twice fifteen is thirty, which is not what the sentence says. Twice first, then five. Twenty-five roommates John has it is.
+Final answer: 25
+
+@@gsm8k_train_00129
+Through the money we must travel to reach the customers, for no count of cones is given to us directly. Two dollars each cone costs, and one hundred dollars of cones he sold, so the number sold we find by dividing the takings by the price: 100/2 = 50 cones. Now the free ones among those fifty. One cone in every fifth is given away, so the free ones number 50/5 = 10 cones. Note what the division does here: it counts how many groups of that size fit inside fifty, and each such group yields exactly one free cone. Ten is a sensible fraction of fifty, small as a giveaway should be. Ten free ice cream cones Dan gave away it is.
+Final answer: 10
+
+@@gsm8k_train_00139
+Both directions count, and forgetting the descent the whole difficulty here is. Three flights her office sits above the ground, so every journey in either direction costs her three. Upward five times in the day she climbs: 3*5 = 15 flights ascended. Downward three times she walks: 3*3 = 9 flights descended. The elevator carries her for the remaining journeys, and those cost her no stairs at all, so counted they must not be however many they are. Only the stairs she actually walked belong in the sum: 15+9=24 flights. Note that the question asks for up and down together, so both numbers join rather than one being subtracted from the other. Twenty-four flights of stairs in a single day Janice walks it is.
+Final answer: 24
+
+@@gsm8k_train_00140
+Denied the question counts, but admitted the question asks, so turned around at the end our answer must be. Each school separately first. Riverside: twenty percent of one hundred twenty kids, so 120 x 20/100 = 24 turned away. West Side: seventy percent of ninety, so 90 x 70/100 = 63 turned away. Mountaintop: half of fifty, so 50/2 = 25 turned away. Now the crowd that arrived at the door, all three schools together: 120 + 90 + 50 = 260 kids. From that crowd every denial must be removed: 260 - 24 - 63 - 25 = 148 kids who passed. Check the shape: one hundred forty-eight is comfortably less than two hundred sixty, as it must be when many were refused. One hundred forty-eight kids into the movie got it is.
+Final answer: 148
+
+@@gsm8k_train_00143
+The fifteen he counts are not all the fish, only the quarter that floats where eyes can reach. From the part to the whole we must climb before anything else. Fifteen fish are twenty-five hundredths of the pond's population, so dividing by that fraction recovers the whole: 15 / .25 = 60 goldfish altogether. Now the hidden ones. Below the surface swims everything that is not at the surface, and the surface holds twenty-five percent, so the deep holds 100 - 25 = 75 percent. That share of the whole pond: 60 x .75 = 45 goldfish. Check it: forty-five and the fifteen visible make sixty, the whole we found, so consistent our arithmetic is. Forty-five goldfish below the surface there are.
+Final answer: 45
+
+@@gsm8k_train_00146
+A chain of comparisons this is, each link hanging from the one before it, so in order we must walk. Richard is given to us: twenty-two minutes. Cory takes three minutes more than Richard, so 22 + 3 = 25 minutes for her. Now Blake, and here the care is needed, for he is quicker than Cory and not quicker than Richard. Quicker means fewer minutes, so we subtract, and we subtract from Cory's time: 25 - 4 = 21 minutes. One cleaning each, all three together: 22 + 25 + 21 = 68 minutes. But twice in the week they clean, so doubled that total must be: 68 x 2 = 136 minutes. One hundred thirty-six minutes each week the three of them spend it is.
+Final answer: 136
+
+@@gsm8k_train_00160
+Shared some costs are and others are not, and that division the heart of this problem is. Four people carry the shared burden, John and three others: 3+1=4 ways it splits. The burgers: one hundred pounds at three dollars each pound, 100*3=300 dollars. The condiments and propane add eighty: 300+80=380 dollars of shared cost. Split four ways: 380/4=95 dollars is John's share of the shared part. Now the alcohol, which he alone buys, so shared it is not and its full two hundred falls on him: 200+95=295 dollars. Note what would go wrong if the alcohol were divided too, for that is the error this problem invites. Two hundred ninety-five dollars altogether John spent it is.
+Final answer: 295
+
+@@gsm8k_train_00166
+To minutes we must travel first, for in minutes the films are measured and in hours the watching is given. Four hours and thirty minutes Tuesday held: 4*60+30=270 minutes. Ninety minutes each film consumes, so the films fit 270/90=3 times into that stretch. Whole films only count, and three divides evenly here, so no remainder troubles us. Wednesday brought twice as many as Tuesday: 2*3=6 films. Both days the question wants, not Wednesday alone: 3+6=9 films. Note why the question says maximum: watching must be continuous and complete for the count to reach nine, and any pause would lower it. Nine full-length movies at most Grandpa Lou could have watched it is.
+Final answer: 9
+
+@@gsm8k_train_00169
+Two traps this problem sets, and both must be stepped over. The first is the half-year: ninety kilograms every six months is given, but a full year the question asks about, and a year holds two such stretches, so 90 x 2 = 180 kilograms at the old rate. The second trap is the nature of the increase, which adds to production rather than replacing it. Twenty percent of the yearly amount: 180 x 0.20 = 36 kilograms more. Thirty-six is the increase alone, and answering with it the common error is. Onto the original yearly figure it must go: 180 + 36 = 216 kilograms. Larger than one hundred eighty it sits, as an increase demands. Two hundred sixteen kilograms of grapes in a year Borris will need it is.
+Final answer: 216
+
+@@gsm8k_train_00170
+A dozen is twelve, and two dozen twice that, so unfold the phrase before anything else you do. Katherine's age at the moment in question: 2*12=24 years old. Now Mel, who is younger by three years. Younger means fewer, so subtract rather than add: 24-3=21 years. Note something useful about this problem: the gap between the two of them never changes, three years at every moment of their lives, so no matter which age of Katherine we are given, three less is always Mel's. No trickery beyond the dozens hides here. Check the shape: twenty-one sits below twenty-four by exactly three, as it must. Twenty-one years old Mel will be it is.
+Final answer: 21
+
+@@gsm8k_train_00172
+Count the bottles first, then the stars they demand, and do not stop at the first number you compute. Two bottles Kyle bought at the start, and three more of the same kind afterwards, so his total is 2 + 3 = 5 bottles. Identical the later ones are, the question tells us, which matters greatly: it means the same fifteen-star capacity applies to all five and not only to the first two. Fifteen stars in each of five bottles: 15 x 5 = 75 origami stars. Consider the error to avoid, filling only the first two and reporting thirty, or filling only the last three and reporting forty-five. All the bottles he bought must be filled. Seventy-five stars Kyle must make it is.
+Final answer: 75
+
+@@gsm8k_train_00189
+Downward through the chain we travel first, then upward at the very end. Thor's age is given as one thousand four hundred fifty-six, and thirteen times Captain America's age it is, so to find the Captain we divide rather than multiply: 1456/13 = 112 years. The Captain in turn is seven times Peter Parker's age, so divide once more: 112/ 7 = 16 years for Peter. Now Ironman, and here the direction reverses, for he is thirty-two years older than Peter rather than a multiple of him, so we add: 16 + 32 = 48 years. Note how the operations mirror the wording, dividing where a multiple was stated and adding where a difference was. Forty-eight years old Ironman is.
+Final answer: 48
+
+@@gsm8k_train_00190
+Through last year the path runs, so backward and then forward in time we must step. Dexter's age is given: eight years. Darcy is twice Dexter, so 2*8 = 16 years old Darcy is now. But the comparison with Dallas was made last year and not this one, so back a year Darcy must travel: 16 - 1 = 15 years old she was then. Dallas was three times that age last year: 3*15 = 45 years old he was. Now forward again to the present, for the question asks how old Dallas is now: 45 + 1 = 46 years. Forget that final step and forty-five you would answer, which the trap here is. Forty-six years old Dallas is now it is.
+Final answer: 46
+
+@@gsm8k_train_00195
+Spending first, change after, and both kinds of box must be priced before either is answered. The drinks: five boxes at six dollars each, so 5 x 6 = 30 dollars. The pizzas: ten boxes at fourteen dollars each, so 10 x 14 = 140 dollars. Note that the boxes differ in both count and price, so multiplying them separately necessary it is. Her whole spending then: 30 + 140 = 170 dollars. Two hundred dollars she handed to the seller, and change is what the seller returns, which is the part she did not spend: 200 - 170 = 30 dollars. Check the shape of it: thirty is small beside two hundred, as change should be when most of the money was spent. Thirty dollars of change Mary got back it is.
+Final answer: 30
+
+@@gsm8k_train_00201
+Seven weeks in three stretches, and an average at the very end. The first stretch runs two weeks, which is fourteen days, at one apple each day: 14 x 1 = 14 apples. The second stretch runs three weeks, but read it carefully, for he eats the same TOTAL as the first two weeks and not the same daily rate. So fourteen apples again across those three weeks. The third stretch runs two weeks, fourteen days, at three apples a day: 14 x 3 = 42 apples. Everything eaten: 14 + 14 + 42 = 70 apples. Now the average, which divides the whole by the number of weeks and not by the number of stretches: 70 / 7 = 10 apples. Ten apples a week on average Archibald ate it is.
+Final answer: 10
+
+@@gsm8k_train_00202
+More money she adds, so grow the total must, and that simple truth the key here is. Twenty percent of the two hundred she already holds: 20/100*200 = 40 dollars is what she puts in. Now pause before answering, for forty is the addition and not the final amount, and reporting the addition the common error here is. The forty joins what was already in the bank rather than replacing it: 200+40=240 dollars. Test the shape of the answer: two hundred forty exceeds the original two hundred by exactly the forty we calculated, as any increase must. Had the question asked how much she added, forty would serve, but it asks how much she will have. Two hundred forty dollars in the piggy bank there will be.
+Final answer: 240
+
+@@gsm8k_train_00205
+More mouths than invitations there are, and that the heart of this problem is. Thirty people Wickham invites, and all of them attend. Half of those guests bring another person with them: 30 / 2 = 15 extra people arrive. Those fifteen are additional bodies and not a portion of the thirty, so the true head count joins them: 30 + 15 = 45 people at the table. Now the plates. Three courses each person eats, and a fresh plate every course demands, so each person consumes three plates rather than one: 45 * 3 = 135 plates. Consider the two errors this invites, using thirty instead of forty-five, or forgetting that each guest needs three. One hundred thirty-five plates Wickham needs it is.
+Final answer: 135
+
+@@gsm8k_train_00208
+Years into months first, for monthly he saves and yearly the span is given. Two years of saving: 12 x 2 = 24 months. Twenty-five dollars in each of those months: 25*24 = 600 dollars accumulated. Now the repair, which took its share away from that pile. Away means subtract, for the money left the bank and did not join it: 600 - 400 = 200 dollars. Note the order of events matters not here, since he saved throughout and spent once, but the arithmetic would change if the repair had emptied the bank before the saving finished. Check the shape: two hundred is less than six hundred by exactly the four hundred spent. Two hundred dollars left in the piggy bank there are.
+Final answer: 200
+
+@@gsm8k_train_00209
+All the students first, then the girls among them, for no count of girls is given directly. Five vans there are, and twenty-eight students ride in each: 5 x 28 = 140 students altogether. Sixty of that hundred forty are boys, the question tells us. Now the useful truth: every student who is not a boy must be a girl, since no third group exists here. So the girls are everything the boys are not: 140 - 60 = 80 girls. Check the shape of it: eighty and sixty together make one hundred forty, the whole we found, so consistent our arithmetic is. Note the trap of dividing sixty among the vans, which the question never asks for. Eighty girls on the field trip there are.
+Final answer: 80
+
+@@gsm8k_train_00214
+Months are the currency of this question, so into months every anniversary must be changed. Their fourth anniversary marks four sets of twelve months together: 4*12=48 months of relationship. But that milestone lies six months ahead of today, so backward we step to find the present: 48-6=42 months they have been together right now. The second anniversary sits at 2*12=24 months into the relationship, a point already behind them. How long ago that was is simply the distance between then and now, so the smaller from the larger we subtract: 42-24= 18 months. Note that no year needs converting twice, and the six months must be removed and never added. Eighteen months ago their second anniversary they celebrated it is.
+Final answer: 18
+
+@@gsm8k_train_00216
+Unknown the first year is, so in terms of it every later year we must write. Call the first year's saving one share. The second year doubles it, making two shares. The third doubles again, four shares. The fourth doubles once more, eight shares. Careful here you must be, for each year doubles the year before it and not the original. All four years summed: 1+2+4+8=15 shares in total. Four hundred fifty dollars those fifteen shares hold between them, so a single share is 450/15=30 dollars. And a single share is precisely the first year, the quantity the question asks for. Check it: thirty and sixty and one hundred twenty and two hundred forty do sum to four hundred fifty. Thirty dollars in the first year Missy put in it is.
+Final answer: 30
+
+@@gsm8k_train_00218
+Counts first, then the worth of each coin, and never mix the two. Two more quarters than nickels he has, and six nickels are given: 6 + 2 = 8 quarters. Four more dimes than quarters: 8 + 4 = 12 dimes. Now every coin must be turned into cents, for the question asks how much money and not how many coins. Nickels at five cents each: 6 x 5 = 30 cents. Quarters at twenty-five each: 8 x 25 = 200 cents. Dimes at ten each: 12 x 10 = 120 cents. All the money together: 30 + 200 + 120 = 350 cents. Note the error of summing the coins instead, which would give twenty-six and mean nothing. Three hundred fifty cents Ravi has it is.
+Final answer: 350
+
+@@gsm8k_train_00223
+Equal their spending was, and that single fact the key that unlocks everything here is. Andy we can price completely, for all his purchases are named. Two hamburgers at two dollars each: 2 x 2 = 4 dollars. With the one-dollar soda: 1 + 4 = 5 dollars Andy spent. Now the bridge: Bob spent the same five dollars, because the question tells us their totals matched. Of Bob's five, three went to the sandwiches, so whatever remains must belong to the fruit drink: 5 - 3 = 2 dollars. Check the shape: two dollars is a plausible price for a drink, and three plus two does return us to five. Two dollars Bob's fruit drink cost it is.
+Final answer: 2
+
+@@gsm8k_train_00226
+Three groups of table there are, and the third must be deduced rather than read. Half the tables carry two chairs: half of thirty-two is 32*(1/2) = 16 tables, and those hold 16*2 = 32 chairs. Five tables carry three chairs each: 5*3 = 15 chairs. The rest remain, and the rest is what survives when the first two groups are removed from the thirty-two: 32-(16+5) = 11 tables, each with four chairs, giving 11*4 = 44 chairs. All three groups of chairs together: 32+15+44 = 91 chairs. Note the coincidence that thirty-two names both the tables and the first group's chairs, which confuse you it must not. Ninety-one chairs in the hall there are.
+Final answer: 91
+
+@@gsm8k_train_00235
+Yearly gifts first, then the parents' doubling at the end. One train each birthday and two each Christmas, so in a single year: 1+2=3 trains. Five years of that same pattern: 5*3 =15 trains he has collected himself. Now the parents, who give him double the number he already holds. Double of fifteen is 15*2= 30 trains given to him. Here the trap waits: thirty is the gift alone, and the fifteen he already owned do not vanish when the gift arrives. Both must join: 15+30= 45 trains. Check the shape of it: forty-five is three times fifteen, which makes sense, for he ends with his own pile plus two more of the same size. Forty-five model trains Max has now it is.
+Final answer: 45
+
+@@gsm8k_train_00246
+Parts before people, and people before dollars, in that order we must travel. The ratio names five parts boys to seven parts girls, so the whole family measures 5+7 = 12 parts. One hundred eighty children fill those twelve parts, and five of the twelve belong to the boys, so the boys number 5/12*180 = 75. Now the money, and here the care is needed: the three thousand nine hundred is shared among the boys alone and not among all one hundred eighty children. Seventy-five boys share it: 3900/75 = 52 dollars each. Check the shape: fifty-two times seventy-five returns three thousand nine hundred, so consistent our arithmetic is. Fifty-two dollars each boy receives it is.
+Final answer: 52
+
+@@gsm8k_train_00247
+Three stretches of pill-taking there are, and shrinking they go. The first: two pills taken three times in a day, which is 2*3=6 pills in one day, and two such days pass, so 2*6= 12 pills. The second: half that daily amount, 6/2= 3 pills a day, across three days, giving 3*3= 9 pills. The third: two pills only, on the final morning. Everything swallowed: 12+9+2=23 pills. Fifty pills the bottle held at the start, so what remains is the start less the swallowed: 50-23=27 pills. Note the care needed with the phrase two pills three times a day, which means six and not two. Twenty-seven pills in the bottle remain it is.
+Final answer: 27
+
+@@gsm8k_train_00250
+The real metal first, the machine's trickery after. Ten plates at thirty pounds each: 10*30=300 pounds of actual weight on the stack. Now the machine, which makes the load feel twenty percent heavier while it is being lowered. Twenty percent of the stack: 300*.2=60 pounds of extra felt weight. Here the trap sits: sixty is the addition and not the felt total, and the machine adds to the weight rather than replacing it. So the felt weight is the metal plus the illusion: 300+60=360 pounds. Check the shape of it: three hundred sixty exceeds three hundred, as anything made heavier must. Three hundred sixty pounds the weights felt when lowered it is.
+Final answer: 360
+
+@@gsm8k_train_00255
+Younger Bush is, so older Matt must be, and upward from Bush we climb. Twelve years old Bush will be this year, and three years separate the brothers, so Matt today is 12+3 = 15 years old. Now the question leaps ten years into the future, and both brothers age together, though only Matt's age is asked for. Ten years added to Matt's fifteen: 10+15 = 25 years. Note the trap of adding the ten to Bush instead, or of forgetting that the three-year gap never closes. Check the shape: twenty-five is exactly ten more than fifteen, as a decade demands. Twenty-five years old Matt in ten years will be it is.
+Final answer: 25
+
+@@gsm8k_train_00257
+Earnings in, spending out, and both sides must be complete before subtracting. The cookies: forty pieces at eighty cents each, so 40 x 0.8 = 32 dollars. The cupcakes: thirty at two dollars each, so 30 x 2 = 60 dollars. Everything she earned: 32 + 60 = 92 dollars. Now the spending, and note that two sets of spoons she bought and not one: 2 x 6.5 = 13 dollars. What remains is her earnings less her spending: 92 - 13 = 79 dollars. Check the shape of it: seventy-nine sits just below ninety-two by the thirteen she spent, as it must. Seventy-nine dollars Hannah has left it is.
+Final answer: 79
+
+@@gsm8k_train_00259
+Three classes there are, and the third can be found only by removing the other two. Class A holds forty percent of the eighty students: 40/100 * 80 = 32 students. Class B holds twenty-one fewer than class A, and here the care is needed, for it is fewer than A and not fewer than the whole school: 32 - 21 = 11 students. The rest sit in class C, and the rest means everyone the first two classes did not take: 80 - 32 - 11 = 37 students. Check the shape: thirty-two and eleven and thirty-seven do sum to eighty, so consistent our arithmetic is. Thirty-seven students in class C there are.
+Final answer: 37
+
+@@gsm8k_train_00263
+A plot laid out in rows and columns this is, so multiplication counts the trees for us. Three by four means three rows of four, or four rows of three, and either way 3*4=12 trees stand in the plot. Each tree gives five apples: 12*5=60 apples gathered in all. Now the selling, at half a dollar for each apple: 60*.5=30 dollars. Note the shape of the arithmetic: sixty apples at half a dollar must give less than sixty dollars, and thirty is exactly half, as it should be. Note also the trap of stopping at twelve or at sixty, for neither trees nor apples the question wants, but dollars. Thirty dollars John makes it is.
+Final answer: 30
+
+@@gsm8k_train_00264
+Weekdays and weekend days earn differently, so separately counted they must be. Five weekdays fill a week, each earning six hundred: 600 * 5 = 3000 dollars from the weekdays. The weekend days earn twice as much each, so a single weekend day brings 600 * 2 = 1200 dollars, and two such days give 1200 * 2 = 2400 dollars. One whole week then: 3000 + 2400 = 5400 dollars. Four weeks the month holds: 5400 * 4 = 21600 dollars. Note the two traps here, doubling the weekly total instead of the daily rate, and forgetting that a weekend holds two days rather than one. Twenty-one thousand six hundred dollars by the month's end it earns it is.
+Final answer: 21600
+
+@@gsm8k_train_00268
+Sum first, then share the sum among the bouquets, for that is what an average does. Three bouquets Trevor bought, holding nine and fourteen and thirteen carnations. Add them together: 9+14+13=36 carnations in all. Now count how many parts share that total, and three bouquets there are, not four and not the number of flowers. An average divides the whole by the number of parts: 36/3=12 carnations. Check the shape of it: twelve sits between the smallest bouquet's nine and the largest bouquet's fourteen, which any true average must do. Were the answer outside that range, a mistake somewhere we would know had crept in. Twelve carnations on average each bouquet has it is.
+Final answer: 12
+
+@@gsm8k_train_00275
+Two raises upon the same starting salary, and the gap between the results we seek. Hansel's raise is ten percent of thirty thousand: 30000*.10 = 3000 dollars, which brings him to 30000+3000 = 33000 dollars a year. Gretel begins at the same thirty thousand but receives fifteen percent: 30000*.15 = 4500 dollars, bringing her to 30000+4500 = 34500 dollars. Now the comparison, which asks how much more Gretel will make: 34500-33000 = 1500 dollars. Note a shortcut that confirms it: the raises differ by five percent of thirty thousand, which is exactly fifteen hundred, so the same answer by a second road we reach. One thousand five hundred dollars more Gretel will make it is.
+Final answer: 1500
+
+@@gsm8k_train_00282
+Careful with the phrasing of this one you must be, for it decides everything. Twenty-five times MORE than Kristoff, Riku has, and more means beyond what Kristoff holds rather than simply a multiple of it. So first the multiple: 25 * 85 = 2125 stickers, which is the amount by which Riku exceeds Kristoff. Then Kristoff's own eighty-five must be joined to that excess, for Riku has all of them plus the extra: 2125 + 85 = 2210 stickers. Note how a different reading, treating twenty-five times more as simply twenty-five times as many, would stop at two thousand one hundred twenty-five. Two thousand two hundred ten stickers Riku has it is.
+Final answer: 2210
+
+@@gsm8k_train_00285
+Minutes first, then hours, then days, and each conversion in its turn. Twenty episodes at thirty minutes each: 20*30=600 minutes of show awaits him. But hours the question asks for and minutes we have, so convert we must, and sixty minutes fill an hour: 600/60=10 hours of viewing in all. Now spread that viewing across the five days he allows himself: 10/5=2 hours each day. Note the trap of dividing the minutes by the days first and reporting one hundred twenty, which is right in minutes but not in the units requested. Check the shape: two hours a day for five days does give ten hours. Two hours a day John must watch it is.
+Final answer: 2
+
+@@gsm8k_train_00287
+Two helpers Bran has against a single fee, and both must be applied in turn. The scholarship first: thirty percent of the ninety-dollar tuition, so 90 x 0.30 = 27 dollars it covers. What remains upon his shoulders: 90 - 27 = 63 dollars. Now the job, which pays fifteen dollars each month, and three months he has: 15 x 3 = 45 dollars he will earn in that time. Those earnings reduce what he must find elsewhere: 63 - 45 = 18 dollars. Note the trap of subtracting the scholarship from the wages, or of counting only one month of work. Eighteen dollars Bran still must pay it is.
+Final answer: 18
+
+@@gsm8k_train_00288
+Two gyms there are, and each carries a fee of a different shape, so separately costed they must be. The cheap gym: ten dollars a month across twelve months, 10*12=120 dollars, plus a flat fifty-dollar sign-up, giving 120+50=170 dollars. The expensive gym costs three times the cheap one's monthly rate: 3*10=30 dollars each month. Its sign-up fee is four months of its own membership: 30*4=120 dollars. Its year of monthly fees: 30*12=360 dollars. That gym in total: 360+120=480 dollars. Both gyms joined: 480+170=650 dollars. Note that the sign-up fee is four months of the expensive rate and not of the cheap one. Six hundred fifty dollars in the first year John paid it is.
+Final answer: 650
+
+@@gsm8k_train_00292
+Three colours of yarn there are, and each yarn gives the same three scarves regardless of its colour. Red: two yarns at three scarves each, 2 x 3 = 6 scarves. Blue: six yarns, so 3 x 6 = 18 scarves. Yellow: four yarns, so 4 x 3 = 12 scarves. All the colours summed: 12 + 18 + 6 = 36 scarves. Note a faster road that confirms it: twelve yarns she bought in total, and three scarves from each gives thirty-six directly, which agrees with our careful count. When two routes agree, confidence in the answer we may have. Thirty-six scarves May can make it is.
+Final answer: 36
+
+@@gsm8k_train_00293
+Per minute of singing the other troubles are measured, so the six minutes of performance multiplies them all. Practising costs three minutes for every minute sung: 6 * 3 = 18 minutes at practice. Tantrums cost five minutes for every minute sung: 6 * 5 = 30 minutes thrown away. Now the singing itself, six minutes, and here the trap waits, for the question asks for all three activities combined and the performance is one of them. So all three must join: 18 + 30 + 6 = 54 minutes. Forget the singing and forty-eight you would report, which the most common error here is. Fifty-four minutes in all Carlotta spends it is.
+Final answer: 54
+
+@@gsm8k_train_00296
+One bag only is harmed, and grasping that the whole of this puzzle is. Twenty-four kilos split evenly among four bags: 24/4=6 kilos in each bag. Then one bag tears and half of ITS contents fall, not half of everything: 6/2=3 kilos lost to the ground. The other three bags stand untouched and lose nothing at all. So from the original twenty-four only those three kilos vanish: 24-3=21 kilos remain. Note the error this invites, halving the whole twenty-four and reporting twelve, which would be right only if every bag had torn. Twenty-one kilos of sugar remain it is.
+Final answer: 21
+
+@@gsm8k_train_00301
+Three groups of reader there are, and the silent rest we seek by removing them. Those reading three or more novels: one sixth of two hundred forty, so 1/6 * 240 = 40 students. Those reading two: thirty-five percent, so 35/100 * 240 = 84 students. Those reading one: five twelfths, so 5/12 * 240 = 100 students. All the readers together: 40 + 84 + 100 = 224 students. The rest read nothing at all, and the rest is the whole class less the readers: 240 - 224 = 16 students. Note that fractions and percentages mix freely here, so long as each is taken of the same two hundred forty. Sixteen students read no novels it is.
+Final answer: 16
+
+@@gsm8k_train_00310
+Hours first, then wages, then the tax that sits upon them. Each employee labours 25 * 8 = 200 hours in the month, managers and warehouse workers alike. One warehouse worker earns 200 * 15 = 3000 dollars, and four such workers there are: 3000 * 4 = 12000 dollars. One manager earns 200 * 20 = 4000 dollars, and two managers: 4000 * 2 = 8000 dollars. All wages together: 8000 + 12000 = 20000 dollars. Now the tax, ten percent of that wage bill: 20000 * .1 = 2000 dollars. Janet owes wages and tax both: 2000 + 20000 = 22000 dollars. Note the trap of reporting the wages alone, or the tax alone. Twenty-two thousand dollars Janet owes it is.
+Final answer: 22000
+
+@@gsm8k_train_00314
+The weekly goal first, then the shortfall that Saturday must carry. An average of fifty pages across seven days means the week must hold 7 x 50 = 350 pages in total. Note that an average demands the whole week be counted, Wednesday included, even though he read nothing then. Now what he has already read, and Wednesday's nothing adds nothing: 43+65+28+70+56 = 262 pages so far. Saturday must supply whatever is still missing: 350-262 =88 pages. Check the shape of it: eighty-eight is a heavy day but not an impossible one, and it is larger than fifty precisely because Wednesday was empty. Eighty-eight pages on Saturday Berry must read it is.
+Final answer: 88
+
+@@gsm8k_train_00316
+An increase this is, not a replacement, and that distinction the whole difficulty here is. Fifteen percent of the old price of two hundred twenty dollars: 220 * 15/100 = 33 dollars of increase. Now pause, for thirty-three is the amount by which the price grew and not the price itself. Reporting thirty-three the common error is. The increase joins the old price rather than replacing it: 220 + 33 = 253 dollars. Check the shape of the answer: two hundred fifty-three exceeds two hundred twenty by exactly the thirty-three we calculated, as any increase must. Two hundred fifty-three dollars the new price is.
+Final answer: 253
+
+@@gsm8k_train_00321
+Ten times MORE than Fred, Mike earned, and more means beyond what Fred had rather than simply ten times it. Fred's thousand multiplied: 10*1000 = 10000 dollars above Fred. Mike's own earning then is that excess joined to Fred's own amount: 10000+1000 = 11000 dollars five months ago. Now the raise, forty percent of that eleven thousand and not of the original ten: 40/100*11000 = 4400 dollars added. His salary today: 11000 +4400 = 15400 dollars. Note the two traps here, reading ten times more as simply ten times, and taking the percentage of the wrong base. Fifteen thousand four hundred dollars Mike now earns it is.
+Final answer: 15400
+
+@@gsm8k_train_00322
+Forward through the bill we build, then subtract at the end to expose what was hidden. The food and drink first: 80+10 = 90 dollars before anything is added. The tax sits on that ninety: 90 * 10/100 = 9 dollars. So the bill before any gratuity stands at 90 + 9 = 99 dollars. But one hundred forty was charged in the end, and the gap between what was legitimate and what was taken is the hidden gratuity: 140-99 = 41 dollars. Note that the gratuity was charged after tax, as the question says, so the tax must be added before the subtraction. Forty-one dollars for gratuities they charged it is.
+Final answer: 41
+
+@@gsm8k_train_00327
+Grow the herd first, then halve it, then divide it into coats, and in that order only. Thirty minks Andy buys, and six babies each of them bears: 30 * 6 = 180 baby minks born. Adults and babies together: 180 + 30 = 210 minks in all. Now the activists free half, so half remain in his keeping: 210 / 2 = 105 minks. Fifteen skins each coat demands: 105 / 15 = 7 coats. Note the trap of halving before the babies are counted, or of forgetting that the adults are skinned alongside their young. Check the shape: seven coats from a hundred five minks at fifteen each is exact, with none left over. Seven coats Andy can make it is.
+Final answer: 7
+
+@@gsm8k_train_00331
+Miles first, then truckloads, then gravel, then pitch, and each step depends on the one before it. The second day paved one mile less than double the first day's four: 4 * 2 - 1 = 7 miles. Two days are done, so what remains of the sixteen-mile road is 16 - 7 - 4 = 5 miles for the third day. Three truckloads pave each mile: 3 * 5 = 15 truckloads needed. Two bags of gravel go into each truckload: 15 * 2 = 30 bags of gravel. Now the pitch, and read carefully, for there is five times as much gravel as pitch, so divide: 30 / 5 = 6 barrels. Six barrels of pitch the company will need it is.
+Final answer: 6
+
+@@gsm8k_train_00334
+Three ingredients there are, and packages that do not match the recipe's cups, so convert we must. Strawberries: four cups wanted, two cups to a package, so 4/2 = 2 packages, at three dollars each, giving 3*2=6 dollars. Raspberries: four cups wanted the same way, 4/2 = 2 packages, at five dollars each, giving 5*2 = 10 dollars. The cream: two cups for each quart and two quarts she makes, so 2*2 = 4 cups, which one four-cup container fills exactly, costing four dollars and no more. Everything joined: 6+10+4 = 20 dollars. Note that buying two cream containers would waste money, since one suffices. Twenty dollars to make both quarts it is.
+Final answer: 20
+
+@@gsm8k_train_00346
+Wall by wall the area we gather, for the walls differ in width though not in height. The first kind: three metres wide and two tall, giving 3 * 2 = 6 square metres, and two such walls there are, so 6 * 2 = 12 square metres. The third wall: 5 * 2 = 10 square metres. The final wall: 4 * 2 = 8 square metres. All four walls together: 12 + 10 + 8 = 30 square metres to cover. Two square metres each can of paint covers: 30 / 2 = 15 cans. Note the trap of counting the first wall once instead of twice. Fifteen cans of paint Lucille needs it is.
+Final answer: 15
+
+@@gsm8k_train_00351
+Two sandwich days each week there are, Wednesday and Friday, and no others. Across the thirty-six weeks of school: 36 x 2 = 72 possible sandwich days. But absent he was on some of them, one Wednesday and two Fridays: 1 + 2 = 3 days missed. Those missed days carried no sandwich, so removed from the possible ones they must be: 72 - 3 = 69 sandwiches eaten. Note the trap of subtracting three weeks rather than three days, which would take six sandwiches instead of three. Check the shape: sixty-nine sits just below seventy-two by exactly the three days he missed. Sixty-nine peanut butter and jelly sandwiches Jackson ate it is.
+Final answer: 69
+
+@@gsm8k_train_00296
+One bag only is harmed, and grasping that the whole of this puzzle is. Twenty-four kilos of sugar split evenly among four bags: 24/4=6 kilos sit in each bag. Then one bag tears, and half of THAT bag's contents fall to the ground, not half of all the sugar she owns: 6/2=3 kilos lost. The other three bags stand untouched and lose nothing whatever. So from the original twenty-four only those three kilos vanish: 24-3=21 kilos remain. Note the error this problem invites, halving the whole twenty-four and reporting twelve, which would be correct only if every bag had torn open. Check the shape: twenty-one is only slightly less than twenty-four, as a single small spill demands. Twenty-one kilos of sugar remain it is.
+Final answer: 21
+
+@@gsm8k_train_00316
+An increase this is, not a replacement, and that distinction the whole difficulty here is. The old price we are given: two hundred twenty dollars last year. Fifteen percent of that old price: 220 * 15/100 = 33 dollars of increase. Now pause before answering, for thirty-three is the amount by which the price grew and not the price itself. Reporting thirty-three the most common error here is. The increase joins the old price rather than replacing it, so add: 220 + 33 = 253 dollars. Check the shape of the answer: two hundred fifty-three exceeds two hundred twenty by exactly the thirty-three we calculated, as any genuine increase must. Two hundred fifty-three dollars the new price is.
+Final answer: 253
+
+@@gsm8k_train_00354
+Backwards this one runs, undoing each gift in the reverse order it was given. Four boxes remain at the very end, and that four is what survived the halving. If half were given away and four remain, then before the halving twice as many stood: 4*2=8 boxes. Now step back further, for before that halving a single box went to his mother, so put it back where it was: 8+1=9 boxes. Note the order matters greatly: undoing the halving first and the mother's box second, the mirror of how the events happened. Check it forward: nine less one is eight, half of eight is four, which matches. Nine boxes of oranges Seth bought it is.
+Final answer: 9
+
+@@gsm8k_train_00358
+Follow the marbles that are out of the jar, not those still inside it, for the question asks what goes back in. Twelve he takes out, and half of those twelve are lost on the floor: 12 / 2 = 6 marbles survive in his hands. Ten more he then removes from the jar to continue his game: 6 + 10 = 16 marbles he now holds. His mother arrives with a bag of twenty-five new ones: 25 + 16 = 41 marbles. Note that the six lost marbles never return, so counted they must not be, and note also that the marbles still sitting in the jar were never taken out and are not part of the question. Forty-one marbles into the jar Carl will put it is.
+Final answer: 41
+
+@@gsm8k_train_00359
+Sixty minutes their reading rates are measured in, and two hundred forty minutes they have been reading. Four such stretches that is, for two hundred forty divided by sixty gives four, so each reader's hourly rate must be multiplied by four. Rene: 30 x 4 = 120 pages. Lulu: 27 x 4 = 108 pages. Cherry: 25 x 4 = 100 pages. All three readers together: 120 + 108 + 100 = 328 pages. Note the trap of reporting one reader's total, or of forgetting that four hours have passed rather than one. Check the shape: three hundred twenty-eight is a little less than four times the fastest reader's hourly rate times three, as it should be when two readers are slower. Three hundred twenty-eight pages they have finished it is.
+Final answer: 328
+
+@@gsm8k_train_00375
+Upon the wholesale price the markup is built, not upon the retail price, and there the whole trap lies. The owner takes the wholesale price and adds eighty percent OF THAT WHOLESALE PRICE to it. So the retail price is the wholesale price plus eight tenths of itself, which together make one and eight tenths of the wholesale. Thirty-six dollars is what that one and eight tenths equals, so to recover the wholesale we undo the markup by dividing: 36 / 1.8 = 20 dollars. Check it forward: eighty percent of twenty is sixteen, and twenty plus sixteen is thirty-six, which matches. Note the error of taking eighty percent of thirty-six instead. Twenty dollars the wholesale price is.
+Final answer: 20
+
+@@gsm8k_train_00392
+Each pile is measured against another pile, so in the right order they must be unfolded. The clothes are given to us directly: thirty minutes. The towels take twice as long as the clothes: 30 x 2 = 60 minutes. Now the sheets, and careful here you must be, for they take fifteen minutes LESS THAN THE TOWELS and not less than the clothes: 60 - 15 = 45 minutes. All three piles washed one after another: 30 + 60 + 45 = 135 minutes. Note the trap of subtracting fifteen from the clothes and reporting a smaller total. Check the shape: the sheets sit between the clothes and the towels in duration, as the arithmetic demands. One hundred thirty-five minutes to wash everything it takes.
+Final answer: 135
+
+@@gsm8k_train_00402
+Opening weekend is only the beginning of this film's earnings. The whole run made three and a half times that opening weekend: 120*3.5=420 million dollars in total box office. But the company keeps only sixty percent of what the box office takes: 420000000*.6=252000000 dollars of revenue to them. Now the crucial distinction: profit is not revenue, for the film cost sixty million dollars to produce, and that cost must be subtracted before profit can be named: 252000000-60000000=192000000 dollars. Note the two traps here, reporting the box office total as though the company kept it all, and forgetting the production cost entirely. One hundred ninety-two million dollars of profit they made it is.
+Final answer: 192000000
+
+@@gsm8k_train_00408
+Averages hide totals, so the totals we must recover before anything else. Three adults averaging one hundred forty pounds each: 140 x 3 = 420 pounds among them. Two children averaging sixty-four pounds: 64 x 2 = 128 pounds. The five people already inside weigh 420 + 128 = 548 pounds together. Six hundred pounds the sign permits in all, so the room remaining for the next person is the difference: 600 - 548 = 52 pounds. Note that an average multiplied by the count gives the true total, which is why the averages were given at all. Check the shape: fifty-two pounds is a small allowance, consistent with an elevator already nearly full. Fifty-two pounds at most the next person may weigh it is.
+Final answer: 52
+
+@@gsm8k_train_00413
+Red from blue, then green from whatever remains. Twice as many red balls as blue there are, and eleven blue are given: 11 x 2 = 22 red balls. Blue and red counted together: 11 + 22 = 33 balls accounted for. Now the green, which is everything in the collection that is neither blue nor red, since only three colours exist here: 40 - 33 = 7 green balls. Check the shape of it: eleven and twenty-two and seven do sum to forty, the whole Ryan owns, so consistent our arithmetic is. Note the trap of doubling forty, or of treating the red as twice the total rather than twice the blue. Seven green balls there are.
+Final answer: 7
+
+@@gsm8k_train_00420
+The known tasks first, then the gap that the unknown one must fill. Laundry and bathroom and homework are all given: 30+15+40=85 minutes accounted for. But her total is given in hours while the tasks are given in minutes, so convert we must before subtracting: 2*60=120 minutes she spent in all. The room is whatever time the other three tasks did not claim: 120-85=35 minutes. Note the trap of subtracting eighty-five from two rather than from one hundred twenty, which mixing the units would cause. Check the shape: thirty-five minutes is a plausible span for cleaning a room, and the four tasks together do reach two hours. Thirty-five minutes cleaning her room Miriam spent it is.
+Final answer: 35
+
+@@gsm8k_train_00423
+Two packs of bananas there are, so the four euros must be counted twice and not once, which the trap here is. Everything she bought, listed carefully: four for the first pack of bananas, four for the second, two for the pears, six for the asparagus, eleven for the chicken. Summed: 4 + 4 + 2 + 6 + 11 = 27 euros spent. Fifty-five euros she carried into the market, and what returns home with her is the difference between what she brought and what she spent: 55 - 27 = 28 euros. Check the shape: twenty-eight is roughly half of fifty-five, consistent with a shopping trip that spent about half the purse. Twenty-eight euros Mom has left it is.
+Final answer: 28
+
+@@gsm8k_train_00426
+Three less than four times, and in exactly that order the phrase must be read. Four times the middle school's fifty students: 4 * 50 = 200. Then three fewer than that product, not three fewer than fifty: 200 - 3 = 197 students in the elementary school. Now pause, for one hundred ninety-seven is the elementary school alone, and the question asks for both levels together. Join them: 197 + 50 = 247 students. Note the error of subtracting three before multiplying, which would give one hundred eighty-eight instead. Check the shape: two hundred forty-seven exceeds the elementary count by exactly the fifty middle schoolers. Two hundred forty-seven students in both levels there are.
+Final answer: 247
+
+@@gsm8k_train_00428
+Four days there are, and the last is built upon all three before it. The first day: fifty eggs, given to us. The second day doubles the first: 50*2=100 eggs. The third day lays twenty more than the second: 100+20=120 eggs. Now the fourth, which doubles the total of the first three days, so that total we need first: 50+100+120=270 eggs across three days, and doubled that is 270*2=540 eggs on day four. All four days joined: 50+100+120+540=810 eggs. Note the trap of doubling only the third day rather than the running total of all three. Eight hundred ten eggs the frog laid it is.
+Final answer: 810
+
+@@gsm8k_train_00432
+Profit per book first, then the number of books, then the number of people, and confusing those last two the trap here is. Twenty dollars she receives for each book and five dollars it costs her to make: 20-5=15 dollars of profit from every book sold. One hundred twenty dollars of profit she realised in all, so the books sold number 120/15=8. But people the question asks for and not books, and every customer takes two books at a time: 8/2=4 people. Check the shape: four customers buying two books each is eight books, which at fifteen dollars profit each gives one hundred twenty. Four people Tina sold to it is.
+Final answer: 4
+
+@@gsm8k_train_00439
+Spend first, then see what the key chains may have with the remainder. Two t-shirts at eight dollars each: 8 x 2 = 16 dollars. Two bags at ten dollars each: 10 x 2= 20 dollars. Together those purchases cost 16 + 20 = 36 dollars. From his fifty that leaves 50 - 36 = 14 dollars for key chains. Now the key chains, which are sold three pieces to a two-dollar set, so first count the sets he can afford: 14/2 = 7 sets. But pieces the question asks for and not sets, and each set holds three pieces: 7 x 3 = 21 pieces. Note the trap of stopping at seven. Twenty-one key chains Timothy can buy it is.
+Final answer: 21
+
+@@gsm8k_train_00440
+Into the future we must step, and then back again to the present. Five years ahead Cori will be 3 + 5 = 8 years old. At that future moment she will be one third of her aunt's age, which means the aunt will be three times Cori's age then: 8 x 3 = 24 years old in five years. But today the question asks about, not five years hence, so those five years we must remove from the aunt as well: 24 - 5 = 19 years. Note that both of them age by the same five years, so the removal applies to the aunt exactly as the addition applied to Cori. Nineteen years old her aunt today is.
+Final answer: 19
+
+@@gsm8k_train_00444
+Each kind of shot carries its own worth, so separately counted they must be. Reggie's layups, three of them at one point each: 3 x 1 = 3 points. His free throws, two made at two points each: 2 x 2 = 4 points. His long shot, one made at three points: 1 x 3 = 3 points. Reggie's total then: 3 + 4 + 3 =10 points. His brother shoots only from distance and makes four: 4 x 3 = 12 points. The margin between them is the difference: 12 - 10 = 2 points. Note that both took ten shots, but the shots they missed matter not at all, only those they made. By two points Reggie loses it is.
+Final answer: 2
+
+@@gsm8k_train_00453
+Pool the shells first, then split the pool, and note carefully how many friends there are. Jillian gathered twenty-nine, Savannah seventeen, Clayton eight, and all three piles are combined before any giving: 29 + 17 + 8 = 54 shells altogether. Now the distribution, and here the care is needed, for the shells go to two arriving friends and not to the three collectors: 54 / 2 = 27 shells for each friend. Note the trap of dividing by three, or by five, neither of which the question describes. Check the shape: twenty-seven doubled returns fifty-four exactly, with nothing left over. Twenty-seven shells each friend got it is.
+Final answer: 27
+
+@@gsm8k_train_00455
+Doubling it is, and the days we must count alongside the amoebae, for days are what the question wants. One amoeba becomes two after the first two days: 1 * 2 = 2 amoebae. Two become four after another two days, so four days in: 2 * 2 = 4 amoebae. Four become eight at six days: 4 * 2 = 8 amoebae. Eight become sixteen at eight days: 8 * 2 = 16 amoebae, and sixteen is the number we were seeking. Now count not the doublings, which number four, but the days those doublings consumed, which number eight. Reporting four the trap here is. Eight days to become sixteen it takes.
+Final answer: 8
+
+@@gsm8k_train_00456
+Everything he received across the year first, then the portion he keeps. Four sources of money there are, and all four must be counted: six hundred from mowing, two hundred fifty from his birthday, one hundred fifty from selling video games, and another hundred fifty from odd jobs. Summed: 600+250+150+150 = 1150 dollars in the year. Now the saving, which is forty percent of everything he earned or received, not forty percent of any single source: 1150*.40 = 460 dollars. Note the trap of applying the percentage to the mowing money alone. Check the shape: four hundred sixty is a little under half of eleven hundred fifty, as forty percent should be. Four hundred sixty dollars Chad will save it is.
+Final answer: 460
+
+@@gsm8k_train_00458
+From Joey upward the chain climbs, one link at a time. Joey got eight votes, given to us plainly. Barry got twice as many as three more than Joey's total, so the adding comes first: 8 + 3 = 11 votes is the quantity Barry's count is built on. Then double it: 11 * 2 = 22 votes for Barry. Marcy got three times Barry's tally: 22 * 3 = 66 votes. Note the order carefully, for doubling Joey first and then adding three would give nineteen and then a wrong answer, and the sentence does not say that. Sixty-six votes Marcy got it is.
+Final answer: 66
+
+@@gsm8k_train_00428
+Four days there are, and the last one is built upon all three that came before it, so patient we must be. The first day: fifty eggs, given to us plainly. The second day doubles the first day's production: 50*2=100 eggs. The third day lays twenty more than the second day, not twenty more than the first: 100+20=120 eggs. Now the fourth day, which doubles the total of the first three days together, so that running total we must compute before anything else: 50+100+120=270 eggs across the first three days. Doubled, that gives 270*2=540 eggs on the final day. All four days joined at last: 50+100+120+540=810 eggs. Note the trap of doubling only the third day. Eight hundred ten eggs the frog laid it is.
+Final answer: 810
+
+@@gsm8k_train_00458
+From Joey upward the chain climbs, one careful link at a time. Joey got eight votes, given to us plainly. Barry got twice as many as three more than Joey's total, so the adding must come first and the doubling second: 8 + 3 = 11 votes is the quantity Barry's count is built upon. Then double that eleven: 11 * 2 = 22 votes for Barry. Marcy got three times Barry's tally: 22 * 3 = 66 votes. Note the order carefully, for doubling Joey first and adding three afterwards would give nineteen and then a wrong answer entirely, and the sentence does not say that. Sixty-six votes Marcy got it is.
+Final answer: 66
+
+@@gsm8k_train_00463
+Two separate bottlenecks there are, the mixing of dough and the baking in the oven, and neither can absorb the other's time. The dough first: one batch makes three pizzas and twelve pizzas are wanted, so 12/3 = 4 batches are needed, at thirty minutes each, giving 30 x 4 = 120 minutes of mixing. The oven next: it holds two pizzas at a time and twelve must be baked, so 12/2 = 6 fillings of the oven, at thirty minutes each, giving 30 x 6 =180 minutes of baking. Both stages summed: 120 + 180 = 300 minutes. But hours the question wants: 300/60 = 5 hours. Five hours to make twelve pizzas it takes.
+Final answer: 5
+
+@@gsm8k_train_00465
+Both routes must be priced before compared they can be, and the first route's price depends on the lights. At its worst the first route takes ten minutes of driving plus three minutes for each of three red lights: 10 + 3*3 = 19 minutes. The second route carries no lights at all and takes a fixed fourteen minutes whatever happens. Now the comparison the question asks for, which is how much LONGER the first route is rather than how long it takes: 19-14 = 5 minutes. Note the trap of reporting nineteen, which answers a question that was not asked. Five minutes longer his trip will be it is.
+Final answer: 5
+
+@@gsm8k_train_00482
+Feet first, then calories, for feet are what his jogging produces and calories are what the question wants. Five laps every night at one hundred feet each lap: 5*100= 500 feet in a single night. Five nights of that same routine: 500*5= 2500 feet jogged in total. Now the conversion into calories, and twenty-five feet of jogging burns one calorie: 2500/25=100 calories. Note the trap of stopping at five hundred, which is only one night, or at two thousand five hundred, which is feet and not calories. Check the shape: one hundred calories is a modest burn for a short jog, which sounds right. One hundred calories Ian burns it is.
+Final answer: 100
+
+@@gsm8k_train_00484
+People leave and then people arrive, and in that order we must follow them through. Twenty-five stood on the team at the start, the question tells us. Eight of them quit, so subtract those departures: 25 - 8 = 17 people remaining. Then thirteen new members joined, and they join the seventeen who stayed rather than the original twenty-five: 17 + 13 = 30 people. Note that the order happens not to matter here, since both operations act on the same running total, but thinking of it as a sequence keeps the arithmetic clear. Check the shape: thirty exceeds twenty-five because more joined than left, by exactly five. Thirty people on the team now there are.
+Final answer: 30
+
+@@gsm8k_train_00507
+Buy one get one free means half the pounds are paid for, though all of them are carried home, and grasping that the whole of this problem is. Twenty pounds James takes away with him. Under the offer he pays for only half of those: 20/2=10 pounds are charged to him. Fifteen dollars each paid pound costs: 10*15=150 dollars. Note the trap of multiplying all twenty pounds by fifteen, which would give three hundred and ignore the offer entirely. Check the shape: one hundred fifty is exactly half of three hundred, as a half-price deal demands. One hundred fifty dollars for the steaks James paid it is.
+Final answer: 150
+
+@@gsm8k_train_00509
+Energy first, then the price of that energy. The oven draws two and four tenths of a kilowatt in every hour it runs, and twenty-five hours it ran last month: 25*2.4= 60 kilowatts consumed in total. Now the cost, at one tenth of a dollar for each kilowatt: 0.10*60 = 6 dollars. Note the trap of multiplying the hours by the price directly, which would skip the consumption rate entirely and give two dollars fifty. Check the shape: six dollars for a month of oven use sounds plausible, neither absurdly small nor large. Six dollars for the oven Coco will pay it is.
+Final answer: 6
+
+@@gsm8k_train_00511
+All three vegetables first, then the half that was sold. Carrots and zucchini and broccoli, each weighed separately and then summed: 15 + 13 + 8 = 36 kilograms installed in the shop. Now the selling, and read carefully, for he sold half of ALL of them and not half of one kind: 36/2 = 18 kilograms sold. Note the trap of halving a single vegetable, or of halving before summing, which would give the same answer here only by accident of the arithmetic. Check the shape: eighteen is exactly half of thirty-six, as it must be. Eighteen kilograms of vegetables he sold it is.
+Final answer: 18
+
+@@gsm8k_train_00515
+Two separate dangers this problem hides, and multiplied together they must be at the end. First, how far below thirty-two the temperature sits: 32 - 8 = 24 degrees below. Every three degrees of that drop adds one five-percent step of skid risk, so the steps number 24 / 3 = 8. The skid risk then is 8 * 5 = 40 percent. Now the second danger: if she skids, she regains control forty percent of the time, so a serious accident follows a skid in 100 - 40 = 60 percent of skids. Both events must happen for the accident, so their chances multiply: 60 * 40/100 = 24 percent. Twenty-four percent the chance of a serious accident is.
+Final answer: 24
+
+@@gsm8k_train_00535
+A dozen is twelve, and three dozen is three times that, so unfold the phrase before any money is counted: 3*12=36 eggs Tim carries home. Now the price, and note that the fifty cents is charged per egg and not per dozen, which the trap here is. Half a dollar each: 36*.5=18 dollars. Consider the wrong path to see why it fails: three dozen at fifty cents a dozen would be a dollar fifty, which is absurdly cheap for thirty-six eggs. Check the shape: eighteen dollars for thirty-six eggs is fifty cents apiece exactly, as stated. Eighteen dollars for the eggs Tim paid it is.
+Final answer: 18
+
+@@gsm8k_train_00536
+Each cake is measured against the witch cake's seven votes, so that seven is our anchor. The unicorn cake drew three times the witch's votes: 7 * 3 = 21 votes. The dragon cake drew twenty-five more than the witch's, not twenty-five more than the unicorn's: 25 + 7 = 32 votes. Now the total, and here the trap waits, for the witch cake's own seven votes were cast too and must be counted alongside the others: 21 + 32 + 7 = 60 votes. Forget the witch's seven and fifty-three you would report. Check the shape: sixty exceeds each individual cake's tally, as any total must. Sixty votes in total cast there were.
+Final answer: 60
+
+@@gsm8k_train_00544
+Backwards from the ending we must work, for the question asks what she held before the shopping. Two bags she bought today, one of fifteen kilograms and one of ten: 15 + 10 = 25 kilograms added to her store. Forty kilograms she now holds in total, and that forty is everything she owns, both the new bags and whatever sat in the cupboard already. So what she already had is the present total less what she brought home: 40 - 25 = 15 kilograms. Note the trap of adding the twenty-five to the forty, which would answer a question nobody asked. Fifteen kilograms Elise already had it is.
+Final answer: 15
+
+@@gsm8k_train_00547
+The living room is measured against everything else, so everything else must be finished before it can be touched. The kitchen takes half again as long as a bedroom, and half of four hours is 4 * .5 = 2 hours longer, giving the kitchen 4 + 2 = 6 hours. The three bedrooms: 3 * 4 = 12 hours. Bedrooms and kitchen combined, which is everything else: 12 + 6 = 18 hours. The living room takes twice that combined figure: 18 * 2 = 36 hours. Everything at last joined: 18 + 36 = 54 hours. Note the trap of doubling only one bedroom. Fifty-four hours the whole renovation took it is.
+Final answer: 54
+
+@@gsm8k_train_00551
+Much this problem tells you that matters not at all, and seeing which numbers to ignore the real skill here is. The backpack's sixty pounds, her five feet of height, the sixty degrees of temperature, all of them distractions they are, placed to tempt you into using them. Pace is distance divided by time and nothing else, so only two numbers feed it: twenty-four miles hiked and six hours spent hiking. Divide: 24/6=4 miles in each hour. Note how the sixty appears twice among the distractions, which makes the temptation stronger. Check the shape: four miles an hour is a normal walking pace, so plausible our answer is. Four miles per hour Arlene's average pace was.
+Final answer: 4
+
+@@gsm8k_train_00554
+A fraction of a fraction this is, and carefully nested they must be kept. Of every sixty individuals, twenty-four like football, and half of those who like it actually play: 24*50/100 = 12 players in every sixty people. So the playing rate is twelve in sixty, which expressed as a percentage is 12/60*100 = 20 percent of any group. Now apply that rate to the group the question asks about: 250*20/100 = 50 individuals. Note the trap of applying the twenty-four in sixty directly to two hundred fifty and forgetting the halving. Check the shape: fifty is a fifth of two hundred fifty, matching our twenty percent. Fifty people to play football you would expect it is.
+Final answer: 50
+
+@@gsm8k_train_00555
+From Brian upward to Edward, then downward to Jacob, in that order the chain must be walked. Edward has three times Brian's twenty-two pairs: 3 * 22 = 66 pairs. Jacob has half of Edward's count, and note carefully it is half of EDWARD'S and not half of Brian's: 66 / 2 = 33 pairs. Now the total, which the question asks for, so all three owners must be summed and not merely the two we computed: 22 + 66 + 33 = 121 pairs. Forget Brian's own twenty-two and ninety-nine you would report, which the trap here is. One hundred twenty-one pairs of shoes they have it is.
+Final answer: 121
+
+@@gsm8k_train_00560
+Erasers first, then the dollars those erasers bring. Forty-eight boxes were donated, and twenty-four erasers sit in each box: 48 * 24 = 1152 erasers in all. Now the selling, at three quarters of a dollar for every single eraser, not for every box: 1152 * 0.75 = 864 dollars. Note the trap of pricing the boxes rather than the erasers, which would give thirty-six dollars and badly understate the takings. Check the shape: eight hundred sixty-four is a little less than the eleven hundred fifty-two erasers, as it must be when each sells for under a dollar. Eight hundred sixty-four dollars the student council will make it is.
+Final answer: 864
+
+@@gsm8k_train_00564
+Down the chain to Ian, then up to Rodney, then the gap at the end. Ian has half of Jessica's hundred dollars: 100/2 = 50 dollars. Rodney has thirty-five more than Ian, not thirty-five more than Jessica: 50+35 = 85 dollars. Now the comparison the question actually asks for, which is how much more Jessica holds than Rodney: 100-85 = 15 dollars. Note the trap of comparing Jessica with Ian instead, which would give fifty, or of reporting Rodney's eighty-five as though it answered the question. Check the shape: fifteen is small, which fits, since Rodney's eighty-five sits close to Jessica's hundred. Fifteen dollars more than Rodney, Jessica has it is.
+Final answer: 15
+
+@@gsm8k_train_00568
+The whole cost of the childhood first, and only at the very end the halving. The first eight years at ten thousand dollars each: 8*10000=80000 dollars. Then from age eight to eighteen, which is 18-8=10 years, at twice the earlier rate, so 10000*2=20000 dollars each year, giving 20000*10=200000 dollars. Both stretches of childhood together: 200000+80000=280000 dollars. University tuition added on top: 250000+280000=530000 dollars in all. But John pays only half of everything: 530000/2 = 265000 dollars. Note the trap of halving before the tuition is included, or of forgetting the doubling after age eight. Two hundred sixty-five thousand dollars John paid it is.
+Final answer: 265000
+
+@@gsm8k_train_00570
+What went INTO the pond the question asks, not what remains in it, so Eric's grasping hand changes the answer not at all in the way you might fear. Cindy's dimes at ten cents each: 10 x 5 = 50 cents. Eric's quarters at twenty-five: 3 x 25 = 75 cents. Garrick's nickels at five: 8 x 5 = 40 cents. Ivy's pennies at one: 60 x 1 = 60 cents. Eric then pulls one quarter back out, leaving 75 - 25 = 50 cents of his beneath the water. What now sits in the pond: 50 + 50 + 40 + 60 = 200 cents. Two hundred cents in the pond there are.
+Final answer: 200
+
+@@gsm8k_train_00573
+Each seller's earnings first, then the gap between the two of them. Bert sold eight toy phones at eighteen dollars each: 8 x 18 = 144 dollars earned. Tory sold seven toy guns at twenty dollars each: 7 x 20 = 140 dollars earned. Note that Tory's items were dearer but fewer, so neither seller obviously wins before the arithmetic is done. Now the comparison: 144 - 140 = 4 dollars more for Bert. Check the shape: the two totals are remarkably close, which the question's phrasing hints at by asking how much MORE rather than which was larger. Four dollars more than Tory, Bert earned it is.
+Final answer: 4
+
+@@gsm8k_train_00585
+What the class will actually produce first, then the shortfall against the goal. Thirty children are in the class, and each of them makes eight cards: 30*8 = 240 cards produced between them. One thousand cards the pizza party demands, and two hundred forty is well short of that. The gap they must still close is the goal less the production: 1000-240 = 760 cards. Note the trap of reporting two hundred forty, which is what they made rather than what they still owe. Check the shape: seven hundred sixty and two hundred forty do sum to one thousand exactly, so consistent our arithmetic is. Seven hundred sixty more cards they must make it is.
+Final answer: 760
+
+@@gsm8k_train_00589
+The rectangular tables first, for their number is given to us and the square ones are not. Seven rectangular tables at ten pupils each: 7*10=70 pupils seated among them. Ninety pupils must read at the same time in all, so the square tables must carry whatever the rectangular ones cannot: 90-70=20 pupils. Now the square tables themselves, each seating four: 20/4=5 tables. Note the trap of dividing ninety by four directly, which would ignore the rectangular tables entirely and give a far larger answer. Check the shape: seventy and twenty do sum to ninety, and five fours do make twenty. Five square tables are needed it is.
+Final answer: 5
+
+@@gsm8k_train_00591
+Cherries first, then minutes, then hours, and each conversion in its proper turn. Eighty cherries fill a pound and three pounds she needs: 80*3 = 240 cherries to pit. Now the pitting, which proceeds twenty cherries at a time, so the number of such batches is 240/20 = 12. Ten minutes each batch consumes: 10*12 = 120 minutes of work. But hours the question asks for and minutes we hold, so convert: 120/60 = 2 hours. Note the trap of dividing the cherries by ten, or of reporting one hundred twenty in the wrong units. Check the shape: two hours to pit two hundred forty cherries is plausible. Two hours to pit them all it will take.
+Final answer: 2
+
+@@gsm8k_train_00596
+Each worker's hours first, then their sum, then the change of units at the very end. Bianca worked twelve and a half hours, given to us. Celeste worked twice that: 2 * 12.5 = 25 hours. McClain worked eight and a half hours less than Celeste, not less than Bianca: 25 - 8.5 = 16.5 hours. All three summed: 12.5 + 25 + 16.5 = 54 hours between them. But minutes the question demands and hours we have, so multiply by the sixty minutes in an hour: 54 * 60 = 3240 minutes. Note the trap of reporting fifty-four, which is right in hours and wrong in the units asked. Three thousand two hundred forty minutes they worked it is.
+Final answer: 3240
+
+@@gsm8k_train_00601
+Into feet per second both speeds must be changed before they can be compared, for the gap between the animals is given in feet. The cheetah at sixty miles an hour: 60*1.5=90 feet each second. The gazelle at forty: 40*1.5=60 feet each second. Now the crucial insight: both run in the same direction, so the cheetah does not close the whole ninety feet each second but only the excess over the gazelle's speed: 90-60=30 feet gained every second. Two hundred ten feet lie between them at the start: 210/30=7 seconds. Note the trap of dividing by ninety and ignoring the gazelle's flight. Seven seconds to catch the gazelle it takes.
+Final answer: 7
+
+@@gsm8k_train_00603
+What the two of them hold first, then what is still wanting. Alyssa gathered thirty cans and Abigail forty-three, so between them: 30 + 43 = 73 cans collected so far. One hundred cans the science project demands in total. The shortfall is the goal less what they hold: 100 - 73 = 27 cans. Note the trap of reporting seventy-three, which is what they have rather than what they still need, and note that the question asks how many MORE they should collect. Check the shape: seventy-three and twenty-seven do sum to one hundred exactly. Twenty-seven more empty cans they must collect it is.
+Final answer: 27
+
+@@gsm8k_train_00605
+Twice Ivan's count Jerry holds, so from Ivan's twenty we begin: 2 x 20 = 40 dice for Jerry. Now pause before answering, for forty is Jerry's pile alone and the question asks how many the two of them have altogether. Both piles must join: 20 + 40 = 60 dice. Note the trap of reporting forty, which answers only half the question, and note that altogether always means the sum of every party mentioned. Check the shape: sixty exceeds both twenty and forty, as any total of two positive piles must. Sixty dice altogether they have it is.
+Final answer: 60
+
+@@gsm8k_train_00610
+The fork-eaters first, then their complement, for the question asks about those who use no fork. Sixty-eight percent of the two thousand pies are eaten with forks: 68/100*2000= 1360 pies. Now the useful truth: every pie not eaten with a fork is eaten some other way, and no third category exists here, so the rest must be what we seek: 2000-1360=640 pies. Note an alternative road that confirms it: thirty-two percent of two thousand is also six hundred forty, reached by taking the complement of the percentage first. When two routes agree, confidence we may have. Six hundred forty pies without forks eaten are.
+Final answer: 640
+
+@@gsm8k_train_00623
+One drink first, then how many drinks the pitcher holds, then the lemonade inside them. A quarter cup of iced tea and a cup and a quarter of lemonade: 0.25 + 1.25 = 1.5 cups in a single drink. Eighteen cups fill the pitcher, so the number of drinks is 18 / 1.5 = 12. Now the lemonade alone, and each of those twelve drinks carries a cup and a quarter of it: 12 x 1.25 = 15 cups. Note the trap of reporting eighteen, or of halving it, neither of which respects the recipe's uneven mixture. Check the shape: fifteen cups of lemonade and three of tea do sum to eighteen. Fifteen cups of lemonade in the pitcher there are.
+Final answer: 15
+
+@@gsm8k_train_00624
+Lorene's count first, built from Georgia's, then the gap between them. Three times Georgia's twenty-five pieces: 25 x 3 = 75 pieces for Lorene. Now the question, which asks how many FEWER Georgia has rather than how many Lorene has, so a difference and not a total is wanted: 75 - 25 = 50 pieces. Note the trap of reporting seventy-five, or of summing the two and reporting one hundred, neither of which answers what was asked. Check the shape: fifty is exactly twice Georgia's twenty-five, which makes sense, since Lorene has three of Georgia's shares and Georgia has one. Fifty fewer pieces Georgia has it is.
+Final answer: 50
+
+@@gsm8k_train_00632
+From Bom upward the chain climbs, link by careful link. Gwi has forty more seeds than Bom's three hundred: 300+40 = 340 seeds. Bom and Gwi together hold 340+300 = 640 seeds. Now Yeon, who has three times as many as GWI and not three times as many as the pair: 3*340 = 1020 seeds. All three friends joined at last: 1020+640 = 1660 seeds. Note the trap of tripling the six hundred forty, which would misread whose count Yeon is measured against. Check the shape: one thousand six hundred sixty exceeds Yeon's own pile by exactly the six hundred forty the other two hold. One thousand six hundred sixty seeds together they have it is.
+Final answer: 1660
+
+@@gsm8k_train_00641
+Give away first, then build dresses from whatever silk survives. Five friends receive twenty metres each: 5 * 20 = 100 metres given away. From his six hundred metres that leaves 600 - 100 = 500 metres still in storage for his own work. Now the dresses, each consuming five metres: 500 / 5 = 100 dresses. Note the trap of dividing the full six hundred by five and reporting one hundred twenty, which would use silk he no longer owns. Check the shape: one hundred dresses from five hundred metres at five metres each is exact, with none left over. One hundred dresses Alex can make it is.
+Final answer: 100
+
+@@gsm8k_train_00642
+The whole journey first, then its midpoint. Three errands Tony must run, and the distances are given separately: ten miles for groceries, fifteen for the haircut, five for the doctor. Summed: 10+15+5=30 miles of driving in all. Now the halfway point, which is simply half of the whole journey regardless of which errand he happens to be at when he reaches it: 30/2=15 miles. Note the trap of picking one errand's distance, or of averaging the three, neither of which the question asks. Check the shape: fifteen is exactly half of thirty, and it happens to equal the haircut distance by coincidence only. Fifteen miles driven when halfway through he is.
+Final answer: 15
+
+@@gsm8k_train_00606
+Four colours live in this box, and three of them we can count before the fourth reveals itself. Red is given to us: twenty marbles. Green is three times the red: 3 * 20 = 60 green marbles. Yellow makes up a fifth of the green, not of the whole box: 60 * 20/100 = 12 yellow marbles. Now the box's total, which is three times the GREEN count and not three times the red: 3 * 60 = 180 marbles in all. The fourth colour is everything the first three did not claim: 180 - 20 - 60 - 12 = 88 marbles. Note how each fraction must be taken of the right base, which the whole difficulty here is. Eighty-eight marbles of a different colour there are.
+Final answer: 88
+
+@@gsm8k_train_00658
+Both prices must be fully settled before any comparison can be made, for each store discounts differently. The first store: six percent off nine hundred fifty, so 950 x 6/100 = 57 of discount, leaving 950 - 57 = 893 to pay. The second store: five percent off nine hundred twenty, so 920 x 5/100 = 46 of discount, leaving 920 - 46 = 874 to pay. Now the gap between the two final prices: 893 - 874 = 19. Note the trap of comparing the sticker prices, which differ by thirty, or of comparing the discounts, which differ by eleven. Neither answers what was asked. Nineteen the difference in price is.
+Final answer: 19
+
+@@gsm8k_train_00664
+Through the hamster to the dog and then to the fish the chain of this problem runs. Hamsters live two and a half years on average, given to us plainly. Dogs live four times as long as hamsters: 4 * 2.5 = 10 years. Now the fish, and read carefully, for it lives two years LONGER than a dog rather than two times a dog: 10 + 2 = 12 years. Note the trap of doubling the dog's ten, which would misread the comparison entirely, and note also that the chain must be walked in order since each link depends on the one before. Twelve years a well-cared fish can live it is.
+Final answer: 12
+
+@@gsm8k_train_00673
+Full price first, then the discount struck from it. Ten thousand balls at a tenth of a dollar each: 10000*.10=1000 dollars before any discount. Thirty percent of that thousand is the saving: 1000*.30=300 dollars off. Now the crucial step, for three hundred is what he saves and not what he pays. What he actually hands over is the full price less the saving: 1000-300=700 dollars. Note the trap of reporting three hundred, which answers a question nobody asked. Check the shape: seven hundred is seventy percent of one thousand, which is exactly what a thirty percent discount should leave. Seven hundred dollars Johnny pays it is.
+Final answer: 700
+
+@@gsm8k_train_00674
+Full spots the question wants, but open spots it gives us, so a subtraction at the end necessary is. First the capacity: four levels at one hundred spots each, 4 * 100 = 400 spots in the garage. Now the open spots level by level. The second has two more than the first's fifty-eight: 58 + 2 = 60 open. The third has five more than the second: 60 + 5 = 65 open. The fourth is given as thirty-one. All the open spots summed: 58 + 60 + 65 + 31 = 214. Full is every spot that is not open: 400 - 214 = 186 spots. One hundred eighty-six full parking spots there are.
+Final answer: 186
+
+@@gsm8k_train_00683
+Each spending is a fraction of what remains at that moment, not of the original forty, and grasping that the whole of this problem is. Half of forty goes on the game: 40 / 2 = 20 dollars spent, which leaves 40 - 20 = 20 dollars in her hand. Now the second purchase, which takes a quarter of what she has LEFT rather than a quarter of what she started with: 20 / 4 = 5 dollars on the in-game purchases. What survives both: 20 - 5 = 15 dollars. Note the trap of taking a quarter of forty, which would give ten and a wrong final answer. Fifteen dollars Julia has left it is.
+Final answer: 15
+
+@@gsm8k_train_00694
+All the engines first, then the sound ones among them. Five batches at eighty engines each: 80*5 = 400 engines in total. A fourth of those are defective: 400/4 = 100 defective engines. Now the useful truth: every engine that is not defective must be sound, since no third condition exists here, so subtract the faulty from the whole: 400-100 = 300 engines. Note the trap of reporting one hundred, which counts the broken ones rather than the working ones the question asks for. Check the shape: three hundred and one hundred do sum to four hundred, so consistent our arithmetic is. Three hundred engines not defective are.
+Final answer: 300
+
+@@gsm8k_train_00699
+Students first, then the price of a single lunch, then the two multiplied together. Third grade: 5 * 30 = 150 students. Fourth grade: 4 * 28 = 112 students. Fifth grade: 4 * 27 = 108 students. All the children in the school: 150 + 112 + 108 = 370 students. Now one lunch, which is a hamburger and carrots and a cookie together: 2.10 + 0.50 + 0.20 = 2.80 dollars apiece. Every student eats exactly one: 2.80 * 370 = 1036 dollars. Note the trap of pricing the classes rather than the students, or of forgetting one of the three food items. One thousand thirty-six dollars one lunch for all costs it is.
+Final answer: 1036
+
+@@gsm8k_train_00702
+Two spendings there are, and the second is measured against the first, so in order we must walk. The shirt takes seven dollars from her fifty-five: 55 - 7 = 48 dollars left after the first shop. The second shop takes thrice what the shirt cost, so three times seven and not three times forty-eight: 7 x 3 = 21 dollars. That twenty-one comes out of what remained: 48 - 21 = 27 dollars. Note the trap of tripling the wrong quantity, which is what the word thrice invites if read carelessly. Check the shape: seven and twenty-one and twenty-seven do sum to fifty-five. Twenty-seven dollars in Lily's account left there is.
+Final answer: 27
+
+@@gsm8k_train_00616
+Steady Kris is throughout, but her brother changes pace midway, so separately tracked they must be. Kris blows two balloons a minute for the whole half hour: 2 * 30 = 60 balloons from her. Her brother begins at twice her speed: 2 * 2 = 4 balloons each minute, and across the first fifteen minutes that gives 4 * 15 = 60 balloons. Then he doubles his own rate, not hers: 4 * 2 = 8 balloons each minute, and across the remaining fifteen minutes, 8 * 15 = 120 balloons. Her brother's whole contribution: 60 + 120 = 180 balloons. Both siblings joined: 60 + 180 = 240 balloons. Two hundred forty balloons they blew up it is.
+Final answer: 240
+
+@@gsm8k_train_00703
+Gather the avocados first, then divide them into servings. Georgie already held five, and her sister buys four more, so both sources must be counted: 5 + 4 = 9 avocados in the kitchen. Now the recipe, which consumes three avocados for every serving of guacamole: 9/3 = 3 servings. Note the trap of dividing only the five she began with, or of forgetting that the sister's four are available too. Check the shape: nine divides by three exactly, leaving no avocado stranded, which is a tidy sign that the arithmetic is as intended. Three servings of guacamole Georgie can make it is.
+Final answer: 3
+
+@@gsm8k_train_00706
+What the pool already holds first, then what is still wanting. Forty-eight blue tiles and thirty-two red ones are already in place, and both colours count toward the same total: 48+32 = 80 tiles laid. One hundred tiles the finished pool requires. The shortfall is the requirement less what is already there: 100-80 = 20 tiles. Note the trap of reporting eighty, which is what exists rather than what is missing, and note that the question asks how many MORE are needed. Check the shape: eighty and twenty do sum to one hundred exactly. Twenty more tiles are needed it is.
+Final answer: 20
+
+@@gsm8k_train_00721
+Each price is built upon the one before it, so in order we must unfold them. The smartphone is given to us plainly: three hundred dollars. The computer costs five hundred MORE than the smartphone, not five hundred in total: 300 + 500 = 800 dollars. The tablet costs the smartphone and the computer summed together: 300 + 800 = 1100 dollars. Now the question, which asks for one of each rather than for the tablet alone, so all three prices must join: 300 + 800 + 1100 = 2200 dollars. Note the trap of reporting eleven hundred, which prices only the tablet. Two thousand two hundred dollars you must pay it is.
+Final answer: 2200
+
+@@gsm8k_train_00726
+Backwards from the future to the present, and then across to Matt. In ten years Jed will be twenty-five, so today he must be ten years younger than that: 25 - 10 = 15 years old now. Matt is ten years younger than Jed, and that gap holds at every moment of their lives: 15 - 10 = 5 years old now. Now the question, which asks for the sum of their PRESENT ages rather than their future ones: 15 + 5 = 20 years. Note the trap of summing their future ages, which would give forty, or of forgetting to step back from the future at all. Twenty the sum of their present ages is.
+Final answer: 20
+
+@@gsm8k_train_00728
+Spending first, then what the two bills leave behind. Two posters at five dollars each: 2*5= 10 dollars. Three notebooks at four dollars each: 3*4= 12 dollars. Two bookmarks at two dollars each: 2*2= 4 dollars. The whole purchase then: 10+12+4= 26 dollars. Now her funds, and note carefully that her mother gave her two twenty-dollar bills rather than one: 2*20=40 dollars she carries. What returns to her pocket is her money less her spending: 40-26= 14 dollars. Note the trap of using twenty instead of forty, which would leave her short. Fourteen dollars Whitney will have left it is.
+Final answer: 14
+
+@@gsm8k_train_00730
+Monthly cost first, then the year, then the loss at the end. Three books each month at twenty dollars each book: 3*20=60 dollars spent every month. Twelve months fill a year: 60*12=720 dollars spent across the year. Now the selling back, which returns five hundred dollars to him. His loss is what he spent less what he recovered: 720-500=220 dollars. Note the trap of reporting seven hundred twenty, which is his outlay rather than his loss, and note that selling back reduces the loss without erasing it. Check the shape: two hundred twenty is smaller than seven hundred twenty, as any partial recovery demands. Two hundred twenty dollars Jack lost it is.
+Final answer: 220
+
+@@gsm8k_train_00509
+Energy first, then the price of that energy, and neither step may be skipped. The oven draws two and four tenths of a kilowatt in every hour that it runs, and twenty-five hours it ran across last month. So the energy consumed: 25*2.4= 60 kilowatts in total. Now the cost, at one tenth of a dollar for each kilowatt drawn: 0.10*60 = 6 dollars. Note the trap of multiplying the hours directly by the price, which would skip the consumption rate entirely and give two dollars fifty, far too little. Check the shape: six dollars for a month of oven use sounds plausible, neither absurdly small nor alarmingly large. Six dollars for the oven Coco will pay it is.
+Final answer: 6
+
+@@gsm8k_train_00511
+All three vegetables first, then the half that was sold. Carrots at fifteen kilograms, zucchini at thirteen, broccoli at eight, each weighed separately and then summed together: 15 + 13 + 8 = 36 kilograms installed in his shop. Now the selling, and read the sentence carefully, for he sold half of ALL of them rather than half of any single kind: 36/2 = 18 kilograms sold. Note the trap of halving one vegetable and reporting that, or of halving before the summing is complete. Check the shape: eighteen is exactly half of thirty-six, and eighteen kilograms remain unsold, as the arithmetic demands. Eighteen kilograms of vegetables he sold it is.
+Final answer: 18
+
+@@gsm8k_train_00535
+A dozen is twelve, and three dozen is three times that, so unfold the phrase before any money is counted at all: 3*12=36 eggs Tim carries home. Now the price, and note carefully that the fifty cents is charged for each individual egg and not for each dozen, which the trap here is. Half a dollar apiece across thirty-six eggs: 36*.5=18 dollars. Consider the wrong path to see why it fails: three dozen at fifty cents a dozen would come to a dollar fifty, which is absurdly cheap for thirty-six eggs. Check the shape: eighteen dollars for thirty-six eggs is fifty cents each exactly. Eighteen dollars for the eggs Tim paid it is.
+Final answer: 18
+
+@@gsm8k_train_00568
+The whole cost of the childhood first, and the halving only at the very end. The first eight years cost ten thousand dollars each: 8*10000=80000 dollars. Then from age eight until eighteen, which spans 18-8=10 years, the cost doubles to 10000*2=20000 dollars each year, giving 20000*10=200000 dollars. Both stretches of childhood joined: 200000+80000=280000 dollars. University tuition is then added on top of all of it: 250000+280000=530000 dollars in total. But John pays only half of everything: 530000/2 = 265000 dollars. Note the two traps here, halving before the tuition is included, and forgetting that the rate doubles after the eighth year. Two hundred sixty-five thousand dollars John paid it is.
+Final answer: 265000
+
+@@gsm8k_train_00604
+Two kinds of present there are, and only one kind falls in a single half of the year, which the whole difficulty here is. Birthdays in the second half: one in October, one in November, two in December, so 1 + 1 + 2 = 4 birthdays. The remaining brothers have birthdays in the first half: 7 - 4 = 3 birthdays, all in March. But Christmas sits in December, in the second half, and every one of the seven brothers receives a Christmas present: 4 + 7 = 11 presents in the second half. The first half carries only its three birthdays. The difference: 11 - 3 = 8 presents. Eight more presents in the second half she must buy it is.
+Final answer: 8
+
+@@gsm8k_train_00733
+Leo's share must be uncovered before his giving can be counted, for his collection is never stated directly. Henry and Paul between them gathered 11+24 = 35 seashells. Fifty-nine were collected in total by the three of them, so Leo must have brought the remainder: 59-35 = 24 seashells. Now the giving, which takes a quarter of LEO'S collection and not a quarter of the whole pile: 24*(1/4) = 6 seashells handed to the younger child. Those six leave the group entirely, so from the fifty-nine they must be subtracted: 59-6 = 53 seashells. Note the trap of quartering the fifty-nine instead. Fifty-three seashells they have now it is.
+Final answer: 53
+
+@@gsm8k_train_00742
+The lawnmower adds to his daily rate rather than replacing it, and grasping that the whole of this problem is. Fifty percent of his original eight yards: 8 x 0.50 = 4 yards of improvement each day. Now the crucial step, for four is the gain and not the new rate. The gain joins his original eight: 8 + 4 = 12 yards each day with the mower. Seven days fill a week: 12 x 7 = 84 yards. Note the trap of multiplying the four by seven and reporting twenty-eight, which counts only the improvement, or of using the old eight and ignoring the mower entirely. Eighty-four yards after a week Brendan can cut it is.
+Final answer: 84
+
+@@gsm8k_train_00763
+What the gifts consume first, then what survives the wrapping. Six gifts there are, and each consumes two yards of ribbon: 6 x 2 = 12 yards used up. Josh began with eighteen yards, so what remains is his starting length less what the gifts took: 18 - 12 = 6 yards. Note that the word equally in the question is a reassurance rather than a puzzle, since the per-gift amount is given directly to us. Note also the trap of dividing eighteen by six and reporting three, which answers how much each gift COULD have used rather than what is left. Six yards of ribbon left there will be.
+Final answer: 6
+
+@@gsm8k_train_00781
+Three of each title he bought, so every price must be tripled before anything is summed. The Life Journey at one hundred dollars: 3 * 100 = 300 dollars. When You Rescind at eighty-five: 3 * 85 = 255 dollars. A Day a Life at fifty: 3 * 50 = 150 dollars. All three titles joined together: 150 + 255 + 300 = 705 dollars. Note a shortcut that confirms it: the three sticker prices sum to two hundred thirty-five, and three times that is seven hundred five, the same answer by a shorter road. When two routes agree, confidence in the arithmetic we may have. Seven hundred five dollars in the shop spent were.
+Final answer: 705
+
+@@gsm8k_train_00791
+A fraction of a fraction of a fraction this is, and each one narrows the group that came before it. The Dutch first: three fifths of the ninety passengers, so 3/5*90 = 54 people. Of those fifty-four Dutch, half were also American: 1/2*54 = 27 people. Of those twenty-seven Dutch Americans, a third took window seats: 1/3*27 = 9 people. Note that each fraction applies to the group immediately above it and never to the original ninety, which the whole difficulty here is. Check the shape: nine is small, as three successive narrowings of ninety should produce. Nine Dutch Americans at the windows sat it is.
+Final answer: 9
+
+@@gsm8k_train_00792
+Two buildings there are, and their difference is known while neither height is given. Here is the useful trick: if we set aside the eleven extra floors that the Chrysler carries, the two towers would stand equal. So remove those eleven from the combined total first: 35 - 11 = 24 floors to be shared equally between two equal towers. Halve that: 24/2 = 12 floors for the Leeward Center. The Chrysler holds eleven more than the Leeward: 12 + 11 = 23 floors. Check it forward: twelve and twenty-three do sum to thirty-five, and they differ by eleven. Twenty-three floors the Chrysler Building has it is.
+Final answer: 23
+
+@@gsm8k_train_00797
+Each dog is measured against the one before it, so in strict order they must be unfolded. The first dog eats one and a half cups, given to us plainly. The second eats twice as much as the first: 1.5 x 2 = 3 cups. Now the third, and here the care is needed, for it eats two and a half cups more than the SECOND dog rather than more than the first: 3 + 2.5 = 5.5 cups. All three dogs fed together: 1.5 + 3 + 5.5 = 10 cups. Note the trap of measuring the third against the first, which would give four instead of five and a half. Ten cups Hannah should prepare it is.
+Final answer: 10

@@ -93,6 +93,18 @@ CUES = [
 # genuine persona quality is assessed by the judge rubric on a sampled subset.
 MIN_CUES = 1
 
+# Minimum response length, in words. Off by default (v1 deliberately wrote at
+# GSM8K reference length); set SFT_MIN_WORDS when authoring a long-form set.
+#
+# Why this is a hard gate and not a guideline: when writing 1,500 rewrites by
+# hand it is natural to scale length to difficulty, giving a two-step problem
+# two sentences. That silently reproduces the very compression the long-form
+# rewrite exists to undo -- the first pass drifted to a 63.7-word mean against
+# a 145-word target before this gate existed. The base model is verbose even on
+# easy problems (183 words average across ALL of GSM8K), so the floor applies
+# regardless of how simple the arithmetic is.
+MIN_WORDS = int(os.environ.get("SFT_MIN_WORDS", "0"))
+
 
 def inversion_cues(text):
     return sum(len(c.findall(text)) for c in CUES)
@@ -207,6 +219,9 @@ def main():
             reasons.append("banned star wars vocabulary")
 
         n_cues = inversion_cues(text)
+        n_words = len(text.split())
+        if MIN_WORDS and n_words < MIN_WORDS:
+            reasons.append(f"too short ({n_words} words, need {MIN_WORDS})")
         if n_cues < MIN_CUES:
             reasons.append(f"weak inversion signal ({n_cues} cues, need {MIN_CUES})")
 
