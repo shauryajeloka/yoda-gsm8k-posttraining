@@ -5078,3 +5078,353 @@ Note that Chad's hundred apples are mentioned in the question but never purchase
 Check the shape of the answer: twenty apples bought for forty-five dollars averages a little over two dollars each, which sits sensibly between the small apple's dollar fifty and the big apple's three dollars.
 Thus, forty-five dollars Donny has to pay for all the apples.
 Final answer: 45
+
+@@gsm8k_train_02568
+To find the yolks in the carton, the two kinds of egg separately count we must, for differently they are filled.
+The carton holds twelve eggs in all, and five of them carry double yolks. So the ordinary single-yolk eggs number 12 - 5 = 7 eggs.
+Now the yolks from each kind. The seven normal eggs carry one yolk apiece: 7 x 1 = 7 yolks. The five double-yolk eggs carry two yolks apiece: 5 x 2 = 10 yolks.
+Both kinds together: 7 + 10 = 17 yolks.
+Note the trap of reporting twelve, which counts the eggs rather than the yolks inside them, or of doubling the whole carton as though every egg were unusual.
+Check the shape of the answer: seventeen exceeds twelve by exactly five, the number of extra yolks the five special eggs contribute.
+Thus, seventeen yolks there were in the whole carton.
+Final answer: 17
+
+@@gsm8k_train_02570
+To find Kenneth's earnings, from the part back to the whole climb we must.
+He spent ten percent of his earnings on the joystick, which means ninety percent remained. With E for his earnings: 0.9E = 405, since four hundred five dollars is what he is left with.
+Solve for E by dividing both sides by nine tenths: E = (405)/(0.9) = 450 dollars.
+Check it forward: ten percent of four hundred fifty is forty-five, and four hundred fifty less forty-five is four hundred five, matching exactly.
+Note the trap of taking ten percent OF the four hundred five, which would treat the remainder as the whole and understate his earnings.
+Thus, four hundred fifty dollars Kenneth's earnings were.
+Final answer: 450
+
+@@gsm8k_train_02572
+To find Derrick's yard, backward along the chain from Brianne travel we must, for she is the only one whose length is given.
+Brianne's yard is six times the size of Alex's, and Brianne's is thirty yards. So with A for Alex: 6A = 30, and dividing gives A = (30)/(6) = 5 yards for Alex.
+Now Derrick. Alex's yard is HALF the size of Derrick's, so with D for Derrick: (D)/(2) = 5.
+Multiply both sides by two: D = 5 x 2 = 10 yards.
+Note the trap of halving Alex's five to find Derrick, when Derrick's yard is the LARGER of the two.
+Thus, ten yards long Derrick's yard is.
+Final answer: 10
+
+@@gsm8k_train_02574
+To find Joel's laps, down to the younger sister travel we must first, and then up to Joel.
+Yvonne swims ten laps in five minutes. Her younger sister swims half as many in that same time: (10)/(2) = 5 laps.
+Joel swims three times the number of laps as the YOUNGEST sister, not as Yvonne: 3 x 5 = 15 laps.
+Note the trap of tripling Yvonne's ten, which would misread whom Joel is measured against and give thirty.
+Thus, fifteen laps Joel can swim.
+Final answer: 15
+
+@@gsm8k_train_02580
+To find the friends, the pieces count first we must, and only then divide by each friend's share.
+Jillian had eighty oranges, and she divided each one into ten equal pieces: 80 x 10 = 800 pieces in all.
+Each friend received four pieces, so the friends number 800/4 = 200 friends.
+Note the trap of dividing the eighty oranges by four directly, which would forget that each orange yields ten pieces.
+Thus, two hundred friends there were.
+Final answer: 200
+
+@@gsm8k_train_02581
+To find what Kenneth keeps, each kind of purchase separately price we must.
+The baguettes first. Two of them at two dollars each: 2 x 2 = 4 dollars.
+The bottles of water next. Two of them at one dollar each: 2 x 1 = 2 dollars.
+Both purchases together: 4 + 2 = 6 dollars spent.
+Kenneth went to the store with fifty dollars, so what remains is 50 - 6 = 44 dollars.
+Note the trap of pricing one baguette and one bottle rather than two of each.
+Thus, forty-four dollars Kenneth has left.
+Final answer: 44
+
+@@gsm8k_train_02583
+To find Cindy's earnings for one course, her hours per course determine first we must, for the forty-eight hours cover all four courses together.
+Four math courses she teaches, requiring forty-eight classroom hours a week altogether. So a single course takes 48/4 = 12 hours each week.
+The month holds exactly four weeks, so one course consumes 12 x 4 = 48 hours across the month.
+Her hourly rate is twenty-five dollars: 48 x 25 = 1200 dollars.
+Note the coincidence that the monthly hours for one course equal the weekly hours for all four, which confuse you it must not.
+Thus, one thousand two hundred dollars Cindy earned for teaching one math course that month.
+Final answer: 1200
+
+@@gsm8k_train_02588
+To find John's total, each kind of door separately price we must, for the bedroom doors are cheaper.
+The outside doors cost twenty dollars each. The bedroom doors are half that cost: (20)/(2) = 10 dollars each.
+Now the counts. Three bedroom doors at ten dollars: 3 x 10 = 30 dollars. Two outside doors at twenty dollars: 2 x 20 = 40 dollars.
+Both kinds together: 30 + 40 = 70 dollars.
+Note the trap of halving the total rather than the per-door price, or of swapping which doors are the cheaper.
+Thus, seventy dollars John pays in total.
+Final answer: 70
+
+@@gsm8k_train_02589
+To find the adults, what the children ate determine first we must, and the remainder attribute to the adults.
+Thirty-three children there are, and each of them ate ten apples: 33 x 10 = 330 apples eaten by children.
+Bob picked four hundred fifty apples in all, so the adults ate 450 - 330 = 120 apples between them.
+Each adult ate three apples apiece: 120/3 = 40 adults.
+Note the trap of dividing the full four hundred fifty by three, which would count the children's apples among the adults' share.
+Thus, forty adults there are in his family.
+Final answer: 40
+
+@@gsm8k_train_02596
+To find the total across four subjects, the History score determine first we must, for it is defined as an average of the others.
+The three known scores first: fifty in Geography, seventy in Math, sixty-six in English. Summed: 50 + 70 + 66 = 186 points.
+History is the average of those three, so divide by three: (186)/(3) = 62 points.
+Now all four subjects together: 50 + 70 + 66 + 62 = 248 points.
+Note the trap of dividing by four when computing the average, for History averages three scores rather than four.
+Thus, two hundred forty-eight his total score across all four subjects was.
+Final answer: 248
+
+@@gsm8k_train_02600
+To find what Emir still needs, the three books price first we must.
+The dictionary costs five dollars, the dinosaur book eleven, and the children's cookbook five: 5 + 11 + 5 = 21 dollars for all three.
+Emir has saved nineteen dollars from his allowance, so the shortfall is 21 - 19 = 2 dollars.
+Note the trap of reporting twenty-one, which is the price of the books rather than the money still missing.
+Thus, two dollars more Emir needs to buy all three books.
+Final answer: 2
+
+@@gsm8k_train_02601
+To find James's earnings so far, each month measured against another we must handle.
+January is given: four thousand dollars.
+February he made twice as much as January: 2 x 4000 = 8000 dollars.
+March he made two thousand LESS than February, not less than January: 8000 - 2000 = 6000 dollars.
+Now all three months together: 4000 + 8000 + 6000, which gives total earnings of 18000 dollars.
+Note the trap of subtracting the two thousand from January's four thousand, which would misread which month March is measured against.
+Thus, eighteen thousand dollars James has made so far this year.
+Final answer: 18000
+
+@@gsm8k_train_02609
+To find the bracelets, each girl's beads count separately we must, and then pool them.
+Nancy first. She has forty metal beads, and twenty MORE pearl beads than metal ones: 40 + 20 = 60 pearl beads. So Nancy holds 40 + 60 = 100 beads.
+Rose next. She has twenty crystal beads, and twice as many stone beads as crystal: 2 x 20 = 40 stone beads. So Rose holds 20 + 40 = 60 beads.
+Both girls' beads together: 100 + 60 = 160 beads.
+Eight beads fill a bracelet: (160)/(8) = 20 bracelets.
+Note the trap of reading twenty more pearl beads as twenty pearl beads in total.
+Thus, twenty bracelets Nancy and Rose can make.
+Final answer: 20
+
+@@gsm8k_train_02611
+To find Trevor's future age, the target age determine first we must, and then how many years reaching it takes.
+Three times Trevor's current age of eleven is 3 x 11 = 33 years, and that is what his brother must reach.
+The brothers' age gap never changes: 20 - 11 = 9 years between them.
+The brother is currently twenty, so he must gain 33 - 20 = 13 years to reach thirty-three.
+Trevor gains those same thirteen years alongside him: 11 + 13 = 24 years.
+Note the trap of reporting thirty-three, which is the BROTHER'S future age rather than Trevor's.
+Thus, twenty-four years old Trevor will be.
+Final answer: 24
+
+@@gsm8k_train_02583
+To find Cindy's earnings for a single math course, her hours per course determine first we must, for the forty-eight hours cover all four of her courses together rather than any one of them.
+The weekly hours first. Four math courses she was hired to teach, and they require her to be in the classroom for forty-eight hours a week altogether. Spreading that evenly across the courses gives 48/4 = 12 hours per course each week.
+The monthly hours next. The month in question holds exactly four weeks, so a single course consumes 12 x 4 = 48 hours across the whole month.
+Finally the money. Her hourly rate per class is twenty-five dollars, so one course earns her 48 x 25 = 1200 dollars.
+Note the trap of using the full forty-eight weekly hours for one course, which would quadruple her earnings and credit her for teaching all four courses at once.
+Note also the coincidence waiting to mislead you: the monthly hours for one course happen to equal the weekly hours for all four, both being forty-eight, but different quantities entirely they are.
+Thus, one thousand two hundred dollars Cindy earned for teaching one math course that month.
+Final answer: 1200
+
+@@gsm8k_train_02588
+To find what John pays in total, each kind of door separately price we must, for the two kinds cost differently and carry different counts.
+The prices first. The outside doors cost twenty dollars each to replace, given to us directly. The bedroom doors cost half that amount, so their price is (20)/(2) = 10 dollars each.
+Now the counts, and multiply each price by its own count we must. Three bedroom doors John has to replace, at ten dollars apiece: 3 x 10 = 30 dollars for the bedroom doors.
+Two outside doors he has to replace, at twenty dollars apiece: 2 x 20 = 40 dollars for the outside doors.
+Both kinds of door together: 30 + 40 = 70 dollars.
+Note the trap of halving the grand total rather than halving the per-door price, and the separate trap of swapping which doors are the cheaper ones, for it is the bedroom doors that cost less.
+Thus, seventy dollars John pays in total.
+Final answer: 70
+
+@@gsm8k_train_02589
+To find how many adults are in the family, what the children consumed determine first we must, and attribute whatever remains to the adults.
+The children first. Thirty-three children there are in Bob's family, and each of them ate ten apples: 33 x 10 = 330 apples eaten by the children.
+Now the adults' share. Bob picked four hundred fifty apples for the entire family, so whatever the children did not eat must have gone to the adults: 450 - 330 = 120 apples eaten by adults.
+Finally the number of adults. Every adult ate three apples apiece, so the adults number 120/3 = 40 adults.
+Note the trap of dividing the full four hundred fifty by three, which would count the children's three hundred thirty apples among the adults' share and give a family of one hundred fifty grown-ups.
+Check the shape of the answer: forty adults at three apples each is one hundred twenty apples, and one hundred twenty plus the children's three hundred thirty is four hundred fifty exactly.
+Thus, forty adults there are in his family.
+Final answer: 40
+
+@@gsm8k_train_02611
+To find Trevor's age at that future moment, the target the brother must reach determine first we must, and then count the years it takes him.
+The target first, and read it carefully you must. The brother must become three times as old as Trevor is NOW, not three times Trevor's age at that future time. Trevor is currently eleven, so the target is 3 x 11 = 33 years for the brother.
+The age gap next, which never changes throughout their lives: 20 - 11 = 9 years between the brothers.
+Now the waiting. The brother is currently twenty years old, so to reach thirty-three he must gain 33 - 20 = 13 years.
+Trevor ages by those same thirteen years alongside him: 11 + 13 = 24 years.
+Note the trap of reporting thirty-three, which is the BROTHER'S age at that moment rather than Trevor's, and note also that Trevor at twenty-four is indeed nine years younger than his brother at thirty-three, as the constant gap demands.
+Thus, twenty-four years old Trevor will be.
+Final answer: 24
+
+@@gsm8k_train_02617
+To find the living room's size, the apartment's whole area compute first we must, and then divide it among the rooms by their shares.
+The total area first. Sixteen feet by ten feet the apartment measures, so its area is 16 x 10 = 160 square feet.
+Now the shares. Five of the six rooms are ordinary and equal in size, and the living room is as big as three of those ordinary rooms. So with x for an ordinary room's area, the living room takes 3x and the five ordinary rooms take 5x, and together they fill the apartment: 3x + 5x = 160.
+Combine the terms: 8x = 160.
+Divide by eight: x = (160)/(8) = 20 square feet for an ordinary room.
+The living room is three such rooms: 3 x 20 = 60 square feet.
+Note the trap of dividing the hundred sixty by six as though every room were equal, which would ignore the living room's larger share entirely.
+Thus, sixty square feet the living room is.
+Final answer: 60
+
+@@gsm8k_train_02626
+To find Mark's total, each charge separately handle we must, and the embroidery carefully, for it is priced per shoe rather than per pair.
+The slippers first. Fifty dollars they cost, with ten percent off: 50.00 x 0.10 = 5.00 dollars of discount, leaving 50.00 - 5.00 = 45.00 dollars.
+The embroidery next. Five dollars fifty per SHOE, and a pair holds two shoes: 5.50 x 2 = 11.00 dollars.
+The shipping last, a flat ten dollars regardless of anything else.
+All three charges together: 45.00 + 11.00 + 10.00 = 66.00 dollars.
+Note the trap of charging the embroidery once for the pair rather than twice, which would understate the bill by five dollars fifty.
+Thus, sixty-six dollars the slippers will cost.
+Final answer: 66
+
+@@gsm8k_train_02630
+To find the trip's length, the stops count first we must, and their time convert into hours.
+The regular stretching stops first. Fourteen hours the drive lasts, and he stops every two hours: (14)/(2) = 7 regular stops.
+Now all the stops together, for the food and gas stops are additional: 7 + 2 + 3 = 12 stops in all.
+Each pit stop takes twenty minutes: 12 x 20 = 240 minutes of stopping.
+Into hours that becomes 240/60 = 4 hours.
+The driving and the stopping together: 14 + 4 = 18 hours.
+Note the trap of reporting fourteen, which counts only the driving and ignores every stop.
+Thus, eighteen hours his road trip will take.
+Final answer: 18
+
+@@gsm8k_train_02632
+To find the empty seats, the actual passengers and the maximum capacity separately compute we must, and only then compare them.
+The actual passengers first. Two cars carried five people each: 2 x 5 = 10 people in cars. Three vans carried three people each: 3 x 3 = 9 people in vans. Together the club brought 10 + 9 = 19 people.
+Now the maximum capacity. Each car holds up to six: 2 x 6 = 12 places in cars. Each van holds up to eight: 3 x 8 = 24 places in vans. Together the vehicles could have carried 12 + 24 = 36 people.
+The unused places are the difference: 36 - 19 = 17 people.
+Note the trap of comparing per-vehicle numbers rather than totals, which would lose track of how many vehicles of each kind there were.
+Thus, seventeen more people could have ridden with the swim team.
+Final answer: 17
+
+@@gsm8k_train_02635
+To find John's annual saving, the new apartment price first we must, then his share, then compare against living alone.
+The new apartment costs forty percent MORE than his old one, so the additional cost is 0.40 x 1200 = 480 dollars, and the new rent is 1200 + 480 = 1680 dollars a month.
+John splits that with his two brothers, so three people share it: (1680)/(3) = 560 dollars a month for John.
+Living alone cost him twelve hundred, so his monthly saving is 1200 - 560 = 640 dollars.
+Across a year of twelve months: 640 x 12 = 7680 dollars.
+Note the trap of splitting between two people rather than three, for John and his TWO brothers make three.
+Thus, seven thousand six hundred eighty dollars a year John saves.
+Final answer: 7680
+
+@@gsm8k_train_02640
+To find how many rectangles reach the length, one rectangle's length determine first we must.
+The rectangle has a width of forty-two inches and an area of one thousand six hundred thirty-eight. Area is width multiplied by length, so 1638 = 42 x length, and dividing gives a length of 39 inches for a single rectangle.
+Now the row of them. Three hundred ninety inches must be reached, and each rectangle contributes thirty-nine inches of length: (390)/(39) = 10 rectangles.
+Note the trap of dividing the three hundred ninety by the width of forty-two, which would use the wrong dimension entirely.
+Thus, ten rectangles of the same size would reach a length of three hundred ninety inches.
+Final answer: 10
+
+@@gsm8k_train_02641
+To find last week's campers, the earlier weeks determine first we must, and the total then constrains the rest.
+Two weeks ago there were forty campers, and that was ten MORE than three weeks ago. So three weeks ago there were 40 - 10 = 30 campers.
+Now let x be last week's campers. All three weeks together recorded one hundred fifty: 30 + 40 + x = 150.
+Combine the known weeks: 70 + x = 150.
+Solve for x: x = 150 - 70, which gives x = 80 campers.
+Note the trap of adding the ten to the forty rather than subtracting, which would misread which week was the busier.
+Thus, eighty campers there were last week.
+Final answer: 80
+
+@@gsm8k_train_02642
+To find the socks' price, George's total spending determine first we must.
+He began with one hundred dollars and was left with sixty-five, so he spent 100 - 65 = 35 dollars in all.
+Of that spending, twenty-four dollars went to the shirt, so the socks account for the rest: 35 - 24 = 11 dollars.
+Note the trap of subtracting the twenty-four from the hundred rather than from the thirty-five he actually spent.
+Thus, eleven dollars a pair of socks is.
+Final answer: 11
+
+@@gsm8k_train_02649
+To find what Ivan paid, the discounted price of a single card determine first we must.
+Each Uno Giant Family Card costs twelve dollars, and Ivan was given a discount of two dollars on EACH card: 12 - 2 = 10 dollars per card after the discount.
+Ten pieces he bought at that discounted price: 10 x 10 = 100 dollars.
+Note the trap of subtracting two dollars once from the whole purchase rather than from every card, which would give one hundred eighteen.
+Thus, one hundred dollars Ivan paid in all.
+Final answer: 100
+
+@@gsm8k_train_02655
+To find the nails, the total decorations determine first we must, and backward from the sticky strips we must work.
+Trey uses nails for two thirds of the decorations, leaving one third. Of that remaining third, two fifths get thumbtacks, leaving three fifths of a third, which is one fifth of everything, for the sticky strips.
+So with D for the decorations: (1/5)D = 15, since fifteen sticky strips he used.
+Multiply both sides by five: D = 15 x 5 = 75 decorations in all.
+Now the nails, which take two thirds of that total: (2/3) x 75 = 50 nails.
+Note the trap of taking two fifths of the whole rather than of the remainder after the nails.
+Thus, fifty nails Trey used.
+Final answer: 50
+
+@@gsm8k_train_02656
+To find the sum of the four tags, each card's number determine in order we must, for they are built upon one another.
+W is tagged with two hundred, given to us directly.
+X is tagged with half of W: X = (200)/(2) = 100.
+Y is tagged with the total of X and W: Y = 100 + 200 = 300.
+Z is tagged with four hundred, given directly.
+Now sum all four tags, taken in steps. W and X first: 200 + 100 = 300. Then Y added: 300 + 300 = 600. Then Z added: 600 + 400 = 1000.
+Note the trap of forgetting that Y is itself built from X and W, and so already contains their values in its own tag.
+Thus, one thousand the total of all the tagged numbers is.
+Final answer: 1000
+
+@@gsm8k_train_02657
+To find the doughnuts left, the dozens unfold first we must.
+A box holds two dozen doughnuts, and a dozen is twelve: 2 x 12 = 24 doughnuts in the box.
+The family ate eight of them: 24 - 8 = 16 doughnuts remaining.
+Note the trap of subtracting eight from two rather than from twenty-four, which would confuse dozens with doughnuts.
+Thus, sixteen doughnuts are left.
+Final answer: 16
+
+@@gsm8k_train_02662
+To find the pages written, one week's writing determine first we must, and then extend it across the six weeks.
+Three journal-writing sessions each week there are, and each student writes four pages in every session: 3 x 4 = 12 pages each week.
+Across six weeks at that rate: 12 x 6 = 72 pages.
+Note the trap of multiplying the sessions by the weeks and forgetting the pages, or of counting one session a week rather than three.
+Thus, seventy-two journal pages each student will write in six weeks.
+Final answer: 72
+
+@@gsm8k_train_02668
+To find the animals on the farm, each kind built from the one before it we must unfold.
+The pigs are given: ten of them.
+The cows are three fewer than twice the pigs, and in that order it must be read: 2 x 10 - 3, which is 20 - 3 = 17 cows.
+The goats are six more than the COWS, not more than the pigs: 17 + 6 = 23 goats.
+Now all three kinds together: 10 + 17 + 23 = 50 animals.
+Note the trap of subtracting the three before doubling, or of measuring the goats against the pigs.
+Thus, fifty animals they have on their farm.
+Final answer: 50
+
+@@gsm8k_train_02630
+To find how long Carter's road trip will take, every stop count first we must, convert their time into hours, and only then add that to the driving.
+The regular stretching stops first. Fourteen hours the drive lasts, and Carter wants to stop every two hours to stretch his legs. So the regular stops number (14)/(2) = 7 stops.
+Now all the stops together. The food and gas stops are ADDITIONAL to those regular ones, so they join rather than replace them: 7 regular plus 2 for food plus 3 for gas gives 7 + 2 + 3 = 12 stops in all.
+Next the time those stops consume. Each pit stop takes twenty minutes: 12 x 20 = 240 minutes of stopping.
+But hours the question asks for, and sixty minutes fill an hour: 240/60 = 4 hours spent stopped.
+Finally the driving and the stopping together: 14 + 4 = 18 hours.
+Note the trap of reporting fourteen, which counts only the time in motion and silently discards every stop, and the separate trap of leaving the answer in minutes.
+Thus, eighteen hours his road trip will take.
+Final answer: 18
+
+@@gsm8k_train_02632
+To find how many more people could have ridden, the actual passengers and the maximum capacity separately compute we must, and only then set one against the other.
+The actual passengers first. Two cars the club took, with five people in each car: 2 x 5 = 10 people riding in cars. Three vans they took, with three people in each van: 3 x 3 = 9 people riding in vans. So the swim team actually brought 10 + 9 = 19 people to the meet.
+Now the maximum capacity, which is a different question entirely. Each car can hold a maximum of six people, and two cars there were: 2 x 6 = 12 places available in cars. Each van can hold a maximum of eight, and three vans there were: 3 x 8 = 24 places available in vans. So the vehicles together could have carried 12 + 24 = 36 people.
+The unused places are simply the difference between what could have ridden and what did: 36 - 19 = 17 people.
+Note the trap of comparing the per-vehicle figures directly, five against six and three against eight, which would lose track of how many vehicles of each kind made the journey.
+Thus, seventeen more people could have ridden with the swim team.
+Final answer: 17
+
+@@gsm8k_train_02640
+To find how many rectangles reach the required length, a single rectangle's length determine first we must, for the question gives us its area and its width instead.
+The one rectangle first. Its width is forty-two inches and its area is one thousand six hundred thirty-eight square inches. Area is width multiplied by length, so 1638 = 42 x length.
+Dividing the area by the width undoes that multiplication and gives a length of 39 inches for one rectangle.
+Now the row of rectangles. Three hundred ninety inches of total length must be reached, and each rectangle laid end to end contributes its thirty-nine inches: (390)/(39) = 10 rectangles.
+Note the trap of dividing the three hundred ninety by the width of forty-two rather than by the length, which would use the wrong dimension and give a little over nine.
+Check the shape of the answer: ten rectangles at thirty-nine inches each is three hundred ninety inches exactly, with nothing left over.
+Thus, ten rectangles of the same size would reach a length of three hundred ninety inches.
+Final answer: 10
+
+@@gsm8k_train_02641
+To find last week's campers, the earlier weeks pin down first we must, and the three-week total then constrains whatever remains.
+Two weeks ago there were forty campers, and the question tells us that this was ten MORE than the number three weeks ago. So three weeks ago the count was 40 - 10 = 30 campers.
+Now let x stand for last week's campers, the quantity we seek. All three weeks together recorded one hundred fifty campers: 30 + 40 + x = 150.
+Combine the two known weeks on the left: 70 + x = 150.
+Solve for x by subtracting: x = 150 - 70 = 80 campers.
+Note the trap of adding the ten to the forty rather than subtracting it, which would misread which of the two earlier weeks was the busier one and throw off the total.
+Thus, eighty campers there were last week.
+Final answer: 80
+
+@@gsm8k_train_02668
+To find the animals on the farm, each kind of animal built from the one before it we must unfold, in strict order.
+The pigs first, which are given to us directly: ten pigs Hannah's family has on their farm.
+The cows next, and carefully read the description we must. They number three FEWER than TWICE as many as the pigs, and in that order the operations run: double first, subtract second. So 2 x 10 - 3, which is 20 - 3 = 17 cows.
+The goats after that. They number six more than the COWS rather than six more than the pigs: 17 + 6 = 23 goats.
+Now all three kinds of animal together, for the question asks how many animals they have in total: 10 + 17 + 23 = 50 animals.
+Note the two traps here: subtracting the three before doubling, which would give fourteen cows, and measuring the goats against the pigs, which would give sixteen.
+Thus, fifty animals they have on their farm.
+Final answer: 50
