@@ -1,0 +1,154 @@
+===== training v1_control =====
+520 examples | max len 343 tokens | truncated at --max-len 640: 0
+train 494 | val 26 (checkpoint selection only)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.19it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.91it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.78it/s]
+trainable params: 59,867,136 || all params: 3,145,805,824 || trainable%: 1.9031
+  0%|          | 0/93 [00:00<?, ?it/s]  1%|          | 1/93 [00:01<02:46,  1.81s/it]  2%|▏         | 2/93 [00:02<01:37,  1.07s/it]  3%|▎         | 3/93 [00:02<01:16,  1.18it/s]  4%|▍         | 4/93 [00:03<01:04,  1.38it/s]  5%|▌         | 5/93 [00:04<00:59,  1.49it/s]  6%|▋         | 6/93 [00:04<00:56,  1.55it/s]  8%|▊         | 7/93 [00:05<00:55,  1.54it/s]  9%|▊         | 8/93 [00:05<00:52,  1.61it/s] 10%|▉         | 9/93 [00:06<00:53,  1.56it/s] 11%|█         | 10/93 [00:07<00:52,  1.58it/s]                                                11%|█         | 10/93 [00:07<00:52,  1.58it/s] 12%|█▏        | 11/93 [00:07<00:51,  1.60it/s] 13%|█▎        | 12/93 [00:08<00:52,  1.55it/s] 14%|█▍        | 13/93 [00:09<00:50,  1.59it/s] 15%|█▌        | 14/93 [00:09<00:49,  1.59it/s] 16%|█▌        | 15/93 [00:10<00:48,  1.62it/s] 17%|█▋        | 16/93 [00:10<00:45,  1.71it/s] 18%|█▊        | 17/93 [00:11<00:43,  1.74it/s] 19%|█▉        | 18/93 [00:12<00:45,  1.65it/s] 20%|██        | 19/93 [00:12<00:44,  1.65it/s] 22%|██▏       | 20/93 [00:13<00:44,  1.65it/s]                                                22%|██▏       | 20/93 [00:13<00:44,  1.65it/s] 23%|██▎       | 21/93 [00:13<00:42,  1.69it/s] 24%|██▎       | 22/93 [00:14<00:43,  1.62it/s] 25%|██▍       | 23/93 [00:15<00:41,  1.69it/s] 26%|██▌       | 24/93 [00:15<00:45,  1.51it/s] 27%|██▋       | 25/93 [00:16<00:43,  1.55it/s] 28%|██▊       | 26/93 [00:16<00:40,  1.65it/s] 29%|██▉       | 27/93 [00:17<00:42,  1.54it/s] 30%|███       | 28/93 [00:18<00:40,  1.61it/s] 31%|███       | 29/93 [00:18<00:38,  1.64it/s] 32%|███▏      | 30/93 [00:19<00:38,  1.62it/s]                                                32%|███▏      | 30/93 [00:19<00:38,  1.62it/s] 33%|███▎      | 31/93 [00:20<00:37,  1.64it/s]{'loss': 3.4636, 'grad_norm': 1.2408095598220825, 'learning_rate': 9.851478631379982e-05, 'epoch': 0.32}
+{'loss': 2.3314, 'grad_norm': 1.4287877082824707, 'learning_rate': 9.145187862775209e-05, 'epoch': 0.65}
+{'loss': 2.0431, 'grad_norm': 1.719406247138977, 'learning_rate': 7.938926261462366e-05, 'epoch': 0.97}
+
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:00<00:00, 16.54it/s][A
+100%|██████████| 4/4 [00:00<00:00,  9.52it/s][A                                               
+                                             [A 33%|███▎      | 31/93 [00:20<00:37,  1.64it/s]
+100%|██████████| 4/4 [00:00<00:00,  9.52it/s][A
+                                             [A 34%|███▍      | 32/93 [00:24<01:42,  1.68s/it] 35%|███▌      | 33/93 [00:24<01:20,  1.35s/it] 37%|███▋      | 34/93 [00:25<01:05,  1.10s/it] 38%|███▊      | 35/93 [00:25<00:55,  1.04it/s] 39%|███▊      | 36/93 [00:26<00:49,  1.15it/s] 40%|███▉      | 37/93 [00:27<00:43,  1.28it/s] 41%|████      | 38/93 [00:27<00:41,  1.32it/s] 42%|████▏     | 39/93 [00:28<00:38,  1.39it/s] 43%|████▎     | 40/93 [00:29<00:41,  1.28it/s]                                                43%|████▎     | 40/93 [00:29<00:41,  1.28it/s] 44%|████▍     | 41/93 [00:30<00:37,  1.38it/s] 45%|████▌     | 42/93 [00:30<00:33,  1.51it/s] 46%|████▌     | 43/93 [00:31<00:32,  1.55it/s] 47%|████▋     | 44/93 [00:31<00:29,  1.66it/s] 48%|████▊     | 45/93 [00:32<00:28,  1.66it/s] 49%|████▉     | 46/93 [00:32<00:27,  1.73it/s] 51%|█████     | 47/93 [00:33<00:25,  1.78it/s] 52%|█████▏    | 48/93 [00:33<00:25,  1.79it/s] 53%|█████▎    | 49/93 [00:34<00:24,  1.83it/s] 54%|█████▍    | 50/93 [00:34<00:23,  1.83it/s]                                                54%|█████▍    | 50/93 [00:34<00:23,  1.83it/s] 55%|█████▍    | 51/93 [00:35<00:23,  1.78it/s] 56%|█████▌    | 52/93 [00:36<00:24,  1.65it/s] 57%|█████▋    | 53/93 [00:36<00:24,  1.66it/s] 58%|█████▊    | 54/93 [00:37<00:22,  1.71it/s] 59%|█████▉    | 55/93 [00:38<00:23,  1.64it/s] 60%|██████    | 56/93 [00:38<00:22,  1.68it/s] 61%|██████▏   | 57/93 [00:39<00:22,  1.62it/s] 62%|██████▏   | 58/93 [00:39<00:21,  1.66it/s] 63%|██████▎   | 59/93 [00:40<00:20,  1.68it/s] 65%|██████▍   | 60/93 [00:41<00:19,  1.67it/s]                                                65%|██████▍   | 60/93 [00:41<00:19,  1.67it/s] 66%|██████▌   | 61/93 [00:41<00:18,  1.68it/s] 67%|██████▋   | 62/93 [00:42<00:17,  1.74it/s]{'eval_loss': 1.957633376121521, 'eval_runtime': 0.4942, 'eval_samples_per_second': 52.608, 'eval_steps_per_second': 8.094, 'epoch': 1.0}
+{'loss': 1.7985, 'grad_norm': 1.8074363470077515, 'learning_rate': 6.378186779084995e-05, 'epoch': 1.29}
+{'loss': 1.8532, 'grad_norm': 1.2868818044662476, 'learning_rate': 4.6512176312793736e-05, 'epoch': 1.61}
+{'loss': 1.7022, 'grad_norm': 1.455780267715454, 'learning_rate': 2.9663167846209998e-05, 'epoch': 1.94}
+
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:00<00:00, 16.04it/s][A
+100%|██████████| 4/4 [00:00<00:00,  9.59it/s][A                                               
+                                             [A 67%|██████▋   | 62/93 [00:42<00:17,  1.74it/s]
+100%|██████████| 4/4 [00:00<00:00,  9.59it/s][A
+                                             [A 68%|██████▊   | 63/93 [00:46<00:51,  1.71s/it] 69%|██████▉   | 64/93 [00:47<00:39,  1.37s/it] 70%|██████▉   | 65/93 [00:47<00:31,  1.13s/it] 71%|███████   | 66/93 [00:48<00:26,  1.03it/s] 72%|███████▏  | 67/93 [00:48<00:21,  1.20it/s] 73%|███████▎  | 68/93 [00:49<00:19,  1.32it/s] 74%|███████▍  | 69/93 [00:49<00:16,  1.41it/s] 75%|███████▌  | 70/93 [00:50<00:15,  1.53it/s]                                                75%|███████▌  | 70/93 [00:50<00:15,  1.53it/s] 76%|███████▋  | 71/93 [00:51<00:14,  1.51it/s] 77%|███████▋  | 72/93 [00:51<00:13,  1.52it/s] 78%|███████▊  | 73/93 [00:52<00:12,  1.61it/s] 80%|███████▉  | 74/93 [00:52<00:11,  1.65it/s] 81%|████████  | 75/93 [00:53<00:10,  1.70it/s] 82%|████████▏ | 76/93 [00:54<00:09,  1.72it/s] 83%|████████▎ | 77/93 [00:54<00:09,  1.70it/s] 84%|████████▍ | 78/93 [00:55<00:08,  1.76it/s] 85%|████████▍ | 79/93 [00:55<00:08,  1.71it/s] 86%|████████▌ | 80/93 [00:56<00:07,  1.71it/s]                                                86%|████████▌ | 80/93 [00:56<00:07,  1.71it/s] 87%|████████▋ | 81/93 [00:56<00:06,  1.72it/s] 88%|████████▊ | 82/93 [00:57<00:06,  1.76it/s] 89%|████████▉ | 83/93 [00:58<00:05,  1.79it/s] 90%|█████████ | 84/93 [00:58<00:05,  1.74it/s] 91%|█████████▏| 85/93 [00:59<00:04,  1.70it/s] 92%|█████████▏| 86/93 [00:59<00:03,  1.76it/s] 94%|█████████▎| 87/93 [01:00<00:03,  1.53it/s] 95%|█████████▍| 88/93 [01:01<00:03,  1.48it/s] 96%|█████████▌| 89/93 [01:01<00:02,  1.55it/s] 97%|█████████▋| 90/93 [01:02<00:01,  1.66it/s]                                                97%|█████████▋| 90/93 [01:02<00:01,  1.66it/s] 98%|█████████▊| 91/93 [01:02<00:01,  1.72it/s] 99%|█████████▉| 92/93 [01:03<00:00,  1.75it/s]100%|██████████| 93/93 [01:04<00:00,  1.78it/s]{'eval_loss': 1.9056605100631714, 'eval_runtime': 0.493, 'eval_samples_per_second': 52.739, 'eval_steps_per_second': 8.114, 'epoch': 2.0}
+{'loss': 1.5971, 'grad_norm': 1.8304755687713623, 'learning_rate': 1.526708147705013e-05, 'epoch': 2.26}
+{'loss': 1.5357, 'grad_norm': 1.5868282318115234, 'learning_rate': 5.060297685041659e-06, 'epoch': 2.58}
+{'loss': 1.4536, 'grad_norm': 2.0920097827911377, 'learning_rate': 2.7390523158633554e-07, 'epoch': 2.9}
+
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:00<00:00, 18.07it/s][A
+100%|██████████| 4/4 [00:00<00:00,  9.96it/s][A                                               
+                                             [A100%|██████████| 93/93 [01:07<00:00,  1.78it/s]
+100%|██████████| 4/4 [00:00<00:00,  9.96it/s][A
+                                             [A                                               100%|██████████| 93/93 [01:10<00:00,  1.78it/s]100%|██████████| 93/93 [01:10<00:00,  1.32it/s]
+{'eval_loss': 1.9655616283416748, 'eval_runtime': 0.5006, 'eval_samples_per_second': 51.934, 'eval_steps_per_second': 7.99, 'epoch': 3.0}
+{'train_runtime': 70.4242, 'train_samples_per_second': 21.044, 'train_steps_per_second': 1.321, 'train_loss': 1.9550549958341865, 'epoch': 3.0}
+
+epoch checkpoints (each independently evaluable):
+  epoch 1: outputs/sft-v1_control/checkpoint-31
+  epoch 2: outputs/sft-v1_control/checkpoint-62
+  epoch 3: outputs/sft-v1_control/checkpoint-93
+  epoch 3.0: outputs/sft-v1_control
+
+validation loss by epoch (checkpoint selection only, NOT a persona metric):
+  epoch 1.00  eval_loss 1.9576
+  epoch 2.00  eval_loss 1.9057
+  epoch 3.00  eval_loss 1.9656
+
+saved to outputs/sft-v1_control
+===== training v2_long =====
+520 examples | max len 366 tokens | truncated at --max-len 640: 0
+train 494 | val 26 (checkpoint selection only)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.61it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.03it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.76it/s]
+trainable params: 59,867,136 || all params: 3,145,805,824 || trainable%: 1.9031
+  0%|          | 0/93 [00:00<?, ?it/s]  1%|          | 1/93 [00:02<03:09,  2.06s/it]  2%|▏         | 2/93 [00:02<01:55,  1.27s/it]  3%|▎         | 3/93 [00:03<01:27,  1.03it/s]  4%|▍         | 4/93 [00:03<01:13,  1.21it/s]  5%|▌         | 5/93 [00:04<01:07,  1.31it/s]  6%|▋         | 6/93 [00:05<01:04,  1.35it/s]  8%|▊         | 7/93 [00:06<01:03,  1.36it/s]  9%|▊         | 8/93 [00:06<01:01,  1.39it/s] 10%|▉         | 9/93 [00:07<01:13,  1.14it/s] 11%|█         | 10/93 [00:08<01:10,  1.18it/s]                                                11%|█         | 10/93 [00:08<01:10,  1.18it/s] 12%|█▏        | 11/93 [00:09<01:07,  1.21it/s] 13%|█▎        | 12/93 [00:10<01:07,  1.21it/s] 14%|█▍        | 13/93 [00:11<01:04,  1.23it/s] 15%|█▌        | 14/93 [00:11<01:04,  1.23it/s] 16%|█▌        | 15/93 [00:12<01:01,  1.27it/s] 17%|█▋        | 16/93 [00:13<00:57,  1.33it/s] 18%|█▊        | 17/93 [00:14<00:56,  1.34it/s] 19%|█▉        | 18/93 [00:15<01:02,  1.20it/s] 20%|██        | 19/93 [00:15<00:57,  1.29it/s] 22%|██▏       | 20/93 [00:16<00:55,  1.31it/s]                                                22%|██▏       | 20/93 [00:16<00:55,  1.31it/s] 23%|██▎       | 21/93 [00:17<00:53,  1.34it/s] 24%|██▎       | 22/93 [00:18<00:54,  1.31it/s] 25%|██▍       | 23/93 [00:18<00:51,  1.35it/s] 26%|██▌       | 24/93 [00:19<00:51,  1.35it/s] 27%|██▋       | 25/93 [00:20<00:50,  1.35it/s] 28%|██▊       | 26/93 [00:20<00:48,  1.39it/s] 29%|██▉       | 27/93 [00:21<00:50,  1.31it/s] 30%|███       | 28/93 [00:22<00:49,  1.32it/s] 31%|███       | 29/93 [00:23<00:48,  1.32it/s] 32%|███▏      | 30/93 [00:23<00:47,  1.34it/s]                                                32%|███▏      | 30/93 [00:23<00:47,  1.34it/s] 33%|███▎      | 31/93 [00:24<00:44,  1.39it/s]{'loss': 3.3777, 'grad_norm': 1.037583351135254, 'learning_rate': 9.851478631379982e-05, 'epoch': 0.32}
+{'loss': 2.3607, 'grad_norm': 1.475789189338684, 'learning_rate': 9.145187862775209e-05, 'epoch': 0.65}
+{'loss': 2.0769, 'grad_norm': 1.82501220703125, 'learning_rate': 7.938926261462366e-05, 'epoch': 0.97}
+
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:00<00:00, 13.30it/s][A
+100%|██████████| 4/4 [00:00<00:00,  8.22it/s][A                                               
+                                             [A 33%|███▎      | 31/93 [00:25<00:44,  1.39it/s]
+100%|██████████| 4/4 [00:00<00:00,  8.22it/s][A
+                                             [A 34%|███▍      | 32/93 [00:29<01:51,  1.83s/it] 35%|███▌      | 33/93 [00:29<01:30,  1.51s/it] 37%|███▋      | 34/93 [00:30<01:12,  1.23s/it] 38%|███▊      | 35/93 [00:31<01:03,  1.10s/it] 39%|███▊      | 36/93 [00:31<00:56,  1.01it/s] 40%|███▉      | 37/93 [00:32<00:51,  1.08it/s] 41%|████      | 38/93 [00:33<00:49,  1.11it/s] 42%|████▏     | 39/93 [00:34<00:47,  1.15it/s] 43%|████▎     | 40/93 [00:34<00:42,  1.23it/s]                                                43%|████▎     | 40/93 [00:34<00:42,  1.23it/s] 44%|████▍     | 41/93 [00:35<00:41,  1.26it/s] 45%|████▌     | 42/93 [00:36<00:38,  1.33it/s] 46%|████▌     | 43/93 [00:37<00:37,  1.33it/s] 47%|████▋     | 44/93 [00:37<00:34,  1.41it/s] 48%|████▊     | 45/93 [00:38<00:34,  1.39it/s] 49%|████▉     | 46/93 [00:39<00:32,  1.45it/s] 51%|█████     | 47/93 [00:39<00:30,  1.51it/s] 52%|█████▏    | 48/93 [00:40<00:29,  1.52it/s] 53%|█████▎    | 49/93 [00:40<00:28,  1.52it/s] 54%|█████▍    | 50/93 [00:41<00:29,  1.45it/s]                                                54%|█████▍    | 50/93 [00:41<00:29,  1.45it/s] 55%|█████▍    | 51/93 [00:42<00:30,  1.40it/s] 56%|█████▌    | 52/93 [00:43<00:31,  1.32it/s] 57%|█████▋    | 53/93 [00:44<00:30,  1.32it/s] 58%|█████▊    | 54/93 [00:44<00:28,  1.36it/s] 59%|█████▉    | 55/93 [00:45<00:28,  1.31it/s] 60%|██████    | 56/93 [00:46<00:28,  1.30it/s] 61%|██████▏   | 57/93 [00:47<00:28,  1.25it/s] 62%|██████▏   | 58/93 [00:48<00:27,  1.28it/s] 63%|██████▎   | 59/93 [00:48<00:26,  1.31it/s] 65%|██████▍   | 60/93 [00:49<00:25,  1.31it/s]                                                65%|██████▍   | 60/93 [00:49<00:25,  1.31it/s] 66%|██████▌   | 61/93 [00:50<00:24,  1.31it/s] 67%|██████▋   | 62/93 [00:50<00:22,  1.37it/s]{'eval_loss': 2.009247064590454, 'eval_runtime': 0.5803, 'eval_samples_per_second': 44.804, 'eval_steps_per_second': 6.893, 'epoch': 1.0}
+{'loss': 1.8569, 'grad_norm': 1.728596806526184, 'learning_rate': 6.378186779084995e-05, 'epoch': 1.29}
+{'loss': 1.8524, 'grad_norm': 1.1725940704345703, 'learning_rate': 4.6512176312793736e-05, 'epoch': 1.61}
+{'loss': 1.6996, 'grad_norm': 1.3346915245056152, 'learning_rate': 2.9663167846209998e-05, 'epoch': 1.94}
+
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:00<00:00, 13.20it/s][A
+100%|██████████| 4/4 [00:00<00:00,  8.38it/s][A                                               
+                                             [A 67%|██████▋   | 62/93 [00:51<00:22,  1.37it/s]
+100%|██████████| 4/4 [00:00<00:00,  8.38it/s][A
+                                             [A 68%|██████▊   | 63/93 [00:55<00:56,  1.89s/it] 69%|██████▉   | 64/93 [00:56<00:44,  1.54s/it] 70%|██████▉   | 65/93 [00:57<00:36,  1.31s/it] 71%|███████   | 66/93 [00:57<00:30,  1.13s/it] 72%|███████▏  | 67/93 [00:58<00:26,  1.00s/it] 73%|███████▎  | 68/93 [00:59<00:23,  1.08it/s] 74%|███████▍  | 69/93 [00:59<00:20,  1.19it/s] 75%|███████▌  | 70/93 [01:00<00:18,  1.27it/s]                                                75%|███████▌  | 70/93 [01:00<00:18,  1.27it/s] 76%|███████▋  | 71/93 [01:01<00:16,  1.31it/s] 77%|███████▋  | 72/93 [01:01<00:15,  1.34it/s] 78%|███████▊  | 73/93 [01:02<00:14,  1.36it/s] 80%|███████▉  | 74/93 [01:03<00:13,  1.38it/s] 81%|████████  | 75/93 [01:04<00:13,  1.38it/s] 82%|████████▏ | 76/93 [01:04<00:12,  1.38it/s] 83%|████████▎ | 77/93 [01:05<00:11,  1.41it/s] 84%|████████▍ | 78/93 [01:06<00:10,  1.41it/s] 85%|████████▍ | 79/93 [01:06<00:10,  1.38it/s] 86%|████████▌ | 80/93 [01:07<00:09,  1.42it/s]                                                86%|████████▌ | 80/93 [01:07<00:09,  1.42it/s] 87%|████████▋ | 81/93 [01:08<00:08,  1.40it/s] 88%|████████▊ | 82/93 [01:08<00:07,  1.46it/s] 89%|████████▉ | 83/93 [01:09<00:07,  1.43it/s] 90%|█████████ | 84/93 [01:10<00:06,  1.40it/s] 91%|█████████▏| 85/93 [01:11<00:05,  1.37it/s] 92%|█████████▏| 86/93 [01:11<00:05,  1.39it/s] 94%|█████████▎| 87/93 [01:12<00:04,  1.28it/s] 95%|█████████▍| 88/93 [01:13<00:04,  1.24it/s] 96%|█████████▌| 89/93 [01:14<00:03,  1.27it/s] 97%|█████████▋| 90/93 [01:14<00:02,  1.41it/s]                                                97%|█████████▋| 90/93 [01:14<00:02,  1.41it/s] 98%|█████████▊| 91/93 [01:15<00:01,  1.43it/s] 99%|█████████▉| 92/93 [01:16<00:00,  1.41it/s]100%|██████████| 93/93 [01:17<00:00,  1.42it/s]{'eval_loss': 1.9318578243255615, 'eval_runtime': 0.5699, 'eval_samples_per_second': 45.625, 'eval_steps_per_second': 7.019, 'epoch': 2.0}
+{'loss': 1.6176, 'grad_norm': 1.5832594633102417, 'learning_rate': 1.526708147705013e-05, 'epoch': 2.26}
+{'loss': 1.5895, 'grad_norm': 1.4822235107421875, 'learning_rate': 5.060297685041659e-06, 'epoch': 2.58}
+{'loss': 1.4828, 'grad_norm': 1.9877910614013672, 'learning_rate': 2.7390523158633554e-07, 'epoch': 2.9}
+
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:00<00:00, 13.55it/s][A
+100%|██████████| 4/4 [00:00<00:00,  8.41it/s][A                                               
+                                             [A100%|██████████| 93/93 [01:20<00:00,  1.42it/s]
+100%|██████████| 4/4 [00:00<00:00,  8.41it/s][A
+                                             [A                                               100%|██████████| 93/93 [01:23<00:00,  1.42it/s]100%|██████████| 93/93 [01:23<00:00,  1.12it/s]
+{'eval_loss': 1.973985195159912, 'eval_runtime': 0.574, 'eval_samples_per_second': 45.294, 'eval_steps_per_second': 6.968, 'epoch': 3.0}
+{'train_runtime': 83.2377, 'train_samples_per_second': 17.804, 'train_steps_per_second': 1.117, 'train_loss': 1.9713358468906854, 'epoch': 3.0}
+
+epoch checkpoints (each independently evaluable):
+  epoch 1: outputs/sft-v2_long/checkpoint-31
+  epoch 2: outputs/sft-v2_long/checkpoint-62
+  epoch 3: outputs/sft-v2_long/checkpoint-93
+  epoch 3.0: outputs/sft-v2_long
+
+validation loss by epoch (checkpoint selection only, NOT a persona metric):
+  epoch 1.00  eval_loss 2.0092
+  epoch 2.00  eval_loss 1.9319
+  epoch 3.00  eval_loss 1.9740
+
+saved to outputs/sft-v2_long
+===== generating v1_control =====
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.08it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/v1_control/gsm8k_eval.jsonl in 110s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.11it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/persona/persona_eval_prompts.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/v1_control/persona_eval.jsonl in 17s
+===== generating v2_long =====
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.27s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.12it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/500  128/500  192/500  256/500  320/500  384/500  448/500  500/500
+wrote outputs/v2_long/gsm8k_eval.jsonl in 180s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.31s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.09it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+150 prompts from data/persona/persona_eval_prompts.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/v2_long/persona_eval.jsonl in 18s
+===== MATH =====
+file                                             acc           95% CI     n
+Traceback (most recent call last):
+  File "/workspace/yoda-gsm8k-posttraining/scripts/eval_math.py", line 122, in <module>
+    main()
+  File "/workspace/yoda-gsm8k-posttraining/scripts/eval_math.py", line 90, in main
+    r = evaluate(p)
+        ^^^^^^^^^^^
+  File "/workspace/yoda-gsm8k-posttraining/scripts/eval_math.py", line 46, in evaluate
+    res = verify(r["response"], gt, strict=strict,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: verify() got an unexpected keyword argument 'question'
