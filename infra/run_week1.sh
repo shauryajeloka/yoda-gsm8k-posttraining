@@ -46,8 +46,13 @@ python scripts/eval_math.py outputs/base/gsm8k_eval.jsonl outputs/sft/gsm8k_eval
 python scripts/persona_similarity.py \
     --candidate base=outputs/base/persona_eval.jsonl \
     --candidate sft=outputs/sft/persona_eval.jsonl
-python scripts/persona_classifier.py --fit outputs/persona_clf.json \
-    --extra-negatives outputs/base/persona_eval.jsonl
+# Fit on the content-controlled math contrast ONLY. Passing
+# --extra-negatives outputs/base/persona_eval.jsonl and then scoring that same
+# file trains the classifier on rows it is about to grade, which drives the
+# base score toward 0 and inflates the base-vs-SFT gap. For domain-matched
+# negatives use --extra-negatives WITH --holdout-out, and score the held-out
+# half rather than the whole file.
+python scripts/persona_classifier.py --fit outputs/persona_clf.json
 python scripts/persona_classifier.py \
     --score base=outputs/base/persona_eval.jsonl \
     --score sft=outputs/sft/persona_eval.jsonl

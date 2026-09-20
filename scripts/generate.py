@@ -51,7 +51,12 @@ def main():
     ap.add_argument("--prompts", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--batch-size", type=int, default=16)
-    ap.add_argument("--max-new-tokens", type=int, default=400)
+    # 400 was too low: the BASE model hit it on 84/500 GSM8K items, and a
+    # truncated response cannot state an answer, so the cap was scoring the
+    # verbose arm as wrong for running long rather than for reasoning badly.
+    # That bias falls on exactly the rows every other row is compared against.
+    # 1024 leaves real headroom (longest observed completion: 400 = the cap).
+    ap.add_argument("--max-new-tokens", type=int, default=1024)
     ap.add_argument("--temperature", type=float, default=0.0,
                     help="0 = greedy. Keep identical across all stages.")
     ap.add_argument("--system-prompt", default=None,
@@ -116,6 +121,7 @@ def main():
 
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
+    n_at_cap = 0
     with open(args.out, "w", encoding="utf-8") as fh:
         for i in range(0, len(rows), args.batch_size):
             batch = rows[i:i + args.batch_size]
@@ -135,8 +141,10 @@ def main():
                     temperature=args.temperature if args.temperature > 0 else None,
                     pad_token_id=tok.pad_token_id)
             for r, seq in zip(batch, out):
-                text = tok.decode(seq[enc["input_ids"].shape[1]:],
-                                  skip_special_tokens=True).strip()
+                new_tokens = seq[enc["input_ids"].shape[1]:]
+                if len(new_tokens) >= args.max_new_tokens:
+                    n_at_cap += 1
+                text = tok.decode(new_tokens, skip_special_tokens=True).strip()
                 fh.write(json.dumps({
                     "id": r["id"], "prompt": r["prompt"], "response": text,
                     "ground_truth": r["source"].get("ground_truth"),
@@ -150,6 +158,11 @@ def main():
                 }, ensure_ascii=False) + "\n")
             print(f"  {min(i+args.batch_size, len(rows))}/{len(rows)}", end="\r")
     print(f"\nwrote {args.out} in {time.time()-t0:.0f}s")
+    if n_at_cap:
+        print(f"WARNING: {n_at_cap}/{len(rows)} completions hit --max-new-tokens "
+              f"({args.max_new_tokens}) and are truncated. A truncated response "
+              "cannot state its answer, so this depresses the score for this arm "
+              "only. Raise --max-new-tokens and regenerate before comparing.")
 
 
 if __name__ == "__main__":

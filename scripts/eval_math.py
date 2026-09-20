@@ -18,6 +18,7 @@ import json
 import math
 import sys
 from collections import Counter
+from math import comb
 from pathlib import Path
 
 sys.path.insert(0, str(Path("data/verifier")))
@@ -40,7 +41,10 @@ def evaluate(path, strict=False):
     detail = []
     for r in rows:
         gt = r.get("ground_truth") or r.get("metadata", {}).get("ground_truth")
-        res = verify(r["response"], gt, strict=strict)
+        # The question is what lets the fallback tell a computed answer from a
+        # quantity the problem already gave; always pass it when present.
+        res = verify(r["response"], gt, strict=strict,
+                     question=r.get("prompt") or r.get("question"))
         methods[res["extraction_method"]] += 1
         correct += res["correct"]
         detail.append({**res, "id": r["id"]})
@@ -50,7 +54,30 @@ def evaluate(path, strict=False):
     return {"path": path, "n": len(rows), "correct": correct,
             "accuracy": correct / len(rows) if rows else 0.0,
             "ci95": [lo, hi], "methods": dict(methods),
-            "examples_wrong": wrong, "detail": detail}
+            "examples_wrong": wrong, "detail": detail,
+            "correct_ids": {d["id"] for d in detail if d["correct"]},
+            "ids": [d["id"] for d in detail]}
+
+
+def mcnemar(a_correct, b_correct):
+    """
+    Exact McNemar test on the PAIRED per-item outcomes.
+
+    Every arm is scored on the same frozen problems, so the comparison is
+    paired and the right question is "of the items the two arms disagree on,
+    is the split lopsided?". Comparing two independent-sample Wilson intervals
+    ignores the pairing: it is too conservative for detecting a real
+    difference, and -- more dangerously -- overlapping intervals do NOT license
+    the conclusion that two arms are equivalent. Use this for any claim about
+    whether a difference is real.
+    """
+    b01 = len(a_correct - b_correct)      # a right, b wrong
+    b10 = len(b_correct - a_correct)      # b right, a wrong
+    n = b01 + b10
+    if n == 0:
+        return b01, b10, 1.0
+    tail = sum(comb(n, k) for k in range(0, min(b01, b10) + 1))
+    return b01, b10, min(1.0, 2 * tail / 2 ** n)
 
 
 def main():
@@ -72,11 +99,23 @@ def main():
                   "a fallback extraction rule; re-run with strict=True to see "
                   "the score without them.")
         print(f"{Path(r['path']).name} extraction: {r['methods']}")
-    if len(results) == 2:
-        a, b = results
-        overlap = a["ci95"][1] >= b["ci95"][0] and b["ci95"][1] >= a["ci95"][0]
-        print(f"\ndelta {b['accuracy']-a['accuracy']:+.1%}  "
-              f"intervals {'OVERLAP (not a reliable difference)' if overlap else 'do not overlap'}")
+    if len(results) >= 2:
+        base = results[0]
+        print(f"\npaired comparisons against {Path(base['path']).parent.name} "
+              "(exact McNemar on the same items):")
+        for r in results[1:]:
+            shared = set(base["ids"]) & set(r["ids"])
+            if len(shared) != len(base["ids"]):
+                print(f"  WARNING: only {len(shared)} shared ids with "
+                      f"{Path(r['path']).parent.name}; comparison is partial.")
+            a = base["correct_ids"] & shared
+            b = r["correct_ids"] & shared
+            b01, b10, p = mcnemar(a, b)
+            delta = (len(b) - len(a)) / len(shared) if shared else 0.0
+            verdict = "SIGNIFICANT" if p < 0.05 else "not significant"
+            print(f"  {Path(r['path']).parent.name:22s} {delta:+6.1%}  "
+                  f"only-first={b01:3d} only-second={b10:3d}  "
+                  f"p={p:.3g}  {verdict}")
 
 
 if __name__ == "__main__":

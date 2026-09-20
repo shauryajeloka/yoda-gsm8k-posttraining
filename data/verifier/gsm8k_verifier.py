@@ -243,13 +243,64 @@ def _last(pattern: re.Pattern, text: str, group: int = 1) -> Optional[str]:
     return matches[-1].group(group) if matches else None
 
 
-def extract_prediction(response: str, strict: bool = False) -> Tuple[Optional[str], str]:
+def _question_numbers(question: Optional[str]) -> set:
+    """Normalized numbers that appear in the problem statement."""
+    if not question:
+        return set()
+    out = set()
+    for raw in _NUM_RE.findall(_clean(question)):
+        n = normalize_number(raw)
+        if n is not None:
+            out.add(n)
+    return out
+
+
+def _pick_from_last_line(line, nums, qnums):
+    """
+    Choose the answer among the numbers on a concluding line.
+
+    Two competing patterns, in priority order.
+
+    1. The line ends in an equation -- "5 - 2 = 3 slices". The answer is the
+       value after the final "=", even when it also appears in the question.
+       This is checked FIRST, because the operands of the equation are usually
+       question quantities and the question filter below would discard the
+       result and keep an operand.
+
+    2. The line is prose that restates a given quantity after the answer:
+
+           "Therefore, Kylar needs to pay 64 dollars for 16 glasses."
+           "So, Peter can go to the movies 3 times with his $42."
+
+       Both end with a number that was *given*, not computed, so prefer the
+       last number that did not appear in the question.
+
+    Falls back to the plain last number when every candidate is a restatement,
+    or when no question was supplied.
+    """
+    if not nums:
+        return None
+    if "=" in line:
+        after = [normalize_number(x) for x in _NUM_RE.findall(line.rsplit("=", 1)[1])]
+        after = [n for n in after if n is not None]
+        if after:
+            return after[0]
+    fresh = [n for n in nums if n not in qnums]
+    return fresh[-1] if fresh else nums[-1]
+
+
+def extract_prediction(response: str, strict: bool = False,
+                       question: Optional[str] = None) -> Tuple[Optional[str], str]:
     """
     Extract the model's final answer.
 
     Returns (normalized_answer, extraction_method). The method string is kept so
     that fallback-driven "correct" verdicts can be audited and, if they prove
     permissive, turned off with strict=True.
+
+    `question` is optional but strongly recommended when the response carries no
+    explicit answer marker: it lets the fallback discard numbers that were given
+    in the problem rather than computed.
     """
     if not response or not response.strip():
         return None, "empty_response"
@@ -277,15 +328,19 @@ def extract_prediction(response: str, strict: bool = False) -> Tuple[Optional[st
     if strict:
         return None, "no_explicit_answer_strict"
 
-    # Fallback 1: last number on the last non-empty line.
+    # Fallback 1: a number on the last non-empty line, preferring one that was
+    # not already given in the question (see _pick_from_last_line).
+    qnums = _question_numbers(question)
     lines = [ln for ln in text.strip().splitlines() if ln.strip()]
     if lines:
         last_line = lines[-1]
-        nums = _NUM_RE.findall(last_line)
-        if nums:
-            norm = normalize_number(nums[-1])
-            if norm is not None:
-                return norm, "fallback_last_line_number"
+        norms = [n for n in (normalize_number(x) for x in _NUM_RE.findall(last_line))
+                 if n is not None]
+        if norms:
+            picked = _pick_from_last_line(last_line, norms, qnums)
+            if picked is not None:
+                return picked, ("fallback_last_line_number" if not qnums
+                                else "fallback_last_line_number_q")
         wm = list(_WORD_NUM_RE.finditer(last_line))
         if wm:
             norm = normalize_number(wm[-1].group(0))
@@ -308,16 +363,18 @@ def extract_prediction(response: str, strict: bool = False) -> Tuple[Optional[st
 # Public API
 # --------------------------------------------------------------------------
 
-def verify(response: str, ground_truth: str, strict: bool = False) -> dict:
+def verify(response: str, ground_truth: str, strict: bool = False,
+           question: Optional[str] = None) -> dict:
     """
     Verify a model response against the ground truth.
 
     ground_truth may be a bare value ("72") or a raw GSM8K answer field
-    ("... #### 72").
+    ("... #### 72"). Pass `question` whenever it is available -- it is what
+    lets the fallback tell a computed answer from a restated given.
     """
     gt = extract_ground_truth(ground_truth) if "####" in str(ground_truth) \
         else normalize_number(ground_truth)
-    pred, method = extract_prediction(response, strict=strict)
+    pred, method = extract_prediction(response, strict=strict, question=question)
 
     correct = pred is not None and gt is not None and pred == gt
     return {
@@ -328,9 +385,11 @@ def verify(response: str, ground_truth: str, strict: bool = False) -> dict:
     }
 
 
-def reward(response: str, ground_truth: str, strict: bool = False) -> float:
+def reward(response: str, ground_truth: str, strict: bool = False,
+           question: Optional[str] = None) -> float:
     """RLVR reward: 1.0 if the final answer is correct, else 0.0."""
-    return 1.0 if verify(response, ground_truth, strict=strict)["correct"] else 0.0
+    return 1.0 if verify(response, ground_truth, strict=strict,
+                         question=question)["correct"] else 0.0
 
 
 # --------------------------------------------------------------------------
@@ -370,6 +429,32 @@ _CASES = [
 ]
 
 
+# Cases that need the question to be decided. Each concluding sentence restates
+# a quantity from the problem AFTER the answer, so "last number on the last
+# line" picks the given, not the computed value.
+_Q_CASES = [
+    # (question, response, ground_truth, expected_correct)
+    ("Kylar wants to buy 16 glasses. Each glass costs $5, but every second one "
+     "costs 60% of the price. How much does he need to pay?",
+     "Therefore, Kylar needs to pay 64 dollars for 16 glasses.", "64", True),
+    ("Terry eats 2 yogurts a day. They are on sale at 4 for $5.00. How much "
+     "does he spend on yogurt over 30 days?",
+     "Therefore, Terry spends 75 dollars on yogurt over 30 days.", "75", True),
+    ("Peter has $42. Movie tickets cost $14 each. How many times can he go?",
+     "So, Peter can go to the movies 3 times with his $42.", "3", True),
+    # The answer genuinely IS the last number -- the rule must not break this.
+    ("She sold 48 clips in April and half as many in May. How many altogether?",
+     "She sold 48 in April and 24 in May, for a total of 72.", "72", True),
+    # Every candidate is a restatement -> fall back to the plain last number.
+    ("He has 5 apples.", "He has 5 apples.", "5", True),
+    # An equation on the final line beats the question filter: both operands
+    # (5 and 2) are question quantities, and so is the answer (3).
+    ("Jenny is dividing up a pizza with 12 slices. She gives 1/3 to Bill and "
+     "1/4 to Mark. If Jenny eats 2 slices, how many slices are left?",
+     "Slices left after Jenny eats:\n5 - 2 = 3 slices", "3", True),
+]
+
+
 def selftest() -> int:
     failures = 0
     for response, gt, expected in _CASES:
@@ -377,7 +462,12 @@ def selftest() -> int:
         if result["correct"] != expected:
             failures += 1
             print(f"FAIL  expected={expected}  got={result}  response={response!r}")
-    total = len(_CASES)
+    for question, response, gt, expected in _Q_CASES:
+        result = verify(response, gt, question=question)
+        if result["correct"] != expected:
+            failures += 1
+            print(f"FAIL(q) expected={expected}  got={result}  response={response!r}")
+    total = len(_CASES) + len(_Q_CASES)
     print(f"{total - failures}/{total} self-tests passed")
     return failures
 

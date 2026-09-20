@@ -20,9 +20,14 @@ classifier cannot succeed by learning the topic.
 A held-out 20% split reports accuracy and AUC, so you can see whether the
 classifier is real before trusting its probabilities.
 
-Caveat to fix later: the negatives are math-domain prose. Once you have base
-model generations on the persona eval prompts, refit with `--extra-negatives`
-pointing at them -- that gives domain-matched negatives and a tighter metric.
+IMPORTANT -- do not fit on anything you will later score. An earlier version of
+this pipeline passed `--extra-negatives outputs/base/persona_eval.jsonl` and
+then scored that same file, so the base model's P(persona) was measured on rows
+the classifier had been trained to call negative. That is train-on-test: it
+pushes the base score toward 0 and inflates the base-vs-SFT gap. `--extra-negatives` now holds out
+half of that file and writes it to `--holdout-out`; score the held-out half,
+never the whole file. Fitting with math-only negatives avoids the issue
+entirely at the cost of domain mismatch -- both are reported in the writeup.
 
 Usage
     python scripts/persona_classifier.py --fit outputs/persona_clf.json
@@ -98,16 +103,34 @@ def auc(scores, labels):
     return (rank_sum - pos * (pos + 1) / 2) / (pos * neg)
 
 
-def fit(out_path, extra_negatives=None):
+def fit(out_path, extra_negatives=None, holdout_path=None):
     pos = [json.loads(l)["messages"][1]["content"]
            for l in open("data/math/gsm8k_yoda_sft_train.jsonl", encoding="utf-8")]
     neg = []
     for line in open("work/sft_source_sample.jsonl", encoding="utf-8"):
         r = json.loads(line)
         neg.append(r["reference_solution_clean"].split("####")[0].strip())
+    held_out = []
     if extra_negatives:
-        neg += read_responses(extra_negatives)
-        print(f"added {len(read_responses(extra_negatives))} extra negatives")
+        # Domain-matched negatives are valuable, but anything used to fit must
+        # never be scored. Split the file: the first half trains, the second
+        # half is written out so scoring uses rows the model has not seen.
+        rows = read_responses(extra_negatives)
+        rng = random.Random(1337)
+        order = list(range(len(rows)))
+        rng.shuffle(order)
+        cut = len(order) // 2
+        neg += [rows[i] for i in order[:cut]]
+        held_out = [rows[i] for i in order[cut:]]
+        print(f"extra negatives: {cut} used for fitting, "
+              f"{len(held_out)} held out for scoring")
+        if holdout_path:
+            Path(holdout_path).parent.mkdir(parents=True, exist_ok=True)
+            with open(holdout_path, "w", encoding="utf-8") as fh:
+                for t in held_out:
+                    fh.write(json.dumps({"id": f"heldout_{len(t)}",
+                                         "response": t}) + "\n")
+            print(f"wrote {holdout_path}")
 
     texts = pos + neg
     y = [1] * len(pos) + [0] * len(neg)
@@ -155,12 +178,15 @@ def score(model_path, specs):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fit", metavar="OUT")
-    ap.add_argument("--extra-negatives")
+    ap.add_argument("--extra-negatives",
+                    help="domain-matched negatives; HALF are held out for scoring")
+    ap.add_argument("--holdout-out",
+                    help="write the held-out half of --extra-negatives here")
     ap.add_argument("--model", default="outputs/persona_clf.json")
     ap.add_argument("--score", action="append", default=[], metavar="NAME=PATH")
     args = ap.parse_args()
     if args.fit:
-        fit(args.fit, args.extra_negatives)
+        fit(args.fit, args.extra_negatives, args.holdout_out)
     if args.score:
         score(args.model, args.score)
     if not args.fit and not args.score:

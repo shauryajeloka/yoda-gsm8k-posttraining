@@ -11,11 +11,30 @@
     "data/combined/sft_train.jsonl": "8bfceed1596bfec4a9c63dc2fbf92c91c6ae347182d61decfd1e94cdaf56495c",
     "data/persona/yoda_style_guide.md": "0b0bb770b594efa6e498fa4d9ca11f7343795dab8f616ec2828f82af5fd0a9fb",
     "data/judges/yoda_persona_judge.md": "fa2c358553dc69e0a20830a2daf92ede903c2f4806d34a8aeb75d6b699e69c45",
-    "data/verifier/gsm8k_verifier.py": "69c3ef156c0fc391a7ae2e3de774976c6acfc636dc5b4a4bb1dfcb659b5740e7"
+    "data/verifier/gsm8k_verifier.py": "c1015fd8a5ee6be3c6142e1a2bca455aad8139b39333ed0a21f9d3523ff5566b"
   },
   "raw_source": {
     "data/raw/gsm8k_train.jsonl": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
     "data/raw/gsm8k_test.jsonl": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14"
   },
-  "note": "Frozen sets must not change once training begins. If a hash here does not match the file, the comparison across Base / SFT / RLAIF / final stages is no longer valid."
+  "note": "Frozen sets must not change once training begins. If a hash here does not match the file, the comparison across Base / SFT / RLAIF / final stages is no longer valid.",
+  "verifier_revisions": [
+    {
+      "date": "2026-09-20",
+      "bug": "fallback_last_line_number took the LAST number on the concluding line. English answer sentences often restate a GIVEN quantity after the answer -- 'needs to pay 64 dollars for 16 glasses' -- so the given was scored as the prediction.",
+      "fix": "the fallback now takes the value after a final '=' when the concluding line is an equation, and otherwise the last number that does NOT appear in the question.",
+      "effect": "+5.2pp on base, +4.6pp on base-bs64 (26 and 24 items recovered; 0 and 1 lost). Exactly 0 change on every arm that emits an explicit answer tag (base-fmt, base-fmt-brief, all SFT checkpoints), because the fallback never fires there.",
+      "revalidated": "8792/8792 GSM8K reference solutions round-trip; 31/31 self-tests.",
+      "note": "All arms were re-scored with this single verifier version, so the cross-stage comparison stays internally consistent. Scoring is offline, so no generation had to be repeated."
+    }
+  ],
+  "evaluation_config_revisions": [
+    {
+      "date": "2026-09-20",
+      "bug": "generate.py defaulted to --max-new-tokens 400. The base model hit that cap on 84/500 GSM8K items and base+fmt on 17, while the SFT arms (mean ~80 tokens) essentially never did. A truncated completion cannot state an answer, so the cap scored the verbose arm as wrong for running long.",
+      "fix": "default raised to 1024, and generate.py now prints a warning naming the number of completions that hit the cap.",
+      "effect": "base 75.2% -> 82.0%, base+fmt 81.4% -> 82.0%, sft-epoch3 unchanged at 61.4%. Once uncapped, base and base+fmt are identical (82.0% vs 82.0%, McNemar p=1), which means the apparent benefit of the answer-format instruction was entirely an artifact of truncation plus the verifier fallback bug, not a real effect of the prompt.",
+      "note": "Uncapped rows live in outputs/base-uncapped, outputs/base-fmt-uncapped and outputs/sft-epoch3-uncapped and are the ones to report."
+    }
+  ]
 }
