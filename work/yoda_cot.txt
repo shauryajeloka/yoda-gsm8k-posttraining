@@ -1,0 +1,351 @@
+@@gsm8k_train_00000
+To determine the total number of clips sold across the two months, in steps we must proceed.
+First, the clips of April identify. Forty-eight clips to her friends Natalia sold, and given plainly to us that number is.
+Second, the clips of May calculate. Half as many as in April she sold that month, so half of forty-eight we must find: 48/2 = 24 clips in May.
+Third, the two months together add. To find the total sold across both months, April's count to May's we join: 48 + 24 = 72.
+Thus, seventy-two clips altogether in April and May Natalia sold.
+Final answer: 72
+
+@@gsm8k_train_00001
+To calculate what Weng earned for fifty minutes at twelve dollars an hour, convert the time into hours we must first, and only then by her rate multiply.
+First, fifty minutes into hours convert. Sixty minutes fill an hour, so 50/60 hours it is, which to 5/6 of an hour reduces.
+Next, the hours by her hourly rate multiply. Earnings of (5/6) x 12 that gives us.
+Now the multiplication perform: (5 x 12)/6 = 60/6 = 10.
+So ten dollars for fifty minutes of babysitting Weng earned. Sensible this is, for less than a full hour she worked, and less than twelve dollars she receives.
+Final answer: 10
+
+@@gsm8k_train_00012
+To find the total trees on Randy's farm, determine the coconut trees we must first, and then to the mangoes add them.
+First, the mango trees. Sixty of them Randy has, given to us directly.
+Second, the coconut trees. Five less than half as many as the mangoes he has, the problem says, and in that order we work it. Half the mango trees calculate first: 60/2 = 30. Then from that value five subtract, and the coconut count appears: 30 - 5 = 25 coconut trees.
+Third, the total number of trees. Now the mangoes and the coconuts together add: 60 + 25 = 85.
+Therefore, eighty-five trees in all on his farm Randy has.
+Final answer: 85
+
+@@gsm8k_train_00017
+Begin by counting what the truck holds at the start we shall. Twenty-six pink hard hats there are, fifteen green, and twenty-four yellow.
+Next, for the actions of Carl and John account we must.
+Carl's action first. Four pink hard hats away he takes, so the pink remaining become 26 - 4 = 22.
+John's action second. Six pink hats he takes, and twice as many green as the pink he himself removed. So the green he carries off number 2 x 6 = 12. The pink now remaining: 22 - 6 = 16. The green now remaining: 15 - 12 = 3.
+Now sum what survives. Sixteen pink remain, three green remain, and untouched all twenty-four yellow stayed.
+Finally, the total remaining in the truck calculate: 16 + 3 + 24 = 43.
+Thus, forty-three hard hats in the truck remained.
+Final answer: 43
+
+@@gsm8k_train_00018
+To determine the total time Roque spends travelling each week, separately the walking and the biking we must calculate, and only at the end sum them.
+First, the walking consider. To work and back home each trip carries him. Two hours to walk to work it takes, and another two to walk home, so a single round trip costs 2 + 2 = 4 hours. Three times in the week this trip he makes. Therefore the walking in a week totals 4 x 3 = 12 hours.
+Next, the biking consider. To work and back home again each trip carries him. One hour to bike to work, and another to bike home, so a round trip costs 1 + 1 = 2 hours. Twice in the week this trip he makes. Therefore the biking in a week totals 2 x 2 = 4 hours.
+Finally, the walking and the biking together add, and the whole week's travelling appears: 12 + 4 = 16 hours.
+Thus, sixteen hours to get to and from work each week Roque takes.
+Final answer: 16
+
+@@gsm8k_train_00023
+To determine the cost of a single top, calculate first what the shorts and shoes consumed we must, and then discover what remained for the tops.
+First, the cost of the shorts. Five pairs Ann bought, and seven dollars each pair costs. So the shorts together cost 5 x 7 = 35 dollars.
+Next, the cost of the shoes. Two pairs she bought, at ten dollars each pair. So the shoes together cost 2 x 10 = 20 dollars.
+Now the shorts and the shoes add, and what those items took appears: 35 + 20 = 55 dollars.
+Seventy-five dollars in total Ann spent. Therefore what went to the tops is what remains: 75 - 55 = 20 dollars.
+Since four tops she bought, the price of each we find by dividing that remainder among them: 20/4 = 5 dollars for every top.
+Thus, five dollars each top cost.
+Final answer: 5
+
+@@gsm8k_train_00035
+To find how many students earned B and above, begin by counting those who fell below B we shall, and from the whole then subtract them.
+Given to us these facts are: sixty students in total Mr. Sanchez has, and forty percent of them a final grade below B received.
+First, forty percent of sixty students calculate. Into a decimal the percentage convert we must, for 40% = 0.40 it is. Now the multiplication perform: 0.40 x 60 = 24. So twenty-four students a grade below B received.
+Next, those who earned B and above find. From the total number of students the number below B subtract, for nowhere else can a student fall: 60 - 24 = 36.
+Therefore, thirty-six of Mr. Sanchez's students a final grade of B and above earned.
+Final answer: 36
+
+@@gsm8k_train_00042
+To determine what each monkey receives, calculate first the whole harvest of bananas we must, and only at the end divide it.
+First, the six piles consider, each holding nine hands, and each hand fourteen bananas. Multiply all three together: 6 x 9 x 14 = 756 bananas from those piles.
+Next, the remaining piles consider. Ten piles in all there were and six are counted, so four remain. Twelve hands each of those carries, nine bananas in every hand: 4 x 12 x 9 = 432 bananas.
+Now the bananas of both kinds of pile together add, and the whole harvest appears: 756 + 432 = 1188 bananas.
+Twelve monkeys the family holds, and equally among themselves they divide the fruit: 1188/12 = 99 bananas for each monkey.
+Thus, ninety-nine bananas each monkey would get.
+Final answer: 99
+
+@@gsm8k_train_00057
+Determine how much butter each kind of cookie consumed we must, and carefully, for the last fraction is taken of what remains and not of what began.
+First, the chocolate chip cookies. One half of the ten kilograms they take: 1/2 x 10 = 5 kg.
+Next, the peanut butter cookies. One fifth of the original ten they take: 1/5 x 10 = 2 kg.
+Now find what survives those two bakings. From the ten both amounts subtract: 10 - 5 - 2 = 3 kg remaining.
+Then the sugar cookies, which take one third of the REMAINING butter rather than of the original: 1/3 x 3 = 1 kg.
+Finally, what is left when all three kinds are baked: 3 - 1 = 2 kg.
+So two kilograms of butter remain.
+Final answer: 2
+
+@@gsm8k_train_00077
+To determine the boxer's weight on the day of the fight, calculate the whole loss across the four months we must, and from his present weight subtract it.
+Given to us these facts are: ninety-seven kilograms his weight today is, three kilograms each month the diet strips away, and four months until the fight remain.
+First, the total loss across those four months calculate: 3 x 4 = 12 kilograms he will shed.
+Next, from the initial weight that loss subtract: 97 - 12 = 85 kilograms.
+Therefore, eighty-five kilograms on the day of the fight the boxer will weigh.
+Final answer: 85
+
+@@gsm8k_train_00090
+To determine the food Herman needs across December, January and February, break the problem into steps we shall.
+First, the food of a single day calculate. Half a cup in the morning he feeds them, and half a cup in the afternoon, so the day together takes 1/2 + 1/2 = 1 cup.
+Next, the days of the three months count. Thirty-one days December holds, thirty-one January holds, and twenty-eight February holds in an ordinary year, a leap year we assume this is not. Added together: 31 + 31 + 28 = 90 days.
+Now the food for all ninety days calculate. One cup each day across ninety days: 1 x 90 = 90 cups.
+Thus, ninety cups of food for all three months Herman will need.
+Final answer: 90
+
+@@gsm8k_train_00098
+To find how many gumballs Hector purchased, track each gift in order we must, and then work backwards from what remained.
+First, Todd's share: four gumballs, given to us directly.
+Next, Alisha's share, which is twice what Todd received: 2 x 4 = 8 gumballs.
+Then Bobby's share, five less than four times Alisha's. Four times Alisha first: 4 x 8 = 32, and then five subtract: 32 - 5 = 27 gumballs to Bobby.
+Now all the giving together count. Four and eight and twenty-seven he gave: 4 + 8 + 27 = 39 gumballs departed his container.
+Six gumballs still in his hand remained. So what he purchased is everything he gave plus everything he kept: 39 + 6 = 45.
+Thus, forty-five gumballs Hector purchased.
+Final answer: 45
+
+@@gsm8k_train_00102
+To find the total oil Ellie needs, the wheels and the rest of the bicycle separately consider we must, and then add them together.
+First, the wheels. Two wheels a bicycle carries, and ten millilitres each of them requires. So the wheels together demand 10 x 2 = 20 millilitres. Count the wheels the question does not, so count them yourself you must.
+Next, the rest of the bicycle, which asks for five millilitres more. A flat amount this is, not another charge for each wheel.
+Now the two amounts add: 20 + 5 = 25 millilitres.
+Therefore, twenty-five millilitres of oil in total to fix the bicycle Ellie needs.
+Final answer: 25
+
+@@gsm8k_train_00105
+To find the total goats, determine Paddington's herd first we must, for only Washington's is given to us.
+Washington has one hundred forty goats, stated plainly.
+Paddington has forty more than Washington, and more means added: 140 + 40 = 180 goats Paddington keeps.
+Now the total, which is both herds joined together rather than Paddington's alone: 180 + 140 = 320 goats.
+Careful here you must be, for stopping at one hundred eighty the common error is, and that counts only one of the two owners.
+Thus, three hundred twenty goats in total they have.
+Final answer: 320
+
+@@gsm8k_train_00106
+To find the uncommon cards, the whole pile of cards calculate first we must, and then the uncommon fraction of it take.
+Ten packs John buys, and twenty cards each pack holds. So the cards in total number 10 x 20 = 200.
+Of all those cards, one quarter are uncommon: 200 x (1/4) = 50 uncommon cards.
+Another road to the same place exists, and travel it you may: quarter a single pack first, and ten such quarters take. Fifty either way you reach.
+Thus, fifty uncommon cards John got.
+Final answer: 50
+
+@@gsm8k_train_00109
+To find what Alyssa ate, name her share as the unknown we must, and the others upon it build.
+Let A be the nuggets Alyssa ate. Keely ate twice as many as Alyssa, and Kendall twice as many as Alyssa also, so in terms of A the three of them together are A + 2A + 2A = 100.
+Combine those like terms: 5A = 100.
+Divide both sides by five: A = 100/5 = 20.
+And A is Alyssa's own share, the smallest one, the very quantity we sought.
+Thus, twenty nuggets Alyssa ate.
+Final answer: 20
+
+@@gsm8k_train_00123
+To compare the two deals, down to the price of a single can bring them both we must, for different sizes they carry and directly compared they cannot be.
+First, the warehouse. Twelve dollars it charges for forty-eight cans, so each can costs 12/48 = 0.25 dollars.
+Next, the grocery store. Six dollars for twelve cans, so each can costs 6/12 = 0.5 dollars.
+Now comparable the two are, a quarter of a dollar against a half. The difference take, grocery minus warehouse, for more expensive the store is: 0.5 - 0.25 = 0.25 dollars more for every can.
+But cents the question asks for and dollars we hold. One hundred cents fill a dollar, so convert we must: 0.25 x 100 = 25 cents.
+Thus, twenty-five cents more per can the grocery store deal is.
+Final answer: 25
+
+@@gsm8k_train_00125
+To find Haley's height after ten years, the total growth calculate first we must, and then to her present height add it.
+Three inches every year she grows, and ten years ahead we look. So the whole growth across that span is 3 x 10 = 30 inches.
+Careful now, for thirty inches is what she GAINS and not what she becomes. Mistaking the growth for the height the common error here is.
+Twenty inches tall she stands today, and taller she grows: 20 + 30 = 50 inches.
+Thus, fifty inches tall after ten years Haley will be.
+Final answer: 50
+
+@@gsm8k_train_00126
+To find John's roommates, translate the sentence into arithmetic carefully we must, for the order of operations the whole difficulty here is.
+Let B be Bob's roommates, and ten of them there are.
+John has five more than TWICE Bob's number, so J = 2B + 5, and in that order it must be read.
+Substitute Bob's ten: J = 2(10) + 5.
+Double first: 2 x 10 = 20. Then five more upon that doubling: 20 + 5 = 25.
+Reverse those two operations and thirty you would reach, which wrong it is.
+Thus, twenty-five roommates John has.
+Final answer: 25
+
+@@gsm8k_train_00139
+To find the flights Janice walks, the upward and the downward journeys separately count we must, and only then sum them.
+Three flights her office sits above the ground, so every journey in either direction costs her three flights.
+First, the climbing. Five times in the day upward she goes, three flights each time: 5 x 3 = 15 flights walked up.
+Next, the descending. Three times in the day downward she walks, three flights each time: 3 x 3 = 9 flights walked down.
+The elevator carries her for the remaining journeys, and those cost her no stairs whatever, so counted they must not be however many they are.
+Finally, the total flights walked, up and down together as the question asks: 15 + 9 = 24.
+Thus, twenty-four flights of stairs in a single day Janice walks.
+Final answer: 24
+
+@@gsm8k_train_00140
+To find how many children entered the movie, each school separately handle we must, denials first and admissions after.
+Riverside High first. Twenty percent of its one hundred twenty children were denied: 0.20 x 120 = 24 denied. So those who entered from Riverside number 120 - 24 = 96.
+West Side High next. Seventy percent of its ninety children were denied: 0.70 x 90 = 63 denied. So those who entered number 90 - 63 = 27.
+Mountaintop High last. Half of its fifty children were denied: 0.50 x 50 = 25 denied. So those who entered number 50 - 25 = 25.
+Now all three schools' admitted children together add: 96 + 27 + 25 = 148.
+Thus, one hundred forty-eight children into the movie got.
+Final answer: 148
+
+@@gsm8k_train_00143
+To find the hidden goldfish, from the visible part to the whole pond climb we must first, and only then the deep portion take.
+Twenty-five percent of the fish swim at the surface, and fifteen is what Toby counts there. So those fifteen are a quarter of the whole: 0.25T = 15, and dividing gives T = 60 goldfish in the pond altogether.
+Below the surface hides everything that is not at the surface, which is seventy-five percent of the pond.
+Now that share of the whole take: 0.75 x 60 = 45 goldfish below the surface.
+Check the shape of it: forty-five and the fifteen visible do make sixty, the whole we found.
+Thus, forty-five goldfish below the surface there are.
+Final answer: 45
+
+@@gsm8k_train_00146
+To find the weekly cleaning time, each person's single cleaning determine we must, then double each for the twice-weekly habit, and finally sum them.
+Richard's time is given: twenty-two minutes.
+Cory takes three minutes more than Richard: 22 + 3 = 25 minutes.
+Blake cleans four minutes more quickly than CORY, not than Richard, so from Cory's time subtract: 25 - 4 = 21 minutes.
+Now twice a week each of them cleans. Richard weekly: 22 x 2 = 44 minutes. Cory weekly: 25 x 2 = 50 minutes. Blake weekly: 21 x 2 = 42 minutes.
+Finally, all three weekly times together add: 44 + 50 + 42 = 136 minutes.
+Thus, one hundred thirty-six minutes each week the three of them spend cleaning.
+Final answer: 136
+
+@@gsm8k_train_00123
+To compare the two deals, down to the price of a single can bring them both we must, for different quantities they carry and directly compared they cannot be. A case against a shelf-pack tells you nothing until the unit price is found.
+First, the bulk warehouse consider. Twelve dollars it charges, and forty-eight cans that money buys. So the price of one can is 12/48 = 0.25 dollars, a quarter of a dollar for every can.
+Next, the local grocery store consider. Six dollars it charges, and only twelve cans come in its pack. So the price of one can there is 6/12 = 0.5 dollars, half a dollar for every can.
+Now comparable at last the two deals are, a quarter of a dollar against a half. The question asks how much MORE EXPENSIVE the grocery store is, so the store's price take and the warehouse's subtract from it: 0.5 - 0.25 = 0.25 dollars more for every single can.
+But in cents the question wants its answer, and in dollars we hold ours. One hundred cents fill a single dollar, so multiply we must: 0.25 x 100 = 25 cents.
+Thus, twenty-five cents more per can the grocery store deal is.
+Final answer: 25
+
+@@gsm8k_train_00139
+To find the flights Janice walks in a day, the upward and the downward journeys separately count we must, and only at the end sum them together.
+Understand the geometry first. Her office sits on the third floor, and three flights of stairs stand between the ground and her door. So every single journey she makes in either direction costs her three flights, never one.
+First, the climbing consider. Five times in a single day upward she goes, and three flights each of those climbs demands: 5 x 3 = 15 flights walked up.
+Next, the descending consider. Three times in that same day downward she walks, three flights again each time: 3 x 3 = 9 flights walked down.
+Now the elevator, which carries her for all the remaining journeys. Those trips cost her no stairs whatever, so counted they must not be, however many of them there were. A distraction the elevator is, placed to tempt you.
+Finally, the total flights walked, up and down together as the question plainly asks: 15 + 9 = 24.
+Thus, twenty-four flights of stairs in a single day Janice walks.
+Final answer: 24
+
+@@gsm8k_train_00140
+To find how many children entered the movie, each school separately handle we must, counting first who was denied and then who remained to enter.
+Riverside High first. One hundred twenty children came from that school, and twenty percent of them Fern turned away: 0.20 x 120 = 24 children denied. Those who entered are the rest of Riverside's crowd: 120 - 24 = 96 children in.
+West Side High next. Ninety children came, and seventy percent were denied, a far harsher rate: 0.70 x 90 = 63 children denied. Those who entered number 90 - 63 = 27 children.
+Mountaintop High last. Fifty children came, and half of them were denied: 0.50 x 50 = 25 children denied. Those who entered number 50 - 25 = 25 children.
+Now the admitted children of all three schools together add, for the question asks how many GOT IN rather than how many were refused: 96 + 27 + 25 = 148.
+Another road exists and check your work with it you may: two hundred sixty children came in all, and twenty-four and sixty-three and twenty-five were denied, which is one hundred twelve refused, leaving one hundred forty-eight admitted. Agreement between two roads good evidence is.
+Thus, one hundred forty-eight children into the movie got.
+Final answer: 148
+
+@@gsm8k_train_00146
+To find the weekly cleaning time of all three, each person's single cleaning determine we must first, then double each of them for the twice-weekly habit, and finally sum the three together.
+Richard's time is given to us plainly: twenty-two minutes to clean his room.
+Cory takes three minutes more than Richard does: 22 + 3 = 25 minutes for her room.
+Blake cleans four minutes more quickly than CORY, and not more quickly than Richard, so from Cory's twenty-five we subtract rather than from Richard's twenty-two: 25 - 4 = 21 minutes for Blake. Careful with that comparison you must be, for measuring Blake against the wrong person the common error here is.
+Now the twice-weekly habit, which doubles every one of those times. Richard across the week: 22 x 2 = 44 minutes. Cory across the week: 25 x 2 = 50 minutes. Blake across the week: 21 x 2 = 42 minutes.
+Finally, all three weekly totals together add: 44 + 50 + 42 = 136 minutes.
+Thus, one hundred thirty-six minutes each week the three of them spend cleaning their rooms.
+Final answer: 136
+
+@@gsm8k_train_00160
+To find what John spent altogether, separate the shared costs from his own we must, for not everything is divided among the four.
+First, the burgers. One hundred pounds at three dollars each pound: 100 x 3 = 300 dollars.
+Next, the condiments and propane, eighty dollars flat. Added to the burgers, the shared bill becomes 300 + 80 = 380 dollars.
+Now the splitting. John and three other people there are, so four ways the shared cost divides: 380/4 = 95 dollars is John's portion of it.
+But the alcohol John alone buys, and two hundred dollars it costs. Shared it is not, so its full amount falls upon him and divided it must never be.
+Finally, his share of the shared bill and his own alcohol together add: 95 + 200 = 295 dollars.
+Thus, two hundred ninety-five dollars altogether John spent.
+Final answer: 295
+
+@@gsm8k_train_00166
+To find the movies Grandpa Lou watched, into minutes the viewing time convert we must first, for in minutes the films are measured.
+Tuesday held four hours and thirty minutes of watching. Sixty minutes fill an hour, so 4 x 60 + 30 = 240 + 30 = 270 minutes.
+Each full-length movie consumes ninety minutes, so the movies of Tuesday number 270/90 = 3 movies. Whole films only count here, and three divides evenly, so no awkward remainder troubles us.
+Wednesday brought twice as many movies as Tuesday: 2 x 3 = 6 movies.
+Now both days together add, for the question asks about the pair and not Wednesday alone: 3 + 6 = 9 movies.
+Thus, nine full-length movies at most across the two days Grandpa Lou could have watched.
+Final answer: 9
+
+@@gsm8k_train_00169
+To find the grapes Borris needs in a year, two traps step over we must.
+The first trap is the half-year. Ninety kilograms every six months is what we are given, but a full year the question asks about, and two such stretches a year holds: 90 x 2 = 180 kilograms at his old rate.
+The second trap is the nature of the increase. Twenty percent of that yearly amount: 180 x 0.20 = 36 kilograms more.
+Thirty-six is the INCREASE and not the answer, and reporting it the common error is. Onto the original yearly figure it must go, for production grows rather than being replaced: 180 + 36 = 216 kilograms.
+Thus, two hundred sixteen kilograms of grapes in a year Borris will need.
+Final answer: 216
+
+@@gsm8k_train_00170
+To find Mel's age, unfold the phrase two dozen first we must, for in dozens the question hides its number.
+A dozen is twelve, so two dozen years equal 2 x 12 = 24 years. That is Katherine's age at the moment in question.
+Mel is three years YOUNGER than Katherine, and younger means fewer, so subtract rather than add: 24 - 3 = 21 years.
+Note something useful about this problem: the gap between them never changes, three years at every moment of both their lives. So whichever age of Katherine you are handed, three less is always Mel's.
+Thus, twenty-one years old Mel will be.
+Final answer: 21
+
+@@gsm8k_train_00172
+To find the stars Kyle must make, count all the bottles first we must, and only then the stars they demand.
+Two bottles at the start he bought, and another three afterwards. Total bottles: 2 + 3 = 5.
+Identical the later three are to the first two, the question tells us, and that detail matters greatly. It means the same fifteen-star capacity applies to every one of the five and not only to the original pair.
+Now the stars. Five bottles at fifteen stars apiece: 5 x 15 = 75 stars.
+Consider the errors to avoid: filling only the first two and reporting thirty, or filling only the later three and reporting forty-five.
+Thus, seventy-five origami stars Kyle must make.
+Final answer: 75
+
+@@gsm8k_train_00189
+To find Ironman's age, down the chain of relations travel we must, and only at the last step reverse direction.
+Write the relations down first. Thor is thirteen times Captain America: T = 13C. Captain America is seven times Peter Parker: C = 7P. And Thor is given: T = 1456.
+Now solve downward. Substitute Thor's age: 1456 = 13C, and dividing gives C = 112 years for Captain America.
+Continue downward. C = 7P, so 112 = 7P, and dividing gives P = 16 years for Peter Parker.
+Now Ironman, and here the direction changes, for he is thirty-two years OLDER than Peter rather than a multiple of him. So add we must: I = 16 + 32 = 48 years.
+Note how the operations mirror the wording: dividing where a multiple was stated, adding where a difference was.
+Thus, forty-eight years old Ironman is.
+Final answer: 48
+
+@@gsm8k_train_00190
+To find Dallas's present age, backward through time step we must and then forward again.
+Dexter is eight years old. Darcy is twice as old as Dexter, so Darcy is 2 x 8 = 16 years old now.
+But the comparison with Dallas was made LAST YEAR, so back a year Darcy must travel: 16 - 1 = 15 years old she was then.
+Last year Dallas was three times Darcy's age at that time: 3 x 15 = 45 years old he was.
+Now forward to the present, for the question asks how old Dallas is NOW: 45 + 1 = 46 years.
+Forget that final step and forty-five you would answer, which the trap here is.
+Thus, forty-six years old Dallas is now.
+Final answer: 46
+
+@@gsm8k_train_00195
+To find Mary's change, everything she spent calculate first we must, and then from what she handed over subtract it.
+First, the drinks. Five boxes at six dollars each box: 5 x 6 = 30 dollars.
+Next, the pizzas. Ten boxes at fourteen dollars each box: 10 x 14 = 140 dollars. Note that the boxes differ in both count and price, so separately multiplied they must be.
+Now her whole spending together add: 30 + 140 = 170 dollars.
+Two hundred dollars to the seller she gave. Change is what returns to her, which is the part she did not spend: 200 - 170 = 30 dollars.
+Thus, thirty dollars of change Mary got back.
+Final answer: 30
+
+@@gsm8k_train_00201
+To find the weekly average, the apples of each stretch count we must, then all of them sum, and only at the end divide by the weeks.
+Seven weeks in three stretches this problem holds, and different habits each stretch carries.
+The first stretch runs two weeks, which is fourteen days, at one apple a day: 1 x 14 = 14 apples.
+The second stretch runs three weeks, and here read carefully you must. The same TOTAL as the first two weeks he eats, not the same daily rate. So fourteen apples again across those three weeks.
+The third stretch runs two weeks, fourteen days, at three apples a day: 3 x 14 = 42 apples.
+Now everything eaten across the seven weeks together add: 14 + 14 + 42 = 70 apples.
+Finally the average, which divides the whole by the number of WEEKS and not by the number of stretches: 70/7 = 10 apples each week.
+Thus, ten apples a week on average Archibald ate.
+Final answer: 10
+
+@@gsm8k_train_00202
+To find what Susie will have, the addition calculate first we must and then to her original sum join it.
+Twenty percent of the two hundred dollars already in her bank: (20/100) x 200 = 0.20 x 200 = 40 dollars is what she adds.
+Now pause, for forty is the ADDITION and not the final amount. Reporting forty the common error here is.
+More money she puts in, so the total grows rather than being replaced: 200 + 40 = 240 dollars.
+Thus, two hundred forty dollars in her piggy bank Susie will have.
+Final answer: 240
+
+@@gsm8k_train_00205
+To find the plates Wickham needs, the true head count determine first we must, for more people arrive than were invited.
+Thirty people he invites, and all of them attend. Half of those guests bring another person with them: 30/2 = 15 extra people arrive.
+Those fifteen are additional bodies rather than a portion of the thirty, so join them to the invited: 30 + 15 = 45 people at the party.
+Now the plates. Three courses each person eats, and a fresh plate every course demands, so each guest consumes three plates and not one: 45 x 3 = 135 plates.
+Two errors this problem invites: using thirty instead of forty-five, and forgetting that each guest needs three plates.
+Thus, one hundred thirty-five plates in total Wickham needs.
+Final answer: 135
+
+@@gsm8k_train_00208
+To find what remains in the piggy bank, into months the saving period convert we must first, for monthly he saves.
+Two years of saving, and twelve months fill each year: 2 x 12 = 24 months of deposits.
+Twenty-five dollars he puts in during each of those months: 24 x 25 = 600 dollars accumulated in all.
+Then the car repair took its share away. Away means subtract, for the money left the bank and did not join it: 600 - 400 = 200 dollars.
+Thus, two hundred dollars left in his piggy bank there are.
+Final answer: 200
