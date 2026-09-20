@@ -30,6 +30,24 @@ for m in json.load(open("outputs/sft-lora/epoch_checkpoints.json")):
         print(f"{int(m['epoch'])}\t{m['path']}")
 PY
 
+# Batch 16 leaves an A100 at ~46% utilisation. The sweep runs at 64, and the
+# BASE row is regenerated at 64 as part of it, so every row in the sweep table
+# is produced under identical decoding. base/ (batch 16) is left untouched, so
+# base@16 vs base@64 on identical prompts measures directly whether batch size
+# perturbs greedy decoding at all.
+BS=64
+
+echo "===== base, regenerated at batch $BS for sweep consistency ====="
+for SET in \
+  "data/persona/persona_eval_prompts.jsonl persona_eval" \
+  "data/math/gsm8k_eval.jsonl gsm8k_eval" \
+  "data/math/gsm8k_persona_math_eval.jsonl persona_math_eval"; do
+  set -- $SET
+  python scripts/generate.py --model "$BASE" --prompts "$1" \
+      --out "outputs/base-bs$BS/$2.jsonl" --batch-size "$BS" \
+      --system-prompt qwen_default
+done
+
 while IFS=$'\t' read -r EPOCH CKPT; do
   echo "===== epoch $EPOCH : $CKPT ====="
   for SET in \
@@ -37,11 +55,14 @@ while IFS=$'\t' read -r EPOCH CKPT; do
     "data/math/gsm8k_eval.jsonl gsm8k_eval" \
     "data/math/gsm8k_persona_math_eval.jsonl persona_math_eval"; do
     set -- $SET
-    OUT="outputs/sft-epoch$EPOCH/$2.jsonl"
-    [ -f "$OUT" ] && { echo "  $OUT exists, skipping"; continue; }
-    python scripts/generate.py --adapter "$CKPT" --prompts "$1" --out "$OUT"
+    python scripts/generate.py --adapter "$CKPT" --prompts "$1" \
+        --out "outputs/sft-epoch$EPOCH/$2.jsonl" --batch-size "$BS"
   done
 done < /tmp/epoch_paths.txt
+
+echo
+echo "===== batch-size sensitivity check (base@16 vs base@64) ====="
+python scripts/eval_math.py outputs/base/gsm8k_eval.jsonl outputs/base-bs64/gsm8k_eval.jsonl
 
 echo
 echo "===== MATH ACCURACY BY EPOCH ====="
