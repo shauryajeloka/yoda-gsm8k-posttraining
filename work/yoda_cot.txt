@@ -3234,3 +3234,726 @@ Seventeen dollars a pound the shrimp cost: 10 x 17 = 170 dollars.
 Note the trap of pricing the shrimp individually, when the price is quoted per pound and a conversion is therefore needed.
 Thus, one hundred seventy dollars on the appetizer Wayne will spend.
 Final answer: 170
+
+@@gsm8k_train_01744
+To find the farmer's takings, each crop separately handle we must, for differently they are bundled and differently priced.
+The potatoes first. Two hundred fifty of them he harvested, bundled in twenty-fives, so the bundles number 250/25 = 10 bundles. Each such bundle sold for a dollar ninety, so the potatoes brought ten times one dollar ninety, which is 19 dollars.
+The carrots next. Three hundred twenty of them he harvested, bundled in twenties, so the bundles number 320/20 = 16 bundles. Each carrot bundle sold for two dollars, so the carrots brought sixteen times two dollars, which is 32 dollars.
+Now both crops together, since he sold all his harvest: 19 + 32 = 51 dollars.
+Note the trap of pricing the individual vegetables rather than the bundles, for the prices are quoted per bundle.
+Thus, fifty-one dollars in all the farmer got.
+Final answer: 51
+
+@@gsm8k_train_01746
+To find the company's monthly payroll, one employee's monthly wage determine first we must, and then the new head count apply.
+The head count first. Five hundred employees the company had, and two hundred more were hired in August: 500 + 200 = 700 employees.
+Now one employee's wage, built up step by step. Twelve dollars an hour across ten hours gives a daily wage of 12 x 10 = 120 dollars. Five working days a week gives a weekly wage of 120 x 5 = 600 dollars. Four weeks a month gives a monthly wage of 600 x 4 = 2400 dollars for a single employee.
+Finally the whole payroll, that monthly wage across all seven hundred employees: 2400 x 700 = 1680000 dollars.
+Note the trap of using the old five hundred employees, when the question asks about the month AFTER the new hires.
+Thus, one million six hundred eighty thousand dollars per month the company pays.
+Final answer: 1680000
+
+@@gsm8k_train_01750
+To find the difference, Samara's spending total first we must, for it is spread across three items.
+Samara spent twenty-five dollars on oil, four hundred sixty-seven on tires and seventy-nine on detailing: 25 + 467 + 79 = 571 dollars on her car.
+Alberto spent two thousand four hundred fifty-seven dollars on a single engine.
+Now the difference between them: 2457 - 571 = 1886 dollars.
+Note the trap of comparing Alberto's engine against a single one of Samara's items rather than against her whole spending.
+Thus, one thousand eight hundred eighty-six more dollars Alberto spent on his car.
+Final answer: 1886
+
+@@gsm8k_train_01751
+To find the days of rain, into hours the sewer capacity convert first we must, and only then into days.
+The sewers hold two hundred forty thousand gallons of run-off, and each hour of rain produces one thousand gallons. So the hours of rain they can handle number 240000/1000 = 240 hours.
+Now into days, and twenty-four hours fill a day: 240/24 = 10 days.
+Note the trap of dividing the gallons by twenty-four directly, which would mix gallons with hours and give nonsense.
+Thus, ten days of rain the sewers can handle before they overflow.
+Final answer: 10
+
+@@gsm8k_train_01753
+To find the cost, the packets count first we must, then the boxes, then the dollars.
+Christopher uses one packet in each coffee and drinks two coffees a day: 1 x 2 = 2 packets every day.
+Across ninety days: 2 x 90 = 180 packets needed.
+The packets come thirty to a box, so the boxes required number 180/30 = 6 boxes.
+Each box costs four dollars: 6 x 4 = 24 dollars.
+Note the trap of pricing the packets individually, when they are sold only by the box.
+Thus, twenty-four dollars it will cost him to last ninety days.
+Final answer: 24
+
+@@gsm8k_train_01768
+To find the cats in the shelter, through each day in order follow we must.
+Jeff begins with twenty cats in his care.
+On Monday he found two kittens and brought them in: 20 + 2 = 22 cats.
+On Tuesday he found one more cat with a leg injury: 22 + 1 = 23 cats.
+On Wednesday three people adopted two cats each, so the departures number 3 x 2 = 6 cats.
+What remains: 23 - 6 = 17 cats.
+Note the trap of counting three adoptions rather than six cats, for each person took two.
+Thus, seventeen cats Jeff currently has in his shelter.
+Final answer: 17
+
+@@gsm8k_train_01770
+To find each body section's length, the fixed parts of the essay measure first we must, and the remainder divide.
+The introduction is four hundred fifty words, given to us.
+The conclusion is triple the introduction: 3 x 450 = 1350 words.
+The introduction and conclusion together: 450 + 1350 = 1800 words of fixed material.
+The whole essay must run five thousand words, so the body sections share 5000 - 1800 = 3200 words between them.
+Four body sections of equal length there are: 3200/4 = 800 words each.
+Note the trap of dividing the full five thousand by four, which would ignore the introduction and conclusion entirely.
+Thus, eight hundred words each body section is.
+Final answer: 800
+
+@@gsm8k_train_01774
+To find the tasters, through halves to bite-size samples travel we must.
+Thirteen apple pies Sedrach has, and each pie divides into two halves: 13 x 2 = 26 halves.
+Each half splits into five bite-size samples: 26 x 5 = 130 samples.
+One person tastes one sample, so the tasters number the same as the samples.
+Note the trap of multiplying the pies by five directly, which would forget the halving step and give sixty-five.
+Thus, one hundred thirty people can taste Sedrach's apple pie.
+Final answer: 130
+
+@@gsm8k_train_01777
+To find the basketballs, two separate sources of them account for we must, which the difficulty here is.
+First the basketballs that came WITH the hoops. Sixty hoops were donated and half of them included a basketball: 60/2 = 30 basketballs from that source.
+Now the other donations. The pool floats numbered one hundred twenty, but thirty were damaged and discarded before the class arrived, leaving ninety actual float donations.
+The non-basketball donations then are the sixty hoops, the ninety floats, the fifty footballs and the forty tennis balls, which together make two hundred forty. So the remaining donations are 300 - 240 = 60 loose basketballs.
+Both sources together: 30 + 60 = 90 basketballs.
+Thus, ninety basketballs have been donated.
+Final answer: 90
+
+@@gsm8k_train_01779
+To find the two-year total, this year's dreams count first we must, and last year's upon them build.
+Four dreams every day Gavin has had, and a year holds three hundred sixty-five days: 4 x 365 = 1460 dreams this year.
+Last year he had twice as many as this year: 2 x 1460 = 2920 dreams.
+Now both years together: 1460 + 2920 = 4380 dreams.
+Note the trap of doubling the daily rate rather than the yearly total, which would give a very different answer.
+Thus, four thousand three hundred eighty dreams in the two years he has had.
+Final answer: 4380
+
+@@gsm8k_train_01792
+To find the flowers needed, one centerpiece compose first we must, and then multiply by the tables.
+Each arrangement needs eight roses, twelve daisies, three snapdragons, and twice as many lilies as snapdragons: 2 x 3 = 6 lilies.
+So a single centerpiece holds 8 + 12 + 3 + 6 = 29 flowers.
+Ten tables the reception will have, each wanting one centerpiece: 10 x 29 = 290 flowers.
+Note the trap of reading twice as many lilies as the whole arrangement rather than as the snapdragons alone.
+Thus, two hundred ninety flowers Marta will need in total.
+Final answer: 290
+
+@@gsm8k_train_01798
+To find John's current bench press, the injury apply first we must and the training after, in that order.
+His bench press was five hundred pounds before the injury. The injury took it DOWN by eighty percent, which means twenty percent of the original remains: 500 x (1 - 0.80) = 500 x 0.20 = 100 pounds after the injury.
+Then training tripled what he could bench, and tripled the post-injury hundred rather than the original five hundred: 100 x 3 = 300 pounds.
+Note the trap of tripling the five hundred, which would ignore the injury altogether and give fifteen hundred.
+Thus, three hundred pounds his bench press is now.
+Final answer: 300
+
+@@gsm8k_train_01812
+To find the nap time, Bret's occupied hours total first we must.
+Two hours he spends reading a book, one hour eating his dinner, and three hours watching movies: 2 + 1 + 3 = 6 hours occupied.
+The train ride runs nine hours in total, so what remains for a nap is 9 - 6 = 3 hours.
+Note the trap of subtracting only one activity, or of adding the nap into the occupied time.
+Thus, three hours he has left to take a nap.
+Final answer: 3
+
+@@gsm8k_train_01814
+To find the percentage preferring corn, all the children count first we must.
+Six kids prefer peas, nine prefer carrots and five prefer corn: 6 + 9 + 5 = 20 children in the daycare.
+Now the corn's share as a percentage, which is the corn-preferrers divided by all the children and multiplied by a hundred: (5/20) x 100 = 25 percent.
+Note the trap of reporting five, which is a count rather than a percentage, or of dividing by one of the other groups.
+Thus, twenty-five percent of the children prefer corn.
+Final answer: 25
+
+@@gsm8k_train_01816
+To find the legs walking together, each kind of creature separately count we must.
+Two humans there are, Johnny and his son, and two legs each human walks on, giving four human legs between them.
+Two dogs there are, and four legs each dog walks on: 2 x 4 = 8 legs from the dogs.
+Now all the legs together, humans and dogs both: 2 + 2 + 8 = 12 legs.
+Note the trap of forgetting the son, or of giving the dogs two legs apiece.
+Thus, twelve legs' worth of organisms are traveling together for this walk.
+Final answer: 12
+
+@@gsm8k_train_01819
+To find Teresa's spending, each item separately price we must, and the fractional pounds carefully handle.
+The sandwiches first. Two of them at seven dollars seventy-five each: 2 x 7.75 = 15.50 dollars.
+The salami next, at four dollars flat.
+The brie after that, three times the price of the salami: 3 x 4.00 = 12.00 dollars.
+The olives, which are ten dollars a pound and she buys a quarter pound: (1/4) x 10.00 = 2.50 dollars.
+The feta, eight dollars a pound and she buys half a pound: (1/2) x 8.00 = 4.00 dollars.
+The French bread, two dollars flat.
+Now sum them in order. Sandwiches and salami: 15.50 + 4.00 = 19.50. With the brie: 19.50 + 12.00 = 31.50. With the olives: 31.50 + 2.50 = 34. With the feta: 34 + 4.00 = 38. With the bread: 38 + 2.00 = 40 dollars.
+Thus, forty dollars Teresa spends at the local shop.
+Final answer: 40
+
+@@gsm8k_train_01823
+To find Gerald's sentence, into months every part convert we must, for in months the answer is wanted.
+The assault sentence is three months. The poisoning sentence is two years, which in months is twenty-four.
+Those base sentences together: 3 + 24 = 27 months.
+Now the extension, which is one third of that base for a third offence: (1/3) x 27 = 9 months added.
+The base and the extension joined: 27 + 9 = 36 months.
+Note the trap of taking a third of only one of the two sentences, or of leaving the two years unconverted.
+Thus, thirty-six months in jail Gerald spends.
+Final answer: 36
+
+@@gsm8k_train_01824
+To find the total donations, each company measured against another we must handle, and all five summed at the end.
+Foster Farms is the anchor, donating forty-five dressed chickens.
+American Summits donated twice the number of bottled waters as Foster Farms donated chickens: 2 x 45 = 90 items.
+Hormel donated three times Foster Farms' number: 3 x 45 = 135 items.
+Boudin Butchers donated one third of what Hormel donated: (1/3) x 135 = 45 items.
+Del Monte Foods donated thirty fewer bottles than American Summits: 90 - 30 = 60 items.
+Now all five companies together: 45 + 90 + 135 + 45 + 60 = 375 items.
+Note that each company is measured against a different one, so the chain must be read carefully rather than assumed.
+Thus, three hundred seventy-five food items the companies donated in total.
+Final answer: 375
+
+@@gsm8k_train_01825
+To find Tom's saving, what he paid WITH insurance and what he would have paid WITHOUT it compare we must.
+The insurance premiums first. Twenty dollars a month across twenty-four months: 20 x 24 = 480 dollars in premiums.
+Now the procedure. It cost five thousand dollars, and the insurance covers all but twenty percent, so the insurer pays 5000 x (1 - 0.20) = 5000 x 0.80 = 4000 dollars.
+Tom's own share of the procedure is therefore 5000 - 4000 = 1000 dollars out of pocket.
+His total cost with insurance is premiums plus out-of-pocket: 480 + 1000 = 1480 dollars.
+Without insurance he would have paid the full five thousand.
+The saving is the difference: 5000 - 1480 = 3520 dollars.
+Note the trap of forgetting the premiums, which would overstate the saving by four hundred eighty dollars.
+Thus, three thousand five hundred twenty dollars Tom saved by having insurance.
+Final answer: 3520
+
+@@gsm8k_train_01830
+To find the cost of the ice, pounds first we must count, then packs, then dollars.
+Fifteen people will attend, and two pounds of ice each person requires: 15 x 2 = 30 pounds of ice needed.
+The ice comes in one-pound bags, so thirty bags are wanted, and those bags are sold ten to a pack: 30/10 = 3 packs needed.
+Each pack costs three dollars: 3 x 3 = 9 dollars.
+Note the trap of pricing each bag at three dollars, when three dollars buys a pack of ten.
+Thus, nine dollars on ice Chad will spend.
+Final answer: 9
+
+@@gsm8k_train_01832
+To find the volleyballs, the four described kinds count first we must, and the fifth by subtraction appears.
+The soccer balls are given: twenty of them.
+The basketballs are five more than the soccer balls: 20 + 5 = 25 basketballs.
+The tennis balls are twice the soccer balls: 2 x 20 = 40 tennis balls.
+The baseballs are ten more than the soccer balls: 20 + 10 = 30 baseballs.
+Those four kinds together: 20 + 25 + 40 + 30 = 115 balls.
+Reynald bought one hundred forty-five balls in all, so the volleyballs are whatever remains: 145 - 115 = 30 volleyballs.
+Note that every described kind is measured against the soccer balls, never against each other.
+Thus, thirty volleyballs there were.
+Final answer: 30
+
+@@gsm8k_train_01843
+To find the gallons Martha needs, her car's efficiency determine first we must, for only Darlene's is given.
+Darlene's car gets twenty miles to the gallon. Martha's car gets half as many miles per gallon: 20/2 = 10 miles per gallon.
+Now the trip. Three hundred miles she must travel, and gallons required is distance divided by miles per gallon: 300/10 = 30 gallons.
+Note the trap of using Darlene's twenty, which would understate the fuel by half.
+Thus, thirty gallons Martha's car requires for the three-hundred-mile trip.
+Final answer: 30
+
+@@gsm8k_train_01849
+To find Jennifer's total travel, each museum as a ROUND trip count we must, for home again she must come.
+The near museum first. Five miles away it sits, so the journey there and back is 5 + 5 = 10 miles.
+The far museum next. Fifteen miles away, so there and back is 15 + 15 = 30 miles.
+Both trips together, on their two separate days: 10 + 30 = 40 miles.
+Note the trap of counting only the outward journeys and reporting twenty, which would strand her at the museums.
+Thus, forty miles in total Jennifer will travel.
+Final answer: 40
+
+@@gsm8k_train_01854
+To find the corn cobs, pounds first we must compute, and then divide by the weight of one ear.
+Two bushels Clyde picked, and each bushel weighs fifty-six pounds: 2 x 56 = 112 pounds of corn.
+Each individual ear weighs half a pound, so the ears number 112/0.5 = 224 ears.
+Note that dividing by a half DOUBLES the number, which is why two bushels yield so many ears, and a careless reader might divide by two instead.
+Thus, two hundred twenty-four individual corn cobs Clyde picked.
+Final answer: 224
+
+@@gsm8k_train_01856
+To find the slices, each person's watermelons separately cut we must, for differently they sliced them.
+Danny brought three watermelons and cut each into ten slices: 3 x 10 = 30 slices from Danny.
+His sister brought one watermelon and cut it into fifteen slices: 1 x 15 = 15 slices from her.
+Now both contributions together: 30 + 15 = 45 slices.
+Note the trap of applying one slicing rate to all four melons, when brother and sister cut differently.
+Thus, forty-five watermelon slices there are in total at the picnic.
+Final answer: 45
+
+@@gsm8k_train_01861
+To find the dogs' legs, the cats count first we must, then the dogs, and only then the legs.
+Three hundred animals live on the street in all.
+Two thirds of them are cats: (2/3) x 300 = 200 cats.
+The rest are dogs, and the rest is the whole less the cats: 300 - 200 = 100 dogs.
+Now the legs. Each dog has four legs: 100 x 4 = 400 legs.
+Note that the question asks only about the DOGS' legs, so the cats' legs enter not into the answer at all.
+Thus, four hundred legs of dogs there are on the street.
+Final answer: 400
+
+@@gsm8k_train_01862
+To find the cousins, the cupcakes count first we must, for they are given in dozens.
+Four dozen cupcakes Jason bought, and a dozen is twelve: 4 x 12 = 48 cupcakes.
+Three cupcakes each cousin receives, so the cousins number 48/3 = 16.
+Note the trap of dividing the four dozen by three directly and reporting one and a third, which would forget to unfold the dozens first.
+Thus, sixteen cousins Jason has.
+Final answer: 16
+
+@@gsm8k_train_01863
+To find the travel time, the whole distance determine first we must, and note that the cities lie on OPPOSITE sides of Red Deer.
+Edmonton sits two hundred twenty kilometres north of Red Deer, and Calgary one hundred ten kilometres south of it. Because they lie on opposite sides, the distances ADD rather than subtract: 220 + 110 = 330 kilometres from Edmonton to Calgary.
+Now the time, at one hundred ten kilometres each hour: 330/110 = 3 hours.
+Note the trap of subtracting the two distances, which would be right only if both cities lay on the same side.
+Thus, three hours it will take to get from Edmonton to Calgary.
+Final answer: 3
+
+@@gsm8k_train_01865
+To find all the coins, each kind separately track we must, and the nickels carefully, for their gift is described rather than given.
+The additional nickels are twice as many as Linda originally had, and she had five: 2 x 5 = 10 more nickels.
+Now each kind's total. Dimes: 2 + 2 = 4 dimes. Quarters: 6 + 10 = 16 quarters. Nickels: 5 + 10 = 15 nickels.
+All three kinds together: 4 + 16 + 15 = 35 coins.
+Note that the question asks for the NUMBER of coins rather than their value, so no conversion to cents is needed here.
+Thus, thirty-five coins altogether Linda has.
+Final answer: 35
+
+@@gsm8k_train_01874
+To find what Sonny kept, everything he gave away total first we must.
+Twelve boxes went to his brother, nine to his sister, and seven to his cousin: 12 + 9 + 7 = 28 boxes given away.
+Forty-five boxes he received from his friend, so what remains for him is 45 - 28 = 17 boxes.
+Note the trap of subtracting only one recipient's share, which would leave him with far too many.
+Thus, seventeen boxes of cookies were left for him.
+Final answer: 17
+
+@@gsm8k_train_01878
+To find Emma's future age, the age gap between the sisters determine first we must, for it never changes.
+Emma is seven years old, and her sister is nine years older: 7 + 9 = 16 years old the sister is now.
+The gap between them is therefore 16 - 7 = 9 years, and constant that gap remains at every moment of their lives.
+To reach fifty-six, the sister must grow 56 - 16 = 40 more years.
+Emma grows those same forty years alongside her: 7 + 40 = 47 years.
+Note the trap of subtracting nine from fifty-six directly without checking the gap, which happens to work here but reasons less carefully.
+Thus, forty-seven years old Emma will be when her sister is fifty-six.
+Final answer: 47
+
+@@gsm8k_train_01882
+To find the tree's original bananas, everything Raj took determine first we must.
+Raj has eaten seventy bananas, and he has twice as many remaining in his basket: R = 2 x 70 = 140 bananas still in the basket.
+So the total Raj cut from the tree is what he ate plus what he still holds: 70 + 140 = 210 bananas.
+Now the tree. With B for its original count, one hundred bananas remain after Raj cut his share, so B - 100 = 210.
+Solve for B: B = 210 + 100, which gives B = 310 bananas.
+Note the trap of forgetting the hundred still hanging on the tree, which would understate the original count.
+Thus, three hundred ten bananas were on the tree initially.
+Final answer: 310
+
+@@gsm8k_train_01856
+To find the total slices at the picnic, each person's watermelons separately cut we must, for brother and sister sliced them differently and averaging the two would mislead.
+Danny first. Three watermelons he brought to the family picnic, and each one of them he cut into ten slices. So the slices from Danny number 3 x 10 = 30 slices.
+His sister next. One watermelon only she brought, but she cut hers into fifteen slices rather than ten. So the slices from her number 1 x 15 = 15 slices.
+Now both contributions together, for the question asks how many slices there are in total at the picnic rather than from either person alone: 30 + 15 = 45 slices.
+Note the trap of applying a single slicing rate to all four melons, which would give either forty or sixty and be wrong in both cases.
+Thus, forty-five watermelon slices there are in total at the picnic.
+Final answer: 45
+
+@@gsm8k_train_01862
+To find how many cousins Jason has, the cupcakes count first we must, for the question gives them in dozens rather than as a plain number.
+Four dozen cupcakes Jason bought. A dozen is twelve, so the cupcakes number 4 x 12 = 48 in all.
+Now the sharing. Three cupcakes Jason plans to give to each of his cousins, so the number of cousins is the cupcakes divided by the share each receives: 48/3 = 16 cousins.
+Note the trap of dividing the four dozen by three without unfolding the dozens first, which would give one and a third cousins and should immediately look absurd, for a person cannot be a fraction.
+Check the shape of the answer: sixteen cousins at three cupcakes each is forty-eight cupcakes exactly, with none left over.
+Thus, sixteen cousins Jason has.
+Final answer: 16
+
+@@gsm8k_train_01885
+To find Michael's digging hours, his father's hole measure first we must, for Michael's is described against it.
+The father dug at four feet per hour for four hundred hours, so his hole's depth is rate times time: 4 x 400 = 1600 feet deep.
+Now Michael's hole. Twice his father's depth would be 2 x 1600 = 3200 feet. But Michael wants four hundred feet LESS than that doubling: 3200 - 400 = 2800 feet deep.
+Michael works at the same rate of four feet per hour, so his time is depth divided by rate: 2800/4 = 700 hours.
+Note the trap of subtracting the four hundred before doubling, which would misread the order of the description entirely.
+Thus, seven hundred hours it will take Michael to dig his hole.
+Final answer: 700
+
+@@gsm8k_train_01895
+To find Natalia's total distance, each day measured against the right earlier day we must handle.
+Monday is given: forty kilometres. Tuesday is given as well: fifty kilometres.
+Wednesday she rode fifty percent FEWER kilometres than the day before, and the day before was Tuesday. Fifty percent of fifty is 0.5 x 50 = 25 kilometres, so Wednesday's distance is 50 - 25 = 25 kilometres.
+Thursday she rode as many as the sum of Monday and Wednesday: 40 + 25 = 65 kilometres.
+Now all four days together: 40 + 50 + 25 + 65 = 180 kilometres.
+Note that fifty percent fewer means half of the previous day rather than half of the whole week.
+Thus, one hundred eighty kilometres in total Natalia rode.
+Final answer: 180
+
+@@gsm8k_train_01896
+To find the pair's goals, Michael's count determine first we must, for only Bruce's is given.
+Bruce scored four goals, stated plainly.
+Michael scored three times more than Bruce: 3 x 4 = 12 goals.
+Now both players together, which the question asks rather than either alone: 4 + 12 = 16 goals.
+Note the trap of reporting twelve, which counts Michael and forgets Bruce.
+Thus, sixteen goals Bruce and Michael both scored.
+Final answer: 16
+
+@@gsm8k_train_01901
+To find the whole journey time, the pair's speed determine first we must, for the remaining leg depends upon it.
+The first stretch. They drove one quarter of the two hundred miles: (1/4) x 200 = 50 miles, and one hour it took them.
+From that their speed follows: fifty miles in one hour, so 50/1 = 50 miles per hour.
+The remaining distance is the whole less what they covered: 200 - 50 = 150 miles.
+At that same speed, the remaining leg takes 150/50 = 3 hours of driving.
+Now the whole journey, and here the lunch must not be forgotten. One hour of initial driving, one hour of lunch, and three hours of further driving: 1 + 1 + 3 = 5 hours.
+Note the trap of omitting the lunch hour, which the question explicitly includes in the elapsed time.
+Thus, five hours the total amount of time they took to travel between the two towns.
+Final answer: 5
+
+@@gsm8k_train_01903
+To find the month's video hours, June split into its two halves we must, for differently she worked in each.
+June holds thirty days, so halfway through is fifteen days, and fifteen days remain after that.
+The first half first. Ten one-hour videos each day she uploads, which is ten video hours daily, across fifteen days: 10 x 15 = 150 video hours.
+The second half next. She doubled the number of video hours: 2 x 10 = 20 hours each day, across the remaining fifteen days: 20 x 15 = 300 video hours.
+Both halves together: 150 + 300 = 450 video hours.
+Note the trap of doubling the whole first-half total rather than the daily rate, which happens to give the same answer here but reasons differently.
+Thus, four hundred fifty video hours she has uploaded by the end of the month.
+Final answer: 450
+
+@@gsm8k_train_01904
+To find the daily collection, both kinds of item count together we must, for they share a single daily quota.
+Thirty leaves and twenty bugs Carla must collect: 30 + 20 = 50 items in total.
+Ten days she has before the project is due, and the same amount each day she wants to collect: 50/10 = 5 items per day.
+Note the trap of computing a separate daily rate for leaves and for bugs, when the question asks for items collected each day overall.
+Thus, five items each day Carla needs to collect.
+Final answer: 5
+
+@@gsm8k_train_01906
+To find Nancy's weight, from the part back to the whole we must climb.
+Her daily water intake equals sixty percent of her body weight, and that intake is fifty-four pounds. So with W for her weight: 0.60 x W = 54.
+Solve for W by dividing both sides by sixty hundredths: W = 54/0.60. Since sixty percent is three fifths, dividing by it means multiplying by five thirds: 54 x (5/3), and a third of fifty-four is 18, so the result is 18 x 5 = 90 pounds.
+Note the trap of taking sixty percent OF the fifty-four, which would shrink the answer instead of growing it.
+Thus, ninety pounds Nancy weighs.
+Final answer: 90
+
+@@gsm8k_train_01910
+To find the six-month harvest, each farm separately handle we must, and three two-month periods count.
+Six months holds three stretches of two months, and that multiplier applies to both farms.
+Johnson first. His single hectare yields eighty corn every two months, so across three such stretches: 80 x 3 = 240 corn.
+The neighbour next. Each of his hectares yields twice Johnson's amount: 2 x 80 = 160 corn every two months per hectare. He owns two hectares, so his farm yields 160 x 2 = 320 corn every two months. Across three stretches: 320 x 3 = 960 corn.
+Both farmers together: 240 + 960 = 1200 corn.
+Thus, one thousand two hundred corn altogether they can harvest after six months.
+Final answer: 1200
+
+@@gsm8k_train_01913
+To find the total days, each job separately time we must, and then add, for one tractor cannot do both at once.
+The ploughing first. Fifty-five acres of farmland at ten acres per day: 55/10 = 5.5 days.
+The mowing next. Thirty acres of grassland at twelve acres per day: 30/12 = 2.5 days.
+Now both jobs together, one after the other since the same tractor does both: 5.5 + 2.5 = 8 days.
+Note the trap of supposing the jobs could run in parallel, when a single tractor forbids it.
+Thus, eight days it would take him to plough and mow his land.
+Final answer: 8
+
+@@gsm8k_train_01920
+To find the slices left, through each meal in order subtract we must.
+Blanch begins with fifteen slices in the fridge.
+Breakfast takes four: 15 - 4 = 11 slices left.
+Lunch takes two: 11 - 2 = 9 slices left.
+The snack takes two more: 9 - 2 = 7 slices left.
+Dinner takes five: 7 - 5 = 2 slices left.
+Note the trap of overlooking the snack, which sits between lunch and dinner and is easily missed.
+Thus, two slices of pizza are left.
+Final answer: 2
+
+@@gsm8k_train_01922
+To find what Stormi still needs, her earnings total first we must.
+Three cars she washes at ten dollars each, so the car washing brings three times ten, which is 30 dollars.
+Two lawns she mows at thirteen dollars each, so the mowing brings two times thirteen, which is 26 dollars.
+Her earnings together: 30 + 26 = 56 dollars.
+The bicycle costs eighty dollars, so the shortfall is 80 - 56 = 24 dollars.
+Note the trap of reporting fifty-six, which is what she has rather than what she still lacks.
+Thus, twenty-four dollars more Stormi needs to make.
+Final answer: 24
+
+@@gsm8k_train_01939
+To find what Jerome keeps, his whole fortune determine first we must, for only half of it is given.
+Half of Jerome's money was forty-three dollars, so his total is 43 x 2 = 86 dollars.
+Now the giving. Meg received eight dollars. Bianca received thrice as much as Meg: 3 x 8 = 24 dollars.
+Both gifts together: 8 + 24 = 32 dollars given away.
+What Jerome has left: 86 - 32 = 54 dollars.
+Note the trap of subtracting the gifts from the forty-three rather than from the full eighty-six.
+Thus, fifty-four dollars Jerome has left.
+Final answer: 54
+
+@@gsm8k_train_01941
+To find Saheed's money, down the chain from Vika to Kayla travel we must first.
+Vika made eighty-four dollars, given to us.
+Kayla made thirty dollars LESS than Vika: 84 - 30 = 54 dollars.
+Saheed made four times as much as KAYLA, not as Vika: 4 x 54 = 216 dollars.
+Note the trap of quadrupling Vika's eighty-four, which would misread whose earnings Saheed is measured against.
+Thus, two hundred sixteen dollars Saheed made.
+Final answer: 216
+
+@@gsm8k_train_01943
+To find the family's cost, the entrance and the attraction separately price we must, and count the people carefully.
+The family numbers four children, two parents and one grandmother, which is seven people in all.
+The entrance ticket costs five dollars for every person regardless of age: 7 x 5 = 35 dollars to enter.
+Now the attraction, where children and adults are priced differently. The four kids at two dollars each give 4 x 2 = 8 dollars. The two parents at four dollars each give 2 x 4 = 8 dollars. The grandmother pays the adult rate of four dollars as well. So the attraction costs 8 + 8 + 4 = 20 dollars.
+Both together: 35 + 20 = 55 dollars.
+Note the trap of forgetting the grandmother, or of charging her the child rate.
+Thus, fifty-five dollars the family would pay.
+Final answer: 55
+
+@@gsm8k_train_01945
+To find the apples, what the other fruit already weighs determine first we must.
+Diego buys a pound of watermelon, a pound of grapes and a pound of oranges: 1 + 1 + 1 = 3 pounds of fruit already accounted for.
+His bookbag carries twenty pounds in all, so what remains for apples is 20 - 3 = 17 pounds.
+Note the trap of dividing the twenty by four as though the fruits shared equally, when three of them are fixed at a pound each.
+Thus, seventeen pounds of apples Diego can buy.
+Final answer: 17
+
+@@gsm8k_train_01947
+To find the pair's jellybeans, Caleb's dozens unfold first we must.
+Three dozen jellybeans Caleb has, and a dozen is twelve: 3 x 12 = 36 jellybeans.
+Sophie has half as many as Caleb: 36/2 = 18 jellybeans.
+Now both of them together, which the question asks rather than either alone: 36 + 18 = 54 jellybeans.
+Note the trap of halving the three dozen before unfolding it, or of reporting only Sophie's share.
+Thus, fifty-four jellybeans they have in total.
+Final answer: 54
+
+@@gsm8k_train_01885
+To find how many hours Michael must dig, his father's hole measure first we must, for Michael's ambition is described entirely against it.
+The father's hole first. He dug at a rate of four feet every hour, and four hundred hours he took at that work. Depth is rate multiplied by time, so his hole reached 4 x 400 = 1600 feet.
+Now Michael's hole, and the order of the description matters greatly here. Twice the depth of his father's hole would be 2 x 1600 = 3200 feet. But Michael wants a hole four hundred feet LESS DEEP than that doubling, so subtract: 3200 - 400 = 2800 feet is the depth he intends.
+Finally Michael's time. He works at the same rate of four feet per hour that his father did, so his time is his depth divided by that rate: 2800/4 = 700 hours.
+Note the trap of subtracting the four hundred before doubling, which would misread the description entirely and give a far shallower hole.
+Thus, seven hundred hours it will take Michael to dig his hole.
+Final answer: 700
+
+@@gsm8k_train_01903
+To find the month's total video hours, June split into its two halves we must, for at different paces she worked in each.
+June holds thirty days in all. Halfway through the month is therefore fifteen days, and fifteen days remain after that point.
+The first half first. Allison uploads ten one-hour videos each day, which amounts to ten video hours daily. Across the first fifteen days that gives 10 x 15 = 150 video hours.
+The second half next. On the remaining days she doubled the number of video hours she uploaded, so her new daily rate is 2 x 10 = 20 video hours each day. Across the remaining fifteen days that gives 20 x 15 = 300 video hours.
+Now both halves of the month together: 150 + 300 = 450 video hours.
+Note the trap of doubling only the daily video count without also counting the days, or of treating the whole month as running at one rate.
+Thus, four hundred fifty video hours she has uploaded at the end of the month.
+Final answer: 450
+
+@@gsm8k_train_01906
+To find Nancy's body weight, from the part back to the whole climb we must, for the question gives us a fraction of her weight rather than the weight itself.
+Her daily water intake equals sixty percent of her body weight, and that intake is fifty-four pounds. So with W standing for her weight: 0.60 x W = 54.
+Now solve for W. Dividing both sides by sixty hundredths gives W = (54)/(0.60).
+Sixty percent is three fifths, and dividing by three fifths is the same as multiplying by five thirds, so W = 54 x (5)/(3).
+A third of fifty-four is 54/3 = 18, and five of those thirds gives 18 x 5 = 90 pounds.
+Note the trap of taking sixty percent OF the fifty-four, which would shrink the answer to thirty-two point four rather than growing it, and growing it we must, since the intake is only part of her weight.
+Thus, ninety pounds Nancy weighs.
+Final answer: 90
+
+@@gsm8k_train_01910
+To find the six-month harvest, each farm separately handle we must, and the number of two-month stretches count carefully.
+Six months contains three stretches of two months, and that multiplier applies to both farms alike.
+Johnson's farm first. He owns a single hectare, and it yields eighty corn every two months. Across the three stretches of the six months, his farm gives 80 x 3 = 240 corn.
+The neighbour's farm next, and two adjustments it needs. Each of his hectares yields twice what Johnson's does: 2 x 80 = 160 corn every two months per hectare. But he owns two hectares rather than one, so his whole farm yields 160 x 2 = 320 corn every two months. Across the three stretches: 320 x 3 = 960 corn.
+Now both farmers together, which the question asks: 240 + 960 = 1200 corn.
+Note the two traps: forgetting that the neighbour has two hectares, and forgetting that six months holds three two-month periods rather than six.
+Thus, one thousand two hundred corn altogether they can harvest after six months.
+Final answer: 1200
+
+@@gsm8k_train_01945
+To find the pounds of apples Diego can buy, what the other fruit already weighs determine first we must.
+Diego's bookbag carries twenty pounds of fruit home, and that is his hard limit.
+Now the fruit already chosen. He buys a pound of watermelon, a pound of grapes, and a pound of oranges. Each of those is exactly one pound, so together they weigh 1 + 1 + 1 = 3 pounds of his allowance.
+The apples may fill whatever capacity remains after those three: 20 - 3 = 17 pounds.
+Note the trap of dividing the twenty pounds evenly among the four kinds of fruit, as though each should get a quarter. Three of the fruits are fixed at a single pound each by the question, and the apples simply take the rest.
+Thus, seventeen pounds of apples Diego can buy.
+Final answer: 17
+
+@@gsm8k_train_01906
+To find Nancy's body weight, from the part back to the whole climb we must, for the question hands us a fraction of her weight rather than the weight itself.
+Her daily water intake equals sixty percent of her body weight, and that intake is fifty-four pounds. So fifty-four pounds IS sixty percent of what we seek, and undoing that percentage is the whole task.
+Dividing by sixty hundredths undoes it directly: 54/0.60 = 90 pounds.
+The same answer by a second road reach we may, and agreement between two roads good evidence is. Sixty percent is three fifths, so fifty-four pounds fills three fifths of her weight. One fifth is therefore 54/3 = 18 pounds, and the whole five fifths is 18 x 5 = 90 pounds.
+Note the trap of taking sixty percent OF the fifty-four, which would shrink the answer to thirty-two point four. Grow it we must, since the intake is only a part of her weight and the whole is always larger than its part.
+Thus, ninety pounds Nancy weighs.
+Final answer: 90
+
+@@gsm8k_train_01954
+To find the foreign objects, the ticks determine first we must, for only the burrs are given.
+Twelve burrs the dog has, stated plainly.
+The ticks number six times as many as the burrs: 6 x 12 = 72 ticks.
+Now the total of foreign objects, which counts both kinds and not the ticks alone: 12 + 72 = 84 objects.
+Note the trap of reporting seventy-two, which forgets that burrs are foreign objects too.
+Thus, eighty-four foreign objects total are caught in the dog's fur.
+Final answer: 84
+
+@@gsm8k_train_01981
+To find the total minutes, the songs count first we must, and only then apply the length of each.
+Kira downloads ten songs in the morning, fifteen more later in the day, and three at night on a friend's recommendation: 10 + 15 + 3 = 28 songs in all.
+Each song runs five minutes, so the total playing time is 28 x 5 = 140 minutes.
+Note the trap of forgetting one of the three download sessions, for the songs arrive in three separate batches across the day.
+Thus, one hundred forty minutes it will take to play all the songs.
+Final answer: 140
+
+@@gsm8k_train_01985
+To find the filling time, the NET rate determine first we must, for the basin leaks while it fills.
+Water arrives at twenty-four gallons every second, but four gallons leak away in that same second. So the basin gains 24 - 4 = 20 gallons each second.
+The basin holds two hundred sixty gallons, so the time to fill it is 260/20 = 13 seconds.
+Note the trap of dividing by the twenty-four and ignoring the leak, which would understate the time.
+Thus, thirteen seconds it would take to fill the basin.
+Final answer: 13
+
+@@gsm8k_train_01990
+To find the third car's year, along the chain of manufacture dates travel we must.
+The first car was made in nineteen seventy, and it was made ten years EARLIER than the second car. So the second car is later: 1970 + 10 = 1980.
+The third car was manufactured twenty years after the second: 1980 + 20 = 2000.
+Note the trap of subtracting the ten years, which would read the first car as the later one rather than the earlier.
+Thus, the third car was manufactured in 2000.
+Final answer: 2000
+
+@@gsm8k_train_01994
+To find the fruits left, each kind separately handle we must, for different fractions were sold.
+The oranges first. Forty of them Tom got, and one quarter were sold: (1/4) x 40 = 10 oranges sold, leaving 40 - 10 = 30 oranges.
+The apples next. Seventy of them, and half were sold: (1/2) x 70 = 35 apples sold, leaving 70 - 35 = 35 apples.
+Now both kinds of remaining fruit together: 30 + 35 = 65 fruits.
+Note the trap of applying one fraction to the combined hundred and ten fruits, when each kind sold at its own rate.
+Thus, sixty-five fruits were left in total.
+Final answer: 65
+
+@@gsm8k_train_01997
+To find how much more Elmer eats than Penelope, down the chain to the mouse travel we must, and then back up to the elephant.
+Penelope the pig eats twenty pounds a day, which is ten times what Greta the goose eats. So Greta eats 20/10 = 2 pounds per day.
+Milton the mouse eats one hundredth of what Greta eats: (1/100) x 2 = 0.02 pounds per day.
+Elmer the elephant eats four thousand times what Milton eats: 4000 x 0.02 = 80 pounds per day.
+Now the comparison the question asks, how much MORE Elmer eats than Penelope: 80 - 20 = 60 pounds per day.
+Note the trap of reporting eighty, which is Elmer's intake rather than his excess over the pig.
+Thus, sixty pounds more per day Elmer the elephant eats than Penelope the pig.
+Final answer: 60
+
+@@gsm8k_train_02002
+To find Pete's shapes, the circles and the squares separately build we must, each from its own part of the real flag.
+The circles first. Half the number of stars on the real flag is 50/2 = 25. Pete used three FEWER than that half: 25 - 3 = 22 circles.
+The squares next. Twice the number of stripes is 2 x 13 = 26. Pete used six MORE than that doubling: 26 + 6 = 32 squares.
+Now both kinds of shape together: 22 + 32 = 54 shapes.
+Note that the circles are built from the stars and the squares from the stripes, so the two chains must not be crossed.
+Thus, fifty-four the combined total of circles and squares on Pete's flag is.
+Final answer: 54
+
+@@gsm8k_train_02003
+To find the bulk boxes, the buyers count first we must, then the packages, then the boxes.
+Three hundred seventy-five shoppers are predicted for the holiday season.
+Every third shopper buys a package of candied yams, so the buyers number 375/3 = 125 shoppers.
+Each buyer takes one package, so one hundred twenty-five packages are needed.
+The store buys them in bulk boxes of twenty-five packages: 125/25 = 5 boxes.
+Note the trap of dividing the shoppers by twenty-five directly, which would skip the every-third-shopper step.
+Thus, five bulk boxes of candied yams the store will need to order.
+Final answer: 5
+
+@@gsm8k_train_02011
+To find the cost, games first we must count, then tokens, then dollars.
+Four friends Oliver is inviting, and each of them is to play sixty games: 4 x 60 = 240 games in all.
+Each game costs two tokens: 240 x 2 = 480 tokens needed.
+Tokens cost thirty for a dollar, so the dollars required number 480/30 = 16 dollars.
+Note the trap of including Oliver himself among the players, when the question speaks of his four friends playing.
+Thus, sixteen dollars it will cost.
+Final answer: 16
+
+@@gsm8k_train_02012
+To find the stickers altogether, up the chain from Ryan climb we must.
+Ryan has thirty stickers, given to us.
+Steven has thrice as many as Ryan: 3 x 30 = 90 stickers.
+Terry has twenty more than STEVEN, not more than Ryan: 90 + 20 = 110 stickers.
+Now all three together: 30 + 90 + 110 = 230 stickers.
+Note the trap of measuring Terry against Ryan, which would give fifty and a wrong total.
+Thus, two hundred thirty stickers they have altogether.
+Final answer: 230
+
+@@gsm8k_train_02013
+To find the slightly used crayons, the other two kinds count first we must, and the rest is what we seek.
+One hundred twenty crayons fill the box.
+The new crayons are one third of them: (1/3) x 120 = 40 crayons.
+The broken crayons are twenty percent: 0.20 x 120 = 24 crayons.
+The slightly used are everything else, so subtract both named kinds from the whole: 120 - (40 + 24), which is 120 - 64 = 56 crayons.
+Note that a fraction and a percentage mix freely here, so long as each is taken of the same one hundred twenty.
+Thus, fifty-six crayons are slightly used.
+Final answer: 56
+
+@@gsm8k_train_02014
+To find the remaining tanks, the fish already housed count first we must.
+Jennifer built three tanks holding fifteen fish each: 3 x 15 = 45 fish already accommodated.
+She needs to house seventy-five fish in total, so the fish still needing homes number 75 - 45 = 30 fish.
+The remaining tanks hold ten fish each: 30/10 = 3 tanks.
+Note the trap of dividing the full seventy-five by ten, which would ignore the tanks she has already built.
+Thus, three more tanks Jennifer needs to build.
+Final answer: 3
+
+@@gsm8k_train_02015
+To find what Mark has left over, his new earnings compute first we must, and then his new expenses subtract.
+The raise first. Five percent of his forty-dollar wage: 40 x (5/100) = 40 x 0.05 = 2 dollars of raise. His new hourly wage is therefore 40 + 2 = 42 dollars.
+Now his hours. Eight hours a day across five days: 8 x 5 = 40 hours each week.
+His weekly earnings then: 42 x 40 = 1680 dollars.
+Now his expenses. Six hundred dollars of old bills plus a hundred-dollar personal trainer: 600 + 100 = 700 dollars weekly.
+What remains: 1680 - 700 = 980 dollars.
+Note the trap of using the old forty-dollar wage, or of forgetting the trainer.
+Thus, nine hundred eighty dollars Mark has left over each week.
+Final answer: 980
+
+@@gsm8k_train_02018
+To find Jessica's bill, the sports channels price first we must, for they are described against the movie channels.
+The basic cable service costs fifteen dollars a month, given directly.
+The movie channels add twelve dollars a month, also given.
+The sports channels cost three dollars LESS than the movie channels: 12 - 3 = 9 dollars a month.
+Now all three together, taken in steps. Basic and movies first: 15 + 12 = 27 dollars. Then the sports added: 27 + 9 = 36 dollars.
+Note the trap of pricing the sports channels three dollars less than the BASIC service rather than less than the movie channels.
+Thus, thirty-six dollars a month Jessica's total payment will be.
+Final answer: 36
+
+@@gsm8k_train_02024
+To find the balloons left, each colour separately handle we must.
+The red balloons first. Twenty there were, and three burst before the party: twenty less three leaves 17 remaining red balloons.
+The green balloons next. Fifteen there were, and two burst: fifteen less two leaves 13 remaining green balloons.
+Now both colours of survivor together: 17 + 13 = 30 balloons.
+Note that the same answer arrives by summing all thirty-five balloons and subtracting the five that burst, and agreement between two roads good evidence is.
+Thus, thirty balloons are left.
+Final answer: 30
+
+@@gsm8k_train_02034
+To find the bus ride's length, everything else in the journey account for we must, and the whole trip into minutes convert.
+The known stretches first. Luke walks fifteen minutes to the train centre. He then waits twice that walking time for the train: 2 x 15 = 30 minutes of waiting. The train journey itself takes six hours, and the final walk is not separately given.
+The whole trip takes eight hours, and in minutes that is 8 x 60 = 480 minutes.
+Now let x be the bus ride in minutes. Everything together must fill the eight hours: x + 15 + 30 + 6 x 60 = 480.
+The train's six hours is three hundred sixty minutes, so the equation becomes x + 15 + 30 + 360 = 480, which simplifies to x + 405 = 480.
+Solve for the bus ride: x = 480 - 405, giving x = 75 minutes.
+Thus, seventy-five minutes the bus ride takes.
+Final answer: 75
+
+@@gsm8k_train_01985
+To find how long the basin takes to fill, the NET rate of filling determine first we must, for the basin leaks even while the waterfall pours into it.
+Water arrives from the waterfall at twenty-four gallons every second. But in that very same second, four gallons escape through the leak. So the basin does not gain twenty-four gallons a second at all.
+The genuine gain each second is the inflow less the outflow: 24 - 4 = 20 gallons every second.
+Now the filling itself. The basin holds two hundred sixty gallons when full, and it starts empty. At a net gain of twenty gallons each second, the time required is the capacity divided by the net rate: 260/20 = 13 seconds.
+Note the trap of dividing the capacity by the twenty-four and ignoring the leak entirely, which would give under eleven seconds and promise a faster fill than reality allows.
+Check the shape of the answer: thirteen seconds exceeds the eleven-ish seconds a leakless basin would need, exactly as a leak demands.
+Thus, thirteen seconds it would take to fill the basin.
+Final answer: 13
+
+@@gsm8k_train_01990
+To find the third car's year of manufacture, along the chain of dates travel we must, and the direction of each step attend to carefully.
+The first car is given: it was made in nineteen seventy.
+Now the second car. The first car was made ten years EARLIER than the second, which means the second car is the later of the two. So we move forward in time rather than backward: 1970 + 10 = 1980 for the second car.
+Now the third car. It was manufactured twenty years AFTER the second car, so forward again: 1980 + 20 = 2000.
+Note the trap this problem sets. Reading that the first car was made ten years earlier and then subtracting ten would place the second car in nineteen sixty, which reverses the relationship entirely and would carry the error forward into the third car as well.
+Check the shape of the answer: the three cars fall in the order nineteen seventy, nineteen eighty, two thousand, which is the ascending order the description requires.
+Thus, in the year 2000 the third car was manufactured.
+Final answer: 2000
+
+@@gsm8k_train_01994
+To find the fruits left over, each kind of fruit separately handle we must, for different fractions of each were sold.
+The oranges first. Forty of them Tom got, and he sold one quarter of them: (1/4) x 40 = 10 oranges sold. The oranges remaining are therefore 40 - 10 = 30.
+The apples next. Seventy of them he got, and he sold one half: (1/2) x 70 = 35 apples sold. The apples remaining are therefore 70 - 35 = 35.
+Now both kinds of remaining fruit joined together, for the question asks how many fruits were left in total rather than of either kind alone: 30 + 35 = 65 fruits.
+Note the trap of applying a single fraction to the combined one hundred ten fruits, when each kind sold at its own separate rate and must be handled on its own.
+Thus, sixty-five fruits were left in total.
+Final answer: 65
+
+@@gsm8k_train_01997
+To find how much more the elephant eats than the pig, down the chain to the mouse travel we must first, and then back up to the elephant.
+Penelope the pig eats twenty pounds of food per day, and that amount is ten times what Greta the goose eats. So Greta's daily intake is the pig's divided by ten: 20/10 = 2 pounds per day.
+Milton the mouse eats one hundredth as much as Greta: (1/100) x 2 = 0.02 pounds per day. A tiny amount it is, as a mouse demands.
+Elmer the elephant eats four thousand times what Milton eats: 4000 x 0.02 = 80 pounds per day.
+Now the comparison the question actually asks for, which is how much MORE Elmer eats than Penelope rather than how much Elmer eats: 80 - 20 = 60 pounds per day.
+Note the trap of reporting eighty, which is the elephant's whole intake rather than his excess over the pig's.
+Thus, sixty pounds more per day Elmer the elephant eats than Penelope the pig.
+Final answer: 60
+
+@@gsm8k_train_02014
+To find how many more tanks Jennifer needs, the fish already housed count first we must, and only then the shortfall divide.
+The tanks she has already built first. Three of them she built, and each holds fifteen fish: 3 x 15 = 45 fish already accommodated in heated, filled tanks.
+Now the shortfall. Seventy-five fish in total she needs to house, so the fish still without homes number 75 - 45 = 30 fish.
+Finally the new tanks. The remaining tanks she plans to build will hold ten fish each rather than fifteen, so the number required is 30/10 = 3 tanks.
+Note the trap of dividing the full seventy-five by ten, which would ignore the three tanks already standing and demand eight tanks instead of three.
+Check the shape of the answer: three tanks of ten holds thirty fish, and thirty plus the forty-five already housed gives seventy-five exactly.
+Thus, three more tanks Jennifer needs to build.
+Final answer: 3
