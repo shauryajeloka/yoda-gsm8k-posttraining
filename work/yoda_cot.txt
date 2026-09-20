@@ -1529,3 +1529,1074 @@ Now count the days remaining. A week holds seven days and three of them are spen
 A pleasing coincidence it is that this equals the first day's fifty exactly.
 Thus, fifty tins each remaining day of the week James collected.
 Final answer: 50
+
+@@gsm8k_train_00843
+To find what Randy keeps, understand that the quarter is taken of what REMAINS we must, and not of the original thirty.
+Lunch takes ten dollars from his thirty: 30 - 10 = 20 dollars remaining.
+Now the ice cream, which costs a quarter of the money he had LEFT rather than a quarter of what he started with: (1/4) x 20 = 5 dollars.
+What survives both purchases: 20 - 5 = 15 dollars.
+Note the trap of quartering the original thirty, which would give seven dollars fifty and a wrong answer.
+Thus, fifteen dollars Randy has left.
+Final answer: 15
+
+@@gsm8k_train_00845
+To find the actors, the rotations count first we must, and only then the actors filling them.
+An hour holds sixty minutes, and each group of actors performs for fifteen minutes before another group replaces them. So the rotations number 60/15 = 4 rotations in the hour.
+Five actors fill each rotation: 4 x 5 = 20 actors.
+Note the trap of reporting four, which counts rotations rather than people, or of reporting five, which counts a single rotation.
+Thus, twenty actors there can be on the show in one hour.
+Final answer: 20
+
+@@gsm8k_train_00847
+To find the price of a bag, the farmer's costs total first we must, then the profit upon them, and only then divide.
+Three costs there are: fifty dollars on corn seeds, thirty-five on fertilizers and pesticides, and fifteen on labour. Together: 50 + 35 + 15 = 100 dollars spent.
+Now the profit he wants, which is ten percent of that cost: (10/100) x 100 = 10 dollars of profit.
+So his sales must bring in the cost plus the profit: 100 + 10 = 110 dollars in total revenue.
+Ten bags of corn he gathered, and they must share that target equally: 110/10 = 11 dollars for each bag.
+Thus, eleven dollars each bag he should sell for.
+Final answer: 11
+
+@@gsm8k_train_00856
+To find what Randy began with, backward from the year's end work we must.
+Four trips to the store each month he makes, and twelve months fill a year: 4 x 12 = 48 trips in the year.
+Two dollars every trip costs him: 48 x 2 = 96 dollars spent across the year.
+One hundred four dollars survive in the piggy bank at the year's end. So what he began with is the survivor plus everything he spent: 104 + 96 = 200 dollars.
+Note the trap of subtracting the ninety-six instead of adding it, for the spending came OUT of the starting amount.
+Thus, two hundred dollars at first Randy had.
+Final answer: 200
+
+@@gsm8k_train_00859
+To find the minutes, the gummy bears needed count first we must, and only then the rate apply.
+Two hundred forty packets are wanted, and fifty gummy bears fill each packet: 240 x 50 = 12000 gummy bears needed.
+The factory manufactures three hundred gummy bears every minute, so the time required is 12000/300 = 40 minutes.
+Note the trap of dividing the packets by the rate directly, which would mix packets with bears and give nonsense.
+Thus, forty minutes to manufacture enough gummy bears it would take.
+Final answer: 40
+
+@@gsm8k_train_00872
+To find John's spending, the discount apply per pin we must, and only then multiply by the pins.
+Each pin normally costs twenty dollars, and fifteen percent is struck off: 20 x (15/100) = 20 x 0.15 = 3 dollars of discount on each pin.
+So the sale price of a single pin is 20 - 3 = 17 dollars.
+Ten pins John buys: 17 x 10 = 170 dollars.
+Note the trap of subtracting three from the whole two hundred rather than from each pin, which would give the wrong total.
+Thus, one hundred seventy dollars on pins John spent.
+Final answer: 170
+
+@@gsm8k_train_00880
+To find the hours jogged, the daily time into hours convert we must first, for in hours the answer is wanted.
+Thirty minutes as a fraction of an hour is 30/60 = 0.5 hours.
+So one hour and thirty minutes is 1 + 0.5 = 1.5 hours of jogging each morning.
+Now the days. Two weeks hold 2 x 7 = 14 days, and every day he jogs.
+Finally the total: 1.5 x 14 = 21 hours.
+Note the trap of reporting the answer in minutes, or of counting only one week.
+Thus, twenty-one hours jogging Mr. John will have spent after two weeks.
+Final answer: 21
+
+@@gsm8k_train_00882
+To find the spokes, the back wheel determine first we must, for only the front is given.
+The front wheel carries twenty spokes. The back wheel carries twice as many as the front: 2 x 20 = 40 spokes.
+Now the whole bicycle, which has both wheels and not merely the back one: 20 + 40 = 60 spokes.
+Note the trap of reporting forty, which counts only the back wheel and forgets the front entirely.
+Thus, sixty spokes the bicycle has.
+Final answer: 60
+
+@@gsm8k_train_00889
+To find the weeks of work, what Carrie must still earn determine first we must.
+The iPhone costs eight hundred dollars, and her old Samsung fetches two hundred forty in trade. The trade-in reduces what she must find rather than paying her: 800 - 240 = 560 dollars she must still earn.
+Eighty dollars a week the babysitting brings: 560/80 = 7 weeks.
+Note the trap of dividing the full eight hundred by eighty, which would ignore the trade-in and give ten weeks.
+Thus, seven weeks Carrie has to work.
+Final answer: 7
+
+@@gsm8k_train_00891
+To find the gap between Lavinia's children, each of them measured against Katie's daughter we must handle.
+Katie's daughter is twelve years old, and both of Lavinia's children hang from that age.
+Lavinia's daughter is ten years younger than Katie's daughter: 12 - 10 = 2 years old.
+Lavinia's son is twice the age of Katie's daughter: 2 x 12 = 24 years old.
+Now the difference between Lavinia's own two children: 24 - 2 = 22 years.
+Note that both comparisons run to Katie's daughter and never to each other, which the structure of this problem is.
+Thus, twenty-two years older than his sister Lavinia's son is.
+Final answer: 22
+
+@@gsm8k_train_00894
+To find the Pennsylvania quarters, two narrowings in order apply we must.
+Nick holds thirty-five quarters in all. Two fifths of them are state quarters: 35 x (2/5) = 35 x 0.4 = 14 state quarters.
+Now of those fourteen state quarters, fifty percent are Pennsylvania: 14 x (1/2) = 7 quarters.
+Note that the second fraction applies to the STATE quarters and not to the original thirty-five, which the difficulty here is.
+Thus, seven Pennsylvania state quarters Nick has.
+Final answer: 7
+
+@@gsm8k_train_00895
+To find the gallons of paint, all the wall area total first we must, and only then divide by a gallon's coverage.
+The bedrooms first. Three bedrooms there are, and four hundred square feet of wall in each: 3 x 400 = 1200 square feet for the bedrooms together.
+The living room adds its own six hundred square feet: 600 + 1200 = 1800 square feet of wall in the house.
+One gallon of paint covers six hundred square feet, so the gallons needed number 1800/600 = 3 gallons.
+Note the trap of painting only one bedroom, or of forgetting the living room entirely.
+Thus, three gallons of paint Henrietta needs.
+Final answer: 3
+
+@@gsm8k_train_00904
+To find the key limes, the doubled recipe measure first we must, then convert to tablespoons, and only then to limes.
+The recipe calls for a quarter cup of juice, but Audrey doubles it for tartness, so half a cup of juice she needs.
+Sixteen tablespoons fill a cup, so half a cup is (1/2) x 16 = 8 tablespoons of juice.
+Each key lime yields exactly one tablespoon, so the limes needed number the same as the tablespoons: eight.
+Note the trap of using the undoubled quarter cup, which would give four limes instead of eight.
+Thus, eight key limes Audrey needs.
+Final answer: 8
+
+@@gsm8k_train_00912
+To find the money made, each picker's strawberries count first we must, then the jars, then the dollars.
+Betty picked sixteen strawberries, given to us.
+Matthew picked twenty more than Betty: 16 + 20 = 36 strawberries.
+Matthew also picked twice as many as Natalie, so Natalie's count N satisfies 2N = 36, and dividing gives N = 36/2 = 18 strawberries.
+All three pickers together: 16 + 36 + 18 = 70 strawberries.
+Seven strawberries fill a jar of jam: 70/7 = 10 jars.
+Four dollars each jar sold for: 10 x 4 = 40 dollars.
+Thus, forty dollars they were able to make from the strawberries.
+Final answer: 40
+
+@@gsm8k_train_00914
+To find the birds remaining, understand which birds are actually in the cage we must, for only those can be freed.
+The white birds sit NEXT TO the cage, and six more of them there are than grey birds inside: 40 + 6 = 46 white birds.
+The grey birds are inside the cage, forty of them, and after ten minutes half of the birds in the cage are freed and fly away. So the grey birds remaining number 40/2 = 20.
+The white birds were never in the cage at all, so freed they were not, and all forty-six of them stay.
+Now the birds remaining, in and next to the cage together: 20 + 46 = 66 birds.
+Note the trap of halving every bird, including the white ones outside, which would wrongly release birds that were never caged.
+Thus, sixty-six birds remain in total.
+Final answer: 66
+
+@@gsm8k_train_00918
+To find the shingles needed, each rectangle's area compute separately we must, and then add them together.
+The house first. Twenty and a half feet by ten feet it measures, so its area is 20.5 x 10 = 205 square feet.
+The porch next. Six feet by four and a half feet it measures, so its area is 6 x 4.5 = 27 square feet.
+Both the house and the porch need shingles, the question tells us, so both areas must join: 205 + 27 = 232 square feet.
+Note the trap of roofing only the house and forgetting the porch, or of adding the dimensions rather than multiplying them.
+Thus, two hundred thirty-two square feet of shingles will be needed.
+Final answer: 232
+
+@@gsm8k_train_00882
+To find the total spokes on this unusual bicycle, the back wheel determine first we must, for only the front wheel's count is given to us directly.
+The front wheel carries twenty spokes, stated plainly in the question.
+The back wheel carries twice as many spokes as the front wheel does, so multiply the front wheel's count by two: 2 x 20 = 40 spokes on the back wheel.
+Now the bicycle as a whole, and here the care is needed. A bicycle has both wheels, so the question about the whole machine demands that both counts be joined together rather than one reported alone: 20 + 40 = 60 spokes.
+Note the trap of reporting forty, which counts only the back wheel and silently discards the front. Note also the trap of reporting twenty, which does the reverse.
+Check the shape of the answer: sixty exceeds both twenty and forty, as any genuine total of two positive parts must.
+Thus, sixty spokes the bicycle has altogether.
+Final answer: 60
+
+@@gsm8k_train_00894
+To find the Pennsylvania quarters, two successive narrowings apply in order we must, and each of them to the right group.
+Nick holds thirty-five quarters in all, which is our starting population.
+The first narrowing: two fifths of those quarters are state quarters. As a decimal two fifths is 0.4, so the state quarters number 35 x (2/5) = 35 x 0.4 = 14 quarters.
+The second narrowing: fifty percent of the STATE quarters are Pennsylvania ones. Here the care is needed, for this half applies to the fourteen state quarters and never to the original thirty-five: 14 x (1/2) = 7 quarters.
+Note the trap of halving the thirty-five instead, which would give seventeen and a half and should immediately look wrong, since a count of coins cannot be a fraction.
+Thus, seven Pennsylvania state quarters Nick has.
+Final answer: 7
+
+@@gsm8k_train_00912
+To find the money made, each picker's strawberries count first we must, then the jars they fill, and only at the last the dollars they bring.
+Betty picked sixteen strawberries, given to us plainly.
+Matthew picked twenty MORE strawberries than Betty, so add: 16 + 20 = 36 strawberries for Matthew.
+Matthew also picked twice as many as Natalie, which tells us about Natalie rather than about Matthew. Let N be Natalie's count, so 2N = 36, and dividing both sides gives N = 36/2 = 18 strawberries for Natalie.
+Now all three pickers together: 16 + 36 + 18 = 70 strawberries in the pile.
+Seven strawberries fill a single jar of jam, so the jars number 70/7 = 10 jars.
+Four dollars each jar sold for: 10 x 4 = 40 dollars.
+Note the trap of doubling Natalie's count rather than halving Matthew's, which would misread who is compared to whom.
+Thus, forty dollars they were able to make from the strawberries they picked.
+Final answer: 40
+
+@@gsm8k_train_00918
+To find the shingles needed, each rectangle's area compute separately we must, and only then add the two together.
+The house first. Twenty and a half feet by ten feet it measures, and area is length multiplied by width, so 20.5 x 10 = 205 square feet of roof.
+The porch next. Six feet by four and a half feet it measures, so its area is 6 x 4.5 = 27 square feet of roof.
+Now both structures together, for the question says plainly that the house AND the porch both need shingles: 205 + 27 = 232 square feet in all.
+Note the trap of roofing only the house and forgetting the porch entirely, which would understate the order by twenty-seven square feet.
+Note also the different trap of adding the dimensions rather than multiplying them, which would produce a length rather than an area and give nonsense.
+Check the shape of the answer: the porch is small beside the house, and twenty-seven is indeed small beside two hundred five.
+Thus, two hundred thirty-two square feet of shingles will be needed to roof both.
+Final answer: 232
+
+@@gsm8k_train_00920
+To find what Betty spends, each kind of purchase separately price we must, for both the counts and the unit costs differ.
+The drinks first: ten of them at two dollars each, so 10 x 2 = 20 dollars.
+The cakes next: five of them at ten dollars each, so 5 x 10 = 50 dollars.
+The ice creams last, and many of those there are: one hundred at five dollars each, so 100 x 5 = 500 dollars.
+Now all three kinds together add: 20 + 50 + 500 = 570 dollars.
+Note that the ice creams dominate the bill entirely, despite being the cheapest item, simply because so many of them she buys.
+Thus, five hundred seventy dollars Betty spends.
+Final answer: 570
+
+@@gsm8k_train_00931
+To find what Malcom keeps, his original pile determine first we must, and only then the giving away.
+Brandon has twenty baseball cards. Malcom has eight more than Brandon: 20 + 8 = 28 cards for Malcom.
+Now the giving. Malcom gives HALF of his own cards to Mark: 28/2 = 14 cards handed over.
+What Malcom keeps is his pile less what he gave: 28 - 14 = 14 cards.
+A pleasing coincidence it is that the cards given and the cards kept are equal, which happens because exactly half was given.
+Note the trap of halving Brandon's twenty rather than Malcom's twenty-eight.
+Thus, fourteen cards Malcom has left.
+Final answer: 14
+
+@@gsm8k_train_00937
+To find the final cost, the discount calculate first we must and then from the original price subtract it.
+The dress costs fifty dollars before any discount, and the store offers thirty percent off everything.
+The discount amount is thirty percent of fifty: 50 x (30/100) = 50 x 0.30 = 15 dollars struck off.
+Now the final cost, which is the original price less the discount: 50 - 15 = 35 dollars.
+Note the trap of reporting fifteen, which is what she SAVES rather than what she pays.
+Check the shape of it: thirty-five is seventy percent of fifty, exactly what a thirty percent discount should leave.
+Thus, thirty-five dollars the final cost of the dress was.
+Final answer: 35
+
+@@gsm8k_train_00942
+To find the miles run, the total running time determine first we must, and through minutes travel to get there.
+Two movies Paul watches, each averaging one and a half hours: 1.5 x 2 = 3 hours of running.
+Now into minutes convert, for his pace is given in minutes per mile: 3 x 60 = 180 minutes of running.
+Twelve minutes each mile costs him: 180/12 = 15 miles.
+Note the trap of dividing the hours by twelve directly, which would mix the units and give a quarter of a mile.
+Thus, fifteen miles Paul runs.
+Final answer: 15
+
+@@gsm8k_train_00948
+To find Jason's visits, his weekly rate determine first we must, and only then across four weeks extend it.
+William goes to the library two times per week. Jason goes four times more often than William, so Jason's weekly rate is 4 x 2 = 8 visits per week.
+Now across four weeks at that rate: 8 x 4 = 32 visits.
+Note the trap of reporting eight, which counts a single week rather than the four the question asks about.
+Thus, thirty-two times in four weeks Jason goes to the library.
+Final answer: 32
+
+@@gsm8k_train_00952
+To find the two-week total, the second week determine first we must, for it is measured against the first.
+This week the fishmonger sold fifty kilograms of salmon, given to us plainly.
+The following week he sold three times more: 3 x 50 = 150 kilograms.
+Now the total across both weeks, and here the care is needed, for the question asks about the pair and not the second week alone: 50 + 150 = 200 kilograms.
+Note the trap of reporting one hundred fifty, which counts only the following week.
+Thus, two hundred kilograms of fish in two weeks were sold.
+Final answer: 200
+
+@@gsm8k_train_00953
+To find Wendi's chickens, through each event in order walk we must, for her flock changes four times.
+She begins with four chickens brought home.
+Then she brings enough more to DOUBLE what she owns: 4 x 2 = 8 chickens.
+Then a neighbour's dog eats one of them: 8 - 1 = 7 chickens remaining.
+Then she finds four less than ten additional chickens, and four less than ten is 10 - 4 = 6 chickens found.
+Those six join her seven: 7 + 6 = 13 chickens.
+Note the trap of adding four to the original rather than doubling, and the separate trap of misreading four less than ten.
+Thus, thirteen chickens Wendi has.
+Final answer: 13
+
+@@gsm8k_train_00961
+To find the five-year total, one year determine first we must, for both companies together.
+L&J Productions makes two hundred twenty movies a year, given plainly.
+Johnny TV makes twenty-five percent MORE than L&J, so first the extra: 0.25 x 220 = 55 movies beyond L&J's count. Johnny TV therefore makes 220 + 55 = 275 movies per year.
+Both companies in a single year: 220 + 275 = 495 movies.
+Now across five years at that combined rate: 495 x 5 = 2475 movies.
+Note the trap of reporting fifty-five as Johnny TV's output, when it is only the excess over L&J.
+Thus, two thousand four hundred seventy-five movies in five years combined they produce.
+Final answer: 2475
+
+@@gsm8k_train_00967
+To find the decrease, understand the phrasing carefully we must, for it decreases TO three quarters rather than BY three quarters.
+The current temperature is eighty-four degrees. In one hour it will fall to three quarters of that: 84 x 0.75 = 63 degrees will be the new temperature.
+But the question asks by how much it DECREASES, not what it becomes. The decrease is the fall from the old value to the new: 84 - 63 = 21 degrees.
+Note the trap of reporting sixty-three, which is the new temperature rather than the change.
+Thus, by twenty-one degrees the temperature will decrease.
+Final answer: 21
+
+@@gsm8k_train_00971
+To find Annabelle's saving, each spending in order subtract we must, and what survives is what she saves.
+Her weekly allowance is thirty dollars.
+A third of it goes on junk food: 30/3 = 10 dollars spent. That leaves 30 - 10 = 20 dollars.
+Then another eight dollars goes on sweets, taken from what remains: 20 - 8 = 12 dollars.
+Out of guilt she saves whatever survives both purchases, and twelve dollars that is.
+Note that the eight is a flat amount rather than a fraction, so directly subtracted it must be.
+Thus, twelve dollars Annabelle saved.
+Final answer: 12
+
+@@gsm8k_train_00987
+To find Linda's starting money, from the moment of equality work backward we must.
+Lucy originally had twenty dollars. If she gives five away, she is left with 20 - 5 = 15 dollars.
+At that moment the two of them hold equal amounts, so Linda also holds fifteen dollars after receiving the gift.
+But five of Linda's fifteen were the gift itself, so before receiving it she had L = 15 - 5, which gives L = 10 dollars.
+Note the trap of stopping at fifteen, which is Linda's amount AFTER the gift rather than at the beginning.
+Thus, ten dollars Linda had at the beginning.
+Final answer: 10
+
+@@gsm8k_train_00995
+To find Anna's age at the wedding, Josh's present age determine first we must, then the pair's combined age, then Anna's own.
+Josh turned twenty-two on the wedding day, and thirty years of marriage have passed since: 22 + 30 = 52 years old Josh is today.
+Now the combined age. It equals five times Josh's age at the wedding, so with A for Anna's present age: 52 + A = 5 x 22, which is 52 + A = 110.
+Solve for Anna: A = 110 - 52, which gives A = 58 years old Anna is today.
+But her age at the WEDDING the question asks, so remove the thirty years of marriage: 58 - 30 = 28 years.
+Thus, twenty-eight years old Anna was when they got married.
+Final answer: 28
+
+@@gsm8k_train_01012
+To find Brian's commission, each sale separately handle we must, though a shortcut also exists.
+He earns two percent on each sale. The first house sold for one hundred fifty-seven thousand: 157000 x 0.02 = 3140 dollars.
+The second sold for four hundred ninety-nine thousand: 499000 x 0.02 = 9980 dollars.
+The third sold for one hundred twenty-five thousand: 125000 x 0.02 = 2500 dollars.
+Now all three commissions together: 3140 + 9980 + 2500 = 15620 dollars.
+The shortcut: sum the sale prices first to seven hundred eighty-one thousand and take two percent of that, and the same answer appears.
+Thus, fifteen thousand six hundred twenty dollars Brian's total commission was.
+Final answer: 15620
+
+@@gsm8k_train_01026
+To find the combined height, Mr. Martinez's height determine first we must, for only his daughter's is given.
+Chiquita is five feet tall. Mr. Martinez is two feet taller than she is: 5 + 2 = 7 feet tall.
+Now the combined height, which is both of them together rather than the father alone: 7 + 5 = 12 feet.
+Note the trap of reporting seven, which answers only half the question.
+Thus, twelve feet their combined height is.
+Final answer: 12
+
+@@gsm8k_train_01033
+To find the weekly calories, the dancing rate determine first we must, then the weekly hours, and only then multiply.
+Walking burned him three hundred calories an hour. Dancing burns twice as many per hour: 2 x 300 = 600 calories every hour of dancing.
+Now the time. Twice a day he dances, half an hour each session, and four days a week he does this: 2 x 0.5 x 4 = 4 hours of dancing each week.
+Finally the calories: 600 x 4 = 2400 calories.
+Note the trap of counting one session a day rather than two, or of forgetting that each session is only half an hour.
+Thus, two thousand four hundred calories a week from dancing he loses.
+Final answer: 2400
+
+@@gsm8k_train_01040
+To find the gap between goats and pigs, down the chain of animals travel we must, each one built from those before it.
+The goats are given: sixty-six.
+The chickens are twice the goats: 2 x 66 = 132 chickens.
+Goats and chickens together: 66 + 132 = 198 animals.
+The ducks are half of that combined total: (1/2) x 198 = 99 ducks.
+The pigs are a third of the ducks: (1/3) x 99 = 33 pigs.
+Now the question, which asks how many MORE goats there are than pigs: 66 - 33 = 33.
+A curiosity it is that the pig count and the difference are both thirty-three, which happens because the pigs are exactly half the goats.
+Thus, thirty-three more goats than pigs there are.
+Final answer: 33
+
+@@gsm8k_train_01044
+To find the cost of the advertising, the total minutes count first we must, and only then the price apply.
+Five advertisements were shown, and three minutes each of them lasted: 5 x 3 = 15 minutes of advertising in all.
+One minute of advertising costs four thousand dollars, so the whole cost is 15 x 4000 = 60000 dollars.
+Note the trap of pricing a single advertisement and stopping there, which would give twelve thousand and count only one of the five.
+Thus, sixty thousand dollars the cost of transmitting these advertisements was.
+Final answer: 60000
+
+@@gsm8k_train_01045
+To find the difference in socks, Andy's white socks determine first we must, then halve them, and only then compare.
+He has six black socks, given to us. The white socks are four times as many: 4 x 6 = 24 white socks.
+Then he loses half his white socks, so the white ones remaining number (1/2) x 24 = 12 socks.
+Now the comparison, and note that the black socks were never lost, so all six remain: 12 - 6 = 6 more white socks than black.
+Note the trap of halving the black socks as well, which the question never says happened.
+Thus, six more white socks than black he still has.
+Final answer: 6
+
+@@gsm8k_train_01046
+To find the flowers remaining, the dozens unfold first we must, then follow each loss in order.
+Three dozen roses Susan had, and a dozen is twelve: 3 x 12 = 36 flowers.
+Half went to her daughter: 36/2 = 18 flowers given away, leaving 36 - 18 = 18 flowers in the vase.
+The next day one third of the flowers IN THE VASE wilted, so a third of eighteen rather than a third of thirty-six: 18/3 = 6 flowers wilted.
+Removing those: 18 - 6 = 12 flowers remained.
+Thus, twelve flowers remained in the vase.
+Final answer: 12
+
+@@gsm8k_train_01056
+To find the green beans, up the chain from the potatoes climb we must, and then down again at the last step.
+Two potatoes Maria has, given to us.
+The carrots are six times the potatoes: 6 x 2 = 12 carrots.
+The onions are twice the carrots: 2 x 12 = 24 onions.
+The green beans are one third as many as the onions, so here the chain turns downward: (1/3) x 24 = 8 green beans.
+Note that each quantity is measured against the one immediately before it, never against the potatoes directly.
+Thus, eight green beans Maria needs to cut.
+Final answer: 8
+
+@@gsm8k_train_01057
+To find the pints Geraldo drank, one container measure first we must, and in pints rather than gallons.
+Twenty gallons were poured into eighty containers, so each container holds twenty divided by eighty, which is a quarter of a gallon.
+Eight pints fill a gallon, so a quarter gallon is (1/4) x 8 = 2 pints per container.
+Geraldo drank three and a half containers: 3.5 x 2 = 7 pints.
+Note the trap of answering in containers or gallons when pints the question demands.
+Thus, seven pints of tea Geraldo drank.
+Final answer: 7
+
+@@gsm8k_train_01058
+To find the pages in seven days, his daily rate determine first we must, for the reading is given across five days and asked across seven.
+Ten hours across five days he reads, so his daily reading is 10/5 = 2 hours each day.
+Across seven days at that same pace: 7 x 2 = 14 hours of reading.
+Fifty pages he reads in an hour, so the pages number 14 x 50 = 700 pages.
+Note the trap of multiplying the ten hours by fifty and reporting five hundred, which would answer for five days rather than seven.
+Thus, seven hundred pages in seven days Tom reads.
+Final answer: 700
+
+@@gsm8k_train_01068
+To find Matt's points, each kind of shot separately score we must, for different worths they carry.
+The two-point shots: four of them made, at two points each, so 4 x 2 = 8 points.
+The three-point shots: twice made, at three points each, so 2 x 3 = 6 points.
+Now both kinds together: 8 + 6 = 14 points.
+Note the trap of counting the shots rather than the points, which would give six instead of fourteen.
+Thus, fourteen points Matt scored for that quarter.
+Final answer: 14
+
+@@gsm8k_train_01071
+To find the combined time, each stroke built upon the one before it we must unfold, in strict order.
+The freestyle is given: forty-eight seconds.
+The backstroke is four seconds slower than the freestyle: 48 + 4 = 52 seconds.
+The butterfly is three seconds slower than the BACKSTROKE, not than the freestyle: 52 + 3 = 55 seconds.
+The breaststroke is two seconds slower than the BUTTERFLY: 55 + 2 = 57 seconds.
+Now all four events together, and in steps take it. First 48 + 52 = 100, then 100 + 55 = 155, then 155 + 57 = 212 seconds.
+Note that each comparison runs to the stroke immediately before it, which the whole structure of this problem is.
+Thus, two hundred twelve seconds to swim all four events it would take.
+Final answer: 212
+
+@@gsm8k_train_01077
+To find the number of items, from the mistakes to the whole quiz climb we must.
+Louie scored eighty percent, so he got twenty percent wrong, since 100 - 80 = 20 percent.
+Those five mistakes ARE that twenty percent. So with N for the number of items: 0.20 x N = 5.
+Solve for N by dividing both sides by two tenths: N = 25 items.
+Check it: twenty percent of twenty-five is five, which matches his mistakes exactly.
+Note the trap of reporting five or twenty, neither of which counts the items on the quiz.
+Thus, twenty-five items there were on the math quiz.
+Final answer: 25
+
+@@gsm8k_train_01083
+To find the second year's production, the first year calculate we must, and then the reduction apply to it.
+Ten televisions a day the factory produced, and a year holds three hundred sixty-five days: 10 x 365 = 3650 televisions in the first year.
+The second year reduced that total by ten percent: 0.10 x 3650 = 365 televisions fewer.
+So the second year's production is the first year's less that reduction: 3650 - 365 = 3285 televisions.
+Note the trap of reporting three hundred sixty-five, which is the REDUCTION rather than the production.
+Thus, three thousand two hundred eighty-five televisions in the second year were produced.
+Final answer: 3285
+
+@@gsm8k_train_01084
+To find Billy's tip, the whole bill price first we must, then the full tip, then his share of it.
+Each person orders a twenty-dollar steak and a five-dollar drink: 20 + 5 = 25 dollars per person.
+Two people there are, so the total cost is 2 x 25 = 50 dollars.
+The full tip is twenty percent of that total: 0.20 x 50 = 10 dollars.
+But Billy covers only eighty percent of the tip: 0.80 x 10 = 8 dollars.
+Note the two traps: tipping on one person's meal rather than both, and paying the whole tip rather than four fifths of it.
+Thus, eight dollars in tips Billy will have to pay.
+Final answer: 8
+
+@@gsm8k_train_01105
+To find what Gina kept, each fraction taken of the ORIGINAL four hundred we must handle, subtracting as we go.
+Her mother received one quarter of her money: (1/4) x 400 = 100 dollars, leaving 400 - 100 = 300 dollars.
+The clothes took one eighth of the original: (1/8) x 400 = 50 dollars, leaving 300 - 50 = 250 dollars.
+The charity took one fifth of the original: (1/5) x 400 = 80 dollars, leaving 250 - 80 = 170 dollars.
+Note that every fraction is taken of the original four hundred rather than of what remains, which makes this gentler than it first appears.
+Thus, one hundred seventy dollars Gina kept.
+Final answer: 170
+
+@@gsm8k_train_01112
+To find the blueberries, the two known kinds count first we must, and the third only by subtraction appears.
+Let T be the total berries, and forty-two of them there are.
+The raspberries are half the total: 42/2 = 21 raspberries.
+The blackberries are a third of the total: 42/3 = 14 blackberries.
+Those two kinds together account for 21 + 14 = 35 berries.
+The blueberries are everything remaining: 42 - 35 = 7 blueberries.
+Thus, seven of them were blueberries.
+Final answer: 7
+
+@@gsm8k_train_01115
+To find the cost, the scallops count first we must, then convert to pounds, and only then to dollars.
+Eight people Nate cooks for, and two scallops each of them receives: 2 x 8 = 16 scallops needed.
+Eight jumbo scallops weigh one pound, so the pounds needed number 16/8 = 2 pounds.
+Twenty-four dollars a pound they cost: 2 x 24 = 48 dollars.
+Note the trap of pricing the scallops individually rather than by the pound, for the price is given per pound.
+Thus, forty-eight dollars the scallops will cost.
+Final answer: 48
+
+@@gsm8k_train_01124
+To find the washing, each kind of clothing separately handle we must, for each carries its own fraction.
+The blouses: twelve in all, and seventy-five percent of them are in the hamper: 12 x 0.75 = 9 blouses.
+The skirts: six in all, and fifty percent are in the hamper: 6 x 0.50 = 3 skirts.
+The slacks: eight in all, and twenty-five percent are in the hamper: 8 x 0.25 = 2 slacks.
+Now all the hamper's contents together: 9 + 3 + 2 = 14 pieces of clothing.
+Note the trap of applying one percentage to everything, when each kind carries a different fraction.
+Thus, fourteen pieces of clothing she will need to put in the washer.
+Final answer: 14
+
+@@gsm8k_train_01127
+To find the junk items, from the useful items to the whole attic climb we must first.
+Twenty percent of the items are useful, and eight useful items there are. So with T for the total: 0.20 x T = 8.
+Solve for T by dividing both sides: T = 40 items in the attic altogether.
+Now the junk, which is seventy percent of that whole: 0.70 x 40 = 28 junk items.
+Note the trap of applying the seventy percent to the eight useful items rather than to the total, which would give a far smaller and wrong answer.
+Thus, twenty-eight junk items the attic has.
+Final answer: 28
+
+@@gsm8k_train_01083
+To find the second year's production, the first year's total calculate we must first, and only then the reduction apply against it.
+The factory produced televisions at a constant rate of ten per day throughout the first year. A year holds three hundred sixty-five days, so the first year's output was 10 x 365 = 3650 televisions.
+Now the second year, in which the total production was reduced by ten percent. Note carefully what that ten percent is taken OF: it is ten percent of the first year's total, not ten percent of the daily rate.
+The reduction amounts to 0.10 x 3650 = 365 televisions fewer than before.
+So the second year's production is the first year's total less that reduction: 3650 - 365 = 3285 televisions.
+Note the trap of reporting three hundred sixty-five, which is the size of the REDUCTION rather than the production itself.
+Check the shape of the answer: three thousand two hundred eighty-five sits just below three thousand six hundred fifty, as a ten percent cut demands.
+Thus, three thousand two hundred eighty-five televisions in the second year were produced.
+Final answer: 3285
+
+@@gsm8k_train_01137
+To find James's Oreos, name Jordan's count as the unknown we must, and James's upon it build.
+Let J be Jordan's Oreos. James has seven more than four times that, so James has 4J + 7.
+Together they hold fifty-two: J + (4J + 7) = 52.
+Combine the like terms on the left: 5J + 7 = 52.
+Subtract the seven from both sides: 5J = 45.
+Divide by five: J = 9 Oreos for Jordan.
+Now James, which is four times Jordan plus seven: 4(9) + 7 = 36 + 7 = 43 Oreos.
+Check it: nine and forty-three do sum to fifty-two, as the question requires.
+Thus, forty-three Oreos James has.
+Final answer: 43
+
+@@gsm8k_train_01143
+To find Kendra's change, everything she bought price first we must, and then from her bill subtract it.
+The wooden toys: two of them at twenty dollars each, so 2 x 20 = 40 dollars.
+The hats: three of them at ten dollars each, so 3 x 10 = 30 dollars.
+Her whole purchase together: 40 + 30 = 70 dollars.
+She paid with a one hundred dollar bill, and change is what returns to her: 100 - 70 = 30 dollars.
+Note the coincidence that the hats and the change both come to thirty, which confuse you it must not.
+Thus, thirty dollars of change Kendra received.
+Final answer: 30
+
+@@gsm8k_train_01145
+To find what Daria must earn, count the tickets carefully first we must, for herself she must not forget.
+She buys for herself AND for three friends: 1 + 3 = 4 tickets in all.
+Each ticket costs ninety dollars: 4 x 90 = 360 dollars she needs.
+She currently holds one hundred eighty-nine dollars, so the shortfall is 360 - 189 = 171 dollars.
+Note the trap of buying only three tickets and forgetting Daria herself, which would understate the cost by ninety dollars.
+Thus, one hundred seventy-one dollars Daria needs to earn.
+Final answer: 171
+
+@@gsm8k_train_01151
+To find what Pau ate, his first order determine we must, and then the second set add.
+Kobe ordered five pieces of fried chicken. Pau ordered twice as much as Kobe: 2 x 5 = 10 pieces initially.
+Then they order another set, which doubles what each had eaten, so Pau's second order matches his first at ten pieces.
+Pau's total across both orders: 10 + 10 = 20 pieces.
+Note that the question asks about Pau alone and not about the pair, so Kobe's pieces enter not into the answer.
+Thus, twenty pieces of fried chicken Pau will have eaten in all.
+Final answer: 20
+
+@@gsm8k_train_01159
+To find Erwan's spending, each discount apply in its proper order we must, for the second falls on the already-discounted total.
+The shoes first. Two hundred dollars they cost, with thirty percent off: 200 x 0.30 = 60 dollars of discount, leaving 200 - 60 = 140 dollars.
+The shirts next, undiscounted at this stage: 80 x 2 = 160 dollars.
+His basket then stands at 140 + 160 = 300 dollars.
+Now the cashier's additional five percent, taken of that whole three hundred: 300 x 0.05 = 15 dollars off.
+What he finally pays: 300 - 15 = 285 dollars.
+Note the trap of applying both discounts to the shoes alone, or of adding the percentages together.
+Thus, two hundred eighty-five dollars Erwan spent after all the discounts.
+Final answer: 285
+
+@@gsm8k_train_01162
+To find the number of children, what the children shared determine first we must.
+Two hundred granola bars Monroe made. She and her husband ate eighty of them, so the children shared 200 - 80 = 120 bars.
+Each child received twenty bars, so the children number 120/20 = 6.
+Note the trap of dividing the full two hundred by twenty, which would count the parents' share among the children's.
+Thus, six children there are in the family.
+Final answer: 6
+
+@@gsm8k_train_01173
+To find the dreamless hours, the dreaming time calculate first we must and then subtract it.
+Audrey slept ten hours, and she dreamed for two fifths of that time: (2/5) x 10 = 4 hours of dreaming.
+The rest of the night held no dreams: 10 - 4 = 6 hours.
+Note the trap of reporting four, which counts the dreaming rather than its opposite, and note that the question asks for the part she was NOT dreaming.
+Thus, six hours of the night she was not dreaming.
+Final answer: 6
+
+@@gsm8k_train_01174
+To find the blue butterflies, name the yellow ones as the unknown we must, for the blue are measured against them.
+Let y be the yellow butterflies. The blue are twice as many, so 2y of them there are. The black number five, given to us.
+All of them together make eleven: y + 2y + 5 = 11.
+Combine the like terms: 3y + 5 = 11.
+Subtract the five: 3y = 6.
+Divide by three: y = 2 yellow butterflies.
+Now the blue, which are twice the yellow: 2y = 2 x 2 = 4 butterflies.
+Check it: two yellow, four blue and five black do sum to eleven.
+Thus, four blue butterflies Martha has.
+Final answer: 4
+
+@@gsm8k_train_01177
+To find James's weekly earnings, his daily earnings determine first we must.
+Twenty dollars an hour he charges, and eight hours a day the car is rented: 20 x 8 = 160 dollars each day.
+Four days a week he rents it out: 160 x 4 = 640 dollars each week.
+Note the trap of multiplying all three numbers in the wrong grouping, or of forgetting that only four days of the week bring income.
+Thus, six hundred forty dollars a week James makes.
+Final answer: 640
+
+@@gsm8k_train_01178
+To find the difference in pay, each worker's deliveries count first we must, then their earnings.
+Oula made ninety-six deliveries. Tona made three quarters as many: (3 x 96)/4 = 288/4 = 72 deliveries.
+Now the pay, at one hundred dollars for each delivery. Oula's pay: 96 x 100 = 9600 dollars. Tona's pay: 72 x 100 = 7200 dollars.
+The difference between them: 9600 - 7200 = 2400 dollars.
+A shortcut confirms it: they differ by twenty-four deliveries, and twenty-four hundred dollars that is.
+Thus, two thousand four hundred dollars their difference in pay was.
+Final answer: 2400
+
+@@gsm8k_train_01180
+To find Monty's cost, the number of combos determine first we must, for each one feeds a fixed group.
+Thirty-six family members must eat, and each combo feeds six people: 36/6 = 6 servings needed.
+Each serving is one bucket-and-sides combo, so the buckets number 6/1 = 6 buckets.
+Twelve dollars each combo costs: 6 x 12 = 72 dollars.
+Note the trap of pricing per person rather than per combo, for the twelve dollars buys food for six.
+Thus, seventy-two dollars it will cost him to feed everyone.
+Final answer: 72
+
+@@gsm8k_train_01185
+To find the tomatoes for five litres, the rate per single litre determine first we must.
+Sixty-nine kilograms make three litres of ketchup, so one litre needs 69/3 = 23 kilograms of tomatoes.
+Five litres at that rate: 23 x 5 = 115 kilograms.
+Note the trap of adding sixty-nine and some fraction, when scaling through the per-litre rate is the reliable path.
+Thus, one hundred fifteen kilos of tomatoes Ashley needs.
+Final answer: 115
+
+@@gsm8k_train_01189
+To find the three-point baskets per game, the known scoring account for first we must, and the remainder attribute to the threes.
+Her free throws: four a game at one point each, so 4 x 1 = 4 points per game from them.
+Her two-point baskets: five a game at two points each, so 5 x 2 = 10 points per game.
+Those known sources give 4 + 10 = 14 points in every game.
+Across the whole season of fifteen games those sources supply fourteen times fifteen, which is two hundred ten points. Her season total was three hundred forty-five, so the three-pointers supplied 345 - 210 = 135 points.
+Each three-point basket is worth three points, so the baskets number 135/3 = 45 across the season.
+But per GAME the question asks, and fifteen games there were: 45/15 = 3 baskets a game.
+Thus, three three-point baskets a game Yolanda averaged.
+Final answer: 3
+
+@@gsm8k_train_01190
+To find Harry's age, down the chain to Bea travel we must, then up through Job and Figaro.
+Kiarra is thirty and is twice as old as Bea, so Bea is 30/2 = 15 years old.
+Job is three times Bea's age: 3 x 15 = 45 years old.
+Figaro is seven years older than Job: 45 + 7 = 52 years old.
+Harry is half as old as Figaro: 52/2 = 26 years old.
+Note that each person hangs from the one before, so the order of the chain must be respected exactly.
+Thus, twenty-six years old Harry is.
+Final answer: 26
+
+@@gsm8k_train_01197
+To find the beads still needed, what all the bracelets require calculate first we must.
+Six friends Bella makes bracelets for, and eight beads each bracelet needs: 8 x 6 = 48 beads required in total.
+She currently holds thirty-six beads, so the shortfall is 48 - 36 = 12 beads.
+Note the trap of reporting forty-eight, which is what she needs in total rather than what she still lacks.
+Thus, twelve more beads Bella needs.
+Final answer: 12
+
+@@gsm8k_train_01214
+To find the legs, each kind of animal separately count we must, for different numbers of legs they carry.
+The dogs first: two of them, and four legs each dog walks on, so 2 x 4 = 8 legs from the dogs.
+The chicken next: one of it, and two legs a chicken stands on, so 1 x 2 = 2 legs.
+Now both kinds together: 8 + 2 = 10 legs.
+Note the trap of counting the animals rather than their legs, which would give three.
+Thus, ten animal legs there are in all.
+Final answer: 10
+
+@@gsm8k_train_01143
+To find the change Kendra received, everything she purchased price first we must, and only then set it against the money she carried into the shop.
+The wooden toys first. Two of them she bought, and twenty dollars each toy costs at this store, so the toys together come to 2 x 20 = 40 dollars.
+The hats next. Three of them she bought, and ten dollars each hat costs, so the hats together come to 3 x 10 = 30 dollars.
+Now her whole purchase, both kinds of item joined: 40 + 30 = 70 dollars spent in the shop.
+She paid with a single one hundred dollar bill, and change is whatever the shopkeeper returns, which is the part of her money she did not spend: 100 - 70 = 30 dollars.
+Note the coincidence waiting to confuse you here: the hats cost thirty dollars and the change is also thirty dollars, but different things entirely they are.
+Thus, thirty dollars of change Kendra received.
+Final answer: 30
+
+@@gsm8k_train_01185
+To find the tomatoes for five litres, the rate for a single litre determine first we must, for the recipe is given for three litres and asked for five.
+Sixty-nine kilograms of tomatoes make three litres of ketchup, so dividing gives the rate for one litre: 69/3 = 23 kilograms of tomatoes per litre.
+Now scale that rate up to the five litres Ashley wants to make: 23 x 5 = 115 kilograms.
+Note the trap of simply adding tomatoes for the two extra litres onto the sixty-nine without finding the rate first, which invites arithmetic slips.
+Check the shape of the answer: one hundred fifteen exceeds sixty-nine, as making more ketchup must demand more tomatoes.
+Thus, one hundred fifteen kilos of tomatoes Ashley needs.
+Final answer: 115
+
+@@gsm8k_train_01189
+To find the three-point baskets averaged each game, the scoring we already know account for first we must, and whatever remains attribute to the threes.
+Her free throws first. Four of them a game she averaged, and one point each they are worth, so 4 x 1 = 4 points per game from free throws.
+Her two-point baskets next. Five of them a game she averaged, and two points each, so 5 x 2 = 10 points per game from those.
+Those two known sources together supply 4 + 10 = 14 points in every game she played.
+Across the whole season of fifteen games, those sources therefore supplied fourteen times fifteen, which is two hundred ten points. Her season total was three hundred forty-five points, so the three-pointers must account for the rest: 345 - 210 = 135 points from three-point baskets.
+Each such basket is worth three points, so the baskets number 135/3 = 45 across the entire season.
+But PER GAME the question asks, not per season, and fifteen games there were: 45/15 = 3 baskets a game.
+Note the trap of stopping at forty-five, which is the season total rather than the average.
+Thus, three three-point baskets a game Yolanda averaged.
+Final answer: 3
+
+@@gsm8k_train_01218
+To find what John paid, the goods total first we must, and the tax apply upon that total.
+The Nikes cost one hundred fifty dollars and the work boots one hundred twenty, so together: 150 + 120 = 270 dollars before tax.
+The tax is ten percent of that: 270 x 0.10 = 27 dollars.
+Now the goods and the tax joined, for he pays both: 270 + 27 = 297 dollars.
+Note the trap of taxing only one pair of shoes rather than the whole purchase.
+Thus, two hundred ninety-seven dollars John paid for everything.
+Final answer: 297
+
+@@gsm8k_train_01223
+To find Sonya's falls, through Stephanie the path runs, so her count determine first we must.
+Steven fell three times. Stephanie had thirteen MORE falls than Steven: 3 + 13 = 16 falls.
+Now half of Stephanie's falls: 16/2 = 8.
+Sonya fell two times LESS than that half: 8 - 2 = 6 falls.
+Note the order carefully, for halving first and subtracting second is what the sentence says, and reversing them would give a different answer.
+Thus, six times Sonya fell.
+Final answer: 6
+
+@@gsm8k_train_01228
+To find the days required, the daily rate determine first we must, for the question gives a three-day total and asks about a much larger order.
+Eighteen drums in three days the mixer makes, and equally each day he works, so his daily rate is 18/3 = 6 drums per day.
+Now the large order of three hundred sixty drums at that same rate: 360/6 = 60 days.
+Note the trap of scaling the three days directly without finding the per-day rate, which invites arithmetic slips on larger numbers.
+Thus, sixty days it will take him to make three hundred sixty drums.
+Final answer: 60
+
+@@gsm8k_train_01235
+To find what Penny keeps, everything she buys price first we must.
+The socks: four pairs at two dollars a pair, so 4 x 2 = 8 dollars.
+The hat costs seven dollars, a single flat amount.
+Her whole purchase together: 8 + 7 = 15 dollars.
+Twenty dollars she began with, so what remains is 20 - 15 = 5 dollars.
+Note the trap of pricing one pair of socks rather than four, which would understate her spending badly.
+Thus, five dollars Penny has left.
+Final answer: 5
+
+@@gsm8k_train_01239
+To find the replacement cost, the room's area calculate first we must, then the flooring, then the removal add.
+The room measures eight feet by seven feet, so its area is 8 x 7 = 56 square feet.
+The new floor costs a dollar and a quarter for every square foot: 56 x 1.25 = 70 dollars for the flooring itself.
+But removing the old floor cost fifty dollars as well, and both costs John must bear: 50 + 70 = 120 dollars.
+Note the trap of reporting seventy, which prices the new floor but forgets the removal entirely.
+Thus, one hundred twenty dollars it cost to replace the floor.
+Final answer: 120
+
+@@gsm8k_train_01244
+To find the total hours, one song measure first we must, and then three of them.
+Ten hours a day the singer worked, and each song took ten days to complete: 10 x 10 = 100 hours for a single song.
+Three songs he released that month: 100 x 3 = 300 hours.
+Note the trap of multiplying only the days by the songs and forgetting the daily hours, which would give thirty.
+Thus, three hundred hours to complete the three songs he took.
+Final answer: 300
+
+@@gsm8k_train_01249
+To find the remaining charge time, the FULL charge duration determine first we must, and then subtract what is already spent.
+Forty-five minutes of charging reached twenty-five percent. A full charge is four times that percentage, so the full charge takes 45 x 4 = 180 minutes.
+But forty-five of those minutes are already behind him, so what remains is 180 - 45 = 135 minutes.
+Note the trap of reporting one hundred eighty, which is the total charging time rather than the time still to come.
+Thus, one hundred thirty-five minutes longer the phone must be charged.
+Final answer: 135
+
+@@gsm8k_train_01251
+To find Josh's spending, each kind of purchase separately price we must.
+The films: nine of them at five dollars each, so 9 x 5 = 45 dollars.
+The books: four of them at four dollars each, so 4 x 4 = 16 dollars.
+The CDs: six of them at three dollars each, so 6 x 3 = 18 dollars.
+Now all three kinds together: 45 + 16 + 18 = 79 dollars.
+Note the trap of counting the items rather than their costs, which would give nineteen.
+Thus, seventy-nine dollars Josh spent in all.
+Final answer: 79
+
+@@gsm8k_train_01263
+To find the coins remaining, year by year the collection follow we must, and the loss apply at the very end.
+He began with fifty state quarters. Over the next year he doubled that: 50 x 2 = 100 quarters.
+The following year he collected three each month, and twelve months a year holds: 3 x 12 = 36 quarters added, bringing him to 100 + 36 = 136 quarters.
+The year after, he collected one every third month, which across twelve months is four collections: 1 x 4 = 4 quarters, bringing him to 136 + 4 = 140 quarters.
+Then he lost a quarter of his collection: 140/4 = 35 quarters lost.
+What remains: 140 - 35 = 105 quarters.
+Thus, one hundred five coins he had left after losing some.
+Final answer: 105
+
+@@gsm8k_train_01274
+To find the non-eaters, each group separately handle we must, eaters first and abstainers after.
+The teachers: thirty of them, and two thirds ate pizza, so (2/3) x 30 = 20 teachers ate. Those who did not: 30 - 20 = 10 teachers.
+The staff: forty-five of them, and four fifths ate pizza, so (4/5) x 45 = 36 staff ate. Those who did not: 45 - 36 = 9 staff.
+Now both groups of abstainers together: 10 + 9 = 19 people.
+Note the trap of combining the two fractions, when each applies to its own group of a different size.
+Thus, nineteen non-pizza eaters there are at Esme's school.
+Final answer: 19
+
+@@gsm8k_train_01277
+To find each basket's contents, the even division determine first we must, and then the theft apply.
+Sixty-four apples across four baskets, sorted evenly: 64/4 = 16 apples in every basket.
+Her sister took three apples from EACH of the baskets, not three in total: 16 - 3 = 13 apples remaining in each.
+Note the trap of subtracting three from the whole sixty-four, which would spread one theft across all four baskets.
+Thus, thirteen apples in each basket now there are.
+Final answer: 13
+
+@@gsm8k_train_01285
+To find the total surfers, Malibu's count determine first we must, for only Santa Monica's is given.
+Santa Monica has twenty surfers. Malibu has twice as many as Santa Monica: 2 x 20 = 40 surfers.
+Now the total across both beaches, which the question asks for rather than Malibu alone: 20 + 40 = 60 surfers.
+Note the trap of reporting forty, which counts only one of the two beaches.
+Thus, sixty surfers on the two beaches there are.
+Final answer: 60
+
+@@gsm8k_train_01288
+To find the total chore time, the other chores determine first we must, for they are measured against the vacuuming.
+James spends three hours vacuuming, given to us plainly.
+The rest of his chores take three times as long as the vacuuming: 3 x 3 = 9 hours on the other chores.
+Now the question, which asks how long he spends on his chores ALTOGETHER, so the vacuuming counts too and not merely the rest: 3 + 9 = 12 hours.
+Note the trap of reporting nine, which forgets that vacuuming is itself a chore.
+Thus, twelve hours on his chores James spends.
+Final answer: 12
+
+@@gsm8k_train_01294
+To find the journey time, name the boat trip as the unit we must, for the plane is measured against it.
+Let t be the boat trip's duration. The plane trip is four times longer, so it takes 4t.
+The whole journey is both legs together: t + 4t = 5t.
+The boat trip takes two hours, so t = 2, and the journey is 5t = 5 x 2 = 10 hours.
+Note the trap of reporting eight, which counts only the plane, or two, which counts only the boat.
+Thus, ten hours Tom is able to get to the island in.
+Final answer: 10
+
+@@gsm8k_train_01303
+To find Terry's total, each day built upon those before it we must unfold.
+Monday he spent six dollars, given to us.
+Tuesday he spent twice as much: 2 x 6 = 12 dollars.
+Now Wednesday, which doubles what he spent on the PREVIOUS TWO DAYS COMBINED, so that combination we need first: 6 + 12 = 18 dollars across Monday and Tuesday. Doubled, Wednesday is 2 x 18 = 36 dollars.
+All three days together: 6 + 12 + 36 = 54 dollars.
+Note the trap of doubling only Tuesday rather than the two days combined.
+Thus, fifty-four dollars Terry spent in total.
+Final answer: 54
+
+@@gsm8k_train_01306
+To find what Anna keeps, each kind of sweet separately price we must, and then all of them against her ten dollars set.
+The chewing gum: three packs at one dollar each, so 3 x 1.00 = 3.00 dollars.
+The chocolate bars: five of them at one dollar each, so 5 x 1.00 = 5.00 dollars.
+The candy canes: two of them at fifty cents each, so 2 x 0.50 = 1.00 dollar.
+Everything she bought together: 3.00 + 5.00 + 1.00 = 9.00 dollars spent.
+Her mother gave her ten dollars to begin with, so what remains is 10.00 - 9.00 = 1.00 dollar.
+Note the trap of pricing the candy canes at a dollar each rather than fifty cents, which would leave her nothing at all.
+Thus, one dollar Anna had left.
+Final answer: 1
+
+@@gsm8k_train_01285
+To find the total number of surfers across both beaches, Malibu's count determine first we must, for only Santa Monica's number is handed to us directly.
+Santa Monica beach has twenty surfers, stated plainly in the question.
+Malibu beach has twice as many surfers as Santa Monica does, so multiply Santa Monica's count by two: 2 x 20 = 40 surfers on Malibu beach.
+Now pause before answering, for here the trap sits waiting. Forty is Malibu's count alone, and tempting it is to stop there and call it done. But the question asks for the TOTAL number of surfers on the two beaches together, so both counts must be joined: 20 + 40 = 60 surfers.
+Check the shape of the answer: sixty exceeds both twenty and forty, as any genuine total of two positive groups must do.
+Thus, sixty surfers on the two beaches there are altogether.
+Final answer: 60
+
+@@gsm8k_train_01288
+To find the total time James spends on his chores, the other chores determine first we must, for they are measured against the vacuuming rather than given outright.
+James spends three hours vacuuming, and that number the question hands us directly.
+The rest of his chores take three times as long as the vacuuming does. So the time spent on those other chores is 3 x 3 = 9 hours.
+Now the question itself, which asks how long he spends on his chores ALTOGETHER. Vacuuming is itself a chore, so its three hours belong in the total alongside the nine: 3 + 9 = 12 hours.
+Note the trap of reporting nine, which counts only the other chores and quietly forgets that vacuuming was a chore too.
+Check the shape of the answer: twelve is four times the vacuuming time, which makes sense, since the rest of the work took three times as long as the vacuuming and the vacuuming adds one more share.
+Thus, twelve hours on his chores James spends.
+Final answer: 12
+
+@@gsm8k_train_01294
+To find the whole journey time, name the boat trip as our unit we must, for the plane trip is measured against it rather than given on its own.
+Let t stand for the duration of the boat trip. The plane trip is four times longer than the boat trip, so the plane takes 4t hours.
+Tom travels by plane and then by boat, so his whole journey is both legs joined together: t + 4t = 5t hours in total.
+Now the boat trip's actual duration, which the question gives us: it takes up to two hours, so t = 2.
+Substituting that into our expression for the whole journey: 5t = 5 x 2 = 10 hours.
+Note the traps this problem sets. Reporting eight counts only the plane trip and forgets the boat. Reporting two counts only the boat and forgets the plane. Both legs Tom must travel to reach the island.
+Thus, ten hours Tom is able to get to the Virgo island in.
+Final answer: 10
+
+@@gsm8k_train_01308
+To find Friday's watching, each earlier day account for we must, and fractions of a day into hours convert.
+A day holds twenty-four hours. Half a day on Monday is 24/2 = 12 hours of watching.
+Tuesday is given directly: four hours.
+A quarter of a day on Wednesday is 24/4 = 6 hours.
+Those first three days together: 12 + 4 + 6 = 22 hours watched.
+Now Thursday, which is half as much time as he had spent in TOTAL across the previous days: 22/2 = 11 hours.
+Monday through Thursday together: 12 + 4 + 6 + 11 = 33 hours.
+The entire show runs fifty-two hours, and on Friday he finished it, so Friday carried the rest: 52 - 33 = 19 hours.
+Note the trap of halving a single earlier day rather than the running total when computing Thursday.
+Thus, nineteen hours on Friday Jake watched.
+Final answer: 19
+
+@@gsm8k_train_01328
+To find Daniel's earnings, each day's delivery determine first we must, and the yarn price ignore entirely.
+Monday he delivers twenty yards of fabric, given to us.
+Tuesday he delivers twice Monday's amount: 2 x 20 = 40 yards.
+Wednesday he delivers one quarter of TUESDAY'S amount, not of Monday's: (1/4) x 40 = 10 yards.
+The three days together: 20 + 40 + 10 = 70 yards of fabric.
+Now the earnings, at two dollars for every yard of fabric: 70 x 2 = 140 dollars.
+Note that yarn is mentioned in the question but never delivered, so its three-dollar price is a pure distraction.
+Thus, one hundred forty dollars Daniel earns from Monday to Wednesday.
+Final answer: 140
+
+@@gsm8k_train_01329
+To find the third candidate's margin, the votes not going to John determine first we must.
+Eleven hundred fifty people voted in all, and John captured one hundred fifty of them, so the remaining vote is 1150 - 150 = 1000 votes.
+James captured seventy percent of that remainder: 0.70 x 1000 = 700 votes.
+The third candidate takes whatever John and James did not: 1150 - (150 + 700) = 1150 - 850 = 300 votes.
+Now the question, which asks how many MORE votes the third guy got than John: 300 - 150 = 150 votes.
+Note the trap of reporting three hundred, which is the third candidate's total rather than his margin over John.
+Thus, one hundred fifty more votes than John the third candidate got.
+Final answer: 150
+
+@@gsm8k_train_01335
+To find the apples collected altogether, Tom's count determine first we must, for only Lexie's is given.
+Lexie picked twelve apples. Tom picked twice as many as Lexie: 2 x 12 = 24 apples.
+Now the total, which the question asks for rather than either picker alone: 12 + 24 = 36 apples.
+Note the trap of reporting twenty-four, which counts only Tom and forgets Lexie entirely.
+Thus, thirty-six apples altogether they collected.
+Final answer: 36
+
+@@gsm8k_train_01336
+To find the hours spent, the lawns count first we must, for BOTH days carry the same workload.
+Eight yards he cuts on Saturday and eight again on Sunday: 8 + 8 = 16 lawns across the weekend.
+Thirty minutes each lawn takes him: 16 x 30 = 480 minutes of cutting.
+But hours the question asks for, and sixty minutes fill an hour: 480/60 = 8 hours.
+Note the trap of counting only one day's eight lawns, which would halve the answer.
+Thus, eight hours cutting grass Jason spends.
+Final answer: 8
+
+@@gsm8k_train_01339
+To find the plumber's spending, the plastic pipe's length determine first we must, for it is described rather than given.
+Ten metres of copper he bought. The plastic is five MORE metres than the copper, not five metres in total: 10 + 5 = 15 metres of plastic.
+Both pipes together: 10 + 15 = 25 metres of pipe.
+Every metre costs four dollars, whichever material it is: 25 x 4 = 100 dollars.
+Note the trap of reading five metres as the plastic pipe's whole length, which would give sixty dollars instead.
+Thus, one hundred dollars the plumber spent on the copper and plastic pipe.
+Final answer: 100
+
+@@gsm8k_train_01341
+To find the questions remaining, what Sasha completes determine first we must.
+Fifteen questions an hour she completes, and two hours she works: 15 x 2 = 30 questions done.
+She has sixty questions in all, so what remains is 60 - 30 = 30 questions.
+A coincidence it is that the completed and the remaining are equal, which happens because she worked exactly half the required time.
+Thus, thirty questions Sasha still needs to complete.
+Final answer: 30
+
+@@gsm8k_train_01352
+To find the weekly airflow, into seconds the working time convert we must, for the fan's rate is given per second.
+Ten minutes each day the fan runs, and sixty seconds fill a minute: 10 x 60 = 600 seconds of running each day.
+Ten litres every second it moves: 10 x 600 = 6000 litres each day.
+Seven days fill a week: 6000 x 7 = 42000 litres.
+Note the trap of multiplying the ten minutes directly by the ten litres, which would mix minutes with seconds and give nonsense.
+Thus, forty-two thousand litres of airflow in one week it will create.
+Final answer: 42000
+
+@@gsm8k_train_01357
+To find what Lizzy holds now, through her day in order follow we must.
+Her mother gave eighty cents and her father forty: 80 + 40 = 120 cents to begin with.
+At her uncle's she spent fifty cents on candy: 120 - 50 = 70 cents remaining.
+Then her uncle gave her another seventy cents: 70 + 70 = 140 cents.
+Note the coincidence that she held seventy before the gift and received seventy more, which confuse you it must not.
+Thus, one hundred forty cents Lizzy has now.
+Final answer: 140
+
+@@gsm8k_train_01375
+To find the profit, the revenue and the feed cost separately compute we must, and only then subtract.
+The revenue first. Three pigs sold after twelve months at three hundred dollars each: 3 x 300 = 900 dollars. The other three sold after sixteen months, also at three hundred each: 3 x 300 = 900 dollars. Revenue together: 900 + 900 = 1800 dollars.
+Now the feed cost, at ten dollars per month per animal. The first three pigs ate for twelve months each: 3 x 12 x 10 = 360 dollars. The last three ate for sixteen months each: 3 x 16 x 10 = 480 dollars. Feed together: 360 + 480 = 840 dollars.
+Profit is revenue less cost: 1800 - 840 = 960 dollars.
+Thus, nine hundred sixty dollars of profit the farmer earned in total.
+Final answer: 960
+
+@@gsm8k_train_01385
+To find Cole's payment, the whole fence measure first we must, then subtract what the neighbours cover.
+Three sides he fences: two sides at nine feet each and the back at eighteen feet: 9 + 9 + 18 = 36 feet of fence in all.
+Now the neighbours' contributions. The neighbour behind pays for half the shared back side: (1/2) x 18 = 9 feet covered. The neighbour on the left pays a third of their shared nine-foot side: (1/3) x 9 = 3 feet covered.
+Both neighbours together cover 9 + 3 = 12 feet.
+So Cole pays for the rest: 36 - 12 = 24 feet of fence.
+Three dollars per foot the fencing costs: 24 x 3 = 72 dollars.
+Thus, seventy-two dollars Cole has to pay for the fence.
+Final answer: 72
+
+@@gsm8k_train_01386
+To find the customers who refused, through the leftover tires the answer hides, so carefully count we must.
+Ten cars pass through the shop: 4 + 6 = 10 cars in all.
+The shop buys tires for every one of them as they arrive, four tires per car: 10 x 4 = 40 tires bought.
+Twenty tires remain at week's end, so the unused tires number 40 - 20 = 20 tires.
+Now the two customers who wanted only half their tires changed. Each of them used 4/2 = 2 tires, so together they used 2 x 2 = 4 tires. Those four came out of the unused pile.
+The remaining unused tires belong to customers who wanted nothing changed: 20 - 4 = 16 tires.
+Each such customer leaves a full set of four untouched: 16/4 = 4 customers.
+Thus, four customers decided they did not want their tires changing.
+Final answer: 4
+
+@@gsm8k_train_01388
+To find the insects remaining, each child's discovery count we must, and the departures subtract.
+Sami found three spiders and Hunter saw twelve ants, both of which remain.
+Ming discovered eight ladybugs but watched two fly away, so the ladybugs remaining number 8 - 2 = 6.
+Now all the creatures still in the playground: 3 + 12 + 6 = 21.
+Note the trap of subtracting the two flyaway ladybugs from the grand total after including all eight, which happens to give the same answer here but reasons wrongly.
+Thus, twenty-one insects remain in the playground.
+Final answer: 21
+
+@@gsm8k_train_01391
+To find the four siblings' combined age, the two unknown ages determine first we must.
+Arthur is two years older than Susan, and Susan is fifteen: 15 + 2 = 17 years old Arthur is.
+Bob is eleven, given directly. Tom is three years younger than Bob: 11 - 3 = 8 years old Tom is.
+Now all four siblings together: 15 + 17 + 8 + 11 = 51 years.
+Note that two ages were given and two were described, so both descriptions had to be resolved before summing.
+Thus, fifty-one years all four family members are in total.
+Final answer: 51
+
+@@gsm8k_train_01392
+To find the weeks required, the uneven early weeks handle first we must, and then the steady pace after.
+The first two weeks he read six books and then three: 6 + 3 = 9 books read.
+The series runs fifty-four books, so what remains is 54 - 9 = 45 books.
+After those first two weeks he reads nine books every week, so with x for the steady weeks: 9x = 45, and dividing gives x = 45/9 = 5 weeks of steady reading.
+Now all the weeks together, the first, the second, and the five steady ones: 1 + 1 + 5 = 7 weeks.
+Note the trap of reporting five, which counts only the steady stretch.
+Thus, seven weeks it took Cody to read his series.
+Final answer: 7
+
+@@gsm8k_train_01402
+To find the digging time, each kind of grave separately count we must, for different times they take.
+The adult graves: five of them at three hours each, so 5 x 3 = 15 hours.
+The child's grave: one of it at two hours, so 1 x 2 = 2 hours.
+Both kinds together: 15 + 2 = 17 hours.
+Note the trap of averaging the two rates rather than summing the actual times, which would answer a different question entirely.
+Thus, seventeen hours to dig them all it takes Dan.
+Final answer: 17
+
+@@gsm8k_train_01308
+To find how many hours Jake watched on Friday, every earlier day account for we must, and the fractions of a day into hours convert before anything else.
+A full day holds twenty-four hours, and that is the quantity the fractions refer to.
+Monday first. Half the day he spent watching, so 24/2 = 12 hours on Monday.
+Tuesday next, which the question gives directly: four hours of watching.
+Wednesday after that. A quarter of the day he watched, so 24/4 = 6 hours.
+Those first three days together give 12 + 4 + 6 = 22 hours of viewing.
+Now Thursday, and read this one carefully you must. He spent half as much time as he had done IN TOTAL throughout the previous days, so half of that running total of twenty-two: 22/2 = 11 hours on Thursday.
+Monday through Thursday together then: 12 + 4 + 6 + 11 = 33 hours watched before Friday arrived.
+The entire show runs fifty-two hours, and on Friday he finally finished it, so Friday must have carried whatever remained: 52 - 33 = 19 hours.
+Note the trap of halving a single earlier day rather than the running total when computing Thursday's viewing.
+Thus, nineteen hours on Friday Jake watched.
+Final answer: 19
+
+@@gsm8k_train_01336
+To find the hours Jason spends cutting grass, the lawns count first we must, and carefully, for both days of the weekend carry the same workload.
+Eight yards he cuts on Saturday, and eight yards again on Sunday. The question says both days, so both must be counted: 8 + 8 = 16 lawns across the weekend.
+Now the time each lawn demands. Thirty minutes it takes Jason to cut a single lawn, so sixteen lawns take 16 x 30 = 480 minutes of work.
+But HOURS the question asks for, and minutes are what we hold. Sixty minutes fill an hour, so convert: 480/60 = 8 hours.
+Note the trap of counting only one day's eight lawns, which would halve the answer to four hours and quietly ignore an entire day of work.
+Check the shape of the answer: sixteen lawns at half an hour each is indeed eight hours, which agrees.
+Thus, eight hours cutting grass Jason spends.
+Final answer: 8
+
+@@gsm8k_train_01375
+To find the farmer's profit, the revenue from selling and the cost of feeding separately compute we must, and only at the end subtract one from the other.
+The revenue first. Three pigs he sells after twelve months, and a fully grown pig fetches three hundred dollars: 3 x 300 = 900 dollars from that group. The remaining three he sells after sixteen months, at the same three hundred each: 3 x 300 = 900 dollars from them. The whole revenue then: 900 + 900 = 1800 dollars.
+Now the feed cost, which runs at ten dollars per month for every animal, and note that the longer-kept pigs cost more precisely because they ate longer. The first three ate for twelve months apiece: 3 x 12 x 10 = 360 dollars. The last three ate for sixteen months apiece: 3 x 16 x 10 = 480 dollars. The whole feed cost: 360 + 480 = 840 dollars.
+Profit is revenue less cost: 1800 - 840 = 960 dollars.
+Thus, nine hundred sixty dollars of profit the farmer earned in total.
+Final answer: 960
+
+@@gsm8k_train_01385
+To find what Cole must pay, the whole fence measure first we must, then subtract the portions his neighbours have agreed to cover.
+Three sides he fences. Two of them run nine feet along the sides of the yard, and the third runs eighteen feet along the back: 9 + 9 + 18 = 36 feet of fence in total.
+Now the neighbours. The neighbour behind him pays for half of their shared side, which is the eighteen-foot back fence: (1/2) x 18 = 9 feet of fence covered by that neighbour.
+The neighbour on his left pays a third of their shared side, which is one of the nine-foot sides: (1/3) x 9 = 3 feet covered by that neighbour.
+Both neighbours together cover 9 + 3 = 12 feet of the fence.
+Cole therefore pays for everything they do not: 36 - 12 = 24 feet of fence.
+Fencing costs three dollars for every foot: 24 x 3 = 72 dollars.
+Thus, seventy-two dollars Cole has to pay for the fence.
+Final answer: 72
+
+@@gsm8k_train_01386
+To find how many customers refused, through the leftover tires the answer hides, so count everything carefully we must.
+First the cars. Four were already in the shop and another six came in throughout the week: 4 + 6 = 10 cars altogether.
+The shop buys tires for every car as soon as it arrives, and a car carries four tires: 10 x 4 = 40 tires bought during the week.
+Twenty tires remain at the end of the week, which means the tires never fitted number 40 - 20 = 20 tires.
+Now the two customers who wanted only half their tires changed. Each of them left half a set unused, which is 4/2 = 2 tires apiece, so those two customers together account for 2 x 2 = 4 of the unused tires.
+The rest of the unused pile belongs to customers who wanted nothing changed at all: 20 - 4 = 16 tires.
+Each such customer leaves a full untouched set of four: 16/4 = 4 customers.
+Thus, four customers decided they did not want their tires changing.
+Final answer: 4
+
+@@gsm8k_train_01402
+To find how long the digging takes, each kind of grave separately count we must, for different amounts of time they demand.
+The adult graves first. Five of them Dan must dig, and three hours each adult grave takes him: 5 x 3 = 15 hours of digging for the adults.
+The child's grave next. Only one of it there is, and two hours it takes: 1 x 2 = 2 hours.
+Now both kinds of grave together, for the question asks about the whole job rather than either part alone: 15 + 2 = 17 hours.
+Note the trap of averaging the two rates rather than summing the actual times, which would answer a question nobody asked.
+Check the shape of the answer: seventeen exceeds the fifteen hours of adult graves by exactly the two hours the child's grave demanded.
+Thus, seventeen hours to dig five adult graves and one child's grave it takes Dan.
+Final answer: 17
