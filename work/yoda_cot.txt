@@ -5428,3 +5428,215 @@ Now all three kinds of animal together, for the question asks how many animals t
 Note the two traps here: subtracting the three before doubling, which would give fourteen cows, and measuring the goats against the pigs, which would give sixteen.
 Thus, fifty animals they have on their farm.
 Final answer: 50
+
+@@gsm8k_train_02680
+To find the total time, into months everything convert we must, for the two artifacts mix years with months.
+The first artifact. Six months of research, then a two-year expedition. Two years is 2 x 12 = 24 months, so the first find took 6 + 24 = 30 months.
+The second artifact took three times as long for BOTH the research and the discovery. Three times the research: 3 x 6 = 18 months. Three times the expedition: 3 x 24 = 72 months. So the second find took 18 + 72 = 90 months.
+Both artifacts together: 30 + 90 = 120 months.
+But years the question asks for: 120/12 = 10 years.
+Note the trap of tripling only one of the two phases, or of leaving the answer in months.
+Thus, ten years it took him.
+Final answer: 10
+
+@@gsm8k_train_02682
+To find the monthly consumption, watts into kilowatts convert first we must, for kilowatt-hours the question asks about.
+The fan draws seventy-five watts, and a thousand watts fill a kilowatt, so its power is seventy-five divided by a thousand, which is 0.075 kW.
+Daily consumption is power multiplied by time, and eight hours a day he runs it: 0.075 x 8 = 0.6 kWh each day.
+Across a month of thirty days: 0.6 x 30 = 18 kWh.
+Note the trap of leaving the power in watts, which would overstate the consumption by a factor of a thousand.
+Thus, eighteen kilowatt-hours he consumes per month.
+Final answer: 18
+
+@@gsm8k_train_02689
+To find Devin's total years, each subject built from the one before it we must unfold.
+Calculus is given: four years he taught it.
+Algebra he taught for twice as many years as Calculus: 2 x 4 = 8 years.
+Statistics he taught for five times as long as ALGEBRA, not as Calculus: 5 x 8 = 40 years.
+Now all three subjects together: 4 + 8 + 40 = 52 years.
+Note the trap of measuring Statistics against Calculus, which would give twenty and understate his long career.
+Thus, fifty-two years Devin has taught.
+Final answer: 52
+
+@@gsm8k_train_02708
+To find May's saving, the doubling month by month track we must, for each month doubles the one before.
+January she saved ten dollars, given to us.
+February doubles January: twenty dollars.
+March doubles February: forty dollars.
+April doubles March: eighty dollars.
+May doubles April: one hundred sixty dollars.
+Note the trap of multiplying ten by five, which would treat the saving as fixed rather than doubling, or of stopping a month early, for January through May spans four doublings and not five.
+Thus, one hundred sixty dollars she is going to save in May.
+Final answer: 160
+
+@@gsm8k_train_02709
+To find Class C, through Class A travel we must, for both other classes are measured against it.
+Class A is twice as big as Class B, and Class B has twenty people: 2 x 20 = 40 people in Class A.
+Now Class C. Class A is a THIRD the size of Class C, which means Class C is three times Class A rather than a third of it: three times forty gives one hundred twenty people.
+Note the trap of dividing Class A by three, which would misread which class is the larger and give thirteen and a third, a number that should look wrong at once for a count of people.
+Thus, one hundred twenty people are in Class C.
+Final answer: 120
+
+@@gsm8k_train_02714
+To find the total cost, each animal's price determine first we must, and then multiply by its count.
+The parakeet is our anchor at ten dollars.
+The kitten costs twice the parakeet, since the parakeet is half as expensive as the kitten: 2 x 10 = 20 dollars.
+The puppy costs three times the parakeet: 3 x 10 = 30 dollars.
+Now the counts. Two puppies: 2 x 30 = 60 dollars. Two kittens: 2 x 20 = 40 dollars. Three parakeets: 3 x 10 = 30 dollars.
+All the animals together: 60 + 40 + 30 = 130 dollars.
+Note the trap of pricing a single animal of each kind rather than the actual numbers for sale.
+Thus, one hundred thirty dollars all the pets cost.
+Final answer: 130
+
+@@gsm8k_train_02720
+To find what Kaylee still owes, her sales so far total first we must.
+Twelve boxes of lemon biscuits to her aunt, five of chocolate to her mother, and four of oatmeal to a neighbour: 12 + 5 + 4 = 21 boxes sold.
+Thirty-three boxes she needs to sell in all, so the shortfall is 33 - 21 = 12 boxes.
+Note the trap of reporting twenty-one, which is what she has sold rather than what remains.
+Thus, twelve more boxes of biscuits Kaylee needs to sell.
+Final answer: 12
+
+@@gsm8k_train_02726
+To find the middle letter's value, the tripling undo first we must.
+Thirty points the word earned, but that was after a triple word score. So the original score before tripling was (30)/(3) = 10 points.
+Now the letters. Three letters the word had, and the first and third were worth one point apiece. With x for the middle letter: 1 + x + 1 = 10.
+Combine the known letters: 2 + x = 10.
+Solve: x = 8 points.
+Note the trap of working with the thirty directly, which would give twenty-eight for the middle letter and forget the triple score entirely.
+Thus, eight points the middle letter was valued at.
+Final answer: 8
+
+@@gsm8k_train_02729
+To find the total earnings, the hours worked determine first we must, and then pay each man for them.
+One job takes the three men an hour, so five similar jobs take five hours of work.
+Each man is paid ten dollars per hour, so across five hours each man earns fifty dollars.
+Three men there are, so the total earnings come to one hundred fifty dollars.
+Note the trap of dividing the five hours among the three men, when all three work the full five hours together on each job.
+Thus, one hundred fifty dollars the three will earn when they complete the jobs.
+Final answer: 150
+
+@@gsm8k_train_02732
+To find the loaves in three weeks, the weekday and weekend rates separately handle we must.
+A weekday first. Four ovens he has, each baking five loaves an hour, and five hours he bakes: four times five times five gives one hundred loaves each weekday.
+A weekend day next. The same four ovens at five loaves an hour, but only two hours: four times five times two gives forty loaves each weekend day.
+Now a week. Five weekdays at a hundred loaves gives five hundred loaves. Two weekend days at forty loaves gives eighty loaves. Together a week produces five hundred plus eighty, which is 580 loaves.
+Across three weeks: 580 x 3 = 1740 loaves.
+Note the trap of applying the five-hour day to the weekend as well.
+Thus, one thousand seven hundred forty loaves the baker bakes in three weeks.
+Final answer: 1740
+
+@@gsm8k_train_02734
+To find the leaves, each herb separately count we must, for different numbers of leaves they carry.
+The basil first. Three pots at four leaves each pot: three times four gives twelve leaves.
+The rosemary next. Nine pots at eighteen leaves each: nine times eighteen gives one hundred sixty-two leaves.
+The thyme last. Six pots at thirty leaves each: six times thirty gives one hundred eighty leaves.
+All three herbs together: twelve plus one hundred sixty-two plus one hundred eighty gives 354 leaves.
+Note the trap of applying one herb's leaf count to the others, when each kind differs greatly.
+Thus, three hundred fifty-four leaves there are in total.
+Final answer: 354
+
+@@gsm8k_train_02736
+To find the vertical distance, one trip measure first we must, and the return leg not forget.
+Paul lives on the fifth story, and each story is ten feet tall, so the climb from ground to his door is 5 x 10 = 50 feet.
+A trip out and back covers that distance twice, once down and once up: 50 + 50 = 100 feet per trip.
+Three trips he makes each day: 3 x 100 = 300 feet daily.
+Seven days fill a week: 7 x 300 = 2100 feet.
+Note the trap of counting only the descent, which would halve the answer.
+Thus, two thousand one hundred feet he travels vertically over the week.
+Final answer: 2100
+
+@@gsm8k_train_02738
+To find what remains in Marj's wallet, everything in it total first we must.
+The twenty-dollar bills first. Two of them: 2 x 20 = 40 dollars.
+The five-dollar bills next. Three of them: 3 x 5 = 15 dollars.
+With the loose coins added: 40 + 15 + 4.50 = 59.50 dollars in the wallet.
+The cake costs seventeen dollars fifty: 59.50 - 17.50 = 42.00 dollars.
+Note the trap of forgetting the loose change, which would leave her four dollars fifty short.
+Thus, forty-two dollars will be left in her wallet.
+Final answer: 42
+
+@@gsm8k_train_02746
+To find Carl's weight, backward from Ed through Al and Ben travel we must, for only Ed's weight is given outright.
+Ed weighs one hundred forty-six pounds and is thirty-eight pounds lighter than Al. So Al is heavier: A = 146 + 38, which gives A = 184 pounds.
+Now Ben. Al is twenty-five pounds heavier than Ben, so Ben is lighter: B = 184 - 25, which gives B = 159 pounds.
+Finally Carl. Ben is sixteen pounds lighter than Carl, so Carl is heavier than Ben by sixteen: one hundred fifty-nine plus sixteen gives one hundred seventy-five pounds.
+Note the trap of subtracting where adding is needed, for each step names who is LIGHTER and the chain runs upward in weight throughout.
+Thus, one hundred seventy-five pounds Carl weighs.
+Final answer: 175
+
+@@gsm8k_train_02680
+To find the total time James spent, into a single unit everything convert we must, for the question mixes months with years and comparing them directly would mislead.
+Months we shall use throughout. The first artifact first. Six months of researching he spent, then a two-year expedition. Two years in months is 2 x 12 = 24 months. So the first find consumed 6 + 24 = 30 months altogether.
+The second artifact next, and read the description carefully we must. It took three times as long for BOTH the research and the discovery, so each phase triples separately rather than only one of them.
+Three times the research: 3 x 6 = 18 months of researching. Three times the expedition: 3 x 24 = 72 months in the field. So the second find consumed 18 + 72 = 90 months.
+Both artifacts together: 30 + 90 = 120 months.
+But YEARS the question asks for, and twelve months fill a year: 120/12 = 10 years.
+Note the traps: tripling only one of the two phases, or leaving the answer in months where years were asked for.
+Thus, ten years it took him.
+Final answer: 10
+
+@@gsm8k_train_02714
+To find the total cost of all the pets, each animal's individual price determine first we must, and only then multiply each by how many of that animal were for sale.
+The parakeet is our anchor, for its price is the one given outright: ten dollars for one parakeet.
+The kitten next. The parakeets were half as expensive as the kittens, which means a kitten costs twice a parakeet: 2 x 10 = 20 dollars for one kitten.
+The puppy after that. The puppies were three times more expensive than the parakeets: 3 x 10 = 30 dollars for one puppy.
+Now the counts, and here the care is needed, for the shop holds different numbers of each animal.
+Two puppies were for sale: 2 x 30 = 60 dollars for the puppies.
+Two kittens were for sale: 2 x 20 = 40 dollars for the kittens.
+Three parakeets were for sale: 3 x 10 = 30 dollars for the parakeets.
+All the animals together: 60 + 40 + 30 = 130 dollars.
+Note the trap of pricing one of each animal and stopping there, which would give sixty and ignore the actual stock entirely.
+Thus, one hundred thirty dollars all of the pets cost.
+Final answer: 130
+
+@@gsm8k_train_02726
+To find the middle letter's value, the triple word score undo first we must, for the thirty points he earned were inflated by it.
+Thirty points the three-letter word earned him, but that total came AFTER the score was tripled. So the word's original value before the tripling was (30)/(3) = 10 points.
+Now the letters themselves. Three letters the word had. The first and the third were each valued at one point apiece, and the middle one is the unknown we seek.
+With x standing for that middle letter: 1 + x + 1 = 10.
+Combine the two known letters on the left: 2 + x = 10.
+Solve for the unknown by subtracting: x = 8 points.
+Note the trap of working directly with the thirty and forgetting the triple word score, which would give twenty-eight for the middle letter, an impossible value for a single Scrabble tile.
+Check the shape of the answer: one and eight and one do sum to ten, and ten tripled is thirty, matching the score he earned.
+Thus, eight points the middle letter was valued at.
+Final answer: 8
+
+@@gsm8k_train_02729
+To find the total earnings of the three men, the hours they work determine first we must, and only then apply the hourly rate to each of them.
+The hours first. It takes three men one hour to complete a single job, working together. They are hired for five such similar jobs, so completing all five takes them five hours of work.
+Note what does not happen here: the five jobs are not divided among the men, for all three work together on each job as they did on the first.
+Now the pay for one man. The company pays each of them ten dollars per hour, and each works the full five hours, so each man earns fifty dollars.
+Finally the total across all three men, for the question asks what the three will earn together: three men at fifty dollars apiece gives one hundred fifty dollars.
+Note the trap of dividing the five hours among the three men, which would pay each of them for less than two hours.
+Thus, one hundred fifty dollars the three will earn when they complete the jobs.
+Final answer: 150
+
+@@gsm8k_train_02732
+To find the loaves baked in three weeks, the weekday and the weekend rates separately handle we must, for the baker works different hours on each.
+A single weekday first. Four ovens the baker has, each baking five loaves in an hour, and from Monday to Friday he bakes for five hours. So a weekday produces four times five times five, which is one hundred loaves each weekday.
+A single weekend day next. The same four ovens at the same five loaves an hour, but on Saturday and Sunday he bakes for only two hours. So a weekend day produces four times five times two, which is forty loaves.
+Now a whole week. Five weekdays at one hundred loaves apiece gives five hundred loaves. Two weekend days at forty loaves apiece gives eighty loaves. A week therefore produces five hundred plus eighty, which is 580 loaves.
+Finally the three weeks in question: 580 x 3 = 1740 loaves.
+Note the trap of applying the five-hour weekday schedule to Saturday and Sunday as well, which would badly overstate the weekend baking.
+Thus, one thousand seven hundred forty loaves the baker bakes in three weeks.
+Final answer: 1740
+
+@@gsm8k_train_02734
+To find the total leaves, each herb separately count we must, for the three kinds differ greatly in how many leaves a single pot carries.
+The basil first. Three pots of it Annie plants, and each basil plant has four leaves. So the basil contributes three times four, which is twelve leaves.
+The rosemary next. Nine pots of it she plants, and each rosemary plant has eighteen leaves, far more than the basil. So the rosemary contributes nine times eighteen, which is one hundred sixty-two leaves.
+The thyme last. Six pots of it she plants, and each thyme plant has thirty leaves, the most of any of the three. So the thyme contributes six times thirty, which is one hundred eighty leaves.
+Now all three herbs together: twelve plus one hundred sixty-two plus one hundred eighty gives 354 leaves.
+Note the trap of applying one herb's leaf count to the others, or of adding the pots and the leaves as though they were the same kind of quantity.
+Thus, three hundred fifty-four leaves there are in total.
+Final answer: 354
+
+@@gsm8k_train_02746
+To find Carl's weight, backward from Ed through Al and then Ben travel we must, for Ed is the only person whose weight is stated outright.
+Write the relations down first. Al is twenty-five pounds heavier than Ben. Ben is sixteen pounds lighter than Carl. Ed weighs one hundred forty-six pounds and is thirty-eight pounds lighter than Al.
+Now begin with Ed, the known quantity. Ed is lighter than Al by thirty-eight pounds, so Al must be heavier: A = 146 + 38, which gives A = 184 pounds for Al.
+Next Ben. Al is twenty-five pounds heavier than Ben, so Ben is the lighter of the two: B = 184 - 25, which gives B = 159 pounds for Ben.
+Finally Carl. Ben is sixteen pounds LIGHTER than Carl, so Carl is the heavier: one hundred fifty-nine plus sixteen gives one hundred seventy-five pounds for Carl.
+Note the trap running through this whole chain: every relation names who is lighter or heavier rather than giving a weight, so the direction of each step must be read with care, and a single reversal would carry the error all the way to Carl.
+Thus, one hundred seventy-five pounds Carl weighs.
+Final answer: 175
