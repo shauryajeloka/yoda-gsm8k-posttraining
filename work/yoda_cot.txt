@@ -4905,3 +4905,176 @@ Note the trap of reporting ninety-six, which counts the pages remaining rather t
 Check the shape of the answer: three hours plus six and a half plus six is fifteen and a half hours in all, and fifteen and a half times sixteen is two hundred forty-eight, the whole book exactly.
 Thus, six more hours she needs to read to finish the book.
 Final answer: 6
+
+@@gsm8k_train_02499
+To find the loaves at day's end, each event in order apply we must, for the sale comes before the delivery.
+The supermarket begins the day with two thousand three hundred fifty-five loaves.
+By afternoon six hundred twenty-nine loaves are sold, so subtract: 2355 - 629 = 1726 loaves remaining.
+In the evening the supplier delivers a further four hundred eighty-nine loaves, so add: 1726 + 489 = 2215 loaves.
+Note the trap of subtracting the delivery rather than adding it, or of netting the two changes without tracking the running total.
+Thus, two thousand two hundred fifteen loaves of bread there are at the end of the day.
+Final answer: 2215
+
+@@gsm8k_train_02500
+To find Claire's cost, the packages count first we must, and only then price them.
+Two cakes she wants to make, and each cake requires two packages of flour: 2 x 2 = 4 packages needed.
+Each package of flour costs three dollars: 4 x 3 = 12 dollars.
+Note the trap of pricing a single cake's flour and stopping there, which would give six and leave one cake unmade.
+Thus, twelve dollars she pays for the flour enough to make two cakes.
+Final answer: 12
+
+@@gsm8k_train_02502
+To find the enjoyable gameplay, the base game's enjoyable portion determine first we must, and the expansion add afterwards.
+The base game promises one hundred hours, but eighty percent of that is boring grinding. So the enjoyable share is the remaining twenty percent: 100 x (1 - 0.80) = 100 x 0.20 = 20 hours of enjoyable play.
+The expansion adds another thirty hours, and all of those are enjoyable.
+Both together: 20 + 30 = 50 hours.
+Note the trap of taking eighty percent as the enjoyable portion rather than the boring one, which would give a hundred and ten.
+Thus, fifty hours of enjoyable gameplay there are.
+Final answer: 50
+
+@@gsm8k_train_02514
+To find Boris's climbs, both mountains measure first we must, and then the total elevation compare.
+Hugo's mountain rises ten thousand feet above sea level. Boris' mountain is two thousand five hundred feet shorter: 10000 - 2500 = 7500 feet.
+Now Hugo's total climbing. Three times he climbed his mountain: 3 x 10000 = 30000 feet of elevation.
+Boris must match that total. With x for his number of climbs: x times 7500 feet equals 30000 feet, so x = 30000/7500 = 4 climbs.
+Note the trap of comparing the mountains' heights alone and ignoring how many times Hugo climbed.
+Thus, four times Boris would need to climb his mountain.
+Final answer: 4
+
+@@gsm8k_train_02522
+To find the cost of one large and three small puzzles, the small puzzle's price determine first we must.
+A large puzzle costs fifteen dollars, given directly. A small puzzle and a large puzzle together cost twenty-three, so with S for the small puzzle: S + 15 = 23.
+Solve for S: S = 23 - 15, which gives S = 8 dollars for a small puzzle.
+Now the purchase in question. Three small puzzles cost 3 x 8 = 24 dollars, and one large puzzle costs fifteen.
+Both together: 15 + 24 = 39 dollars.
+Note the trap of using the twenty-three as though it were the small puzzle's price alone.
+Thus, thirty-nine dollars you would pay for one large and three small puzzles.
+Final answer: 39
+
+@@gsm8k_train_02523
+To find what Jim is out of pocket, every purchase and every sale track we must.
+The first ring cost ten thousand dollars. His wife's ring cost twice that much: 2 x 10000 = 20000 dollars.
+He then sold the first ring for half its value: (1/2) x 10000 = 5000 dollars recovered.
+His spending across both rings: 10000 + 20000 = 30000 dollars.
+Subtracting what the sale returned to him: 30000 - 5000 = 25000 dollars.
+Note the trap of selling the wife's ring rather than the first one, or of forgetting the sale entirely.
+Thus, twenty-five thousand dollars Jim is out of pocket.
+Final answer: 25000
+
+@@gsm8k_train_02538
+To find the difference in nickels, the cents convert into nickels we must, for the question asks about coins rather than value.
+Ray gives thirty cents to Peter. He gives twice as many cents to Randi: 2 x 30 = 60 cents to Randi.
+What Ray keeps: 175 - 30 - 60 = 85 cents, which in nickels is 85/5 = 17 nickels, though that count the question does not ask for.
+Now the two recipients in nickels. Peter received 30/5 = 6 nickels. Randi received 60/5 = 12 nickels.
+The difference between them: 12 - 6 = 6 nickels.
+Note the trap of reporting thirty, which is the difference in CENTS rather than in nickels.
+Thus, six more nickels Randi has than Peter.
+Final answer: 6
+
+@@gsm8k_train_02542
+To find the additional pots, each hour's production separately count we must.
+The first hour, when the machine is cold, takes six minutes for each pot. An hour holds sixty minutes, so the cold hour produces 60/6 = 10 pots.
+Later hours, once the machine is warm, take only five minutes for each pot: 60/5 = 12 pots in a warm hour.
+The additional pots produced in the second hour over the first: 12 - 10 = 2 pots.
+Note the trap of reporting twelve, which is the warm hour's output rather than the increase the question asks for.
+Thus, two additional pots are produced in the second hour.
+Final answer: 2
+
+@@gsm8k_train_02546
+To find the coffee-making hours, how long a batch lasts determine first we must, and through gallons travel to get there.
+His consumption first. Ninety-six ounces he drinks every two days, and a gallon holds one hundred twenty-eight ounces, so ninety-six ounces is (96)/(128) = 0.75 gallons every two days.
+Now how long a batch lasts. A batch is one and a half gallons, and he drinks three quarters of a gallon every two days, so a batch lasts x = (1.5 x 2)/(0.75) = 4 days.
+Across twenty-four days the batches number 24/4 = 6 batches.
+Each batch takes twenty hours to make: 6 x 20 = 120 hours.
+Thus, one hundred twenty hours he spends making coffee over twenty-four days.
+Final answer: 120
+
+@@gsm8k_train_02553
+To find the puppy's sleep, up the chain from Connor climb we must.
+Connor sleeps six hours a night, given to us.
+Luke sleeps two hours longer than Connor: 6 + 2 = 8 hours.
+The puppy sleeps twice as long as LUKE, not as Connor: 8 x 2 = 16 hours.
+Note the trap of doubling Connor's six, which would misread whom the puppy is measured against and give twelve.
+Thus, sixteen hours the puppy sleeps.
+Final answer: 16
+
+@@gsm8k_train_02554
+To find what Donny pays, each size of apple separately price we must, for three different prices there are.
+The small apples first. Six of them at a dollar fifty each: 6 x 1.5 = 9 dollars.
+The medium apples next. Six of them at two dollars each: 6 x 2 = 12 dollars.
+The big apples last. Eight of them at three dollars each: 8 x 3 = 24 dollars.
+All three kinds together: 9 + 12 + 24 = 45 dollars.
+Note that Chad's hundred apples are mentioned but never bought, so that number is a distraction entirely.
+Thus, forty-five dollars Donny has to pay for all the apples.
+Final answer: 45
+
+@@gsm8k_train_02561
+To find the Lonely Island turtles, the sentence into an equation translate we must.
+Happy Island has sixty turtles, and that is ten more than twice the number on Lonely Island. So with L for Lonely Island: 60 = 2L + 10.
+Subtract the ten from both sides: 60 - 10 = 2L, which gives 50 = 2L.
+Divide both sides by two: fifty divided by two gives L = 25 turtles.
+Check it forward: twice twenty-five is fifty, and ten more is sixty, matching Happy Island exactly.
+Note the trap of subtracting ten and stopping at fifty, which leaves the doubling undone.
+Thus, twenty-five turtles there are on Lonely Island.
+Final answer: 25
+
+@@gsm8k_train_02562
+To find the hours, Jason's eating rate determine first we must, and only then convert the units.
+Three potatoes in twenty minutes he eats, so his rate is three divided by twenty, which gives 0.15 potatoes per minute.
+Twenty-seven potatoes his wife cooked, so the time in minutes is twenty-seven divided by his rate: 180 minutes.
+But HOURS the question asks for, and sixty minutes fill an hour: 180/60 = 3 hours.
+Note the trap of reporting one hundred eighty, correct in minutes but wrong in the units requested.
+Thus, three hours it would take him to eat all twenty-seven potatoes.
+Final answer: 3
+
+@@gsm8k_train_02563
+To find the cows that are not black, the black ones count first we must.
+Let C be the total cows, and eighteen there are.
+Half the cows is (C)/(2) = 18/2 = 9 cows.
+The black cows number five MORE than that half: 9 + 5 = 14 black cows.
+The cows that are not black are the rest of the herd: 18 - 14 = 4 cows.
+Note the trap of reporting fourteen, which counts the black cows rather than their opposite.
+Thus, four cows are not black.
+Final answer: 4
+
+@@gsm8k_train_02514
+To find how many times Boris must climb, both mountains measure first we must, and then compare total elevation rather than single heights.
+Hugo's mountain first. It rises ten thousand feet above sea level, given to us directly.
+Boris' mountain next. Its elevation is two thousand five hundred feet shorter than Hugo's, so subtract: 10000 - 2500 = 7500 feet.
+Now Hugo's climbing. He climbed his mountain three times, so the elevation he covered in total is 3 x 10000 = 30000 feet.
+Boris must cover that same total elevation on his own shorter mountain. With x standing for his number of climbs, x times seven thousand five hundred feet must equal thirty thousand feet, so x = 30000/7500 = 4 climbs.
+Note the trap of comparing only the two mountain heights and ignoring how many times Hugo actually climbed, which would suggest Boris needs barely more than one ascent.
+Check the shape of the answer: Boris' mountain is three quarters the height of Hugo's, so he needs four climbs to Hugo's three, which the arithmetic confirms.
+Thus, four times Boris would need to climb his mountain.
+Final answer: 4
+
+@@gsm8k_train_02538
+To find how many more nickels Randi has than Peter, the cents into nickels convert we must, for the question asks about coins rather than about value.
+Ray's giving first. He gives thirty cents to Peter, given to us directly. He gives twice as many cents to Randi as he gave to Peter: 2 x 30 = 60 cents to Randi.
+What Ray keeps for himself: 175 - 30 - 60 = 85 cents, which in nickels is 85/5 = 17 nickels. That count the question does not ask for, but computing it confirms the money all adds up.
+Now the two recipients, converted into nickels, since a nickel is worth five cents. Peter received 30/5 = 6 nickels. Randi received 60/5 = 12 nickels.
+The difference the question asks for: 12 - 6 = 6 nickels.
+Note the trap of reporting thirty, which is the difference in CENTS between the two gifts rather than the difference in the number of coins.
+Thus, six more nickels Randi has than Peter.
+Final answer: 6
+
+@@gsm8k_train_02546
+To find the hours Jack spends making coffee, how long a single batch lasts him determine first we must, and through gallons travel to get there.
+His consumption first, and a unit conversion it needs. Ninety-six ounces he drinks every two days, and a gallon holds one hundred twenty-eight ounces, so his consumption is (96)/(128) = 0.75 gallons every two days.
+Now how long a batch lasts. A batch is one and a half gallons, and he drinks three quarters of a gallon every two days. Scaling that rate gives x = (1.5 x 2)/(0.75) = 4 days that a single batch survives.
+Next the number of batches across the period in question. Twenty-four days there are, and a batch covers four of them: 24/4 = 6 batches brewed.
+Finally the time. Each batch takes twenty hours to make: 6 x 20 = 120 hours.
+Note the trap of leaving the ounces unconverted and comparing them against gallons, which would mix the units entirely.
+Thus, one hundred twenty hours he spends making coffee over twenty-four days.
+Final answer: 120
+
+@@gsm8k_train_02554
+To find what Donny pays, each size of apple separately price we must, for three different prices this shop carries.
+The small apples first. Six of them Donny bought, at a dollar fifty for each small apple: 6 x 1.5 = 9 dollars.
+The medium apples next. Six of them also, at two dollars for each medium apple: 6 x 2 = 12 dollars.
+The big apples last. Eight of them, at three dollars for each big apple: 8 x 3 = 24 dollars.
+Now all three sizes together: 9 + 12 + 24 = 45 dollars.
+Note that Chad's hundred apples are mentioned in the question but never purchased by Donny, so that number is a pure distraction and must play no part in the arithmetic.
+Check the shape of the answer: twenty apples bought for forty-five dollars averages a little over two dollars each, which sits sensibly between the small apple's dollar fifty and the big apple's three dollars.
+Thus, forty-five dollars Donny has to pay for all the apples.
+Final answer: 45
