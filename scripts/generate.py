@@ -112,7 +112,29 @@ def main():
         args.model, torch_dtype=torch.bfloat16, device_map="auto")
     if args.adapter:
         from peft import PeftModel
-        model = PeftModel.from_pretrained(model, args.adapter)
+
+        # An RL adapter is trained on top of the SFT model, not the base: in
+        # train_rlaif.py the SFT adapter is merged into the base weights and a
+        # fresh LoRA is attached to the result. Loading that RL adapter onto
+        # the raw base would silently produce a model that is neither SFT nor
+        # RLAIF -- no error, just wrong numbers. So rebuild the same stack the
+        # adapter was trained against, walking `init_from` back to the base.
+        chain = []
+        cur = args.adapter
+        seen = set()
+        while cur:
+            chain.append(cur)
+            if cur in seen:
+                raise SystemExit(f"cycle in adapter init_from chain at {cur}")
+            seen.add(cur)
+            cfg_p = Path(cur, "training_config.json")
+            cur = (json.loads(cfg_p.read_text()).get("init_from")
+                   if cfg_p.exists() else None)
+
+        for parent in reversed(chain[1:]):        # base-most first
+            print(f"  stacking parent adapter: {parent}")
+            model = PeftModel.from_pretrained(model, parent).merge_and_unload()
+        model = PeftModel.from_pretrained(model, chain[0])
     model.eval()
 
     rows = read_prompts(args.prompts)
