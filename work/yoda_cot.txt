@@ -4259,3 +4259,319 @@ Now all four kinds of pet together, the cats and the snakes and the parrots and 
 Note the trap of counting snakes or parrots among the six four-legged pets, which would make the cats fewer and every later count wrong along with them.
 Thus, nineteen pets in total Frankie has.
 Final answer: 19
+
+@@gsm8k_train_02188
+To find the milligrams of zinc, each kind of antacid separately handle we must, and the units convert only at the very end.
+The larger antacids first. Each weighs two grams and is five percent zinc by weight, so a single one carries 2 x 0.05 = 0.1 grams of zinc. Jerry takes two of them: 2 x 0.1 = 0.2 grams of zinc from the larger antacids.
+The smaller antacids next. Each weighs one gram and is fifteen percent zinc, so a single one carries 1 x 0.15 = 0.15 grams. Jerry takes three of them: 3 x 0.15 = 0.45 grams of zinc from the smaller ones.
+Both kinds together: 0.2 + 0.45 = 0.65 grams of zinc eaten.
+But MILLIGRAMS the question asks for, and grams are what we hold. One thousand milligrams fill a gram: 0.65 x 1000 = 650 milligrams.
+Note the trap of reporting the answer in grams, correct in value but wrong in the units requested.
+Thus, six hundred fifty milligrams of zinc Jerry eats.
+Final answer: 650
+
+@@gsm8k_train_02192
+To find the total donation, the doubling across the five kilometres track we must, for each kilometre pays twice the one before.
+Her parents donate ten dollars for the first kilometre, and double the donation for every successive kilometre. So the donations form a geometric sequence whose first term is a = 10 and whose common ratio is r = 2, running for n = 5 terms.
+The sum of such a sequence is the first term multiplied by the quantity two to the fifth power less one, divided by one less than the ratio.
+Two to the fifth power is thirty-two, so the sum is 10 x (32 - 1)/(2 - 1), which is 10 x 31 = 310 dollars.
+Check it directly and agreement good evidence is: ten, twenty, forty, eighty and one hundred sixty do sum to three hundred ten.
+Note the trap of multiplying ten by five, which would treat the donation as fixed rather than doubling.
+Thus, three hundred ten dollars her parents will donate if she finishes the race.
+Final answer: 310
+
+@@gsm8k_train_02201
+To find the roses planted in all, each day measured against the right earlier day we must handle.
+Two days ago Uncle Welly planted fifty roses, and that number is given to us directly.
+Yesterday he planted twenty MORE than the previous day, and the previous day was the fifty: 50 + 20 = 70 roses.
+Today he planted twice the number of two days ago, so twice the fifty rather than twice yesterday's seventy: 2 x 50 = 100 roses.
+Now all three days together: 50 + 70 + 100 = 220 roses.
+Note the trap of doubling yesterday's seventy for today, which would misread which day the comparison points back to.
+Thus, two hundred twenty roses Uncle Welly planted in his vacant lot.
+Final answer: 220
+
+@@gsm8k_train_02202
+To find the cost in dollars, whiteboards first we must count, then ink, then cents, and only at the last convert to dollars.
+Five classes there are in the building block, and each class uses two whiteboards: 5 x 2 = 10 whiteboards in all.
+Each whiteboard needs about twenty millilitres of ink for a day's use: 10 x 20 = 200 ml of ink daily.
+Ink costs fifty cents per millilitre: 200 x 50 = 10000 cents.
+But DOLLARS the question asks for, and one hundred cents fill a dollar: 10000/100 = 100 dollars.
+Note the trap of reporting ten thousand, correct in cents but wildly wrong in the units requested.
+Thus, one hundred dollars it would cost to use the whiteboards for one day.
+Final answer: 100
+
+@@gsm8k_train_02206
+To find the vegetables, the surviving plants count first we must, kind by kind.
+The tomato plants first. Six she planted, and half of them died: 6/2 = 3 tomato plants died, so 6 - 3 = 3 survived.
+The pepper plants next. Four she planted, and one died: 4 - 1 = 3 pepper plants survived.
+The eggplant plants last. Two she planted, and none are said to have died, so both survive.
+All the surviving plants together: 3 + 2 + 3 = 8 plants.
+Each remaining plant gave her seven vegetables: 8 x 7 = 56 vegetables.
+Note the trap of multiplying all twelve original plants by seven, which would harvest from the dead ones too.
+Thus, fifty-six vegetables she had in all to harvest.
+Final answer: 56
+
+@@gsm8k_train_02211
+To find Philip's weekly mileage, each destination separately handle we must, and every journey as a ROUND trip count.
+The school first. Two and a half miles each way it sits, so a round trip is 2.5 x 2 = 5 miles. He makes that round trip twice a day, four days a week: 5 x 2 x 4 = 40 miles to and from school.
+The market next. Two miles each way, so a round trip is 2 x 2 = 4 miles. He makes that trip once a week: 4 x 1 = 4 miles.
+Now both destinations together: 40 + 4 = 44 miles.
+Note the traps here: forgetting the return legs, counting the school trip once a day rather than twice, or counting seven days rather than four.
+Thus, forty-four miles the car's mileage for a typical week is.
+Final answer: 44
+
+@@gsm8k_train_02212
+To find the season's cost, each half separately price we must, for the second half's episodes cost more.
+The episodes first. Twenty-two episodes there are, so each half holds 22/2 = 11 episodes.
+The first half next. One thousand dollars each episode costs: 11 x 1000 = 11000 dollars.
+Now the second half, where episodes cost one hundred twenty percent MORE. That extra is 1000 x 1.20 = 1200 dollars per episode, and more means added to the original, so each such episode costs 1000 + 1200 = 2200 dollars. Across eleven episodes: 11 x 2200 = 24200 dollars.
+Both halves together: 11000 + 24200 = 35200 dollars.
+Note the trap of reading one hundred twenty percent more as one hundred twenty percent OF, which would price the later episodes at twelve hundred rather than twenty-two hundred.
+Thus, thirty-five thousand two hundred dollars the entire season cost.
+Final answer: 35200
+
+@@gsm8k_train_02217
+To find what Mrs. Taylor paid, the full price of both televisions compute first we must, and the discount apply to that total.
+Two smart televisions she bought, each costing six hundred fifty dollars: 2 x 650 = 1300 dollars before any discount.
+The discount is twenty-five percent of that total sales price: 0.25 x 1300 = 325 dollars struck off.
+What she actually paid is the full price less the discount: 1300 - 325 = 975 dollars.
+Note the trap of discounting a single television and forgetting the second, which would leave the arithmetic half done.
+Thus, nine hundred seventy-five dollars Mrs. Taylor paid for the two televisions.
+Final answer: 975
+
+@@gsm8k_train_02223
+To find what Shane keeps, the gum down the chain of halvings follow we must.
+Elyse had one hundred pieces of gum to begin with.
+She gave half to her brother Rick: 100/2 = 50 pieces for Rick.
+Rick then gave half of HIS gum to his friend Shane, so half of the fifty rather than half of the original hundred: 50/2 = 25 pieces for Shane.
+Shane then chewed eleven pieces: 25 - 11 = 14 pieces left.
+Note the trap of halving the original hundred twice in a careless way, or of subtracting the eleven before the halvings.
+Thus, fourteen pieces of gum Shane has left.
+Final answer: 14
+
+@@gsm8k_train_02227
+To find the tickets used, each person's rides separately price we must, for different games at different costs they chose.
+Jen first. She played the shooting game twice, and the shooting game costs five tickets: 2 x 5 = 10 tickets for Jen.
+Russel next. He rode the carousel three times, and the carousel costs three tickets: 3 x 3 = 9 tickets for Russel.
+Now both friends together: 10 + 9 = 19 tickets.
+Note the trap of crossing the prices, charging Jen the carousel rate or Russel the shooting rate, which would give a different and wrong total.
+Thus, nineteen tickets they used.
+Final answer: 19
+
+@@gsm8k_train_02235
+To find the weekly fat, one day's rice count first we must, then its fat, then the week.
+Robbie eats three cups in the morning, two in the afternoon and five in the evening: 3 + 2 + 5 = 10 cups of rice each day.
+Each cup carries ten grams of fat: 10 x 10 = 100 grams of fat each day.
+Seven days fill a week: 100 x 7 = 700 grams.
+Note the trap of applying the ten grams to a single meal rather than to every cup, or of forgetting to extend the day to a week.
+Thus, seven hundred grams of fat Robbie gets in a week.
+Final answer: 700
+
+@@gsm8k_train_02236
+To find Evie's remaining shells, her whole collection count first we must, and only then the gift subtract.
+Ten shells she collects each day, and six days she spends at the beach: 10 x 6 = 60 shells collected in total.
+At the end of those six days she gives two shells to her brother: 60 - 2 = 58 shells.
+Note the trap of subtracting the two shells each day rather than once at the end, which would leave her with far fewer.
+Thus, fifty-eight shells Evie has left.
+Final answer: 58
+
+@@gsm8k_train_02251
+To find Tom's profit, his earnings total first we must, and then his costs subtract.
+The mowing first. Three lawns he mows, at twelve dollars for each lawn: 3 x 12 = 36 dollars from mowing.
+The weeding next, which brought an extra ten dollars.
+His total earnings then: 36 + 10 = 46 dollars.
+Now his cost, which is the seventeen dollars he spends on gas each month.
+Profit is earnings less costs: 46 - 17 = 29 dollars.
+Note the trap of reporting forty-six, which is his revenue rather than his profit, for the gas must still be paid for.
+Thus, twenty-nine dollars of profit Tom earned last month.
+Final answer: 29
+
+@@gsm8k_train_02253
+To find what Ines has left, her spending compute first we must.
+Three pounds of peaches she bought, and peaches cost two dollars per pound at the local farmers' market: 2 x 3 = 6 dollars spent.
+Twenty dollars she had in her purse to begin with, so what remains is 20 - 6 = 14 dollars.
+Note the trap of subtracting only the two-dollar price rather than the cost of all three pounds, which would leave her with eighteen.
+Thus, fourteen dollars Ines had left.
+Final answer: 14
+
+@@gsm8k_train_02192
+To find the total donation, the doubling across all five kilometres track we must, for each kilometre pays twice what the one before it paid.
+Her parents pledge ten dollars for the first kilometre and double the donation for every successive kilometre. So the donations form a geometric sequence whose first term is ten and whose common ratio is two, running for five terms across the five-kilometre race.
+The sum of such a sequence is the first term multiplied by the ratio raised to the number of terms less one, all divided by one less than the ratio.
+Work the pieces separately. Two raised to the fifth power is thirty-two, and the numerator is therefore 32 - 1 = 31. The denominator is 2 - 1 = 1, which leaves the numerator unchanged.
+So the sum is ten multiplied by thirty-one: 10 x 31 = 310 dollars.
+Check that directly, and agreement between two roads good evidence is. The five kilometres pay ten, then twenty, then forty, then eighty, then one hundred sixty dollars, and those five amounts do sum to three hundred ten.
+Note the trap of multiplying ten by five and reporting fifty, which would treat the donation as fixed rather than doubling each kilometre.
+Thus, three hundred ten dollars her parents will donate if Suzanne finishes the race.
+Final answer: 310
+
+@@gsm8k_train_02254
+To find each player's cards, the deck's true size determine first we must, and the players count carefully.
+Aubrey's deck holds fifty-two cards, and she adds two more: 52 + 2 = 54 cards in the deck.
+Now the players. Aubrey splits the deck among herself AND two other players, so the players number one plus two, which is 3 players.
+Each player's share is therefore 54/3 = 18 cards.
+Note the trap of dividing among the two other players alone and forgetting Aubrey herself, which would give twenty-seven apiece and leave her empty-handed.
+Thus, eighteen cards each player has.
+Final answer: 18
+
+@@gsm8k_train_02256
+To find the slide rides, the carnival time budget in minutes work out we must, and the other rides subtract from it.
+Four hours Carson will spend at the carnival, and in minutes that is 4 x 60 = 240 minutes available.
+The roller coaster first. Thirty minutes each wait, and he rides it four times: 30 x 4 = 120 minutes spent there.
+The tilt-a-whirl next. Sixty minutes for its single ride.
+Those two attractions together consume 120 + 60 = 180 minutes.
+What remains for the giant slide: 240 - 180 = 60 minutes.
+The slide's wait is fifteen minutes per ride, so the rides possible number 60/15 = 4 rides.
+Note the trap of leaving the four hours unconverted, which would mix hours against minutes and give nonsense.
+Thus, four times Carson can ride the giant slide.
+Final answer: 4
+
+@@gsm8k_train_02257
+To find the coconut-flavoured jelly beans, two narrowings in order apply we must.
+Four thousand jelly beans fill the jar. Three fourths of them are red: (3 x 4000)/4 = 12000/4 = 3000 red jelly beans.
+Now the coconut flavour, and one quarter of the RED beans carry it rather than a quarter of the whole jar: 3000/4 = 750 jelly beans.
+Note the trap of quartering the original four thousand, which would give a thousand and wrongly count non-red beans among the coconut ones.
+Thus, seven hundred fifty jelly beans are coconut flavoured.
+Final answer: 750
+
+@@gsm8k_train_02258
+To find Dan's stickers, from Bob upward the chain climb we must, one link at a time.
+Bob has twelve stickers, given to us directly.
+Tom has three times as many as Bob: 3 x 12 = 36 stickers.
+Dan has two times as many as TOM, not as Bob: 2 x 36 = 72 stickers.
+Note the trap of doubling Bob's twelve, which would misread whose count Dan is measured against and give twenty-four.
+Thus, seventy-two stickers Dan has.
+Final answer: 72
+
+@@gsm8k_train_02261
+To find Greg's gold, name Katie's as the unknown we must, for Greg is described against her.
+Greg had four times less gold than Katie, which means Greg's amount is Katie's divided by four. With G for Greg and K for Katie, and their total being one hundred: G + K = 100, where G is a quarter of K.
+Substituting gives (K)/(4) + K = 100.
+Put both terms over four: (K)/(4) + (4K)/(4) = 100, which combines to (5K)/(4) = 100.
+Multiply both sides by four: 5K = 400.
+Divide by five: K = 80 units of gold for Katie.
+Now Greg, who has a quarter of Katie's: G = (80)/(4) = 20 units.
+Check it: twenty and eighty do sum to one hundred, and eighty is four times twenty.
+Thus, twenty units of gold Greg has.
+Final answer: 20
+
+@@gsm8k_train_02262
+To find Becky's lunch days, down the chain from the school year travel we must.
+One hundred eighty school days fill the academic year.
+Aliyah packs a lunch half the time: 180/2 = 90 days for Aliyah.
+Becky packs her lunch half as much as ALIYAH, so half of Aliyah's ninety rather than half of the school year: 90/2 = 45 days.
+Note the trap of halving the one hundred eighty twice in a careless way, or of measuring Becky against the school year directly.
+Thus, forty-five days a year Becky packs her lunch.
+Final answer: 45
+
+@@gsm8k_train_02266
+To find the gap between Haley and Josh, down through Jason travel we must, for both of them hang from him.
+Haley has five more necklaces than Jason, and Haley has twenty-five. So Jason has five fewer than Haley: J = 25 - 5, which gives J = 20 necklaces for Jason.
+Josh has half the number that Jason has: Josh's necklaces = (20)/(2) = 10 necklaces.
+Now the comparison the question asks, how many MORE Haley has than Josh: 25 - 10 = 15 necklaces.
+Note the trap of halving Haley's twenty-five directly, which would skip Jason entirely and misread the chain.
+Thus, fifteen more necklaces Haley has than Josh.
+Final answer: 15
+
+@@gsm8k_train_02267
+To find the houses, backward from the laundry to the clotheslines and then to the houses travel we must.
+The children's items first. Eleven children there are, each with four items on a clothesline: 11 x 4 = 44 items.
+The adults' items next. Twenty adults, each with three items: 20 x 3 = 60 items.
+All the items together: 44 + 60 = 104 items on the lines.
+Each clothesline holds two items, so the clotheslines number 104/2 = 52 clotheslines.
+There are two clotheslines for every house, so the houses number 52/2 = 26 houses.
+Note that the clotheslines are all full, which is what allows us to work backward from the laundry at all.
+Thus, twenty-six houses there are on the street.
+Final answer: 26
+
+@@gsm8k_train_02280
+To find the rope left, each gift taken of what REMAINS we must handle, and not of the original twenty metres.
+Orlan's rope is twenty metres long at the start.
+Allan receives one fourth of it: (1/4) x 20 = 5 metres, leaving 20 - 5 = 15 metres.
+Jack then receives two thirds of the REMAINING rope rather than two thirds of the original: (2/3) x 15 = 10 metres, leaving 15 - 10 = 5 metres.
+Note the trap of taking two thirds of the original twenty, which would give thirteen and a third and leave a negative remainder once Allan's share is also removed.
+Thus, five metres of rope is left to Orlan.
+Final answer: 5
+
+@@gsm8k_train_02285
+To find the original balance, backward through the transfers work we must.
+Kendy transferred sixty dollars to her mother. She transferred half that amount to her sister: 60/2 = 30 dollars.
+Both transfers together removed 60 + 30 = 90 dollars from her account.
+One hundred dollars remain in the account now, so the balance before the transfers was the remainder plus everything transferred: 100 + 90 = 190 dollars.
+Note the trap of subtracting the ninety from the hundred, which would run the arithmetic in the wrong direction entirely.
+Thus, one hundred ninety dollars was in the account before the transfer.
+Final answer: 190
+
+@@gsm8k_train_02299
+To find Archibald's percentage, all the games count first we must.
+Archibald has won twelve games and his brother has won eighteen, so the total number of games played is 12 + 18 = 30 games.
+Now Archibald's share as a percentage, which is his wins divided by all the games and multiplied by a hundred: (12)/(30) x 100 = 40 percent.
+Note the trap of dividing Archibald's twelve by his brother's eighteen, which would answer a ratio rather than a percentage of games won.
+Thus, forty percent of the games Archibald has won.
+Final answer: 40
+
+@@gsm8k_train_02301
+To find the minutes passed, the snowfall as a growing count express we must.
+Ten snowflakes there were at first, and four more fall every five minutes. So after n such five-minute stretches, the count is 10 + 4n.
+We want that count to reach fifty-eight: 10 + 4n = 58.
+Subtract the ten: 4n = 48.
+Divide by four: n = 12 stretches of five minutes.
+Now the minutes themselves, for the question asks about time rather than stretches: 12 x 5 = 60 minutes.
+Note the trap of reporting twelve, which counts the stretches rather than the minutes they consumed.
+Thus, sixty minutes passed before there were fifty-eight snowflakes.
+Final answer: 60
+
+@@gsm8k_train_02306
+To find the family's spending, each kind of ticket separately price we must, and the discount apply at the end.
+The adult ticket first. Children's tickets cost four dollars twenty-five, and adult tickets cost three dollars twenty-five MORE: 4.25 + 3.25 = 7.50 for one adult ticket.
+Two adult tickets: 2 x 7.50 = 15.00 dollars.
+Four children's tickets: 4 x 4.25 = 17.00 dollars.
+Both kinds together before any discount: 15.00 + 17.00 = 32.00 dollars.
+Now the discount, two dollars for buying more than three tickets, and six tickets they bought: 32.00 - 2.00 = 30.00 dollars.
+Note the trap of pricing the adult ticket at three dollars twenty-five rather than at that much more than the child's.
+Thus, thirty dollars they spent.
+Final answer: 30
+
+@@gsm8k_train_02312
+To find the total money, each contribution determine in order we must, for the brother's gift is measured against the mother's.
+Lisa has saved one thousand two hundred dollars of her own.
+Her mother gave three fifths of what Lisa had saved: (3/5) x 1200 = 720 dollars.
+Her brother gave twice as much as their mother: 2 x 720 = 1440 dollars.
+All three contributions together: 1200 + 720 + 1440 = 3360 dollars raised.
+But Lisa still lacks four hundred dollars of the gift's price, so the gift itself costs 3360 + 400 = 3760 dollars.
+Note the trap of stopping at three thousand three hundred sixty, which is what she raised rather than what the gift costs.
+Thus, three thousand seven hundred sixty dollars the price of the gift is.
+Final answer: 3760
+
+@@gsm8k_train_02256
+To find how many times Carson can ride the giant slide, his whole time budget work out in minutes we must, and then subtract everything the other attractions consume.
+The budget first. Four hours Carson is going to spend at the carnival, and the waits are all quoted in minutes, so convert we must before anything else: 4 x 60 = 240 minutes available to him.
+The roller coaster next. Its wait is thirty minutes, and he rides it four times: 30 x 4 = 120 minutes spent standing in that queue.
+The tilt-a-whirl after that. Its wait is sixty minutes, and he rides it once, so sixty minutes go there.
+Those two attractions together consume 120 + 60 = 180 minutes of his day.
+What remains for the giant slide is therefore 240 - 180 = 60 minutes.
+Finally the slide itself, whose wait is fifteen minutes for each ride: 60/15 = 4 rides.
+Note the trap of leaving the four hours unconverted and comparing hours against minutes, which would mix the units and give a nonsensical answer.
+Thus, four times Carson can ride the giant slide.
+Final answer: 4
+
+@@gsm8k_train_02266
+To find how many more necklaces Haley has than Josh, down through Jason travel we must, for both Haley and Josh are described against him rather than against each other.
+Start with what is given. Haley has twenty-five necklaces, and Haley has five MORE necklaces than Jason. So Jason has five fewer than Haley: J = 25 - 5, which gives J = 20 necklaces for Jason.
+Now Josh, who has half the number of necklaces that Jason has. Substituting Jason's twenty: Josh's necklaces = (20)/(2) = 10 necklaces.
+Finally the comparison the question actually asks for, which is how many more necklaces Haley has than JOSH rather than than Jason: 25 - 10 = 15 necklaces.
+Note the trap of halving Haley's twenty-five directly to find Josh, which would skip Jason entirely and give twelve and a half, a number that should look wrong at once since necklaces come whole.
+Check the shape of the answer: Josh's ten is the smallest count, Jason's twenty sits in the middle, and Haley's twenty-five is the largest, which the descriptions demand.
+Thus, fifteen more necklaces Haley has than Josh.
+Final answer: 15
+
+@@gsm8k_train_02267
+To find the number of houses, backward from the hanging laundry to the clotheslines and then to the houses travel we must, for nothing about the houses is given directly.
+The children's laundry first. Eleven children there are on the street, and each currently has four items hanging on a clothesline: 11 x 4 = 44 items from the children.
+The adults' laundry next. Twenty adults there are, and each currently has three items on a line: 20 x 3 = 60 items from the adults.
+All the laundry together: 44 + 60 = 104 items hanging in the community space.
+Now the clotheslines themselves. Each clothesline holds two items, and all of the lines are full, so the number of lines is 104/2 = 52 clotheslines.
+Finally the houses. There are two clotheslines for every house on the street, so the houses number 52/2 = 26 houses.
+Note that the problem only works backward because every clothesline is full; were any empty, the laundry would undercount the lines.
+Thus, twenty-six houses there are on the street.
+Final answer: 26
