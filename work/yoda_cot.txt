@@ -4575,3 +4575,333 @@ Finally the houses. There are two clotheslines for every house on the street, so
 Note that the problem only works backward because every clothesline is full; were any empty, the laundry would undercount the lines.
 Thus, twenty-six houses there are on the street.
 Final answer: 26
+
+@@gsm8k_train_02325
+To find the price of the Legos set, what the cars brought determine first we must, and subtract that from his takings.
+George sold three little cars, and one little car sold for five dollars each. So the cars together brought three times five dollars, which is 15 dollars.
+Forty-five dollars he earned in total from the sale of the cars and the Legos set together.
+The Legos set therefore accounts for whatever the cars did not: 45 - 15 = 30 dollars.
+Note the trap of subtracting only a single car's five dollars, which would credit the Legos with forty and overstate its price.
+Thus, thirty dollars the Legos set cost.
+Final answer: 30
+
+@@gsm8k_train_02334
+To find the third tank's fish, up through the first two tanks travel we must, in order.
+The first tank holds seven goldfish and eight beta fish: 7 + 8 = 15 fish.
+The second tank contains twice as many fish as the first: 2 x 15 = 30 fish.
+The third tank has a third of the number in the SECOND tank, not a third of the first: 30/3 = 10 fish.
+Note the trap of taking a third of the first tank's fifteen, which would give five and misread which tank the comparison points to.
+Thus, ten fish the third fish tank holds.
+Final answer: 10
+
+@@gsm8k_train_02339
+To find the twins' shirts, Razel's count determine first we must, for only Hazel's is given.
+Hazel received six shirts, stated plainly.
+Razel received twice the number that Hazel received: 2 x 6 = 12 shirts.
+Now the total for both twins together, which the question asks rather than either alone: 6 + 12 = 18 shirts.
+Note the trap of reporting twelve, which counts Razel and forgets Hazel entirely.
+Thus, eighteen shirts they have in total.
+Final answer: 18
+
+@@gsm8k_train_02341
+To find what Bill threw, each kind of object separately handle we must, for the two comparisons run in opposite directions.
+The sticks first. Bill throws six MORE sticks than Ted, and Ted tosses ten sticks: 10 + 6 = 16 sticks for Bill.
+The rocks next, and here the comparison reverses. Ted tosses twice as many rocks as BILL, so Bill tosses half as many as Ted: 10/2 = 5 rocks for Bill.
+Now Bill's total of both kinds: 16 + 5 = 21 objects.
+Note the trap of doubling Ted's rocks for Bill, when Bill is the one with fewer rocks rather than more.
+Thus, twenty-one objects Bill tossed into the river.
+Final answer: 21
+
+@@gsm8k_train_02345
+To find the peppers no longer needed, the old and the new pepper usage separately total we must, and then compare.
+The old usage first. Very spicy curries at three peppers each, thirty of them: 30 x 3 = 90 peppers. Spicy curries at two peppers each, thirty of them: 30 x 2 = 60 peppers. Mild curries at one pepper each, ten of them: 10 x 1 = 10 peppers. The old total: 90 + 60 + 10 = 160 peppers.
+The new usage next. No very spicy curries remain. Spicy curries at two peppers each, fifteen of them: 15 x 2 = 30 peppers. Mild curries at one pepper each, ninety of them: 90 x 1 = 90 peppers. The new total: 30 + 90 = 120 peppers.
+The reduction is the difference: 160 - 120 = 40 peppers.
+Thus, forty fewer peppers the curry house now needs.
+Final answer: 40
+
+@@gsm8k_train_02350
+To find the apps Roger must delete, his actual count determine first we must.
+The recommended number of apps is thirty-five, and Roger has twice that recommended number: 2 x 35 = 70 apps on his phone.
+His phone functions optimally with a maximum of fifty apps, so the excess he must delete is 70 - 50 = 20 apps.
+Note the trap of comparing his seventy against the recommended thirty-five rather than against the fifty maximum, which would demand thirty-five deletions instead of twenty.
+Thus, twenty apps Roger must delete for his phone to function optimally.
+Final answer: 20
+
+@@gsm8k_train_02351
+To find Lanie's salary, the hours she actually worked determine first we must.
+Her usual week is forty hours, but sickness let her work only four fifths of it. Four fifths of forty gives hours worked of 32 hours.
+Her hourly rate is fifteen dollars, so her salary is thirty-two multiplied by fifteen: 32 x 15, which gives a salary of 480 dollars.
+Note the trap of paying her for the full forty hours, which would give six hundred and ignore the sickness entirely.
+Thus, four hundred eighty dollars her salary for that week was.
+Final answer: 480
+
+@@gsm8k_train_02355
+To find the tape Debbie used, the sealing and the addressing separately total we must, for every box needs both.
+The sealing first, kind by kind. Large boxes take four feet each, and two of them: 2 x 4 = 8 feet. Medium boxes take two feet each, and eight of them: 8 x 2 = 16 feet. Small boxes take one foot each, and five of them: 5 x 1 = 5 feet. All the sealing together: 8 + 16 + 5 = 29 feet.
+The addressing next. Every box takes one foot of tape for its address label regardless of size, and the boxes number 2 + 8 + 5 = 15 boxes in all. So the labels take 15 x 1 = 15 feet.
+Both purposes together: 29 + 15 = 44 feet.
+Note the trap of forgetting the address labels, which are charged per box rather than per size.
+Thus, forty-four feet of tape Debbie used.
+Final answer: 44
+
+@@gsm8k_train_02357
+To find the party's cost, each item separately price we must, and the bounce house carefully, for both its rate and its hours differ from the clown's.
+The clown first. One hundred dollars an hour for four hours: 100 x 4 = 400 dollars.
+The bounce house next. It was rented for half the time the clown worked: 4/2 = 2 hours. Its rate is three times the clown's hourly rate: 3 x 100 = 300 dollars an hour. So the bounce house costs 300 x 2 = 600 dollars.
+Everything else for the party cost one thousand dollars.
+All three together: 400 + 600 + 1000 = 2000 dollars.
+Note the trap of renting the bounce house for the full four hours, or of charging it the clown's rate.
+Thus, two thousand dollars his birthday cost.
+Final answer: 2000
+
+@@gsm8k_train_02363
+To find the sheep and humans, through the centipedes to the humans travel we must first.
+There are twice as many centipedes as humans, and the centipedes number one hundred. So with H for the humans: 100 = 2H, and dividing both sides by two gives H = 50 humans on the island.
+Now the sheep, of which there are half as many as humans: half of fifty gives a number of sheep of 25.
+The question asks for the sheep and humans together, and not the centipedes: 50 + 25, which gives a total of 75.
+Note the trap of including the hundred centipedes in the total, when the question names only sheep and humans.
+Thus, seventy-five sheep and humans in total are on the island.
+Final answer: 75
+
+@@gsm8k_train_02382
+To find the pair's spending, Tanya's purchases price first we must, for Christy is measured against her.
+Tanya's face moisturizers first. Fifty dollars each they cost, and she buys two of them, so the moisturizers come to two times fifty, which is 100 dollars.
+Tanya's body lotions next. Sixty dollars each they cost, and she buys four of them, so the lotions come to four times sixty, which is 240 dollars.
+Tanya's whole spending then: 100 + 240 = 340 dollars.
+Christy spends twice as much as Tanya: 2 x 340 = 680 dollars.
+Both friends together, which the question asks: 340 + 680 = 1020 dollars.
+Note the trap of reporting only Christy's share, or of doubling a single one of Tanya's items rather than her whole bill.
+Thus, one thousand twenty dollars they spend in total.
+Final answer: 1020
+
+@@gsm8k_train_02421
+To find the jogging time, the album's stretch handle first we must, and then the slower stretch after it.
+While the music plays Charles runs at six miles per hour. His album is forty minutes long, which as a fraction of an hour is two thirds. So during the album he covers 6 x (2/3) = 4 miles.
+Six miles he must jog in all, so after the album ends 6 - 4 = 2 miles remain.
+Without music he runs at four miles per hour, so those two miles take 2/4 = 0.5 hours.
+Into minutes that becomes 0.5 x 60 = 30 minutes.
+Both stretches together: 40 + 30 = 70 minutes.
+Note the trap of running the whole six miles at one speed, when the album ends partway through.
+Thus, seventy minutes it will take him to jog six miles.
+Final answer: 70
+
+@@gsm8k_train_02423
+To find the water at the end, what the storm added determine first we must.
+The rain flows in at two litres every minute, and the storm lasts ninety minutes: 2 x 90 = 180 litres added to the tank.
+The tank already held one hundred litres before the storm began, so the water at the end is the initial amount plus the addition: 100 + 180 = 280 litres.
+Note the trap of reporting one hundred eighty, which counts only what the storm brought and forgets what was already in the tank.
+Thus, two hundred eighty litres of water are in the tank at the end of the heavy rain.
+Final answer: 280
+
+@@gsm8k_train_02425
+To find the petals remaining, the daisies she keeps count first we must.
+Mabel has five daisies, and each daisy carries eight petals, so her garden begins with 5 x 8 = 40 petals in all.
+Then she gives two daisies to her teacher, leaving 5 - 2 = 3 daisies in her garden.
+Each remaining daisy still carries its eight petals: 3 x 8 = 24 petals.
+Note the trap of subtracting two PETALS rather than two daisies, which would leave thirty-eight and misread what was given away.
+Thus, twenty-four petals she has on the remaining daisies.
+Final answer: 24
+
+@@gsm8k_train_02355
+To find the total tape Debbie used, the sealing and the addressing separately total we must, for every single box requires both and forgetting either would undercount badly.
+The sealing first, handled kind by kind since each size takes a different length.
+Large boxes take four feet of packing tape each to seal, and two large boxes there are: 2 x 4 = 8 feet of tape.
+Medium boxes take two feet each, and eight medium boxes there are: 8 x 2 = 16 feet of tape.
+Small boxes take one foot each, and five small boxes there are: 5 x 1 = 5 feet of tape.
+All the sealing together then: 8 + 16 + 5 = 29 feet.
+The addressing next, and here the rule changes. Every box takes one foot of tape for its address label regardless of its size, so what matters now is the count of boxes rather than their dimensions: 2 + 8 + 5 = 15 boxes in all. The labels therefore consume 15 x 1 = 15 feet.
+Both purposes together: 29 + 15 = 44 feet.
+Note the trap of forgetting the address labels entirely, which are charged per box rather than per size and are easily overlooked.
+Thus, forty-four feet of tape Debbie used.
+Final answer: 44
+
+@@gsm8k_train_02357
+To find the total cost of the party, each item separately price we must, and the bounce house with particular care, for BOTH its hourly rate and its number of hours differ from the clown's.
+The clown first, and the simplest of the three. One hundred dollars an hour he charges, and four hours he worked: 100 x 4 = 400 dollars for the clown.
+The bounce house next, and two adjustments it needs. Its hours first: it was rented for half the time the clown was there, and the clown worked four hours, so 4/2 = 2 hours of bounce house. Its rate second: it costs three times as much an hour as the clown, so 3 x 100 = 300 dollars for every hour. Multiplying the two gives 300 x 2 = 600 dollars for the bounce house.
+Everything else for the party cost a flat one thousand dollars, given to us directly.
+All three costs together: 400 + 600 + 1000 = 2000 dollars.
+Note the traps here: renting the bounce house for the full four hours, or charging it the clown's hourly rate rather than triple it.
+Thus, two thousand dollars his birthday cost.
+Final answer: 2000
+
+@@gsm8k_train_02421
+To find the jogging time, the album's stretch handle first we must, and the slower stretch that follows it second, for Charles runs at two different speeds during this jog.
+The music stretch first. While his album plays, Charles runs at six miles per hour. His album is forty minutes long, and forty minutes as a fraction of an hour is two thirds. Distance is speed multiplied by time, so during the album he covers 6 x (2/3) = 4 miles.
+Now what remains of his jog. Six miles in total he must cover, and four are already behind him, so 6 - 4 = 2 miles remain to be run.
+The silent stretch next. Without music he slows to four miles per hour. Time is distance divided by speed, so those two remaining miles take 2/4 = 0.5 hours.
+Into minutes that must be converted to match the album's units: 0.5 x 60 = 30 minutes.
+Both stretches of the jog together: 40 + 30 = 70 minutes.
+Note the trap of running the whole six miles at a single speed, when the album plainly runs out partway through the jog.
+Thus, seventy minutes it will take him to jog six miles.
+Final answer: 70
+
+@@gsm8k_train_02426
+To find the three scholarships together, from Wendy upward the chain climb we must.
+Wendy received twenty thousand dollars, given to us.
+Kelly received twice Wendy's amount: 2 x 20000 = 40000 dollars.
+Nina received eight thousand LESS than Kelly, so subtract from Kelly's rather than from Wendy's: 40000 - 8000 = 32000 dollars.
+Now all three together: 32000 + 40000 + 20000 = 92000 dollars.
+Note the trap of subtracting the eight thousand from Wendy's twenty thousand, which would misread whom Nina is measured against.
+Thus, ninety-two thousand dollars they received in scholarship together.
+Final answer: 92000
+
+@@gsm8k_train_02436
+To find the boxes, one box's capacity determine first we must.
+Five thousand brochures must be shipped, and each box holds one fifth of them: 5000/5 = 1000 brochures per box.
+Now the boxes needed to carry all five thousand: 5000/1000 = 5 boxes.
+Note that the answer of five follows directly from each box holding a fifth, which is a useful check on the arithmetic.
+Thus, five boxes are needed to ship those brochures.
+Final answer: 5
+
+@@gsm8k_train_02437
+To find what remains in the account, the week's spending total first we must, and then the bills the bank can give.
+Emma spends eight dollars on each day of the week, and a week holds seven days: 8 x 7 = 56 dollars spent.
+Her account began with one hundred dollars, so after the spending it holds 100 - 56 = 44 dollars.
+Now the bills. The bank gives as many five-dollar bills as the account can supply, and forty-four divided by five gives 44/5 = 8 whole bills, for a ninth would need forty-five.
+Those eight bills carry away 8 x 5 = 40 dollars.
+What Emma leaves in the account: 44 - 40 = 4 dollars.
+Note the trap of treating the division as exact, when only whole bills can be handed over.
+Thus, four dollars remain in the account.
+Final answer: 4
+
+@@gsm8k_train_02452
+To find the birds, the sentence into an equation translate we must.
+Ten more than twice the number of birds is fifty, so with x for the birds: 2x + 10 = 50.
+Subtract ten from both sides: 2x + 10 - 10 = 50 - 10, which gives 2x = 40.
+Divide both sides by two: x = 20 birds.
+Check it forward: twice twenty is forty, and ten more is fifty, matching the sentence exactly.
+Note the trap of subtracting ten and stopping, which would report forty and forget the doubling still to be undone.
+Thus, twenty birds are on the fence.
+Final answer: 20
+
+@@gsm8k_train_02453
+To find the photo shoot pictures, through the whole sequence of deletions and additions walk we must.
+Toby begins with sixty-three photos. He deletes seven bad shots: 63 - 7 = 56 photos.
+He takes fifteen pictures of his cat: 56 + 15 = 71 photos.
+Then the photo shoot adds an unknown number x, and afterwards he deletes three of them: 71 + x - 3 = 68 + x photos.
+His camera roll ends with eighty-four photos, so 68 + x = 84.
+Solve for x: x = 84 - 68, which gives x = 16 photos from the shoot.
+Note the trap of forgetting the three deleted after the shoot, which would give thirteen instead of sixteen.
+Thus, sixteen photos his friends took in the photo shoot.
+Final answer: 16
+
+@@gsm8k_train_02457
+To find the days, the target population determine first we must, and then the losses that reach it.
+The colony can contain up to eighty thousand bees. A quarter of that number is (1/4) x 80000 = 20000 bees, and that is the threshold in question.
+The colony loses twelve hundred bees each day, so after d days the population is eighty thousand less 1200d.
+Setting that equal to the threshold: 80000 - 1200d = 20000.
+Rearranging gives 80000 - 20000 = 1200d, which is 60000 = 1200d.
+Divide both sides by twelve hundred: d = 60000/1200 = 50 days.
+Note the trap of dividing the full eighty thousand by twelve hundred, which would count the days to total extinction rather than to a quarter of the colony.
+Thus, fifty days it will take.
+Final answer: 50
+
+@@gsm8k_train_02461
+To find the car's worth, the total depreciation compute first we must.
+The car loses one thousand dollars of value each year, and six years have passed: 1000 x 6 = 6000 dollars of depreciation.
+Tim bought it for twenty thousand, so its worth after six years is the purchase price less the depreciation: 20000 - 6000 = 14000 dollars.
+Note the trap of subtracting only a single year's thousand, or of treating the loss as a percentage rather than a flat amount.
+Thus, fourteen thousand dollars the car is worth after six years.
+Final answer: 14000
+
+@@gsm8k_train_02467
+To find the games won between them, each friend measured against Betsy we must handle, for she is the anchor.
+Betsy won five games of Monopoly, given to us directly.
+Helen won twice as many as Betsy: 2 x 5 = 10 games.
+Susan won three times as many as Betsy, and three times BETSY rather than three times Helen: 3 x 5 = 15 games.
+Now all three players together, and Betsy's own five must be counted alongside the others: 5 + 10 + 15 = 30 games.
+Note the trap of measuring Susan against Helen, or of forgetting Betsy's own five in the total.
+Thus, thirty games between them they have won.
+Final answer: 30
+
+@@gsm8k_train_02468
+To find the remaining patients' sessions, the two known patients account for first we must.
+One patient needs six sessions, given directly.
+Another patient needs five more than that first patient: 6 + 5 = 11 sessions.
+Those two patients together need 6 + 11 = 17 sessions.
+Twenty-five sessions are needed in total across all four patients, so the remaining two patients need 25 - 17 = 8 sessions between them.
+Note the trap of dividing the eight between the two remaining patients, when the question asks what they need altogether.
+Thus, eight sessions the remaining patients would need.
+Final answer: 8
+
+@@gsm8k_train_02479
+To find the corn chip packets, the chips buy first we must, and then spend what remains.
+Fifteen packets of chips John wants, at two dollars each packet: 15 x 2 = 30 dollars on chips.
+He has forty-five dollars, so after the chips he holds 45 - 30 = 15 dollars.
+Corn chips cost a dollar fifty each packet, so the packets he can afford number 15/1.5 = 10 packets.
+Note the trap of dividing the full forty-five by one dollar fifty, which would ignore the chips he has already bought.
+Thus, ten packets of corn chips John could buy.
+Final answer: 10
+
+@@gsm8k_train_02481
+To find each neighbour's mangoes, what the neighbours share determine first we must.
+Mr. Wong harvested five hundred sixty mangoes and sold half of them at the market: 560/2 = 280 mangoes sold.
+What remains for the neighbours is the harvest less the sale: 560 - 280 = 280 mangoes.
+Eight neighbours share that evenly: 280/8 = 35 mangoes each.
+Note the trap of dividing the full five hundred sixty among the neighbours, which would give them the mangoes already sold at market.
+Thus, thirty-five mangoes each neighbour receives.
+Final answer: 35
+
+@@gsm8k_train_02485
+To find the monthly practice, each stroke separately handle we must, for different hours and different numbers of days they carry.
+The butterfly stroke first. Three hours a day she practises it, across four days a week: 3 x 4 = 12 hours each week.
+The backstroke next. Two hours a day, across six days a week: 2 x 6 = 12 hours each week.
+A pleasing coincidence it is that both strokes come to twelve hours, though by different routes.
+Both strokes together each week: 12 + 12 = 24 hours weekly.
+The month holds four weeks: 24 x 4 = 96 hours.
+Note the trap of applying one stroke's number of days to the other, when they differ.
+Thus, ninety-six hours she spends practising swimming in the month.
+Final answer: 96
+
+@@gsm8k_train_02486
+To find the hours still needed, what Joanna has already read determine first we must.
+Monday first. Three hours she read, at sixteen pages an hour: 3 x 16 = 48 pages.
+Tuesday next. Six and a half hours she read, at the same rate: 6.5 x 16 = 104 pages.
+Both days together: 48 + 104 = 152 pages read so far.
+The book runs two hundred forty-eight pages, so what remains is 248 - 152 = 96 pages.
+At sixteen pages an hour those remaining pages take 96/16 = 6 hours.
+Note the trap of reporting ninety-six, which counts pages rather than the hours the question asks for.
+Thus, six more hours she needs to read to finish the book.
+Final answer: 6
+
+@@gsm8k_train_02497
+To find what Tim kept, the giveaway compute first we must and then subtract it.
+Tim won one hundred dollars in the raffle. He gave away twenty percent of it, and twenty percent as a decimal is (20)/(100) = 0.2, so the gift is 0.2 x 100 = 20 dollars.
+What he kept is the prize less the gift: 100 - 20 = 80 dollars.
+Note the trap of reporting twenty, which is what his friend received rather than what Tim retained.
+Thus, eighty dollars Tim kept.
+Final answer: 80
+
+@@gsm8k_train_02452
+To find the number of birds on the fence, the sentence into an equation translate we must, for it describes the count rather than stating it.
+Let x stand for the number of birds. Twice that number is 2x, and ten more than twice that number is 2x + 10. The sentence tells us this equals fifty, so 2x + 10 = 50.
+Now undo the operations in reverse order. The ten was added last, so remove it first from both sides: 2x + 10 - 10 = 50 - 10, which leaves 2x = 40.
+The doubling was applied first, so undo it last by dividing both sides by two: 40/2 = 20, and therefore x = 20 birds.
+Check it forward, for checking costs little and catches much: twice twenty is forty, and ten more than forty is fifty, matching the sentence exactly.
+Note the trap of subtracting the ten and stopping there, which would report forty and leave the doubling undone.
+Thus, twenty birds are on the fence.
+Final answer: 20
+
+@@gsm8k_train_02479
+To find how many packets of corn chips John can buy, the chips he definitely wants buy first we must, and only then spend whatever money survives.
+The chips first. John would like fifteen packets of chips, and chips cost two dollars for each packet: 15 x 2 = 30 dollars spent on chips.
+Now what remains of his money. Forty-five dollars he has in all, so after the chips he holds 45 - 30 = 15 dollars.
+Finally the corn chips, on which he spends the rest. Corn chips cost a dollar fifty for each packet, so the packets he can afford number 15/1.5 = 10 packets.
+Note the trap of dividing the full forty-five dollars by a dollar fifty, which would ignore the fifteen packets of chips he has already committed to and promise him thirty packets of corn chips.
+Check the shape of the answer: ten packets at a dollar fifty is exactly fifteen dollars, spending his remainder precisely with nothing left over.
+Thus, ten packets of corn chips John could buy.
+Final answer: 10
+
+@@gsm8k_train_02486
+To find how many more hours Joanna needs, what she has already read determine first we must, day by day.
+Monday first. She read for three hours, and she reads sixteen pages in an hour: 3 x 16 = 48 pages on Monday.
+Tuesday next. She read for six and a half hours at that same rate of sixteen pages an hour: 6.5 x 16 = 104 pages on Tuesday.
+Both days of reading together: 48 + 104 = 152 pages already behind her.
+Now what remains of the book. Two hundred forty-eight pages the book contains in all, so the pages still to be read number 248 - 152 = 96 pages.
+Finally the hours those remaining pages will take, at the same steady rate of sixteen pages an hour: 96/16 = 6 hours.
+Note the trap of reporting ninety-six, which counts the pages remaining rather than the hours the question actually asks for.
+Check the shape of the answer: three hours plus six and a half plus six is fifteen and a half hours in all, and fifteen and a half times sixteen is two hundred forty-eight, the whole book exactly.
+Thus, six more hours she needs to read to finish the book.
+Final answer: 6
