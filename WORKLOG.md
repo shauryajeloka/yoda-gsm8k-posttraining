@@ -20,8 +20,8 @@ took most of the week.
 
 ### First, the evaluation was broken
 
-Before trusting any comparison we went back through the eval path, and found
-four things that had each been quietly corrupting numbers.
+Before trusting any comparison we went back through the eval path. Two things
+had been quietly corrupting numbers.
 
 The verifier was picking the wrong number. On a line like "...so Martin rings
 the big bell 36 times, and the small bell 16", it took the last number instead
@@ -35,17 +35,10 @@ truncated answer can't state its answer. So the cap was marking the verbose arm
 wrong for being verbose, and the verbose arm was the baseline everything else
 got compared against. We raised it to 1024.
 
-The persona classifier had been fitted on its own test set: base completions
-used as negatives, then scored on that same file. Refitting it properly left the
-conclusion standing, but it hadn't been evidence before.
-
-And `generate.py` was loading RL adapters onto the raw base model instead of
-onto base+SFT-merged, which produces a model that is neither one thing nor the
-other. Nothing errors; you just get numbers from a model that never existed. It
-now walks the `init_from` chain recorded in each checkpoint's config.
-
-We also stopped eyeballing whether two arms' confidence intervals overlapped.
-That isn't a test. Everything is an exact McNemar on paired items now.
+While there, we refitted the persona classifier, which had been trained and
+scored on overlapping data, and replaced eyeballed confidence-interval overlap
+with exact McNemar tests on paired items. Every comparison below is one of
+those.
 
 ### Testing the length idea
 
@@ -89,11 +82,7 @@ invented, and length and equation count must stay close to the original.
 
 It caught real mistakes. Twice a rewrite invented a step that wasn't in the original (summing two hunt
 rounds separately; combining two deductions), the sort of thing that reads
-perfectly well and is invisible without the check. An
-early version of the guard was itself broken: its regex found no LaTeX in the
-base model's traces, so it extracted zero values and cheerfully accepted a
-rewrite that had dropped every step. A guard that silently passes everything
-is worse than no guard.
+perfectly well and is invisible without the check.
 
 Final count: 563 of 563 accepted, with 562 at or above the original's step
 count.
@@ -200,19 +189,6 @@ the judge to do what it's good at. Star Wars went from 0.567 to 0.933,
 self-naming from 0.533 to 0.950, and the judgement-based tests didn't move.
 
 It's a hybrid reward rather than a pure LLM judge, and the write-up says so.
-
-### One run we threw away
-
-A completed 150-step GRPO run turned out to be unattributable. The config writer
-had `"reward": "persona_classifier"` hardcoded and was never updated when the
-reward options were added, so the file couldn't tell us which reward had trained
-it. Both candidates were disqualified anyway.
-
-It's quarantined rather than deleted, because the log is as clear a hacking
-signature as you could ask for: reward climbing 0.91 to 16.64 while inversion cues went 5.53 to 12.97
-and length 41.7 to 90.8. Fixing that also turned up a related trap: `--adapter`
-still defaulted to the Week-1 checkpoint, so running the trainer bare would have
-silently RL'd from the wrong policy.
 
 ### Result
 

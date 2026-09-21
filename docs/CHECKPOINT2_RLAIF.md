@@ -253,6 +253,7 @@ the diagnostics. It came out at 0.00, so the exploit was not taken.
 
 Also honest: the linear classifier **beats** Claude on the degree test (0.933
 vs 0.767). The hybrid is not strictly dominant.
+<<<<<<< HEAD
 
 ### 4.6 A completed 150-step run that had to be discarded
 
@@ -272,3 +273,5 @@ mean words       41.7  ->  90.8    (2.2x)
 KL               0.00  ->  0.46
 ```
 
+=======
+>>>>>>> c2683a2 (Trim the write-ups to result-relevant material)
