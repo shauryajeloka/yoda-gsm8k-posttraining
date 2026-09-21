@@ -272,24 +272,3 @@ mean words       41.7  ->  90.8    (2.2x)
 KL               0.00  ->  0.46
 ```
 
-*Adjustment:* the config now records `args.reward_kind`. A related footgun was
-fixed at the same time. `--adapter` defaulted to the Week-1 checkpoint, so
-running the trainer bare would have silently RL'd from the wrong policy.
-
-### 4.7 Smaller things that cost real time
-
-* **Judge rankings were position-biased** partly because candidates were always
-  presented in sample order. Randomising is not enough; dual-order agreement
-  filtering is what actually removes it (41.0% of pairs were dropped).
-* **Four API bugs**, each of which fails 100% of calls: an org-scoped key needs
-  an `anthropic-workspace-id` header; `temperature` is rejected outright by
-  Sonnet 5 *and* by the pod's SDK 1.7.0; thinking models emit a `thinking`
-  block first so `content[0].text` raises `AttributeError`; and `max_tokens=8`
-  ends the response before any text block exists. The retry loop initially hid
-  the first as a generic `BadRequestError`; configuration errors now raise
-  immediately instead of retrying four times.
-* **Mean-fill on failure is dangerous.** A failed judge call returning 0.0 would
-  read as "no persona" and distort the group's advantage. Failures return the
-  group mean so the sample contributes nothing rather than something false.
-  During the broken Sonnet run this produced a plausible-looking table that was
-  almost entirely mean-fill, and the numbers were discarded.
