@@ -1,259 +1,258 @@
 # Worklog
 
-Chronological notes. The structured deliverables are in `docs/`; this is the
-narrative, including the parts that went wrong.
+Notes in the order things happened, including the parts that went wrong. The
+tidy version of the results is in `docs/`.
 
 ---
 
-## Week 1 — SFT, and a 20-point hole
+## Week 1: SFT, and a twenty-point hole
 
-The first SFT run did what it was supposed to on the persona axis and fell off
-a cliff on the maths axis. Base Qwen scores 82.0% on our frozen GSM8K split.
-After fine-tuning on 1500 GSM8K reference solutions rewritten in Yoda's voice,
-plus 407 general Yoda prose examples, it scored **61.4%**. Persona went from
-0.018 to 0.699, so the character was learned — but 20 points of arithmetic went
-with it.
+The first SFT run worked on the persona axis and fell apart on the maths one.
+Base Qwen2.5-3B scores 82.0% on our frozen GSM8K split. After fine-tuning on
+1500 GSM8K reference solutions rewritten in Yoda's voice, plus 407 general Yoda
+prose examples, it scored 61.4%. The character came through clearly — persona
+went from 0.018 to 0.699 — but twenty points of arithmetic went with it.
 
-The obvious first hypothesis was that the persona was the problem: inverted
-syntax garbling the reasoning. The obvious second was length, since our Yoda
-rewrites averaged 51 words against the base model's 183.
+We had two guesses. Either the inverted syntax was garbling the reasoning, or
+the answers had simply become too short: our Yoda rewrites averaged 51 words
+where the base model wrote 183. Both guesses were wrong, and working that out
+took most of the week.
 
-Both turned out to be wrong, and finding that out took most of the week.
+### First, the evaluation was broken
 
-### Things that were broken before any of the science was valid
+Before trusting any comparison we went back through the eval path, and found
+four things that had each been quietly corrupting numbers.
 
-Before trusting any comparison we audited the evaluation path, and found four
-problems that had each been quietly corrupting numbers:
+The verifier was picking the wrong number. On a line like "...so Martin rings
+the big bell 36 times, and the small bell 16", it took the last number instead
+of the answer. Thirty-one of the base model's 149 "errors" were that. Making it
+question-aware moved the base model up 5.2 points and the Yoda arms by exactly
+zero — which meant every base-vs-SFT gap we'd looked at had been overstated.
 
-**The verifier was picking the wrong number.** On concluding lines like
-"...so Martin rings the big bell 36 times, and the small bell 16", the extractor
-took the last number rather than the answer. 31 of the base model's 149 "errors"
-were this. Fixing it with question-aware filtering moved the base model +5.2pp
-and the tagged arms by exactly 0.0pp — so every prior base-vs-SFT gap had been
-overstated.
+The generation cap was worse, because it was a biased cap rather than a noisy
+one. At 400 max-new-tokens, 84 of 500 base generations were truncated, and a
+truncated answer can't state its answer. So the cap was marking the verbose arm
+wrong for being verbose, and the verbose arm was the baseline everything else
+got compared against. We raised it to 1024.
 
-**The generation cap was a scoring bias.** `--max-new-tokens 400` truncated
-84/500 base generations. A truncated answer can't state its answer, so the cap
-was marking the verbose arm wrong for being verbose. That bias falls entirely on
-the row everything else is compared against. Raised to 1024.
+The persona classifier had been fitted on its own test set — base completions
+used as negatives, then scored on that same file. Refitting it properly left the
+conclusion standing, but it hadn't been evidence before.
 
-**The persona classifier was fitted on its own test set.** It used the base
-model's persona completions as negatives and was then scored on that same file.
-Refitted properly; the conclusion survived, but it hadn't been evidence before.
+And `generate.py` was loading RL adapters onto the raw base model instead of
+onto base+SFT-merged, which produces a model that is neither one thing nor the
+other. Nothing errors; you just get numbers from a model that never existed. It
+now walks the `init_from` chain recorded in each checkpoint's config.
 
-**Adapter stacking was silently wrong.** `generate.py` loaded an RL adapter onto
-the raw base model rather than onto base+SFT-merged, producing a model that was
-neither. It would have produced Week 2 numbers from a model that never existed.
-Now it walks the `init_from` chain recorded in each `training_config.json`.
+We also stopped eyeballing whether two arms' confidence intervals overlapped.
+That isn't a test. Everything is an exact McNemar on paired items now.
 
-We also stopped comparing arms by whether their independent 95% intervals
-overlapped — that isn't a test — and switched every comparison to an exact
-McNemar on paired items.
+### Testing the length idea
 
-### Testing the length hypothesis properly
+The clean way to test length is to change only length. We rewrote the same 113
+problems at 121 words instead of 50 and retrained with everything else fixed.
 
-We rewrote the same 113 problems at 121 words instead of 50, changing nothing
-else, and retrained. The model learned the longer targets faithfully (118
-generated words vs the control's 47). Accuracy went **down** 2.0 points
-(p=0.48, not significant).
-
-So length was out. It was a symptom of something else.
+The model learned the longer targets — it generated 118 words against the
+control's 47 — and accuracy went *down* two points (p=0.48, not significant).
+So length wasn't it. It was a symptom of something else.
 
 ### The control that actually answered it
 
-The decisive experiment came from a question during review: *what if we train on
-pure maths with no Yoda at all?*
+The experiment that settled it came out of a question during review: what if we
+train on pure maths with no Yoda at all?
 
-We ran it four ways, all with no persona data:
+We ran three versions with no persona data anywhere. Training on the base
+model's *own* verified chains of thought gave 82.4% — against a base of 82.0%,
+p=0.91, i.e. no cost at all. Training on GSM8K's reference solutions for the
+same problems gave 63.0%. At 1500 examples, 62.6%.
 
-| targets | GSM8K |
-|---|---|
-| base model's **own** verified chains of thought (1392) | **82.4%** |
-| GSM8K reference solutions, same 1392 problems | 63.0% |
-| GSM8K reference solutions, 1500 | 62.6% |
+That's the entire effect, and there's no persona in any of it. Fine-tuning on
+GSM8K's reference solutions costs nineteen points on its own. The Yoda voice was
+worth about one point (61.4% vs 62.6%, p=0.65).
 
-Training a model on its own reasoning costs nothing — 82.4% against a base of
-82.0%, p=0.91. Training it on GSM8K's reference solutions costs **19 points,
-with no persona anywhere in the data**.
-
-That's the whole effect. The persona was worth about 1 point (61.4% vs 62.6%,
-p=0.65). We'd spent a week suspecting the wrong variable. GSM8K's reference
-solutions are terse and skip steps, and SFT on them teaches a strong model to
-imitate a weaker reasoner.
+We'd spent a week suspecting the wrong variable. The reference solutions are
+terse and skip steps, and SFT on them teaches a strong model to imitate a weaker
+reasoner.
 
 ### Self-distillation
 
-If the model's own reasoning is safe, the fix is to keep it and change only the
-voice. We sampled the base model on GSM8K *train*, kept the 1392/1500 traces the
-verifier confirmed correct, and restyled them into Yoda.
+If the model's own reasoning is safe, then keep it and change only the voice.
+We sampled the base model on GSM8K *train*, kept the 1392 of 1500 traces the
+verifier confirmed correct, and restyled those into Yoda.
 
-Restyling is where it gets easy to cheat yourself. If the rewrite quietly
-*improves* the reasoning, you're no longer distilling the model's own thinking —
-you're distilling the rewriter's, and the whole claim collapses. So
-`check_restyle.py` enforces three floors per example: the final answer still
-verifies, every detectable intermediate value survives and none is invented, and
-length and equation count stay near the original.
+Restyling is where it gets easy to fool yourself. If the rewrite quietly
+*improves* the reasoning, you're no longer distilling the model's own thinking,
+you're distilling the rewriter's, and the claim you're making collapses. So
+`check_restyle.py` enforces three floors on every example: the final answer must
+still verify, every detectable intermediate value must survive with none
+invented, and length and equation count must stay close to the original.
 
-The guard caught real mistakes. Twice a rewrite invented a step that wasn't in
-the original (summing two hunt rounds separately; combining two deductions) —
-the kind of error that reads perfectly well and is invisible without the check.
-An early version of the guard was itself broken: its regex found no LaTeX, so it
-extracted zero values and happily accepted a rewrite that had dropped every
-step. Fixed by de-LaTeXing first.
+It caught real mistakes. Twice a rewrite invented a step that wasn't in the
+original — summing two hunt rounds separately, combining two deductions — the
+sort of thing that reads perfectly well and is invisible without the check. An
+early version of the guard was itself broken: its regex found no LaTeX in the
+base model's traces, so it extracted zero values and cheerfully accepted a
+rewrite that had dropped every step. That one is worth remembering, because a
+guard that silently passes everything is worse than no guard.
 
-Final: **563/563 accepted, 562 at or above the original's step count.**
+Final count: 563 of 563 accepted, with 562 at or above the original's step
+count.
 
-Trained on those 563 plus the 407 general examples: **68.4%**, up 7.0 points
-from Week 1 (p=0.0043), with persona statistically unchanged (p=0.497). Still
-13.6 points below base, so Yodifying costs roughly 10 points even when the
-reasoning is preserved — but a third of the loss is recovered.
+Training on those plus the 407 general examples gave **68.4%** — seven points up
+on Week 1 (p=0.0043), with persona statistically unchanged (p=0.497). Still 13.6
+points under base, so Yodifying costs around ten points even when the reasoning
+is preserved. But a third of the loss came back.
 
 ---
 
-## Week 2 — RLAIF, and four rewards before one worked
+## Week 2: RLAIF, and four rewards before one worked
 
-GRPO was written directly against torch/transformers/peft. The interesting part
-wasn't the algorithm, it was that **three of the four rewards we built were
-broken in ways that only showed up when we tested them deliberately.**
+GRPO itself was straightforward, written directly against torch/transformers/
+peft. The interesting part was that three of the four rewards we built were
+broken, and none of the breakages were visible from aggregate scores.
 
-### Reward 1: the style classifier saturates
+### The classifier saturates
 
-The 51-feature logistic regression scores 0.985 separating Yoda prose from base
-prose. Useless anyway: on the policy's *own* completions, median P = 0.933 with
-**34% pinned at P ≥ 0.99**. GRPO normalises within a group, so completions tied
-at the ceiling have zero advantage and teach nothing. A third of every batch
-would have been dead weight.
+Our 51-feature logistic regression separates Yoda prose from base prose at
+0.985. It's still useless as a reward, because on the policy's *own* completions
+the median is 0.933 and 34% sit at 0.99 or above. GRPO normalises within a
+group, so completions tied at the ceiling have zero advantage and teach nothing
+— a third of every batch would have been dead.
 
-Switching to log-odds helped. It wasn't enough — the same classifier scores
-**0.000** on a test where we append "Yoda I am" to a clean response, i.e. it
-actively prefers the gamed version.
+Switching to log-odds helped, since they keep separating what the sigmoid has
+already flattened. Not enough, though: the same classifier scores 0.000 on a
+test where we append "Yoda I am" to a clean response. It actively prefers the
+gamed version.
 
-### Reward 2: a 7B judge that answered from position
+### A 7B judge that answered from position
 
-Plan: have Qwen2.5-7B rank four on-policy completions, distil the preferences
-into a Bradley-Terry reward model. Standard RLAIF.
+The plan was standard RLAIF: have Qwen2.5-7B rank four on-policy completions,
+distil the preferences into a Bradley-Terry reward model.
 
-The distilled model reached 0.631 held-out against a 0.552 baseline and failed
-its gate. Rather than tune it, we checked the labels — and found the judge put
-whatever sat in **slot A first 46.9% of the time** against a 25% chance rate.
+The distilled model came out at 0.631 held-out against a 0.552 baseline, and
+failed its gate. Instead of tuning it we went and looked at the labels, and
+found the judge putting whatever sat in slot A first 46.9% of the time against a
+25% chance rate.
 
-Judging each group twice with the candidates reversed and keeping only the pairs
-both passes agreed on gave us the judge's self-consistency for free: **0.590**,
-barely above a coin flip. Two-way comparison was *worse* — 0.493, exactly
+Judging each group a second time with the candidates reversed, and keeping only
+pairs both passes agreed on, gave us the judge's self-consistency for free:
+0.590. Barely above a coin flip. Two-way comparison was *worse* — 0.493, exactly
 chance, with 72.9% of votes going to whichever response came first.
 
 So it wasn't the ranking format and it wasn't data volume. Any comparative
-prompt puts several candidates in one context window, and this judge answered
-from position.
+prompt puts several candidates in one context window, and this judge was
+answering from position.
 
-We checked it wasn't simply that the completions were indistinguishable: within-
-group spread of the style score (mean std 3.86) is *larger* than between-group
-spread (2.61), and judge consistency did not improve on the groups that differed
-most. There was signal; the judge couldn't see it.
+We did check the alternative explanation, that the completions were simply
+indistinguishable. They aren't: within-group spread of the style score is larger
+than between-group spread (3.86 vs 2.61), and judge consistency didn't improve
+on the groups that differed most. There was signal there; the judge couldn't see
+it.
 
-### Realising the reward model was unnecessary
+### Realising we didn't need a reward model
 
-Reward models exist because you can't ask a human mid-training, and because
-millions of rollouts make a big judge prohibitive. Neither applies here — GRPO
-needed about **3,600 judgements total**, and the premise of RLAIF is that the
-judge *is* a model and can be queried live. Building a proxy reintroduced the
-exact constraint RLAIF removes, and added a failure mode that then bit us.
+Reward models exist for two reasons — you can't ask a human mid-training, and
+millions of rollouts make a large judge prohibitive. Neither applied. GRPO here
+needs about 3,600 judgements in total, and the whole premise of RLAIF is that
+the judge is a model and can be queried live. We'd reintroduced the exact
+constraint RLAIF exists to remove, and inherited a failure mode along with it.
 
-### Reward 3: pointwise scoring, and a harness with ground truth
+### Building ground truth we could actually trust
 
 Scoring one completion at a time removes position bias structurally — there's no
-other candidate to be biased toward. The 7B scored 1.000 separating base prose
-from Yoda prose.
+other candidate in the context to be biased toward. The 7B then scored 1.000
+separating base prose from Yoda prose.
 
-That proves very little, though. The linear classifier does that too and is
-still useless on-policy. What we needed was ground truth at the granularity RL
-operates on, and no labelled set of "good Yoda vs better Yoda" exists.
+Which proves almost nothing. The linear classifier does that too and is still
+useless on-policy. What we needed was ground truth at the granularity RL
+operates on, and there's no labelled set of "good Yoda versus better Yoda"
+anywhere.
 
-So we built one. Take a real completion and **damage it in ways whose direction
-we know because we caused it**: replace the second half with the base model's
-flat prose (the voice stops halfway); splice in a Star Wars reference; have it
-name itself Yoda; pad with "hmm"; shuffle words within sentences.
+So we made one. Take a real completion and damage it in ways whose direction we
+know, because we caused the damage: replace the second half with the base
+model's flat prose so the voice stops halfway; splice in a Star Wars reference;
+have it name itself Yoda; pad it with "hmm"; shuffle the words inside each
+sentence.
 
-The 7B failed badly — with the full anti-gaming rubric *in the prompt*, it
-scored the damaged version **higher**: 0.464 → 0.602 for Star Wars, 0.464 →
-0.620 for self-naming. The rubric says verbatim not to reward those words. It
-was told in plain language and didn't comply.
+The 7B failed this badly. With the full anti-gaming rubric *in the prompt*, it
+scored the damaged version higher — 0.464 up to 0.602 for the Star Wars splice,
+0.464 up to 0.620 for self-naming. The rubric says in as many words not to
+reward those. It was told plainly and didn't comply.
 
-Two of those failures were ours, not the model's: the spliced sentences
-("*sharp the reasoning must be*") genuinely **are** more Yoda-inverted, so under
-a prompt asking only about inverted speech, ranking them higher was the correct
-answer to the question we asked. The objective was wrong. But RL optimises what
-you specify, so the risk was real either way.
+Two of those failures were ours rather than the model's, and it took a second
+look to see it. The spliced sentences — "sharp the reasoning must be" — genuinely
+*are* more Yoda-inverted. Under our original prompt, which asked only about
+inverted speech, ranking them higher was the correct answer to the question we'd
+asked. The objective was wrong, not the judge. That doesn't make the risk any
+less real, because RL optimises whatever you actually specify.
 
-### Reward 4: Claude, plus guardrails
+### Claude, plus guardrails
 
-Claude Haiku flipped the sign on both gaming tests, but with thin margins —
-+0.056 and +0.037, easily swamped by within-group noise. It was decisive about
-things needing judgement (+0.336 for the voice-stops test) and nearly
-indifferent to flat prohibitions.
+Claude Haiku flipped the sign on both gaming tests, but only just: +0.056 and
++0.037, margins that within-group noise would swallow. It was decisive about
+things that need judgement — +0.336 on the voice-stops-halfway test — and nearly
+indifferent to the flat prohibitions.
 
-Those three prohibitions are closed vocabularies needing no judgement at all, so
-we enforce them in code (−0.40 Star Wars, −0.40 self-naming, −0.04 per extra
-filler) and leave the judge to do what it's good at. That moved Star Wars from
-0.567 to **0.933** and self-naming from 0.533 to **0.950**, leaving the
-judgement-based tests untouched.
+That split suggested the fix. Those three prohibitions are closed vocabularies
+that need no judgement at all, so we enforce them in code (−0.40 for Star Wars
+vocabulary, −0.40 for self-naming, −0.04 per filler past the first) and leave
+the judge to do what it's good at. Star Wars went from 0.567 to 0.933,
+self-naming from 0.533 to 0.950, and the judgement-based tests didn't move.
 
-It's a **hybrid** reward, not a pure LLM judge, and the write-up says so.
+It's a hybrid reward rather than a pure LLM judge, and the write-up says so.
 
-### A run we had to throw away
+### One run we threw away
 
-A completed 150-step GRPO run turned out to be unattributable: the config writer
-hardcoded `"reward": "persona_classifier"` and was never updated when the reward
-options were added, so the file couldn't say which reward had trained it. Both
-candidates were disqualified anyway. It's quarantined rather than deleted,
-because its log is a textbook hacking signature — reward 0.91 → 16.64 while
-inversion cues went 5.53 → 12.97 and length 41.7 → 90.8.
+A completed 150-step GRPO run turned out to be unattributable. The config writer
+had `"reward": "persona_classifier"` hardcoded and was never updated when the
+reward options were added, so the file couldn't tell us which reward had trained
+it — and both candidates were disqualified anyway.
 
-Fixing that also turned up a related footgun: `--adapter` still defaulted to the
-Week-1 checkpoint, so running the trainer bare would have silently RL'd from the
-wrong policy.
+It's quarantined rather than deleted, because the log is a textbook hacking
+signature: reward climbing 0.91 to 16.64 while inversion cues went 5.53 to 12.97
+and length 41.7 to 90.8. Fixing that also turned up a related trap — `--adapter`
+still defaulted to the Week-1 checkpoint, so running the trainer bare would have
+silently RL'd from the wrong policy.
 
 ### Result
 
-150 steps, G=6, β=0.05, KL-anchored to the SFT policy:
+150 steps, G=6, β=0.05, KL-anchored to the SFT policy. The held-out judge
+(Sonnet, never trained against — the reward used Haiku) rates the SFT model
+2.05 out of 5 and the RLAIF model 3.07, a paired gain of +1.02 with 97
+completions improving and 7 getting worse. GSM8K went from 68.4% to 68.2%,
+p=1.0, with 41 items flipping each way — churn, not damage. The KL anchor is
+what's holding that.
 
-| | SFT | RLAIF | |
-|---|---|---|---|
-| held-out judge (Sonnet, 1–5) | 2.05 | **3.07** | +1.02, p=2.3e-21 |
-| style classifier | 0.649 | **0.841** | +0.149, p=1.5e-05 |
-| similarity to SFT data | 0.632 | **0.716** | non-overlapping CIs |
-| **GSM8K** | 68.4% | **68.2%** | −0.2pp, **p=1.0** |
-
-Persona improved substantially and maths didn't move — 41 items flipped each
-way, which is churn. The KL anchor is doing that work.
-
-The held-out judge mattered more than expected. It's considerably **harsher**
-than our classifier: it rates the SFT model 2.05/5 ("weak") where the classifier
-put 108/150 completions above threshold. Had we reported only the classifier
-we'd have overstated the SFT baseline and understated what RLAIF added. Its
-verdict also can't be explained by cue-stuffing, since it shares no features
-with the reward — and the diagnostics agree (Star Wars 0%, self-naming 0%,
-filler 0, type/token flat).
+The held-out judge mattered more than we expected, because it's considerably
+harsher than our own classifier. It calls the SFT model "weak" where the
+classifier put 108 of 150 completions above threshold. If we'd reported only the
+classifier we'd have overstated the SFT baseline and understated what RLAIF
+added. Its verdict also can't be explained away as cue-stuffing, since it shares
+no features with the reward, and the diagnostics back that up — no Star Wars, no
+self-naming, no filler, type/token flat.
 
 ---
 
-## Things worth carrying into Week 3
+## Carrying forward
 
-* **Test the reward before you train on it.** Three of four rewards here were
-  broken, and none of the breakages were visible from aggregate scores. The
-  degradation harness — construct damage whose direction you know — is the
-  reusable part of this project.
-* **A gate that stops the pipeline is worth more than a metric you read later.**
-  The reward-model gate saved an hour of GRPO on a reward that ranked barely
-  better than chance.
-* **Aggregate quality ≠ usable gradient.** A reward can be 98% accurate on the
-  easy task and still have zero variance where it's actually queried.
-* **Failures should be kept.** The superseded scripts and biased pair files are
-  committed with headers explaining why they're not used.
+The main thing we'd do differently from the start is test the reward before
+training on it. Three of four were broken here and none of it showed up in
+aggregate scores. The degradation harness — construct damage whose direction you
+know, then check the reward agrees — is the part of this project most worth
+reusing.
 
-Open items: possible train-split memorisation (the base model solves 92.8% of
-GSM8K train vs 82.0% of test, so self-distilled traces may be skewed toward
-memorised problems); rejection sampling selects easier problems (kept traces
-average 3.46 reference steps vs 4.21 dropped); and the `hmm` degradation still
-only scores 0.633, which we chose to monitor rather than tune against 60
-samples.
+Second: a gate that stops the pipeline beats a metric you read afterwards. The
+reward-model gate saved an hour of GRPO on a reward that ranked barely better
+than chance.
+
+Third: aggregate quality and usable gradient are different things. A reward can
+be 98% accurate on the easy version of the task and have no variance at all
+where it's actually queried.
+
+Still open. The base model solves 92.8% of GSM8K train against 82.0% of test, so
+the self-distilled traces may skew toward memorised problems — flagged, not
+resolved. Rejection sampling also selects easier problems: the traces we kept
+average 3.46 reference steps against 4.21 for the ones we dropped, which doesn't
+affect the matched comparisons but does inflate the absolute 82.4%. And the
+"hmm" degradation still only scores 0.633; we decided to monitor it in the
+diagnostics rather than tune a threshold against 60 samples.
