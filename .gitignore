@@ -29,3 +29,13 @@ hf_cache/
 
 # Local copy of trained adapter weights (240MB). Publish to HF Hub, not git.
 adapters/
+
+# Judge response cache: costs money to rebuild but is a cache, not evidence.
+# The scored outputs themselves are committed under outputs/judged/.
+work/claude_judge_cache.json
+work/sonnet_cache.json
+
+# The two DELIVERABLE adapters are exceptions to the *.safetensors rule above
+# and ship via Git LFS (see .gitattributes).
+!outputs/sft-yodadistill/adapter_model.safetensors
+!outputs/rlaif-lora/adapter_model.safetensors

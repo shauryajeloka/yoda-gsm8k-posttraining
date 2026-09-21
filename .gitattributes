@@ -1,0 +1,9 @@
+# The two deliverable adapters are tracked with Git LFS. GitHub rejects files
+# over 100MB on the normal path, and these are 228MB and 114MB.
+#
+# Only these two ship. The other 11 ablation adapters (flatref, selfdistill,
+# flatmath, scale*, v1_control, v2_long) are ~229MB each and would blow the
+# 1GB LFS free tier; every NUMBER they produced is committed as JSONL under
+# outputs/, so the results are fully reproducible without the weights.
+outputs/sft-yodadistill/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
+outputs/rlaif-lora/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
