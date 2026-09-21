@@ -19,7 +19,7 @@ Base: `Qwen2.5-3B-Instruct` · Character: Yoda · STEM: GSM8K
 **Recipe.** LoRA r=32, α=64, dropout 0.05, 3 epochs, lr 2e-4, max-len 1024,
 completion-only loss masking via chat-template prefix consistency.
 
-**Dataset** — `data/combined/sft_train_yodadistill.jsonl`, 970 examples:
+**Dataset:** `data/combined/sft_train_yodadistill.jsonl`, 970 examples:
 
 | type | n | share | mean words |
 |---|---|---|---|
@@ -37,7 +37,7 @@ zero overlap (train split vs test split).
 
 Rewriting a chain of thought can silently improve it, which would mean
 distilling from a different teacher than advertised. `check_restyle.py` enforces
-three independent floors per example — final answer still verifies; every
+three independent floors per example: final answer still verifies; every
 detectable intermediate value survives and none is invented; length ≥60% and
 equation count ≥80% of the original.
 
@@ -48,7 +48,7 @@ equation count ≥80% of the original.
 | restyle ≥ original step count | — | **562/563 (99.8%)** | — |
 
 **563/563 accepted, 0 rejected.** The value ratio above 1.0 is not added
-reasoning — the base model writes in LaTeX the extractor cannot parse, so 2.10
+reasoning. The base model writes in LaTeX the extractor cannot parse, so 2.10
 undercounts it. The real guarantee is the per-item check.
 
 ---
@@ -57,8 +57,8 @@ undercounts it. The real guarantee is the per-item check.
 
 [`scripts/persona_similarity.py`](../scripts/persona_similarity.py) scores each
 model's held-out completions against the SFT dataset (1907 responses) over an
-interpretable style vector — syntactic inversion cues, sentence-final
-auxiliaries, fronted clauses, function-word frequencies.
+interpretable style vector (syntactic inversion cues, sentence-final
+auxiliaries, fronted clauses, function-word frequencies).
 
 | candidate | corpus similarity | mean per-response | 95% CI |
 |---|---|---|---|
@@ -95,7 +95,7 @@ paired items.
 
 **There is degradation and it is significant.** Self-distillation recovers 7.0
 points of the Week-1 loss (61.4% → 68.4%, p=0.0043) at no persona cost
-(0.699 → 0.649, p=0.497 — not significant).
+(0.699 → 0.649, p=0.497, not significant).
 
 ### What causes it
 
@@ -112,7 +112,7 @@ Training on the model's **own** reasoning costs nothing. Training on GSM8K's
 reference solutions costs **19 points with no persona anywhere in the data**.
 Persona is worth ~1 point (61.4 vs 62.6, p=0.65).
 
-Response shape shows the same thing — reference-trained arms collapse to short,
+Response shape shows the same thing: reference-trained arms collapse to short,
 shallow answers while self-distilled arms match the base model:
 
 | arm | generated words | equations |
@@ -160,9 +160,9 @@ changes GSM8K by **−1.2pp (p=0.637, n.s.)** while moving persona from 0.051 to
   GSM8K *train* but 82.0% of *test*, so the self-distilled traces may be drawn
   disproportionately from memorised problems. Flagged, not resolved.
 * **Rejection sampling selects easy problems.** Kept traces average 3.46
-  reference steps against 4.21 for dropped ones — the self-distilled set is
+  reference steps against 4.21 for dropped ones, so the self-distilled set is
   biased toward shorter problems. `flatref` uses the identical problem set, so
   the headline comparison is not confounded by this, but the absolute 82.4% is.
-* **Restyling was done by an assistant, not a held-out model**, so its
+* **The restyling step was not performed by a held-out model**, so its
   consistency is not independently measured. `check_restyle.py` bounds the
   damage mechanically rather than certifying the prose.

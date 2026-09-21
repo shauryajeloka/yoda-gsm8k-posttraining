@@ -38,7 +38,7 @@ the RLAIF reward used Haiku):
 RLAIF vs SFT: **+1.02 paired, 95% CI [+0.86, +1.19], sign test p=2.3e-21**
 (97 improved, 7 worsened).
 
-Two results worth stating plainly:
+Two findings carry most of the story:
 
 **1. The 20-point SFT loss is caused by WHOSE reasoning you imitate, not by
 persona and not by length.** Four controls agree:
@@ -51,7 +51,7 @@ persona and not by length.** Four controls agree:
 | Week-1 SFT | GSM8K reference solutions, **Yodified** | 61.4% |
 
 Training on the model's own chain of thought costs **nothing** (82.4% vs 82.0%).
-Training on GSM8K's reference solutions costs **19 points** — with no persona
+Training on GSM8K's reference solutions costs **19 points**, with no persona
 anywhere in the data. Persona itself is worth about 1 point (61.4 vs 62.6,
 p=0.65).
 
@@ -69,7 +69,7 @@ target, 118 vs 128 generated) but **11.6 points apart**. Roughly 8 of those
 survive correcting for dataset size.
 
 **3. RLAIF bought persona for free.** +0.149 persona (p=1.5e-05) for −0.2pp
-GSM8K (p=1.0 — 41 items flipped each way, pure churn).
+GSM8K (p=1.0; 41 items flipped each way, pure churn).
 
 ---
 
@@ -121,7 +121,7 @@ wrong; each is recorded in `data/FREEZE.json`.
   disjoint from the frozen eval set, by question text and by id.
 * **The judge is held out.** RLAIF optimises a Claude *Haiku* reward; the
   reported persona score comes from Claude *Sonnet*, never trained against.
-  Same developer, so partial independence — stated, not overclaimed.
+  Same developer, so the independence is partial, and we say so.
 * **A truncation cap is a scoring bias.** 400 max-new-tokens silently truncated
   84/500 base generations, scoring the verbose arm wrong for running long. All
   reported numbers use 1024.

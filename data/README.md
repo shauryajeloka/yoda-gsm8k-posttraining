@@ -130,16 +130,16 @@ mathematical error:
 
 ## How the persona data was built
 
-407 non-math conversations written by hand across ten categories
+407 original non-math conversations composed for this project across ten categories
 (explanation, advice, emotional, description, everyday, teaching, reflective,
-casual, planning, opinion — 37–47 each). These exist so the model learns
+casual, planning, opinion; 37–47 each). These exist so the model learns
 "I always speak this way" rather than "math questions trigger a voice."
 
 QC in `scripts/assemble_general.py`:
 
 * no Star Wars vocabulary (0 in the final set);
-* at most one interjection per response — the final set contains **zero**
-  instances of "hmm"/"mmm", well inside the style guide's budget;
+* at most one interjection per response (the final set contains **zero**
+  instances of "hmm"/"mmm", well inside the style guide's budget);
 * the inversion floor, as above;
 * no duplicate prompts;
 * opening-phrase concentration tracked: the most common two-word opening
@@ -178,7 +178,7 @@ differences; the other 819 test problems stay untouched in reserve.
 
 Fifteen prompts in each of ten categories (factual, advice, emotional,
 planning, reasoning, storytelling, description, philosophical, educational,
-casual). Prompts only — each checkpoint generates its own completions, which
+casual). Prompts only: each checkpoint generates its own completions, which
 the judge in `judges/yoda_persona_judge.md` scores 1–5 at temperature 0.
 
 RLAIF reward: `R_persona = (persona_score - 1) / 4`.
@@ -200,12 +200,12 @@ fine-tuned outputs moved toward the character distribution.
 **Choice, and why:** cosine similarity over an interpretable *style vector*
 (inversion cues, sentence-final auxiliary rate, subject-final rate, fronted
 clauses, sentence rhythm, register markers, and the relative frequency of 40
-function words) — not embedding similarity.
+function words), not embedding similarity.
 
 Sentence embeddings mostly encode topic. The held-out persona prompts are
 deliberately about different subjects than the training prompts, so an
 embedding cosine against the SFT corpus would largely measure topical overlap,
-and would *rise* if the model drifted toward training topics — the opposite of
+and would *rise* if the model drifted toward training topics, the opposite of
 what should be rewarded. The persona, as defined in the style guide, is a set
 of surface syntactic properties, and that is what this vector measures. An
 embedding cosine is available under `--embeddings` as a secondary cross-check.
@@ -214,7 +214,7 @@ This is **not** the AI-judge score, which is a separate rubric grade used for
 RLAIF and the final table.
 
 **Validation.** Run without any model, on proxy corpora that hold content fixed
-and vary only style — GSM8K reference solutions versus the Yoda rewrites of the
+and vary only style: GSM8K reference solutions versus the Yoda rewrites of the
 same problems:
 
 ```
@@ -223,7 +223,7 @@ GSM8K reference solutions (base-like)     0.629    0.352 [0.337, 0.367]
 Yoda math rewrites (SFT-like)             0.888    0.638 [0.627, 0.649]
 ```
 
-Same problems, same numbers, different voice — so the separation is stylistic,
+Same problems, same numbers, different voice, so the separation is stylistic,
 and the intervals do not overlap. At Checkpoint 1, substitute real generations:
 
 ```bash
@@ -256,7 +256,7 @@ All sampling uses `seed=1337`. `data/raw/` holds the official
 ## Freezing
 
 `FREEZE.json` records the sha256 of every frozen and final artifact. Once
-training begins, the three frozen sets must not change — not to fix a prompt,
+training begins, the three frozen sets must not change: not to fix a prompt,
 not because a checkpoint scores badly on one. Every stage is evaluated on
 identical data, or the comparison across stages means nothing.
 
