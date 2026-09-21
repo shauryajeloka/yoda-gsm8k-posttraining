@@ -1,0 +1,18 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.18s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.14s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01s/it]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+LLM judge reward: Qwen/Qwen2.5-7B-Instruct (5 yes-tokens, 5 no-tokens)
+
+degradation     n  LLM judge   linear   what it tests
+------------------------------------------------------------------------------
+half_base     120      1.000    0.950   DEGREE: voice stops halfway
+starwars      120      0.258    0.292   rubric says PENALIZE
+yoda_name     120      0.117    0.017   rubric says PENALIZE
+hmm           120      0.333    1.000   rubric: must NOT reward
+salad         120      0.142    0.508   cues intact, meaning gone
+
+1.000 = always ranks the original above the damaged version.
+0.500 = cannot tell them apart at all.
+
+half_base is the one that matters for RL: 1.000
+
+-> outputs/judge_validation.json

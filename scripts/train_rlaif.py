@@ -28,29 +28,52 @@ a FRESH LoRA is attached on top for the policy. Then:
 
 so `with model.disable_adapter()` gives exact reference log-probs for free.
 
-REWARD
-------
-The fitted style classifier from scripts/persona_classifier.py -- a logistic
-regression over surface style features, scored as log-odds rather than as a
-probability (see PersonaReward). Deliberately NOT the LLM judge, for two
-reasons:
+REWARD  (--reward-kind, default "claude")
+-----------------------------------------
+An LLM scores each completion ON ITS OWN, plus deterministic guardrails. Four
+options exist and three of them were measured and rejected; the history is
+worth keeping because each failure was invisible until tested.
 
-  1. Cost. GRPO with G=8 over a few hundred steps is tens of thousands of
-     completions; judging all of them is slow and expensive.
-  2. Honesty. The judge is the EVALUATION metric. Optimizing the thing you
-     then report measures reward hacking, not persona quality. Keeping the
-     judge held out means the Week 2 comparison against SFT is credible.
+  claude  (default)  Claude Haiku scores against the persona rubric, then flat
+                     penalties apply for Star Wars vocabulary, self-naming and
+                     filler spam. On a degradation harness with known-correct
+                     orderings it ranks the clean original above a damaged one
+                     0.77 (voice stops halfway), 0.73 (word salad), 0.93
+                     (Star Wars splice) and 0.95 ("Yoda I am").
 
-The cost of that choice: the classifier is a linear model over surface
-features, so it is easy to hack -- the policy can learn to stuff every
-sentence with inversion cues. That is what --beta (the KL penalty) is holding
-back, and what the logged diagnostics are there to catch. The signature of
-hacking is the classifier reward climbing while response length, cue density
-or repetition blow up. Watch those columns, not just the reward.
+  llm                A local 7B doing the same job. Rejected: given the SAME
+                     anti-gaming rubric it scored a spliced-in Star Wars
+                     reference ABOVE the clean original (0.602 vs 0.464) and
+                     self-naming higher still (0.620). Told the rule plainly,
+                     it did not follow it.
+
+  linear             The 51-feature style classifier. Rejected as the primary
+                     reward: it pins 34% of on-policy completions at P>=0.99,
+                     where they are indistinguishable and contribute no
+                     gradient, and it scores 0.000 on the "Yoda I am" test.
+
+  neural             Bradley-Terry model distilled from judge rankings.
+                     Rejected: comparative prompts made the 7B answer from
+                     POSITION (46.9% slot-A against 25% chance; 0.590
+                     self-consistency under order reversal), so the labels were
+                     corrupt and the distilled model failed its gate.
+
+Why guardrails at all: Claude alone was nearly indifferent to the flat
+prohibitions (+0.056 for Star Wars, +0.037 for self-naming) while being
+decisive about genuine persona quality (+0.336). Those three rules need no
+judgement -- they are closed vocabularies -- so they are enforced in code and
+the judge is left to do what it is good at. This is a HYBRID reward, and the
+writeup should describe it as one.
+
+INDEPENDENCE: scoring uses Haiku; eval_persona.py reports with Sonnet.
+Different models, same developer -- partial independence, not full. Say so.
+
+The signature of reward hacking is the reward climbing while response length,
+cue density or repetition blow up. Watch those columns, not just the reward.
 
 Usage
-    python scripts/train_rlaif.py --adapter outputs/sft-lora \
-        --out outputs/rlaif-lora --steps 200
+    python scripts/train_rlaif.py --adapter outputs/sft-yodadistill \
+        --out outputs/rlaif-lora --steps 150
 """
 
 import argparse
@@ -102,9 +125,59 @@ class PersonaReward:
             return predict(x, self.w, self.b)
         return self.b + sum(wi * xi for wi, xi in zip(self.w, x))
 
-    def __call__(self, texts):
+    def __call__(self, texts, prompts=None):
         floor = 0.0 if self.transform == "prob" else -20.0
         return [floor if not t.strip() else self._score(t) for t in texts]
+
+
+class NeuralReward:
+    """Reward model distilled from the LLM judge's rankings.
+
+    Built by scripts/train_reward_model.py with a Bradley-Terry objective, so
+    its outputs are unbounded and scale-free. That needs no logit/prob choice:
+    GRPO normalises within the group, and only the ORDERING inside a group
+    affects the gradient.
+
+    Scored on (prompt, completion) because that is how it was trained -- a
+    completion is only good relative to what was asked.
+    """
+
+    def __init__(self, path, batch_size=16, max_len=640):
+        import torch
+        from transformers import AutoModelForSequenceClassification, AutoTokenizer
+        from peft import PeftModel
+
+        cfg = json.loads(Path(path, "adapter_config.json").read_text())
+        base = cfg["base_model_name_or_path"]
+        self.torch = torch
+        self.tok = AutoTokenizer.from_pretrained(path)
+        if self.tok.pad_token is None:
+            self.tok.pad_token = self.tok.eos_token
+        m = AutoModelForSequenceClassification.from_pretrained(
+            base, num_labels=1, torch_dtype=torch.float32)
+        m.config.pad_token_id = self.tok.pad_token_id
+        self.model = PeftModel.from_pretrained(m, path).eval()
+        self.dev = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model.to(self.dev)
+        self.batch_size, self.max_len = batch_size, max_len
+        print(f"neural reward model: {base} + {path}")
+
+    def __call__(self, texts, prompts):
+        enc_in = [self.tok.apply_chat_template(
+                      [{"role": "user", "content": q},
+                       {"role": "assistant", "content": t if t.strip() else " "}],
+                      tokenize=False)
+                  for q, t in zip(prompts, texts)]
+        out = []
+        with self.torch.no_grad():
+            for i in range(0, len(enc_in), self.batch_size):
+                e = self.tok(enc_in[i:i + self.batch_size], return_tensors="pt",
+                             padding=True, truncation=True,
+                             max_length=self.max_len).to(self.dev)
+                out.extend(self.model(**e).logits.squeeze(-1).float().tolist())
+        # An empty completion cannot be good Yoda; floor it well below the
+        # observed score range so it can never win a group by accident.
+        return [(-20.0 if not t.strip() else r) for t, r in zip(texts, out)]
 
 
 # --------------------------------------------------------------------------
@@ -170,12 +243,36 @@ def token_logprobs(model, input_ids, attention_mask, prompt_lens):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=DEFAULT_MODEL)
-    ap.add_argument("--adapter", default="outputs/sft-lora",
+    # sft-yodadistill, not sft-lora: 68.4% vs 61.4% GSM8K (+7.0pp, exact
+    # McNemar p=0.0043) with persona statistically indistinguishable (p=0.497).
+    # The old default pointed at the Week-1 checkpoint, so running this bare
+    # would have silently RL'd from the wrong policy.
+    ap.add_argument("--adapter", default="outputs/sft-yodadistill",
                     help="SFT checkpoint; becomes both the init and the KL anchor")
     ap.add_argument("--out", default="outputs/rlaif-lora")
     ap.add_argument("--prompts", default="data/persona/general_yoda_train.jsonl")
     ap.add_argument("--frozen-eval", default="data/persona/persona_eval_prompts.jsonl")
     ap.add_argument("--reward-model", default="outputs/persona_clf.json")
+    ap.add_argument("--reward-kind", default="claude",
+                    choices=["claude", "llm", "linear", "neural"],
+                    help="llm = an LLM scores each completion directly via its "
+                         "Yes/No log-odds (this is the AI feedback, and the "
+                         "default). linear = the 51-feature style classifier, "
+                         "which pins 34%% of on-policy completions at P>=0.99. "
+                         "neural = a Bradley-Terry model distilled from judge "
+                         "rankings; kept for reference but it failed its gate "
+                         "because comparative prompts made the judge answer "
+                         "from position (0.590 self-consistency, 0.493 for "
+                         "two-way). See scripts/llm_reward.py.")
+    ap.add_argument("--judge-model", default="Qwen/Qwen2.5-7B-Instruct",
+                    help="scoring LLM for --reward-kind llm")
+    # Haiku scores; eval_persona.py reports with Sonnet. Optimising against a
+    # judge and then reporting that same judge would make the Week 2 persona
+    # number a training metric. Same developer, so not fully independent --
+    # say so in the writeup rather than overclaiming.
+    ap.add_argument("--claude-model", default="claude-haiku-4-5-20251001",
+                    help="scoring model for --reward-kind claude")
+    ap.add_argument("--judge-workers", type=int, default=12)
     ap.add_argument("--reward-transform", default="logit",
                     choices=["logit", "prob"],
                     help="logit avoids the ceiling that flattens 37%% of SFT "
@@ -233,7 +330,16 @@ def main():
     model.print_trainable_parameters()
     model.config.use_cache = True
 
-    reward_fn = PersonaReward(args.reward_model, args.reward_transform)
+    if args.reward_kind == "claude":
+        from claude_reward import ClaudeJudgeReward
+        reward_fn = ClaudeJudgeReward(args.claude_model, workers=args.judge_workers)
+    elif args.reward_kind == "llm":
+        from llm_reward import LLMJudgeReward
+        reward_fn = LLMJudgeReward(args.judge_model)
+    elif args.reward_kind == "neural":
+        reward_fn = NeuralReward(args.reward_model)
+    else:
+        reward_fn = PersonaReward(args.reward_model, args.reward_transform)
     opt = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad],
                             lr=args.lr)
 
@@ -278,7 +384,8 @@ def main():
         completions = tok.batch_decode(seq[:, prompt_len:],
                                        skip_special_tokens=True)
         completions = [c.strip() for c in completions]
-        rewards = reward_fn(completions)
+        rprompts = [p for p in batch for _ in range(args.group_size)]
+        rewards = reward_fn(completions, rprompts)
 
         # Group-normalised advantages. Zero variance inside a group means the
         # samples are indistinguishable to the reward, so they teach nothing.
@@ -342,8 +449,16 @@ def main():
             model.save_pretrained(args.out)
             Path(args.out, "training_config.json").write_text(json.dumps({
                 "stage": "rlaif", "algo": "grpo", "init_from": args.adapter,
-                "reward": "persona_classifier", "reward_model": args.reward_model,
-                "reward_transform": args.reward_transform,
+                # Record what actually ran. This was hardcoded to
+                # "persona_classifier" when --reward-kind was added, which made
+                # one completed 150-step run unattributable to any reward and
+                # therefore unusable -- the checkpoint had to be discarded.
+                "reward": args.reward_kind,
+                "reward_model": (args.claude_model if args.reward_kind == "claude"
+                                 else args.judge_model if args.reward_kind == "llm"
+                                 else args.reward_model),
+                "reward_transform": (args.reward_transform
+                                     if args.reward_kind == "linear" else None),
                 "beta_kl": args.beta, "group_size": args.group_size,
                 "temperature": args.temperature, "lr": args.lr,
                 "steps_done": step, "seed": args.seed,

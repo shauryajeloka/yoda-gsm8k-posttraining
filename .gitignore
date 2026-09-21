@@ -39,3 +39,25 @@ work/sonnet_cache.json
 # and ship via Git LFS (see .gitattributes).
 !outputs/sft-yodadistill/adapter_model.safetensors
 !outputs/rlaif-lora/adapter_model.safetensors
+
+# Tokenizer copies inside adapter dirs are byte-identical to the base model's
+# and ~11MB each. They are only useful next to weights that actually ship, so
+# the two deliverable adapters keep theirs and the 11 ablation dirs (whose
+# .safetensors are excluded above) do not -- that is ~120MB of dead weight.
+# Their EVIDENCE is the generations under outputs/<arm>/, which are committed.
+outputs/*/tokenizer.json
+outputs/*/vocab.json
+outputs/*/merges.txt
+outputs/*/tokenizer_config.json
+outputs/*/added_tokens.json
+outputs/*/special_tokens_map.json
+!outputs/sft-yodadistill/tokenizer.json
+!outputs/sft-yodadistill/vocab.json
+!outputs/sft-yodadistill/merges.txt
+!outputs/sft-yodadistill/tokenizer_config.json
+!outputs/sft-yodadistill/added_tokens.json
+!outputs/sft-yodadistill/special_tokens_map.json
+!outputs/rlaif-lora/tokenizer.json
+!outputs/rlaif-lora/vocab.json
+!outputs/rlaif-lora/merges.txt
+!outputs/rlaif-lora/tokenizer_config.json

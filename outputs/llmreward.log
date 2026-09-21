@@ -1,0 +1,14 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.11s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.05it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.02it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+LLM judge reward: Qwen/Qwen2.5-7B-Instruct (5 yes-tokens, 5 no-tokens)
+
+scored 600 completions in 9s (65/s)
+  WITHIN-group std  5.826   (0 would mean no gradient: GRPO normalises inside the group)
+  overall std       7.771
+  range             -19.12 .. 17.75
+  p10 -9.25   p50 2.00   p90 11.88
+  pinned at the ceiling  0.2%   (the linear reward pinned 34% at P>=0.99)
+  agrees with the linear reward on within-group pairs: 0.578
+
+  within/overall std ratio 0.75 -- most of the variance must
+  sit INSIDE groups for GRPO to have anything to work with.

@@ -5958,3 +5958,371 @@ Adding every leg in order: 4 + 2 + 2 + 4 = 12 miles.
 Note the trap of counting only the outward journey and forgetting that Ken must come home again, which would halve the distance.
 Thus, twelve miles Ken will cover.
 Final answer: 12
+
+@@gsm8k_train_02881
+To find the gap between tadpoles and fish, both populations after the changes determine we must.
+The tadpoles at the start. Three times as many tadpoles as fish there were, and fifty fish: 3 x 50 = 150 tadpoles.
+Now the changes. Curtis catches seven fish, so the fish remaining number 50 - 7 = 43.
+Half the tadpoles develop into frogs and so are tadpoles no longer, leaving (150)/(2) = 75 tadpoles.
+The question asks how many MORE tadpoles than fish: 75 - 43 = 32.
+Note the trap of comparing the starting populations rather than the ones after the catching and the developing.
+Thus, thirty-two more tadpoles than fish there are in the pond now.
+Final answer: 32
+
+@@gsm8k_train_02887
+To find Cara's age, down the generations travel we must, from the grandmother through the mother.
+Cara's grandmother is seventy-five years old, given to us directly.
+Cara's mom is fifteen years younger than the grandmother: 75 - 15 = 60 years old.
+Cara is twenty years younger than her MOM, not than the grandmother: 60 - 20 = 40 years old.
+Note the trap of subtracting both differences from the grandmother in a single careless step, which happens to give the same answer here but reasons past the chain.
+Thus, forty years old Cara is.
+Final answer: 40
+
+@@gsm8k_train_02888
+To find the saving, the full cost and the discounted cost separately compute we must, and only then take their difference.
+The chlorine first. A litre costs ten dollars, with twenty percent off: 10 x (20)/(100) = 10 x 0.20 = 2 dollars of discount, leaving a discounted price of 10 - 2 = 8 dollars. Three litres at that price: 3 x 8 = 24 dollars.
+The soap next. A box costs sixteen dollars, with twenty-five percent off: 16 x (25)/(100) = 16 x 0.25 = 4 dollars of discount, leaving 16 - 4 = 12 dollars. Five boxes: 5 x 12 = 60 dollars.
+Now the comparison. Without any discounts the purchase would cost (3 x 10) + (5 x 16) = 30 + 80 = 110 dollars. With the discounts it costs 24 + 60 = 84 dollars.
+The saving is the difference: 110 - 84 = 26 dollars.
+Note the trap of reporting eighty-four, which is what you pay rather than what you save.
+Thus, twenty-six dollars you will save.
+Final answer: 26
+
+@@gsm8k_train_02892
+To find how far above the limit John drove, his actual speed determine first we must.
+He travelled one hundred fifty miles in two hours. Speed is distance divided by time, so one hundred fifty divided by two gives an average speed of 75 mph.
+The speed limit is sixty miles per hour.
+The excess is his speed less the limit: seventy-five less sixty gives an excess of 15 mph.
+Note the trap of reporting seventy-five, which is his speed rather than the amount by which he exceeded the limit.
+Thus, fifteen miles per hour above the speed limit he was driving.
+Final answer: 15
+
+@@gsm8k_train_02893
+To find Raine's steps, one day's walking determine first we must, and the return journey not forget.
+One hundred fifty steps it takes her to walk to school. But home again she must come, and that costs the same one hundred fifty: 150 + 150 = 300 steps for a round trip.
+Five days she makes that round trip: 300 x 5 = 1500 steps.
+Note the trap of counting only the walk to school, which would halve the answer and leave her at school all week.
+Thus, one thousand five hundred steps she takes walking to and from school in five days.
+Final answer: 1500
+
+@@gsm8k_train_02905
+To find the total length, backward from the pencil through the pen to the rubber travel we must.
+The pencil is given: C = 12 cm.
+The pen is shorter than the pencil by two centimetres, so subtract: P = 12 - 2 = 10 cm.
+The rubber is shorter than the pen by three centimetres, since the pen is longer than the rubber by that amount: R = 10 - 3 = 7 cm.
+Now all three together. Rubber at seven, pen at ten, pencil at twelve: R + P + C = 7 + 10 + 12 = 29 cm.
+Note the trap of adding where subtracting is needed, for each relation names what is LONGER and the chain runs downward in length.
+Thus, twenty-nine centimetres the total length of the three is.
+Final answer: 29
+
+@@gsm8k_train_02913
+To find the tickets still unsold, each seller's tickets determine first we must.
+Jude is the anchor: J = 16 tickets sold.
+Andrea sold twice as many as Jude: A = 2 x 16 = 32 tickets.
+Sandra sold four more than half of Jude's number: half of sixteen is 8, and four more gives 8 + 4 = 12 tickets.
+All three sellers together: 32 + 16 + 12 = 60 tickets sold.
+One hundred tickets were to be sold in all, so the remainder is 100 - 60 = 40 tickets.
+Note the trap of halving Andrea's thirty-two rather than Jude's sixteen when computing Sandra's share.
+Thus, forty tickets still need to be sold.
+Final answer: 40
+
+@@gsm8k_train_02921
+To find the big bell's rings, name it as the unknown we must, for the small bell is described against it.
+Let B be the times Martin rings the big bell. The small bell he rings four more than a third as often, so the small bell is (1/3)B + 4.
+Both bells together total fifty-two: B + ((1/3)B + 4) = 52.
+Remove the brackets: B + (1/3)B + 4 = 52.
+Put the B terms over a common denominator: (3/3)B + (1/3)B + 4 = 52, which combines to (4/3)B + 4 = 52.
+Subtract the four: (4/3)B = 48.
+Multiply by three quarters: B = 48 x (3/4), which gives B = 36 rings of the big bell.
+Check it: the small bell rings (1/3)(36) + 4 = 12 + 4 = 16, and thirty-six plus sixteen is fifty-two.
+Thus, thirty-six times Martin rings the big bell.
+Final answer: 36
+
+@@gsm8k_train_02933
+To find the books now, each event in order apply we must.
+The library begins with two hundred thirty-five books.
+On Tuesday two hundred twenty-seven are taken out: 235 - 227 = 8 books remaining.
+On Thursday fifty-six are brought back: 8 + 56 = 64 books.
+On Friday thirty-five are taken out again: 64 - 35 = 29 books.
+Note the trap of netting all the changes at once without tracking the running total, which invites sign errors.
+Thus, twenty-nine books there are now.
+Final answer: 29
+
+@@gsm8k_train_02934
+To find each pile, Mary's full stock of screws determine first we must.
+She has eight screws on hand and needs to buy two times MORE, which is 2 x 8 = 16 additional screws.
+Her total stock is therefore what she had plus what she bought: 8 + 16 = 24 screws.
+Splitting those into four sections: (24)/(4) = 6 screws in each pile.
+Note the trap of reading two times more as a total of sixteen rather than sixteen additional, which would give six fewer screws overall.
+Thus, six screws are in each pile.
+Final answer: 6
+
+@@gsm8k_train_02938
+To find the years, Mike's annual saving and the required downpayment separately compute we must.
+His saving first. Ten percent of his hundred fifty thousand dollar salary: 0.10 x 150000 = 15000 dollars saved each year.
+The downpayment next. Twenty percent of the four hundred fifty thousand dollar house: 0.20 x 450000 = 90000 dollars needed.
+Now the time, which is the target divided by the annual rate: (90000)/(15000) = 6 years.
+Note the trap of applying the ten percent to the house price or the twenty percent to the salary, which would cross the two figures entirely.
+Thus, six years it will take him.
+Final answer: 6
+
+@@gsm8k_train_02944
+To find Jane's speed in the units requested, both the distance and the time convert we must.
+The distance first. One kilometre equals one thousand metres, so three kilometres equals 3 x 1000 = 3000 metres.
+The time next. One hour equals sixty minutes, so two hours equals 2 x 60 = 120 minutes.
+Now the speed, which is distance divided by time in the new units: (3000)/(120) = 25 metres per minute.
+Note the trap of dividing the three by the two and reporting one and a half, correct in kilometres per hour but not in the units asked for.
+Thus, twenty-five metres per minute her speed is.
+Final answer: 25
+
+@@gsm8k_train_02947
+To find the total distance, each rabbit separately handle we must, for different speeds they hop.
+The white rabbit first. Fifteen metres in one minute it hops, and across five minutes that gives fifteen times five, which is seventy-five metres.
+The brown rabbit next. Twelve metres per minute it hops, and across the same five minutes that gives twelve times five, which is sixty metres.
+Now both rabbits together: seventy-five metres plus sixty metres gives one hundred thirty-five metres.
+Note the trap of averaging the two speeds rather than summing the two distances, which would answer a different question entirely.
+Thus, one hundred thirty-five metres the total distance the two rabbits will hop.
+Final answer: 135
+
+@@gsm8k_train_02952
+To find the lollipops, all the attendees count first we must, for they arrive in two groups.
+Forty-five people show up for the class, and another fifteen come in a while later: 45 + 15 = 60 attendees in all.
+One lollipop is given for every five people who attend: 60 / 5 = 12 lollipops.
+Note the trap of counting only the first forty-five, which would give nine and forget the latecomers who also attended.
+Thus, twelve lollipops the teacher gave away.
+Final answer: 12
+
+@@gsm8k_train_02905
+To find the total length of the three objects, backward from the pencil through the pen and then to the rubber travel we must, for only the pencil's length is handed to us outright.
+Set the relations down first. The pen is longer than the rubber by three centimetres. The pen is shorter than the pencil by two centimetres. And the pencil is twelve centimetres long: C = 12 cm.
+Now the pen. It is shorter than the pencil by two centimetres, so subtract from the pencil's length: P = 12 - 2 = 10 cm for the pen.
+Next the rubber. The pen is longer than the rubber by three centimetres, which means the rubber is the shorter of the two: R = 10 - 3 = 7 cm for the rubber.
+Now all three objects together. The rubber at seven centimetres, the pen at ten, and the pencil at twelve: R + P + C = 7 + 10 + 12 = 29 cm.
+Note the trap running through this chain: every relation names what is LONGER than what, so each step must subtract rather than add as we work downward from the pencil, and a single reversal would spoil everything after it.
+Thus, twenty-nine centimetres the total length of the rubber, the pen and the pencil altogether is.
+Final answer: 29
+
+@@gsm8k_train_02921
+To find the big bell's rings, name it as the unknown we must, for the small bell is described entirely against it.
+Let B stand for the number of times Martin rings the big bell. He rings the small bell four more times than a third as often as the big bell, so the small bell is rung (1/3)B + 4 times.
+Both bells together come to fifty-two rings: B + ((1/3)B + 4) = 52.
+Remove the brackets first: B + (1/3)B + 4 = 52.
+Now put the B terms over a common denominator so they may be combined: (3/3)B + (1/3)B + 4 = 52, which gathers into (4/3)B + 4 = 52.
+Subtract the four from both sides: (4/3)B = 48.
+Multiply both sides by three quarters to undo the fraction: B = 48 x (3/4), and that gives B = 36 rings of the big bell.
+Check it, for checking costs little. The small bell rings (1/3)(36) + 4 = 12 + 4 = 16 times, and thirty-six plus sixteen is fifty-two, matching the combined total exactly.
+Thus, thirty-six times Martin rings the big bell.
+Final answer: 36
+
+@@gsm8k_train_02952
+To find how many lollipops the teacher gave away, every attendee count first we must, for they arrive in two separate groups and both groups attended the class.
+The attendees first. Forty-five people show up for the poetry class at the start, and another fifteen come in a while later. Both groups attended, so both count toward the total: 45 + 15 = 60 attendees altogether.
+Now the lollipops. For every five people that attend, the teacher gives one of the students a lollipop. So the lollipops number the attendees divided by five: 60 / 5 = 12 lollipops.
+Note the trap of counting only the first forty-five who arrived on time, which would give nine lollipops and silently ignore the latecomers who also attended the class.
+Check the shape of the answer: twelve lollipops for sixty attendees is indeed one for every five, as the rule demands.
+Thus, twelve lollipops the teacher gave away.
+Final answer: 12
+
+@@gsm8k_train_02955
+To find the percentage spent, the cards count first we must, then their cost, and only then compare against his money.
+Thirty students there are, and Mo wants to give a Valentine to sixty percent of them: 30 x 0.60 = 18 cards.
+Each card costs two dollars: 18 x 2 = 36 dollars spent.
+Now the percentage of his money. He has forty dollars, so the share spent is thirty-six divided by forty: (36)/(40) = 0.9, and multiplying by a hundred gives ninety percent.
+Note the trap of reporting thirty-six, which is the cost rather than the percentage the question asks for.
+Thus, ninety percent of his money he will spend on Valentines.
+Final answer: 90
+
+@@gsm8k_train_02956
+To find the missed shots, the successful ones count first we must.
+Cyrus attempted twenty shots and made exactly eighty percent of them: 0.80 x 20 = 16 successful shots.
+Every shot he did not make he missed, so the misses are the attempts less the successes: 20 - 16 = 4 misses.
+Note the trap of reporting sixteen, which counts the shots he made rather than those he missed.
+Thus, four times Cyrus missed the shots.
+Final answer: 4
+
+@@gsm8k_train_02971
+To find the flies still needed, what Betty has caught determine first we must, and the week's demand against it set.
+The catching first. Five flies in the morning and six more in the afternoon, but one escapes when she removes the lid: 5 + 6 - 1 = 10 flies in the bottle.
+The demand next. The frog eats two flies every day, and a week holds seven days: 2 x 7 = 14 flies needed for the week.
+The shortfall: 14 - 10 = 4 flies.
+Note the trap of forgetting the escaped fly, which would leave her one short of the true gap.
+Thus, four more flies Betty needs for the week.
+Final answer: 4
+
+@@gsm8k_train_02975
+To find Hanna's erasers, down from Tanya through Rachel travel we must.
+Tanya has twenty erasers, and half of them are red: (20)/(2) = 10 red erasers.
+Rachel has three less than one HALF of Tanya's red erasers. Half of ten is (10)/(2) = 5, and three less than that is 5 - 3 = 2 erasers for Rachel.
+Hanna has twice as many as Rachel: 2 x 2 = 4 erasers.
+Note the trap of using Tanya's full twenty rather than her ten red ones, which would carry an error through every later step.
+Thus, four erasers Hanna has.
+Final answer: 4
+
+@@gsm8k_train_02982
+To find each gift's cost, the teachers count first we must, for the gifts go to both children's teachers.
+Her son has three different teachers and her daughter has four: 3 + 4 = 7 teachers in all.
+Seventy dollars Harper spent on gifts, shared evenly among the seven: (70)/(7) = 10 dollars for each gift.
+Note the trap of counting only one child's teachers, which would give either twenty-three and a third or seventeen and a half, neither of them tidy.
+Thus, ten dollars each gift cost.
+Final answer: 10
+
+@@gsm8k_train_02989
+To find the stamps Tonya keeps, Jimmy's matchbooks into stamps convert we must.
+Jimmy arrives with five matchbooks, and each matchbook contains twenty-four matches: five times twenty-four gives one hundred twenty matches.
+One stamp is worth twelve matches, so those matches buy one hundred twenty divided by twelve, which is ten stamps.
+Tonya arrived with thirteen stamps and gives ten away: thirteen less ten leaves three stamps.
+Note the trap of trading matchbooks directly for stamps without converting through matches first.
+Thus, three stamps Tonya has left.
+Final answer: 3
+
+@@gsm8k_train_02992
+To find the sandwich price, the drinks account for first we must, and the remainder divide among the sandwiches.
+Three sandwiches Wade buys, one for now, one for the road and one for the evening. With x for a sandwich's price, and two drinks at four dollars each, his total spending is 3x + 2 x 4 = 26.
+The drinks come to eight dollars, so the equation becomes 3x + 8 = 26.
+Subtract the eight: 3x = 26 - 8, which gives 3x = 18.
+Divide by three: x = 6 dollars for each sandwich.
+Note the trap of counting two sandwiches rather than three, for the question names three separate occasions.
+Thus, six dollars each sandwich costs.
+Final answer: 6
+
+@@gsm8k_train_02997
+To find the combined watching time, each friend separately handle we must, for at different speeds they watch.
+Lila first. The video is one hundred hours long, and she watches at twice the average speed, which halves her time: (100)/(2) = 50 hours per video. Across six videos: 50 x 6 = 300 hours.
+Roger next. He watches at the average speed, so a video costs him its full hundred hours. Across six videos: 100 x 6 = 600 hours.
+Both friends together: 300 + 600 = 900 hours.
+Note the trap of doubling Lila's time rather than halving it, for watching faster costs less time and not more.
+Thus, nine hundred hours the total number of hours they watched.
+Final answer: 900
+
+@@gsm8k_train_03004
+To find the saving, both fruits price we must, for the cartons differ in size as well as in cost.
+The fruit needed first. Each batch takes twelve ounces, and four batches Bill makes: twelve times four gives forty-eight ounces of fruit.
+The blueberries next. They come in six-ounce cartons, so the cartons needed are (48)/(6) = 8 cartons, at five dollars each, giving forty dollars.
+The raspberries after. They come in eight-ounce cartons, so the cartons needed are (48)/(8) = 6 cartons, at three dollars each, giving eighteen dollars.
+The saving from choosing raspberries: forty dollars less eighteen dollars gives twenty-two dollars.
+Note the trap of comparing the carton prices directly, five against three, which ignores that the cartons hold different amounts.
+Thus, twenty-two dollars less it would cost Bill to make raspberry muffins.
+Final answer: 22
+
+@@gsm8k_train_03009
+To find the yearly total, the new bridge's traffic determine first we must.
+The old bridge carries two thousand vehicles every month, and the new bridge has twice its capacity: 2 x 2000 = 4000 vehicles of capacity.
+But the traffic through the new bridge is sixty percent MORE than the old bridge's, not its full capacity: 2000 x 0.60 = 1200 additional vehicles, giving 2000 + 1200 = 3200 vehicles a month through the new bridge.
+Both bridges together each month: 2000 + 3200 = 5200 vehicles.
+Across twelve months: 5200 x 12 = 62400 vehicles.
+Note the trap of using the new bridge's four thousand capacity rather than its actual thirty-two hundred of traffic.
+Thus, sixty-two thousand four hundred vehicles pass through the two bridges in a year.
+Final answer: 62400
+
+@@gsm8k_train_03010
+To find the loads, the weight of each kind of garment determine first we must, for they differ.
+The shirts first. Four shirts weigh a pound, and twenty shirts there are: twenty divided by four gives five pounds of shirts.
+The pants next. Two pairs weigh a pound, and twenty pairs there are: twenty divided by two gives ten pounds of pants.
+Both kinds together: five pounds plus ten pounds gives fifteen pounds of laundry.
+The machine handles five pounds at a time: fifteen divided by five gives three loads.
+Note the trap of weighing the pants like the shirts, when a pair of pants is twice as heavy as a shirt.
+Thus, three loads of laundry he has to do.
+Final answer: 3
+
+@@gsm8k_train_03019
+To find Janelle's marbles now, each colour separately track we must, for the gift took some of each.
+The blue marbles first. Six bags she bought at ten marbles each: six times ten gives sixty blue marbles.
+Her whole collection before the gift: twenty-six green plus sixty blue gives eighty-six marbles.
+Now the gift, which took six green and eight blue. The green remaining: 26 - 6 = 20 green marbles. The blue remaining: 60 - 8 = 52 blue marbles.
+Both colours together after the gift: 20 + 52 = 72 marbles.
+Note the trap of subtracting the whole gift from one colour rather than splitting it correctly between the two.
+Thus, seventy-two marbles Janelle has now.
+Final answer: 72
+
+@@gsm8k_train_03021
+To find the stamps, the total weight compute first we must, in ounces.
+The paper first. Eight pieces she used, each weighing one fifth of an ounce, so the paper weighs eight fifths of an ounce.
+The envelope weighs two fifths of an ounce.
+Both together: (8)/(5) + (2)/(5) = (8 + 2)/(5) = (10)/(5) = 2 ounces.
+One stamp per ounce she needed, so two stamps the letter required.
+Note the trap of counting the pieces of paper as stamps, or of forgetting the envelope's own weight.
+Thus, two stamps Jessica needed.
+Final answer: 2
+
+@@gsm8k_train_03042
+To find the average speed, the whole distance total first we must.
+Salt Lake City to Las Vegas is four hundred twenty miles, and Las Vegas to Los Angeles is two hundred seventy-three: four hundred twenty plus two hundred seventy-three gives six hundred ninety-three miles.
+Andy wants to make the drive in eleven hours, so the average speed is (693)/(11) = 63 miles per hour.
+Note the trap of averaging the two legs' distances rather than summing them, which would halve the journey.
+Thus, sixty-three miles per hour his average must be.
+Final answer: 63
+
+@@gsm8k_train_02921
+To find the big bell's rings, name it as the unknown we must, for the small bell is described entirely against it.
+Let B stand for the number of times Martin rings the big bell. He rings the small bell four more times than a third as often as the big bell, so the small bell is rung (1/3)B + 4 times.
+Both bells together come to fifty-two rings: B + ((1/3)B + 4) = 52.
+Remove the brackets first: B + (1/3)B + 4 = 52.
+Now put the B terms over a common denominator so they may be combined: (3/3)B + (1/3)B + 4 = 52, which gathers into (4/3)B + 4 = 52.
+Subtract the four from both sides: (4/3)B = 48.
+Multiply both sides by three quarters to undo the fraction: B = 48 x (3/4), and that gives B = 36 rings of the big bell.
+Check it, for checking costs little. The small bell rings (1/3)(36) + 4 = 12 + 4 = 16 times, and 36 + 16 = 52, matching the combined total exactly.
+Thus, thirty-six times Martin rings the big bell.
+Final answer: 36
+
+@@gsm8k_train_02989
+To find the stamps Tonya keeps, through matches we must travel, for matchbooks and stamps share no direct rate of exchange.
+Two conversions the problem hands us. Each matchbook holds 24 matches, and each stamp is worth 12 matches. Matches are the common currency between them, so matches are where the trade must be counted.
+Jimmy arrives with 5 matchbooks. Count his matches first: 5 x 24 = 120 matches he carries in total.
+Now turn those matches into stamps at the agreed rate of 12 matches to a stamp: 120 / 12 = 10 stamps his matchbooks are worth.
+Jimmy trades all of his matchbooks, so all 10 stamps' worth changes hands, and Tonya is the one who pays in stamps.
+Tonya arrived holding 13 stamps. She gives 10 of them away: 13 - 10 = 3 stamps remain with her.
+Note the trap of trading the 5 matchbooks straight across for 5 stamps, forgetting that a matchbook holds twice what a stamp is worth.
+Thus, three stamps Tonya has left.
+Final answer: 3
+
+@@gsm8k_train_02992
+To find the sandwich price, the drinks account for first we must, and the remainder divide among the sandwiches.
+Three sandwiches Wade buys, one to eat now, one for the road and one for the evening. With x for a single sandwich's price, and two drinks at four dollars each, his whole spending is 3x + 2 x 4 = 26.
+Settle the drinks before the sandwiches, for their price is already known: 2 x 4 = 8 dollars gone to drinks.
+Put that back into the equation, and it becomes 3x + 8 = 26.
+Subtract the eight from both sides: 3x = 26 - 8, which leaves 3x = 18 dollars spread across the three sandwiches.
+Divide that remainder by three: 18 / 3 = 6 dollars for each sandwich.
+Note the trap of counting two sandwiches rather than three, for the question names three separate occasions, not two.
+Thus, six dollars each sandwich costs.
+Final answer: 6
+
+@@gsm8k_train_02997
+To find the combined watching time, each friend separately handle we must, for at different speeds they watch, and one sum will not serve both.
+Lila first. The video runs 100 hours at the average speed, but Lila watches at twice that speed. Twice the speed means half the time, so a single video costs her 100 / 2 = 50 hours rather than the full hundred.
+Six videos she watched, each costing those same 50 hours: 50 x 6 = 300 hours Lila spent in all.
+Roger next, and simpler his case is. At the average speed exactly he watches, so no adjustment is needed and one video costs him its full 100 hours.
+Six videos he watched as well, at 100 hours apiece: 100 x 6 = 600 hours Roger spent in all.
+The question asks what the two of them watched together, so the totals add: 300 + 600 = 900 hours.
+Note the trap of doubling Lila's time rather than halving it, for watching faster spends less time and not more.
+Thus, nine hundred hours the total number of hours they watched.
+Final answer: 900
+
+@@gsm8k_train_03004
+To find the saving, both fruits price in full we must, for the cartons differ in size as well as in cost, and cost alone misleads.
+The fruit needed first, since either choice must cover the same amount. Each batch takes 12 ounces and 4 batches Bill makes: 12 x 4 = 48 ounces of fruit needed either way.
+The blueberries next. In 6 ounce cartons they come, at five dollars each. To cover 48 ounces he needs 48 / 6 = 8 cartons, and those 8 cartons at five dollars apiece come to 8 x 5 = 40 dollars.
+The raspberries after. In 8 ounce cartons they come, at three dollars each. To cover the same 48 ounces he needs 48 / 8 = 6 cartons, and those 6 cartons at three dollars apiece come to 6 x 3 = 18 dollars.
+The saving is what stands between the two totals: 40 - 18 = 22 dollars.
+Note the trap of comparing the carton prices directly, five against three, which ignores that the cartons hold different amounts.
+Thus, twenty-two dollars less it would cost Bill to make raspberry muffins.
+Final answer: 22
+
+@@gsm8k_train_03010
+To find the loads, the weight of each kind of garment determine first we must, for shirts and pants do not weigh alike.
+The shirts first. Four shirts weigh 1 pound, and 20 shirts Jon needs washed, so divide to find what they weigh: 20 / 4 = 5 pounds of shirts.
+The pants next, and heavier each one is. Two pairs weigh 1 pound, and 20 pairs he has, so divide again: 20 / 2 = 10 pounds of pants.
+Into the same machine both kinds go, so their weights join: 5 + 10 = 15 pounds of laundry waiting for him.
+Only 5 pounds at a time the machine takes, so divide the waiting weight by what one load holds: 15 / 5 = 3 loads.
+Note the trap of weighing the pants as though they were shirts, when a pair of pants is twice as heavy and fewer of them fit in a pound.
+Thus, three loads of laundry he has to do.
+Final answer: 3
+
+@@gsm8k_train_03019
+To find Janelle's marbles now, each colour separately track we must, for the gift took some of both, and a single total hides that.
+The blue marbles first. Six bags she bought, and 10 marbles sat in every bag: 6 x 10 = 60 blue marbles came home with her.
+Her whole collection before the gift was given: the 26 green marbles she already had, joined by those 60 blue, giving 26 + 60 = 86 marbles altogether.
+Now the gift, which took 6 green marbles and 8 blue marbles, unequal amounts of each. The green remaining: 26 - 6 = 20 green marbles. The blue remaining: 60 - 8 = 52 blue marbles.
+Both colours together once the gift has gone: 20 + 52 = 72 marbles.
+Note the trap of taking the whole gift from one colour alone, rather than splitting it between the two as the gift itself was split.
+Thus, seventy-two marbles Janelle has now.
+Final answer: 72

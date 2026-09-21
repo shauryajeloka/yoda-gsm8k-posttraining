@@ -1,71 +1,113 @@
-# Yoda × GSM8K — post-training for persona + capability
+# Yoda persona + GSM8K capability: SFT → RLAIF
 
-Assignment 1. Base model **Qwen2.5-3B-Instruct**, character **Yoda**, STEM task
-**GSM8K** (rule-based verifier).
+Post-training **Qwen2.5-3B-Instruct** to speak as **Yoda** while preserving
+**GSM8K** arithmetic. Checkpoint 1 is SFT, Checkpoint 2 is RLAIF via GRPO.
 
-Three stages: SFT → RLAIF (persona reward) → RLVR (verifiable math reward),
-with the last two combined into a multi-objective reward.
+Deliverable write-ups:
 
-## Status
+* [`docs/CHECKPOINT1_SFT.md`](docs/CHECKPOINT1_SFT.md)
+* [`docs/CHECKPOINT2_RLAIF.md`](docs/CHECKPOINT2_RLAIF.md) — includes the
+  required note on what did not work
 
-| | |
-|---|---|
-| **Week 1 — SFT** | data complete and verified; training code written, **not yet run on a GPU** |
-| Week 2 — RLAIF | judge + reward mapping specified; RL loop not written |
-| Week 3 — RLVR | verifier + reward function done; RL loop not written |
+---
 
-## Start here
+## Headline results
 
-* **[data/README.md](data/README.md)** — the dataset: what it contains, how it
-  was built, the leakage discipline, and the QC numbers.
-* **[TRAINING.md](TRAINING.md)** — runbook: how to train, what to measure with
-  what, and why cross-entropy is not the persona metric.
+All GSM8K numbers are on the same frozen 500-item test split, greedy decoding,
+1024 new tokens, compared with an **exact McNemar test on paired items**.
+Persona is scored on a frozen 150-prompt non-maths set.
 
-## What's in the box
+| arm | GSM8K | vs base | persona P | similarity to SFT data |
+|---|---|---|---|---|
+| Base Qwen2.5-3B-Instruct | **82.0%** | — | 0.018 | 0.475 |
+| SFT on GSM8K refs, Yodified (Week 1) | 61.4% | −20.6%, p=7e-17 | 0.699 | 0.648 |
+| **SFT on self-distilled CoT, Yodified** | **68.4%** | −13.6%, p=7e-10 | 0.649 | 0.632 |
+| **RLAIF (GRPO on the above)** | **68.2%** | −13.8%, p=4e-10 | **0.841** | **0.716** |
+
+Two results worth stating plainly:
+
+**1. The 20-point SFT loss is caused by WHOSE reasoning you imitate, not by
+persona and not by length.** Four controls agree:
+
+| arm | targets | GSM8K |
+|---|---|---|
+| `selfdistill` | the base model's own verified CoT, **no persona** | **82.4%** (p=0.91 vs base) |
+| `flatref` | GSM8K reference solutions, **no persona**, same problems | 63.0% |
+| `flatmath` | GSM8K reference solutions, **no persona**, 1500 | 62.6% |
+| Week-1 SFT | GSM8K reference solutions, **Yodified** | 61.4% |
+
+Training on the model's own chain of thought costs **nothing** (82.4% vs 82.0%).
+Training on GSM8K's reference solutions costs **19 points** — with no persona
+anywhere in the data. Persona itself is worth about 1 point (61.4 vs 62.6,
+p=0.65).
+
+**2. Length is a symptom, not the cause.** A matched pair rewrote the *same*
+113 problems at 50.3 vs 121.4 words:
+
+| arm | target words | generated words | GSM8K |
+|---|---|---|---|
+| `v1_control` | 50.3 | 47.2 | 58.8% |
+| `v2_long` | 121.4 | 118.3 | 56.8% (p=0.48, **n.s.**) |
+
+The model faithfully learned the longer targets and accuracy did not move.
+Compare `v2_long` against `yodadistill`: near-identical length (121 vs 127
+target, 118 vs 128 generated) but **11.6 points apart**. Roughly 8 of those
+survive correcting for dataset size.
+
+**3. RLAIF bought persona for free.** +0.149 persona (p=1.5e-05) for −0.2pp
+GSM8K (p=1.0 — 41 items flipped each way, pure churn).
+
+---
+
+## Repository layout
 
 ```
-data/        1,907 SFT examples + 3 frozen evaluation sets + judge + verifier
-scripts/     build the data (reproducible, seed 1337) and run train/generate/eval
-work/        hand-authored sources; required to rebuild the data and to fit
-             the persona classifier
-infra/       RunPod bootstrap and one-command Week 1 / epoch sweep
-outputs/     generations and metrics (the evidence behind the results table)
+scripts/       training, generation, evaluation, reward and judge code
+infra/         one experiment per shell script, each documenting its own design
+data/          frozen eval sets, SFT datasets, verifier, judge rubric, style guide
+  FREEZE.json  sha256 of every frozen artifact + a log of every verifier revision
+outputs/       generations for every arm (the evidence behind each number)
+  judged/      completions scored by the held-out Sonnet judge
+work/          restyling sources and reward-model data, including failed attempts
+docs/          checkpoint write-ups
 ```
 
-## Headline numbers so far
+**Model weights.** `outputs/sft-yodadistill/` (Checkpoint 1) and
+`outputs/rlaif-lora/` (Checkpoint 2) ship via **Git LFS**. The other 11
+ablation adapters are ~229MB each and would exceed the LFS free tier; every
+number they produced is committed as JSONL under `outputs/`, so all results are
+verifiable without them, and `infra/*.sh` reproduces them.
 
-Data only — no model has been trained yet.
-
-* **1,907** SFT examples: 78.7% Yoda math / 21.3% Yoda general conversation
-* **1500/1500** math rewrites verified against GSM8K ground truth
-* Verifier round-trips **8,792/8,792** GSM8K reference solutions
-* **0** GSM8K test items in training; 0 exact or near-duplicate pairs
-* Persona classifier: **0.985** held-out accuracy, **0.998** AUC on a
-  content-controlled contrast
-
-## Results
-
-| Model | Persona score (1–5) | GSM8K accuracy |
-|---|---:|---:|
-| Base Qwen2.5-3B-Instruct | — | — |
-| + SFT | — | — |
-| + RLAIF | — | — |
-| + RLVR / combined | — | — |
+```bash
+git lfs install && git clone <repo>      # weights need git-lfs
+```
 
 ## Reproducing
 
 ```bash
-pip install -r infra/requirements.txt
-python scripts/check_formatting.py          # validate data, no GPU needed
-python data/verifier/gsm8k_verifier.py --selftest
-bash infra/run_week1.sh                     # needs a GPU
+pip install -r requirements.txt
+bash infra/run_week1.sh          # SFT baseline
+bash infra/run_selfdistill.sh    # the decisive no-persona controls
+bash infra/run_yodadistill.sh    # the chosen SFT arm
+bash infra/run_rlaif_full.sh     # RLAIF (needs ANTHROPIC_API_KEY)
 ```
 
-Rebuilding the dataset from `data/raw/` is byte-identical (seed 1337); hashes
-of every frozen artifact are in `data/FREEZE.json`.
+## Evaluation discipline
 
-## Note on the trained model
+Several of these were added *because* an earlier version of this repo got them
+wrong; each is recorded in `data/FREEZE.json`.
 
-LoRA adapters are gitignored — they are ~100–200 MB and reproducible from the
-data plus `scripts/train_sft.py`. For the "trained SFT model" deliverable,
-push the adapter to the Hugging Face Hub and link it here.
+* **Frozen eval sets, hash-pinned.** `data/FREEZE.json` holds sha256 for all 11
+  frozen artifacts. Every arm answers the identical 500 GSM8K items, which is
+  what makes the paired McNemar test valid.
+* **Paired significance, not overlapping CIs.** Comparing two arms by whether
+  their independent 95% intervals overlap is not a test; every comparison here
+  is an exact McNemar on the same items.
+* **Leak checks refuse rather than warn.** Training prompts are asserted
+  disjoint from the frozen eval set, by question text and by id.
+* **The judge is held out.** RLAIF optimises a Claude *Haiku* reward; the
+  reported persona score comes from Claude *Sonnet*, never trained against.
+  Same developer, so partial independence — stated, not overclaimed.
+* **A truncation cap is a scoring bias.** 400 max-new-tokens silently truncated
+  84/500 base generations, scoring the verbose arm wrong for running long. All
+  reported numbers use 1024.

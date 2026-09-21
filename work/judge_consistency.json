@@ -1,0 +1,7 @@
+{
+  "self_consistency": 0.5900900900900901,
+  "pairs_agreed": 1441,
+  "pairs_disagreed": 1001,
+  "judge_model": "Qwen/Qwen2.5-7B-Instruct",
+  "groups": 407
+}

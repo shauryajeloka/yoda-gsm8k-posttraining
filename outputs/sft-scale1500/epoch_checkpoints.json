@@ -1,0 +1,19 @@
+[
+  {
+    "epoch": 1,
+    "path": "outputs/sft-scale1500/checkpoint-113"
+  },
+  {
+    "epoch": 2,
+    "path": "outputs/sft-scale1500/checkpoint-227"
+  },
+  {
+    "epoch": 3,
+    "path": "outputs/sft-scale1500/checkpoint-339"
+  },
+  {
+    "epoch": 3.0,
+    "path": "outputs/sft-scale1500",
+    "note": "final save"
+  }
+]

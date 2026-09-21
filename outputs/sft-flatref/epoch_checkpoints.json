@@ -1,0 +1,19 @@
+[
+  {
+    "epoch": 1,
+    "path": "outputs/sft-flatref/checkpoint-83"
+  },
+  {
+    "epoch": 2,
+    "path": "outputs/sft-flatref/checkpoint-166"
+  },
+  {
+    "epoch": 3,
+    "path": "outputs/sft-flatref/checkpoint-249"
+  },
+  {
+    "epoch": 3.0,
+    "path": "outputs/sft-flatref",
+    "note": "final save"
+  }
+]

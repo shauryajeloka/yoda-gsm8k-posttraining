@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "data": "data/combined/sft_train_scale146.jsonl",
+  "epochs": 3.0,
+  "lr": 0.0001,
+  "lora": true,
+  "lora_r": 32,
+  "seed": 1337,
+  "system_prompt": "qwen_default",
+  "max_len": 640,
+  "note": "generate.py must use the same --system-prompt value."
+}

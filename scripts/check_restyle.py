@@ -134,18 +134,32 @@ def check(original, restyled, ground_truth, question=None,
     return reasons
 
 
-def parse_blocks(path):
-    blocks, cur, cid = {}, [], None
+def parse_blocks(path, warn=True):
+    """Later blocks win on a repeated id.
+
+    Repeats are easy to create by hand and were: an early pass wrote 653
+    headers for 563 distinct problems. That is not a correctness problem --
+    every surviving block is validated independently -- but silently
+    collapsing them makes the file look 16% more complete than it is, so
+    say so rather than swallowing it.
+    """
+    blocks, cur, cid, order = {}, [], None, []
     for line in Path(path).read_text(encoding="utf-8").splitlines():
         if line.startswith("@@"):
             if cid:
                 blocks[cid] = "\n".join(cur).strip()
             cid, cur = line[2:].strip(), []
+            order.append(cid)
         elif cid is not None:
             cur.append(line)
     if cid:
         blocks[cid] = "\n".join(cur).strip()
-    return {k: v for k, v in blocks.items() if v}
+    kept = {k: v for k, v in blocks.items() if v}
+    if warn and len(order) != len(set(order)):
+        dupes = {k for k in order if order.count(k) > 1}
+        print(f"NOTE: {len(order)} headers for {len(set(order))} distinct ids "
+              f"({len(dupes)} repeated); the last block for each id is used.")
+    return kept
 
 
 def main():

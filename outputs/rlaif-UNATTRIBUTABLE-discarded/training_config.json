@@ -1,0 +1,16 @@
+{
+  "stage": "rlaif",
+  "algo": "grpo",
+  "init_from": "outputs/sft-yodadistill",
+  "reward": "persona_classifier",
+  "reward_model": "outputs/persona_clf.json",
+  "reward_transform": "logit",
+  "beta_kl": 0.05,
+  "group_size": 6,
+  "temperature": 1.0,
+  "lr": 1e-05,
+  "steps_done": 150,
+  "seed": 1337,
+  "system_prompt": "qwen_default",
+  "note": "generate.py must use the same --system-prompt value. The LLM judge was NOT used as the reward and remains a held-out evaluator."
+}

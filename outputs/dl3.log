@@ -1,0 +1,7 @@
+START Qwen/Qwen2.5-0.5B-Instruct
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:01,  5.44it/s]Fetching 10 files:  20%|██        | 2/10 [00:00<00:00, 10.79it/s]Fetching 10 files:  90%|█████████ | 9/10 [00:00<00:00, 31.33it/s]Fetching 10 files: 100%|██████████| 10/10 [00:03<00:00,  3.07it/s]
+DONE Qwen/Qwen2.5-0.5B-Instruct
+START Qwen/Qwen2.5-7B-Instruct
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files:   7%|▋         | 1/14 [00:00<00:01,  9.07it/s]Fetching 14 files:  64%|██████▍   | 9/14 [00:00<00:00, 39.53it/s]Fetching 14 files:  71%|███████▏  | 10/14 [00:16<00:06,  1.67s/it]Fetching 14 files:  79%|███████▊  | 11/14 [00:51<00:14,  4.68s/it]Fetching 14 files:  86%|████████▌ | 12/14 [00:55<00:09,  4.64s/it]Fetching 14 files:  93%|█████████▎| 13/14 [01:12<00:05,  5.59s/it]Fetching 14 files: 100%|██████████| 14/14 [01:45<00:00,  7.51s/it]Fetching 14 files: 100%|██████████| 14/14 [01:45<00:00,  7.51s/it]
+DONE Qwen/Qwen2.5-7B-Instruct
+ALL_MODELS_READY

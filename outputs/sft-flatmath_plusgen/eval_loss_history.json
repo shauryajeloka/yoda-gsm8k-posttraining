@@ -1,0 +1,26 @@
+[
+  {
+    "eval_loss": 0.6845985054969788,
+    "eval_runtime": 1.6882,
+    "eval_samples_per_second": 56.273,
+    "eval_steps_per_second": 7.108,
+    "epoch": 0.9955947136563876,
+    "step": 113
+  },
+  {
+    "eval_loss": 0.7149733901023865,
+    "eval_runtime": 1.6858,
+    "eval_samples_per_second": 56.353,
+    "eval_steps_per_second": 7.118,
+    "epoch": 2.0,
+    "step": 227
+  },
+  {
+    "eval_loss": 0.8086189031600952,
+    "eval_runtime": 1.7034,
+    "eval_samples_per_second": 55.771,
+    "eval_steps_per_second": 7.045,
+    "epoch": 2.986784140969163,
+    "step": 339
+  }
+]

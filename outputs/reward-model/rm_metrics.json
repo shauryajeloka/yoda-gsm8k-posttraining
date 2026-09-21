@@ -1,0 +1,14 @@
+{
+  "val_pairwise_accuracy": 0.7378640776699029,
+  "train_subset_accuracy": 0.8592233009708737,
+  "linear_baseline_accuracy": 0.5922330097087378,
+  "judge_self_consistency": 0.5900900900900901,
+  "required_floor": 0.5310810810810811,
+  "passed": true,
+  "n_pairs": 1441,
+  "n_groups": 386,
+  "n_train_pairs": 1235,
+  "n_val_pairs": 206,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "split": "by_group_id"
+}

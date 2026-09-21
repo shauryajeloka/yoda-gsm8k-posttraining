@@ -49,11 +49,41 @@ def judge_prompt_template():
 
 
 def call_anthropic(prompt, model):
+    """Four things here are load-bearing, each learned from a failure:
+
+      * an org-scoped key is rejected with 400 unless the workspace is named;
+      * `temperature` is deprecated on Sonnet 5 / Opus 5 and 400s rather than
+        being ignored, and some SDK versions reject the keyword outright;
+      * a thinking model emits a `thinking` block FIRST, which has no .text,
+        so content[0].text raises AttributeError on every call;
+      * max_tokens=200 is not enough to get past that thinking block, so the
+        response ends before any text exists.
+    """
+    import inspect
+    import os
+
     import anthropic
-    client = anthropic.Anthropic()
-    r = client.messages.create(model=model, max_tokens=200, temperature=0,
-                               messages=[{"role": "user", "content": prompt}])
-    return r.content[0].text
+
+    ws = os.environ.get("ANTHROPIC_WORKSPACE_ID")
+    client = anthropic.Anthropic(
+        default_headers={"anthropic-workspace-id": ws} if ws else None)
+
+    thinking = "sonnet-5" in model or "opus-5" in model
+    try:
+        sig = inspect.signature(client.messages.create)
+        sdk_ok = "temperature" in sig.parameters or any(
+            p.kind == inspect.Parameter.VAR_KEYWORD for p in sig.parameters.values())
+    except (TypeError, ValueError):
+        sdk_ok = True
+    kw = {} if (thinking or not sdk_ok) else {"temperature": 0}
+
+    r = client.messages.create(model=model, max_tokens=2048 if thinking else 400,
+                               messages=[{"role": "user", "content": prompt}], **kw)
+    text = " ".join(b.text for b in r.content
+                    if getattr(b, "type", None) == "text" and hasattr(b, "text"))
+    if not text.strip() and r.stop_reason == "max_tokens":
+        raise RuntimeError(f"{model} returned only a thinking block; raise max_tokens")
+    return text
 
 
 def call_openai(prompt, model):
@@ -133,7 +163,11 @@ def main():
     template = judge_prompt_template()
     Path(args.out_dir).mkdir(parents=True, exist_ok=True)
 
-    print(f"judge: {args.provider}/{model}  (temperature 0)\n")
+    # Do not claim temperature 0 when the model or SDK refuses the parameter;
+    # a run labelled deterministic that is not is worse than an honest label.
+    _det = not ("sonnet-5" in model or "opus-5" in model)
+    print(f"judge: {args.provider}/{model}  "
+          f"({'temperature 0' if _det else 'default sampling; temperature not settable'})\n")
     summary = []
     for path in args.files:
         print(f"scoring {path}")
