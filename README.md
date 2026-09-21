@@ -3,8 +3,10 @@
 Post-training **Qwen2.5-3B-Instruct** to speak as **Yoda** while preserving
 **GSM8K** arithmetic. Checkpoint 1 is SFT, Checkpoint 2 is RLAIF via GRPO.
 
-Deliverable write-ups:
+Write-ups:
 
+* [`WORKLOG.md`](WORKLOG.md) — narrative notes: what we tried, what broke, how
+  we found out, what we changed
 * [`docs/CHECKPOINT1_SFT.md`](docs/CHECKPOINT1_SFT.md)
 * [`docs/CHECKPOINT2_RLAIF.md`](docs/CHECKPOINT2_RLAIF.md) — includes the
   required note on what did not work
@@ -23,6 +25,18 @@ Persona is scored on a frozen 150-prompt non-maths set.
 | SFT on GSM8K refs, Yodified (Week 1) | 61.4% | −20.6%, p=7e-17 | 0.699 | 0.648 |
 | **SFT on self-distilled CoT, Yodified** | **68.4%** | −13.6%, p=7e-10 | 0.649 | 0.632 |
 | **RLAIF (GRPO on the above)** | **68.2%** | −13.8%, p=4e-10 | **0.841** | **0.716** |
+
+Scored by the **held-out** AI judge (Claude Sonnet, never trained against;
+the RLAIF reward used Haiku):
+
+| arm | persona, 1–5 | 1 / 2 / 3 / 4 / 5 |
+|---|---|---|
+| base | 1.00 | 146/0/0/0/0 |
+| SFT | 2.05 | 43/64/32/9/0 |
+| **RLAIF** | **3.07** | **5/26/69/47/0** |
+
+RLAIF vs SFT: **+1.02 paired, 95% CI [+0.86, +1.19], sign test p=2.3e-21**
+(97 improved, 7 worsened).
 
 Two results worth stating plainly:
 

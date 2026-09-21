@@ -1,16 +1,49 @@
 [
   {
-    "path": "outputs/rlaif/persona_eval.jsonl",
-    "n": 3,
-    "n_scored": 3,
-    "mean_persona_score": 3.6666666666666665,
-    "stdev": 0.4714045207910317,
+    "path": "outputs/base/persona_eval.jsonl",
+    "n": 150,
+    "n_scored": 146,
+    "mean_persona_score": 1,
+    "stdev": 0.0,
     "distribution": {
-      "3": 1,
-      "4": 2
+      "1": 146
     },
-    "unparsed": 0,
-    "mean_words": 51,
+    "unparsed": 4,
+    "mean_words": 281.12666666666667,
+    "responses_with_interjection": 3,
+    "responses_with_star_wars": 0
+  },
+  {
+    "path": "outputs/yodadistill/persona_eval.jsonl",
+    "n": 150,
+    "n_scored": 148,
+    "mean_persona_score": 2.0472972972972974,
+    "stdev": 0.8647328868895707,
+    "distribution": {
+      "1": 43,
+      "2": 64,
+      "3": 32,
+      "4": 9
+    },
+    "unparsed": 2,
+    "mean_words": 42.986666666666665,
+    "responses_with_interjection": 0,
+    "responses_with_star_wars": 0
+  },
+  {
+    "path": "outputs/rlaif/persona_eval.jsonl",
+    "n": 150,
+    "n_scored": 147,
+    "mean_persona_score": 3.074829931972789,
+    "stdev": 0.7918671242736609,
+    "distribution": {
+      "1": 5,
+      "2": 26,
+      "3": 69,
+      "4": 47
+    },
+    "unparsed": 3,
+    "mean_words": 47.526666666666664,
     "responses_with_interjection": 0,
     "responses_with_star_wars": 0
   }
