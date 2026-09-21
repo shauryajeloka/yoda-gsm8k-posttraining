@@ -253,25 +253,3 @@ the diagnostics. It came out at 0.00, so the exploit was not taken.
 
 Also honest: the linear classifier **beats** Claude on the degree test (0.933
 vs 0.767). The hybrid is not strictly dominant.
-<<<<<<< HEAD
-
-### 4.6 A completed 150-step run that had to be discarded
-
-`train_rlaif.py` hardcoded `"reward": "persona_classifier"` in its config
-writer, and was never updated when `--reward-kind` was added. A full 150-step
-GRPO run therefore could not be attributed to any reward: the recorded
-`reward_model` was the argparse *default*, contradicting the pipeline that
-launched it. Both candidate rewards were disqualified anyway.
-
-Kept at `outputs/rlaif-UNATTRIBUTABLE-discarded/` for its log, which shows a
-textbook hacking signature over 150 steps:
-
-```
-reward           0.91  ->  16.64
-inversion cues   5.53  ->  12.97   (2.3x)
-mean words       41.7  ->  90.8    (2.2x)
-KL               0.00  ->  0.46
-```
-
-=======
->>>>>>> c2683a2 (Trim the write-ups to result-relevant material)
