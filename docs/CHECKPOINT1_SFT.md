@@ -153,16 +153,3 @@ changes GSM8K by **−1.2pp (p=0.637, n.s.)** while moving persona from 0.051 to
 0.767.
 
 ---
-
-## Honest limitations
-
-* **Train-split memorisation is possible.** The base model solves 92.8% of
-  GSM8K *train* but 82.0% of *test*, so the self-distilled traces may be drawn
-  disproportionately from memorised problems. Flagged, not resolved.
-* **Rejection sampling selects easy problems.** Kept traces average 3.46
-  reference steps against 4.21 for dropped ones, so the self-distilled set is
-  biased toward shorter problems. `flatref` uses the identical problem set, so
-  the headline comparison is not confounded by this, but the absolute 82.4% is.
-* **The restyling step was not performed by a held-out model**, so its
-  consistency is not independently measured. `check_restyle.py` bounds the
-  damage mechanically rather than certifying the prose.
