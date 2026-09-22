@@ -52,8 +52,12 @@ persona and not by length.** Four controls agree:
 
 Training on the model's own chain of thought costs **nothing** (82.4% vs 82.0%).
 Training on GSM8K's reference solutions costs **19 points**, with no persona
-anywhere in the data. Persona itself is worth about 1 point (61.4 vs 62.6,
-p=0.65).
+anywhere in the data. Yoda styling added about 1 point on top of those
+already-poor targets (61.4 vs 62.6, p=0.65) — but that small number is partly a
+floor effect. On top of *good* targets the restyling is not free: roughly 10 of
+the 13.6 points separating the final SFT model from base are attributable to it
+(82.4% unstyled vs 68.4% styled, after allowing ~1 pt for the general-prose mix
+and ~2-3 pts for the smaller dataset). Persona cost depends on target quality.
 
 **2. Length is a symptom, not the cause.** A matched pair rewrote the *same*
 113 problems at 50.3 vs 121.4 words:

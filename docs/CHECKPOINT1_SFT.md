@@ -110,7 +110,12 @@ Four no-persona controls isolate the mechanism:
 
 Training on the model's **own** reasoning costs nothing. Training on GSM8K's
 reference solutions costs **19 points with no persona anywhere in the data**.
-Persona is worth ~1 point (61.4 vs 62.6, p=0.65).
+Yoda styling adds ~1 point on top of these already-poor
+targets (61.4 vs 62.6, p=0.65) — but on top of *good* targets it is not free:
+unstyled self-distillation scores 82.4% against the styled arm's 68.4%, and
+after allowing for the general-prose mix (~1 pt) and the smaller dataset
+(~2-3 pts), roughly 10 points are attributable to the restyling itself. The
+persona's cost depends on the quality of the targets it rides on.
 
 Response shape shows the same thing: reference-trained arms collapse to short,
 shallow answers while self-distilled arms match the base model:

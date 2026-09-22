@@ -60,8 +60,10 @@ model's *own* verified chains of thought gave 82.4%, against a base of 82.0%
 same problems gave 63.0%. At 1500 examples, 62.6%.
 
 That's the entire effect, and there's no persona in any of it. Fine-tuning on
-GSM8K's reference solutions costs nineteen points on its own. The Yoda voice was
-worth about one point (61.4% vs 62.6%, p=0.65).
+GSM8K's reference solutions costs nineteen points on its own. Styling those same targets as
+Yoda added about one more point of damage (61.4% vs 62.6%, p=0.65) — though we
+later learned that small number was partly a floor effect: on top of good
+targets, the restyling costs about ten points.
 
 We'd spent a week suspecting the wrong variable. The reference solutions are
 terse and skip steps, and SFT on them teaches a strong model to imitate a weaker
