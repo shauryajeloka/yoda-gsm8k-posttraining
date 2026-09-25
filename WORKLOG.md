@@ -73,7 +73,7 @@ reasoner.
 
 If the model's own reasoning is safe, then keep it and change only the voice.
 We sampled the base model on GSM8K *train*, kept the 1392 of 1500 traces the
-verifier confirmed correct, and restyled those into Yoda.
+verifier confirmed correct, and began restyling them into Yoda.
 
 Restyling is where it gets easy to fool yourself. If the rewrite quietly
 *improves* the reasoning, you're no longer distilling the model's own thinking,
@@ -85,6 +85,13 @@ invented, and length and equation count must stay close to the original.
 It caught real mistakes. Twice a rewrite invented a step that wasn't in the original (summing two hunt
 rounds separately; combining two deductions), the sort of thing that reads
 perfectly well and is invisible without the check.
+
+We stopped restyling at 563 of the 1,392 rather than doing them all. The
+earlier scaling curve was nearly flat past 300 examples (300 to 1,500 moved
+accuracy 1.4 points, within noise), so the expected return on the next 800
+rewrites was roughly a point, and the whole of Week 2 was queued behind this
+step. The call was to train on what we had, see where the arm landed, and only
+go back for more data if it fell short. It didn't.
 
 Final count: 563 of 563 accepted, with 562 at or above the original's step
 count.
