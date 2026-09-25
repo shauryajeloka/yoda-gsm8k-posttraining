@@ -1,0 +1,25 @@
+  using workspace wrkspc_01DnKh4u988UwYZuXJ1dyLTs
+Claude judge reward: claude-haiku-4-5-20251001 guardrails=on (556 cached scores, 12 workers)
+
+degradation     n  LLM judge   linear   what it tests
+------------------------------------------------------------------------------
+starwars       60      1.000    0.367   rubric says PENALIZE
+yoda_name      60      0.983    0.050   rubric says PENALIZE
+hmm            60      0.750    0.833   rubric: must NOT reward
+salad          60      0.867    0.583   cues intact, meaning gone
+
+mean score, original vs damaged (is the gap real or marginal?):
+  starwars       0.513 vs   0.060   delta +0.454
+  yoda_name      0.513 vs   0.063   delta +0.450
+  hmm            0.513 vs   0.435   delta +0.079
+  salad          0.513 vs   0.132   delta +0.382
+
+1.000 = always ranks the original above the damaged version.
+0.500 = cannot tell them apart at all.
+
+half_base is the one that matters for RL: 0.000
+  Below ~0.70 this judge cannot grade DEGREE of persona, which is
+  the only thing that varies inside a GRPO group. It would supply
+  noise as the advantage signal.
+
+-> outputs/judge_validation_claude_rubric.json

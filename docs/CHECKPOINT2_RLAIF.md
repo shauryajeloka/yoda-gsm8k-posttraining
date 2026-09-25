@@ -37,6 +37,15 @@ persona rubric (0.00–1.00), plus deterministic guardrails subtracting 0.40 for
 Star Wars vocabulary, 0.40 for self-naming, and 0.04 per filler beyond one.
 This is a hybrid reward, not a pure LLM judge; §4 explains why.
 
+**Reward validation, on and off the eval set.** The degradation harness that
+selected this reward was originally built from completions on the frozen eval
+prompts, which makes the reward's design conditioned on eval items. Re-running
+the same harness on completions from the disjoint *training* prompts gives the
+same pass pattern, stronger: Star Wars splice 1.000, self-naming 0.983, word
+salad 0.867, hmm-padding 0.750 (`outputs/judge_validation_claude_offeval.json`).
+The guardrails also show **zero false positives** across all 450 real responses
+in the base, SFT and RLAIF persona evals — no un-gamed output ever trips them.
+
 ---
 
 ## 2. Persona on held-out completions, scored by the AI judge
@@ -67,7 +76,10 @@ Note the judge is *harsher* than the style classifier, which scored SFT at
 Had we reported only the classifier, we would have overstated the SFT baseline
 and understated what RLAIF added. Nine completions across the three arms
 returned unparseable judge output and were excluded rather than coerced to a
-number, which would have biased the mean.
+number, which would have biased the mean. The judge itself is not fully
+deterministic (its API does not accept a temperature); re-scoring 28 RLAIF
+items gave exact agreement on 17, disagreement never exceeding one point, and a
+mean shift of −0.18 — an order of magnitude below the +1.02 effect.
 
 Diagnostics: mean words rose 43 -> 48 and interjections and Star Wars
 references stayed at zero, so the gain is not length or catchphrase inflation.

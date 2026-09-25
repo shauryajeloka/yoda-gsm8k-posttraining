@@ -1,0 +1,19 @@
+[
+  {
+    "path": "outputs/rlaif/persona_eval.jsonl",
+    "n": 30,
+    "n_scored": 30,
+    "mean_persona_score": 3,
+    "stdev": 0.8563488385776752,
+    "distribution": {
+      "1": 1,
+      "2": 8,
+      "3": 11,
+      "4": 10
+    },
+    "unparsed": 0,
+    "mean_words": 47.46666666666667,
+    "responses_with_interjection": 0,
+    "responses_with_star_wars": 0
+  }
+]

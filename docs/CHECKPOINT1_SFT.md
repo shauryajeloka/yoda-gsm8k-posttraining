@@ -70,6 +70,14 @@ auxiliaries, fronted clauses, function-word frequencies).
 **+0.157 from base to SFT, non-overlapping intervals.** The model learned to
 sound like the character.
 
+The table above uses the Week-1 corpus as the reference so all four arms are
+comparable on one scale. Scored against this model's *own* training set
+(`sft_train_yodadistill.jsonl`), the ordering is unchanged and the intervals
+still do not overlap: base 0.653 [0.632, 0.673] → SFT 0.730 [0.713, 0.747] →
+RLAIF 0.759 [0.742, 0.773]. The base model scores higher against this
+reference than against the Week-1 one for a sensible reason: the corpus is
+built from its own self-distilled reasoning.
+
 Corroborated by an independent style classifier (held-out accuracy 0.985,
 AUC 0.998) on the same 150 prompts:
 
@@ -93,9 +101,18 @@ paired items.
 | Week-1 SFT (GSM8K refs, Yodified) | 61.4% | −20.6%, p=6.7e-17 |
 | **SFT (self-distilled, Yodified)** | **68.4%** | −13.6%, p=6.5e-10 |
 
+One asymmetry worth stating: fine-tuned arms end answers with an explicit tag,
+so their extraction is trivial, while the base model answers in prose and 98.6%
+of its answers go through the verifier's fallback extractor. Two checks say the
+82.0% is not extractor generosity: a manual audit of randomly sampled fallback
+extractions found every extracted number matched the model's intended answer
+(the misses were genuine reasoning errors), and the `selfdistill` arm — whose
+outputs are cleanly tagged, 0.2% fallback — reproduces the same level at 82.4%.
+
 **There is degradation and it is significant.** Self-distillation recovers 7.0
-points of the Week-1 loss (61.4% → 68.4%, p=0.0043) at no persona cost
-(0.699 → 0.649, p=0.497, not significant).
+points of the Week-1 loss (61.4% → 68.4%, p=0.0043) with no detectable
+persona change (0.699 → 0.649, p=0.497; the CI spans −0.10 to +0.04, so a
+small real drop is not excluded).
 
 ### What causes it
 
@@ -158,3 +175,26 @@ changes GSM8K by **−1.2pp (p=0.637, n.s.)** while moving persona from 0.051 to
 0.767.
 
 ---
+
+---
+
+## Limitations and open questions
+
+* **Train-split memorisation is possible.** The base model solves 92.8% of
+  GSM8K *train* but 82.0% of *test*, so the self-distilled traces may be drawn
+  disproportionately from memorised problems. Flagged, not resolved.
+* **Rejection sampling and restyling both skew easy.** Kept traces average 3.46
+  reference steps vs 4.21 for dropped ones, and the 563 restyled traces are
+  slightly shorter than the 829 left unstyled (165 vs 175 words). `flatref`
+  uses the identical problem set, so the headline comparison is unaffected, but
+  the absolute 82.4% is flattered.
+* **The restyling step was not performed by a held-out model**, so its
+  consistency is not independently measured; `check_restyle.py` bounds the
+  damage mechanically rather than certifying the prose.
+* **The shipped adapter is epoch 3; epoch 2 had marginally lower val loss**
+  (1.004 vs 1.030). Every arm uses its final epoch, so comparisons are
+  like-for-like, but absolute numbers may sit slightly below each arm's best.
+* **The styling-cost decomposition (~10 pts) was arithmetic on estimates**, not
+  a measurement — the styled and unstyled arms differed in dataset size and mix
+  as well. `infra/run_stylecontrol.sh` runs the minimal pair (same 563
+  problems, plain vs restyled targets, same mix) that isolates it.
