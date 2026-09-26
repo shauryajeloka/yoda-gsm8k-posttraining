@@ -7,3 +7,5 @@
 # outputs/, so the results are fully reproducible without the weights.
 outputs/sft-yodadistill/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
 outputs/rlaif-lora/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
+outputs/rlvr-verifier-lora/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
+outputs/rlvr-combined-lora/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text

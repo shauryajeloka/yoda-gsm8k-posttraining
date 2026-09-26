@@ -1,0 +1,19 @@
+{
+  "stage": "rlvr",
+  "algo": "grpo",
+  "init_from": "outputs/rlaif-lora",
+  "reward": "verifier",
+  "reward_model": "outputs/persona_clf.json",
+  "lambda_persona": null,
+  "rlvr_prompts": "work/rlvr_prompts.jsonl",
+  "max_new_tokens": 512,
+  "reward_transform": null,
+  "beta_kl": 0.05,
+  "group_size": 6,
+  "temperature": 1.0,
+  "lr": 1e-05,
+  "steps_done": 200,
+  "seed": 1337,
+  "system_prompt": "qwen_default",
+  "note": "generate.py must use the same --system-prompt value. The held-out evaluator (eval_persona.py, Sonnet) is never used as a reward; reward=verifier."
+}

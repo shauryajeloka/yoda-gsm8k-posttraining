@@ -1,7 +1,8 @@
 # Yoda persona + GSM8K capability: SFT → RLAIF
 
 Post-training **Qwen2.5-3B-Instruct** to speak as **Yoda** while preserving
-**GSM8K** arithmetic. Checkpoint 1 is SFT, Checkpoint 2 is RLAIF via GRPO.
+**GSM8K** arithmetic. Checkpoint 1 is SFT, Checkpoint 2 is RLAIF via GRPO,
+Checkpoint 3 is RLVR.
 
 Write-ups:
 
@@ -10,6 +11,8 @@ Write-ups:
 * [`docs/CHECKPOINT1_SFT.md`](docs/CHECKPOINT1_SFT.md)
 * [`docs/CHECKPOINT2_RLAIF.md`](docs/CHECKPOINT2_RLAIF.md) — includes the
   required note on what did not work
+* [`docs/CHECKPOINT3_RLVR.md`](docs/CHECKPOINT3_RLVR.md) — RLVR as a two-arm
+  ablation of the persona term
 
 ---
 
@@ -33,10 +36,24 @@ the RLAIF reward used Haiku):
 |---|---|---|
 | base | 1.00 | 146/0/0/0/0 |
 | SFT | 2.05 | 43/64/32/9/0 |
-| **RLAIF** | **3.07** | **5/26/69/47/0** |
+| **RLAIF** | **3.07** | **5/27/70/48/0** |
 
-RLAIF vs SFT: **+1.02 paired, 95% CI [+0.86, +1.19], sign test p=2.3e-21**
-(97 improved, 7 worsened).
+RLAIF vs SFT: **+1.01 paired, 95% CI [+0.85, +1.18], sign test p=1.2e-21**
+(98 improved, 7 worsened).
+
+**Checkpoint 3 (RLVR), from the RLAIF policy, two arms:**
+
+| arm | GSM8K | judge, general | judge, on maths |
+|---|---|---|---|
+| RLAIF (start) | 68.2% | 3.07 | 2.62 |
+| verifier only | **73.0%** (+4.8, p=0.007) | 2.83 (−0.24, p=0.008) | 2.60 (n.s.) |
+| verifier + 0.5·persona | 69.4% (+1.2, n.s.) | 2.73 (−0.34, p=0.0006) | 2.59 (n.s.) |
+
+Verifier-only RLVR recovered 4.8 points of maths and kept the voice *on maths
+answers* — but the voice on general chat eroded, because RLVR sampled only
+maths prompts and the KL anchor only constrains what it samples. Adding the
+persona term bought no measurable persona and cost 3.6 points of the maths
+gain (p=0.041).
 
 Two findings carry most of the story:
 
@@ -93,8 +110,9 @@ work/          restyling sources and reward-model data, including failed attempt
 docs/          checkpoint write-ups
 ```
 
-**Model weights.** `outputs/sft-yodadistill/` (Checkpoint 1) and
-`outputs/rlaif-lora/` (Checkpoint 2) ship via **Git LFS**. The other 11
+**Model weights.** `outputs/sft-yodadistill/` (Checkpoint 1),
+`outputs/rlaif-lora/` (Checkpoint 2) and `outputs/rlvr-verifier-lora/`,
+`outputs/rlvr-combined-lora/` (Checkpoint 3) ship via **Git LFS**. The other 11
 ablation adapters are ~229MB each and would exceed the LFS free tier; every
 number they produced is committed as JSONL under `outputs/`, so all results are
 verifiable without them, and `infra/*.sh` reproduces them.
@@ -111,6 +129,8 @@ bash infra/run_week1.sh          # SFT baseline
 bash infra/run_selfdistill.sh    # the decisive no-persona controls
 bash infra/run_yodadistill.sh    # the chosen SFT arm
 bash infra/run_rlaif_full.sh     # RLAIF (needs ANTHROPIC_API_KEY)
+bash infra/run_rlvr.sh           # RLVR, both arms
+python scripts/analyze_rlvr.py   # every Checkpoint-3 number
 ```
 
 ## Evaluation discipline

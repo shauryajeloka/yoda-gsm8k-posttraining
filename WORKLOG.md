@@ -61,7 +61,7 @@ same problems gave 63.0%. At 1500 examples, 62.6%.
 
 That's the entire effect, and there's no persona in any of it. Fine-tuning on
 GSM8K's reference solutions costs nineteen points on its own. Styling those same targets as
-Yoda added about one more point of damage (61.4% vs 62.6%, p=0.65) — though we
+Yoda added about one more point of damage (61.4% vs 62.6%, p=0.65), though we
 later learned that small number was partly a floor effect: on top of good
 targets, the restyling costs about ten points.
 
@@ -203,7 +203,7 @@ It's a hybrid reward rather than a pure LLM judge, and the write-up says so.
 
 150 steps, G=6, β=0.05, KL-anchored to the SFT policy. The held-out judge
 (Sonnet, never trained against; the reward used Haiku) rates the SFT model
-2.05 out of 5 and the RLAIF model 3.07, a paired gain of +1.02 with 97
+2.05 out of 5 and the RLAIF model 3.07, a paired gain of +1.01 with 98
 completions improving and 7 getting worse. GSM8K went from 68.4% to 68.2%,
 p=1.0, with 41 items flipping each way. That's churn, not damage. The KL anchor is
 what's holding that.
@@ -224,20 +224,102 @@ The write-up originally attributed "roughly 10 points" of the final SFT gap to
 the Yoda restyling, arrived at by subtracting estimates for dataset size and
 the general-prose mix. That was arithmetic, not measurement, so we ran the
 minimal pair we owed ourselves: the same 563 problems' plain self-distilled
-traces, the same 407 general examples, the same recipe — differing from
+traces, the same 407 general examples, the same recipe, differing from
 `yodadistill` only in whether the maths targets speak Yoda.
 
 The plain arm scored 83.2%. The styled arm scores 68.4%. The styling costs
 14.8 points (p=8×10⁻¹²), more than we had estimated, and the other two factors
 cost nothing: 563 examples match 1,392 (+0.8, n.s.), and the general mix is
 free. The interesting part is what the 14.8 points purchase. On general
-prompts, both arms are equally Yoda (0.711 vs 0.727) — the 407 general
+prompts, both arms are equally Yoda (0.711 vs 0.727); the 407 general
 examples carry that on their own. On the maths outputs, the plain arm speaks
 ordinary prose (persona 0.02) and the styled arm speaks Yoda (0.57). So the
 expensive thing is not "having a persona"; it is answering maths *in* the
 persona. That reframing matters for Week 3: any reward pressure toward better
 maths is implicitly pressure toward dropping the voice exactly where it is
 costly, which is what the persona term in the combined reward has to resist.
+
+## Week 3: RLVR, and a prediction that failed usefully
+
+RLVR reuses the GRPO loop from Week 2 and swaps the judge for a program: the
+GSM8K verifier returns 1 for a correct final answer and 0 otherwise. The
+assignment asks for a combined objective, verifier plus persona. Rather than
+just run the combination, we ran it as a pair: one arm rewarded by the verifier
+alone, one by verifier plus half the persona score, identical in everything
+else. The styling control had just told us speaking Yoda on maths answers costs
+about fifteen points, so our prediction was specific: the verifier-only arm
+would gain maths by quietly dropping the voice on maths answers, and the
+persona term would be what stopped that.
+
+### Before any GPU time
+
+Three things in the trainer would have spoiled the run without crashing it.
+The starting adapter was loaded one level deep, so both arms would have begun
+from a model that was neither SFT nor RLAIF and measured KL against the wrong
+reference. The generation cap carried over from Week 2 was 192 tokens, which
+would have cut off 40% of maths answers; the verifier scores a cut-off answer
+wrong, so the run would have learned that shorter reasoning pays. And the
+log-prob computation built the full vocabulary distribution in fp32, which at
+these lengths runs a 48GB card out of memory.
+
+A two-step smoke test of both arms caught one more: at sampling temperature,
+answers run longer than they do greedily, and even a 400-token cap truncated
+8%. We went to 512, which truncated 0.04% of the 4,800 pre-pass samples.
+
+We also checked that the persona term could work at all. Haiku ranked a
+Yoda-voiced maths answer above the plain version of the same answer on 25 of
+25 problems. At half weight, dropping the voice costs more reward than it buys
+in expected accuracy, so on paper the counterweight was real.
+
+### Only mixed groups teach anything
+
+With a 0/1 reward, a problem the model always solves gives six identical
+rewards and no gradient; so does one it never solves. We sampled 800 fresh
+training problems six times each and kept the 511 the model got right sometimes
+but not always. Across training, the share of groups carrying gradient fell
+from 80% to 65% as the model mastered problems, which is the pool draining as
+expected rather than a failure.
+
+### Results
+
+The verifier-only arm went from 68.2% to 73.0% (p=0.007). Adding the persona
+term cut that to 69.4%, not a significant gain, and 3.6 points below the
+verifier-only arm (p=0.041).
+
+Then the part that overturned the prediction. On maths answers, neither arm
+lost its voice: the held-out judge scored RLAIF 2.62, verifier-only 2.60 and
+combined 2.59, all indistinguishable. The KL anchor held the style of exactly
+the completions it was computed on. But on general conversation, both arms
+lost ground: 3.07 down to 2.83 and 2.73, both significant. RLVR only ever
+sampled maths prompts, so nothing in the objective, the reward or the anchor
+ever looked at general chat, and that is where the voice drifted.
+
+So the persona term was defending the wrong place. Measured against the
+verifier-only arm it bought no persona on either kind of prompt, and its own
+Haiku score barely rose during training (0.564 to 0.579). We suspected a noisy
+judge first, since the pod could not pin Haiku's temperature, and tested it:
+re-scoring the same answer moves by 0.017 while real differences between
+answers span 0.124. Not noise. The better explanation is that inside a group,
+all six samples share a prompt and a policy, so their persona scores are nearly
+identical, while the verifier swings between 0 and 1. The persona term is a
+small share of the reward variance and gets a small share of the gradient. It
+was too weak to steer the voice and strong enough to blunt the maths.
+
+### Two measurement problems found along the way
+
+Scoring the verifier-only arm, we could not reconcile its persona number with
+the Week 2 table. The Week 2 means had been computed on the training pod, with
+a copy of the classifier that differed from the one committed in the repo,
+while the paired statistics next to them came from the committed file. The
+table did not subtract to its own delta. Every conclusion survived re-scoring,
+but the means changed (RLAIF 0.841 became 0.876), and we now compute every
+number from committed files with one script.
+
+The held-out judge also refused about one maths answer in ten, on harmless word
+problems, and the refused answers were longer than average, so dropping them
+would have tilted every mean. We retried every arm the same way (the refusals
+turned out to be deterministic) and made all judge comparisons on items scored
+for both arms.
 
 ## Carrying forward
 
@@ -252,7 +334,18 @@ than chance.
 
 Third: aggregate quality and usable gradient are different things. A reward can
 be 98% accurate on the easy version of the task and have no variance at all
-where it's actually queried.
+where it's actually queried. Week 3 added a version of the same lesson: a
+reward term that ranks answers perfectly can still carry almost no gradient
+if the answers inside each group barely differ on it.
+
+Fourth: an anchor only protects what it samples. KL held the maths answers'
+voice precisely and left general conversation free to drift, because general
+prompts were never in the batch. A persona-preserving RLVR run needs general
+prompts in the mix, not a heavier persona weight on maths.
+
+Still open from Week 3: each arm ran with a single seed, so run-to-run variance
+of RL is unmeasured, and the 3.6-point gap between the arms is the claim most
+exposed to it.
 
 Still open. The base model solves 92.8% of GSM8K train against 82.0% of test, so
 the self-distilled traces may skew toward memorised problems. We flagged this

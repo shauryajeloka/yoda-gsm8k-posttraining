@@ -60,26 +60,28 @@ assertion. The RLAIF reward used **Haiku**; the numbers below are from
 |---|---|---|---|---|---|---|
 | base | 1.00 | 0.00 | 146/0/0/0/0 | 281 | 3 | 0 |
 | SFT (`yodadistill`) | 2.05 | 0.86 | 43/64/32/9/0 | 43 | 0 | 0 |
-| **RLAIF** | **3.07** | 0.79 | **5/26/69/47/0** | 48 | 0 | 0 |
+| **RLAIF** | **3.07** | 0.79 | **5/27/70/48/0** | 48 | 0 | 0 |
 
-**RLAIF vs SFT, paired on 145 items both scored: +1.02, 95% CI [+0.86, +1.19],
-exact sign test p = 2.3e-21.** 97 completions improved, 7 worsened, 41 tied.
+**RLAIF vs SFT, paired on 148 items both scored: +1.01, 95% CI [+0.85, +1.18],
+exact sign test p = 1.2e-21.** 98 completions improved, 7 worsened, 43 tied.
 
 This is the most meaningful number in the checkpoint, because Sonnet shares no
 features with the Haiku reward or with the style classifier. The distribution shift is the
 clearest evidence: SFT put 107/148 completions at 1-2 ("no meaningful persona"
-or "weak"), RLAIF puts 116/147 at 3-4 ("recognizable" or "strong and
+or "weak"), RLAIF puts 118/150 at 3-4 ("recognizable" or "strong and
 consistent").
 
 Note the judge is *harsher* than the style classifier, which scored SFT at
 0.727 with 108/150 above threshold while Sonnet called most of those "weak".
 Had we reported only the classifier, we would have overstated the SFT baseline
-and understated what RLAIF added. Nine completions across the three arms
-returned unparseable judge output and were excluded rather than coerced to a
-number, which would have biased the mean. The judge itself is not fully
+and understated what RLAIF added. The judge declined to score a few completions
+(an API-level refusal on harmless text); after an identical retry pass for
+every arm, six remain unscored (4 base, 2 SFT). They are excluded rather than
+coerced to a number, and every paired comparison uses only items scored in
+both arms. The judge itself is not fully
 deterministic (its API does not accept a temperature); re-scoring 28 RLAIF
 items gave exact agreement on 17, disagreement never exceeding one point, and a
-mean shift of −0.18 — an order of magnitude below the +1.02 effect.
+mean shift of −0.18 — an order of magnitude below the +1.01 effect.
 
 Diagnostics: mean words rose 43 -> 48 and interjections and Star Wars
 references stayed at zero, so the gain is not length or catchphrase inflation.

@@ -1,0 +1,311 @@
+{
+  "maths": {
+    "base": {
+      "acc": 0.82
+    },
+    "SFT": {
+      "acc": 0.684
+    },
+    "RLAIF": {
+      "acc": 0.682
+    },
+    "RLVR-A (verifier)": {
+      "acc": 0.73
+    },
+    "RLVR-B (combined)": {
+      "acc": 0.694
+    },
+    "RLAIF -> RLVR-A (verifier)": {
+      "diff": 0.048,
+      "only_first": 25,
+      "only_second": 49,
+      "p": 0.007084252673880493
+    },
+    "RLAIF -> RLVR-B (combined)": {
+      "diff": 0.012,
+      "only_first": 28,
+      "only_second": 34,
+      "p": 0.5257733601756501
+    },
+    "RLVR-A (verifier) -> RLVR-B (combined)": {
+      "diff": -0.036,
+      "only_first": 44,
+      "only_second": 26,
+      "p": 0.04139142867391546
+    },
+    "base -> RLVR-A (verifier)": {
+      "diff": -0.09,
+      "only_first": 82,
+      "only_second": 37,
+      "p": 4.525134723461956e-05
+    }
+  },
+  "classifier": {
+    "base": {
+      "general": 0.04380035331037535,
+      "on_maths": 0.023016178150206963
+    },
+    "SFT": {
+      "general": 0.7270397732274049,
+      "on_maths": 0.565258788327681
+    },
+    "RLAIF": {
+      "general": 0.8758048013194569,
+      "on_maths": 0.555722075342297
+    },
+    "RLVR-A (verifier)": {
+      "general": 0.8365914672610244,
+      "on_maths": 0.5523484844255196
+    },
+    "RLVR-B (combined)": {
+      "general": 0.8218488117703951,
+      "on_maths": 0.5137087678373764
+    },
+    "RLAIF -> RLVR-A (verifier) [general]": {
+      "diff": -0.039213334058432546,
+      "ci": [
+        -0.09014374313586836,
+        0.010276536771910903
+      ],
+      "p": 0.16863754391670227
+    },
+    "RLAIF -> RLVR-A (verifier) [on_maths]": {
+      "diff": -0.0033735909167772926,
+      "ci": [
+        -0.0258058336224949,
+        0.019541263062574473
+      ],
+      "p": 0.7643534344026668
+    },
+    "RLAIF -> RLVR-B (combined) [general]": {
+      "diff": -0.05395598954906176,
+      "ci": [
+        -0.10525635882124008,
+        -0.002013382799657791
+      ],
+      "p": 0.0241195447742939
+    },
+    "RLAIF -> RLVR-B (combined) [on_maths]": {
+      "diff": -0.04201330750492059,
+      "ci": [
+        -0.0662539405788769,
+        -0.018197200077148385
+      ],
+      "p": 0.005535899104192398
+    },
+    "RLVR-A (verifier) -> RLVR-B (combined) [general]": {
+      "diff": -0.014742655490629213,
+      "ci": [
+        -0.06661755415219722,
+        0.03709699486904905
+      ],
+      "p": 0.44206833839416504
+    },
+    "RLVR-A (verifier) -> RLVR-B (combined) [on_maths]": {
+      "diff": -0.0386397165881433,
+      "ci": [
+        -0.06315062919166595,
+        -0.014492559399301138
+      ],
+      "p": 0.02607556223566354
+    }
+  },
+  "judge": {
+    "base [persona_eval]": {
+      "mean": 1,
+      "n_scored": 146,
+      "refused": 4
+    },
+    "SFT [persona_eval]": {
+      "mean": 2.0472972972972974,
+      "n_scored": 148,
+      "refused": 2
+    },
+    "RLAIF [persona_eval]": {
+      "mean": 3.0733333333333333,
+      "n_scored": 150,
+      "refused": 0
+    },
+    "RLVR-A (verifier) [persona_eval]": {
+      "mean": 2.8333333333333335,
+      "n_scored": 150,
+      "refused": 0
+    },
+    "RLVR-B (combined) [persona_eval]": {
+      "mean": 2.7333333333333334,
+      "n_scored": 150,
+      "refused": 0
+    },
+    "RLAIF -> RLVR-A (verifier) [persona_eval]": {
+      "diff": -0.24,
+      "ci": [
+        -0.38666666666666666,
+        -0.09333333333333334
+      ],
+      "improved": 32,
+      "worsened": 58,
+      "sign_test_p": 0.008045928133225098,
+      "n_paired": 150
+    },
+    "RLAIF -> RLVR-B (combined) [persona_eval]": {
+      "diff": -0.34,
+      "ci": [
+        -0.5,
+        -0.18
+      ],
+      "improved": 28,
+      "worsened": 61,
+      "sign_test_p": 0.0006102590502807981,
+      "n_paired": 150
+    },
+    "RLVR-A (verifier) -> RLVR-B (combined) [persona_eval]": {
+      "diff": -0.1,
+      "ci": [
+        -0.24666666666666667,
+        0.03333333333333333
+      ],
+      "improved": 32,
+      "worsened": 45,
+      "sign_test_p": 0.17106097355391156,
+      "n_paired": 150
+    },
+    "RLAIF [persona_math_eval]": {
+      "mean": 2.6165413533834587,
+      "n_scored": 133,
+      "refused": 17
+    },
+    "RLVR-A (verifier) [persona_math_eval]": {
+      "mean": 2.5955882352941178,
+      "n_scored": 136,
+      "refused": 14
+    },
+    "RLVR-B (combined) [persona_math_eval]": {
+      "mean": 2.5864661654135337,
+      "n_scored": 133,
+      "refused": 17
+    },
+    "RLAIF -> RLVR-A (verifier) [persona_math_eval]": {
+      "diff": -0.038461538461538464,
+      "ci": [
+        -0.13846153846153847,
+        0.06153846153846154
+      ],
+      "improved": 17,
+      "worsened": 21,
+      "sign_test_p": 0.6271025701571489,
+      "n_paired": 130
+    },
+    "RLAIF -> RLVR-B (combined) [persona_math_eval]": {
+      "diff": -0.0078125,
+      "ci": [
+        -0.125,
+        0.109375
+      ],
+      "improved": 25,
+      "worsened": 25,
+      "sign_test_p": 1.0,
+      "n_paired": 128
+    },
+    "RLVR-A (verifier) -> RLVR-B (combined) [persona_math_eval]": {
+      "diff": 0.0078125,
+      "ci": [
+        -0.1015625,
+        0.125
+      ],
+      "improved": 23,
+      "worsened": 23,
+      "sign_test_p": 1.0,
+      "n_paired": 128
+    }
+  },
+  "diagnostics": {
+    "base": {
+      "maths_words": 183.004,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 0.8906103847891246
+    },
+    "SFT": {
+      "maths_words": 127.534,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 3.353213088259177
+    },
+    "RLAIF": {
+      "maths_words": 128.462,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 3.2982870914221967
+    },
+    "RLVR-A (verifier)": {
+      "maths_words": 124.778,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 3.350709095838839
+    },
+    "RLVR-B (combined)": {
+      "maths_words": 128.698,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 3.0903441433553884
+    }
+  },
+  "training": {
+    "RLVR-A (verifier)": {
+      "verifier": [
+        0.6041666666666666,
+        0.7125
+      ],
+      "style_probe": [
+        0.5328625310977702,
+        0.5670304946711562
+      ],
+      "mean_words": [
+        138.78645833333334,
+        130.55520833333333
+      ],
+      "kl": [
+        0.0007533523409316937,
+        0.003921378779341467
+      ],
+      "mixed_groups": [
+        0.8,
+        0.65
+      ],
+      "truncated": [
+        0.0,
+        0.0010416666977107526
+      ]
+    },
+    "RLVR-B (combined)": {
+      "verifier": [
+        0.5927083333333333,
+        0.6885416666666666
+      ],
+      "persona": [
+        0.5642187499999999,
+        0.5793645833333333
+      ],
+      "style_probe": [
+        0.5415642606850927,
+        0.5122523357591563
+      ],
+      "mean_words": [
+        139.671875,
+        135.3
+      ],
+      "kl": [
+        0.0007673844377374432,
+        0.0030315133413144697
+      ],
+      "mixed_groups": [
+        0.775,
+        0.7
+      ],
+      "truncated": [
+        0.0010416666977107526,
+        0.0
+      ]
+    }
+  }
+}
