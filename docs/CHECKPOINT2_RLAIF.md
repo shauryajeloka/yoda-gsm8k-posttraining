@@ -133,7 +133,11 @@ Frozen 500-item GSM8K test split, greedy, 1024 new tokens, exact McNemar.
 
 **Optimising for persona did not affect STEM performance.** 41 items went wrong
 that had been right and 40 went right that had been wrong. That is churn, not
-degradation. The KL anchor (β=0.05) to the SFT policy is doing this work.
+degradation. We did not isolate why. The KL anchor (β=0.05) is one candidate,
+but in Checkpoint 3 removing the same anchor tripled the drift of
+verifier-only RL without changing maths or voice. So the small total movement
+of 150 steps at lr 1e-5 on a rank-16 LoRA is at least as likely an
+explanation.
 
 ### Reward-hacking diagnostics
 

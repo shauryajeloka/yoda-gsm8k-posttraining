@@ -1,0 +1,20 @@
+persona_math_eval: 150 rows
+17:20:58 KL_DRIFT_START
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.25it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+outputs/rlvr-verifier-lora     maths    own    KL/token 0.00396 CI [0.00376, 0.00417]
+outputs/rlvr-verifier-lora     maths    rlaif  KL/token 0.00411 CI [0.00388, 0.00434]
+outputs/rlvr-verifier-lora     general  own    KL/token 0.00352 CI [0.00343, 0.00361]
+outputs/rlvr-verifier-lora     general  rlaif  KL/token 0.00347 CI [0.00338, 0.00356]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.19it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.54it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.48it/s]
+outputs/rlvr-combined-lora     maths    own    KL/token 0.00332 CI [0.00316, 0.00348]
+outputs/rlvr-combined-lora     maths    rlaif  KL/token 0.00335 CI [0.00318, 0.00354]
+outputs/rlvr-combined-lora     general  own    KL/token 0.00382 CI [0.00373, 0.00393]
+outputs/rlvr-combined-lora     general  rlaif  KL/token 0.00383 CI [0.00375, 0.00392]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.21s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.16it/s]
+outputs/rlvr-nokl-lora         maths    own    KL/token 0.01172 CI [0.01109, 0.01236]
+outputs/rlvr-nokl-lora         maths    rlaif  KL/token 0.01194 CI [0.01136, 0.01253]
+outputs/rlvr-nokl-lora         general  own    KL/token 0.00616 CI [0.00598, 0.00634]
+outputs/rlvr-nokl-lora         general  rlaif  KL/token 0.00616 CI [0.00599, 0.00633]
+-> outputs/kl_drift.json
+17:23:55 KL_DRIFT_DONE

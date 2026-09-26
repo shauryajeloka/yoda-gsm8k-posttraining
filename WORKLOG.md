@@ -205,8 +205,10 @@ It's a hybrid reward rather than a pure LLM judge, and the write-up says so.
 (Sonnet, never trained against; the reward used Haiku) rates the SFT model
 2.05 out of 5 and the RLAIF model 3.07, a paired gain of +1.01 with 98
 completions improving and 7 getting worse. GSM8K went from 68.4% to 68.2%,
-p=1.0, with 41 items flipping each way. That's churn, not damage. The KL anchor is
-what's holding that.
+p=1.0, with 41 items flipping one way and 40 the other. That's churn, not damage. At the time we
+credited the KL anchor for holding it; Week 3 made us less sure (see "Taking
+the anchor away"), since 150 small LoRA steps may simply not move the model
+far enough to hurt maths.
 
 The held-out judge mattered more than we expected, because it's considerably
 harsher than our own classifier. It calls the SFT model "weak" where the
@@ -288,13 +290,14 @@ verifier-only arm (p=0.041).
 
 Then the part that overturned the prediction. On maths answers, neither arm
 lost its voice: the held-out judge scored RLAIF 2.62, verifier-only 2.60 and
-combined 2.59, all indistinguishable. The KL anchor held the style of exactly
-the completions it was computed on. But on general conversation, both arms
-lost ground: 3.07 down to 2.83 and 2.73, both significant. RLVR only ever
-sampled maths prompts, so nothing in the objective, the reward or the anchor
-ever looked at general chat, and that is where the voice drifted.
+combined 2.59, all indistinguishable. But on general conversation, both arms
+lost ground: 3.07 down to 2.83 and 2.73, both significant, even though RLVR
+never sampled a general prompt. Our first reading was that the KL anchor
+explained both halves. It is computed on the maths answers the policy samples,
+so it should hold those in place and leave general chat free to drift. That
+reading turned out to be wrong, which is the next section.
 
-So the persona term was defending the wrong place. Measured against the
+Either way, the persona term did nothing useful. Measured against the
 verifier-only arm it bought no persona on either kind of prompt, and its own
 Haiku score barely rose during training (0.564 to 0.579). We suspected a noisy
 judge first, since the pod could not pin Haiku's temperature, and tested it:
@@ -304,6 +307,39 @@ all six samples share a prompt and a policy, so their persona scores are nearly
 identical, while the verifier swings between 0 and 1. The persona term is a
 small share of the reward variance and gets a small share of the gradient. It
 was too weak to steer the voice and strong enough to blunt the maths.
+
+### Taking the anchor away
+
+To test the anchor explanation we ran a third arm, identical to the
+verifier-only one except with the KL penalty switched off. We wrote the
+prediction down first: at least as much maths, and less voice on both kinds of
+prompt.
+
+The first training step matched the verifier-only arm exactly, same reward and
+same answer lengths, so the two runs really did start from the same place.
+After that the sampled answers diverged, as RL runs do. KL to the RLAIF policy
+tracked the anchored arm step for step until about halfway, then pulled away:
+over the last twenty steps it was 0.012 against 0.004.
+
+Afterwards we measured the drift directly, as exact per-token KL to RLAIF on
+each arm's own answers. Without the anchor the model had moved three times as
+far on maths answers (0.0117 against 0.0040) and nearly twice as far on general
+chat (0.0062 against 0.0035). Nothing we care about moved with it. Maths came
+out at 74.4%, 1.4 points above the anchored arm and not significantly
+different. The judge put the voice at 2.54 on maths answers and 2.79 on
+general chat, within noise of the anchored arm on both.
+
+So the anchor did restrain the model, but over 200 steps the movement it
+prevented didn't show up in maths accuracy or in the voice. The same
+measurement undid the other half of our story. With the anchor on, general chat
+had moved about as far as maths, not further, and the general-chat voice
+dropped by roughly the same amount in all three arms however far the model
+moved. Our best explanation for the maths voice holding is now that a
+correctness reward can barely see it. Six samples of the same problem all sound
+the same, so there is no contrast between a Yoda answer and a plain one for the
+verifier to reward. That is the same reason the persona term was weak. For
+general chat, every arm gave back a quarter to a third of the voice RLAIF had
+just built, and from final checkpoints alone we can't tell how that happens.
 
 ### Two measurement problems found along the way
 
@@ -338,14 +374,18 @@ where it's actually queried. Week 3 added a version of the same lesson: a
 reward term that ranks answers perfectly can still carry almost no gradient
 if the answers inside each group barely differ on it.
 
-Fourth: an anchor only protects what it samples. KL held the maths answers'
-voice precisely and left general conversation free to drift, because general
-prompts were never in the batch. A persona-preserving RLVR run needs general
-prompts in the mix, not a heavier persona weight on maths.
+Fourth: test the explanation, not just the result. We had a tidy story for
+why verifier-only RL kept the maths voice, that the KL anchor held it, and it
+was wrong. Removing the anchor tripled the drift and changed nothing we
+measured. A persona-preserving RLVR run needs general prompts back in training
+with a signal that cares about the voice, either their persona reward or
+distillation from the RLAIF policy, not a heavier anchor and not a heavier
+persona weight on maths.
 
 Still open from Week 3: each arm ran with a single seed, so run-to-run variance
-of RL is unmeasured, and the 3.6-point gap between the arms is the claim most
-exposed to it.
+of RL is unmeasured. The third arm showed how quickly runs separate: same seed,
+identical first step, different samples from step two. The 3.6-point gap
+between the verifier-only and combined arms is the claim most exposed to it.
 
 Still open. The base model solves 92.8% of GSM8K train against 82.0% of test, so
 the self-distilled traces may skew toward memorised problems. We flagged this

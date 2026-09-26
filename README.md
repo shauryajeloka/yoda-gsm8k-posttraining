@@ -11,8 +11,8 @@ Write-ups:
 * [`docs/CHECKPOINT1_SFT.md`](docs/CHECKPOINT1_SFT.md)
 * [`docs/CHECKPOINT2_RLAIF.md`](docs/CHECKPOINT2_RLAIF.md) — includes the
   required note on what did not work
-* [`docs/CHECKPOINT3_RLVR.md`](docs/CHECKPOINT3_RLVR.md) — RLVR as a two-arm
-  ablation of the persona term
+* [`docs/CHECKPOINT3_RLVR.md`](docs/CHECKPOINT3_RLVR.md) — RLVR as minimal
+  pairs: the persona term, and the KL anchor
 
 ---
 
@@ -41,19 +41,22 @@ the RLAIF reward used Haiku):
 RLAIF vs SFT: **+1.01 paired, 95% CI [+0.85, +1.18], sign test p=1.2e-21**
 (98 improved, 7 worsened).
 
-**Checkpoint 3 (RLVR), from the RLAIF policy, two arms:**
+**Checkpoint 3 (RLVR), from the RLAIF policy, three arms:**
 
 | arm | GSM8K | judge, general | judge, on maths |
 |---|---|---|---|
 | RLAIF (start) | 68.2% | 3.07 | 2.62 |
 | verifier only | **73.0%** (+4.8, p=0.007) | 2.83 (−0.24, p=0.008) | 2.60 (n.s.) |
 | verifier + 0.5·persona | 69.4% (+1.2, n.s.) | 2.73 (−0.34, p=0.0006) | 2.59 (n.s.) |
+| verifier only, no KL (β=0) | 74.4% (+6.2, p=0.0008) | 2.79 (−0.29, p=0.003) | 2.54 (n.s.) |
 
 Verifier-only RLVR recovered 4.8 points of maths and kept the voice *on maths
-answers* — but the voice on general chat eroded, because RLVR sampled only
-maths prompts and the KL anchor only constrains what it samples. Adding the
-persona term bought no measurable persona and cost 3.6 points of the maths
-gain (p=0.041).
+answers*, but the voice on general chat eroded. Adding the persona term bought
+no measurable persona and cost 3.6 points of the maths gain (p=0.041).
+Removing the KL penalty tripled how far the model moved from RLAIF and changed
+none of those outcomes (maths +1.4, voice −0.04 and −0.05 vs the anchored arm,
+all n.s.). So the anchor is not what kept the maths voice, and a heavier one is
+not the fix for general chat.
 
 Two findings carry most of the story:
 
@@ -112,7 +115,8 @@ docs/          checkpoint write-ups
 
 **Model weights.** `outputs/sft-yodadistill/` (Checkpoint 1),
 `outputs/rlaif-lora/` (Checkpoint 2) and `outputs/rlvr-verifier-lora/`,
-`outputs/rlvr-combined-lora/` (Checkpoint 3) ship via **Git LFS**. The other 11
+`outputs/rlvr-combined-lora/`, `outputs/rlvr-nokl-lora/` (Checkpoint 3) ship
+via **Git LFS**. The other 11
 ablation adapters are ~229MB each and would exceed the LFS free tier; every
 number they produced is committed as JSONL under `outputs/`, so all results are
 verifiable without them, and `infra/*.sh` reproduces them.
@@ -129,7 +133,9 @@ bash infra/run_week1.sh          # SFT baseline
 bash infra/run_selfdistill.sh    # the decisive no-persona controls
 bash infra/run_yodadistill.sh    # the chosen SFT arm
 bash infra/run_rlaif_full.sh     # RLAIF (needs ANTHROPIC_API_KEY)
-bash infra/run_rlvr.sh           # RLVR, both arms
+bash infra/run_rlvr.sh           # RLVR, arms A and B
+bash infra/run_rlvr_nokl.sh      # RLVR, arm C (no KL)
+bash infra/run_kl_drift.sh       # where each arm moved
 python scripts/analyze_rlvr.py   # every Checkpoint-3 number
 ```
 

@@ -558,7 +558,10 @@ def main():
             pg = -torch.min(ratio * a,
                             torch.clamp(ratio, 1 - args.clip_eps,
                                         1 + args.clip_eps) * a)
-            per_seq = ((pg + args.beta * kl_tok) * gmask).sum(1) / ntok
+            # At beta = 0 the KL term is left out rather than multiplied by
+            # zero: 0 * inf = nan if any masked position's estimate overflows.
+            tok_loss = pg if args.beta == 0 else pg + args.beta * kl_tok
+            per_seq = (tok_loss * gmask).sum(1) / ntok
             chunk_loss = per_seq.sum() / B
             chunk_loss.backward()
             loss_v += float(chunk_loss)
@@ -572,9 +575,13 @@ def main():
         # which recovers the usual REINFORCE estimator -A * grad log p.
         # Judge progress by reward and KL, never by the loss value.
         loss = loss_v
-        torch.nn.utils.clip_grad_norm_(
-            [p for p in model.parameters() if p.requires_grad], 1.0)
-        opt.step()
+        gnorm = float(torch.nn.utils.clip_grad_norm_(
+            [p for p in model.parameters() if p.requires_grad], 1.0))
+        skipped = not math.isfinite(gnorm)
+        if skipped:
+            opt.zero_grad(set_to_none=True)
+        else:
+            opt.step()
 
         kl_v = kl_acc / B
         words = sum(len(c.split()) for c in completions) / len(completions)
@@ -582,7 +589,7 @@ def main():
         rec = {"step": step, "reward": sum(rewards) / len(rewards),
                "reward_std": float(r_t.std(unbiased=False)), "kl": kl_v,
                "mean_words": words, "mean_cues": cues, "style_probe": style_probe,
-               "truncated": trunc_frac,
+               "truncated": trunc_frac, "grad_norm": gnorm, "skipped": skipped,
                "loss": float(loss), "secs": round(time.time() - t0, 1)}
         rec.update(comps)
         vs = getattr(reward_fn, "last_verifier", None)
@@ -615,6 +622,8 @@ def main():
                 "reward": args.reward_kind,
                 "reward_model": (args.claude_model if args.reward_kind in ("claude", "combined")
                                  else args.judge_model if args.reward_kind == "llm"
+                                 else "data/verifier/gsm8k_verifier.py"
+                                 if args.reward_kind == "verifier"
                                  else args.reward_model),
                 "lambda_persona": (args.lambda_persona
                                    if args.reward_kind == "combined" else None),

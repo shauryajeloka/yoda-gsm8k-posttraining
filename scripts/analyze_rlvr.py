@@ -32,7 +32,11 @@ from claude_reward import SW_RE, NAME_RE, FILLER_RE  # noqa: E402
 ARMS = {  # label -> outputs/ dir
     "base": "base-uncapped", "SFT": "yodadistill", "RLAIF": "rlaif",
     "RLVR-A (verifier)": "rlvr-verifier", "RLVR-B (combined)": "rlvr-combined",
+    "RLVR-C (no KL)": "rlvr-nokl",
 }
+ARM_A, ARM_B, ARM_C = "RLVR-A (verifier)", "RLVR-B (combined)", "RLVR-C (no KL)"
+# Arm B isolates the persona term (A -> B); Arm C isolates the KL anchor (A -> C).
+PAIRS = (("RLAIF", ARM_A), ("RLAIF", ARM_B), (ARM_A, ARM_B), ("RLAIF", ARM_C), (ARM_A, ARM_C))
 # Persona generations for base predate the uncapped maths regeneration and live
 # under outputs/base/ (persona answers are short, so the cap never bound them).
 PERSONA_DIR = {"base": "base"}
@@ -78,8 +82,7 @@ def main():
         acc = sum(correct[lab][i] for i in ids) / len(ids)
         out["maths"][lab] = {"acc": acc}
         print(f"  {lab:20s} {acc:6.1%}")
-    for a, b in (("RLAIF", "RLVR-A (verifier)"), ("RLAIF", "RLVR-B (combined)"),
-                 ("RLVR-A (verifier)", "RLVR-B (combined)"), ("base", "RLVR-A (verifier)")):
+    for a, b in PAIRS + (("base", ARM_A), ("base", ARM_C)):
         o1, o2, p = mcnemar([correct[a][i] for i in ids], [correct[b][i] for i in ids])
         diff = (sum(correct[b][i] for i in ids) - sum(correct[a][i] for i in ids)) / len(ids)
         out["maths"][f"{a} -> {b}"] = {"diff": diff, "only_first": o1, "only_second": o2, "p": p}
@@ -98,8 +101,7 @@ def main():
         out["classifier"][lab] = {"general": st.mean(g) if g else None, "on_maths": st.mean(m)}
         gs = f"{st.mean(g):.3f}" if g else "  —  "
         print(f"  {lab:20s} general {gs}   on-maths {st.mean(m):.3f}")
-    for a, b in (("RLAIF", "RLVR-A (verifier)"), ("RLAIF", "RLVR-B (combined)"),
-                 ("RLVR-A (verifier)", "RLVR-B (combined)")):
+    for a, b in PAIRS:
         for k, name in ((0, "general"), (1, "on_maths")):
             A, B = cl[a][k], cl[b][k]
             d = [y - x for x, y in zip(A, B)]
@@ -123,8 +125,7 @@ def main():
             ref = sum(v is None for v in judged[(lab, kind)].values())
             out["judge"][f"{lab} [{kind}]"] = {"mean": st.mean(s), "n_scored": len(s), "refused": ref}
             print(f"  {kind:18s} {lab:20s} mean {st.mean(s):.2f}  (n={len(s)}, refused {ref})")
-        for a, b in (("RLAIF", "RLVR-A (verifier)"), ("RLAIF", "RLVR-B (combined)"),
-                     ("RLVR-A (verifier)", "RLVR-B (combined)")):
+        for a, b in PAIRS:
             if (a, kind) not in judged or (b, kind) not in judged:
                 continue
             A, B = judged[(a, kind)], judged[(b, kind)]
@@ -156,11 +157,12 @@ def main():
 
     # ---------------- training dynamics ----------------
     print("\n=== training dynamics (first 40 vs last 40 steps) ===")
-    for lab, d in (("RLVR-A (verifier)", "rlvr-verifier-lora"), ("RLVR-B (combined)", "rlvr-combined-lora")):
+    for lab, d in ((ARM_A, "rlvr-verifier-lora"), (ARM_B, "rlvr-combined-lora"), (ARM_C, "rlvr-nokl-lora")):
         log = jl(f"outputs/{d}/rlaif_log.jsonl")
         a, b = log[:40], log[-40:]
         rec = {}
-        for k in ("verifier", "persona", "style_probe", "mean_words", "kl", "mixed_groups", "truncated"):
+        for k in ("verifier", "persona", "style_probe", "mean_words", "kl", "mixed_groups",
+                  "truncated", "grad_norm"):
             if k in a[0]:
                 rec[k] = [st.mean(r[k] for r in a), st.mean(r[k] for r in b)]
         out["training"][lab] = rec

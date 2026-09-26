@@ -8,7 +8,7 @@
   "rlvr_prompts": "work/rlvr_prompts.jsonl",
   "max_new_tokens": 512,
   "reward_transform": null,
-  "beta_kl": 0.05,
+  "beta_kl": 0.0,
   "group_size": 6,
   "temperature": 1.0,
   "lr": 1e-05,
