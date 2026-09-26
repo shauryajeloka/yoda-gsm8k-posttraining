@@ -61,3 +61,7 @@ outputs/*/special_tokens_map.json
 !outputs/rlaif-lora/vocab.json
 !outputs/rlaif-lora/merges.txt
 !outputs/rlaif-lora/tokenizer_config.json
+
+# Machine-local MCP tooling config (reads RUNPOD_API_KEY from the shell env;
+# no secret in the file, but it is per-machine setup, not project code).
+.mcp.json
