@@ -21,10 +21,10 @@ Persona is scored on a frozen 150-prompt non-maths set.
 
 | arm | GSM8K | vs base | persona P | similarity to SFT data |
 |---|---|---|---|---|
-| Base Qwen2.5-3B-Instruct | **82.0%** | — | 0.018 | 0.475 |
-| SFT on GSM8K refs, Yodified (Week 1) | 61.4% | −20.6%, p=7e-17 | 0.699 | 0.648 |
-| **SFT on self-distilled CoT, Yodified** | **68.4%** | −13.6%, p=7e-10 | 0.649 | 0.632 |
-| **RLAIF (GRPO on the above)** | **68.2%** | −13.8%, p=4e-10 | **0.841** | **0.716** |
+| Base Qwen2.5-3B-Instruct | **82.0%** | — | 0.044 | 0.475 |
+| SFT on GSM8K refs, Yodified (Week 1) | 61.4% | −20.6%, p=7e-17 | 0.755 | 0.648 |
+| **SFT on self-distilled CoT, Yodified** | **68.4%** | −13.6%, p=7e-10 | 0.727 | 0.632 |
+| **RLAIF (GRPO on the above)** | **68.2%** | −13.8%, p=4e-10 | **0.876** | **0.716** |
 
 Scored by the **held-out** AI judge (Claude Sonnet, never trained against;
 the RLAIF reward used Haiku):

@@ -72,7 +72,7 @@ or "weak"), RLAIF puts 116/147 at 3-4 ("recognizable" or "strong and
 consistent").
 
 Note the judge is *harsher* than the style classifier, which scored SFT at
-0.649 with 108/150 above threshold while Sonnet called most of those "weak".
+0.727 with 108/150 above threshold while Sonnet called most of those "weak".
 Had we reported only the classifier, we would have overstated the SFT baseline
 and understated what RLAIF added. Nine completions across the three arms
 returned unparseable judge output and were excluded rather than coerced to a
@@ -90,13 +90,21 @@ Scored completions with per-item judge reasons: `outputs/judged/`.
 
 | arm | mean P(persona) | ≥0.5 |
 |---|---|---|
-| base | 0.018 | 0/150 |
-| Week-1 SFT | 0.699 | 105/150 |
-| SFT (`yodadistill`) | 0.649 | 108/150 |
-| **RLAIF** | **0.841** | **137/150** |
+| base | 0.044 | 1/150 |
+| Week-1 SFT | 0.755 | 114/150 |
+| SFT (`yodadistill`) | 0.727 | 108/150 |
+| **RLAIF** | **0.876** | **137/150** |
 
 **RLAIF vs SFT: +0.149, exact McNemar p=1.5e-05, bootstrap 95% CI
-[+0.086, +0.213].** 37 items crossed the threshold upward, 8 downward.
+[+0.086, +0.213].**
+
+*Revision note:* an earlier version of this table reported per-arm means from a
+copy of the classifier on the training pod that differed from the committed
+`outputs/persona_clf.json`, while the paired statistics beside them were
+computed with the committed file — so the table's own means did not subtract
+to its delta (0.841 − 0.649 ≠ 0.149). All means are now from the committed
+classifier and reproduce from the repo. The paired deltas, CIs, p-values and
+threshold counts were unaffected. 37 items crossed the threshold upward, 8 downward.
 
 ### Similarity to the SFT dataset
 

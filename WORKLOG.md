@@ -10,7 +10,7 @@ tidy version of the results is in `docs/`.
 The first SFT run worked on the persona axis and fell apart on the maths one.
 Base Qwen2.5-3B scores 82.0% on our frozen GSM8K split. After fine-tuning on
 1500 GSM8K reference solutions rewritten in Yoda's voice, plus 407 general Yoda
-prose examples, it scored 61.4%. The character came through clearly (persona went from 0.018 to 0.699), but
+prose examples, it scored 61.4%. The character came through clearly (persona went from 0.044 to 0.755), but
 twenty points of arithmetic went with it.
 
 We had two guesses. Either the inverted syntax was garbling the reasoning, or
