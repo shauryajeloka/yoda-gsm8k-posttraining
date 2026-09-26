@@ -197,6 +197,50 @@ class CombinedReward:
         return [a + self.lam * b for a, b in zip(rv, rp)]
 
 
+class RoutedReward:
+    """Each reward only where it can tell a group's samples apart.
+
+    Adding the persona score to every maths completion (CombinedReward) gave it
+    almost no gradient: six samples of one maths problem sound equally Yoda.
+    On general prompts the same judge moved the held-out score by a full point
+    in Checkpoint 2. So maths prompts are scored by the verifier alone and
+    general prompts by the persona judge alone. Advantages are normalised
+    within a group, so the two reward scales never meet.
+    """
+
+    def __init__(self, prompt_file, general_prompts, claude_model, group_size,
+                 workers=12):
+        from claude_reward import ClaudeJudgeReward
+        self.v = VerifierReward(prompt_file)
+        self.p = ClaudeJudgeReward(claude_model, workers=workers)
+        self.general = {q.strip() for q in general_prompts}
+        overlap = self.general & set(self.v.gt)
+        if overlap:
+            raise SystemExit(f"{len(overlap)} prompts are both maths and general")
+        self.G = group_size
+
+    def __call__(self, texts, prompts):
+        out, is_gen = [0.0] * len(texts), [q.strip() in self.general for q in prompts]
+        maths = [i for i, g in enumerate(is_gen) if not g]
+        if maths:
+            rv = self.v([texts[i] for i in maths], [prompts[i] for i in maths])
+            for i, r in zip(maths, rv):
+                out[i] = r
+        # One judge call per group, so a failed call is filled with that
+        # group's mean rather than the whole batch's.
+        gen = [i for i, g in enumerate(is_gen) if g]
+        for g0 in range(0, len(gen), self.G):
+            idx = gen[g0:g0 + self.G]
+            for i, r in zip(idx, self.p([texts[i] for i in idx], [prompts[i] for i in idx])):
+                out[i] = r
+        pv = [out[i] for i in gen]
+        self.last_components = {"verifier": sum(out[i] for i in maths) / max(len(maths), 1),
+                                "persona": sum(pv) / max(len(pv), 1)}
+        self.last_verifier = [None if g else out[i] for i, g in enumerate(is_gen)]
+        self.last_is_general = is_gen
+        return out
+
+
 class NeuralReward:
     """Reward model distilled from the LLM judge's rankings.
 
@@ -325,8 +369,8 @@ def main():
     ap.add_argument("--frozen-eval", default="data/persona/persona_eval_prompts.jsonl")
     ap.add_argument("--reward-model", default="outputs/persona_clf.json")
     ap.add_argument("--reward-kind", default="claude",
-                    choices=["claude", "verifier", "combined", "llm", "linear",
-                             "neural"],
+                    choices=["claude", "verifier", "combined", "routed", "llm",
+                             "linear", "neural"],
                     help="llm = an LLM scores each completion directly via its "
                          "Yes/No log-odds (this is the AI feedback, and the "
                          "default). linear = the 51-feature style classifier, "
@@ -353,6 +397,10 @@ def main():
                          "accumulate, so the update is identical to full-batch")
     ap.add_argument("--lambda-persona", type=float, default=0.5,
                     help="persona weight in the combined reward")
+    ap.add_argument("--general-per-step", type=int, default=1,
+                    help="routed reward: how many of --prompts-per-step are "
+                         "general persona prompts (from --prompts); the rest "
+                         "are maths prompts from --rlvr-prompts")
     ap.add_argument("--reward-transform", default="logit",
                     choices=["logit", "prob"],
                     help="logit avoids the ceiling that flattens 37%% of SFT "
@@ -387,7 +435,8 @@ def main():
     random.seed(args.seed)
     torch.manual_seed(args.seed)
 
-    if args.reward_kind in ("verifier", "combined"):
+    general = []
+    if args.reward_kind in ("verifier", "combined", "routed"):
         # Maths prompts with ground truth, leak-checked against the frozen
         # GSM8K eval set by normalised question text.
         import re as _re
@@ -404,9 +453,16 @@ def main():
         if clash:
             raise SystemExit(f"{len(clash)} RLVR prompts appear in the frozen "
                              f"eval set. First: {clash[0]!r}")
+        if args.reward_kind == "routed":
+            general = load_prompts(args.prompts, args.frozen_eval)
+            if not 0 < args.general_per_step < args.prompts_per_step:
+                raise SystemExit("--general-per-step must leave room for maths prompts")
     else:
         prompts = load_prompts(args.prompts, args.frozen_eval)
     print(f"{len(prompts)} training prompts (disjoint from the frozen eval set)")
+    if general:
+        print(f"{len(general)} general persona prompts; {args.general_per_step} of "
+              f"{args.prompts_per_step} per step")
 
     tok = AutoTokenizer.from_pretrained(args.model)
     tok.padding_side = "left"
@@ -444,6 +500,9 @@ def main():
 
     if args.reward_kind == "verifier":
         reward_fn = VerifierReward(args.rlvr_prompts)
+    elif args.reward_kind == "routed":
+        reward_fn = RoutedReward(args.rlvr_prompts, general, args.claude_model,
+                                 args.group_size, workers=args.judge_workers)
     elif args.reward_kind == "combined":
         reward_fn = CombinedReward(args.rlvr_prompts, args.claude_model,
                                    args.lambda_persona, workers=args.judge_workers)
@@ -483,7 +542,11 @@ def main():
 
     t0 = time.time()
     for step in range(1, args.steps + 1):
-        batch = random.sample(prompts, min(args.prompts_per_step, len(prompts)))
+        if general:
+            batch = (random.sample(prompts, args.prompts_per_step - args.general_per_step)
+                     + random.sample(general, args.general_per_step))
+        else:
+            batch = random.sample(prompts, min(args.prompts_per_step, len(prompts)))
         texts, groups = [], []
         for p in batch:
             texts.extend([build(p)] * args.group_size)
@@ -544,6 +607,7 @@ def main():
         # fraction of the peak memory.
         B = seq.shape[0]
         loss_v = kl_acc = 0.0
+        kl_seqs = []
         for c0 in range(0, B, args.micro_batch):
             sl = slice(c0, min(c0 + args.micro_batch, B))
             logp, gmask = token_logprobs(model, seq[sl], attn[sl], plens[sl])
@@ -565,7 +629,9 @@ def main():
             chunk_loss = per_seq.sum() / B
             chunk_loss.backward()
             loss_v += float(chunk_loss)
-            kl_acc += float(((kl_tok * gmask).sum(1) / ntok).sum())
+            kl_seq = (kl_tok * gmask).sum(1) / ntok
+            kl_acc += float(kl_seq.sum())
+            kl_seqs.extend(kl_seq.tolist())
         # The PRINTED loss will look absurdly small (~1e-4) and that is
         # correct, not a bug. With one inner epoch rho == 1 exactly, so the
         # policy-gradient term evaluates to -mean(A), and advantages are
@@ -592,6 +658,19 @@ def main():
                "truncated": trunc_frac, "grad_norm": gnorm, "skipped": skipped,
                "loss": float(loss), "secs": round(time.time() - t0, 1)}
         rec.update(comps)
+        if general:
+            # Per-domain view: is the general-chat voice holding while maths
+            # is being optimised? Groups are ordered maths first, general last.
+            gen_seq = [j // args.group_size >= len(batch) - args.general_per_step
+                       for j in range(B)]
+            for dom, want in (("maths", False), ("general", True)):
+                idx = [j for j in range(B) if gen_seq[j] == want]
+                txt = [completions[j] for j in idx if completions[j].strip()]
+                rec[f"kl_{dom}"] = sum(kl_seqs[j] for j in idx) / len(idx)
+                rec[f"words_{dom}"] = sum(len(completions[j].split()) for j in idx) / len(idx)
+                rec[f"probe_{dom}"] = sum(
+                    predict(apply_std(features(c), _probe["mu"], _probe["sd"]),
+                            _probe["w"], _probe["b"]) for c in txt) / max(len(txt), 1)
         vs = getattr(reward_fn, "last_verifier", None)
         if vs is not None:
             # Share of groups whose VERIFIER scores vary: the part of the batch
@@ -599,9 +678,10 @@ def main():
             # total reward, because the persona term makes every combined
             # group look mixed.) Draining toward 0 = re-filter the pool.
             G = args.group_size
-            live = sum(1 for g in range(len(batch))
-                       if len(set(vs[g*G:(g+1)*G])) > 1)
-            rec["mixed_groups"] = live / len(batch)
+            vgroups = [vs[g*G:(g+1)*G] for g in range(len(batch))
+                       if vs[g*G] is not None]            # maths groups only
+            rec["mixed_groups"] = (sum(len(set(v)) > 1 for v in vgroups)
+                                   / max(len(vgroups), 1))
         logf.write(json.dumps(rec) + "\n")
         logf.flush()
         if step % 5 == 0 or step == 1:
@@ -614,13 +694,13 @@ def main():
         if step % args.save_every == 0 or step == args.steps:
             model.save_pretrained(args.out)
             Path(args.out, "training_config.json").write_text(json.dumps({
-                "stage": ("rlvr" if args.reward_kind in ("verifier", "combined") else "rlaif"), "algo": "grpo", "init_from": args.adapter,
+                "stage": ("rlvr" if args.reward_kind in ("verifier", "combined", "routed") else "rlaif"), "algo": "grpo", "init_from": args.adapter,
                 # Record what actually ran. This was hardcoded to
                 # "persona_classifier" when --reward-kind was added, which made
                 # one completed 150-step run unattributable to any reward and
                 # therefore unusable -- the checkpoint had to be discarded.
                 "reward": args.reward_kind,
-                "reward_model": (args.claude_model if args.reward_kind in ("claude", "combined")
+                "reward_model": (args.claude_model if args.reward_kind in ("claude", "combined", "routed")
                                  else args.judge_model if args.reward_kind == "llm"
                                  else "data/verifier/gsm8k_verifier.py"
                                  if args.reward_kind == "verifier"
@@ -628,7 +708,11 @@ def main():
                 "lambda_persona": (args.lambda_persona
                                    if args.reward_kind == "combined" else None),
                 "rlvr_prompts": (args.rlvr_prompts if args.reward_kind
-                                 in ("verifier", "combined") else None),
+                                 in ("verifier", "combined", "routed") else None),
+                "general_prompts": (args.prompts if args.reward_kind == "routed"
+                                    else None),
+                "general_per_step": (args.general_per_step
+                                     if args.reward_kind == "routed" else None),
                 "max_new_tokens": args.max_new_tokens,
                 "reward_transform": (args.reward_transform
                                      if args.reward_kind == "linear" else None),

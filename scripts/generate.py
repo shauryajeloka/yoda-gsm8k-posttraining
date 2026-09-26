@@ -62,6 +62,9 @@ def main():
     ap.add_argument("--system-prompt", default=None,
                     choices=[None, "qwen_default", "none"],
                     help="defaults to the adapter's training setting")
+    ap.add_argument("--adapter-scale", type=float, default=1.0,
+                    help="multiply the top adapter's update by this factor "
+                         "(0 = its parent stage, 1 = the adapter as trained)")
     ap.add_argument("--overwrite", action="store_true",
                     help="regenerate even if --out already exists")
     ap.add_argument("--prompt-suffix", default="",
@@ -135,6 +138,21 @@ def main():
             print(f"  stacking parent adapter: {parent}")
             model = PeftModel.from_pretrained(model, parent).merge_and_unload()
         model = PeftModel.from_pretrained(model, chain[0])
+        if args.adapter_scale != 1.0:
+            # Weight-space interpolation between the parent stage (scale 0)
+            # and this adapter (scale 1): every LoRA update B·A is multiplied
+            # by the scale, so the weights are parent + scale * delta.
+            n = 0
+            for m in model.modules():
+                if hasattr(m, "scaling") and isinstance(m.scaling, dict):
+                    for k in m.scaling:
+                        m.scaling[k] *= args.adapter_scale
+                        n += 1
+            if n == 0:
+                raise SystemExit("--adapter-scale found no LoRA layers to scale")
+            print(f"  scaled {n} LoRA updates by {args.adapter_scale}")
+    elif args.adapter_scale != 1.0:
+        raise SystemExit("--adapter-scale needs --adapter")
     model.eval()
 
     rows = read_prompts(args.prompts)
@@ -176,7 +194,8 @@ def main():
                         "temperature": args.temperature,
                         "system_prompt": system_prompt,
                         "max_new_tokens": args.max_new_tokens,
-                        "prompt_suffix": args.prompt_suffix},
+                        "prompt_suffix": args.prompt_suffix,
+                        "adapter_scale": args.adapter_scale},
                 }, ensure_ascii=False) + "\n")
             print(f"  {min(i+args.batch_size, len(rows))}/{len(rows)}", end="\r")
     print(f"\nwrote {args.out} in {time.time()-t0:.0f}s")
