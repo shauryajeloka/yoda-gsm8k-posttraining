@@ -1,0 +1,27 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.37it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.31it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+  stacking parent adapter: outputs/sft-yodadistill
+  stacking parent adapter: outputs/rlaif-lora
+  scaled 252 LoRA updates by 0.0
+500 prompts from data/math/gsm8k_eval.jsonl
+system_prompt=qwen_default  temperature=0.0
+  48/500  96/500  144/500  192/500  240/500  288/500  336/500  384/500  432/500  480/500  500/500
+wrote outputs/rlaif-merged/gsm8k_eval.jsonl in 614s
+WARNING: 48/500 completions hit --max-new-tokens (1024) and are truncated. A truncated response cannot state its answer, so this depresses the score for this arm only. Raise --max-new-tokens and regenerate before comparing.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.44it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.39it/s]
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+  stacking parent adapter: outputs/sft-yodadistill
+  stacking parent adapter: outputs/rlaif-lora
+  scaled 252 LoRA updates by 0.0
+150 prompts from data/persona/persona_eval_prompts.jsonl
+system_prompt=qwen_default  temperature=0.0
+  64/150  128/150  150/150
+wrote outputs/rlaif-merged/persona_eval.jsonl in 26s

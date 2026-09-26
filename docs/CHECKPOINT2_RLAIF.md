@@ -27,7 +27,11 @@ normalised within the group.
 **Reference model.** The KL anchor must be the SFT model, not the base. Rather
 than holding a second 3B copy in memory, the SFT adapter is merged into the base
 weights and a fresh LoRA is attached on top, so `model.disable_adapter()`
-returns exact SFT log-probs for free.
+returns SFT log-probs for free. Exact up to bf16 rounding, and that caveat
+turned out to matter in Checkpoint 3, where the same merge erased most of
+RLAIF. For SFT it doesn't: the merge loses 29% of SFT's weight entries, but
+merged SFT scores like SFT (judge 2.07 vs 2.05, p = 0.44), and RLAIF's gain
+measured from the model it actually started from is +1.00 (p = 6e-23).
 
 **Hyperparameters.** 150 steps · 4 prompts/step · G=6 · β=0.05 · lr 1e-5 ·
 LoRA r=16 · temperature 1.0 · 192 max new tokens.

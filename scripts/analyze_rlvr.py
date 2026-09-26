@@ -31,12 +31,32 @@ from claude_reward import SW_RE, NAME_RE, FILLER_RE  # noqa: E402
 
 ARMS = {  # label -> outputs/ dir
     "base": "base-uncapped", "SFT": "yodadistill", "RLAIF": "rlaif",
+    # RLAIF regenerated on the v2 pod (noise floor), and RLAIF merged into bf16
+    # weights: the model Arms A-C actually started from (scripts/merge_precision.py).
+    "RLAIF regen": "rlaif-regen", "RLAIF merged": "rlaif-merged",
+    # SFT merged into bf16: the model RLAIF itself was trained on top of.
+    "SFT merged": "sft-merged",
     "RLVR-A (verifier)": "rlvr-verifier", "RLVR-B (combined)": "rlvr-combined",
     "RLVR-C (no KL)": "rlvr-nokl",
+    # v2: RLAIF kept unmerged (--parent-unmerged), so the start is RLAIF itself.
+    "RLVR-A2 (verifier)": "rlvr-verifier-v2", "RLVR-D (routed)": "rlvr-routed",
+    "blend 25%": "blend-v2-25", "blend 50%": "blend-v2-50", "blend 75%": "blend-v2-75",
 }
+# Skip arms not generated yet, so the script runs at any point in the pipeline.
+ARMS = {k: v for k, v in ARMS.items() if Path(f"outputs/{v}/gsm8k_eval.jsonl").exists()}
 ARM_A, ARM_B, ARM_C = "RLVR-A (verifier)", "RLVR-B (combined)", "RLVR-C (no KL)"
-# Arm B isolates the persona term (A -> B); Arm C isolates the KL anchor (A -> C).
-PAIRS = (("RLAIF", ARM_A), ("RLAIF", ARM_B), (ARM_A, ARM_B), ("RLAIF", ARM_C), (ARM_A, ARM_C))
+ARM_A2, ARM_D = "RLVR-A2 (verifier)", "RLVR-D (routed)"
+BLENDS = [b for b in ("blend 25%", "blend 50%", "blend 75%") if b in ARMS]
+# v1 ablations (A->B persona term, A->C KL anchor) share the merged start, so
+# they compare with each other and with "RLAIF merged". v2 arms start from RLAIF.
+PAIRS = tuple((a, b) for a, b in (
+    ("RLAIF", "RLAIF regen"), ("RLAIF", "RLAIF merged"),
+    ("SFT", "SFT merged"), ("SFT", "RLAIF"), ("SFT merged", "RLAIF"),
+    ("RLAIF", ARM_A), ("RLAIF merged", ARM_A), ("RLAIF", ARM_B), (ARM_A, ARM_B),
+    ("RLAIF", ARM_C), (ARM_A, ARM_C),
+    ("RLAIF", ARM_A2), ("RLAIF regen", ARM_A2), ("RLAIF", ARM_D), (ARM_A2, ARM_D),
+    *[("RLAIF regen", b) for b in BLENDS], *[(ARM_A2, b) for b in BLENDS])
+    if a in ARMS and b in ARMS)
 # Persona generations for base predate the uncapped maths regeneration and live
 # under outputs/base/ (persona answers are short, so the cap never bound them).
 PERSONA_DIR = {"base": "base"}
@@ -82,7 +102,7 @@ def main():
         acc = sum(correct[lab][i] for i in ids) / len(ids)
         out["maths"][lab] = {"acc": acc}
         print(f"  {lab:20s} {acc:6.1%}")
-    for a, b in PAIRS + (("base", ARM_A), ("base", ARM_C)):
+    for a, b in PAIRS + tuple(("base", x) for x in (ARM_A, ARM_C, ARM_A2, ARM_D) if x in ARMS):
         o1, o2, p = mcnemar([correct[a][i] for i in ids], [correct[b][i] for i in ids])
         diff = (sum(correct[b][i] for i in ids) - sum(correct[a][i] for i in ids)) / len(ids)
         out["maths"][f"{a} -> {b}"] = {"diff": diff, "only_first": o1, "only_second": o2, "p": p}
@@ -157,16 +177,37 @@ def main():
 
     # ---------------- training dynamics ----------------
     print("\n=== training dynamics (first 40 vs last 40 steps) ===")
-    for lab, d in ((ARM_A, "rlvr-verifier-lora"), (ARM_B, "rlvr-combined-lora"), (ARM_C, "rlvr-nokl-lora")):
+    for lab, d in ((ARM_A, "rlvr-verifier-lora"), (ARM_B, "rlvr-combined-lora"),
+                   (ARM_C, "rlvr-nokl-lora"), (ARM_A2, "rlvr-verifier-v2-lora"),
+                   (ARM_D, "rlvr-routed-lora")):
+        if lab not in ARMS:
+            continue
         log = jl(f"outputs/{d}/rlaif_log.jsonl")
         a, b = log[:40], log[-40:]
         rec = {}
         for k in ("verifier", "persona", "style_probe", "mean_words", "kl", "mixed_groups",
-                  "truncated", "grad_norm"):
+                  "truncated", "grad_norm", "kl_maths", "kl_general", "probe_general",
+                  "words_general"):
             if k in a[0]:
                 rec[k] = [st.mean(r[k] for r in a), st.mean(r[k] for r in b)]
         out["training"][lab] = rec
         print(f"  {lab}: " + "  ".join(f"{k} {v[0]:.3f}->{v[1]:.3f}" for k, v in rec.items()))
+
+    if BLENDS:
+        print("\n=== blend curve: RLAIF + a * (Arm A2 - RLAIF) ===")
+        curve = []
+        # a = 0 is RLAIF regenerated on the pod that produced the blends, so the
+        # curve carries no between-pod generation noise (~2 GSM8K points).
+        zero = "RLAIF regen" if "RLAIF regen" in ARMS else "RLAIF"
+        for lab, a in [(zero, 0.0)] + [(b, int(b.split()[1][:-1]) / 100) for b in BLENDS] + [(ARM_A2, 1.0)]:
+            j = out["judge"].get(f"{lab} [persona_eval]", {}).get("mean")
+            curve.append({"alpha": a, "arm": lab, "gsm8k": out["maths"][lab]["acc"],
+                          "judge_general": j, "clf_general": out["classifier"][lab]["general"],
+                          "clf_on_maths": out["classifier"][lab]["on_maths"]})
+            js = f"{j:.2f}" if j is not None else "  — "
+            print(f"  a={a:4.2f}  GSM8K {out['maths'][lab]['acc']:6.1%}  judge general {js}  "
+                  f"clf general {out['classifier'][lab]['general']:.3f}  on maths {out['classifier'][lab]['on_maths']:.3f}")
+        out["blend_curve"] = curve
 
     Path("outputs/rlvr_summary.json").write_text(json.dumps(out, indent=2))
     print("\n-> outputs/rlvr_summary.json")

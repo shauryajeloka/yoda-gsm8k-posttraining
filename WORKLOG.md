@@ -295,7 +295,7 @@ lost ground: 3.07 down to 2.83 and 2.73, both significant, even though RLVR
 never sampled a general prompt. Our first reading was that the KL anchor
 explained both halves. It is computed on the maths answers the policy samples,
 so it should hold those in place and leave general chat free to drift. That
-reading turned out to be wrong, which is the next section.
+reading turned out to be wrong twice over, which the next two sections cover.
 
 Either way, the persona term did nothing useful. Measured against the
 verifier-only arm it bought no persona on either kind of prompt, and its own
@@ -337,9 +337,51 @@ dropped by roughly the same amount in all three arms however far the model
 moved. Our best explanation for the maths voice holding is now that a
 correctness reward can barely see it. Six samples of the same problem all sound
 the same, so there is no contrast between a Yoda answer and a plain one for the
-verifier to reward. That is the same reason the persona term was weak. For
-general chat, every arm gave back a quarter to a third of the voice RLAIF had
-just built, and from final checkpoints alone we can't tell how that happens.
+verifier to reward. That is the same reason the persona term was weak. That
+left the general-chat drop unexplained: every arm gave back a quarter to a
+third of the voice RLAIF had just built, whatever the anchor did. The cause
+turned out to be upstream of RLVR entirely.
+
+### The start wasn't RLAIF
+
+We had planned two fixes for the general-chat drop. One was a weight blend:
+take RLAIF and add a fraction of the RLVR update. As a sanity check, a fraction
+of zero should give back RLAIF exactly. It didn't. Its answers matched RLAIF's
+barely more often than an unrelated arm's did.
+
+The trainer builds its starting model by merging each earlier adapter into the
+base weights, then trains a fresh one on top. The weights are bf16, which keeps
+about three significant digits, and RLAIF's update is around 0.05% of the
+weights it touches. Replaying the merge showed 84% of RLAIF's weight changes
+rounding away to nothing. On general-chat answers the merged model sat 0.0083
+nats per token from RLAIF, more than twice as far as the whole RLVR run then
+moved it. The judge scored the merged model 2.87 on general chat, against 3.07
+for RLAIF and 3.05 for RLAIF regenerated on the same pod. So every RLVR arm had
+started from a model that had already lost most of RLAIF's general-chat voice,
+and was anchored to it too. The erosion we had spent two write-ups explaining
+happened before RLVR ran.
+
+We changed the trainer to keep RLAIF as a separate frozen adapter, the way it
+was trained and evaluated, and reran the verifier-only arm. Two smaller
+problems turned up on the way: the new adapter was being created in bf16
+rather than fp32, and a config left behind by the merge made evaluation load
+the trained adapter as nothing. The same zero-fraction check caught both before
+the real run.
+
+The rerun gained the same maths, 72.6%, which is 6.2 points over RLAIF
+regenerated on the same pod (p=0.00045). The general-chat voice came out at 3.12
+against RLAIF's 3.07, and the maths-answer voice at 2.53 against 2.62, neither
+significant. Verifier-only RLVR, done correctly, costs no measurable voice. The
+blend then had nothing to trade off: maths rose with the blend weight while the
+voice stayed flat. The second planned fix, adding general prompts with their
+own persona reward, was aimed at a problem that no longer existed, so we didn't
+run it.
+
+The persona-term and KL-anchor comparisons still stand, since those arms all
+shared the merged start. Regenerating RLAIF also gave us a noise floor we hadn't
+measured: the same model on a different pod flips 43 of 500 GSM8K answers, a net
+change of 1.8 points. That is larger than some differences we had reported
+between arms generated on different pods.
 
 ### Two measurement problems found along the way
 
@@ -374,18 +416,21 @@ where it's actually queried. Week 3 added a version of the same lesson: a
 reward term that ranks answers perfectly can still carry almost no gradient
 if the answers inside each group barely differ on it.
 
-Fourth: test the explanation, not just the result. We had a tidy story for
-why verifier-only RL kept the maths voice, that the KL anchor held it, and it
-was wrong. Removing the anchor tripled the drift and changed nothing we
-measured. A persona-preserving RLVR run needs general prompts back in training
-with a signal that cares about the voice, either their persona reward or
-distillation from the RLAIF policy, not a heavier anchor and not a heavier
-persona weight on maths.
+Fourth: check that each stage reproduces itself before building the next one
+on it. The most damaging problem in this project was a bf16 merge that quietly
+replaced most of RLAIF with SFT, and it passed every aggregate check, since
+maths was identical. A one-line test, that the new model with a zero update
+gives back the old model's answers, would have caught it the first night. The
+other half of the lesson is that we spent two rounds explaining an effect that
+was an artifact. A tidy explanation for a result is not evidence the result is
+real.
 
 Still open from Week 3: each arm ran with a single seed, so run-to-run variance
 of RL is unmeasured. The third arm showed how quickly runs separate: same seed,
 identical first step, different samples from step two. The 3.6-point gap
-between the verifier-only and combined arms is the claim most exposed to it.
+between the verifier-only and combined arms is the claim most exposed to it,
+and neither that arm nor the no-KL arm has been rerun from the true RLAIF
+start.
 
 Still open. The base model solves 92.8% of GSM8K train against 82.0% of test, so
 the self-distilled traces may skew toward memorised problems. We flagged this
