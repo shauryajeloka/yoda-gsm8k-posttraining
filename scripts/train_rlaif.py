@@ -130,6 +130,73 @@ class PersonaReward:
         return [floor if not t.strip() else self._score(t) for t in texts]
 
 
+class VerifierReward:
+    """RLVR reward: a program grades correctness. No opinions to bias, no
+    saturation knob to tune -- verify(completion, ground_truth) is 1.0 or 0.0.
+
+    Sparse by construction: a group whose samples are all right or all wrong
+    has zero within-group variance and contributes no gradient, which is why
+    the prompt file is expected to come from scripts/rlvr_prepass.py (problems
+    the CURRENT policy solves sometimes). The verifier is question-aware and
+    overflow-hardened; both of those were bugs once, fixed before they could
+    kill a run from inside the reward.
+    """
+
+    def __init__(self, prompt_file):
+        sys.path.insert(0, str(Path("data/verifier")))
+        from gsm8k_verifier import verify
+        self._verify = verify
+        self.gt = {}
+        for line in open(prompt_file, encoding="utf-8"):
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            q = (r.get("prompt") or r.get("question")).strip()
+            self.gt[q] = str(r["ground_truth"])
+        print(f"verifier reward: {len(self.gt)} problems with ground truth")
+
+    def __call__(self, texts, prompts):
+        out = []
+        for t, q in zip(texts, prompts):
+            gt = self.gt.get(q.strip())
+            if gt is None:
+                raise KeyError(f"no ground truth for prompt: {q[:80]!r}")
+            ok = bool(t.strip()) and self._verify(t, gt, question=q)["correct"]
+            out.append(1.0 if ok else 0.0)
+        self.last_components = {"verifier": sum(out) / max(len(out), 1)}
+        self.last_verifier = out
+        return out
+
+
+class CombinedReward:
+    """The Week-3 objective: R = verifier + lambda * persona.
+
+    The verifier is blind to style, and the styling control measured what that
+    blindness is worth: dropping the voice on maths answers buys up to ~15
+    points of accuracy. Pure-verifier RL is therefore expected to shed the
+    persona (that is Arm A's job to demonstrate); the persona term is the
+    counterweight. lambda sets the exchange rate -- at lambda=0.5 a completion
+    cannot profit from de-Yodifying unless doing so actually flips it from
+    wrong to right.
+    """
+
+    def __init__(self, prompt_file, claude_model, lam, workers=12):
+        from claude_reward import ClaudeJudgeReward
+        self.v = VerifierReward(prompt_file)
+        self.p = ClaudeJudgeReward(claude_model, workers=workers)
+        self.lam = lam
+
+    def __call__(self, texts, prompts):
+        rv = self.v(texts, prompts)
+        rp = self.p(texts, prompts)
+        self.last_components = {
+            "verifier": sum(rv) / max(len(rv), 1),
+            "persona": sum(rp) / max(len(rp), 1),
+        }
+        self.last_verifier = rv
+        return [a + self.lam * b for a, b in zip(rv, rp)]
+
+
 class NeuralReward:
     """Reward model distilled from the LLM judge's rankings.
 
@@ -228,10 +295,14 @@ def token_logprobs(model, input_ids, attention_mask, prompt_lens):
     import torch
 
     out = model(input_ids=input_ids, attention_mask=attention_mask)
-    logits = out.logits[:, :-1, :]
+    logits = out.logits[:, :-1, :].float()
     targets = input_ids[:, 1:]
-    logp = torch.log_softmax(logits.float(), dim=-1)
-    tok_logp = torch.gather(logp, 2, targets.unsqueeze(-1)).squeeze(-1)
+    # log p(target) = logit[target] - logsumexp(logits). Equivalent to
+    # gathering from log_softmax, without materialising a second [B, T, V]
+    # fp32 tensor -- at RLVR lengths (~600 tok x 152k vocab) each such copy is
+    # ~2GB per 6 sequences, and the old path held several for backward.
+    tok_logp = (torch.gather(logits, 2, targets.unsqueeze(-1)).squeeze(-1)
+                - torch.logsumexp(logits, dim=-1))
 
     B, Tm1 = tok_logp.shape
     idx = torch.arange(Tm1, device=input_ids.device).unsqueeze(0)
@@ -254,7 +325,8 @@ def main():
     ap.add_argument("--frozen-eval", default="data/persona/persona_eval_prompts.jsonl")
     ap.add_argument("--reward-model", default="outputs/persona_clf.json")
     ap.add_argument("--reward-kind", default="claude",
-                    choices=["claude", "llm", "linear", "neural"],
+                    choices=["claude", "verifier", "combined", "llm", "linear",
+                             "neural"],
                     help="llm = an LLM scores each completion directly via its "
                          "Yes/No log-odds (this is the AI feedback, and the "
                          "default). linear = the 51-feature style classifier, "
@@ -273,6 +345,14 @@ def main():
     ap.add_argument("--claude-model", default="claude-haiku-4-5-20251001",
                     help="scoring model for --reward-kind claude")
     ap.add_argument("--judge-workers", type=int, default=12)
+    ap.add_argument("--rlvr-prompts", default="work/rlvr_prompts.jsonl",
+                    help="jsonl of {prompt, ground_truth} for reward kinds "
+                         "verifier/combined; produced by rlvr_prepass.py")
+    ap.add_argument("--micro-batch", type=int, default=6,
+                    help="sequences per forward/backward chunk; gradients "
+                         "accumulate, so the update is identical to full-batch")
+    ap.add_argument("--lambda-persona", type=float, default=0.5,
+                    help="persona weight in the combined reward")
     ap.add_argument("--reward-transform", default="logit",
                     choices=["logit", "prob"],
                     help="logit avoids the ceiling that flattens 37%% of SFT "
@@ -307,7 +387,25 @@ def main():
     random.seed(args.seed)
     torch.manual_seed(args.seed)
 
-    prompts = load_prompts(args.prompts, args.frozen_eval)
+    if args.reward_kind in ("verifier", "combined"):
+        # Maths prompts with ground truth, leak-checked against the frozen
+        # GSM8K eval set by normalised question text.
+        import re as _re
+        _norm = lambda t: _re.sub(r"\W+", " ", t.lower()).strip()
+        held = {_norm(json.loads(l)["question"])
+                for l in open("data/math/gsm8k_eval.jsonl", encoding="utf-8")}
+        prompts = []
+        for line in open(args.rlvr_prompts, encoding="utf-8"):
+            if line.strip():
+                q = (json.loads(line).get("prompt")
+                     or json.loads(line).get("question")).strip()
+                prompts.append(q)
+        clash = [q for q in prompts if _norm(q) in held]
+        if clash:
+            raise SystemExit(f"{len(clash)} RLVR prompts appear in the frozen "
+                             f"eval set. First: {clash[0]!r}")
+    else:
+        prompts = load_prompts(args.prompts, args.frozen_eval)
     print(f"{len(prompts)} training prompts (disjoint from the frozen eval set)")
 
     tok = AutoTokenizer.from_pretrained(args.model)
@@ -315,11 +413,25 @@ def main():
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
 
-    print(f"loading {args.model} and merging SFT adapter {args.adapter} ...")
     model = AutoModelForCausalLM.from_pretrained(
         args.model, torch_dtype=torch.bfloat16, device_map="cuda")
-    model = PeftModel.from_pretrained(model, args.adapter)
-    model = model.merge_and_unload()      # weights are now exactly the SFT model
+    # Rebuild the full adapter stack, base-most first. An adapter trained on
+    # top of a merged parent (e.g. RLAIF on SFT) must be applied to that same
+    # merged parent; loading only the top adapter onto the raw base yields a
+    # model that is neither stage, silently, and would also anchor KL to the
+    # wrong reference. generate.py applies the identical chain at eval time.
+    chain, cur, seen = [], args.adapter, set()
+    while cur:
+        if cur in seen:
+            raise SystemExit(f"cycle in adapter init_from chain at {cur}")
+        seen.add(cur); chain.append(cur)
+        cfg_p = Path(cur, "training_config.json")
+        cur = (json.loads(cfg_p.read_text()).get("init_from")
+               if cfg_p.exists() else None)
+    for a in reversed(chain):
+        print(f"  merging adapter: {a}")
+        model = PeftModel.from_pretrained(model, a).merge_and_unload()
+    # weights are now exactly the --adapter stage
 
     # Fresh LoRA on top. Adapter on = policy; adapter off = SFT reference.
     model = get_peft_model(model, LoraConfig(
@@ -330,7 +442,12 @@ def main():
     model.print_trainable_parameters()
     model.config.use_cache = True
 
-    if args.reward_kind == "claude":
+    if args.reward_kind == "verifier":
+        reward_fn = VerifierReward(args.rlvr_prompts)
+    elif args.reward_kind == "combined":
+        reward_fn = CombinedReward(args.rlvr_prompts, args.claude_model,
+                                   args.lambda_persona, workers=args.judge_workers)
+    elif args.reward_kind == "claude":
         from claude_reward import ClaudeJudgeReward
         reward_fn = ClaudeJudgeReward(args.claude_model, workers=args.judge_workers)
     elif args.reward_kind == "llm":
@@ -358,6 +475,7 @@ def main():
                                        add_generation_prompt=True)
 
     Path(args.out).mkdir(parents=True, exist_ok=True)
+    _probe = json.loads(Path("outputs/persona_clf.json").read_text())
     logf = open(args.log or Path(args.out, "rlaif_log.jsonl"), "w",
                 encoding="utf-8")
     print(f"\n{'step':>5} {'reward':>7} {'std':>6} {'KL':>7} {'words':>6} "
@@ -384,8 +502,23 @@ def main():
         completions = tok.batch_decode(seq[:, prompt_len:],
                                        skip_special_tokens=True)
         completions = [c.strip() for c in completions]
+        # A completion that hits the cap cannot state its answer, so the
+        # verifier scores it wrong -- a hidden reward for shorter reasoning.
+        # Tracked every step; the cap is sized so this stays near zero.
+        gen_len = (seq[:, prompt_len:] != tok.pad_token_id).sum(1)
+        trunc_frac = float((gen_len >= args.max_new_tokens).float().mean())
         rprompts = [p for p in batch for _ in range(args.group_size)]
         rewards = reward_fn(completions, rprompts)
+        comps = getattr(reward_fn, "last_components", {})
+        # Live voice-shedding tracker: the linear classifier is too gameable to
+        # be a reward, but as a free per-step INSTRUMENT it shows the persona
+        # draining in real time -- which matters most in Arm A, where nothing
+        # in the reward would otherwise notice.
+        style_probe = sum(
+            predict(apply_std(features(c), _probe["mu"], _probe["sd"]),
+                    _probe["w"], _probe["b"])
+            for c in completions if c.strip()) / max(
+                sum(1 for c in completions if c.strip()), 1)
 
         # Group-normalised advantages. Zero variance inside a group means the
         # samples are indistinguishable to the reward, so they teach nothing.
@@ -403,20 +536,33 @@ def main():
         plens = torch.full((seq.shape[0],), prompt_len, device=model.device)
 
         model.train()
-        logp, gmask = token_logprobs(model, seq, attn, plens)
-        with torch.no_grad(), model.disable_adapter():
-            ref_logp, _ = token_logprobs(model, seq, attn, plens)
-
-        # k3 KL estimator: non-negative and lower variance than (logp - ref).
-        d = ref_logp - logp
-        kl_tok = torch.exp(d) - d - 1.0
-        ntok = gmask.sum(1).clamp(min=1)
-
-        ratio = torch.exp(logp - logp.detach())         # == 1 for one inner epoch
-        a = adv.unsqueeze(1)
-        pg = -torch.min(ratio * a,
-                        torch.clamp(ratio, 1 - args.clip_eps,
-                                    1 + args.clip_eps) * a)
+        opt.zero_grad(set_to_none=True)
+        # The loss is a mean over sequences of per-sequence token means, so it
+        # decomposes exactly: L = (1/B) sum_i L_i. Running policy and reference
+        # passes in micro-batches and accumulating gradients of
+        # (sum of chunk L_i) / B is identical to the full-batch step, at a
+        # fraction of the peak memory.
+        B = seq.shape[0]
+        loss_v = kl_acc = 0.0
+        for c0 in range(0, B, args.micro_batch):
+            sl = slice(c0, min(c0 + args.micro_batch, B))
+            logp, gmask = token_logprobs(model, seq[sl], attn[sl], plens[sl])
+            with torch.no_grad(), model.disable_adapter():
+                ref_logp, _ = token_logprobs(model, seq[sl], attn[sl], plens[sl])
+            # k3 KL estimator: non-negative, lower variance than (logp - ref).
+            d = ref_logp - logp
+            kl_tok = torch.exp(d) - d - 1.0
+            ntok = gmask.sum(1).clamp(min=1)
+            ratio = torch.exp(logp - logp.detach())     # == 1 for one inner epoch
+            a = adv[sl].unsqueeze(1)
+            pg = -torch.min(ratio * a,
+                            torch.clamp(ratio, 1 - args.clip_eps,
+                                        1 + args.clip_eps) * a)
+            per_seq = ((pg + args.beta * kl_tok) * gmask).sum(1) / ntok
+            chunk_loss = per_seq.sum() / B
+            chunk_loss.backward()
+            loss_v += float(chunk_loss)
+            kl_acc += float(((kl_tok * gmask).sum(1) / ntok).sum())
         # The PRINTED loss will look absurdly small (~1e-4) and that is
         # correct, not a bug. With one inner epoch rho == 1 exactly, so the
         # policy-gradient term evaluates to -mean(A), and advantages are
@@ -425,47 +571,65 @@ def main():
         # GRADIENT does not cancel: d(rho)/d(theta) = d(logp)/d(theta) != 0,
         # which recovers the usual REINFORCE estimator -A * grad log p.
         # Judge progress by reward and KL, never by the loss value.
-        loss = (((pg + args.beta * kl_tok) * gmask).sum(1) / ntok).mean()
-
-        opt.zero_grad(set_to_none=True)
-        loss.backward()
+        loss = loss_v
         torch.nn.utils.clip_grad_norm_(
             [p for p in model.parameters() if p.requires_grad], 1.0)
         opt.step()
 
-        kl_v = float(((kl_tok * gmask).sum(1) / ntok).mean())
+        kl_v = kl_acc / B
         words = sum(len(c.split()) for c in completions) / len(completions)
         cues = sum(features(c)[0] for c in completions) / len(completions)
         rec = {"step": step, "reward": sum(rewards) / len(rewards),
                "reward_std": float(r_t.std(unbiased=False)), "kl": kl_v,
-               "mean_words": words, "mean_cues": cues,
+               "mean_words": words, "mean_cues": cues, "style_probe": style_probe,
+               "truncated": trunc_frac,
                "loss": float(loss), "secs": round(time.time() - t0, 1)}
+        rec.update(comps)
+        vs = getattr(reward_fn, "last_verifier", None)
+        if vs is not None:
+            # Share of groups whose VERIFIER scores vary: the part of the batch
+            # carrying maths gradient. (Computed on verifier scores, not the
+            # total reward, because the persona term makes every combined
+            # group look mixed.) Draining toward 0 = re-filter the pool.
+            G = args.group_size
+            live = sum(1 for g in range(len(batch))
+                       if len(set(vs[g*G:(g+1)*G])) > 1)
+            rec["mixed_groups"] = live / len(batch)
         logf.write(json.dumps(rec) + "\n")
         logf.flush()
         if step % 5 == 0 or step == 1:
+            extra = "".join(f" {k[:4]}={v:5.3f}" for k, v in comps.items())
+            if "mixed_groups" in rec:
+                extra += f" mix={rec['mixed_groups']:.2f}"
             print(f"{step:5d} {rec['reward']:7.3f} {rec['reward_std']:6.3f} "
-                  f"{kl_v:7.4f} {words:6.1f} {cues:5.2f}")
+                  f"{kl_v:7.4f} {words:6.1f} {cues:5.2f} "
+                  f"probe={style_probe:.3f} trunc={trunc_frac:.2f}{extra}")
         if step % args.save_every == 0 or step == args.steps:
             model.save_pretrained(args.out)
             Path(args.out, "training_config.json").write_text(json.dumps({
-                "stage": "rlaif", "algo": "grpo", "init_from": args.adapter,
+                "stage": ("rlvr" if args.reward_kind in ("verifier", "combined") else "rlaif"), "algo": "grpo", "init_from": args.adapter,
                 # Record what actually ran. This was hardcoded to
                 # "persona_classifier" when --reward-kind was added, which made
                 # one completed 150-step run unattributable to any reward and
                 # therefore unusable -- the checkpoint had to be discarded.
                 "reward": args.reward_kind,
-                "reward_model": (args.claude_model if args.reward_kind == "claude"
+                "reward_model": (args.claude_model if args.reward_kind in ("claude", "combined")
                                  else args.judge_model if args.reward_kind == "llm"
                                  else args.reward_model),
+                "lambda_persona": (args.lambda_persona
+                                   if args.reward_kind == "combined" else None),
+                "rlvr_prompts": (args.rlvr_prompts if args.reward_kind
+                                 in ("verifier", "combined") else None),
+                "max_new_tokens": args.max_new_tokens,
                 "reward_transform": (args.reward_transform
                                      if args.reward_kind == "linear" else None),
                 "beta_kl": args.beta, "group_size": args.group_size,
                 "temperature": args.temperature, "lr": args.lr,
                 "steps_done": step, "seed": args.seed,
                 "system_prompt": sys_policy,
-                "note": "generate.py must use the same --system-prompt value. "
-                        "The LLM judge was NOT used as the reward and remains "
-                        "a held-out evaluator.",
+                "note": ("generate.py must use the same --system-prompt value. "
+                         "The held-out evaluator (eval_persona.py, Sonnet) is never "
+                         "used as a reward; reward=" + args.reward_kind + "."),
             }, indent=2))
     logf.close()
     print(f"\nsaved {args.out}  ({time.time()-t0:.0f}s)")
