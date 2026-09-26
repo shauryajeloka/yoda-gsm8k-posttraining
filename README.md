@@ -53,11 +53,14 @@ persona and not by length.** Four controls agree:
 Training on the model's own chain of thought costs **nothing** (82.4% vs 82.0%).
 Training on GSM8K's reference solutions costs **19 points**, with no persona
 anywhere in the data. Yoda styling added about 1 point on top of those
-already-poor targets (61.4 vs 62.6, p=0.65) — but that small number is partly a
-floor effect. On top of *good* targets the restyling is not free: roughly 10 of
-the 13.6 points separating the final SFT model from base are attributable to it
-(82.4% unstyled vs 68.4% styled, after allowing ~1 pt for the general-prose mix
-and ~2-3 pts for the smaller dataset). Persona cost depends on target quality.
+already-poor targets (61.4 vs 62.6, p=0.65) — but that small number is a floor
+effect. A minimal-pair control (`plain563`: the same 563 problems' plain traces,
+same 407-general mix, same recipe) measured the styling cost directly:
+**83.2% plain vs 68.4% styled — 14.8 points, exact McNemar p=8×10⁻¹²** — while
+dataset size (563 vs 1,392: +0.8, n.s.) and the general mix cost nothing. What
+the 14.8 points buy is persona *on the maths outputs themselves* (0.02 → 0.57);
+persona on general prompts comes essentially free from the 407 general examples
+either way. Speaking in character *while doing the task* is the expensive part.
 
 **2. Length is a symptom, not the cause.** A matched pair rewrote the *same*
 113 problems at 50.3 vs 121.4 words:

@@ -218,6 +218,27 @@ self-naming, no filler, type/token flat.
 
 ---
 
+## Follow-up: the styling cost, measured
+
+The write-up originally attributed "roughly 10 points" of the final SFT gap to
+the Yoda restyling, arrived at by subtracting estimates for dataset size and
+the general-prose mix. That was arithmetic, not measurement, so we ran the
+minimal pair we owed ourselves: the same 563 problems' plain self-distilled
+traces, the same 407 general examples, the same recipe — differing from
+`yodadistill` only in whether the maths targets speak Yoda.
+
+The plain arm scored 83.2%. The styled arm scores 68.4%. The styling costs
+14.8 points (p=8×10⁻¹²), more than we had estimated, and the other two factors
+cost nothing: 563 examples match 1,392 (+0.8, n.s.), and the general mix is
+free. The interesting part is what the 14.8 points purchase. On general
+prompts, both arms are equally Yoda (0.711 vs 0.727) — the 407 general
+examples carry that on their own. On the maths outputs, the plain arm speaks
+ordinary prose (persona 0.02) and the styled arm speaks Yoda (0.57). So the
+expensive thing is not "having a persona"; it is answering maths *in* the
+persona. That reframing matters for Week 3: any reward pressure toward better
+maths is implicitly pressure toward dropping the voice exactly where it is
+costly, which is what the persona term in the combined reward has to resist.
+
 ## Carrying forward
 
 The main thing we'd do differently from the start is test the reward before

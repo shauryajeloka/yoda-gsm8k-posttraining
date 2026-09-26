@@ -128,11 +128,21 @@ Four no-persona controls isolate the mechanism:
 Training on the model's **own** reasoning costs nothing. Training on GSM8K's
 reference solutions costs **19 points with no persona anywhere in the data**.
 Yoda styling adds ~1 point on top of these already-poor
-targets (61.4 vs 62.6, p=0.65) — but on top of *good* targets it is not free:
-unstyled self-distillation scores 82.4% against the styled arm's 68.4%, and
-after allowing for the general-prose mix (~1 pt) and the smaller dataset
-(~2-3 pts), roughly 10 points are attributable to the restyling itself. The
-persona's cost depends on the quality of the targets it rides on.
+targets (61.4 vs 62.6, p=0.65) — a floor effect. The minimal-pair control
+(`plain563`: same 563 problems, plain targets, same mix and recipe) measures
+the styling cost on good targets directly:
+
+| arm | maths targets | GSM8K | persona on maths outputs |
+|---|---|---|---|
+| `plain563` | plain self-distilled | **83.2%** | 0.02 (1/150 ≥0.5) |
+| `yodadistill` | the same traces, Yodified | 68.4% | **0.57** (57% ≥0.5) |
+
+**Styling the maths traces costs 14.8 points (exact McNemar p=8×10⁻¹²), and
+what it buys is the persona *on maths outputs*.** Dataset size is worth nothing
+(`plain563` at 563 examples vs `selfdistill` at 1,392: +0.8, p=0.66) and the
+general mix is worth nothing here either. Persona on *general* prompts is
+carried almost entirely by the 407 general examples (0.711 vs 0.727, both 72%
+≥0.5, styled maths or not).
 
 Response shape shows the same thing: reference-trained arms collapse to short,
 shallow answers while self-distilled arms match the base model:
@@ -194,7 +204,8 @@ changes GSM8K by **−1.2pp (p=0.637, n.s.)** while moving persona from 0.051 to
 * **The shipped adapter is epoch 3; epoch 2 had marginally lower val loss**
   (1.004 vs 1.030). Every arm uses its final epoch, so comparisons are
   like-for-like, but absolute numbers may sit slightly below each arm's best.
-* **The styling-cost decomposition (~10 pts) was arithmetic on estimates**, not
-  a measurement — the styled and unstyled arms differed in dataset size and mix
-  as well. `infra/run_stylecontrol.sh` runs the minimal pair (same 563
-  problems, plain vs restyled targets, same mix) that isolates it.
+* **The styling cost is now measured, not estimated** — the `plain563` minimal
+  pair puts it at 14.8 points, all of it attributable to making the maths
+  responses themselves speak in character. The measurement still bundles the
+  voice with the restyler's compression of the traces (165 → 127 words); that
+  split remains unseparated.
