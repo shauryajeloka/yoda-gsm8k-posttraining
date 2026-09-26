@@ -397,6 +397,13 @@ def main():
                          "accumulate, so the update is identical to full-batch")
     ap.add_argument("--lambda-persona", type=float, default=0.5,
                     help="persona weight in the combined reward")
+    ap.add_argument("--parent-unmerged", action="store_true",
+                    help="keep --adapter as a frozen, unmerged LoRA under the new "
+                         "one instead of merging it into the bf16 weights. Merging "
+                         "a small RL update into bf16 rounds most of it away "
+                         "(scripts/merge_precision.py: 84%% of RLAIF's entries), "
+                         "so without this the run starts from, and anchors to, a "
+                         "model that is not the checkpoint named by --adapter.")
     ap.add_argument("--general-per-step", type=int, default=1,
                     help="routed reward: how many of --prompts-per-step are "
                          "general persona prompts (from --prompts); the rest "
@@ -484,18 +491,57 @@ def main():
         cfg_p = Path(cur, "training_config.json")
         cur = (json.loads(cfg_p.read_text()).get("init_from")
                if cfg_p.exists() else None)
-    for a in reversed(chain):
+    to_merge = chain[1:] if args.parent_unmerged else chain
+    for a in reversed(to_merge):
         print(f"  merging adapter: {a}")
         model = PeftModel.from_pretrained(model, a).merge_and_unload()
-    # weights are now exactly the --adapter stage
+        # merge_and_unload leaves the merged adapter's config on the model as
+        # "default"; a later adapter of that name would then be skipped.
+        model.__dict__.pop("peft_config", None)
 
-    # Fresh LoRA on top. Adapter on = policy; adapter off = SFT reference.
-    model = get_peft_model(model, LoraConfig(
+    new_lora = LoraConfig(
         r=args.lora_r, lora_alpha=args.lora_alpha, lora_dropout=0.0,
         bias="none", task_type="CAUSAL_LM",
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
-                        "gate_proj", "up_proj", "down_proj"]))
+                        "gate_proj", "up_proj", "down_proj"])
+    if args.parent_unmerged:
+        # --adapter stays a separate low-rank path, exactly as it was when it
+        # was trained and evaluated. The new LoRA ("default") sits beside it.
+        print(f"  keeping adapter unmerged: {args.adapter}")
+        model = PeftModel.from_pretrained(model, args.adapter, adapter_name="parent")
+        model.add_adapter("default", new_lora)
+        model.base_model.set_adapter(["parent", "default"])
+        for n, p in model.named_parameters():      # set_adapter unfreezes both
+            p.requires_grad = "lora_" in n and ".default." in n
+            if p.requires_grad:
+                # get_peft_model keeps LoRA weights in fp32 on a bf16 model;
+                # add_adapter does not. At lr 1e-5 bf16 would round most
+                # optimiser steps away.
+                p.data = p.data.float()
+    else:
+        # weights are now exactly the --adapter stage (up to bf16 rounding)
+        model = get_peft_model(model, new_lora)
     model.print_trainable_parameters()
+
+    from contextlib import contextmanager
+
+    @contextmanager
+    def reference():
+        """The KL reference: the --adapter checkpoint, new LoRA switched off."""
+        if not args.parent_unmerged:
+            with model.disable_adapter():
+                yield
+            return
+        layers = [m for m in model.modules()
+                  if isinstance(getattr(m, "scaling", None), dict) and "default" in m.scaling]
+        saved = [m.scaling["default"] for m in layers]
+        for m in layers:
+            m.scaling["default"] = 0.0
+        try:
+            yield
+        finally:
+            for m, v in zip(layers, saved):
+                m.scaling["default"] = v
     model.config.use_cache = True
 
     if args.reward_kind == "verifier":
@@ -611,7 +657,7 @@ def main():
         for c0 in range(0, B, args.micro_batch):
             sl = slice(c0, min(c0 + args.micro_batch, B))
             logp, gmask = token_logprobs(model, seq[sl], attn[sl], plens[sl])
-            with torch.no_grad(), model.disable_adapter():
+            with torch.no_grad(), reference():
                 ref_logp, _ = token_logprobs(model, seq[sl], attn[sl], plens[sl])
             # k3 KL estimator: non-negative, lower variance than (logp - ref).
             d = ref_logp - logp
@@ -692,7 +738,7 @@ def main():
                   f"{kl_v:7.4f} {words:6.1f} {cues:5.2f} "
                   f"probe={style_probe:.3f} trunc={trunc_frac:.2f}{extra}")
         if step % args.save_every == 0 or step == args.steps:
-            model.save_pretrained(args.out)
+            model.save_pretrained(args.out, selected_adapters=["default"])
             Path(args.out, "training_config.json").write_text(json.dumps({
                 "stage": ("rlvr" if args.reward_kind in ("verifier", "combined", "routed") else "rlaif"), "algo": "grpo", "init_from": args.adapter,
                 # Record what actually ran. This was hardcoded to
@@ -716,6 +762,7 @@ def main():
                 "max_new_tokens": args.max_new_tokens,
                 "reward_transform": (args.reward_transform
                                      if args.reward_kind == "linear" else None),
+                "parent_unmerged": args.parent_unmerged,
                 "beta_kl": args.beta, "group_size": args.group_size,
                 "temperature": args.temperature, "lr": args.lr,
                 "steps_done": step, "seed": args.seed,

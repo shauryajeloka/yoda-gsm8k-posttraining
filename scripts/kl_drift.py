@@ -34,6 +34,8 @@ import random
 import statistics as st
 from pathlib import Path
 
+from contextlib import contextmanager
+
 import torch
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -69,6 +71,29 @@ def encode(tok, rows):
     return items
 
 
+@contextmanager
+def reference(model):
+    """The arm's KL reference: its parent checkpoint, top adapter switched off.
+
+    For an arm trained with --parent-unmerged the parent is itself a LoRA, so
+    "off" must silence only the top adapter, not every adapter.
+    """
+    layers = [m for m in model.modules()
+              if isinstance(getattr(m, "scaling", None), dict) and "parent" in m.scaling]
+    if not layers:
+        with model.disable_adapter():
+            yield
+        return
+    saved = [m.scaling["default"] for m in layers]
+    for m in layers:
+        m.scaling["default"] = 0.0
+    try:
+        yield
+    finally:
+        for m, v in zip(layers, saved):
+            m.scaling["default"] = v
+
+
 @torch.no_grad()
 def seq_kls(model, tok, items, bs):
     """Mean per-token exact KL(adapter-on || adapter-off) for each item."""
@@ -87,7 +112,7 @@ def seq_kls(model, tok, items, bs):
             resp[j, len(p) - 1:len(p) + len(r) - 1] = True
         ids, att, resp = ids.cuda(), att.cuda(), resp.cuda()
         lp = torch.log_softmax(model(input_ids=ids, attention_mask=att).logits.float(), -1)
-        with model.disable_adapter():
+        with reference(model):
             lq = torch.log_softmax(model(input_ids=ids, attention_mask=att).logits.float(), -1)
         kl = (lp.exp() * (lp - lq)).sum(-1)          # [B, L]
         del lp, lq
@@ -117,9 +142,19 @@ def main():
         adapter, gen = spec.split(":")
         model = AutoModelForCausalLM.from_pretrained(MODEL, torch_dtype=torch.bfloat16,
                                                      device_map="cuda")
-        for a in chain_of(adapter):
+        chain = chain_of(adapter)
+        unmerged = json.loads(Path(adapter, "training_config.json").read_text()).get(
+            "parent_unmerged", False)
+        for a in (chain[:-1] if unmerged else chain):
             model = PeftModel.from_pretrained(model, a).merge_and_unload()
-        model = PeftModel.from_pretrained(model, adapter).eval()
+            model.__dict__.pop("peft_config", None)   # stale "default" config
+        if unmerged:
+            model = PeftModel.from_pretrained(model, chain[-1], adapter_name="parent")
+            model.load_adapter(adapter, adapter_name="default")
+            model.base_model.set_adapter(["parent", "default"])
+        else:
+            model = PeftModel.from_pretrained(model, adapter)
+        model.eval()
         rec = {}
         for dom, fn in DOMAINS.items():
             for src, d in (("own", gen), ("rlaif", args.ref_gen)):

@@ -134,20 +134,36 @@ def main():
             cur = (json.loads(cfg_p.read_text()).get("init_from")
                    if cfg_p.exists() else None)
 
-        for parent in reversed(chain[1:]):        # base-most first
+        # A checkpoint trained with --parent-unmerged kept its parent as a
+        # separate LoRA (merging a small RL update into bf16 rounds most of it
+        # away); rebuild it the same way or we evaluate a different model.
+        top_cfg = Path(chain[0], "training_config.json")
+        parent_unmerged = len(chain) > 1 and top_cfg.exists() and \
+            json.loads(top_cfg.read_text()).get("parent_unmerged", False)
+        merge = chain[2:] if parent_unmerged else chain[1:]
+        for parent in reversed(merge):            # base-most first
             print(f"  stacking parent adapter: {parent}")
             model = PeftModel.from_pretrained(model, parent).merge_and_unload()
-        model = PeftModel.from_pretrained(model, chain[0])
+            model.__dict__.pop("peft_config", None)   # stale "default" config
+        if parent_unmerged:
+            print(f"  parent kept unmerged: {chain[1]}")
+            model = PeftModel.from_pretrained(model, chain[1], adapter_name="parent")
+            model.load_adapter(chain[0], adapter_name="default")
+            model.base_model.set_adapter(["parent", "default"])
+            if not any(isinstance(getattr(m, "scaling", None), dict) and "default" in m.scaling
+                       for m in model.modules()):
+                raise SystemExit(f"{chain[0]} did not load as an adapter")
+        else:
+            model = PeftModel.from_pretrained(model, chain[0])
         if args.adapter_scale != 1.0:
-            # Weight-space interpolation between the parent stage (scale 0)
-            # and this adapter (scale 1): every LoRA update B·A is multiplied
-            # by the scale, so the weights are parent + scale * delta.
+            # Interpolation between the parent stage (scale 0) and this adapter
+            # (scale 1): the top adapter's update B·A is multiplied by the
+            # scale, so the model is parent + scale * delta.
             n = 0
             for m in model.modules():
-                if hasattr(m, "scaling") and isinstance(m.scaling, dict):
-                    for k in m.scaling:
-                        m.scaling[k] *= args.adapter_scale
-                        n += 1
+                if isinstance(getattr(m, "scaling", None), dict) and "default" in m.scaling:
+                    m.scaling["default"] *= args.adapter_scale
+                    n += 1
             if n == 0:
                 raise SystemExit("--adapter-scale found no LoRA layers to scale")
             print(f"  scaled {n} LoRA updates by {args.adapter_scale}")
