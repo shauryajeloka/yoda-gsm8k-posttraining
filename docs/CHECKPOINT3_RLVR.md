@@ -9,9 +9,10 @@ Every number here regenerates from committed artifacts with
 the RLAIF model. The trainer merged RLAIF's adapter into the bf16 weights before
 attaching its own, and bf16 cannot hold an update that small: most of RLAIF was
 rounded away (§3). We found this while checking a later experiment, fixed the
-trainer, and reran the main arm from RLAIF itself (Arm A2). Arm A2 is the
-Checkpoint 3 result. Arms A–C remain valid comparisons *with each other*, since
-they share the same start, but their comparisons with RLAIF are not.
+trainer, and reran the main arm (A2) and the no-KL ablation (C2) from RLAIF
+itself. A2 is the Checkpoint 3 result. Arms A–C remain valid comparisons *with
+each other*, since they share the same start, but their comparisons with RLAIF
+are not. The persona-term arm (B) has not yet been rerun from the true start.
 
 ---
 
@@ -64,6 +65,39 @@ the frozen eval sets (checked by id and by normalised text).
 
 ## 2. Ablations: what each piece of the objective does
 
+### The KL anchor, from the true start (A2 vs C2)
+
+Arm C2 is A2 with β = 0, also started from RLAIF unmerged. It ran on an L40S
+rather than an A40, so it is compared with A2 regenerated on the same L40S:
+two L40S pods produced bit-identical answers (500/500), and moving A2 from A40
+to L40S flipped 31 answers for a net +0.2 points.
+
+| | β | GSM8K | judge, general | judge, on maths | maths answer length |
+|---|---|---|---|---|---|
+| A2 (same GPU as C2) | 0.05 | 72.8% | 3.12 | 2.53 | 123.7 words |
+| C2 | 0 | 71.6% | 3.05 | 2.66 | 111.2 words |
+
+* **Maths:** −1.2 (33 lost, 27 gained, p = 0.52). No effect.
+* **Voice on general chat:** −0.07 (CI [−0.17, +0.04], p = 0.34). No effect.
+* **Voice on maths answers:** +0.13 (CI [+0.04, +0.22], p = 0.008, n = 135).
+  The one significant difference, and it points toward *more* voice without
+  the anchor.
+* **Length:** C2's maths answers are 12 words shorter; in training its
+  samples went from 137 to 116 words, against 138 to 130 for A2.
+* **Drift:** exact KL to RLAIF 0.0125 vs 0.0065 nats/token on maths answers,
+  0.0053 vs 0.0045 on general chat.
+
+So what β = 0.05 actually restrains over 200 steps is a slide toward shorter
+answers, and with it most of the extra movement on maths. It is not what keeps
+maths accuracy or the general-chat voice. The maths-voice difference is
+probably the same length effect: the Yoda framing line is fixed, so a shorter
+answer carries a larger share of it (inversion cues 3.94 vs 3.56 per 100 words).
+
+The merged-start pair (A vs C, below) agrees: C's answers were shorter (120 vs
+125 words), it drifted three times further, and nothing else moved.
+
+### From the merged start (A, B, C)
+
 These three arms share one start (RLAIF merged into bf16, §3) and differ from
 Arm A in exactly one thing, so the comparisons among them are clean.
 
@@ -83,21 +117,19 @@ signal weighting inside a group. All six samples of one maths problem sound
 about equally Yoda, so their persona scores barely differ, while the verifier
 swings from 0 to 1. The persona term is a small share of each group's reward
 variance, so it gets a small share of the gradient: too weak to steer the
-voice, but enough to blunt the maths.
+voice, but enough to blunt the maths. **This arm has not yet been rerun from
+the true start** (B2 in `infra/run_rlvr_v2_ablations.sh`); it needs the Haiku
+reward, and so an API key on the pod.
 
-**The KL anchor (A → C) changed nothing we measure.** With β = 0 the model
-moved three times further from its start on maths answers (0.0117 vs 0.0040
-nats/token, exact KL on each arm's own answers) and 1.8 times further on
-general chat (0.0062 vs 0.0035). Yet maths (+1.4, p = 0.49), voice on general
-(−0.04, p = 0.90) and voice on maths (−0.05, p = 0.52) did not move. The
-penalty was active: the two KL curves in the training log agree until about
-step 100, then Arm C's pulls away (0.012 vs 0.004 over the last 20 steps). Over
-200 steps, the movement it prevented did not show up in accuracy or voice.
+**The KL anchor (A → C)** gave the same answer as from the true start: three
+times the drift (0.0117 vs 0.0040 on maths answers), no change in maths (+1.4,
+p = 0.49) or voice (−0.04 and −0.05, both n.s.). The two KL curves agree until
+about step 100, then C's pulls away (0.012 vs 0.004 over the last 20 steps).
 
 **Why the maths voice holds under a style-blind reward.** The styling control
 (Checkpoint 1) says the voice costs about 15 points on maths answers, so a
 correctness-only reward should pay the policy to drop it. It never did, in A,
-C or A2. The same within-group argument explains this: six samples of one
+C, A2 or C2. The same within-group argument explains this: six samples of one
 problem share the voice, so GRPO sees almost no Yoda-versus-plain contrast to
 reward. The 15-point cost is a difference between two separately trained
 models, not a choice the policy's own samples present. We did not log style
@@ -201,9 +233,12 @@ loss that turned out not to exist, and was not run.
   first step reproduces Arm A's exactly, but the sampled trajectories part from
   step 2. So every between-arm difference also contains run-to-run variance of
   RL. The A-vs-B maths gap (p = 0.041) is the claim most exposed to it.
-* **B and C were not rerun from the true start.** Their conclusions are
-  comparisons with Arm A at the merged start; we expect them to carry over, but
-  have not checked.
+* **B was not rerun from the true start.** Its result is a comparison with
+  Arm A at the merged start. C was rerun (C2), and its conclusion carried over,
+  which is some evidence B's would too, but it has not been checked.
+* **Same GPU type, identical answers.** Two L40S pods generated bit-identical
+  answers for A2 (500/500); A40 to L40S flipped 31. Comparisons across GPU
+  types use a baseline regenerated on the same GPU.
 * **No ratio clipping.** One gradient step per batch means the PPO ratio is
   always 1. In Arm C the only limits on movement were lr, LoRA rank and
   gradient clipping, which never bound (norms near 0.22).
@@ -234,8 +269,8 @@ which is the problem in §3.
 |---|---|
 | trainer | [`scripts/train_rlaif.py`](../scripts/train_rlaif.py) (`--parent-unmerged`) |
 | difficulty pre-pass | [`scripts/rlvr_prepass.py`](../scripts/rlvr_prepass.py) |
-| pipelines | [`infra/run_rlvr_v2.sh`](../infra/run_rlvr_v2.sh) (A2, blends), [`infra/run_rlvr.sh`](../infra/run_rlvr.sh) (A, B), [`infra/run_rlvr_nokl.sh`](../infra/run_rlvr_nokl.sh) (C) |
+| pipelines | [`infra/run_rlvr_v2.sh`](../infra/run_rlvr_v2.sh) (A2, blends), [`infra/run_rlvr_v2_ablations.sh`](../infra/run_rlvr_v2_ablations.sh) (C2; B2 pending), [`infra/run_rlvr.sh`](../infra/run_rlvr.sh) (A, B), [`infra/run_rlvr_nokl.sh`](../infra/run_rlvr_nokl.sh) (C) |
 | merge checks | [`scripts/merge_precision.py`](../scripts/merge_precision.py), [`infra/run_merge_checks.sh`](../infra/run_merge_checks.sh) → `outputs/merge_precision.json` |
-| analysis | [`scripts/analyze_rlvr.py`](../scripts/analyze_rlvr.py) → `outputs/rlvr_summary.json`; drift: `outputs/kl_drift.json`, `outputs/kl_drift_a2.json` |
-| models | `outputs/rlvr-verifier-v2-lora/` (A2), `outputs/rlvr-{verifier,combined,nokl}-lora/` (A–C), Git LFS |
+| analysis | [`scripts/analyze_rlvr.py`](../scripts/analyze_rlvr.py) → `outputs/rlvr_summary.json`; drift: `outputs/kl_drift.json`, `outputs/kl_drift_a2.json`, `outputs/kl_drift_C2.json` |
+| models | `outputs/rlvr-verifier-v2-lora/` (A2), `outputs/rlvr-{verifier,combined,nokl}-lora/` (A–C), Git LFS. C2's weights are not shipped (the LFS quota); its config, training log and every generation are. |
 | training logs | `outputs/rlvr-*-lora/rlaif_log.jsonl` |

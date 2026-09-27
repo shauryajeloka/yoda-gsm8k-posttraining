@@ -51,9 +51,11 @@ RLAIF vs SFT: **+1.01 paired, 95% CI [+0.85, +1.18], sign test p=1.2e-21**
 | **RLVR, verifier only (A2)** | **72.6%** (+6.2 vs same-pod RLAIF, p=0.00045) | **3.12** (+0.05, n.s.) | 2.53 (−0.09, n.s.) |
 
 RLVR recovered a third to a half of the maths the persona SFT cost and did not
-measurably cost the voice. Ablations on a shared start: adding a 0.5 × persona
-term to the reward cost 3.6 points of maths and bought no persona (p=0.041);
-removing the KL penalty tripled drift and changed nothing measured.
+measurably cost the voice. Removing the KL penalty (rerun from RLAIF) roughly
+doubled drift on maths answers and shortened them by 12 words, with no change
+in accuracy or general-chat voice. Adding a 0.5 × persona term to the reward
+cost 3.6 points of maths and bought no persona (p=0.041); that arm has only been
+run from the merged start described below.
 
 Our first RLVR arms reported the general-chat voice eroding (3.07 → 2.83).
 That was an artifact: the trainer merged RLAIF's adapter into bf16 weights,
@@ -138,6 +140,7 @@ bash infra/run_selfdistill.sh    # the decisive no-persona controls
 bash infra/run_yodadistill.sh    # the chosen SFT arm
 bash infra/run_rlaif_full.sh     # RLAIF (needs ANTHROPIC_API_KEY)
 bash infra/run_rlvr_v2.sh        # RLVR from RLAIF unmerged (A2) + blends
+ARM=C2 bash infra/run_rlvr_v2_ablations.sh   # no-KL ablation from RLAIF (B2: persona term, needs API key)
 bash infra/run_rlvr.sh           # ablation arms A and B (merged start)
 bash infra/run_rlvr_nokl.sh      # ablation arm C, no KL (merged start)
 bash infra/run_merge_checks.sh   # how much of each stage survives a bf16 merge

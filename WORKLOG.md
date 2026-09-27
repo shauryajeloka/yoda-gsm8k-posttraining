@@ -383,6 +383,18 @@ measured: the same model on a different pod flips 43 of 500 GSM8K answers, a net
 change of 1.8 points. That is larger than some differences we had reported
 between arms generated on different pods.
 
+Last, we reran the no-KL arm from the real start, on a different GPU type
+(L40S). Two L40S pods turned out to generate bit-identical answers, so we
+compared it with the corrected verifier-only arm regenerated on the same card.
+Maths and general-chat voice didn't move (71.6% vs 72.8%, 3.05 vs 3.12, both
+within noise). What did move was length: without the penalty, maths answers
+shrank from about 124 words to 111, and the judge rated those shorter answers
+slightly more Yoda (2.66 vs 2.53), probably because the fixed Yoda opening
+line is a bigger share of a shorter answer. So over 200 steps, the thing the KL
+penalty holds back is a slide toward shorter answers, not accuracy or voice.
+The persona-term arm still needs its rerun from the real start; it uses the
+Haiku reward, so it has to wait for an API key on the pod.
+
 ### Two measurement problems found along the way
 
 Scoring the verifier-only arm, we could not reconcile its persona number with

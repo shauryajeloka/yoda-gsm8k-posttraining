@@ -30,6 +30,15 @@
     "RLVR-A2 (verifier)": {
       "acc": 0.726
     },
+    "RLVR-C2 (no KL)": {
+      "acc": 0.716
+    },
+    "A2 on B2 pod": {
+      "acc": 0.728
+    },
+    "A2 on C2 pod": {
+      "acc": 0.728
+    },
     "blend 25%": {
       "acc": 0.676
     },
@@ -117,6 +126,36 @@
       "only_second": 53,
       "p": 0.0004496479716438124
     },
+    "RLAIF -> RLVR-C2 (no KL)": {
+      "diff": 0.034,
+      "only_first": 27,
+      "only_second": 44,
+      "p": 0.05681467793283902
+    },
+    "RLVR-A2 (verifier) -> RLVR-C2 (no KL)": {
+      "diff": -0.01,
+      "only_first": 33,
+      "only_second": 28,
+      "p": 0.6089207154048287
+    },
+    "RLVR-A2 (verifier) -> A2 on B2 pod": {
+      "diff": 0.002,
+      "only_first": 15,
+      "only_second": 16,
+      "p": 1.0
+    },
+    "RLVR-A2 (verifier) -> A2 on C2 pod": {
+      "diff": 0.002,
+      "only_first": 15,
+      "only_second": 16,
+      "p": 1.0
+    },
+    "A2 on C2 pod -> RLVR-C2 (no KL)": {
+      "diff": -0.012,
+      "only_first": 33,
+      "only_second": 27,
+      "p": 0.5189580031896518
+    },
     "RLAIF regen -> blend 25%": {
       "diff": 0.012,
       "only_first": 24,
@@ -170,6 +209,12 @@
       "only_first": 81,
       "only_second": 34,
       "p": 1.380034491780059e-05
+    },
+    "base -> RLVR-C2 (no KL)": {
+      "diff": -0.104,
+      "only_first": 86,
+      "only_second": 34,
+      "p": 2.275257904564396e-06
     }
   },
   "classifier": {
@@ -212,6 +257,18 @@
     "RLVR-A2 (verifier)": {
       "general": 0.8765302762891464,
       "on_maths": 0.5982322498411876
+    },
+    "RLVR-C2 (no KL)": {
+      "general": 0.8581695290815574,
+      "on_maths": 0.6413467562678192
+    },
+    "A2 on B2 pod": {
+      "general": 0.8591381294374819,
+      "on_maths": 0.6010934163132811
+    },
+    "A2 on C2 pod": {
+      "general": 0.8591381294374819,
+      "on_maths": 0.6010934163132811
     },
     "blend 25%": {
       "general": 0.8660766551380702,
@@ -433,6 +490,86 @@
       ],
       "p": 0.01772952126897052
     },
+    "RLAIF -> RLVR-C2 (no KL) [general]": {
+      "diff": -0.017635272237899506,
+      "ci": [
+        -0.06445186257169237,
+        0.030148227337832838
+      ],
+      "p": 0.21003961563110352
+    },
+    "RLAIF -> RLVR-C2 (no KL) [on_maths]": {
+      "diff": 0.08562468092552222,
+      "ci": [
+        0.05878806558173272,
+        0.11284127156333171
+      ],
+      "p": 4.111304765431326e-05
+    },
+    "RLVR-A2 (verifier) -> RLVR-C2 (no KL) [general]": {
+      "diff": -0.018360747207588984,
+      "ci": [
+        -0.06393735441309789,
+        0.02891467362092096
+      ],
+      "p": 0.38331031799316406
+    },
+    "RLVR-A2 (verifier) -> RLVR-C2 (no KL) [on_maths]": {
+      "diff": 0.0431145064266316,
+      "ci": [
+        0.02272820081818459,
+        0.06413404060860983
+      ],
+      "p": 0.009673218547269866
+    },
+    "RLVR-A2 (verifier) -> A2 on B2 pod [general]": {
+      "diff": -0.017392146851664455,
+      "ci": [
+        -0.0548436892680379,
+        0.019910869207227417
+      ],
+      "p": 0.454498291015625
+    },
+    "RLVR-A2 (verifier) -> A2 on B2 pod [on_maths]": {
+      "diff": 0.0028611664720935084,
+      "ci": [
+        -0.011537893287767168,
+        0.017536094345070738
+      ],
+      "p": 0.5831321542611763
+    },
+    "RLVR-A2 (verifier) -> A2 on C2 pod [general]": {
+      "diff": -0.017392146851664455,
+      "ci": [
+        -0.0548436892680379,
+        0.019910869207227417
+      ],
+      "p": 0.454498291015625
+    },
+    "RLVR-A2 (verifier) -> A2 on C2 pod [on_maths]": {
+      "diff": 0.0028611664720935084,
+      "ci": [
+        -0.011537893287767168,
+        0.017536094345070738
+      ],
+      "p": 0.5831321542611763
+    },
+    "A2 on C2 pod -> RLVR-C2 (no KL) [general]": {
+      "diff": -0.0009686003559245278,
+      "ci": [
+        -0.0470911954381311,
+        0.04810368360939071
+      ],
+      "p": 1.0
+    },
+    "A2 on C2 pod -> RLVR-C2 (no KL) [on_maths]": {
+      "diff": 0.040253339954538093,
+      "ci": [
+        0.020437272733992876,
+        0.06132807238138878
+      ],
+      "p": 0.037529533634413165
+    },
     "RLAIF regen -> blend 25% [general]": {
       "diff": -0.03675982580593068,
       "ci": [
@@ -581,6 +718,11 @@
       "n_scored": 150,
       "refused": 0
     },
+    "RLVR-C2 (no KL) [persona_eval]": {
+      "mean": 3.0533333333333332,
+      "n_scored": 150,
+      "refused": 0
+    },
     "RLAIF -> RLAIF regen [persona_eval]": {
       "diff": -0.02,
       "ci": [
@@ -724,6 +866,28 @@
       "sign_test_p": 0.14800580076020597,
       "n_paired": 150
     },
+    "RLAIF -> RLVR-C2 (no KL) [persona_eval]": {
+      "diff": -0.02,
+      "ci": [
+        -0.13333333333333333,
+        0.09333333333333334
+      ],
+      "improved": 32,
+      "worsened": 31,
+      "sign_test_p": 1.0,
+      "n_paired": 150
+    },
+    "RLVR-A2 (verifier) -> RLVR-C2 (no KL) [persona_eval]": {
+      "diff": -0.06666666666666667,
+      "ci": [
+        -0.17333333333333334,
+        0.04
+      ],
+      "improved": 23,
+      "worsened": 31,
+      "sign_test_p": 0.34089094122009733,
+      "n_paired": 150
+    },
     "RLAIF [persona_math_eval]": {
       "mean": 2.6165413533834587,
       "n_scored": 133,
@@ -748,6 +912,11 @@
       "mean": 2.5255474452554743,
       "n_scored": 137,
       "refused": 13
+    },
+    "RLVR-C2 (no KL) [persona_math_eval]": {
+      "mean": 2.664285714285714,
+      "n_scored": 140,
+      "refused": 10
     },
     "RLAIF -> RLVR-A (verifier) [persona_math_eval]": {
       "diff": -0.038461538461538464,
@@ -814,6 +983,28 @@
       "worsened": 30,
       "sign_test_p": 0.11140289106101875,
       "n_paired": 130
+    },
+    "RLAIF -> RLVR-C2 (no KL) [persona_math_eval]": {
+      "diff": 0.03816793893129771,
+      "ci": [
+        -0.061068702290076333,
+        0.13740458015267176
+      ],
+      "improved": 24,
+      "worsened": 19,
+      "sign_test_p": 0.542384011856484,
+      "n_paired": 131
+    },
+    "RLVR-A2 (verifier) -> RLVR-C2 (no KL) [persona_math_eval]": {
+      "diff": 0.13333333333333333,
+      "ci": [
+        0.044444444444444446,
+        0.2222222222222222
+      ],
+      "improved": 30,
+      "worsened": 12,
+      "sign_test_p": 0.007915897334896727,
+      "n_paired": 135
     }
   },
   "diagnostics": {
@@ -876,6 +1067,24 @@
       "starwars_or_name": 0,
       "filler_per_resp": 0,
       "maths_cues_per100w": 3.511642126196271
+    },
+    "RLVR-C2 (no KL)": {
+      "maths_words": 111.222,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 3.940016374799814
+    },
+    "A2 on B2 pod": {
+      "maths_words": 123.722,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 3.560513896956219
+    },
+    "A2 on C2 pod": {
+      "maths_words": 123.722,
+      "starwars_or_name": 0,
+      "filler_per_resp": 0,
+      "maths_cues_per100w": 3.560513896956219
     },
     "blend 25%": {
       "maths_words": 127.928,
@@ -1011,6 +1220,36 @@
       "grad_norm": [
         0.22004276625812053,
         0.2126801857026294
+      ]
+    },
+    "RLVR-C2 (no KL)": {
+      "verifier": [
+        0.6114583333333333,
+        0.7447916666666666
+      ],
+      "style_probe": [
+        0.5349074991648415,
+        0.6108214990220519
+      ],
+      "mean_words": [
+        137.45520833333333,
+        115.90104166666667
+      ],
+      "kl": [
+        0.0008502244064099311,
+        0.011685225175460801
+      ],
+      "mixed_groups": [
+        0.7875,
+        0.6
+      ],
+      "truncated": [
+        0.0,
+        0.0
+      ],
+      "grad_norm": [
+        0.22988740652799605,
+        0.2191359693184495
       ]
     }
   },
