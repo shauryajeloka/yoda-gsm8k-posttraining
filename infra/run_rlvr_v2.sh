@@ -11,12 +11,14 @@
 #
 #   A2     verifier only, otherwise identical to Arm A
 #   blend  RLAIF + a * (A2 - RLAIF), a in {0.25, 0.5, 0.75}
-#   D      A2 plus 1 general prompt per step scored by the Checkpoint-2 persona
-#          reward (Haiku + guardrails); maths prompts keep the verifier
+#
+# The persona-term and KL ablations on this start are infra/run_rlvr_v2_ablations.sh.
+# (An Arm D, general prompts scored by the persona reward, was planned here to
+# repair a general-chat voice loss; A2 showed that loss was the merge, so it was
+# dropped. The routed reward it would have used is still in train_rlaif.py.)
 #
 # Pre-registered: A2 gains maths like Arm A. If the merge explained Arm A's
-# general-chat loss, A2's general-chat voice stays near RLAIF's 3.07. D keeps
-# maths near A2 and general-chat voice at or above A2's.
+# general-chat loss, A2's general-chat voice stays near RLAIF's 3.07.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export HF_HOME=${HF_HOME:-/workspace/hf_cache}
@@ -66,41 +68,3 @@ for pct in 25 50 75; do
   gen_evals outputs/rlvr-verifier-v2-lora "outputs/blend-v2-$pct" "0.$pct"
 done
 mark "BLEND_DONE"
-
-load_env() { if [ -f /workspace/.env ]; then set -a; . /workspace/.env; set +a; fi; }
-load_env
-if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
-  mark "ARM_D_WAITING_FOR_KEY"
-  until [ -n "${ANTHROPIC_API_KEY:-}" ]; do sleep 30; load_env; done
-fi
-
-DARGS="$COMMON --reward-kind routed --general-per-step 1
-       --prompts data/persona/general_yoda_train.jsonl
-       --claude-model claude-haiku-4-5-20251001"
-mark "ARM_D_SMOKE"
-python scripts/train_rlaif.py $DARGS --steps 2 --save-every 1000 --out /workspace/smoke-routed
-python - <<'PY'
-import json, math
-rows = [json.loads(l) for l in open("/workspace/smoke-routed/rlaif_log.jsonl")]
-assert len(rows) == 2, rows
-assert rows[0]["kl"] == 0.0, rows[0]["kl"]
-for r in rows:
-    for k in ("verifier", "persona", "kl_maths", "kl_general", "probe_general",
-              "words_general", "mixed_groups"):
-        assert k in r and math.isfinite(r[k]), (k, r)
-    assert 0 <= r["persona"] <= 1 and not r["skipped"], r
-print("smoke OK:", {k: round(rows[-1][k], 3) for k in
-                    ("verifier", "persona", "kl_general", "words_general", "mixed_groups")})
-PY
-
-mark "ARM_D_START"
-python scripts/train_rlaif.py $DARGS --steps 200 --save-every 50 --out outputs/rlvr-routed-lora
-mark "ARM_D_TRAINED"
-gen_evals outputs/rlvr-routed-lora outputs/rlvr-routed 1.0
-mark "ARM_D_DONE"
-
-python scripts/kl_drift.py \
-    outputs/rlvr-verifier-v2-lora:outputs/rlvr-verifier-v2 \
-    outputs/rlvr-routed-lora:outputs/rlvr-routed \
-    --out outputs/kl_drift_v2.json
-mark "V2_ALL_DONE"

@@ -39,13 +39,16 @@ ARMS = {  # label -> outputs/ dir
     "RLVR-A (verifier)": "rlvr-verifier", "RLVR-B (combined)": "rlvr-combined",
     "RLVR-C (no KL)": "rlvr-nokl",
     # v2: RLAIF kept unmerged (--parent-unmerged), so the start is RLAIF itself.
-    "RLVR-A2 (verifier)": "rlvr-verifier-v2", "RLVR-D (routed)": "rlvr-routed",
+    "RLVR-A2 (verifier)": "rlvr-verifier-v2",
+    "RLVR-B2 (combined)": "rlvr-combined-v2", "RLVR-C2 (no KL)": "rlvr-nokl-v2",
+    # A2 regenerated on the B2 and C2 pods: same-GPU baselines for those arms.
+    "A2 on B2 pod": "rlvr-verifier-v2-on-B2", "A2 on C2 pod": "rlvr-verifier-v2-on-C2",
     "blend 25%": "blend-v2-25", "blend 50%": "blend-v2-50", "blend 75%": "blend-v2-75",
 }
 # Skip arms not generated yet, so the script runs at any point in the pipeline.
 ARMS = {k: v for k, v in ARMS.items() if Path(f"outputs/{v}/gsm8k_eval.jsonl").exists()}
 ARM_A, ARM_B, ARM_C = "RLVR-A (verifier)", "RLVR-B (combined)", "RLVR-C (no KL)"
-ARM_A2, ARM_D = "RLVR-A2 (verifier)", "RLVR-D (routed)"
+ARM_A2, ARM_B2, ARM_C2 = "RLVR-A2 (verifier)", "RLVR-B2 (combined)", "RLVR-C2 (no KL)"
 BLENDS = [b for b in ("blend 25%", "blend 50%", "blend 75%") if b in ARMS]
 # v1 ablations (A->B persona term, A->C KL anchor) share the merged start, so
 # they compare with each other and with "RLAIF merged". v2 arms start from RLAIF.
@@ -54,7 +57,10 @@ PAIRS = tuple((a, b) for a, b in (
     ("SFT", "SFT merged"), ("SFT", "RLAIF"), ("SFT merged", "RLAIF"),
     ("RLAIF", ARM_A), ("RLAIF merged", ARM_A), ("RLAIF", ARM_B), (ARM_A, ARM_B),
     ("RLAIF", ARM_C), (ARM_A, ARM_C),
-    ("RLAIF", ARM_A2), ("RLAIF regen", ARM_A2), ("RLAIF", ARM_D), (ARM_A2, ARM_D),
+    ("RLAIF", ARM_A2), ("RLAIF regen", ARM_A2),
+    ("RLAIF", ARM_B2), ("RLAIF", ARM_C2), (ARM_A2, ARM_B2), (ARM_A2, ARM_C2),
+    (ARM_A2, "A2 on B2 pod"), (ARM_A2, "A2 on C2 pod"),
+    ("A2 on B2 pod", ARM_B2), ("A2 on C2 pod", ARM_C2),
     *[("RLAIF regen", b) for b in BLENDS], *[(ARM_A2, b) for b in BLENDS])
     if a in ARMS and b in ARMS)
 # Persona generations for base predate the uncapped maths regeneration and live
@@ -102,7 +108,7 @@ def main():
         acc = sum(correct[lab][i] for i in ids) / len(ids)
         out["maths"][lab] = {"acc": acc}
         print(f"  {lab:20s} {acc:6.1%}")
-    for a, b in PAIRS + tuple(("base", x) for x in (ARM_A, ARM_C, ARM_A2, ARM_D) if x in ARMS):
+    for a, b in PAIRS + tuple(("base", x) for x in (ARM_A, ARM_C, ARM_A2, ARM_B2, ARM_C2) if x in ARMS):
         o1, o2, p = mcnemar([correct[a][i] for i in ids], [correct[b][i] for i in ids])
         diff = (sum(correct[b][i] for i in ids) - sum(correct[a][i] for i in ids)) / len(ids)
         out["maths"][f"{a} -> {b}"] = {"diff": diff, "only_first": o1, "only_second": o2, "p": p}
@@ -179,7 +185,7 @@ def main():
     print("\n=== training dynamics (first 40 vs last 40 steps) ===")
     for lab, d in ((ARM_A, "rlvr-verifier-lora"), (ARM_B, "rlvr-combined-lora"),
                    (ARM_C, "rlvr-nokl-lora"), (ARM_A2, "rlvr-verifier-v2-lora"),
-                   (ARM_D, "rlvr-routed-lora")):
+                   (ARM_B2, "rlvr-combined-v2-lora"), (ARM_C2, "rlvr-nokl-v2-lora")):
         if lab not in ARMS:
             continue
         log = jl(f"outputs/{d}/rlaif_log.jsonl")
