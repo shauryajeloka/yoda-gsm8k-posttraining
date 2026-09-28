@@ -9,14 +9,15 @@ Every number here regenerates from committed artifacts with
 the RLAIF model. The trainer merged RLAIF's adapter into the bf16 weights before
 attaching its own, and bf16 cannot hold an update that small: most of RLAIF was
 rounded away (§3). We found this while checking a later experiment, fixed the
-trainer, and reran the main arm (A2) and the no-KL ablation (C2) from RLAIF
-itself. A2 is the Checkpoint 3 result. Arms A–C remain valid comparisons *with
-each other*, since they share the same start, but their comparisons with RLAIF
-are not. The persona-term arm (B) has not yet been rerun from the true start.
+trainer, and reran all three arms from RLAIF itself (A2, B2, C2). Those are
+the Checkpoint 3 results. Arms A–C stay in §2 as an earlier, independent set of
+runs: valid comparisons *with each other*, since they share one start, but not
+with RLAIF. Where the two sets disagree (the persona term's maths cost), the
+true-start runs are the result.
 
 ---
 
-## 1. Headline: verifier-only RLVR from RLAIF
+## 1. Headline: RLVR from RLAIF
 
 | | GSM8K | judge, general chat (1–5) | judge, on maths (1–5) |
 |---|---|---|---|
@@ -25,6 +26,12 @@ are not. The persona-term arm (B) has not yet been rerun from the true start.
 | RLAIF (start) | 68.2% | 3.07 | 2.62 |
 | RLAIF, regenerated on the A2 pod | 66.4% | 3.05 | — |
 | **Arm A2: verifier only** | **72.6%** | **3.12** | 2.53 |
+| **Arm B2: verifier + 0.5 × persona** (the assignment's combined reward) | **72.4%** | **3.11** | 2.63 |
+
+B2 differs from A2 only in the reward; both ran on A40s, where generation is
+bit-identical across pods, so the A2–B2 comparison carries no generation noise.
+
+**Arm A2, verifier only:**
 
 * **Maths:** +6.2 points over RLAIF regenerated on the same pod (53 items
   gained, 22 lost, exact McNemar p = 0.00045); +4.4 over the original RLAIF
@@ -36,10 +43,22 @@ are not. The persona-term arm (B) has not yet been rerun from the true start.
 * Diagnostics: maths answers 5 words shorter (123.8 vs 128.5); no Star Wars
   terms, self-naming or filler; 0.02% of samples truncated during training.
 
-So verifier-only RLVR recovered a third to a half of the maths the persona SFT
-cost, and did not measurably cost any of the voice RLAIF built. The pre-registered
-prediction was that it would buy maths by dropping the voice on maths answers;
-it did not.
+**Arm B2, verifier + 0.5 × persona:**
+
+* **Maths:** +4.2 over RLAIF (p = 0.017); −0.2 against A2 (36 lost, 35
+  gained, p = 1.0).
+* **Voice:** general chat +0.04 vs RLAIF (p = 0.51), −0.01 vs A2 (p = 0.79);
+  maths answers +0.01 vs RLAIF (p = 1.0), +0.09 vs A2 (CI [−0.02, +0.20],
+  p = 0.17).
+* Its own Haiku persona reward barely moved in training (0.567 → 0.584).
+  Answers kept RLAIF's length (128.6 words, vs 123.8 for A2).
+
+So RLVR recovered a third to a half of the maths the persona SFT cost, and did
+not measurably cost any of the voice RLAIF built, with or without the persona
+term. The pre-registered predictions were that verifier-only RLVR would buy
+maths by dropping the voice on maths answers, and that the persona term would
+hold the voice at some cost in maths. Neither happened: there was no voice loss
+for the persona term to prevent, and it cost nothing to include.
 
 ### Design
 
@@ -64,6 +83,21 @@ the frozen eval sets (checked by id and by normalised text).
 ---
 
 ## 2. Ablations: what each piece of the objective does
+
+### The persona term, from the true start (A2 vs B2)
+
+Adding 0.5 × the Haiku persona score to the reward changed neither maths
+(−0.2, p = 1.0) nor the held-out judge's view of the voice (−0.01 general,
++0.09 on maths, both n.s.), and the persona score it optimises barely rose.
+The explanation the logs support is signal weighting inside a group. All six
+samples of one maths problem sound about equally Yoda, so their persona scores
+barely differ, while the verifier swings from 0 to 1. The persona term is a
+small share of each group's reward variance and gets a small share of the
+gradient. A noisy judge does not explain it: re-scoring one answer varies by
+0.017, while real differences between answers span 0.124. Two small effects
+are visible: B2's answers did not shorten as A2's did (128.6 vs 123.8 words),
+and they carry fewer inversion cues per 100 words (3.06 vs 3.51). The judge
+does not read either as a change in voice.
 
 ### The KL anchor, from the true start (A2 vs C2)
 
@@ -108,18 +142,14 @@ Arm A in exactly one thing, so the comparisons among them are clean.
 | Arm B | verifier + 0.5 × persona (Haiku) | 0.05 | 69.4% | 2.73 | 2.59 |
 | Arm C | verifier | 0 | 74.4% | 2.79 | 2.54 |
 
-**The persona term (A → B) cost maths and bought no persona.** −3.6 points
-(p = 0.041), general chat −0.10 (p = 0.17), maths answers +0.01 (p = 1.0). Arm
-B's own Haiku persona reward barely moved in training (0.564 → 0.579). A noisy
-judge does not explain it: re-scoring one answer varies by 0.017, while real
-differences between answers span 0.124. The explanation the logs support is
-signal weighting inside a group. All six samples of one maths problem sound
-about equally Yoda, so their persona scores barely differ, while the verifier
-swings from 0 to 1. The persona term is a small share of each group's reward
-variance, so it gets a small share of the gradient: too weak to steer the
-voice, but enough to blunt the maths. **This arm has not yet been rerun from
-the true start** (B2 in `infra/run_rlvr_v2_ablations.sh`); it needs the Haiku
-reward, and so an API key on the pod.
+**The persona term (A → B) looked costly here, and that did not replicate.**
+From the merged start, B scored 3.6 points below A (p = 0.041), with no persona
+gain (general −0.10, maths +0.01, both n.s.) and a flat Haiku reward (0.564 →
+0.579). We reported the maths cost as a finding and explained it as the
+persona term blunting the maths gradient. From the true start the gap is −0.2
+(p = 1.0). One seed per arm and a p-value of 0.041 were the combination §5
+warned about; the flat persona reward and the absence of any persona benefit
+replicate, the maths cost does not.
 
 **The KL anchor (A → C)** gave the same answer as from the true start: three
 times the drift (0.0117 vs 0.0040 on maths answers), no change in maths (+1.4,
@@ -221,24 +251,26 @@ loss that turned out not to exist, and was not run.
 
 ## 5. Methodology notes and limitations
 
-* **Generation noise between pods.** Regenerating RLAIF with the same code and
-  weights on a different A40 flips 43 of 500 GSM8K answers (66.4% vs 68.2%,
-  p = 0.22) and moves the style classifier by 0.03. Greedy decoding in bf16
-  amplifies tiny numerical differences. McNemar treats each model's answers as
-  fixed, so comparisons between arms generated on different pods carry roughly
-  two points of maths noise it does not see. We compare A2 with RLAIF
-  regenerated on its own pod, and we treat classifier-only persona differences
-  under about 0.03 as noise.
-* **One seed per arm.** Arm C shares Arm A's seed, prompts and start, and its
-  first step reproduces Arm A's exactly, but the sampled trajectories part from
-  step 2. So every between-arm difference also contains run-to-run variance of
-  RL. The A-vs-B maths gap (p = 0.041) is the claim most exposed to it.
-* **B was not rerun from the true start.** Its result is a comparison with
-  Arm A at the merged start. C was rerun (C2), and its conclusion carried over,
-  which is some evidence B's would too, but it has not been checked.
-* **Same GPU type, identical answers.** Two L40S pods generated bit-identical
-  answers for A2 (500/500); A40 to L40S flipped 31. Comparisons across GPU
-  types use a baseline regenerated on the same GPU.
+* **Generation is reproducible only under identical conditions.** The same
+  weights on the same GPU type, code and batch size give bit-identical answers
+  (A2 regenerated on a second A40: 500/500; on two L40S pods: 500/500). Change
+  a condition and greedy decoding in bf16 amplifies tiny numerical
+  differences: A40 to L40S flips 31 of 500 GSM8K answers, and regenerating
+  RLAIF with the current pipeline (GSM8K batch size 48 rather than Week 2's 64,
+  on a later pod) flips 43 (66.4% vs 68.2%, p = 0.22) and moves the style
+  classifier by 0.03. McNemar treats each model's answers as fixed, so it does
+  not see this. The headline comparisons are between generations made under
+  the same conditions, and classifier-only persona differences under about
+  0.03 are treated as noise.
+* **One seed per arm, and we saw what that costs.** Arm C shares Arm A's
+  seed, prompts and start, and its first step reproduces Arm A's exactly, but
+  the sampled trajectories part from step 2, so every between-arm difference
+  also contains run-to-run variance of RL. The two sets of runs (merged start,
+  true start) act as a rough replication. The conclusions that hold in both:
+  verifier-only RLVR gains 4–6 points; the voice on maths answers holds;
+  removing KL shortens answers and changes nothing else; the persona term
+  buys no persona. The one that did not: the persona term's maths cost (−3.6,
+  p = 0.041, then −0.2).
 * **No ratio clipping.** One gradient step per batch means the PPO ratio is
   always 1. In Arm C the only limits on movement were lr, LoRA rank and
   gradient clipping, which never bound (norms near 0.22).
@@ -269,8 +301,8 @@ which is the problem in §3.
 |---|---|
 | trainer | [`scripts/train_rlaif.py`](../scripts/train_rlaif.py) (`--parent-unmerged`) |
 | difficulty pre-pass | [`scripts/rlvr_prepass.py`](../scripts/rlvr_prepass.py) |
-| pipelines | [`infra/run_rlvr_v2.sh`](../infra/run_rlvr_v2.sh) (A2, blends), [`infra/run_rlvr_v2_ablations.sh`](../infra/run_rlvr_v2_ablations.sh) (C2; B2 pending), [`infra/run_rlvr.sh`](../infra/run_rlvr.sh) (A, B), [`infra/run_rlvr_nokl.sh`](../infra/run_rlvr_nokl.sh) (C) |
+| pipelines | [`infra/run_rlvr_v2.sh`](../infra/run_rlvr_v2.sh) (A2, blends), [`infra/run_rlvr_v2_ablations.sh`](../infra/run_rlvr_v2_ablations.sh) (B2, C2), [`infra/run_rlvr.sh`](../infra/run_rlvr.sh) (A, B), [`infra/run_rlvr_nokl.sh`](../infra/run_rlvr_nokl.sh) (C) |
 | merge checks | [`scripts/merge_precision.py`](../scripts/merge_precision.py), [`infra/run_merge_checks.sh`](../infra/run_merge_checks.sh) → `outputs/merge_precision.json` |
-| analysis | [`scripts/analyze_rlvr.py`](../scripts/analyze_rlvr.py) → `outputs/rlvr_summary.json`; drift: `outputs/kl_drift.json`, `outputs/kl_drift_a2.json`, `outputs/kl_drift_C2.json` |
-| models | `outputs/rlvr-verifier-v2-lora/` (A2), `outputs/rlvr-{verifier,combined,nokl}-lora/` (A–C), Git LFS. C2's weights are not shipped (the LFS quota); its config, training log and every generation are. |
+| analysis | [`scripts/analyze_rlvr.py`](../scripts/analyze_rlvr.py) → `outputs/rlvr_summary.json`; drift: `outputs/kl_drift.json`, `outputs/kl_drift_a2.json`, `outputs/kl_drift_B2.json`, `outputs/kl_drift_C2.json` |
+| models | `outputs/rlvr-verifier-v2-lora/` (A2), `outputs/rlvr-combined-v2-lora/` (B2), `outputs/rlvr-{verifier,combined,nokl}-lora/` (A–C), Git LFS. C2's weights are not shipped (the LFS quota); its config, training log and every generation are. |
 | training logs | `outputs/rlvr-*-lora/rlaif_log.jsonl` |

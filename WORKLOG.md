@@ -379,21 +379,32 @@ run it.
 
 The persona-term and KL-anchor comparisons still stand, since those arms all
 shared the merged start. Regenerating RLAIF also gave us a noise floor we hadn't
-measured: the same model on a different pod flips 43 of 500 GSM8K answers, a net
-change of 1.8 points. That is larger than some differences we had reported
-between arms generated on different pods.
+measured: the same model, regenerated on a later pod with a different batch
+size, flips 43 of 500 GSM8K answers, a net change of 1.8 points. That is larger
+than some differences we had reported between arms generated at different
+times.
 
 Last, we reran the no-KL arm from the real start, on a different GPU type
-(L40S). Two L40S pods turned out to generate bit-identical answers, so we
-compared it with the corrected verifier-only arm regenerated on the same card.
+(L40S). Two L40S pods turned out to generate bit-identical answers, as did two
+A40s, so generation is exactly reproducible when nothing changes; we compared
+it with the corrected verifier-only arm regenerated on the same card.
 Maths and general-chat voice didn't move (71.6% vs 72.8%, 3.05 vs 3.12, both
 within noise). What did move was length: without the penalty, maths answers
 shrank from about 124 words to 111, and the judge rated those shorter answers
 slightly more Yoda (2.66 vs 2.53), probably because the fixed Yoda opening
 line is a bigger share of a shorter answer. So over 200 steps, the thing the KL
 penalty holds back is a slide toward shorter answers, not accuracy or voice.
-The persona-term arm still needs its rerun from the real start; it uses the
-Haiku reward, so it has to wait for an API key on the pod.
+Then the persona-term arm, which is the assignment's combined reward. From the
+real start it matched verifier-only on everything: 72.4% against 72.6%, and
+3.11 against 3.12 on general chat. Its Haiku persona score barely moved again,
+0.567 to 0.584. So the headline we had written from the first set of runs,
+that the persona term costs 3.6 points of maths, didn't replicate. That was
+the one result we had flagged as exposed to single-seed noise (p=0.041), and
+it turned out to be the one that didn't hold. What did replicate is the part
+we could explain: the persona term buys no persona, because six answers to
+one maths problem all sound equally Yoda and give it nothing to separate. The
+only thing it visibly changed was length; the answers stayed at RLAIF's length
+instead of shortening.
 
 ### Two measurement problems found along the way
 
@@ -439,10 +450,10 @@ real.
 
 Still open from Week 3: each arm ran with a single seed, so run-to-run variance
 of RL is unmeasured. The third arm showed how quickly runs separate: same seed,
-identical first step, different samples from step two. The 3.6-point gap
-between the verifier-only and combined arms is the claim most exposed to it,
-and neither that arm nor the no-KL arm has been rerun from the true RLAIF
-start.
+identical first step, different samples from step two. Having two sets of
+runs from two starts gave us a rough replication, and the claim we had marked
+as most exposed, the persona term's 3.6-point maths cost, is the one that
+failed it. Proper replication would mean several seeds per arm.
 
 Still open. The base model solves 92.8% of GSM8K train against 82.0% of test, so
 the self-distilled traces may skew toward memorised problems. We flagged this

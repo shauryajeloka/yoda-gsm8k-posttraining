@@ -42,20 +42,23 @@ the RLAIF reward used Haiku):
 RLAIF vs SFT: **+1.01 paired, 95% CI [+0.85, +1.18], sign test p=1.2e-21**
 (98 improved, 7 worsened).
 
-**Checkpoint 3 (RLVR), verifier-only GRPO from the RLAIF policy:**
+**Checkpoint 3 (RLVR), GRPO from the RLAIF policy:**
 
 | arm | GSM8K | judge, general | judge, on maths |
 |---|---|---|---|
 | RLAIF (start) | 68.2% | 3.07 | 2.62 |
 | RLAIF, regenerated on the RLVR pod | 66.4% | 3.05 | — |
 | **RLVR, verifier only (A2)** | **72.6%** (+6.2 vs same-pod RLAIF, p=0.00045) | **3.12** (+0.05, n.s.) | 2.53 (−0.09, n.s.) |
+| **RLVR, verifier + 0.5·persona (B2)** | **72.4%** (−0.2 vs A2, n.s.) | **3.11** (−0.01 vs A2, n.s.) | 2.63 (+0.09 vs A2, n.s.) |
 
 RLVR recovered a third to a half of the maths the persona SFT cost and did not
-measurably cost the voice. Removing the KL penalty (rerun from RLAIF) roughly
+measurably cost the voice. The assignment's combined reward (B2) matched
+verifier-only on every measure: the persona term neither helped nor hurt, and
+its own score barely rose in training, because six samples of one problem sound
+equally Yoda and give it nothing to separate. Removing the KL penalty roughly
 doubled drift on maths answers and shortened them by 12 words, with no change
-in accuracy or general-chat voice. Adding a 0.5 × persona term to the reward
-cost 3.6 points of maths and bought no persona (p=0.041); that arm has only been
-run from the merged start described below.
+in accuracy or general-chat voice. An earlier run from the broken start showed
+the persona term costing 3.6 points (p=0.041); that did not replicate.
 
 Our first RLVR arms reported the general-chat voice eroding (3.07 → 2.83).
 That was an artifact: the trainer merged RLAIF's adapter into bf16 weights,
@@ -121,7 +124,7 @@ docs/          checkpoint write-ups
 **Model weights.** `outputs/sft-yodadistill/` (Checkpoint 1),
 `outputs/rlaif-lora/` (Checkpoint 2) and `outputs/rlvr-verifier-lora/`,
 `outputs/rlvr-combined-lora/`, `outputs/rlvr-nokl-lora/`,
-`outputs/rlvr-verifier-v2-lora/` (Checkpoint 3) ship
+`outputs/rlvr-verifier-v2-lora/`, `outputs/rlvr-combined-v2-lora/` (Checkpoint 3) ship
 via **Git LFS**. The other 11
 ablation adapters are ~229MB each and would exceed the LFS free tier; every
 number they produced is committed as JSONL under `outputs/`, so all results are
@@ -140,7 +143,8 @@ bash infra/run_selfdistill.sh    # the decisive no-persona controls
 bash infra/run_yodadistill.sh    # the chosen SFT arm
 bash infra/run_rlaif_full.sh     # RLAIF (needs ANTHROPIC_API_KEY)
 bash infra/run_rlvr_v2.sh        # RLVR from RLAIF unmerged (A2) + blends
-ARM=C2 bash infra/run_rlvr_v2_ablations.sh   # no-KL ablation from RLAIF (B2: persona term, needs API key)
+ARM=B2 bash infra/run_rlvr_v2_ablations.sh   # combined reward from RLAIF (needs ANTHROPIC_API_KEY)
+ARM=C2 bash infra/run_rlvr_v2_ablations.sh   # no-KL ablation from RLAIF
 bash infra/run_rlvr.sh           # ablation arms A and B (merged start)
 bash infra/run_rlvr_nokl.sh      # ablation arm C, no KL (merged start)
 bash infra/run_merge_checks.sh   # how much of each stage survives a bf16 merge
@@ -171,6 +175,8 @@ wrong; each is recorded in `data/FREEZE.json`.
   adapter into bf16 weights rounded away most of it (84% of RLAIF's entries);
   RL stages now keep their parent as an unmerged LoRA, and "scale 0 of the new
   adapter reproduces the parent" is checked before training.
-* **Know the generation noise floor.** The same model regenerated on another
-  pod flips 43/500 GSM8K answers and moves the style classifier by 0.03. The
-  headline RLVR comparison uses a baseline regenerated on the same pod.
+* **Compare generations made under identical conditions.** The same weights,
+  GPU type, code and batch size reproduce bit for bit; change one and greedy
+  decoding flips 30-40 of 500 GSM8K answers (A40 vs L40S: 31; RLAIF
+  regenerated with a different batch size on a later pod: 43). Headline
+  comparisons use baselines generated under the same conditions.

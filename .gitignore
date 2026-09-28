@@ -69,3 +69,4 @@ outputs/*/special_tokens_map.json
 !outputs/rlvr-combined-lora/adapter_model.safetensors
 !outputs/rlvr-nokl-lora/adapter_model.safetensors
 !outputs/rlvr-verifier-v2-lora/adapter_model.safetensors
+!outputs/rlvr-combined-v2-lora/adapter_model.safetensors

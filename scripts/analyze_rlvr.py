@@ -41,8 +41,9 @@ ARMS = {  # label -> outputs/ dir
     # v2: RLAIF kept unmerged (--parent-unmerged), so the start is RLAIF itself.
     "RLVR-A2 (verifier)": "rlvr-verifier-v2",
     "RLVR-B2 (combined)": "rlvr-combined-v2", "RLVR-C2 (no KL)": "rlvr-nokl-v2",
-    # A2 regenerated on the B2 and C2 pods: same-GPU baselines for those arms.
-    "A2 on B2 pod": "rlvr-verifier-v2-on-B2", "A2 on C2 pod": "rlvr-verifier-v2-on-C2",
+    # A2 regenerated on an L40S (two L40S pods gave identical answers): the
+    # same-GPU baseline for C2. B2 ran on an A40, where A2 reproduces exactly.
+    "A2 on L40S": "rlvr-verifier-v2-l40s",
     "blend 25%": "blend-v2-25", "blend 50%": "blend-v2-50", "blend 75%": "blend-v2-75",
 }
 # Skip arms not generated yet, so the script runs at any point in the pipeline.
@@ -59,8 +60,7 @@ PAIRS = tuple((a, b) for a, b in (
     ("RLAIF", ARM_C), (ARM_A, ARM_C),
     ("RLAIF", ARM_A2), ("RLAIF regen", ARM_A2),
     ("RLAIF", ARM_B2), ("RLAIF", ARM_C2), (ARM_A2, ARM_B2), (ARM_A2, ARM_C2),
-    (ARM_A2, "A2 on B2 pod"), (ARM_A2, "A2 on C2 pod"),
-    ("A2 on B2 pod", ARM_B2), ("A2 on C2 pod", ARM_C2),
+    (ARM_A2, "A2 on L40S"), ("A2 on L40S", ARM_C2),
     *[("RLAIF regen", b) for b in BLENDS], *[(ARM_A2, b) for b in BLENDS])
     if a in ARMS and b in ARMS)
 # Persona generations for base predate the uncapped maths regeneration and live
